@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MAT2 ABANDONMENT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T16:02:28.159Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624155622651_01148/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155622651_01148/00013-p001-r006-appearances-0037022_1997-01.html",
+      "html_sha256": "dcecbd8167bbd45125d96956ad82d6e5134551e348b6213cbb0d083584fa901a",
+      "bytes_len": 4721,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/10/1997&index=CYpKyEcw_PLUS_%2FI8OVUK303Flw%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&civilCaseId=HLThx1q70lCMc%2FlrrjvCpg%3D%3D",
+      "captured_at": "2026-06-24T16:02:28.159Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624155622651_01148/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155622651_01148/00012-p001-r006-case_detail-0037022_1997-01.html",
+      "html_sha256": "5995de51490abb04e751802a6688bdaaec61f4996803aeace904d8599d216db2",
+      "bytes_len": 5758,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=CYpKyEcw_PLUS_%2FI8OVUK303Flw%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&motion=&docs=&adate=11/10/1997&civilCaseId=HLThx1q70lCMc%2FlrrjvCpg%3D%3D",
+      "captured_at": "2026-06-24T16:02:28.159Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155622651_01148:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155622651_01148/00012-p001-r006-case_detail-0037022_1997-01.html",
+      "html_sha256": "5995de51490abb04e751802a6688bdaaec61f4996803aeace904d8599d216db2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=CYpKyEcw_PLUS_%2FI8OVUK303Flw%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&motion=&docs=&adate=11/10/1997&civilCaseId=HLThx1q70lCMc%2FlrrjvCpg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155622651_01148:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155622651_01148/00013-p001-r006-appearances-0037022_1997-01.html",
+      "html_sha256": "dcecbd8167bbd45125d96956ad82d6e5134551e348b6213cbb0d083584fa901a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/10/1997&index=CYpKyEcw_PLUS_%2FI8OVUK303Flw%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&civilCaseId=HLThx1q70lCMc%2FlrrjvCpg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:mira:page:009",
