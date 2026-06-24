@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T16:00:05.667Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -64,11 +68,147 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "bc04210a149f600c0896010d9a366338733ccde1ea0fbd1318f4e9795f88307e",
+      "title": "U.S. BANK NATIONAL vs. NAVA, MERCEDES",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2016oct/40070653520141sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2016oct/40070653520141sciv.pdf",
+      "sha256": "bc04210a149f600c0896010d9a366338733ccde1ea0fbd1318f4e9795f88307e",
+      "bytes_len": 56242,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/bc/bc04210a149f600c0896010d9a366338733ccde1ea0fbd1318f4e9795f88307e.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "bc04210a149f600c0896010d9a366338733ccde1ea0fbd1318f4e9795f88307e.pdf",
+      "captured_at": "2026-06-24T16:00:05.667Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001",
+          "followup_capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001:capture:00056",
+          "response_capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001:capture:00056:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00056-p001-r022-case_detail-706535_2014-02.html",
+          "page_number": 1,
+          "source_row": 22,
+          "court": "Queens Supreme Court",
+          "year_filed": "2014",
+          "index_number": "706535/2014",
+          "index_display": "706535/2014",
+          "plaintiff_petitioner": "U.S. BANK NATIONAL",
+          "defendant_respondent": "NAVA, MERCEDES",
+          "link_ordinal": 1,
+          "link_text": "U.S. BANK NATIONAL vs. NAVA, MERCEDES",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2016oct/40070653520141sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00057-p001-r022-appearances-706535_2014-01.html",
+      "html_sha256": "d693c74f12b27ec09121058207d57cbf343a20cc1652a54429df45b2ffbd8c99",
+      "bytes_len": 14257,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/07/2022&index=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "captured_at": "2026-06-24T15:59:02.236Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00056-p001-r022-case_detail-706535_2014-01.html",
+      "html_sha256": "0b0c4336040198fe8d84a33a9301a2235538270e267f1710e7c6db0bfc351277",
+      "bytes_len": 11274,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&motion=M&docs=D&adate=04/07/2022&civilCaseId=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "captured_at": "2026-06-24T15:59:02.236Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00056-p001-r022-case_detail-706535_2014-02.html",
+      "html_sha256": "ed075c069575dc0e33c4a35e4afa4f6494393a648a59489e7fe3145ea0bb1104",
+      "bytes_len": 3810,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=R2hOL98eUA8sr93UwIkz2A%3D%3D&txtIndexNo=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&showMenu=no&isPreRji=&civilCase=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "captured_at": "2026-06-24T15:59:02.236Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00058-p001-r022-motions-706535_2014-01.html",
+      "html_sha256": "cdfbe6efb59362431513e52e849ce9510ef2d4ee90aea160c49ac7a77b634b6c",
+      "bytes_len": 9721,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "captured_at": "2026-06-24T15:59:02.236Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00056-p001-r022-case_detail-706535_2014-01.html",
+      "html_sha256": "0b0c4336040198fe8d84a33a9301a2235538270e267f1710e7c6db0bfc351277",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&motion=M&docs=D&adate=04/07/2022&civilCaseId=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001:capture:00056:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00056-p001-r022-case_detail-706535_2014-02.html",
+      "html_sha256": "ed075c069575dc0e33c4a35e4afa4f6494393a648a59489e7fe3145ea0bb1104",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=R2hOL98eUA8sr93UwIkz2A%3D%3D&txtIndexNo=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&showMenu=no&isPreRji=&civilCase=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001:capture:00057:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00057-p001-r022-appearances-706535_2014-01.html",
+      "html_sha256": "d693c74f12b27ec09121058207d57cbf343a20cc1652a54429df45b2ffbd8c99",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/07/2022&index=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155552135_01129:followup-page:001:capture:00058:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624155552135_01129/00058-p001-r022-motions-706535_2014-01.html",
+      "html_sha256": "cdfbe6efb59362431513e52e849ce9510ef2d4ee90aea160c49ac7a77b634b6c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=KD8wTTWoJeP3LdAw3Tnz%2Fw%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=C704G_PLUS_Qr7wDvXJ6byNEX%2Fg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624155552135_01129:document-byte:00003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/bc/bc04210a149f600c0896010d9a366338733ccde1ea0fbd1318f4e9795f88307e.pdf",
+      "sha256": "bc04210a149f600c0896010d9a366338733ccde1ea0fbd1318f4e9795f88307e",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2016oct/40070653520141sciv.pdf"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:nava:page:010",
