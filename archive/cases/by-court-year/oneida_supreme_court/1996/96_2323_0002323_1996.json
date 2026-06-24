@@ -14,8 +14,8 @@
   "case_type": "TAX CERTIORARI",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T22:01:31.911Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214826050_02708/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214826050_02708/00142-p001-r010-appearances-0002323_1996-01.html",
+      "html_sha256": "98c19c6f05005364ef93d99f6ce992d2a2c6cbba09010d6093ae2e2c8e88eb43",
+      "bytes_len": 4641,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/16/1996&index=TIRr3eyRCYz8_PLUS_o42y3dwvQ%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&civilCaseId=61ppoNJusXtnECDYH823BA%3D%3D",
+      "captured_at": "2026-06-24T22:01:31.911Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214826050_02708/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214826050_02708/00141-p001-r010-case_detail-0002323_1996-01.html",
+      "html_sha256": "7752a55840ce24f8d54a8b334fc67420bfbd04f42423f54b197a355bc1596ec9",
+      "bytes_len": 6583,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TIRr3eyRCYz8_PLUS_o42y3dwvQ%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&motion=&docs=&adate=12/16/1996&civilCaseId=61ppoNJusXtnECDYH823BA%3D%3D",
+      "captured_at": "2026-06-24T22:01:31.911Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214826050_02708:followup-page:001:capture:00141:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214826050_02708/00141-p001-r010-case_detail-0002323_1996-01.html",
+      "html_sha256": "7752a55840ce24f8d54a8b334fc67420bfbd04f42423f54b197a355bc1596ec9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TIRr3eyRCYz8_PLUS_o42y3dwvQ%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&motion=&docs=&adate=12/16/1996&civilCaseId=61ppoNJusXtnECDYH823BA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214826050_02708:followup-page:001:capture:00142:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214826050_02708/00142-p001-r010-appearances-0002323_1996-01.html",
+      "html_sha256": "98c19c6f05005364ef93d99f6ce992d2a2c6cbba09010d6093ae2e2c8e88eb43",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/16/1996&index=TIRr3eyRCYz8_PLUS_o42y3dwvQ%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&civilCaseId=61ppoNJusXtnECDYH823BA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:rome:page:008",

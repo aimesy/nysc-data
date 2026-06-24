@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T21:59:46.361Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214554747_02695/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214554747_02695/00190-p001-r019-appearances-0010632_2012-01.html",
+      "html_sha256": "59149c804afac66c64128b9a2f912e8e3bd914cb419f39a13993c6c5f442ec88",
+      "bytes_len": 5610,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/16/2013&index=0Fp378X4wfJd_PLUS_wTQ2eo6hQ%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&civilCaseId=JuYLqJax8343m_PLUS_dUHeLzdA%3D%3D",
+      "captured_at": "2026-06-24T21:59:46.361Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214554747_02695/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214554747_02695/00189-p001-r019-case_detail-0010632_2012-01.html",
+      "html_sha256": "ec058963f075302ed0bf9865bd1b06b13e28a4aa49dcf263180a2a7fbbafa420",
+      "bytes_len": 9365,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0Fp378X4wfJd_PLUS_wTQ2eo6hQ%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&motion=&docs=&adate=07/16/2013&civilCaseId=JuYLqJax8343m_PLUS_dUHeLzdA%3D%3D",
+      "captured_at": "2026-06-24T21:59:46.361Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214554747_02695:followup-page:001:capture:00189:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214554747_02695/00189-p001-r019-case_detail-0010632_2012-01.html",
+      "html_sha256": "ec058963f075302ed0bf9865bd1b06b13e28a4aa49dcf263180a2a7fbbafa420",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0Fp378X4wfJd_PLUS_wTQ2eo6hQ%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&motion=&docs=&adate=07/16/2013&civilCaseId=JuYLqJax8343m_PLUS_dUHeLzdA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214554747_02695:followup-page:001:capture:00190:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214554747_02695/00190-p001-r019-appearances-0010632_2012-01.html",
+      "html_sha256": "59149c804afac66c64128b9a2f912e8e3bd914cb419f39a13993c6c5f442ec88",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/16/2013&index=0Fp378X4wfJd_PLUS_wTQ2eo6hQ%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&civilCaseId=JuYLqJax8343m_PLUS_dUHeLzdA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:haye:page:009",
