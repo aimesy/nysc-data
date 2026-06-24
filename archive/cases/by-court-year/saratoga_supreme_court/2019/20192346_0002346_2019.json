@@ -14,8 +14,8 @@
   "case_type": "Tort-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T15:42:52.570Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154107085_00911/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154107085_00911/00005-p001-r002-appearances-0002346_2019-01.html",
+      "html_sha256": "a5285ae467e0bc3c35c212414c7316f46fe22e67ef9cb680b4d29866193471da",
+      "bytes_len": 5348,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/03/2021&index=KkNw1EGy9fYHIzJvuD1mMw%3D%3D&county=EYcSZrP0G6T2ylFktFNKkw%3D%3D&civilCaseId=5vyxA4NEDchr_PLUS_0epXhqBgg%3D%3D",
+      "captured_at": "2026-06-24T15:42:52.570Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154107085_00911/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154107085_00911/00004-p001-r002-case_detail-0002346_2019-01.html",
+      "html_sha256": "d198df77a416086d39cee6135198f766485f50dcf455d22eec1d257ebefb9ba0",
+      "bytes_len": 6774,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=KkNw1EGy9fYHIzJvuD1mMw%3D%3D&county=EYcSZrP0G6T2ylFktFNKkw%3D%3D&motion=&docs=&adate=02/03/2021&civilCaseId=5vyxA4NEDchr_PLUS_0epXhqBgg%3D%3D",
+      "captured_at": "2026-06-24T15:42:52.570Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154107085_00911:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154107085_00911/00004-p001-r002-case_detail-0002346_2019-01.html",
+      "html_sha256": "d198df77a416086d39cee6135198f766485f50dcf455d22eec1d257ebefb9ba0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=KkNw1EGy9fYHIzJvuD1mMw%3D%3D&county=EYcSZrP0G6T2ylFktFNKkw%3D%3D&motion=&docs=&adate=02/03/2021&civilCaseId=5vyxA4NEDchr_PLUS_0epXhqBgg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154107085_00911:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154107085_00911/00005-p001-r002-appearances-0002346_2019-01.html",
+      "html_sha256": "a5285ae467e0bc3c35c212414c7316f46fe22e67ef9cb680b4d29866193471da",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/03/2021&index=KkNw1EGy9fYHIzJvuD1mMw%3D%3D&county=EYcSZrP0G6T2ylFktFNKkw%3D%3D&civilCaseId=5vyxA4NEDchr_PLUS_0epXhqBgg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:burn:page:005",

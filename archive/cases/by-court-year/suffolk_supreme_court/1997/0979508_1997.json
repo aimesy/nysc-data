@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T15:43:12.825Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154139955_00922/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154139955_00922/00008-p001-r004-appearances-0979508_1997-01.html",
+      "html_sha256": "76e3a98a46d055c308e91d6cad7fd290a63fe0255246105a39315b00ac7771a0",
+      "bytes_len": 4692,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/20/1997&index=fVBZPUaMbLAohtDyNavSxg%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=WBEhaXLXoOEf8v5nRRuezg%3D%3D",
+      "captured_at": "2026-06-24T15:43:12.825Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154139955_00922/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154139955_00922/00007-p001-r004-case_detail-0979508_1997-01.html",
+      "html_sha256": "3ac83ffa8432d29c752655d324c0a946e42ae2e638c396e56c0dd00e64d109a1",
+      "bytes_len": 6173,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fVBZPUaMbLAohtDyNavSxg%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&motion=&docs=&adate=10/20/1997&civilCaseId=WBEhaXLXoOEf8v5nRRuezg%3D%3D",
+      "captured_at": "2026-06-24T15:43:12.825Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154139955_00922:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154139955_00922/00007-p001-r004-case_detail-0979508_1997-01.html",
+      "html_sha256": "3ac83ffa8432d29c752655d324c0a946e42ae2e638c396e56c0dd00e64d109a1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fVBZPUaMbLAohtDyNavSxg%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&motion=&docs=&adate=10/20/1997&civilCaseId=WBEhaXLXoOEf8v5nRRuezg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154139955_00922:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154139955_00922/00008-p001-r004-appearances-0979508_1997-01.html",
+      "html_sha256": "76e3a98a46d055c308e91d6cad7fd290a63fe0255246105a39315b00ac7771a0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/20/1997&index=fVBZPUaMbLAohtDyNavSxg%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=WBEhaXLXoOEf8v5nRRuezg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:holm:page:004",

@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T15:43:57.744Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154206064_00933/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154206064_00933/00024-p001-r009-appearances-0902060_1982-01.html",
+      "html_sha256": "0f0d7c8240a923a8a4ed7030b3af58d8e409f231b4f029ff57f6e0e4052be32e",
+      "bytes_len": 4573,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/19/1984&index=hVzgORh1PxkxpFaobuk4sQ%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&civilCaseId=Xne73WPLF8oF5CgkpZiDiw%3D%3D",
+      "captured_at": "2026-06-24T15:43:57.744Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154206064_00933/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154206064_00933/00023-p001-r009-case_detail-0902060_1982-01.html",
+      "html_sha256": "c1ffd1be938d5ac8da4276d861fed0ba6267f7e1e6288d16a004112d90a2d7a7",
+      "bytes_len": 6060,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=hVzgORh1PxkxpFaobuk4sQ%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&motion=&docs=&adate=12/19/1984&civilCaseId=Xne73WPLF8oF5CgkpZiDiw%3D%3D",
+      "captured_at": "2026-06-24T15:43:57.744Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154206064_00933:followup-page:001:capture:00023:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154206064_00933/00023-p001-r009-case_detail-0902060_1982-01.html",
+      "html_sha256": "c1ffd1be938d5ac8da4276d861fed0ba6267f7e1e6288d16a004112d90a2d7a7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=hVzgORh1PxkxpFaobuk4sQ%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&motion=&docs=&adate=12/19/1984&civilCaseId=Xne73WPLF8oF5CgkpZiDiw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154206064_00933:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154206064_00933/00024-p001-r009-appearances-0902060_1982-01.html",
+      "html_sha256": "0f0d7c8240a923a8a4ed7030b3af58d8e409f231b4f029ff57f6e0e4052be32e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/19/1984&index=hVzgORh1PxkxpFaobuk4sQ%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&civilCaseId=Xne73WPLF8oF5CgkpZiDiw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:sala:page:002",

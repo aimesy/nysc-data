@@ -14,8 +14,8 @@
   "case_type": "CITY-OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T15:45:40.462Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -64,11 +68,147 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "2d281533bde9e57c283a93001f2ec9f1d1be9f88801210f545ffc1c11679cd7e",
+      "title": "BARRY, KARL vs. SALA, PETER J.",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2005jun/30010276220011sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2005jun/30010276220011sciv.pdf",
+      "sha256": "2d281533bde9e57c283a93001f2ec9f1d1be9f88801210f545ffc1c11679cd7e",
+      "bytes_len": 49299,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/2d/2d281533bde9e57c283a93001f2ec9f1d1be9f88801210f545ffc1c11679cd7e.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "2d281533bde9e57c283a93001f2ec9f1d1be9f88801210f545ffc1c11679cd7e.pdf",
+      "captured_at": "2026-06-24T15:45:40.462Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001",
+          "followup_capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001:capture:00035",
+          "response_capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001:capture:00035:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00035-p001-r014-case_detail-0102762_2001-02.html",
+          "page_number": 1,
+          "source_row": 14,
+          "court": "New York Supreme Court",
+          "year_filed": "2004",
+          "index_number": "0102762/2001",
+          "index_display": "0102762/2001",
+          "plaintiff_petitioner": "BARRY, KARL",
+          "defendant_respondent": "SALA, PETER J.",
+          "link_ordinal": 1,
+          "link_text": "BARRY, KARL vs. SALA, PETER J.",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2005jun/30010276220011sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00036-p001-r014-appearances-0102762_2001-01.html",
+      "html_sha256": "1686b74ce20a32f9e7e0fe07e470e3868a54a2a3502998e98cff80d7fe274cc1",
+      "bytes_len": 5980,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/15/2005&index=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "captured_at": "2026-06-24T15:44:25.951Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00035-p001-r014-case_detail-0102762_2001-01.html",
+      "html_sha256": "077af99b8ed012f7685624783f073cf472d83ccc10f49cf3bd5d7ca3362a001f",
+      "bytes_len": 6154,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=03/15/2005&civilCaseId=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "captured_at": "2026-06-24T15:44:25.951Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00035-p001-r014-case_detail-0102762_2001-02.html",
+      "html_sha256": "ad41fd30e630ee98a74cdf4dd3ca6d400cdcc5d94a2a8737bc85eab4f25557af",
+      "bytes_len": 3748,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&showMenu=no&isPreRji=&civilCase=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "captured_at": "2026-06-24T15:44:25.951Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00037-p001-r014-motions-0102762_2001-01.html",
+      "html_sha256": "87eb622fb7a1afbac6bc79495611b42bfcfc99d4bfcffbbdb28e04fb8e22e474",
+      "bytes_len": 5452,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "captured_at": "2026-06-24T15:44:25.951Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001:capture:00035:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00035-p001-r014-case_detail-0102762_2001-01.html",
+      "html_sha256": "077af99b8ed012f7685624783f073cf472d83ccc10f49cf3bd5d7ca3362a001f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=03/15/2005&civilCaseId=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001:capture:00035:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00035-p001-r014-case_detail-0102762_2001-02.html",
+      "html_sha256": "ad41fd30e630ee98a74cdf4dd3ca6d400cdcc5d94a2a8737bc85eab4f25557af",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&showMenu=no&isPreRji=&civilCase=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001:capture:00036:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00036-p001-r014-appearances-0102762_2001-01.html",
+      "html_sha256": "1686b74ce20a32f9e7e0fe07e470e3868a54a2a3502998e98cff80d7fe274cc1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/15/2005&index=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154211328_00941:followup-page:001:capture:00037:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154211328_00941/00037-p001-r014-motions-0102762_2001-01.html",
+      "html_sha256": "87eb622fb7a1afbac6bc79495611b42bfcfc99d4bfcffbbdb28e04fb8e22e474",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=97EMcLo%2FpGcb0t5D8ZhKog%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=wg6ydB2MayyjZXuSbtWF5Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154211328_00941:document-byte:00006",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/2d/2d281533bde9e57c283a93001f2ec9f1d1be9f88801210f545ffc1c11679cd7e.pdf",
+      "sha256": "2d281533bde9e57c283a93001f2ec9f1d1be9f88801210f545ffc1c11679cd7e",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2005jun/30010276220011sciv.pdf"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:sala:page:010",
