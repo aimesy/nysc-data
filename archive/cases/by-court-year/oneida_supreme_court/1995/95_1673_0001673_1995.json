@@ -14,8 +14,8 @@
   "case_type": "MEDICAL/PODIATRIC MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T15:10:49.182Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624144847819_00872/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624144847819_00872/00014-p001-r007-appearances-0001673_1995-01.html",
+      "html_sha256": "2e2a503d7360d3191f467e6379e14630360cc4201a659e0edf9b2eec11f16c3d",
+      "bytes_len": 4709,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/25/1996&index=Xuy55mFgjHYJZ6lTI0hULw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&civilCaseId=ZKHwNZLIgcgFeIa6hCiHhA%3D%3D",
+      "captured_at": "2026-06-24T15:10:49.182Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624144847819_00872/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624144847819_00872/00013-p001-r007-case_detail-0001673_1995-01.html",
+      "html_sha256": "9859162c7304336f754f84d2b81703da92c2237f33d2710ec5ab124481426423",
+      "bytes_len": 7077,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Xuy55mFgjHYJZ6lTI0hULw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&motion=&docs=&adate=03/25/1996&civilCaseId=ZKHwNZLIgcgFeIa6hCiHhA%3D%3D",
+      "captured_at": "2026-06-24T15:10:49.182Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624144847819_00872:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624144847819_00872/00013-p001-r007-case_detail-0001673_1995-01.html",
+      "html_sha256": "9859162c7304336f754f84d2b81703da92c2237f33d2710ec5ab124481426423",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Xuy55mFgjHYJZ6lTI0hULw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&motion=&docs=&adate=03/25/1996&civilCaseId=ZKHwNZLIgcgFeIa6hCiHhA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 7,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624144847819_00872:followup-page:001:capture:00014:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624144847819_00872/00014-p001-r007-appearances-0001673_1995-01.html",
+      "html_sha256": "2e2a503d7360d3191f467e6379e14630360cc4201a659e0edf9b2eec11f16c3d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/25/1996&index=Xuy55mFgjHYJZ6lTI0hULw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&civilCaseId=ZKHwNZLIgcgFeIa6hCiHhA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 7,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624133507:rome:page:005",
