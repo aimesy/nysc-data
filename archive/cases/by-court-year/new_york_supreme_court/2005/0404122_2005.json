@@ -14,8 +14,8 @@
   "case_type": "CITY-OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:14:42.226Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -39,7 +43,7 @@
     "result_row_refs": [
       {
         "search_name": "whit",
-        "query_type": "party-search",
+        "query_type": "party-prefix",
         "source_file": "webcivil-party-search/results/whit.rows.ndjson",
         "source_page": 2,
         "source_row": 7,
@@ -64,16 +68,152 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "cdda6ee8efdd0f8b3ec87e3737b78031f7f1d0f507de6473fc5bcad7848e20ec",
+      "title": "ROSENBLATT, STACEY vs. RON-WHIT REALTY",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2007apr/30040412220051sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2007apr/30040412220051sciv.pdf",
+      "sha256": "cdda6ee8efdd0f8b3ec87e3737b78031f7f1d0f507de6473fc5bcad7848e20ec",
+      "bytes_len": 94154,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/cd/cdda6ee8efdd0f8b3ec87e3737b78031f7f1d0f507de6473fc5bcad7848e20ec.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "cdda6ee8efdd0f8b3ec87e3737b78031f7f1d0f507de6473fc5bcad7848e20ec.pdf",
+      "captured_at": "2026-06-24T20:14:42.226Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624172034:whit:followup-page:002",
+          "followup_capture_id": "20260624172034:whit:followup-page:002:capture:00075",
+          "response_capture_id": "20260624172034:whit:followup-page:002:capture:00075:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00075-p002-r007-case_detail-0404122_2005-02.html",
+          "page_number": 2,
+          "source_row": 7,
+          "court": "New York Supreme Court",
+          "year_filed": "2005",
+          "index_number": "0404122/2005",
+          "index_display": "0404122/2005",
+          "plaintiff_petitioner": "ROSENBLATT, STACEY",
+          "defendant_respondent": "RON-WHIT REALTY",
+          "link_ordinal": 1,
+          "link_text": "ROSENBLATT, STACEY vs. RON-WHIT REALTY",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2007apr/30040412220051sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00076-p002-r007-appearances-0404122_2005-01.html",
+      "html_sha256": "d1ca97960f3bb347eacd60ef54b4c48f2be38002662aa70a5b7685ae917f402f",
+      "bytes_len": 20182,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/16/2008&index=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "captured_at": "2026-06-24T20:13:49.981Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00075-p002-r007-case_detail-0404122_2005-01.html",
+      "html_sha256": "be0198bcc521c95814378cdfd5bde0044b1a3d4deb2ceced59568d2568a1a7f4",
+      "bytes_len": 7899,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=07/16/2008&civilCaseId=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "captured_at": "2026-06-24T20:13:49.981Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00075-p002-r007-case_detail-0404122_2005-02.html",
+      "html_sha256": "1d2531485debe7441a94cf34345baeadd2c22a043b48e60fee9164a2d4d6705e",
+      "bytes_len": 3756,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&showMenu=no&isPreRji=&civilCase=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "captured_at": "2026-06-24T20:13:49.981Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00077-p002-r007-motions-0404122_2005-01.html",
+      "html_sha256": "490d4c7c2079a4e7afaa2a658b40f0a9cb9b52da5f523156e684a9dbcf1ab87a",
+      "bytes_len": 5478,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "captured_at": "2026-06-24T20:13:49.981Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:whit:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/whit/page-002.html",
-      "html_sha256": "114fcfe2ff8c61e62d68df729aecd45da9dd8475173fc8a1a98ebe30ed151cbe",
+      "capture_id": "20260624172034:whit:followup-page:002:capture:00075:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00075-p002-r007-case_detail-0404122_2005-01.html",
+      "html_sha256": "be0198bcc521c95814378cdfd5bde0044b1a3d4deb2ceced59568d2568a1a7f4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=07/16/2008&civilCaseId=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 7,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:followup-page:002:capture:00075:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00075-p002-r007-case_detail-0404122_2005-02.html",
+      "html_sha256": "1d2531485debe7441a94cf34345baeadd2c22a043b48e60fee9164a2d4d6705e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&showMenu=no&isPreRji=&civilCase=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 7,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:followup-page:002:capture:00076:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00076-p002-r007-appearances-0404122_2005-01.html",
+      "html_sha256": "d1ca97960f3bb347eacd60ef54b4c48f2be38002662aa70a5b7685ae917f402f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/16/2008&index=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 7,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:followup-page:002:capture:00077:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00077-p002-r007-motions-0404122_2005-01.html",
+      "html_sha256": "490d4c7c2079a4e7afaa2a658b40f0a9cb9b52da5f523156e684a9dbcf1ab87a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=a1o2dpBWcopSIxgmxPx%2FDg%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=3QYyVUZUq7G5mso41ZALUA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 7,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:document-byte:00002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/cd/cdda6ee8efdd0f8b3ec87e3737b78031f7f1d0f507de6473fc5bcad7848e20ec.pdf",
+      "sha256": "cdda6ee8efdd0f8b3ec87e3737b78031f7f1d0f507de6473fc5bcad7848e20ec",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2007apr/30040412220051sciv.pdf"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/whit/page-002.html",
+      "html_sha256": "a30c9400ba5760af1156da97ea801f56a7a774eddcc657ae2d9b4cafad256e01",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 2,

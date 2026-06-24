@@ -14,8 +14,8 @@
   "case_type": "RP-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:14:05.904Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -39,7 +43,7 @@
     "result_row_refs": [
       {
         "search_name": "whit",
-        "query_type": "party-search",
+        "query_type": "party-prefix",
         "source_file": "webcivil-party-search/results/whit.rows.ndjson",
         "source_page": 3,
         "source_row": 5,
@@ -67,13 +71,83 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00138-p003-r005-appearances-0001328_2016-01.html",
+      "html_sha256": "73f617dae2d5ba2e21c07fb655b8a0b58b25ee61e6abaa31eca6a015e41af288",
+      "bytes_len": 8775,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/17/2016&index=w4kg_PLUS_coe1pZqnoboQfqFnw%3D%3D&county=yzMKsNIs9oYN%2FljLT7vSYw%3D%3D&civilCaseId=aN3micYfKU_PLUS_ISH8hw4KOyQ%3D%3D",
+      "captured_at": "2026-06-24T20:14:05.904Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00137-p003-r005-case_detail-0001328_2016-01.html",
+      "html_sha256": "32895fc37a370ee507e5656d8ae67794fbf85e27818a22be2aed01b4ce502146",
+      "bytes_len": 6707,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=w4kg_PLUS_coe1pZqnoboQfqFnw%3D%3D&county=yzMKsNIs9oYN%2FljLT7vSYw%3D%3D&motion=M&docs=&adate=11/17/2016&civilCaseId=aN3micYfKU_PLUS_ISH8hw4KOyQ%3D%3D",
+      "captured_at": "2026-06-24T20:14:05.904Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/whit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00139-p003-r005-motions-0001328_2016-01.html",
+      "html_sha256": "2d42b250072b003201e10ff02420a488459345551ffaafa79639825e0ba4d694",
+      "bytes_len": 6288,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=w4kg_PLUS_coe1pZqnoboQfqFnw%3D%3D&county=yzMKsNIs9oYN%2FljLT7vSYw%3D%3D&civilCaseId=aN3micYfKU_PLUS_ISH8hw4KOyQ%3D%3D",
+      "captured_at": "2026-06-24T20:14:05.904Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:whit:page:003",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/whit/page-003.html",
-      "html_sha256": "2a8d2f880f2481117df00b746c63fb2e2f91b31389a1d736c2de82e77612cfc4",
+      "capture_id": "20260624172034:whit:followup-page:003:capture:00137:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00137-p003-r005-case_detail-0001328_2016-01.html",
+      "html_sha256": "32895fc37a370ee507e5656d8ae67794fbf85e27818a22be2aed01b4ce502146",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=w4kg_PLUS_coe1pZqnoboQfqFnw%3D%3D&county=yzMKsNIs9oYN%2FljLT7vSYw%3D%3D&motion=M&docs=&adate=11/17/2016&civilCaseId=aN3micYfKU_PLUS_ISH8hw4KOyQ%3D%3D",
+      "page_number": 3,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:followup-page:003:capture:00138:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00138-p003-r005-appearances-0001328_2016-01.html",
+      "html_sha256": "73f617dae2d5ba2e21c07fb655b8a0b58b25ee61e6abaa31eca6a015e41af288",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/17/2016&index=w4kg_PLUS_coe1pZqnoboQfqFnw%3D%3D&county=yzMKsNIs9oYN%2FljLT7vSYw%3D%3D&civilCaseId=aN3micYfKU_PLUS_ISH8hw4KOyQ%3D%3D",
+      "page_number": 3,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:followup-page:003:capture:00139:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/whit/00139-p003-r005-motions-0001328_2016-01.html",
+      "html_sha256": "2d42b250072b003201e10ff02420a488459345551ffaafa79639825e0ba4d694",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=w4kg_PLUS_coe1pZqnoboQfqFnw%3D%3D&county=yzMKsNIs9oYN%2FljLT7vSYw%3D%3D&civilCaseId=aN3micYfKU_PLUS_ISH8hw4KOyQ%3D%3D",
+      "page_number": 3,
+      "table_row_number": 5,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:whit:page:003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/whit/page-003.html",
+      "html_sha256": "4653906a1fb8548dd24716e7f4df2f82d4f48bf210fbb845b13f0e1ae27a8548",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 3,
