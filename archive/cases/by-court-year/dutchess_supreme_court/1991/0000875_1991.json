@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-24T11:33:12.998Z",
+  "captured_at": "2026-06-24T20:26:49.873Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -31,7 +31,7 @@
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -41,8 +41,8 @@
     "result_row_refs": [
       {
         "search_name": "riva",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/riva.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/riva.rows.ndjson",
         "source_page": 2,
         "source_row": 19,
         "row_html_sha256": "c5822606cfbfcdf3955e6fa04df7eda178e9f21ff0e58834b6d855fbdf8430e0"
@@ -74,7 +74,7 @@
       "kind": "appearances",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624111939/riva/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624111939/riva/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624111939/riva/00111-p002-r019-appearances-0000875_1991-01.html",
       "html_sha256": "63e2729ed283f89d3109738d897e713070f10c4cb46124af43bab3f7e1d3a1e2",
       "bytes_len": 5366,
@@ -83,16 +83,40 @@
       "captured_at": "2026-06-24T11:33:12.998Z"
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/riva/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/riva/00111-p002-r019-appearances-0000875_1991-01.html",
+      "html_sha256": "63e2729ed283f89d3109738d897e713070f10c4cb46124af43bab3f7e1d3a1e2",
+      "bytes_len": 5366,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/17/1991&index=g3MpqLri7%2FM458y14%2FoKeQ%3D%3D&county=CjY7DCYciG6aMj%2Fjx5MbBA%3D%3D&civilCaseId=f5AI4U2ccczluNGw9Ma_PLUS_7w%3D%3D",
+      "captured_at": "2026-06-24T20:26:49.873Z"
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624111939/riva/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624111939/riva/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624111939/riva/00110-p002-r019-case_detail-0000875_1991-01.html",
       "html_sha256": "c8e6a4307923a44218bf252b3a53793b2aa51cb66cc299abcf2674f96d799c70",
       "bytes_len": 6177,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=g3MpqLri7%2FM458y14%2FoKeQ%3D%3D&county=CjY7DCYciG6aMj%2Fjx5MbBA%3D%3D&motion=&docs=&adate=06/17/1991&civilCaseId=f5AI4U2ccczluNGw9Ma_PLUS_7w%3D%3D",
       "captured_at": "2026-06-24T11:33:12.998Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/riva/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/riva/00110-p002-r019-case_detail-0000875_1991-01.html",
+      "html_sha256": "c8e6a4307923a44218bf252b3a53793b2aa51cb66cc299abcf2674f96d799c70",
+      "bytes_len": 6177,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=g3MpqLri7%2FM458y14%2FoKeQ%3D%3D&county=CjY7DCYciG6aMj%2Fjx5MbBA%3D%3D&motion=&docs=&adate=06/17/1991&civilCaseId=f5AI4U2ccczluNGw9Ma_PLUS_7w%3D%3D",
+      "captured_at": "2026-06-24T20:26:49.873Z"
     }
   ],
   "raw_refs": [
@@ -120,9 +144,31 @@
     },
     {
       "source_system": "webcivil",
-      "capture_id": "20260624111939:riva:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624111939/riva/page-002.html",
-      "html_sha256": "18700b47a5cf56a345e2ff8de5a211b4146096dbb07515a6a3e60d57ef58f020",
+      "capture_id": "20260624172034:riva:followup-page:002:capture:00110:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/riva/00110-p002-r019-case_detail-0000875_1991-01.html",
+      "html_sha256": "c8e6a4307923a44218bf252b3a53793b2aa51cb66cc299abcf2674f96d799c70",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=g3MpqLri7%2FM458y14%2FoKeQ%3D%3D&county=CjY7DCYciG6aMj%2Fjx5MbBA%3D%3D&motion=&docs=&adate=06/17/1991&civilCaseId=f5AI4U2ccczluNGw9Ma_PLUS_7w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:riva:followup-page:002:capture:00111:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/riva/00111-p002-r019-appearances-0000875_1991-01.html",
+      "html_sha256": "63e2729ed283f89d3109738d897e713070f10c4cb46124af43bab3f7e1d3a1e2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/17/1991&index=g3MpqLri7%2FM458y14%2FoKeQ%3D%3D&county=CjY7DCYciG6aMj%2Fjx5MbBA%3D%3D&civilCaseId=f5AI4U2ccczluNGw9Ma_PLUS_7w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:riva:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/riva/page-002.html",
+      "html_sha256": "71133c0a398e776dc84ed6af68bf72436ae31668651f68dc26962e523511d6e1",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 2,

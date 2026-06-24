@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:23:39.002Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "0001171/1997",
       "rome"
     ],
     "result_row_refs": [
       {
+        "search_name": "0001171/1997",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0001171_1997.rows.ndjson",
+        "source_page": 1,
+        "source_row": 9,
+        "row_html_sha256": "f78def4e7a432f1cebf7aff2ec4531906c4a2677dc72fb7420c42c391202fff6"
+      },
+      {
         "search_name": "rome",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/rome.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/rome.rows.ndjson",
         "source_page": 11,
         "source_row": 12,
         "row_html_sha256": "3c69d29a40ae891895ade9dcb737789940c6645517c39bb3611735df6a34a54a"
@@ -66,13 +78,71 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/0001171_1997/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/0001171_1997/00024-p001-r009-appearances-0001171_1997-01.html",
+      "html_sha256": "558080e4c5beff76407136c3711bd540710282fba32a297a9098d9ba614a040c",
+      "bytes_len": 4622,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/11/1997&index=o00flXPxzQjly0EB_PLUS_VrCRw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&civilCaseId=lDDpoUMg_PLUS_5b0hMfnaU748w%3D%3D",
+      "captured_at": "2026-06-24T20:23:39.002Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/0001171_1997/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/0001171_1997/00023-p001-r009-case_detail-0001171_1997-01.html",
+      "html_sha256": "281edd5d63a292dca5f474d6d0138912aa823ac902d91349f1da0bc851fc161a",
+      "bytes_len": 6486,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=o00flXPxzQjly0EB_PLUS_VrCRw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&motion=&docs=&adate=09/11/1997&civilCaseId=lDDpoUMg_PLUS_5b0hMfnaU748w%3D%3D",
+      "captured_at": "2026-06-24T20:23:39.002Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:rome:page:011",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/rome/page-011.html",
-      "html_sha256": "86cb70228a554826a0c4a213e4bd0aa00f86bac1c66fe06b9e2037f646e3bea5",
+      "capture_id": "20260624172034:0001171_1997:followup-page:001:capture:00023:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/0001171_1997/00023-p001-r009-case_detail-0001171_1997-01.html",
+      "html_sha256": "281edd5d63a292dca5f474d6d0138912aa823ac902d91349f1da0bc851fc161a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=o00flXPxzQjly0EB_PLUS_VrCRw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&motion=&docs=&adate=09/11/1997&civilCaseId=lDDpoUMg_PLUS_5b0hMfnaU748w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:0001171_1997:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/0001171_1997/00024-p001-r009-appearances-0001171_1997-01.html",
+      "html_sha256": "558080e4c5beff76407136c3711bd540710282fba32a297a9098d9ba614a040c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/11/1997&index=o00flXPxzQjly0EB_PLUS_VrCRw%3D%3D&county=FQSmlgowrVWi%2F6tbOSvD6Q%3D%3D&civilCaseId=lDDpoUMg_PLUS_5b0hMfnaU748w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:0001171_1997:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/0001171_1997/page-001.html",
+      "html_sha256": "05f73dfdea3c54fcf687b5302cf83c5d3b460ffc0a7eb5c71055dd6f5da3966d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 9,
+      "row_html_sha256": "f78def4e7a432f1cebf7aff2ec4531906c4a2677dc72fb7420c42c391202fff6"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:rome:page:011",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/rome/page-011.html",
+      "html_sha256": "05543e8eb16b3fc24a24b399f147a2c7e874af5b4b2a6a3fa9a6eae71ef22c37",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 11,

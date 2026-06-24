@@ -15,7 +15,7 @@
   "status": "DISPOSED",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-24T13:12:49.157Z",
+  "captured_at": "2026-06-24T20:28:59.209Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -31,7 +31,7 @@
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -41,8 +41,8 @@
     "result_row_refs": [
       {
         "search_name": "morg",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/morg.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/morg.rows.ndjson",
         "source_page": 1,
         "source_row": 1,
         "row_html_sha256": "c6d80c37024c674299b0c25b8d5b01a51edff026a04947032a76388f227bfceb"
@@ -74,7 +74,7 @@
       "kind": "appearances",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624131320/morg/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624131320/morg/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624131320/morg/00002-p001-r001-appearances-0701200_1996-01.html",
       "html_sha256": "294e24b6e09f0e4d4254d3259bac2f7c70f28e09d164c993b1d881f99110690d",
       "bytes_len": 4683,
@@ -83,16 +83,40 @@
       "captured_at": "2026-06-24T13:12:49.157Z"
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/morg/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/morg/00002-p001-r001-appearances-0701200_1996-01.html",
+      "html_sha256": "294e24b6e09f0e4d4254d3259bac2f7c70f28e09d164c993b1d881f99110690d",
+      "bytes_len": 4683,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/29/1996&index=wue3D53n3G2ejOW6B13ytg%3D%3D&county=aUAP7kX_PLUS_NwE2lV9IQ_PLUS_gvcA%3D%3D&civilCaseId=1qGAcBtpdzJBKnVQvA_PLUS_KMw%3D%3D",
+      "captured_at": "2026-06-24T20:28:59.209Z"
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624131320/morg/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624131320/morg/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624131320/morg/00001-p001-r001-case_detail-0701200_1996-01.html",
       "html_sha256": "0d094b349c15a9f675a8ac0a773315bf217f0584d6822943147e4318a1668b84",
       "bytes_len": 5717,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=wue3D53n3G2ejOW6B13ytg%3D%3D&county=aUAP7kX_PLUS_NwE2lV9IQ_PLUS_gvcA%3D%3D&motion=&docs=&adate=10/29/1996&civilCaseId=1qGAcBtpdzJBKnVQvA_PLUS_KMw%3D%3D",
       "captured_at": "2026-06-24T13:12:49.157Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/morg/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/morg/00001-p001-r001-case_detail-0701200_1996-01.html",
+      "html_sha256": "0d094b349c15a9f675a8ac0a773315bf217f0584d6822943147e4318a1668b84",
+      "bytes_len": 5717,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=wue3D53n3G2ejOW6B13ytg%3D%3D&county=aUAP7kX_PLUS_NwE2lV9IQ_PLUS_gvcA%3D%3D&motion=&docs=&adate=10/29/1996&civilCaseId=1qGAcBtpdzJBKnVQvA_PLUS_KMw%3D%3D",
+      "captured_at": "2026-06-24T20:28:59.209Z"
     }
   ],
   "raw_refs": [
@@ -120,9 +144,31 @@
     },
     {
       "source_system": "webcivil",
-      "capture_id": "20260624131320:morg:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624131320/morg/page-001.html",
-      "html_sha256": "8b0ea9df97e39a3b3531de2b14bed7ed1ba46b5af554b68e0ceb003fea9a1173",
+      "capture_id": "20260624172034:morg:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/morg/00001-p001-r001-case_detail-0701200_1996-01.html",
+      "html_sha256": "0d094b349c15a9f675a8ac0a773315bf217f0584d6822943147e4318a1668b84",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=wue3D53n3G2ejOW6B13ytg%3D%3D&county=aUAP7kX_PLUS_NwE2lV9IQ_PLUS_gvcA%3D%3D&motion=&docs=&adate=10/29/1996&civilCaseId=1qGAcBtpdzJBKnVQvA_PLUS_KMw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:morg:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/morg/00002-p001-r001-appearances-0701200_1996-01.html",
+      "html_sha256": "294e24b6e09f0e4d4254d3259bac2f7c70f28e09d164c993b1d881f99110690d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/29/1996&index=wue3D53n3G2ejOW6B13ytg%3D%3D&county=aUAP7kX_PLUS_NwE2lV9IQ_PLUS_gvcA%3D%3D&civilCaseId=1qGAcBtpdzJBKnVQvA_PLUS_KMw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:morg:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/morg/page-001.html",
+      "html_sha256": "01db76325a980747e916bd6f162d3403b864c8d0edbe459e68415d1ac185d91b",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "",
       "page_number": 1,

@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:41:59.833Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -39,8 +43,8 @@
     "result_row_refs": [
       {
         "search_name": "walt",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/walt.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/walt.rows.ndjson",
         "source_page": 5,
         "source_row": 18,
         "row_html_sha256": "6e53765a0f9a5309a3b213976fa498d81c4bec5f74d3a0b204888f184eeef071"
@@ -64,16 +68,152 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "096179d6b7dbf2e2d0249585bb1af1ab8e36a3a67352ba0bfeb1715107849794",
+      "title": "ORIX FINANCIAL SERVICES INC. vs. J-WALT CLEARING & GRADING LLC.",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2004jan/30010816220031sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2004jan/30010816220031sciv.pdf",
+      "sha256": "096179d6b7dbf2e2d0249585bb1af1ab8e36a3a67352ba0bfeb1715107849794",
+      "bytes_len": 118525,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/09/096179d6b7dbf2e2d0249585bb1af1ab8e36a3a67352ba0bfeb1715107849794.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "096179d6b7dbf2e2d0249585bb1af1ab8e36a3a67352ba0bfeb1715107849794.pdf",
+      "captured_at": "2026-06-24T20:41:59.833Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624172034:walt:followup-page:005",
+          "followup_capture_id": "20260624172034:walt:followup-page:005:capture:00291",
+          "response_capture_id": "20260624172034:walt:followup-page:005:capture:00291:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00291-p005-r018-case_detail-0108162_2003-02.html",
+          "page_number": 5,
+          "source_row": 18,
+          "court": "New York Supreme Court",
+          "year_filed": "2003",
+          "index_number": "0108162/2003",
+          "index_display": "0108162/2003",
+          "plaintiff_petitioner": "ORIX FINANCIAL SERVICES INC.",
+          "defendant_respondent": "J-WALT CLEARING & GRADING LLC.",
+          "link_ordinal": 1,
+          "link_text": "ORIX FINANCIAL SERVICES INC. vs. J-WALT CLEARING & GRADING LLC.",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2004jan/30010816220031sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/walt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00292-p005-r018-appearances-0108162_2003-01.html",
+      "html_sha256": "190544830dcde2436ecce9029e53c1310b7ff4e6b7fd0ef3d52cdc8208b56eed",
+      "bytes_len": 5998,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/18/2003&index=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "captured_at": "2026-06-24T20:28:29.119Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/walt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00291-p005-r018-case_detail-0108162_2003-01.html",
+      "html_sha256": "1dc540973a0369f9907ef59788f61286c09855c43b15e15490a1e73f69430753",
+      "bytes_len": 6477,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=11/18/2003&civilCaseId=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "captured_at": "2026-06-24T20:28:29.119Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/walt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00291-p005-r018-case_detail-0108162_2003-02.html",
+      "html_sha256": "3d8ec1cfaea89c7e1a63571f8d47cf8643a1c5d2a2f617b9d39fc13b19a36b96",
+      "bytes_len": 3781,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&showMenu=no&isPreRji=&civilCase=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "captured_at": "2026-06-24T20:28:29.119Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/walt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00293-p005-r018-motions-0108162_2003-01.html",
+      "html_sha256": "9af46e0245f476f69990c02f9c40be309aac02b72937500e92da24a464f19610",
+      "bytes_len": 5484,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "captured_at": "2026-06-24T20:28:29.119Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624160649:walt:page:005",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624160649/walt/page-005.html",
-      "html_sha256": "3f172a66406d58239909c489e602abc516e510f4f8f3767f85c48544a0d4c724",
+      "capture_id": "20260624172034:walt:followup-page:005:capture:00291:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00291-p005-r018-case_detail-0108162_2003-01.html",
+      "html_sha256": "1dc540973a0369f9907ef59788f61286c09855c43b15e15490a1e73f69430753",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=11/18/2003&civilCaseId=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "page_number": 5,
+      "table_row_number": 18,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:followup-page:005:capture:00291:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00291-p005-r018-case_detail-0108162_2003-02.html",
+      "html_sha256": "3d8ec1cfaea89c7e1a63571f8d47cf8643a1c5d2a2f617b9d39fc13b19a36b96",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&showMenu=no&isPreRji=&civilCase=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "page_number": 5,
+      "table_row_number": 18,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:followup-page:005:capture:00292:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00292-p005-r018-appearances-0108162_2003-01.html",
+      "html_sha256": "190544830dcde2436ecce9029e53c1310b7ff4e6b7fd0ef3d52cdc8208b56eed",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/18/2003&index=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "page_number": 5,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:followup-page:005:capture:00293:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00293-p005-r018-motions-0108162_2003-01.html",
+      "html_sha256": "9af46e0245f476f69990c02f9c40be309aac02b72937500e92da24a464f19610",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=BPytIJ6X0Rc7HfN44AHE9g%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=UhYJf87p1g6VzG18qoJVZA%3D%3D",
+      "page_number": 5,
+      "table_row_number": 18,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:document-byte:00006",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/09/096179d6b7dbf2e2d0249585bb1af1ab8e36a3a67352ba0bfeb1715107849794.pdf",
+      "sha256": "096179d6b7dbf2e2d0249585bb1af1ab8e36a3a67352ba0bfeb1715107849794",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2004jan/30010816220031sciv.pdf"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:page:005",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/walt/page-005.html",
+      "html_sha256": "07f462f8b25de484dc040cd2b388838189818c70107702ca17385eee052a65e9",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 5,

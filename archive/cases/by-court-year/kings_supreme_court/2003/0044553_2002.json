@@ -14,8 +14,8 @@
   "case_type": "OTHER TORTS NEGLIGENCE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:28:29.119Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,8 +41,8 @@
     "result_row_refs": [
       {
         "search_name": "walt",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/walt.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/walt.rows.ndjson",
         "source_page": 5,
         "source_row": 17,
         "row_html_sha256": "528a160392050c2ba58506d111461c7b5f6aaecf83b3feb8e80303934775528e"
@@ -66,13 +69,60 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/walt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00290-p005-r017-appearances-0044553_2002-01.html",
+      "html_sha256": "68f20462fb2cbde4f6778aed6b2ca1a554ec09fe61bcf74471b41aaaaa6d8ba5",
+      "bytes_len": 5357,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/2004&index=bAGrsgLERiumGWvFdwoi8A%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&civilCaseId=9p0GdEH21IvHk3FK1Uoo2A%3D%3D",
+      "captured_at": "2026-06-24T20:28:29.119Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/walt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00289-p005-r017-case_detail-0044553_2002-01.html",
+      "html_sha256": "074bde742e3201dde1e925693caa37d4e9bb9ab4f318bc67bc0549a0402a9e57",
+      "bytes_len": 6138,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bAGrsgLERiumGWvFdwoi8A%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&motion=&docs=&adate=01/14/2004&civilCaseId=9p0GdEH21IvHk3FK1Uoo2A%3D%3D",
+      "captured_at": "2026-06-24T20:28:29.119Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624160649:walt:page:005",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624160649/walt/page-005.html",
-      "html_sha256": "3f172a66406d58239909c489e602abc516e510f4f8f3767f85c48544a0d4c724",
+      "capture_id": "20260624172034:walt:followup-page:005:capture:00289:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00289-p005-r017-case_detail-0044553_2002-01.html",
+      "html_sha256": "074bde742e3201dde1e925693caa37d4e9bb9ab4f318bc67bc0549a0402a9e57",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bAGrsgLERiumGWvFdwoi8A%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&motion=&docs=&adate=01/14/2004&civilCaseId=9p0GdEH21IvHk3FK1Uoo2A%3D%3D",
+      "page_number": 5,
+      "table_row_number": 17,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:followup-page:005:capture:00290:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/walt/00290-p005-r017-appearances-0044553_2002-01.html",
+      "html_sha256": "68f20462fb2cbde4f6778aed6b2ca1a554ec09fe61bcf74471b41aaaaa6d8ba5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/2004&index=bAGrsgLERiumGWvFdwoi8A%3D%3D&county=czzKXdw79tRdfwKzAfrWQw%3D%3D&civilCaseId=9p0GdEH21IvHk3FK1Uoo2A%3D%3D",
+      "page_number": 5,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:walt:page:005",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/walt/page-005.html",
+      "html_sha256": "07f462f8b25de484dc040cd2b388838189818c70107702ca17385eee052a65e9",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 5,

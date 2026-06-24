@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:24:38.601Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,8 +41,8 @@
     "result_row_refs": [
       {
         "search_name": "herr",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/herr.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/herr.rows.ndjson",
         "source_page": 4,
         "source_row": 16,
         "row_html_sha256": "23d77e2f084d0d60b516a95798032e6e642aacf0b2f4f2dcc51a2ff60e5be7a3"
@@ -66,13 +69,60 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/herr/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/herr/00227-p004-r016-appearances-0004680_1998-01.html",
+      "html_sha256": "2f8936596f758e7590968326011c516574128ddf1e1b89ac74674cb9d470671d",
+      "bytes_len": 4665,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/1999&index=84334MYFPqKUoZme4kSwRw%3D%3D&county=5R1Ue1xGVaMcS_PLUS_cO45TgKQ%3D%3D&civilCaseId=5fW17EZuHdKc2fwhGBHuaw%3D%3D",
+      "captured_at": "2026-06-24T20:24:38.601Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/herr/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/herr/00226-p004-r016-case_detail-0004680_1998-01.html",
+      "html_sha256": "32f562f6b23cdeb38e3dfc42c394e4c256a2ee8546b552ec53563178c2aea586",
+      "bytes_len": 5604,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=84334MYFPqKUoZme4kSwRw%3D%3D&county=5R1Ue1xGVaMcS_PLUS_cO45TgKQ%3D%3D&motion=&docs=&adate=02/09/1999&civilCaseId=5fW17EZuHdKc2fwhGBHuaw%3D%3D",
+      "captured_at": "2026-06-24T20:24:38.601Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:herr:page:004",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/herr/page-004.html",
-      "html_sha256": "11f577c627f2efe72d7ebe3c60321ffdc0473380b447efa2bc0499492f4cd938",
+      "capture_id": "20260624172034:herr:followup-page:004:capture:00226:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/herr/00226-p004-r016-case_detail-0004680_1998-01.html",
+      "html_sha256": "32f562f6b23cdeb38e3dfc42c394e4c256a2ee8546b552ec53563178c2aea586",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=84334MYFPqKUoZme4kSwRw%3D%3D&county=5R1Ue1xGVaMcS_PLUS_cO45TgKQ%3D%3D&motion=&docs=&adate=02/09/1999&civilCaseId=5fW17EZuHdKc2fwhGBHuaw%3D%3D",
+      "page_number": 4,
+      "table_row_number": 16,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:herr:followup-page:004:capture:00227:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/herr/00227-p004-r016-appearances-0004680_1998-01.html",
+      "html_sha256": "2f8936596f758e7590968326011c516574128ddf1e1b89ac74674cb9d470671d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/1999&index=84334MYFPqKUoZme4kSwRw%3D%3D&county=5R1Ue1xGVaMcS_PLUS_cO45TgKQ%3D%3D&civilCaseId=5fW17EZuHdKc2fwhGBHuaw%3D%3D",
+      "page_number": 4,
+      "table_row_number": 16,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:herr:page:004",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/herr/page-004.html",
+      "html_sha256": "1847f0d22f691db63f273d0dcdeb1f052557f28fcfa405ae285a42db22ae8806",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 4,

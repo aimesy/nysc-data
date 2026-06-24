@@ -30,22 +30,31 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
+      "search_rows_seen": 2,
       "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
-      "riva"
+      "riva",
+      "thoma"
     ],
     "result_row_refs": [
       {
         "search_name": "riva",
-        "query_type": "party-search",
-        "source_file": "archive/webcivil/results/riva.rows.ndjson",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/riva.rows.ndjson",
         "source_page": 15,
         "source_row": 15,
         "row_html_sha256": "f8b1b0462b5eb4d530936f92c2f2b4c71c22c8c924625560a1b666a4782cab05"
+      },
+      {
+        "search_name": "thoma",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/thoma.rows.ndjson",
+        "source_page": 6,
+        "source_row": 18,
+        "row_html_sha256": "5cd2c8f6e155153dcc9d16cddb6bfdbcb9ea0bb9ac7b1ccbd5c071baf51ea06e"
       }
     ]
   },
@@ -74,7 +83,7 @@
       "kind": "appearances",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624122846/nysc_20260624125013583_00448/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624122846/nysc_20260624125013583_00448/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624122846/nysc_20260624125013583_00448/00049-p001-r015-appearances-321785_2020-01.html",
       "html_sha256": "bfdb562bdcacda56ce4255411893f506c120117d470ee007b2d8d6df6cc16dce",
       "bytes_len": 6067,
@@ -86,7 +95,7 @@
       "kind": "appearances",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624161652/nysc_20260624161838954_01343/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624161652/nysc_20260624161838954_01343/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624161652/nysc_20260624161838954_01343/00049-p001-r015-appearances-321785_2020-01.html",
       "html_sha256": "1e170a01874e2d29b62058f890e6391533275e58259c53c9d8c473ac0b530f2d",
       "bytes_len": 6125,
@@ -98,7 +107,7 @@
       "kind": "case-detail",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624122846/nysc_20260624125013583_00448/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624122846/nysc_20260624125013583_00448/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624122846/nysc_20260624125013583_00448/00048-p001-r015-case_detail-321785_2020-01.html",
       "html_sha256": "9bab0da6927a6e1c2b82b75314d950ae44a1c1e8569466f1f07274a491eccdc2",
       "bytes_len": 6186,
@@ -110,7 +119,7 @@
       "kind": "case-detail",
       "nested_kind": "",
       "ok": true,
-      "source_file": "archive/webcivil/case-followups/20260624161652/nysc_20260624161838954_01343/manifest.ndjson",
+      "source_file": "raw/webcivil/case-followups/20260624161652/nysc_20260624161838954_01343/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624161652/nysc_20260624161838954_01343/00048-p001-r015-case_detail-321785_2020-01.html",
       "html_sha256": "400b818a6f9cc2dda91f501b0912ab27a6135b586208484cc5a9af5e31c128cb",
       "bytes_len": 6244,
@@ -166,14 +175,25 @@
     },
     {
       "source_system": "webcivil",
-      "capture_id": "20260624111939:riva:page:015",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624111939/riva/page-015.html",
-      "html_sha256": "562e4e0fa6e045de24b09ac69b35d5e59a1d2baadf478e5ac8148779fed64162",
+      "capture_id": "20260624172034:riva:page:015",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/riva/page-015.html",
+      "html_sha256": "810a1f97cd3f1d6a542b33a79d0dce1abdeec2c9b40935e4a0a66a7d1fabe3c4",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 15,
       "table_row_number": 15,
       "row_html_sha256": "f8b1b0462b5eb4d530936f92c2f2b4c71c22c8c924625560a1b666a4782cab05"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:thoma:page:006",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/thoma/page-006.html",
+      "html_sha256": "7145745d438c6e0f44be476f22b018785087d70c68b4de271b62abfdd7a719b4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "",
+      "page_number": 6,
+      "table_row_number": 18,
+      "row_html_sha256": "5cd2c8f6e155153dcc9d16cddb6bfdbcb9ea0bb9ac7b1ccbd5c071baf51ea06e"
     }
   ]
 }
