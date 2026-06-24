@@ -14,18 +14,22 @@
   "case_type": null,
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": "2026-06-24T16:10:02.144Z",
+  "capture_status": "webcivil_partial",
+  "captured_at": "2026-06-24T22:32:51.958Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
       "expected_tabs": [],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 0,
-      "followup_responses_seen": 1
+      "followup_responses_seen": 5
     }
   },
   "discovery": {
@@ -49,10 +53,58 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "630072f0539bce1291872241b41dd269497075d3fddc2f448735465279f72a4f",
+      "title": "WATT, NOEL vs. CITY OF NEW YORK",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2014jan/3001007932013001sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2014jan/3001007932013001sciv.pdf",
+      "sha256": "630072f0539bce1291872241b41dd269497075d3fddc2f448735465279f72a4f",
+      "bytes_len": 289055,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/63/630072f0539bce1291872241b41dd269497075d3fddc2f448735465279f72a4f.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "630072f0539bce1291872241b41dd269497075d3fddc2f448735465279f72a4f.pdf",
+      "captured_at": "2026-06-24T22:32:51.958Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001",
+          "followup_capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00166",
+          "response_capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00166:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00166-p001-r005-case_detail-100793_2013-02.html",
+          "page_number": 1,
+          "source_row": 5,
+          "court": "New York Supreme Court",
+          "year_filed": "2013",
+          "index_number": "100793/2013",
+          "index_display": "100793/2013",
+          "plaintiff_petitioner": "WATT, NOEL",
+          "defendant_respondent": "CITY OF NEW YORK",
+          "link_ordinal": 1,
+          "link_text": "WATT, NOEL vs. CITY OF NEW YORK",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2014jan/3001007932013001sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
   "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00167-p001-r005-appearances-100793_2013-01.html",
+      "html_sha256": "03f61758789c2388e0ca67a4a0c3043761af7a3e5ad6ab08f06262ea396420c0",
+      "bytes_len": 8168,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/02/2013&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
+    },
     {
       "kind": "case-detail",
       "nested_kind": "",
@@ -64,6 +116,42 @@
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=10/02/2013&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
       "captured_at": "2026-06-24T16:10:02.144Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00166-p001-r005-case_detail-100793_2013-01.html",
+      "html_sha256": "07380d3dcefbe9527e6152150ad72f69946fe2d5f5659104a03f9183de2926d6",
+      "bytes_len": 6870,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=10/02/2013&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00166-p001-r005-case_detail-100793_2013-02.html",
+      "html_sha256": "9ac8207b2645e64fb20145ba0a667f34a7c47567e0fbbd17f5c899605ba1ad74",
+      "bytes_len": 3750,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=wwp5WzjRenClVnOkE36VnA%3D%3D&showMenu=no&isPreRji=&civilCase=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00168-p001-r005-motions-100793_2013-01.html",
+      "html_sha256": "eb13a07e10d950252c377fcc2ad12527e291ab3ce110386f4113769059aa5a50",
+      "bytes_len": 5484,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
     }
   ],
   "raw_refs": [
@@ -77,6 +165,57 @@
       "table_row_number": 5,
       "kind": "case-detail",
       "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00166:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00166-p001-r005-case_detail-100793_2013-01.html",
+      "html_sha256": "07380d3dcefbe9527e6152150ad72f69946fe2d5f5659104a03f9183de2926d6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=10/02/2013&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00166:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00166-p001-r005-case_detail-100793_2013-02.html",
+      "html_sha256": "9ac8207b2645e64fb20145ba0a667f34a7c47567e0fbbd17f5c899605ba1ad74",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=wwp5WzjRenClVnOkE36VnA%3D%3D&showMenu=no&isPreRji=&civilCase=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00167:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00167-p001-r005-appearances-100793_2013-01.html",
+      "html_sha256": "03f61758789c2388e0ca67a4a0c3043761af7a3e5ad6ab08f06262ea396420c0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/02/2013&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00168:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00168-p001-r005-motions-100793_2013-01.html",
+      "html_sha256": "eb13a07e10d950252c377fcc2ad12527e291ab3ce110386f4113769059aa5a50",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=wwp5WzjRenClVnOkE36VnA%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=OLv5t4zeJ3Kyu6XB8Cqp7A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:document-byte:00080",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/63/630072f0539bce1291872241b41dd269497075d3fddc2f448735465279f72a4f.pdf",
+      "sha256": "630072f0539bce1291872241b41dd269497075d3fddc2f448735465279f72a4f",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2014jan/3001007932013001sciv.pdf"
     }
   ]
 }

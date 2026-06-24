@@ -14,18 +14,22 @@
   "case_type": null,
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": "2026-06-24T16:10:18.509Z",
+  "capture_status": "webcivil_partial",
+  "captured_at": "2026-06-24T22:32:51.958Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
       "expected_tabs": [],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 0,
-      "followup_responses_seen": 3
+      "followup_responses_seen": 7
     }
   },
   "discovery": {
@@ -49,7 +53,43 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "962f8257ffdb25a095a439ef2b03c7c04dd0367324110ac7c3782fe35726690e",
+      "title": "GUASTAFERRO, ALICIA vs. THE WALT DISNEY COMPANY,",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2010mar/3006007212010001sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2010mar/3006007212010001sciv.pdf",
+      "sha256": "962f8257ffdb25a095a439ef2b03c7c04dd0367324110ac7c3782fe35726690e",
+      "bytes_len": 67565,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/96/962f8257ffdb25a095a439ef2b03c7c04dd0367324110ac7c3782fe35726690e.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "962f8257ffdb25a095a439ef2b03c7c04dd0367324110ac7c3782fe35726690e.pdf",
+      "captured_at": "2026-06-24T22:32:51.958Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001",
+          "followup_capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00133",
+          "response_capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00133:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00133-p001-r004-case_detail-0600721_2010-02.html",
+          "page_number": 1,
+          "source_row": 4,
+          "court": "New York Supreme Court",
+          "year_filed": "2010",
+          "index_number": "0600721/2010",
+          "index_display": "0600721/2010",
+          "plaintiff_petitioner": "GUASTAFERRO, ALICIA",
+          "defendant_respondent": "THE WALT DISNEY COMPANY,",
+          "link_ordinal": 1,
+          "link_text": "GUASTAFERRO, ALICIA vs. THE WALT DISNEY COMPANY,",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2010mar/3006007212010001sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
   "webcivil_followups": [
@@ -66,6 +106,18 @@
       "captured_at": "2026-06-24T16:10:18.509Z"
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00134-p001-r004-appearances-0600721_2010-01.html",
+      "html_sha256": "27fd9f207f4723c5ebd17919520bfebb110722432fe2a8f241ea252277841d8d",
+      "bytes_len": 12463,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/09/2011&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "ok": false,
@@ -78,6 +130,30 @@
       "captured_at": "2026-06-24T16:10:18.509Z"
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00133-p001-r004-case_detail-0600721_2010-01.html",
+      "html_sha256": "3641f66404518b77734f9b4da472032ebf7fa8a60dd63161cfe88b439a3839c1",
+      "bytes_len": 6469,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=03/09/2011&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00133-p001-r004-case_detail-0600721_2010-02.html",
+      "html_sha256": "73f23759b4285bd9aca44d47c1a7817f1cbc9df3f503a673e3c0559ac59ed2ab",
+      "bytes_len": 3768,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&showMenu=no&isPreRji=&civilCase=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "ok": false,
@@ -88,6 +164,18 @@
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
       "captured_at": "2026-06-24T16:10:18.509Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00135-p001-r004-motions-0600721_2010-01.html",
+      "html_sha256": "017f1ca3c50b3241d2603360ca9ce8ffd0c165fb8a6c4c57c93792ba321d5230",
+      "bytes_len": 6335,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "captured_at": "2026-06-24T21:56:25.854Z"
     }
   ],
   "raw_refs": [
@@ -123,6 +211,57 @@
       "table_row_number": 4,
       "kind": "motions",
       "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00133:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00133-p001-r004-case_detail-0600721_2010-01.html",
+      "html_sha256": "3641f66404518b77734f9b4da472032ebf7fa8a60dd63161cfe88b439a3839c1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=M&docs=D&adate=03/09/2011&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00133:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00133-p001-r004-case_detail-0600721_2010-02.html",
+      "html_sha256": "73f23759b4285bd9aca44d47c1a7817f1cbc9df3f503a673e3c0559ac59ed2ab",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&txtIndexNo=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&showMenu=no&isPreRji=&civilCase=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00134:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00134-p001-r004-appearances-0600721_2010-01.html",
+      "html_sha256": "27fd9f207f4723c5ebd17919520bfebb110722432fe2a8f241ea252277841d8d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/09/2011&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:followup-page:001:capture:00135:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/nysc_20260624214408890_02672/00135-p001-r004-motions-0600721_2010-01.html",
+      "html_sha256": "017f1ca3c50b3241d2603360ca9ce8ffd0c165fb8a6c4c57c93792ba321d5230",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=YVSXmIhX0IE3rbYibMVBeQ%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=55XjJ%2F3wsZOvc_PLUS_iaX5HYoA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:nysc_20260624214408890_02672:document-byte:00068",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/96/962f8257ffdb25a095a439ef2b03c7c04dd0367324110ac7c3782fe35726690e.pdf",
+      "sha256": "962f8257ffdb25a095a439ef2b03c7c04dd0367324110ac7c3782fe35726690e",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2010mar/3006007212010001sciv.pdf"
     }
   ]
 }
