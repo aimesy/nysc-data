@@ -14,8 +14,8 @@
   "case_type": "Tort-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T16:33:07.553Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -64,11 +68,147 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "93fb4541b68ef3f9d8303f03f814050c0106c09f7729202983551e00a9202f41",
+      "title": "HOWARD SIERS, AS EXECUTOR vs. FOREST MANOR CARE ETAL",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2018mar/40070263320148sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2018mar/40070263320148sciv.pdf",
+      "sha256": "93fb4541b68ef3f9d8303f03f814050c0106c09f7729202983551e00a9202f41",
+      "bytes_len": 36137,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/93/93fb4541b68ef3f9d8303f03f814050c0106c09f7729202983551e00a9202f41.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "93fb4541b68ef3f9d8303f03f814050c0106c09f7729202983551e00a9202f41.pdf",
+      "captured_at": "2026-06-24T16:33:07.553Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001",
+          "followup_capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001:capture:00046",
+          "response_capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001:capture:00046:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00046-p001-r016-case_detail-702633_2014-02.html",
+          "page_number": 1,
+          "source_row": 16,
+          "court": "Queens Supreme Court",
+          "year_filed": "2014",
+          "index_number": "702633/2014",
+          "index_display": "702633/2014",
+          "plaintiff_petitioner": "HOWARD SIERS, AS EXECUTOR",
+          "defendant_respondent": "FOREST MANOR CARE ETAL",
+          "link_ordinal": 1,
+          "link_text": "HOWARD SIERS, AS EXECUTOR vs. FOREST MANOR CARE ETAL",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2018mar/40070263320148sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00047-p001-r016-appearances-702633_2014-01.html",
+      "html_sha256": "6d08eac01e2c48fce6183c04ad45c8bdc6f914c8047bfb519c61e4092e0a1161",
+      "bytes_len": 34490,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2025&index=pqvzR19QZcLwYqsOktD4sA%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "captured_at": "2026-06-24T16:32:21.157Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00046-p001-r016-case_detail-702633_2014-01.html",
+      "html_sha256": "c26d8ed4973fddea40ddfb83f3dd747e52f54123a23523019153cb30abdc7759",
+      "bytes_len": 11041,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=pqvzR19QZcLwYqsOktD4sA%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&motion=M&docs=D&adate=05/07/2025&civilCaseId=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "captured_at": "2026-06-24T16:32:21.157Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00046-p001-r016-case_detail-702633_2014-02.html",
+      "html_sha256": "046d0a39e70cad2b460389bf1ffac45c100ef4552e20cb1aee35c4c5a518d360",
+      "bytes_len": 3825,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=R2hOL98eUA8sr93UwIkz2A%3D%3D&txtIndexNo=pqvzR19QZcLwYqsOktD4sA%3D%3D&showMenu=no&isPreRji=&civilCase=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "captured_at": "2026-06-24T16:32:21.157Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00048-p001-r016-motions-702633_2014-01.html",
+      "html_sha256": "ff8da2662c2c2be47acc0c96fbcf0682d04f0ca0cafe39883c6d74d57371a226",
+      "bytes_len": 15571,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=pqvzR19QZcLwYqsOktD4sA%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "captured_at": "2026-06-24T16:32:21.157Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00046-p001-r016-case_detail-702633_2014-01.html",
+      "html_sha256": "c26d8ed4973fddea40ddfb83f3dd747e52f54123a23523019153cb30abdc7759",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=pqvzR19QZcLwYqsOktD4sA%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&motion=M&docs=D&adate=05/07/2025&civilCaseId=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001:capture:00046:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00046-p001-r016-case_detail-702633_2014-02.html",
+      "html_sha256": "046d0a39e70cad2b460389bf1ffac45c100ef4552e20cb1aee35c4c5a518d360",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=R2hOL98eUA8sr93UwIkz2A%3D%3D&txtIndexNo=pqvzR19QZcLwYqsOktD4sA%3D%3D&showMenu=no&isPreRji=&civilCase=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001:capture:00047:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00047-p001-r016-appearances-702633_2014-01.html",
+      "html_sha256": "6d08eac01e2c48fce6183c04ad45c8bdc6f914c8047bfb519c61e4092e0a1161",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2025&index=pqvzR19QZcLwYqsOktD4sA%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163113522_01467:followup-page:001:capture:00048:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163113522_01467/00048-p001-r016-motions-702633_2014-01.html",
+      "html_sha256": "ff8da2662c2c2be47acc0c96fbcf0682d04f0ca0cafe39883c6d74d57371a226",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=pqvzR19QZcLwYqsOktD4sA%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=6RhZOfUHD50RfnodmIpFYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163113522_01467:document-byte:00006",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/93/93fb4541b68ef3f9d8303f03f814050c0106c09f7729202983551e00a9202f41.pdf",
+      "sha256": "93fb4541b68ef3f9d8303f03f814050c0106c09f7729202983551e00a9202f41",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2018mar/40070263320148sciv.pdf"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624162534:medi:page:008",

@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T16:32:09.399Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624162534/nysc_20260624163105623_01460/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163105623_01460/00020-p001-r009-appearances-0018106_1983-01.html",
+      "html_sha256": "44d58f9c78e451606d8eb51002e3e570aafe6ab6c8e1a724f1fde7d38193eef1",
+      "bytes_len": 4682,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/28/1986&index=tCHD8wwci885KVwP6jmvCQ%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=ySg7usnA9C8Jz7DLRDSSkA%3D%3D",
+      "captured_at": "2026-06-24T16:32:09.399Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624162534/nysc_20260624163105623_01460/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163105623_01460/00019-p001-r009-case_detail-0018106_1983-01.html",
+      "html_sha256": "f680cc7ef9e4b654055b25cfbcb2916395a9f7e127db0fa1c5364e403fa62cd4",
+      "bytes_len": 6180,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tCHD8wwci885KVwP6jmvCQ%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&motion=&docs=&adate=01/28/1986&civilCaseId=ySg7usnA9C8Jz7DLRDSSkA%3D%3D",
+      "captured_at": "2026-06-24T16:32:09.399Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163105623_01460:followup-page:001:capture:00019:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163105623_01460/00019-p001-r009-case_detail-0018106_1983-01.html",
+      "html_sha256": "f680cc7ef9e4b654055b25cfbcb2916395a9f7e127db0fa1c5364e403fa62cd4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tCHD8wwci885KVwP6jmvCQ%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&motion=&docs=&adate=01/28/1986&civilCaseId=ySg7usnA9C8Jz7DLRDSSkA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624162534:nysc_20260624163105623_01460:followup-page:001:capture:00020:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624162534/nysc_20260624163105623_01460/00020-p001-r009-appearances-0018106_1983-01.html",
+      "html_sha256": "44d58f9c78e451606d8eb51002e3e570aafe6ab6c8e1a724f1fde7d38193eef1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/28/1986&index=tCHD8wwci885KVwP6jmvCQ%3D%3D&county=R2hOL98eUA8sr93UwIkz2A%3D%3D&civilCaseId=ySg7usnA9C8Jz7DLRDSSkA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624162534:medi:page:001",
