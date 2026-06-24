@@ -14,8 +14,8 @@
   "case_type": "RP-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:58:58.763Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
+      "document_list_captured": true,
+      "pdf_captured": true,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
@@ -39,7 +43,7 @@
     "result_row_refs": [
       {
         "search_name": "torr",
-        "query_type": "party-search",
+        "query_type": "party-prefix",
         "source_file": "webcivil-party-search/results/torr.rows.ndjson",
         "source_page": 2,
         "source_row": 15,
@@ -64,16 +68,152 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "b2471711f7d6a07416955477fe191205656c6cc67b15e89e38efc6ff1501705b",
+      "title": "MORTGAGE ELECTRONIC vs. TORR, DONALD J.",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2014oct/5100324422012100sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2014oct/5100324422012100sciv.pdf",
+      "sha256": "b2471711f7d6a07416955477fe191205656c6cc67b15e89e38efc6ff1501705b",
+      "bytes_len": 744353,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/b2/b2471711f7d6a07416955477fe191205656c6cc67b15e89e38efc6ff1501705b.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "b2471711f7d6a07416955477fe191205656c6cc67b15e89e38efc6ff1501705b.pdf",
+      "captured_at": "2026-06-24T20:58:58.763Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624172034:torr:followup-page:002",
+          "followup_capture_id": "20260624172034:torr:followup-page:002:capture:00091",
+          "response_capture_id": "20260624172034:torr:followup-page:002:capture:00091:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00091-p002-r015-case_detail-32442_2012-02.html",
+          "page_number": 2,
+          "source_row": 15,
+          "court": "Suffolk Supreme Court",
+          "year_filed": "2014",
+          "index_number": "32442/2012",
+          "index_display": "32442/2012",
+          "plaintiff_petitioner": "MORTGAGE ELECTRONIC",
+          "defendant_respondent": "TORR, DONALD J.",
+          "link_ordinal": 1,
+          "link_text": "MORTGAGE ELECTRONIC vs. TORR, DONALD J.",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2014oct/5100324422012100sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/torr/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00092-p002-r015-appearances-32442_2012-01.html",
+      "html_sha256": "062e4c94d10d41c6d25137c717a14afba03e7b0e7b4af926e8041fd35c8b44a4",
+      "bytes_len": 6034,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/04/2015&index=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "captured_at": "2026-06-24T20:34:25.859Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/torr/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00091-p002-r015-case_detail-32442_2012-01.html",
+      "html_sha256": "b25494fe6970ac4b1b839e784f5a843dfa4aff12b62f743a711378631ac56788",
+      "bytes_len": 7379,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&motion=M&docs=D&adate=11/04/2015&civilCaseId=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "captured_at": "2026-06-24T20:34:25.859Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/torr/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00091-p002-r015-case_detail-32442_2012-02.html",
+      "html_sha256": "412f3f9305dc767e7d9c8b189db9230bf7577b42390313fa59e7da8cf9a4b181",
+      "bytes_len": 3758,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=3firpGsA4OY4TmskUwmtFw%3D%3D&txtIndexNo=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&showMenu=no&isPreRji=&civilCase=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "captured_at": "2026-06-24T20:34:25.859Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/torr/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00093-p002-r015-motions-32442_2012-01.html",
+      "html_sha256": "cf21a468bf7b8d93044dd6522a3592e644655e028ccab1fe71422d78b6d2913f",
+      "bytes_len": 5446,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "captured_at": "2026-06-24T20:34:25.859Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:torr:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/torr/page-002.html",
-      "html_sha256": "162e21d8ac95b619bc816f7219df7898cb9e31bd63c941ce780545f37529ebcc",
+      "capture_id": "20260624172034:torr:followup-page:002:capture:00091:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00091-p002-r015-case_detail-32442_2012-01.html",
+      "html_sha256": "b25494fe6970ac4b1b839e784f5a843dfa4aff12b62f743a711378631ac56788",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&motion=M&docs=D&adate=11/04/2015&civilCaseId=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 15,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:torr:followup-page:002:capture:00091:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00091-p002-r015-case_detail-32442_2012-02.html",
+      "html_sha256": "412f3f9305dc767e7d9c8b189db9230bf7577b42390313fa59e7da8cf9a4b181",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=3firpGsA4OY4TmskUwmtFw%3D%3D&txtIndexNo=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&showMenu=no&isPreRji=&civilCase=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 15,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:torr:followup-page:002:capture:00092:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00092-p002-r015-appearances-32442_2012-01.html",
+      "html_sha256": "062e4c94d10d41c6d25137c717a14afba03e7b0e7b4af926e8041fd35c8b44a4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/04/2015&index=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:torr:followup-page:002:capture:00093:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/torr/00093-p002-r015-motions-32442_2012-01.html",
+      "html_sha256": "cf21a468bf7b8d93044dd6522a3592e644655e028ccab1fe71422d78b6d2913f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Zn9nxptG3kYR_PLUS_Q5JcbgQlQ%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=DImzmaDhOkJVDVFzstNkTA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 15,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:torr:document-byte:00008",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/b2/b2471711f7d6a07416955477fe191205656c6cc67b15e89e38efc6ff1501705b.pdf",
+      "sha256": "b2471711f7d6a07416955477fe191205656c6cc67b15e89e38efc6ff1501705b",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2014oct/5100324422012100sciv.pdf"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:torr:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/torr/page-002.html",
+      "html_sha256": "c1ff3a6625a11702c01f36ca023811fee10a6e1f7063c27b460eef5f72af40c7",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 2,
