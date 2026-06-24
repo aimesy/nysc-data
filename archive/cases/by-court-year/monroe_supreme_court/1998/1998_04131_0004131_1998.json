@@ -14,8 +14,8 @@
   "case_type": "CONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T15:45:23.304Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154325546_00964/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154325546_00964/00058-p001-r025-appearances-0004131_1998-01.html",
+      "html_sha256": "94ef0b19a6935249d91bad76f665d0150a672d79ee5ea103a5f3f66f387ad241",
+      "bytes_len": 5409,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/02/1998&index=a7dDDr0fGZaW6zkNaughVg%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&civilCaseId=QUnY8IILCgs0N3ulpgyuog%3D%3D",
+      "captured_at": "2026-06-24T15:45:23.304Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624150907/nysc_20260624154325546_00964/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154325546_00964/00057-p001-r025-case_detail-0004131_1998-01.html",
+      "html_sha256": "ef7a519550534cce11ffdbf8c8fa87ecac0489c1c3a6915543ad3209458a5fd1",
+      "bytes_len": 6111,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=a7dDDr0fGZaW6zkNaughVg%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&motion=&docs=&adate=06/02/1998&civilCaseId=QUnY8IILCgs0N3ulpgyuog%3D%3D",
+      "captured_at": "2026-06-24T15:45:23.304Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154325546_00964:followup-page:001:capture:00057:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154325546_00964/00057-p001-r025-case_detail-0004131_1998-01.html",
+      "html_sha256": "ef7a519550534cce11ffdbf8c8fa87ecac0489c1c3a6915543ad3209458a5fd1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=a7dDDr0fGZaW6zkNaughVg%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&motion=&docs=&adate=06/02/1998&civilCaseId=QUnY8IILCgs0N3ulpgyuog%3D%3D",
+      "page_number": 1,
+      "table_row_number": 25,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624150907:nysc_20260624154325546_00964:followup-page:001:capture:00058:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624150907/nysc_20260624154325546_00964/00058-p001-r025-appearances-0004131_1998-01.html",
+      "html_sha256": "94ef0b19a6935249d91bad76f665d0150a672d79ee5ea103a5f3f66f387ad241",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/02/1998&index=a7dDDr0fGZaW6zkNaughVg%3D%3D&county=nCDct1N_PLUS_2bZfTzPjUY1WaA%3D%3D&civilCaseId=QUnY8IILCgs0N3ulpgyuog%3D%3D",
+      "page_number": 1,
+      "table_row_number": 25,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624150907:tran:page:011",
