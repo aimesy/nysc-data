@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T17:14:10.673Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,7 +41,7 @@
     "result_row_refs": [
       {
         "search_name": "watt",
-        "query_type": "party-search",
+        "query_type": "party-prefix",
         "source_file": "webcivil-party-search/results/watt.rows.ndjson",
         "source_page": 5,
         "source_row": 20,
@@ -66,13 +69,60 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624171057/watt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624171057/watt/00293-p005-r020-appearances-0307807_1997-01.html",
+      "html_sha256": "37b88b109343a555e1a2594b4517e9b1838152954670301e06e8c78dae1ae9f9",
+      "bytes_len": 4687,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/1998&index=rVMSQPZDleuiTw81yUT1zg%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&civilCaseId=%2Fo%2FwBUt1l9kQ5qAytqmL3A%3D%3D",
+      "captured_at": "2026-06-24T17:14:10.673Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624171057/watt/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624171057/watt/00292-p005-r020-case_detail-0307807_1997-01.html",
+      "html_sha256": "38299e6906fd1984fe881c8f108c1949268864573bd5e5587f7670e0b3311a29",
+      "bytes_len": 5679,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=rVMSQPZDleuiTw81yUT1zg%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&motion=&docs=&adate=01/14/1998&civilCaseId=%2Fo%2FwBUt1l9kQ5qAytqmL3A%3D%3D",
+      "captured_at": "2026-06-24T17:14:10.673Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624160649:watt:page:005",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624160649/watt/page-005.html",
-      "html_sha256": "310ee393553cdc38258bbaf4aab4608cb737200ff7e79da0827f6b4ad6b65ad0",
+      "capture_id": "20260624171057:watt:followup-page:005:capture:00292:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624171057/watt/00292-p005-r020-case_detail-0307807_1997-01.html",
+      "html_sha256": "38299e6906fd1984fe881c8f108c1949268864573bd5e5587f7670e0b3311a29",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=rVMSQPZDleuiTw81yUT1zg%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&motion=&docs=&adate=01/14/1998&civilCaseId=%2Fo%2FwBUt1l9kQ5qAytqmL3A%3D%3D",
+      "page_number": 5,
+      "table_row_number": 20,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624171057:watt:followup-page:005:capture:00293:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624171057/watt/00293-p005-r020-appearances-0307807_1997-01.html",
+      "html_sha256": "37b88b109343a555e1a2594b4517e9b1838152954670301e06e8c78dae1ae9f9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/1998&index=rVMSQPZDleuiTw81yUT1zg%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&civilCaseId=%2Fo%2FwBUt1l9kQ5qAytqmL3A%3D%3D",
+      "page_number": 5,
+      "table_row_number": 20,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624171057:watt:page:005",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624171057/watt/page-005.html",
+      "html_sha256": "1a1bba0a1ef15580889f33b04126c183a6597ebe13240eb8385fe1258b581ca0",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
       "lane": "",
       "page_number": 5,
