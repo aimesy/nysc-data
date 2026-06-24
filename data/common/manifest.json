@@ -1,7 +1,7 @@
 {
   "case_schema": "court-case-archive/v1",
   "collection": "nysc",
-  "generated_at": "2026-06-24T20:06:53.295496Z",
+  "generated_at": "2026-06-24T20:45:12.303190Z",
   "inputs": {
     "case_directory_manifest": "archive/case-directory/manifest.json",
     "case_shards": 24340,
@@ -129,7 +129,8 @@
         "is_primary",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/case_identifiers.ndjson",
+      "ndjson_shard_index_path": "data/common/shards/case_identifiers/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "parquet_path": "data/common/case_identifiers.parquet",
       "rows": 24340
     },
@@ -159,7 +160,8 @@
         "raw_ref_count",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/cases.ndjson",
+      "ndjson_shard_index_path": "data/common/shards/cases/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "parquet_path": "data/common/cases.parquet",
       "rows": 24340
     },
@@ -225,7 +227,8 @@
         "raw_ref_uid",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/documents.ndjson",
+      "ndjson_shard_index_path": "data/common/shards/documents/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "parquet_path": "data/common/documents.parquet",
       "rows": 1421
     },
@@ -260,7 +263,8 @@
         "display_role",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/parties.ndjson",
+      "ndjson_shard_index_path": "data/common/shards/parties/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "parquet_path": "data/common/parties.parquet",
       "rows": 48273
     },
@@ -282,7 +286,8 @@
         "table_row_number",
         "source_specific_json"
       ],
-      "ndjson_omitted_reason": "omitted because the current sidecar exceeds GitHub's normal per-file limit; use Parquet",
+      "ndjson_shard_index_path": "data/common/shards/raw_refs/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "parquet_path": "data/common/raw_refs.parquet",
       "rows": 122541
     },
