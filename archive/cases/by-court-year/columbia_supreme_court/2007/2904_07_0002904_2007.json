@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:32:37.988Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -39,7 +43,7 @@
     "result_row_refs": [
       {
         "search_name": "robi",
-        "query_type": "party-search",
+        "query_type": "party-prefix",
         "source_file": "webcivil-party-search/results/robi.rows.ndjson",
         "source_page": 1,
         "source_row": 17,
@@ -67,13 +71,83 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/robi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00045-p001-r017-appearances-0002904_2007-01.html",
+      "html_sha256": "673abe3d43cdcd084fbc4d51cef1f18ca2c80404071acd58558dd2d8e08f5ca6",
+      "bytes_len": 19868,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/21/2009&index=%2F1_PLUS_LcBWsIBCOuhQ%2FCcO4sQ%3D%3D&county=XAlIXwcy31c2Q5OLXA8Ifw%3D%3D&civilCaseId=yKV2buyQdGDZqXfPbsHTeg%3D%3D",
+      "captured_at": "2026-06-24T20:32:37.988Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/robi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00044-p001-r017-case_detail-0002904_2007-01.html",
+      "html_sha256": "df03cf4e95c3b062d6391e6a77f1e4c1b25a17be498422bdabf3707c668baaa9",
+      "bytes_len": 6860,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2F1_PLUS_LcBWsIBCOuhQ%2FCcO4sQ%3D%3D&county=XAlIXwcy31c2Q5OLXA8Ifw%3D%3D&motion=M&docs=&adate=05/21/2009&civilCaseId=yKV2buyQdGDZqXfPbsHTeg%3D%3D",
+      "captured_at": "2026-06-24T20:32:37.988Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/robi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00046-p001-r017-motions-0002904_2007-01.html",
+      "html_sha256": "f44039d5b600930a0e4866354c88dd5038493482da14ace74296fefbf5a376fe",
+      "bytes_len": 8735,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2F1_PLUS_LcBWsIBCOuhQ%2FCcO4sQ%3D%3D&county=XAlIXwcy31c2Q5OLXA8Ifw%3D%3D&civilCaseId=yKV2buyQdGDZqXfPbsHTeg%3D%3D",
+      "captured_at": "2026-06-24T20:32:37.988Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:robi:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/robi/page-001.html",
-      "html_sha256": "e944892838fd2d95496ebe7f9825f7f50c298157a4b430ffde32a5ec3719a898",
+      "capture_id": "20260624172034:robi:followup-page:001:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00044-p001-r017-case_detail-0002904_2007-01.html",
+      "html_sha256": "df03cf4e95c3b062d6391e6a77f1e4c1b25a17be498422bdabf3707c668baaa9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2F1_PLUS_LcBWsIBCOuhQ%2FCcO4sQ%3D%3D&county=XAlIXwcy31c2Q5OLXA8Ifw%3D%3D&motion=M&docs=&adate=05/21/2009&civilCaseId=yKV2buyQdGDZqXfPbsHTeg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:robi:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00045-p001-r017-appearances-0002904_2007-01.html",
+      "html_sha256": "673abe3d43cdcd084fbc4d51cef1f18ca2c80404071acd58558dd2d8e08f5ca6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/21/2009&index=%2F1_PLUS_LcBWsIBCOuhQ%2FCcO4sQ%3D%3D&county=XAlIXwcy31c2Q5OLXA8Ifw%3D%3D&civilCaseId=yKV2buyQdGDZqXfPbsHTeg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:robi:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00046-p001-r017-motions-0002904_2007-01.html",
+      "html_sha256": "f44039d5b600930a0e4866354c88dd5038493482da14ace74296fefbf5a376fe",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2F1_PLUS_LcBWsIBCOuhQ%2FCcO4sQ%3D%3D&county=XAlIXwcy31c2Q5OLXA8Ifw%3D%3D&civilCaseId=yKV2buyQdGDZqXfPbsHTeg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:robi:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/robi/page-001.html",
+      "html_sha256": "70340477d33298b111eafd47e8406213082aaa0d933bbc1516c15440b0f0f47c",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "",
       "page_number": 1,

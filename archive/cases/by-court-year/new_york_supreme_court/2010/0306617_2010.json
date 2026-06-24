@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T20:32:37.988Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,7 +41,7 @@
     "result_row_refs": [
       {
         "search_name": "robi",
-        "query_type": "party-search",
+        "query_type": "party-prefix",
         "source_file": "webcivil-party-search/results/robi.rows.ndjson",
         "source_page": 1,
         "source_row": 25,
@@ -66,13 +69,60 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/robi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00065-p001-r025-appearances-0306617_2010-01.html",
+      "html_sha256": "46401adcf31982a14c8a438c63a36c491620a63a2182e78a395d0919a3c82e1f",
+      "bytes_len": 4653,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/28/2010&index=A4MArSCRNz0tDsE9BAUB0Q%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=84PSIkYW7OZ0uywbtVU6mw%3D%3D",
+      "captured_at": "2026-06-24T20:32:37.988Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624172034/robi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00064-p001-r025-case_detail-0306617_2010-01.html",
+      "html_sha256": "c1570b3fc5118b9781a0f9839168956b2e9e3a903c694a191ed0cc0ca3ba5fd7",
+      "bytes_len": 5278,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=A4MArSCRNz0tDsE9BAUB0Q%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=&docs=&adate=07/28/2010&civilCaseId=84PSIkYW7OZ0uywbtVU6mw%3D%3D",
+      "captured_at": "2026-06-24T20:32:37.988Z"
+    }
+  ],
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624133507:robi:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624133507/robi/page-001.html",
-      "html_sha256": "e944892838fd2d95496ebe7f9825f7f50c298157a4b430ffde32a5ec3719a898",
+      "capture_id": "20260624172034:robi:followup-page:001:capture:00064:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00064-p001-r025-case_detail-0306617_2010-01.html",
+      "html_sha256": "c1570b3fc5118b9781a0f9839168956b2e9e3a903c694a191ed0cc0ca3ba5fd7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=A4MArSCRNz0tDsE9BAUB0Q%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&motion=&docs=&adate=07/28/2010&civilCaseId=84PSIkYW7OZ0uywbtVU6mw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 25,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:robi:followup-page:001:capture:00065:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624172034/robi/00065-p001-r025-appearances-0306617_2010-01.html",
+      "html_sha256": "46401adcf31982a14c8a438c63a36c491620a63a2182e78a395d0919a3c82e1f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/28/2010&index=A4MArSCRNz0tDsE9BAUB0Q%3D%3D&county=1sqE8o1xQlRdDFYPesOEFQ%3D%3D&civilCaseId=84PSIkYW7OZ0uywbtVU6mw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 25,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624172034:robi:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624172034/robi/page-001.html",
+      "html_sha256": "70340477d33298b111eafd47e8406213082aaa0d933bbc1516c15440b0f0f47c",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "",
       "page_number": 1,
