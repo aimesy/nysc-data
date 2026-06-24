@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T22:44:26.632Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,17 +24,22 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
-      "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "document_list_captured": true,
+      "pdf_captured": true,
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
-      "cred"
+      "cred",
+      "unio"
     ],
     "result_row_refs": [
       {
@@ -44,6 +49,14 @@
         "source_page": 6,
         "source_row": 17,
         "row_html_sha256": "cb196573fbf1f8e95d474b3c13d709d1be2e453dd83da4d24c9063e23d516477"
+      },
+      {
+        "search_name": "unio",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/unio.rows.ndjson",
+        "source_page": 2,
+        "source_row": 19,
+        "row_html_sha256": "388cbe0ed367500f45e71b0b8a5c3682305d054c5413b5128e0a1b2c9ea0dc0f"
       }
     ]
   },
@@ -64,11 +77,147 @@
   "calendar": [],
   "docket_entries": [],
   "motions": [],
-  "documents": [],
+  "documents": [
+    {
+      "source_system": "webcivil",
+      "document_id": "a044b2548faced99eb72afd02ac4d132a7c28f4fb54cec769b20cf1fd75cdb6d",
+      "title": "DITECH FINANCIAL LLC vs. NIEMCZYK, MICHELLE",
+      "availability": "captured",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2015jun/5100251732011100sciv.pdf",
+      "final_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2015jun/5100251732011100sciv.pdf",
+      "sha256": "a044b2548faced99eb72afd02ac4d132a7c28f4fb54cec769b20cf1fd75cdb6d",
+      "bytes_len": 99719,
+      "content_type": "application/pdf",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/a0/a044b2548faced99eb72afd02ac4d132a7c28f4fb54cec769b20cf1fd75cdb6d.pdf",
+      "storage_backend": null,
+      "release_tag": null,
+      "asset_name": "a044b2548faced99eb72afd02ac4d132a7c28f4fb54cec769b20cf1fd75cdb6d.pdf",
+      "captured_at": "2026-06-24T22:44:26.632Z",
+      "source_refs": [
+        {
+          "followup_page_capture_id": "20260624214956:unio:followup-page:002",
+          "followup_capture_id": "20260624214956:unio:followup-page:002:capture:00113",
+          "response_capture_id": "20260624214956:unio:followup-page:002:capture:00113:response:02",
+          "response_raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00113-p002-r019-case_detail-25173_2011-02.html",
+          "page_number": 2,
+          "source_row": 19,
+          "court": "Suffolk Supreme Court",
+          "year_filed": "2012",
+          "index_number": "25173/2011",
+          "index_display": "25173/2011",
+          "plaintiff_petitioner": "DITECH FINANCIAL LLC",
+          "defendant_respondent": "NIEMCZYK, MICHELLE",
+          "link_ordinal": 1,
+          "link_text": "DITECH FINANCIAL LLC vs. NIEMCZYK, MICHELLE",
+          "link_onclick": "openPDF('http://decisions.courts.state.ny.us/fcas/fcas_docs/2015jun/5100251732011100sciv.pdf')"
+        }
+      ]
+    }
+  ],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/unio/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00114-p002-r019-appearances-25173_2011-01.html",
+      "html_sha256": "07911042df0a769326aa26a5302bf3ad30fefca589285c3d1c000028d94d746b",
+      "bytes_len": 13161,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/05/2020&index=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "captured_at": "2026-06-24T21:51:30.704Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/unio/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00113-p002-r019-case_detail-25173_2011-01.html",
+      "html_sha256": "03533d84f2ce8cb67aef2fc8a9cd8bea942791610aafafce009570d437c87010",
+      "bytes_len": 8536,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&motion=M&docs=D&adate=03/05/2020&civilCaseId=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "captured_at": "2026-06-24T21:51:30.704Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/unio/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00113-p002-r019-case_detail-25173_2011-02.html",
+      "html_sha256": "87683aa84d981feb786616eb262a4f765a45baecfbaece47053553bd7d5fbdff",
+      "bytes_len": 3762,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=3firpGsA4OY4TmskUwmtFw%3D%3D&txtIndexNo=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&showMenu=no&isPreRji=&civilCase=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "captured_at": "2026-06-24T21:51:30.704Z"
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/unio/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00115-p002-r019-motions-25173_2011-01.html",
+      "html_sha256": "bc93e15c6fa765645713cc199b4484ecc76898318a1897f024e230e2c5e3645e",
+      "bytes_len": 8028,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "captured_at": "2026-06-24T21:51:30.704Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:unio:followup-page:002:capture:00113:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00113-p002-r019-case_detail-25173_2011-01.html",
+      "html_sha256": "03533d84f2ce8cb67aef2fc8a9cd8bea942791610aafafce009570d437c87010",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&motion=M&docs=D&adate=03/05/2020&civilCaseId=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:unio:followup-page:002:capture:00113:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00113-p002-r019-case_detail-25173_2011-02.html",
+      "html_sha256": "87683aa84d981feb786616eb262a4f765a45baecfbaece47053553bd7d5fbdff",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=3firpGsA4OY4TmskUwmtFw%3D%3D&txtIndexNo=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&showMenu=no&isPreRji=&civilCase=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "case-detail",
+      "nested_kind": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:unio:followup-page:002:capture:00114:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00114-p002-r019-appearances-25173_2011-01.html",
+      "html_sha256": "07911042df0a769326aa26a5302bf3ad30fefca589285c3d1c000028d94d746b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/05/2020&index=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:unio:followup-page:002:capture:00115:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/unio/00115-p002-r019-motions-25173_2011-01.html",
+      "html_sha256": "bc93e15c6fa765645713cc199b4484ecc76898318a1897f024e230e2c5e3645e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lnFNAu4wYs3rKtmDZVcBWw%3D%3D&county=3firpGsA4OY4TmskUwmtFw%3D%3D&civilCaseId=0zSo2vz4dT8RyZeJG%2F%2FpzA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "motions",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:unio:document-byte:00004",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/a0/a044b2548faced99eb72afd02ac4d132a7c28f4fb54cec769b20cf1fd75cdb6d.pdf",
+      "sha256": "a044b2548faced99eb72afd02ac4d132a7c28f4fb54cec769b20cf1fd75cdb6d",
+      "source_url": "https://decisions.courts.state.ny.us/fcas/fcas_docs/2015jun/5100251732011100sciv.pdf"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:cred:page:006",
@@ -79,6 +228,17 @@
       "page_number": 6,
       "table_row_number": 17,
       "row_html_sha256": "cb196573fbf1f8e95d474b3c13d709d1be2e453dd83da4d24c9063e23d516477"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:unio:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624214956/unio/page-002.html",
+      "html_sha256": "ba601f4f69027d5378f3dd92e11e3430d978314be727d2503952883d4ed1f301",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "",
+      "page_number": 2,
+      "table_row_number": 19,
+      "row_html_sha256": "388cbe0ed367500f45e71b0b8a5c3682305d054c5413b5128e0a1b2c9ea0dc0f"
     }
   ]
 }

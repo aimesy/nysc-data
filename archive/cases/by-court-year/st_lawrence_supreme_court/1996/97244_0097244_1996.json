@@ -14,8 +14,8 @@
   "case_type": "Foreclosure Conf Ineligible",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-24T21:51:23.926Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "commiss"
+      "commiss",
+      "donn"
     ],
     "result_row_refs": [
       {
@@ -43,6 +47,14 @@
         "source_page": 17,
         "source_row": 13,
         "row_html_sha256": "85bef02530839e1b8a427bddbd15144cedaeabcc89847cc457e36f3f47fa8bd0"
+      },
+      {
+        "search_name": "donn",
+        "query_type": "party-prefix",
+        "source_file": "webcivil-party-search/results/donn.rows.ndjson",
+        "source_page": 3,
+        "source_row": 18,
+        "row_html_sha256": "708a59380aead3dc78163f44b1d733a988a0edb999a21c0e5fd296f05b88b3ab"
       }
     ]
   },
@@ -66,8 +78,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/donn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/donn/00173-p003-r018-appearances-0097244_1996-01.html",
+      "html_sha256": "c73e9576bcdb9ac2aaaccd9e7609543b98571cc35265a8a556ac5aeca4758234",
+      "bytes_len": 4651,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/07/1996&index=RZX1mphtg2plWZBb7QtfEQ%3D%3D&county=x3Ck6WmByCQtD7mH1cFKCw%3D%3D&civilCaseId=enP5goJK7vM28%2FFR2etwkQ%3D%3D",
+      "captured_at": "2026-06-24T21:51:23.926Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260624214956/donn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/donn/00172-p003-r018-case_detail-0097244_1996-01.html",
+      "html_sha256": "72c6d6bf2090705f7917da8b7d1968441f8f8a1c6c92fdcaec2afcebd006cd40",
+      "bytes_len": 6172,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=RZX1mphtg2plWZBb7QtfEQ%3D%3D&county=x3Ck6WmByCQtD7mH1cFKCw%3D%3D&motion=&docs=&adate=06/07/1996&civilCaseId=enP5goJK7vM28%2FFR2etwkQ%3D%3D",
+      "captured_at": "2026-06-24T21:51:23.926Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:donn:followup-page:003:capture:00172:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/donn/00172-p003-r018-case_detail-0097244_1996-01.html",
+      "html_sha256": "72c6d6bf2090705f7917da8b7d1968441f8f8a1c6c92fdcaec2afcebd006cd40",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=RZX1mphtg2plWZBb7QtfEQ%3D%3D&county=x3Ck6WmByCQtD7mH1cFKCw%3D%3D&motion=&docs=&adate=06/07/1996&civilCaseId=enP5goJK7vM28%2FFR2etwkQ%3D%3D",
+      "page_number": 3,
+      "table_row_number": 18,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:donn:followup-page:003:capture:00173:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260624214956/donn/00173-p003-r018-appearances-0097244_1996-01.html",
+      "html_sha256": "c73e9576bcdb9ac2aaaccd9e7609543b98571cc35265a8a556ac5aeca4758234",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/07/1996&index=RZX1mphtg2plWZBb7QtfEQ%3D%3D&county=x3Ck6WmByCQtD7mH1cFKCw%3D%3D&civilCaseId=enP5goJK7vM28%2FFR2etwkQ%3D%3D",
+      "page_number": 3,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:commiss:page:017",
@@ -78,6 +137,17 @@
       "page_number": 17,
       "table_row_number": 13,
       "row_html_sha256": "85bef02530839e1b8a427bddbd15144cedaeabcc89847cc457e36f3f47fa8bd0"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260624214956:donn:page:003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624214956/donn/page-003.html",
+      "html_sha256": "7045e01e5f853f5760103335bad343e1da6be0c8480958ee9e49ae679bb00517",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "",
+      "page_number": 3,
+      "table_row_number": 18,
+      "row_html_sha256": "708a59380aead3dc78163f44b1d733a988a0edb999a21c0e5fd296f05b88b3ab"
     }
   ]
 }
