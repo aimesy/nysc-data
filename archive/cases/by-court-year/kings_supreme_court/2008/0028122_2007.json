@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIALS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-25T06:20:09.227Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260625041459/nysc_20260624224558429_03481/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558429_03481/00043-p001-r018-appearances-0028122_2007-01.html",
+      "html_sha256": "9329ee8f7d50858656749f6dfee9b29be737f9271dbdb315486bcfa6aa6f0ff0",
+      "bytes_len": 10071,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:20:09.227Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260625041459/nysc_20260624224558429_03481/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558429_03481/00042-p001-r018-case_detail-0028122_2007-01.html",
+      "html_sha256": "a6ba6c977b7a173ad9ae63d301acecba3ef685c0aba9014120dd9fe57f76edd8",
+      "bytes_len": 10071,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:20:09.227Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260625041459:nysc_20260624224558429_03481:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558429_03481/00042-p001-r018-case_detail-0028122_2007-01.html",
+      "html_sha256": "a6ba6c977b7a173ad9ae63d301acecba3ef685c0aba9014120dd9fe57f76edd8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260625041459:nysc_20260624224558429_03481:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558429_03481/00043-p001-r018-appearances-0028122_2007-01.html",
+      "html_sha256": "9329ee8f7d50858656749f6dfee9b29be737f9271dbdb315486bcfa6aa6f0ff0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:thanh:page:009",

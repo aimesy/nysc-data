@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-25T06:20:12.992Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -66,8 +69,55 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260625041459/nysc_20260624224558428_03478/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558428_03478/00054-p001-r023-appearances-0010439_2004-01.html",
+      "html_sha256": "946a671322bff3107b8aa4a799e86089bf800e0accb11b0a9aba4128551d9b10",
+      "bytes_len": 10071,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:20:12.992Z"
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260625041459/nysc_20260624224558428_03478/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558428_03478/00053-p001-r023-case_detail-0010439_2004-01.html",
+      "html_sha256": "57948c1a6af631b4517456db7ed94dbde6fbdc2d82a3600e30c555170a5526b4",
+      "bytes_len": 10071,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:20:12.992Z"
+    }
+  ],
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260625041459:nysc_20260624224558428_03478:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558428_03478/00053-p001-r023-case_detail-0010439_2004-01.html",
+      "html_sha256": "57948c1a6af631b4517456db7ed94dbde6fbdc2d82a3600e30c555170a5526b4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 23,
+      "kind": "case-detail",
+      "nested_kind": ""
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260625041459:nysc_20260624224558428_03478:followup-page:001:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624224558428_03478/00054-p001-r023-appearances-0010439_2004-01.html",
+      "html_sha256": "946a671322bff3107b8aa4a799e86089bf800e0accb11b0a9aba4128551d9b10",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 23,
+      "kind": "appearances",
+      "nested_kind": ""
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:thanh:page:006",
