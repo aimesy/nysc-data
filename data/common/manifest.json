@@ -1,11 +1,25 @@
 {
+  "capabilities": {
+    "attorneys": false,
+    "calendar": false,
+    "canonical_case_json": true,
+    "case_directory_parity": true,
+    "decisions_orders": false,
+    "docket_entries": false,
+    "documents": true,
+    "motions": false,
+    "parties": true,
+    "representation": false
+  },
   "case_schema": "court-case-archive/v1",
   "collection": "nysc",
-  "generated_at": "2026-06-24T20:45:12.303190Z",
+  "generated_at": "2026-06-30T11:42:11.392625Z",
   "inputs": {
+    "case_directory_cases": 68310,
+    "case_directory_generated_at": "2026-06-30T11:37:43.694Z",
     "case_directory_manifest": "archive/case-directory/manifest.json",
-    "case_shards": 24340,
-    "document_index_rows": 1421,
+    "case_shards": 68310,
+    "document_index_rows": 22565,
     "frontier_ledgers": [
       "ledgers/webcivil-party-search-frontier.latest.ndjson",
       "ledgers/webcivil-party-search-frontier.observations.ndjson"
@@ -13,7 +27,7 @@
   },
   "jurisdiction": "ny",
   "limitations": [
-    "docket_entries, motions, calendar, attorneys, and representation are empty until WebCivil follow-up HTML parsers flatten popup bodies.",
+    "docket_entries, motions, calendar, attorneys, and representation are populated only when canonical case JSON contains normalized child arrays. Search-row firms and next appearances are marked in source_specific_json as low-confidence WebCivil hints.",
     "documents are release-backed WebCivil decision/order PDFs where available; NYSCEF document metadata is a later source profile.",
     "raw HTML and PDF bytes are not embedded in common tables; rows link to raw refs and release/object metadata."
   ],
@@ -34,16 +48,26 @@
   },
   "source_system": "webcivil",
   "summary": {
+    "attorneys": 0,
+    "barriers": 0,
+    "calendar": 0,
+    "capture_runs": 9531,
     "capture_status_counts": {
-      "search_row_only": 2555,
-      "webcivil_docket_complete": 15775,
-      "webcivil_partial": 6010
+      "search_row_only": 46970,
+      "webcivil_docket_complete": 20119,
+      "webcivil_partial": 1221
     },
-    "cases": 24340,
-    "courts": 91,
-    "documents": 1421,
-    "raw_refs": 122541,
-    "search_frontier_rows": 2208
+    "case_identifiers": 68310,
+    "cases": 68310,
+    "courts": 105,
+    "decisions_orders": 0,
+    "docket_entries": 0,
+    "documents": 77669,
+    "motions": 0,
+    "parties": 135248,
+    "raw_refs": 480345,
+    "representation": 0,
+    "search_frontier": 9531
   },
   "tables": {
     "attorneys": {
@@ -57,8 +81,8 @@
         "role",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/attorneys.ndjson",
-      "parquet_path": "data/common/attorneys.parquet",
+      "ndjson_shard_index_path": "data/common/shards/attorneys/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "rows": 0
     },
     "barriers": {
@@ -77,7 +101,6 @@
         "source_specific_json"
       ],
       "ndjson_path": "data/common/barriers.ndjson",
-      "parquet_path": "data/common/barriers.parquet",
       "rows": 0
     },
     "calendar": {
@@ -93,8 +116,8 @@
         "raw_ref_uid",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/calendar.ndjson",
-      "parquet_path": "data/common/calendar.parquet",
+      "ndjson_shard_index_path": "data/common/shards/calendar/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "rows": 0
     },
     "capture_runs": {
@@ -114,8 +137,7 @@
         "source_specific_json"
       ],
       "ndjson_path": "data/common/capture_runs.ndjson",
-      "parquet_path": "data/common/capture_runs.parquet",
-      "rows": 2208
+      "rows": 9531
     },
     "case_identifiers": {
       "columns": [
@@ -131,8 +153,7 @@
       ],
       "ndjson_shard_index_path": "data/common/shards/case_identifiers/manifest.json",
       "ndjson_shard_strategy": "case_uid:court-year",
-      "parquet_path": "data/common/case_identifiers.parquet",
-      "rows": 24340
+      "rows": 68310
     },
     "cases": {
       "columns": [
@@ -162,8 +183,7 @@
       ],
       "ndjson_shard_index_path": "data/common/shards/cases/manifest.json",
       "ndjson_shard_strategy": "case_uid:court-year",
-      "parquet_path": "data/common/cases.parquet",
-      "rows": 24340
+      "rows": 68310
     },
     "courts": {
       "columns": [
@@ -178,8 +198,28 @@
         "source_specific_json"
       ],
       "ndjson_path": "data/common/courts.ndjson",
-      "parquet_path": "data/common/courts.parquet",
-      "rows": 91
+      "rows": 105
+    },
+    "decisions_orders": {
+      "columns": [
+        "decision_uid",
+        "case_uid",
+        "collection",
+        "source_system",
+        "decision_id",
+        "decision_date",
+        "title",
+        "text",
+        "motion_sequence",
+        "document_uid",
+        "sha256",
+        "source_url",
+        "raw_ref_uid",
+        "source_specific_json"
+      ],
+      "ndjson_shard_index_path": "data/common/shards/decisions_orders/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
+      "rows": 0
     },
     "docket_entries": {
       "columns": [
@@ -200,8 +240,8 @@
         "raw_ref_uid",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/docket_entries.ndjson",
-      "parquet_path": "data/common/docket_entries.parquet",
+      "ndjson_shard_index_path": "data/common/shards/docket_entries/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "rows": 0
     },
     "documents": {
@@ -229,8 +269,7 @@
       ],
       "ndjson_shard_index_path": "data/common/shards/documents/manifest.json",
       "ndjson_shard_strategy": "case_uid:court-year",
-      "parquet_path": "data/common/documents.parquet",
-      "rows": 1421
+      "rows": 77669
     },
     "motions": {
       "columns": [
@@ -248,8 +287,8 @@
         "raw_ref_uid",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/motions.ndjson",
-      "parquet_path": "data/common/motions.parquet",
+      "ndjson_shard_index_path": "data/common/shards/motions/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "rows": 0
     },
     "parties": {
@@ -265,8 +304,7 @@
       ],
       "ndjson_shard_index_path": "data/common/shards/parties/manifest.json",
       "ndjson_shard_strategy": "case_uid:court-year",
-      "parquet_path": "data/common/parties.parquet",
-      "rows": 48273
+      "rows": 135248
     },
     "raw_refs": {
       "columns": [
@@ -288,8 +326,7 @@
       ],
       "ndjson_shard_index_path": "data/common/shards/raw_refs/manifest.json",
       "ndjson_shard_strategy": "case_uid:court-year",
-      "parquet_path": "data/common/raw_refs.parquet",
-      "rows": 122541
+      "rows": 480345
     },
     "representation": {
       "columns": [
@@ -302,8 +339,8 @@
         "role",
         "source_specific_json"
       ],
-      "ndjson_path": "data/common/representation.ndjson",
-      "parquet_path": "data/common/representation.parquet",
+      "ndjson_shard_index_path": "data/common/shards/representation/manifest.json",
+      "ndjson_shard_strategy": "case_uid:court-year",
       "rows": 0
     },
     "search_frontier": {
@@ -328,8 +365,7 @@
         "source_specific_json"
       ],
       "ndjson_path": "data/common/search_frontier.ndjson",
-      "parquet_path": "data/common/search_frontier.parquet",
-      "rows": 2208
+      "rows": 9531
     }
   }
 }
