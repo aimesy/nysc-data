@@ -15,7 +15,7 @@
   "status": "Stayed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-30T16:28:58.068Z",
+  "captured_at": "2026-07-01T02:59:58.590Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -25,13 +25,15 @@
       ],
       "captured_tabs": [
         "appearances",
-        "case-detail"
+        "assigned-judge",
+        "case-detail",
+        "motions"
       ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 12
+      "followup_responses_seen": 22
     }
   },
   "discovery": {
@@ -61,10 +63,492 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
-  "docket_entries": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "BORCHERT & LASPINA, P.C.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "Law Offices of Richard Schoenberg",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "BORCHERT & LASPINA, P.C.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-01.html",
+      "html_sha256": "e5e24a1c6eab65197268a8c0f4c6e0d41f928f6451238f930623e781276a6f85",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "ZAGER, JORDAN",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "BORCHERT & LASPINA, P.C.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "DIAZ, BRAYAN ETAL",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "Law Offices of Richard Schoenberg",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "ZAGER, JORDAN",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "BORCHERT & LASPINA, P.C.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-01.html",
+      "html_sha256": "e5e24a1c6eab65197268a8c0f4c6e0d41f928f6451238f930623e781276a6f85",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "05/09/2017",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "Dufficy, Hon. Timothy J.",
+      "raw_text": "05/09/2017",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-02.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-06.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-01.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-03.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-02.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-05.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-01.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "appearance_date": "05/09/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Stay",
+      "part": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "judicial_officer": "Dufficy, Hon. Timothy J. Preliminary Conference Part",
+      "remarks": "FICA (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-03.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    }
+  ],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-02.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/24/2017",
+      "title": "Assigned Judge",
+      "text": "Dufficy, Hon. Timothy J.",
+      "event_type": "assigned-judge",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-04.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-06.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/24/2017",
+      "title": "Assigned Judge",
+      "text": "Dufficy, Hon. Timothy J.",
+      "event_type": "assigned-judge",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-08.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-01.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-03.html",
+      "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-02.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/24/2017",
+      "title": "Assigned Judge",
+      "text": "Dufficy, Hon. Timothy J.",
+      "event_type": "assigned-judge",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-03.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-05.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/24/2017",
+      "title": "Assigned Judge",
+      "text": "Dufficy, Hon. Timothy J.",
+      "event_type": "assigned-judge",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-06.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-01.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/09/2017",
+      "title": "Conversion-Other - Stay",
+      "text": "05/09/2017 | Conversion-Other | No | None | Stay | Dufficy, Hon. Timothy J. Preliminary Conference Part | FICA (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-03.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -73,6 +557,7 @@
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-01.html",
@@ -80,11 +565,16 @@
       "bytes_len": 4640,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F09%2F2017&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-03.html",
@@ -92,11 +582,50 @@
       "bytes_len": 4640,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/09/2017&index=lH_PLUS_5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-01.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "bytes_len": 4698,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F09%2F2017&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-03.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "bytes_len": 4698,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/09/2017&index=lH_PLUS_5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-02.html",
@@ -104,11 +633,16 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     },
     {
       "kind": "appearances",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-04.html",
@@ -116,11 +650,50 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-02.html",
+      "html_sha256": "5c62c5ff49d502feb7c3efc9a1a0aadaef261c9f9c36b7867c307e4004457513",
+      "bytes_len": 3245,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-04.html",
+      "html_sha256": "5c62c5ff49d502feb7c3efc9a1a0aadaef261c9f9c36b7867c307e4004457513",
+      "bytes_len": 3245,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-01.html",
@@ -128,11 +701,17 @@
       "bytes_len": 6721,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05%2F09%2F2017&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-05.html",
@@ -140,11 +719,53 @@
       "bytes_len": 6721,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lH_PLUS_5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05/09/2017&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-01.html",
+      "html_sha256": "18e49013633273ad5a6a71f77b6f08908ce0ca95f05a102c3301e300c09b2e50",
+      "bytes_len": 6779,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05%2F09%2F2017&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-04.html",
+      "html_sha256": "18e49013633273ad5a6a71f77b6f08908ce0ca95f05a102c3301e300c09b2e50",
+      "bytes_len": 6779,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lH_PLUS_5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05/09/2017&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "appearances",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-02.html",
@@ -152,11 +773,16 @@
       "bytes_len": 4640,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "appearances",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-06.html",
@@ -164,11 +790,50 @@
       "bytes_len": 4640,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-02.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "bytes_len": 4698,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-05.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "bytes_len": 4698,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-04.html",
@@ -176,11 +841,15 @@
       "bytes_len": 4354,
       "title": "WebCivil Supreme - Assigned Judge",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=AssignedJudge&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "judge_assignments": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-08.html",
@@ -188,11 +857,47 @@
       "bytes_len": 4354,
       "title": "WebCivil Supreme - Assigned Judge",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=AssignedJudge&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "judge_assignments": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-03.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "bytes_len": 4354,
+      "title": "WebCivil Supreme - Assigned Judge",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=AssignedJudge&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "judge_assignments": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-06.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "bytes_len": 4354,
+      "title": "WebCivil Supreme - Assigned Judge",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=AssignedJudge&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "captured_at": "2026-07-01T02:59:58.590Z",
+      "parsed_counts": {
+        "judge_assignments": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-03.html",
@@ -200,11 +905,16 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-07.html",
@@ -212,12 +922,26 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
-      "captured_at": "2026-06-30T16:28:58.068Z"
+      "captured_at": "2026-06-30T16:28:58.068Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     }
   ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "123/2017",
+    "Case Name": "ZAGER, JORDAN vs. DIAZ, BRAYAN ETAL",
+    "Case Type": "Tort-Motor Vehicle",
+    "Track": "Standard",
+    "RJI Filed": "04/21/2017",
+    "Justice Name": "Dufficy, Hon. Timothy J."
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-01.html",
       "html_sha256": "e5e24a1c6eab65197268a8c0f4c6e0d41f928f6451238f930623e781276a6f85",
@@ -225,10 +949,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-02.html",
       "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
@@ -236,10 +962,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": "appearances"
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-03.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -247,10 +975,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-04.html",
       "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
@@ -258,10 +988,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": "assigned-judge"
+      "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:05",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-05.html",
       "html_sha256": "e5e24a1c6eab65197268a8c0f4c6e0d41f928f6451238f930623e781276a6f85",
@@ -269,10 +1001,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:06",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-06.html",
       "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
@@ -280,10 +1014,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": "appearances"
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:07",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-07.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -291,10 +1027,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00008:response:08",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-08.html",
       "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
@@ -302,10 +1040,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "case-detail",
-      "nested_kind": "assigned-judge"
+      "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00009:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-01.html",
       "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
@@ -313,10 +1053,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00009:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-02.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -324,10 +1066,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "appearances",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00009:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-03.html",
       "html_sha256": "a0340cd7e2a11f7618a3413d9264861ab95ae5b4c111881876cf668afccc1d2b",
@@ -335,10 +1079,12 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000123_2017:followup-page:001:capture:00009:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00009-p001-r004-appearances-123_2017-04.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -346,7 +1092,138 @@
       "page_number": 1,
       "table_row_number": 4,
       "kind": "appearances",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-01.html",
+      "html_sha256": "18e49013633273ad5a6a71f77b6f08908ce0ca95f05a102c3301e300c09b2e50",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05%2F09%2F2017&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00008:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-02.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00008:response:03",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-03.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=AssignedJudge&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00008:response:04",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-04.html",
+      "html_sha256": "18e49013633273ad5a6a71f77b6f08908ce0ca95f05a102c3301e300c09b2e50",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lH_PLUS_5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05/09/2017&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00008:response:05",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-05.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00008:response:06",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-06.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=AssignedJudge&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "tab_key": "assigned-judge"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-01.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F09%2F2017&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00009:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-02.html",
+      "html_sha256": "5c62c5ff49d502feb7c3efc9a1a0aadaef261c9f9c36b7867c307e4004457513",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00009:response:03",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-03.html",
+      "html_sha256": "372c277516edea6b01db21d1ca480cbb0714737eab6fc40205055705fe34c1be",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/09/2017&index=lH_PLUS_5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015932540_09278:followup-page:001:capture:00009:response:04",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00009-p001-r004-appearances-123_2017-04.html",
+      "html_sha256": "5c62c5ff49d502feb7c3efc9a1a0aadaef261c9f9c36b7867c307e4004457513",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lH%2B5gXcLnndQZ9GYJlhbpw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=huyp2cmBNy3mlJpC08RgiQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
@@ -358,6 +1235,65 @@
       "page_number": 1,
       "table_row_number": 4,
       "row_html_sha256": "f8a093cfec422e1e1061090859d60ddc82be037b313f537ca690d1a106837088"
+    }
+  ],
+  "judicial_officer": "Dufficy, Hon. Timothy J.",
+  "judge_assignments": [
+    {
+      "judge_name": "Dufficy, Hon. Timothy J.",
+      "assigned_date": "04/24/2017",
+      "end_date": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-04.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "judge_name": "Dufficy, Hon. Timothy J.",
+      "assigned_date": "04/24/2017",
+      "end_date": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000123_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000123_2017/00008-p001-r004-case_detail-123_2017-08.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-06-30T16:28:58.068Z"
+    },
+    {
+      "judge_name": "Dufficy, Hon. Timothy J.",
+      "assigned_date": "04/24/2017",
+      "end_date": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-03.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-07-01T02:59:58.590Z"
+    },
+    {
+      "judge_name": "Dufficy, Hon. Timothy J.",
+      "assigned_date": "04/24/2017",
+      "end_date": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "assigned-judge",
+      "source_kind": "case-detail",
+      "nested_kind": "assigned-judge",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015932540_09278/00008-p001-r004-case_detail-123_2017-06.html",
+      "html_sha256": "5d95f300c723943dac8ffe25fc1e635d657c994cb2f9b0f6de1f8e6d2e0790b0",
+      "captured_at": "2026-07-01T02:59:58.590Z"
     }
   ]
 }

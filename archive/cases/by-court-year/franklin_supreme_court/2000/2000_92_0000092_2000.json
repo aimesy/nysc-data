@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-30T15:47:40.653Z",
+  "captured_at": "2026-07-01T02:48:49.191Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -25,13 +25,14 @@
       ],
       "captured_tabs": [
         "appearances",
-        "case-detail"
+        "case-detail",
+        "motions"
       ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 2,
-      "followup_responses_seen": 10
+      "followup_responses_seen": 18
     }
   },
   "discovery": {
@@ -70,10 +71,420 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
-  "docket_entries": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "JOSE PIZARRO #90-T-4034",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "ATTORNEY GENERAL'S OFFICE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "JOSE PIZARRO #90-T-4034",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-01.html",
+      "html_sha256": "d8aa891c8b58697729cf72db5b20d3951b6fc1600cc16abedbdd0e4e0590ce5c",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "PIZARRO, JOSE #90-T-4034, IN THE MATTER",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "JOSE PIZARRO #90-T-4034",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "GOORD, GLENN, COMMISSIONER OF CORRECT",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "ATTORNEY GENERAL'S OFFICE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "PIZARRO, JOSE #90-T-4034, IN THE MATTER",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "JOSE PIZARRO #90-T-4034",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-01.html",
+      "html_sha256": "d8aa891c8b58697729cf72db5b20d3951b6fc1600cc16abedbdd0e4e0590ce5c",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "05/26/2000",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "raw_text": "05/26/2000",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-02.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-05.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-01.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-03.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-02.html",
+      "html_sha256": "f54b75a2f3452a078b185ee023a179fb3592fab42bb22ca3fb402b7bccf5b3c6",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-04.html",
+      "html_sha256": "cb2a0777ad00c8de2bbd929c8e4087ea5a63af3e58252e1172d080137eb839d9",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-01.html",
+      "html_sha256": "2b683bac94aed0f19920dcaddb854e6c63d5f5bae087f5f29ac015cacbdf4204",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    },
+    {
+      "appearance_date": "05/26/2000",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO APPELLATE",
+      "part": "FELDSTEIN (Court Activity)",
+      "judicial_officer": "HON. S. PETER FELDSTEIN",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-03.html",
+      "html_sha256": "40a8df0a429d191489f7bdbc5586dff643e291034b9bac2f1e8b11c8b218038d",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    }
+  ],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-02.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-05.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-01.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-03.html",
+      "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
+      "captured_at": "2026-06-30T15:47:40.653Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-02.html",
+      "html_sha256": "f54b75a2f3452a078b185ee023a179fb3592fab42bb22ca3fb402b7bccf5b3c6",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-04.html",
+      "html_sha256": "cb2a0777ad00c8de2bbd929c8e4087ea5a63af3e58252e1172d080137eb839d9",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-01.html",
+      "html_sha256": "2b683bac94aed0f19920dcaddb854e6c63d5f5bae087f5f29ac015cacbdf4204",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/26/2000",
+      "title": "Disposition - PRE-TRANSFER TO APPELLATE",
+      "text": "05/26/2000 | Disposition | No | Unknown | PRE-TRANSFER TO APPELLATE | HON. S. PETER FELDSTEIN FELDSTEIN (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-03.html",
+      "html_sha256": "40a8df0a429d191489f7bdbc5586dff643e291034b9bac2f1e8b11c8b218038d",
+      "captured_at": "2026-07-01T02:48:49.191Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -82,6 +493,7 @@
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-01.html",
@@ -89,11 +501,16 @@
       "bytes_len": 4669,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F26%2F2000&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-03.html",
@@ -101,11 +518,50 @@
       "bytes_len": 4669,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/26/2000&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-01.html",
+      "html_sha256": "2b683bac94aed0f19920dcaddb854e6c63d5f5bae087f5f29ac015cacbdf4204",
+      "bytes_len": 5646,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F26%2F2000&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-03.html",
+      "html_sha256": "40a8df0a429d191489f7bdbc5586dff643e291034b9bac2f1e8b11c8b218038d",
+      "bytes_len": 5646,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/26/2000&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-02.html",
@@ -113,11 +569,16 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     },
     {
       "kind": "appearances",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-04.html",
@@ -125,11 +586,50 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-02.html",
+      "html_sha256": "a8a20b540c24aebe77fa70333a8579c5c27ec74f1b4e26fa1e1ce7384278f542",
+      "bytes_len": 4164,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-04.html",
+      "html_sha256": "076f26bf10e40679f33fb64bcc6738f77f4f2d7dfac170cc17b7aebaa9f37285",
+      "bytes_len": 4164,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-01.html",
@@ -137,11 +637,17 @@
       "bytes_len": 6620,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&motion=&docs=&adate=05%2F26%2F2000&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-04.html",
@@ -149,11 +655,53 @@
       "bytes_len": 6620,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&motion=&docs=&adate=05/26/2000&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-01.html",
+      "html_sha256": "dbeddf4dae4d9525116525a7a844a9a60e29d9265cc2491f723f1e30ba888c62",
+      "bytes_len": 7597,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&motion=&docs=&adate=05%2F26%2F2000&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-03.html",
+      "html_sha256": "de2275fbdb32c8e5b41941a06e435b74704a7f7e2a6124a13be668896b80de4c",
+      "bytes_len": 7597,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&motion=&docs=&adate=05/26/2000&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "appearances",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-02.html",
@@ -161,11 +709,16 @@
       "bytes_len": 4669,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "appearances",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-05.html",
@@ -173,11 +726,50 @@
       "bytes_len": 4669,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-02.html",
+      "html_sha256": "f54b75a2f3452a078b185ee023a179fb3592fab42bb22ca3fb402b7bccf5b3c6",
+      "bytes_len": 5646,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-04.html",
+      "html_sha256": "cb2a0777ad00c8de2bbd929c8e4087ea5a63af3e58252e1172d080137eb839d9",
+      "bytes_len": 5646,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "captured_at": "2026-07-01T02:48:49.191Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-03.html",
@@ -185,11 +777,16 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "motions",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260701014353/0000092_2000/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-06.html",
@@ -197,12 +794,28 @@
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
-      "captured_at": "2026-06-30T15:47:40.653Z"
+      "captured_at": "2026-06-30T15:47:40.653Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
     }
   ],
+  "webcivil_case_detail": {
+    "Court": "Franklin Supreme Court",
+    "Index Number": "2000-92",
+    "Case Name": "PIZARRO, JOSE #90-T-4034, IN THE MATTER vs. GOORD, GLENN, COMMISSIONER OF CORRECT",
+    "Case Type": "ARTICLE 78",
+    "Track": "Standard",
+    "RJI Filed": "02/03/2000",
+    "RJI Number": "16-1-2000-0061",
+    "Disposition Date": "05/26/2000",
+    "Justice Name": "HON. S. PETER FELDSTEIN"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00024:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-01.html",
       "html_sha256": "d8aa891c8b58697729cf72db5b20d3951b6fc1600cc16abedbdd0e4e0590ce5c",
@@ -210,10 +823,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00024:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-02.html",
       "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
@@ -221,10 +836,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "case-detail",
-      "nested_kind": "appearances"
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00024:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-03.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -232,10 +849,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "case-detail",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00024:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-04.html",
       "html_sha256": "d8aa891c8b58697729cf72db5b20d3951b6fc1600cc16abedbdd0e4e0590ce5c",
@@ -243,10 +862,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00024:response:05",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-05.html",
       "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
@@ -254,10 +875,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "case-detail",
-      "nested_kind": "appearances"
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00024:response:06",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00024-p001-r010-case_detail-0000092_2000-06.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -265,10 +888,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "case-detail",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00025:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-01.html",
       "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
@@ -276,10 +901,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00025:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-02.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -287,10 +914,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "appearances",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00025:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-03.html",
       "html_sha256": "d7b883f085ab1f541a925091af58fb0b077988d25841c003735a9969bf6c61da",
@@ -298,10 +927,12 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260701014353:0000092_2000:followup-page:001:capture:00025:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/0000092_2000/00025-p001-r010-appearances-0000092_2000-04.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
@@ -309,7 +940,112 @@
       "page_number": 1,
       "table_row_number": 10,
       "kind": "appearances",
-      "nested_kind": "motions"
+      "nested_kind": "motions",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-01.html",
+      "html_sha256": "dbeddf4dae4d9525116525a7a844a9a60e29d9265cc2491f723f1e30ba888c62",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&motion=&docs=&adate=05%2F26%2F2000&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00024:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-02.html",
+      "html_sha256": "f54b75a2f3452a078b185ee023a179fb3592fab42bb22ca3fb402b7bccf5b3c6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00024:response:03",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-03.html",
+      "html_sha256": "de2275fbdb32c8e5b41941a06e435b74704a7f7e2a6124a13be668896b80de4c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&motion=&docs=&adate=05/26/2000&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00024:response:04",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00024-p001-r010-case_detail-0000092_2000-04.html",
+      "html_sha256": "cb2a0777ad00c8de2bbd929c8e4087ea5a63af3e58252e1172d080137eb839d9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-01.html",
+      "html_sha256": "2b683bac94aed0f19920dcaddb854e6c63d5f5bae087f5f29ac015cacbdf4204",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F26%2F2000&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00025:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-02.html",
+      "html_sha256": "a8a20b540c24aebe77fa70333a8579c5c27ec74f1b4e26fa1e1ce7384278f542",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00025:response:03",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-03.html",
+      "html_sha256": "40a8df0a429d191489f7bdbc5586dff643e291034b9bac2f1e8b11c8b218038d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/26/2000&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701023127:nysc_20260701015649761_09162:followup-page:001:capture:00025:response:04",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701023127/nysc_20260701015649761_09162/00025-p001-r010-appearances-0000092_2000-04.html",
+      "html_sha256": "076f26bf10e40679f33fb64bcc6738f77f4f2d7dfac170cc17b7aebaa9f37285",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FvP%2FQ3x9imqcMIOwgggtnw%3D%3D&county=pVUTfUyS8xuldmwZoswtuQ%3D%3D&civilCaseId=dWxZAtmCz0fN%2FUTlTqCZrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
@@ -333,5 +1069,7 @@
       "table_row_number": 10,
       "row_html_sha256": "7b8207060112b0207380e14930ea3392b90de40d02e383b8201765c310e8db80"
     }
-  ]
+  ],
+  "judicial_officer": "HON. S. PETER FELDSTEIN",
+  "disposition_date": "05/26/2000"
 }

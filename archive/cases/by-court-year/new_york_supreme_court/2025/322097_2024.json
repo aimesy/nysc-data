@@ -14,7 +14,7 @@
   "case_type": "Mat-Uncontested",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-27T22:46:41.319Z",
   "updated_at_source": null,
   "method_status": {
@@ -24,10 +24,11 @@
         "case-detail"
       ],
       "captured_tabs": [
+        "appearances",
         "case-detail"
       ],
       "document_hint": false,
-      "document_list_captured": true,
+      "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
       "followup_responses_seen": 6
@@ -60,10 +61,115 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
-  "docket_entries": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "Morgan Legal Group, P.C.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "Morgan Legal Group, P.C.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-01.html",
+      "html_sha256": "c53960e01e60bf36b7714e782dd050bcb0f387bde1d753c404ec33ebcb5e7fed",
+      "captured_at": "2026-06-27T22:46:41.319Z"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "McNeill-Jones, Wanda",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "Morgan Legal Group, P.C.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "McNeill-Jones, Wanda",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "Morgan Legal Group, P.C.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-01.html",
+      "html_sha256": "c53960e01e60bf36b7714e782dd050bcb0f387bde1d753c404ec33ebcb5e7fed",
+      "captured_at": "2026-06-27T22:46:41.319Z"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "05/07/2025",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "",
+      "raw_text": "05/07/2025",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/07/2025",
+      "appearance_time": "",
+      "purpose": "Uncontested Matrimonial-Initial Submission",
+      "fully_virtual": "No",
+      "court_date_type": "Administrative - No Appearance Required",
+      "outcome": "Judgment Granted",
+      "part": "85U",
+      "judicial_officer": "85U",
+      "remarks": "Judgment signed 6/6/25CC6/26/25 Judgment signed 6/6/25CC6/26/25",
+      "motion_sequence": "",
+      "raw_text": "05/07/2025 | Uncontested Matrimonial-Initial Submission | No | Administrative - No Appearance Required | Judgment Granted | 85U | Judgment signed 6/6/25CC6/26/25 Judgment signed 6/6/25CC6/26/25",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-02.html",
+      "html_sha256": "a56b3666bacf04b69d8096a68c9fbfd11888d4e10b33ad81574a8f12a8005dce",
+      "captured_at": "2026-06-27T22:46:41.319Z"
+    }
+  ],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/07/2025",
+      "title": "Uncontested Matrimonial-Initial Submission - Judgment Granted",
+      "text": "05/07/2025 | Uncontested Matrimonial-Initial Submission | No | Administrative - No Appearance Required | Judgment Granted | 85U | Judgment signed 6/6/25CC6/26/25 Judgment signed 6/6/25CC6/26/25",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-02.html",
+      "html_sha256": "a56b3666bacf04b69d8096a68c9fbfd11888d4e10b33ad81574a8f12a8005dce",
+      "captured_at": "2026-06-27T22:46:41.319Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -72,6 +178,7 @@
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00014-p001-r020-appearances-322097_2024-01.html",
@@ -79,11 +186,13 @@
       "bytes_len": 7084,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F07%2F2025&index=B3tSWr%2F42Ik%2B8iml7zEhTg%3D%3D&county=AAzG0JZOi%2BztZ8MIztB6Kw%3D%3D&civilCaseId=dP%2Bsb6VfYkzTdNqA4SPcKw%3D%3D",
-      "captured_at": "2026-06-27T22:46:41.319Z"
+      "captured_at": "2026-06-27T22:46:41.319Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00014-p001-r020-appearances-322097_2024-02.html",
@@ -91,11 +200,13 @@
       "bytes_len": 7111,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2025&index=B3tSWr%2F42Ik_PLUS_8iml7zEhTg%3D%3D&county=AAzG0JZOi_PLUS_ztZ8MIztB6Kw%3D%3D&civilCaseId=dP_PLUS_sb6VfYkzTdNqA4SPcKw%3D%3D",
-      "captured_at": "2026-06-27T22:46:41.319Z"
+      "captured_at": "2026-06-27T22:46:41.319Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-01.html",
@@ -103,11 +214,17 @@
       "bytes_len": 7200,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=B3tSWr%2F42Ik%2B8iml7zEhTg%3D%3D&county=AAzG0JZOi%2BztZ8MIztB6Kw%3D%3D&motion=&docs=&adate=05%2F07%2F2025&civilCaseId=dP%2Bsb6VfYkzTdNqA4SPcKw%3D%3D",
-      "captured_at": "2026-06-27T22:46:41.319Z"
+      "captured_at": "2026-06-27T22:46:41.319Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-03.html",
@@ -115,11 +232,17 @@
       "bytes_len": 7200,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=B3tSWr%2F42Ik_PLUS_8iml7zEhTg%3D%3D&county=AAzG0JZOi_PLUS_ztZ8MIztB6Kw%3D%3D&motion=&docs=&adate=05/07/2025&civilCaseId=dP_PLUS_sb6VfYkzTdNqA4SPcKw%3D%3D",
-      "captured_at": "2026-06-27T22:46:41.319Z"
+      "captured_at": "2026-06-27T22:46:41.319Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-02.html",
@@ -127,11 +250,16 @@
       "bytes_len": 4727,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=B3tSWr%2F42Ik%2B8iml7zEhTg%3D%3D&county=AAzG0JZOi%2BztZ8MIztB6Kw%3D%3D&civilCaseId=dP%2Bsb6VfYkzTdNqA4SPcKw%3D%3D",
-      "captured_at": "2026-06-27T22:46:41.319Z"
+      "captured_at": "2026-06-27T22:46:41.319Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "document-list",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-04.html",
@@ -139,12 +267,26 @@
       "bytes_len": 6927,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=B3tSWr%2F42Ik%2B8iml7zEhTg%3D%3D&county=AAzG0JZOi%2BztZ8MIztB6Kw%3D%3D&civilCaseId=dP%2Bsb6VfYkzTdNqA4SPcKw%3D%3D",
-      "captured_at": "2026-06-27T22:46:41.319Z"
+      "captured_at": "2026-06-27T22:46:41.319Z",
+      "parsed_counts": {}
     }
   ],
+  "webcivil_case_detail": {
+    "Court": "New York Supreme Court",
+    "Index Number": "322097/2024",
+    "Case Name": "McNeill-Jones, Wanda vs. Jones Jr., Benjamin",
+    "Case Type": "Mat-Uncontested",
+    "Track": "Standard",
+    "RJI Filed": "01/26/2025",
+    "NOI Due": "01/26/2026",
+    "NOI Filed": "01/26/2025",
+    "Disposition Date": "05/07/2025",
+    "Calendar Number": "2025U-00282"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627221617159_06721:followup-page:001:capture:00013:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-01.html",
       "html_sha256": "c53960e01e60bf36b7714e782dd050bcb0f387bde1d753c404ec33ebcb5e7fed",
@@ -152,10 +294,12 @@
       "page_number": 1,
       "table_row_number": 20,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627221617159_06721:followup-page:001:capture:00013:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-02.html",
       "html_sha256": "a56b3666bacf04b69d8096a68c9fbfd11888d4e10b33ad81574a8f12a8005dce",
@@ -163,10 +307,12 @@
       "page_number": 1,
       "table_row_number": 20,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627221617159_06721:followup-page:001:capture:00013:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-03.html",
       "html_sha256": "c53960e01e60bf36b7714e782dd050bcb0f387bde1d753c404ec33ebcb5e7fed",
@@ -174,10 +320,12 @@
       "page_number": 1,
       "table_row_number": 20,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627221617159_06721:followup-page:001:capture:00013:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00013-p001-r020-case_detail-322097_2024-04.html",
       "html_sha256": "5f2d2677d5d838bff3d1f501f75cde9d3f2d1cdc38cdd3c0a55e578c55702edb",
@@ -185,10 +333,12 @@
       "page_number": 1,
       "table_row_number": 20,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627221617159_06721:followup-page:001:capture:00014:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00014-p001-r020-appearances-322097_2024-01.html",
       "html_sha256": "1abc1a9b4ff38912757d94b29d3c609a2f289971406e0f32f205c7f7db70d4d8",
@@ -196,10 +346,12 @@
       "page_number": 1,
       "table_row_number": 20,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627221617159_06721:followup-page:001:capture:00014:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627221617159_06721/00014-p001-r020-appearances-322097_2024-02.html",
       "html_sha256": "d744975cf639ecd4f2b404b1d3e743abdcf4b10bdc84c144dd17785da24a7a88",
@@ -207,7 +359,8 @@
       "page_number": 1,
       "table_row_number": 20,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
@@ -220,5 +373,6 @@
       "table_row_number": 20,
       "row_html_sha256": "5396bc2858981c382fab9bf7ac802ecb1c0682a0f4f808466d6ad4bb0bf700cb"
     }
-  ]
+  ],
+  "disposition_date": "05/07/2025"
 }

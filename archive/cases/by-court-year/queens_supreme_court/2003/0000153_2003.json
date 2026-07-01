@@ -14,8 +14,8 @@
   "case_type": "OTHER SPECIAL PROCEEDINGS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-01T02:18:46.064Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,16 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 8
     }
   },
   "discovery": {
@@ -58,16 +62,515 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
-  "docket_entries": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "DARIO FERNANDEZ - Prose",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "THOMAS LAFAUCI",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "DARIO FERNANDEZ - Prose",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-01.html",
+      "html_sha256": "a08b7272aac7b1941d94ef9935b1806d9f7a06248f7a5419a584ca5e1fb201db",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "FERNANDEZ, DARIO",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "DARIO FERNANDEZ - Prose",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "THE MACERICH COMPANY",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "THOMAS LAFAUCI",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "FERNANDEZ, DARIO",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "DARIO FERNANDEZ - Prose",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-01.html",
+      "html_sha256": "a08b7272aac7b1941d94ef9935b1806d9f7a06248f7a5419a584ca5e1fb201db",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "05/12/2003",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "CHARLES J. THOMAS",
+      "raw_text": "05/12/2003",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/12/2003",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "judicial_officer": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "remarks": "INF COMP 5/30/03",
+      "motion_sequence": "",
+      "raw_text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-02.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    },
+    {
+      "appearance_date": "05/12/2003",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "judicial_officer": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "remarks": "INF COMP 5/30/03",
+      "motion_sequence": "",
+      "raw_text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-04.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    },
+    {
+      "appearance_date": "05/12/2003",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "judicial_officer": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "remarks": "INF COMP 5/30/03",
+      "motion_sequence": "",
+      "raw_text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-01.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    },
+    {
+      "appearance_date": "05/12/2003",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "judicial_officer": "CHARLES J. THOMAS PT 3 GEN CAL",
+      "remarks": "INF COMP 5/30/03",
+      "motion_sequence": "",
+      "raw_text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-03.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    }
+  ],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/12/2003",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-02.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/12/2003",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "case-detail",
+      "nested_kind": "appearances",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-04.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/12/2003",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-01.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/12/2003",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "05/12/2003 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | CHARLES J. THOMAS PT 3 GEN CAL | INF COMP 5/30/03",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-03.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "captured_at": "2026-07-01T02:18:46.064Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-01.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "bytes_len": 4684,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F12%2F2003&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-03.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "bytes_len": 4684,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/12/2003&index=0u7N%2FvSsGciHaRCxmh_PLUS_RFw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-02.html",
+      "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
+      "bytes_len": 3185,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-04.html",
+      "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
+      "bytes_len": 3185,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "motions": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-01.html",
+      "html_sha256": "a08b7272aac7b1941d94ef9935b1806d9f7a06248f7a5419a584ca5e1fb201db",
+      "bytes_len": 5985,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05%2F12%2F2003&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-03.html",
+      "html_sha256": "a08b7272aac7b1941d94ef9935b1806d9f7a06248f7a5419a584ca5e1fb201db",
+      "bytes_len": 5985,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0u7N%2FvSsGciHaRCxmh_PLUS_RFw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05/12/2003&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-02.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "bytes_len": 4684,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-04.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "bytes_len": 4684,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "captured_at": "2026-07-01T02:18:46.064Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0000153/2003",
+    "Case Name": "FERNANDEZ, DARIO vs. THE MACERICH COMPANY",
+    "Case Type": "OTHER SPECIAL PROCEEDINGS",
+    "Track": "Expedited",
+    "RJI Filed": "01/07/2003",
+    "Disposition Date": "05/12/2003",
+    "Justice Name": "CHARLES J. THOMAS"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-01.html",
+      "html_sha256": "a08b7272aac7b1941d94ef9935b1806d9f7a06248f7a5419a584ca5e1fb201db",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05%2F12%2F2003&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00001:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-02.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00001:response:03",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-03.html",
+      "html_sha256": "a08b7272aac7b1941d94ef9935b1806d9f7a06248f7a5419a584ca5e1fb201db",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0u7N%2FvSsGciHaRCxmh_PLUS_RFw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&motion=&docs=&adate=05/12/2003&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00001:response:04",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00001-p001-r001-case_detail-0000153_2003-04.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "appearances",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-01.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05%2F12%2F2003&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00002:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-02.html",
+      "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00002:response:03",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-03.html",
+      "html_sha256": "d1c038b5db9a0a0a942f159dbf29d6803ea92e523683d9472e77918a4289f134",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/12/2003&index=0u7N%2FvSsGciHaRCxmh_PLUS_RFw%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260701014353:nysc_20260701015142494_08938:followup-page:001:capture:00002:response:04",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260701014353/nysc_20260701015142494_08938/00002-p001-r001-appearances-0000153_2003-04.html",
+      "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0u7N%2FvSsGciHaRCxmh%2BRFw%3D%3D&county=HpYHHP%2BXT%2B9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=vFqfNL%2Fxgz9zJ1An57%2FEZw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "motions",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260701014353:0000153_2003:page:001",
@@ -79,5 +582,7 @@
       "table_row_number": 1,
       "row_html_sha256": "5b42911fed376f67ea28103ec56a73733d47e92b79ef4745c191aa27973b0118"
     }
-  ]
+  ],
+  "judicial_officer": "CHARLES J. THOMAS",
+  "disposition_date": "05/12/2003"
 }

@@ -14,7 +14,7 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-29T13:36:26.350Z",
   "updated_at_source": null,
   "method_status": {
@@ -25,10 +25,12 @@
         "motions"
       ],
       "captured_tabs": [
-        "case-detail"
+        "appearances",
+        "case-detail",
+        "motions"
       ],
       "document_hint": false,
-      "document_list_captured": true,
+      "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
       "followup_responses_seen": 10
@@ -61,11 +63,279 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
-  "docket_entries": [],
-  "motions": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "CULLEN & DYKMAN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "CULLEN & DYKMAN LLP",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-01.html",
+      "html_sha256": "ee84f18b4b144f922c012f44e920cbb30c6230fbee074a4823e290d22296cbe0",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "GREEN POINT SAVINGS BANK",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "CULLEN & DYKMAN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "GREEN POINT SAVINGS BANK",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "CULLEN & DYKMAN LLP",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-01.html",
+      "html_sha256": "ee84f18b4b144f922c012f44e920cbb30c6230fbee074a4823e290d22296cbe0",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "09/05/1990",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "JULIUS VINIK",
+      "raw_text": "09/05/1990",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "09/05/1990",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "MOTION DECIDED-OPEN APPEARANCE",
+      "part": "JULIUS VINIK MOTION TRIAL TERM 8",
+      "judicial_officer": "JULIUS VINIK MOTION TRIAL TERM 8",
+      "remarks": "GSON DEF",
+      "motion_sequence": "1",
+      "raw_text": "09/05/1990 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | JULIUS VINIK MOTION TRIAL TERM 8 | GSON DEF | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-02.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "appearance_date": "08/21/1990",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "ADJOURNED",
+      "part": "JULIUS VINIK MOTION PART",
+      "judicial_officer": "JULIUS VINIK MOTION PART",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "08/21/1990 | Motion | No | Unknown | ADJOURNED | JULIUS VINIK MOTION PART | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-02.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "appearance_date": "09/05/1990",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "MOTION DECIDED-OPEN APPEARANCE",
+      "part": "JULIUS VINIK MOTION TRIAL TERM 8",
+      "judicial_officer": "JULIUS VINIK MOTION TRIAL TERM 8",
+      "remarks": "GSON DEF",
+      "motion_sequence": "1",
+      "raw_text": "09/05/1990 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | JULIUS VINIK MOTION TRIAL TERM 8 | GSON DEF | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-05.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "appearance_date": "08/21/1990",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "ADJOURNED",
+      "part": "JULIUS VINIK MOTION PART",
+      "judicial_officer": "JULIUS VINIK MOTION PART",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "08/21/1990 | Motion | No | Unknown | ADJOURNED | JULIUS VINIK MOTION PART | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-05.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    }
+  ],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "09/05/1990",
+      "title": "Motion - MOTION DECIDED-OPEN APPEARANCE",
+      "text": "09/05/1990 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | JULIUS VINIK MOTION TRIAL TERM 8 | GSON DEF | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-02.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "08/21/1990",
+      "title": "Motion - ADJOURNED",
+      "text": "08/21/1990 | Motion | No | Unknown | ADJOURNED | JULIUS VINIK MOTION PART | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-02.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "08/21/1990",
+      "title": "JUDGMENT FORECLOSURE/SALE",
+      "text": "1 | 08/21/1990 | JUDGMENT FORECLOSURE/SALE | No | Decided: 09/05/1990 CASE DISPOSED Before Justice: JULIUS VINIK | Oral | 10/22/1990",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-03.html",
+      "html_sha256": "318a1baf560826b08cc62ea865f0ad75a8c20ded9a99c5eb7670702df2aa91fb",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "09/05/1990",
+      "title": "Motion - MOTION DECIDED-OPEN APPEARANCE",
+      "text": "09/05/1990 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | JULIUS VINIK MOTION TRIAL TERM 8 | GSON DEF | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-05.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "08/21/1990",
+      "title": "Motion - ADJOURNED",
+      "text": "08/21/1990 | Motion | No | Unknown | ADJOURNED | JULIUS VINIK MOTION PART | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-05.html",
+      "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "08/21/1990",
+      "filed_by": "",
+      "relief": "JUDGMENT FORECLOSURE/SALE",
+      "submit_date": "",
+      "answer_demanded": "No",
+      "status": "Decided: 09/05/1990 CASE DISPOSED Before Justice: JULIUS VINIK",
+      "decision_text": "Oral",
+      "order_signed_date": "10/22/1990",
+      "raw_text": "1 | 08/21/1990 | JUDGMENT FORECLOSURE/SALE | No | Decided: 09/05/1990 CASE DISPOSED Before Justice: JULIUS VINIK | Oral | 10/22/1990",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-03.html",
+      "html_sha256": "318a1baf560826b08cc62ea865f0ad75a8c20ded9a99c5eb7670702df2aa91fb",
+      "captured_at": "2026-06-29T13:36:26.350Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
@@ -73,6 +343,7 @@
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00025-p001-r015-appearances-0006498_1990-01.html",
@@ -80,11 +351,13 @@
       "bytes_len": 7063,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09%2F05%2F1990&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00025-p001-r015-appearances-0006498_1990-02.html",
@@ -92,11 +365,13 @@
       "bytes_len": 7071,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/05/1990&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw_PLUS_%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-01.html",
@@ -104,11 +379,17 @@
       "bytes_len": 5971,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&motion=M&docs=&adate=09%2F05%2F1990&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-04.html",
@@ -116,11 +397,17 @@
       "bytes_len": 5971,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw_PLUS_%2F2H5%2FUlg%3D%3D&motion=M&docs=&adate=09/05/1990&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-02.html",
@@ -128,11 +415,16 @@
       "bytes_len": 5293,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "motions",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-03.html",
@@ -140,11 +432,16 @@
       "bytes_len": 5428,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-05.html",
@@ -152,11 +449,16 @@
       "bytes_len": 5293,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "document-list",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-06.html",
@@ -164,11 +466,13 @@
       "bytes_len": 6936,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {}
     },
     {
       "kind": "motions",
       "nested_kind": "",
+      "tab_key": "motions",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00026-p001-r015-motions-0006498_1990-01.html",
@@ -176,11 +480,13 @@
       "bytes_len": 6936,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {}
     },
     {
       "kind": "motions",
       "nested_kind": "",
+      "tab_key": "motions",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00026-p001-r015-motions-0006498_1990-02.html",
@@ -188,12 +494,25 @@
       "bytes_len": 6945,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=%2FOwXPeVUKm2W3AfmaFW3zg%3D%3D&county=BEVENEzRYnhFw_PLUS_%2F2H5%2FUlg%3D%3D&civilCaseId=lW1Josa4ek60EMBanEWBpQ%3D%3D",
-      "captured_at": "2026-06-29T13:36:26.350Z"
+      "captured_at": "2026-06-29T13:36:26.350Z",
+      "parsed_counts": {}
     }
   ],
+  "webcivil_case_detail": {
+    "Court": "Kings Supreme Court",
+    "Index Number": "0006498/1990",
+    "Case Name": "GREEN POINT SAVINGS BANK vs. POPE,RUPERT R.",
+    "Case Type": "OTHER",
+    "Track": "Other",
+    "RJI Filed": "08/03/1990",
+    "Disposition Date": "09/05/1990",
+    "Calendar Number": "1990-014108M",
+    "Justice Name": "JULIUS VINIK"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00024:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-01.html",
       "html_sha256": "ee84f18b4b144f922c012f44e920cbb30c6230fbee074a4823e290d22296cbe0",
@@ -201,10 +520,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00024:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-02.html",
       "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
@@ -212,10 +533,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00024:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-03.html",
       "html_sha256": "318a1baf560826b08cc62ea865f0ad75a8c20ded9a99c5eb7670702df2aa91fb",
@@ -223,10 +546,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00024:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-04.html",
       "html_sha256": "ee84f18b4b144f922c012f44e920cbb30c6230fbee074a4823e290d22296cbe0",
@@ -234,10 +559,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00024:response:05",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-05.html",
       "html_sha256": "32f6b3c179afbbedbe2d0ea2ab38acbc501cffd1e78305e6f408ca7630d50d12",
@@ -245,10 +572,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00024:response:06",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00024-p001-r015-case_detail-0006498_1990-06.html",
       "html_sha256": "2a975272e4bbd25149c0e3427d9e17a84fd17a4d71c2328b2d90382f764f5982",
@@ -256,10 +585,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00025:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00025-p001-r015-appearances-0006498_1990-01.html",
       "html_sha256": "9975da40f7ff8ba7bd6fa5e273b24dcd6367cf24b64681ee64de623460897416",
@@ -267,10 +598,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00025:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00025-p001-r015-appearances-0006498_1990-02.html",
       "html_sha256": "8ac29bcfa9f93c040069b0ba0b99d1bbf92a2ff1bd8457ad50b9973eae8810ce",
@@ -278,10 +611,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00026:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00026-p001-r015-motions-0006498_1990-01.html",
       "html_sha256": "56cdf348f93a16c2862935f8ead7c0c90e5c1dc6644edd4b921e365512effc9e",
@@ -289,10 +624,12 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "motions",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260629133005364_08087:followup-page:001:capture:00026:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629133005364_08087/00026-p001-r015-motions-0006498_1990-02.html",
       "html_sha256": "218cae1d19f1cdc18242a43f05aed87604d8f086a21fc0ea2dde8178063be608",
@@ -300,7 +637,8 @@
       "page_number": 1,
       "table_row_number": 15,
       "kind": "motions",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "motions"
     },
     {
       "source_system": "webcivil",
@@ -313,5 +651,7 @@
       "table_row_number": 15,
       "row_html_sha256": "644cb5348df2a80eb3cab541c047320a56b1f1af0f03bd19dc6a2d442085bf20"
     }
-  ]
+  ],
+  "judicial_officer": "JULIUS VINIK",
+  "disposition_date": "09/05/1990"
 }

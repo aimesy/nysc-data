@@ -14,7 +14,7 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-27T22:52:45.058Z",
   "updated_at_source": null,
   "method_status": {
@@ -24,10 +24,11 @@
         "case-detail"
       ],
       "captured_tabs": [
+        "appearances",
         "case-detail"
       ],
       "document_hint": false,
-      "document_list_captured": true,
+      "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
       "followup_responses_seen": 10
@@ -60,10 +61,83 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
-  "docket_entries": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "PRO SE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "DUNN, JAMIE LEN",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "PRO SE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "07/27/2005",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "HON. JOSEPH P. HESTER, JR.",
+      "raw_text": "07/27/2005",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "07/27/2005",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-JUDGEMENT",
+      "part": "JR. (Court Activity)",
+      "judicial_officer": "HON. JOSEPH P. HESTER, JR. HESTER,",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "07/27/2005 | Disposition | No | Unknown | PRE-JUDGEMENT | HON. JOSEPH P. HESTER, JR. HESTER, JR. (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-02.html",
+      "html_sha256": "3a2a031bf08f802771c79f8aa89313a6ab68745bda414362ee273b32959c2a56",
+      "captured_at": "2026-06-27T22:51:38.108Z"
+    }
+  ],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "07/27/2005",
+      "title": "Disposition - PRE-JUDGEMENT",
+      "text": "07/27/2005 | Disposition | No | Unknown | PRE-JUDGEMENT | HON. JOSEPH P. HESTER, JR. HESTER, JR. (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-02.html",
+      "html_sha256": "3a2a031bf08f802771c79f8aa89313a6ab68745bda414362ee273b32959c2a56",
+      "captured_at": "2026-06-27T22:51:38.108Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -72,6 +146,7 @@
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00019-p001-r008-appearances-0001187_2005-01.html",
@@ -79,11 +154,13 @@
       "bytes_len": 7029,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07%2F27%2F2005&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&civilCaseId=d3EumWm6cMF%2FgcRh%2BX0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:51:38.108Z"
+      "captured_at": "2026-06-27T22:51:38.108Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00019-p001-r008-appearances-0001187_2005-02.html",
@@ -91,11 +168,13 @@
       "bytes_len": 7038,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/27/2005&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&civilCaseId=d3EumWm6cMF%2FgcRh_PLUS_X0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:51:38.108Z"
+      "captured_at": "2026-06-27T22:51:38.108Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00019-p001-r008-appearances-0001187_2005-01.html",
@@ -103,11 +182,13 @@
       "bytes_len": 7050,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07%2F27%2F2005&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&civilCaseId=d3EumWm6cMF%2FgcRh%2BX0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:52:45.058Z"
+      "captured_at": "2026-06-27T22:52:45.058Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
+      "tab_key": "appearances",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00019-p001-r008-appearances-0001187_2005-02.html",
@@ -115,11 +196,13 @@
       "bytes_len": 7059,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/27/2005&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&civilCaseId=d3EumWm6cMF%2FgcRh_PLUS_X0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:52:45.058Z"
+      "captured_at": "2026-06-27T22:52:45.058Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-01.html",
@@ -127,11 +210,17 @@
       "bytes_len": 6194,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&motion=&docs=&adate=07%2F27%2F2005&civilCaseId=d3EumWm6cMF%2FgcRh%2BX0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:51:38.108Z"
+      "captured_at": "2026-06-27T22:51:38.108Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 1,
+        "representation": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-03.html",
@@ -139,11 +228,17 @@
       "bytes_len": 6194,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&motion=&docs=&adate=07/27/2005&civilCaseId=d3EumWm6cMF%2FgcRh_PLUS_X0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:51:38.108Z"
+      "captured_at": "2026-06-27T22:51:38.108Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 1,
+        "representation": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00018-p001-r008-case_detail-0001187_2005-01.html",
@@ -151,11 +246,13 @@
       "bytes_len": 7123,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&motion=&docs=&adate=07%2F27%2F2005&civilCaseId=d3EumWm6cMF%2FgcRh%2BX0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:52:45.058Z"
+      "captured_at": "2026-06-27T22:52:45.058Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00018-p001-r008-case_detail-0001187_2005-02.html",
@@ -163,11 +260,13 @@
       "bytes_len": 7132,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&motion=&docs=&adate=07/27/2005&civilCaseId=d3EumWm6cMF%2FgcRh_PLUS_X0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:52:45.058Z"
+      "captured_at": "2026-06-27T22:52:45.058Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "appearances",
       "ok": true,
       "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-02.html",
@@ -175,11 +274,16 @@
       "bytes_len": 4642,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&civilCaseId=d3EumWm6cMF%2FgcRh%2BX0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:51:38.108Z"
+      "captured_at": "2026-06-27T22:51:38.108Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
+      "tab_key": "document-list",
       "ok": false,
       "source_file": "raw/webcivil/case-followups/20260627031845/0001187_2005/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-04.html",
@@ -187,12 +291,25 @@
       "bytes_len": 6915,
       "title": "Just a moment...",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=09F7fCvUeO8ZGV8DVQjOag%3D%3D&county=ZLe6Fv1UDcRcEXyKGD8cKA%3D%3D&civilCaseId=d3EumWm6cMF%2FgcRh%2BX0pkg%3D%3D",
-      "captured_at": "2026-06-27T22:51:38.108Z"
+      "captured_at": "2026-06-27T22:51:38.108Z",
+      "parsed_counts": {}
     }
   ],
+  "webcivil_case_detail": {
+    "Court": "Broome Supreme Court",
+    "Index Number": "0001187/2005",
+    "Case Name": "LENNOX-DUNN, MARYBETH SARAH vs. DUNN, JAMIE LEN",
+    "Case Type": "UNCONTESTED MATRIMONIAL",
+    "Track": "Standard",
+    "RJI Filed": "06/20/2005",
+    "RJI Number": "2005-0822-U",
+    "Disposition Date": "07/27/2005",
+    "Justice Name": "HON. JOSEPH P. HESTER, JR."
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:0001187_2005:followup-page:001:capture:00018:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-01.html",
       "html_sha256": "60ee1a76615d93f3200a4c24904225f6eab7e3ceb6179bde71c329bb5d203622",
@@ -200,10 +317,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:0001187_2005:followup-page:001:capture:00018:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-02.html",
       "html_sha256": "3a2a031bf08f802771c79f8aa89313a6ab68745bda414362ee273b32959c2a56",
@@ -211,10 +330,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:0001187_2005:followup-page:001:capture:00018:response:03",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-03.html",
       "html_sha256": "60ee1a76615d93f3200a4c24904225f6eab7e3ceb6179bde71c329bb5d203622",
@@ -222,10 +343,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:0001187_2005:followup-page:001:capture:00018:response:04",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00018-p001-r008-case_detail-0001187_2005-04.html",
       "html_sha256": "b9f0f0b5dbdb3ac63cde24f97dfdbee55dde8d59e549574fe10309dde1319015",
@@ -233,10 +356,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "case-detail",
-      "nested_kind": "document-list"
+      "nested_kind": "document-list",
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:0001187_2005:followup-page:001:capture:00019:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00019-p001-r008-appearances-0001187_2005-01.html",
       "html_sha256": "7b0fcd68fcefb8573d72ec45cb8b9440d87cd8cdd15e8e2e7c9db51dc468bbf3",
@@ -244,10 +369,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:0001187_2005:followup-page:001:capture:00019:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001187_2005/00019-p001-r008-appearances-0001187_2005-02.html",
       "html_sha256": "86aef6d17f20bc28f5f2555bcd4dab865a7381ee401317bdb2d563230c4bb552",
@@ -255,10 +382,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627225158699_06726:followup-page:001:capture:00018:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00018-p001-r008-case_detail-0001187_2005-01.html",
       "html_sha256": "2f32d349823516f8ee62d65f31574a37af03d53defa3e6311f8c25f685a444e2",
@@ -266,10 +395,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627225158699_06726:followup-page:001:capture:00018:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00018-p001-r008-case_detail-0001187_2005-02.html",
       "html_sha256": "700a29c35459e5b5af982f759cf4e8b771d6a4e690adc2865bd2892b3b555408",
@@ -277,10 +408,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "case-detail",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "case-detail"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627225158699_06726:followup-page:001:capture:00019:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00019-p001-r008-appearances-0001187_2005-01.html",
       "html_sha256": "6333f282e6923c5780c5f0acd2c2ed68f78262f8ce5f2b9cd133c12cd5763382",
@@ -288,10 +421,12 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
       "capture_id": "20260627031845:nysc_20260627225158699_06726:followup-page:001:capture:00019:response:02",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627225158699_06726/00019-p001-r008-appearances-0001187_2005-02.html",
       "html_sha256": "dd42094c9447e2e6c89b9a49e02e08218dfa9478dc04ce277120bdb8543f6345",
@@ -299,7 +434,8 @@
       "page_number": 1,
       "table_row_number": 8,
       "kind": "appearances",
-      "nested_kind": ""
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
@@ -312,5 +448,7 @@
       "table_row_number": 8,
       "row_html_sha256": "9aaaf89deddcad3cc889ae12505ba57c49a1c2a2fbe0203f819b77e38d36a2b9"
     }
-  ]
+  ],
+  "judicial_officer": "HON. JOSEPH P. HESTER, JR.",
+  "disposition_date": "07/27/2005"
 }
