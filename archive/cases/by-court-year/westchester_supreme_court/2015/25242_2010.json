@@ -1,17 +1,17 @@
 {
   "schema": "nysc-case-archive/v1",
-  "archive_key": "ny:nysc:bronx_supreme_court:1995:0025244_1994",
+  "archive_key": "ny:nysc:westchester_supreme_court:2015:25242_2010",
   "source_systems": [
     "webcivil"
   ],
-  "court": "Bronx Supreme Court",
-  "court_slug": "bronx_supreme_court",
+  "court": "Westchester Supreme Court",
+  "court_slug": "westchester_supreme_court",
   "court_type": "supreme",
-  "index_number": "0025244/1994",
-  "index_year": "1995",
-  "index_display": "0025244/1994",
-  "case_title": "TROIANO,THOMAS J. v. SHAR DESIREE J.",
-  "case_type": "MOTOR VEHICLE",
+  "index_number": "25242/2010",
+  "index_year": "2015",
+  "index_display": "25242/2010",
+  "case_title": "EXXON MOBIL CORPORATION v. EASTCHESTER, TOWN OF, ET AL.",
+  "case_type": "RP-Tax Certiorari",
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "search_row_only",
@@ -21,49 +21,39 @@
     "webcivil": {
       "expected_tabs": [
         "appearances",
-        "case-detail",
-        "motions"
+        "case-detail"
       ],
       "captured_tabs": [],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 2,
+      "search_rows_seen": 1,
       "followup_responses_seen": 0
     }
   },
   "discovery": {
     "search_names": [
-      "0025244/1994",
-      "shar"
+      "0025242/2010"
     ],
     "result_row_refs": [
       {
-        "search_name": "0025244/1994",
+        "search_name": "0025242/2010",
         "query_type": "index-number",
-        "source_file": "webcivil-party-search/results/0025244_1994.rows.ndjson",
+        "source_file": "webcivil-party-search/results/0025242_2010.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
-        "row_html_sha256": "c41a9bdeea0091bc5b8f4a8c78e38949cfa3c5a12051f50e3183d30d5c273604"
-      },
-      {
-        "search_name": "shar",
-        "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/shar.rows.ndjson",
-        "source_page": 1,
-        "source_row": 11,
-        "row_html_sha256": "b932f2e6e5ae1289a921a0bbc8c54f5aab50bb7ffb4220f39c7737bfc23c5f77"
+        "row_html_sha256": "ef4c3aafb2f2dc443eb24edbaa1aa5e7ca133e95942dd222516cd829120f5a68"
       }
     ]
   },
   "parties": [
     {
-      "name": "TROIANO,THOMAS J.",
+      "name": "EXXON MOBIL CORPORATION",
       "role": "plaintiff_petitioner",
       "source_system": "webcivil"
     },
     {
-      "name": "SHAR DESIREE J.",
+      "name": "EASTCHESTER, TOWN OF, ET AL.",
       "role": "defendant_respondent",
       "source_system": "webcivil"
     }
@@ -71,7 +61,7 @@
   "attorneys": [
     {
       "name": "",
-      "firm": "SULLIVAN, PAPAIN, BLOCK & ASSOCS",
+      "firm": "MARCUS & POLLACK LLP",
       "role": "plaintiff_petitioner",
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
@@ -79,7 +69,7 @@
     },
     {
       "name": "",
-      "firm": "MARSHALL, BELLARD & JOHS",
+      "firm": "TOWN ATTORNEY",
       "role": "defendant_respondent",
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
@@ -88,20 +78,20 @@
   ],
   "representation": [
     {
-      "party_name": "TROIANO,THOMAS J.",
+      "party_name": "EXXON MOBIL CORPORATION",
       "party_role": "plaintiff_petitioner",
       "attorney_name": "",
-      "firm": "SULLIVAN, PAPAIN, BLOCK & ASSOCS",
+      "firm": "MARCUS & POLLACK LLP",
       "role": "plaintiff_petitioner",
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
     },
     {
-      "party_name": "SHAR DESIREE J.",
+      "party_name": "EASTCHESTER, TOWN OF, ET AL.",
       "party_role": "defendant_respondent",
       "attorney_name": "",
-      "firm": "MARSHALL, BELLARD & JOHS",
+      "firm": "TOWN ATTORNEY",
       "role": "defendant_respondent",
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
@@ -111,11 +101,11 @@
   "calendar": [
     {
       "source_system": "webcivil",
-      "appearance_date": "02/15/1995",
+      "appearance_date": "12/14/2015",
       "part": "",
       "purpose": "Next appearance",
-      "judicial_officer": "HOWARD SILVER",
-      "raw_text": "02/15/1995",
+      "judicial_officer": "Tolbert, Hon. Bruce E.",
+      "raw_text": "12/14/2015",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
     }
@@ -130,26 +120,15 @@
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260624214956:shar:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260624214956/shar/page-001.html",
-      "html_sha256": "81a6133b91a56e27bc71b75a0cea7b047d89a97a7031508e02b5b4bf46b7f26e",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
-      "page_number": 1,
-      "table_row_number": 11,
-      "row_html_sha256": "b932f2e6e5ae1289a921a0bbc8c54f5aab50bb7ffb4220f39c7737bfc23c5f77"
-    },
-    {
-      "source_system": "webcivil",
-      "capture_id": "20260701023127:0025244_1994:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260701023127/0025244_1994/page-001.html",
-      "html_sha256": "552ff6a695dd14bf4b8d45eb639f6ce00ceaf13225b93567843a96536034e8c6",
+      "capture_id": "20260701023127:0025242_2010:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260701023127/0025242_2010/page-001.html",
+      "html_sha256": "e878220a911994ab6de23f8c397605d5e68fcf5637f339b9264059c8d69542c3",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "",
       "page_number": 1,
       "table_row_number": 3,
-      "row_html_sha256": "c41a9bdeea0091bc5b8f4a8c78e38949cfa3c5a12051f50e3183d30d5c273604"
+      "row_html_sha256": "ef4c3aafb2f2dc443eb24edbaa1aa5e7ca133e95942dd222516cd829120f5a68"
     }
   ],
-  "judicial_officer": "HOWARD SILVER"
+  "judicial_officer": "Tolbert, Hon. Bruce E."
 }
