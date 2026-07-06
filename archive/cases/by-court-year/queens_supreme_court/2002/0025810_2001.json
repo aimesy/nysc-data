@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-06T21:25:53.542Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "0025810/2001",
       "angeli"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0025810/2001",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0025810_2001.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "7b20d66619102ed6e5e08322e2dfa786d2bd426dad7d7dcb8deda94de59aef35"
+      },
       {
         "search_name": "angeli",
         "query_type": "party-prefix",
@@ -74,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "CERTILMAN BALIN ADLER & HYMAN",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00004-p001-r002-case_detail-0025810_2001-01.html",
+      "html_sha256": "f850be5c32493017bc9cafe3152f42bd4e3164c0e3bf2bfe8b73ceb524872cdb",
+      "captured_at": "2026-07-06T21:24:18.954Z"
     }
   ],
   "representation": [
@@ -96,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "KELLY, BARBARA A. ANO",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "CERTILMAN BALIN ADLER & HYMAN",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00004-p001-r002-case_detail-0025810_2001-01.html",
+      "html_sha256": "f850be5c32493017bc9cafe3152f42bd4e3164c0e3bf2bfe8b73ceb524872cdb",
+      "captured_at": "2026-07-06T21:24:18.954Z"
     }
   ],
   "calendar": [
@@ -108,16 +152,313 @@
       "raw_text": "11/20/2002",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "11/20/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "DISCONTINUED PRE-NOTE",
+      "part": "ALLAN B. WEISS PT 2 GEN CAL",
+      "judicial_officer": "ALLAN B. WEISS PT 2 GEN CAL",
+      "remarks": "STIP OF DISC DATED 10/2802",
+      "motion_sequence": "",
+      "raw_text": "11/20/2002 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | ALLAN B. WEISS PT 2 GEN CAL | STIP OF DISC DATED 10/2802",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "b30c80735e55741c2047dabd08bcbad8cd4d618b4e5abd5af80edf041ae44757",
+      "captured_at": "2026-07-06T21:24:18.954Z"
+    },
+    {
+      "appearance_date": "05/23/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE HELD",
+      "part": "JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "judicial_officer": "JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/23/2002 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "b30c80735e55741c2047dabd08bcbad8cd4d618b4e5abd5af80edf041ae44757",
+      "captured_at": "2026-07-06T21:24:18.954Z"
+    },
+    {
+      "appearance_date": "11/20/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "DISCONTINUED PRE-NOTE",
+      "part": "ALLAN B. WEISS PT 2 GEN CAL",
+      "judicial_officer": "ALLAN B. WEISS PT 2 GEN CAL",
+      "remarks": "STIP OF DISC DATED 10/2802",
+      "motion_sequence": "",
+      "raw_text": "11/20/2002 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | ALLAN B. WEISS PT 2 GEN CAL | STIP OF DISC DATED 10/2802",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "efa4c72653cd20f04cf684d602595771a532972ccc6b8e0cdcf9a05f029f5490",
+      "captured_at": "2026-07-06T21:25:53.542Z"
+    },
+    {
+      "appearance_date": "05/23/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE HELD",
+      "part": "JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "judicial_officer": "JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/23/2002 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "efa4c72653cd20f04cf684d602595771a532972ccc6b8e0cdcf9a05f029f5490",
+      "captured_at": "2026-07-06T21:25:53.542Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "11/20/2002",
+      "title": "Supreme Trial - DISCONTINUED PRE-NOTE",
+      "text": "11/20/2002 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | ALLAN B. WEISS PT 2 GEN CAL | STIP OF DISC DATED 10/2802",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "b30c80735e55741c2047dabd08bcbad8cd4d618b4e5abd5af80edf041ae44757",
+      "captured_at": "2026-07-06T21:24:18.954Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "05/23/2002",
+      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
+      "text": "05/23/2002 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "b30c80735e55741c2047dabd08bcbad8cd4d618b4e5abd5af80edf041ae44757",
+      "captured_at": "2026-07-06T21:24:18.954Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "11/20/2002",
+      "title": "Supreme Trial - DISCONTINUED PRE-NOTE",
+      "text": "11/20/2002 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | ALLAN B. WEISS PT 2 GEN CAL | STIP OF DISC DATED 10/2802",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "efa4c72653cd20f04cf684d602595771a532972ccc6b8e0cdcf9a05f029f5490",
+      "captured_at": "2026-07-06T21:25:53.542Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "05/23/2002",
+      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
+      "text": "05/23/2002 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | JOSEPH G. GOLIA PT 21 PRELIM CONF",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "efa4c72653cd20f04cf684d602595771a532972ccc6b8e0cdcf9a05f029f5490",
+      "captured_at": "2026-07-06T21:25:53.542Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "b30c80735e55741c2047dabd08bcbad8cd4d618b4e5abd5af80edf041ae44757",
+      "bytes_len": 5340,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/20/2002&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "captured_at": "2026-07-06T21:24:18.954Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "efa4c72653cd20f04cf684d602595771a532972ccc6b8e0cdcf9a05f029f5490",
+      "bytes_len": 6259,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/20/2002&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "captured_at": "2026-07-06T21:25:53.542Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025810_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00004-p001-r002-case_detail-0025810_2001-01.html",
+      "html_sha256": "f850be5c32493017bc9cafe3152f42bd4e3164c0e3bf2bfe8b73ceb524872cdb",
+      "bytes_len": 6117,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=11/20/2002&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "captured_at": "2026-07-06T21:24:18.954Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00004-p001-r002-case_detail-0025810_2001-01.html",
+      "html_sha256": "46de91b9f05d736c5898967fc3789fe77037f06d1a6dfb602b5b8dd26f8bc92e",
+      "bytes_len": 7036,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=11/20/2002&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "captured_at": "2026-07-06T21:25:53.542Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0025810/2001",
+    "Case Name": "KELLY, BARBARA A. ANO vs. ANGELI, LUZ M.",
+    "Case Type": "MOTOR VEHICLE",
+    "Track": "Standard",
+    "RJI Filed": "05/03/2002",
+    "Disposition Date": "11/20/2002",
+    "Justice Name": "ALLAN B. WEISS"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0025810_2001:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00004-p001-r002-case_detail-0025810_2001-01.html",
+      "html_sha256": "f850be5c32493017bc9cafe3152f42bd4e3164c0e3bf2bfe8b73ceb524872cdb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=11/20/2002&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0025810_2001:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025810_2001/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "b30c80735e55741c2047dabd08bcbad8cd4d618b4e5abd5af80edf041ae44757",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/20/2002&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706212453372_10808:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00004-p001-r002-case_detail-0025810_2001-01.html",
+      "html_sha256": "46de91b9f05d736c5898967fc3789fe77037f06d1a6dfb602b5b8dd26f8bc92e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=11/20/2002&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706212453372_10808:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706212453372_10808/00005-p001-r002-appearances-0025810_2001-01.html",
+      "html_sha256": "efa4c72653cd20f04cf684d602595771a532972ccc6b8e0cdcf9a05f029f5490",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/20/2002&index=BtYPZMmJuBiUmVz1ri1NhA%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=Itp9IdwKnlrvSctqWB3W0A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260625181926:angeli:page:002",
@@ -128,7 +469,19 @@
       "page_number": 2,
       "table_row_number": 12,
       "row_html_sha256": "19d361936869c51c0e79202a8bfff44c5ab86d6d420211eacd4f944235e9de63"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0025810_2001:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0025810_2001/page-001.html",
+      "html_sha256": "4416a1b07fcae35b324843929a468994f7b55f1abc8aad843b35c9a2f2819055",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "7b20d66619102ed6e5e08322e2dfa786d2bd426dad7d7dcb8deda94de59aef35"
     }
   ],
-  "judicial_officer": "ALLAN B. WEISS"
+  "judicial_officer": "ALLAN B. WEISS",
+  "disposition_date": "11/20/2002"
 }

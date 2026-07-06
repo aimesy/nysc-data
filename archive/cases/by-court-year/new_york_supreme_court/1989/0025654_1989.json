@@ -14,8 +14,8 @@
   "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-06T21:18:51.808Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,19 +24,32 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
+      "0025654/1989",
       "insur"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0025654/1989",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0025654_1989.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "6ef00067da45153b6b32d46b0435b875649b528f4170ac97cf8697792f40d654"
+      },
       {
         "search_name": "insur",
         "query_type": "party-prefix",
@@ -75,6 +88,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "DRABKIN & MARGULIES",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00001-p001-r001-case_detail-0025654_1989-01.html",
+      "html_sha256": "6cb5b1eadb9af2e3324742c37b825186fee62f721151dfdc901d6de31ea810b1",
+      "captured_at": "2026-07-06T21:18:51.808Z"
     }
   ],
   "representation": [
@@ -97,6 +125,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "FIRST CENTRAL INSUR. CO.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "DRABKIN & MARGULIES",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00001-p001-r001-case_detail-0025654_1989-01.html",
+      "html_sha256": "6cb5b1eadb9af2e3324742c37b825186fee62f721151dfdc901d6de31ea810b1",
+      "captured_at": "2026-07-06T21:18:51.808Z"
     }
   ],
   "calendar": [
@@ -109,16 +154,281 @@
       "raw_text": "12/17/1992",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "12/17/1992",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "SCHLESINGER, ALICE CLERK'S PART P.M.",
+      "judicial_officer": "SCHLESINGER, ALICE CLERK'S PART P.M.",
+      "remarks": "215 PM PREV.DISP",
+      "motion_sequence": "",
+      "raw_text": "12/17/1992 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | SCHLESINGER, ALICE CLERK'S PART P.M. | 215 PM PREV.DISP",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    },
+    {
+      "appearance_date": "01/23/1990",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "MARKED OFF MOTION##",
+      "part": "CAHN, HERMAN IAS MOTION 21",
+      "judicial_officer": "CAHN, HERMAN IAS MOTION 21",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "01/23/1990 | Motion | No | Unknown | MARKED OFF MOTION## | CAHN, HERMAN IAS MOTION 21 | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    },
+    {
+      "appearance_date": "01/04/1990",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "ADJOURNED",
+      "part": "CAHN, HERMAN MOTION PART",
+      "judicial_officer": "CAHN, HERMAN MOTION PART",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "01/04/1990 | Motion | No | Unknown | ADJOURNED | CAHN, HERMAN MOTION PART | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "captured_at": "2026-07-06T21:18:51.808Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "12/17/1992",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "12/17/1992 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | SCHLESINGER, ALICE CLERK'S PART P.M. | 215 PM PREV.DISP",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "01/23/1990",
+      "title": "Motion - MARKED OFF MOTION##",
+      "text": "01/23/1990 | Motion | No | Unknown | MARKED OFF MOTION## | CAHN, HERMAN IAS MOTION 21 | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 3,
+      "entry_date": "01/04/1990",
+      "title": "Motion - ADJOURNED",
+      "text": "01/04/1990 | Motion | No | Unknown | ADJOURNED | CAHN, HERMAN MOTION PART | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "01/04/1990",
+      "title": "BILL OF PARTICULARS/PRECLUSION",
+      "text": "1 | 01/04/1990 | BILL OF PARTICULARS/PRECLUSION | 01/23/1990 | No | Decided: 01/23/1990 SEE DECISION Before Justice: CAHN, HERMAN | Short Form Order | 01/23/1990",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00003-p001-r001-motions-0025654_1989-01.html",
+      "html_sha256": "6fe6efb861f71ef9e98bd325a6e2ce38090fd165b2314e73958e9690502a217d",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "01/04/1990",
+      "filed_by": "",
+      "relief": "BILL OF PARTICULARS/PRECLUSION",
+      "submit_date": "01/23/1990",
+      "answer_demanded": "No",
+      "status": "Decided: 01/23/1990 SEE DECISION Before Justice: CAHN, HERMAN",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "01/23/1990",
+      "raw_text": "1 | 01/04/1990 | BILL OF PARTICULARS/PRECLUSION | 01/23/1990 | No | Decided: 01/23/1990 SEE DECISION Before Justice: CAHN, HERMAN | Short Form Order | 01/23/1990",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00003-p001-r001-motions-0025654_1989-01.html",
+      "html_sha256": "6fe6efb861f71ef9e98bd325a6e2ce38090fd165b2314e73958e9690502a217d",
+      "captured_at": "2026-07-06T21:18:51.808Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "bytes_len": 6022,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/17/1992&index=lfovQ5dHxQIjsPZfibd_PLUS_GQ%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=C3BuCw4MQRIcPY5mOpewFQ%3D%3D",
+      "captured_at": "2026-07-06T21:18:51.808Z",
+      "parsed_counts": {
+        "calendar": 3,
+        "docket_entries": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00001-p001-r001-case_detail-0025654_1989-01.html",
+      "html_sha256": "6cb5b1eadb9af2e3324742c37b825186fee62f721151dfdc901d6de31ea810b1",
+      "bytes_len": 6411,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lfovQ5dHxQIjsPZfibd_PLUS_GQ%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&motion=M&docs=&adate=12/17/1992&civilCaseId=C3BuCw4MQRIcPY5mOpewFQ%3D%3D",
+      "captured_at": "2026-07-06T21:18:51.808Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0025654_1989/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00003-p001-r001-motions-0025654_1989-01.html",
+      "html_sha256": "6fe6efb861f71ef9e98bd325a6e2ce38090fd165b2314e73958e9690502a217d",
+      "bytes_len": 5470,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lfovQ5dHxQIjsPZfibd_PLUS_GQ%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=C3BuCw4MQRIcPY5mOpewFQ%3D%3D",
+      "captured_at": "2026-07-06T21:18:51.808Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "New York Supreme Court",
+    "Index Number": "0025654/1989",
+    "Case Name": "FIRST CENTRAL INSUR. CO. vs. MERINGOFF PROPERTIES",
+    "Case Type": "OTHER TORTS",
+    "Track": "Other",
+    "RJI Filed": "12/26/1989",
+    "Disposition Date": "12/17/1992",
+    "Justice Name": "SCHLESINGER, ALICE"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0025654_1989:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00001-p001-r001-case_detail-0025654_1989-01.html",
+      "html_sha256": "6cb5b1eadb9af2e3324742c37b825186fee62f721151dfdc901d6de31ea810b1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=lfovQ5dHxQIjsPZfibd_PLUS_GQ%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&motion=M&docs=&adate=12/17/1992&civilCaseId=C3BuCw4MQRIcPY5mOpewFQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0025654_1989:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00002-p001-r001-appearances-0025654_1989-01.html",
+      "html_sha256": "5b78847584aaa472a14bc9fd0c096a338ee5e935a314ec20e9604530d7f197f3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/17/1992&index=lfovQ5dHxQIjsPZfibd_PLUS_GQ%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=C3BuCw4MQRIcPY5mOpewFQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0025654_1989:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0025654_1989/00003-p001-r001-motions-0025654_1989-01.html",
+      "html_sha256": "6fe6efb861f71ef9e98bd325a6e2ce38090fd165b2314e73958e9690502a217d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=lfovQ5dHxQIjsPZfibd_PLUS_GQ%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=C3BuCw4MQRIcPY5mOpewFQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:insur:page:008",
@@ -129,7 +439,19 @@
       "page_number": 8,
       "table_row_number": 25,
       "row_html_sha256": "dea6f0cfebb84e8709b064d09b994e3dd661744c461ac49354660b3e626ce661"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0025654_1989:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0025654_1989/page-001.html",
+      "html_sha256": "eedb0d66e4f2c63780fd4bd3b378cc0a12ced3187fda9e0c803956c1fa116c50",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "6ef00067da45153b6b32d46b0435b875649b528f4170ac97cf8697792f40d654"
     }
   ],
-  "judicial_officer": "SCHLESINGER, ALICE"
+  "judicial_officer": "SCHLESINGER, ALICE",
+  "disposition_date": "12/17/1992"
 }
