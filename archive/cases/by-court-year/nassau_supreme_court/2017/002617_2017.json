@@ -14,8 +14,8 @@
   "case_type": "OM-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T01:47:00.728Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "002617/2017",
       "natali"
     ],
     "result_row_refs": [
+      {
+        "search_name": "002617/2017",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/002617_2017.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "39470b3bc083764bf69bf3ab4c2926ce75844c3fcceaa9adb3a7f7075541d60e"
+      },
       {
         "search_name": "natali",
         "query_type": "party-prefix",
@@ -66,6 +78,21 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "AJAM, NATALI",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/002617_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00001-p001-r001-case_detail-002617_2017-01.html",
+      "html_sha256": "1a976f3b43f3e0348a4ba4fcb1f967e3c842e9ad137aef7f4bcb0becfdefa944",
+      "captured_at": "2026-07-07T01:42:38.539Z"
     }
   ],
   "representation": [
@@ -78,6 +105,23 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "AJAM, NATALI",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "AJAM, NATALI",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/002617_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00001-p001-r001-case_detail-002617_2017-01.html",
+      "html_sha256": "1a976f3b43f3e0348a4ba4fcb1f967e3c842e9ad137aef7f4bcb0becfdefa944",
+      "captured_at": "2026-07-07T01:42:38.539Z"
     }
   ],
   "calendar": [
@@ -90,16 +134,232 @@
       "raw_text": "05/19/2017",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/19/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Other Final Disposition (Pre-Note)",
+      "part": "ST1-J, Special Term Part 1 Calendar Clerk Dept",
+      "judicial_officer": "ST1-J, Special Term Part 1 Calendar Clerk Dept",
+      "remarks": "NAME CHANGE SIGNED (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/19/2017 | Conversion-Other | No | None | Other Final Disposition (Pre-Note) | ST1-J, Special Term Part 1 Calendar Clerk Dept | NAME CHANGE SIGNED (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/002617_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "993478a8252c693cdedb829f7bf6f73bd2957f33fc3df68d16931dd5ae0fea16",
+      "captured_at": "2026-07-07T01:42:38.539Z"
+    },
+    {
+      "appearance_date": "05/19/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Other Final Disposition (Pre-Note)",
+      "part": "ST1-J, Special Term Part 1 Calendar Clerk Dept",
+      "judicial_officer": "ST1-J, Special Term Part 1 Calendar Clerk Dept",
+      "remarks": "NAME CHANGE SIGNED (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/19/2017 | Conversion-Other | No | None | Other Final Disposition (Pre-Note) | ST1-J, Special Term Part 1 Calendar Clerk Dept | NAME CHANGE SIGNED (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "e5d2b518b1dd0f6bc3034360b4e2e7938ccced64701cc25ac7b9025dd3dad7ae",
+      "captured_at": "2026-07-07T01:47:00.728Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/19/2017",
+      "title": "Conversion-Other - Other Final Disposition (Pre-Note)",
+      "text": "05/19/2017 | Conversion-Other | No | None | Other Final Disposition (Pre-Note) | ST1-J, Special Term Part 1 Calendar Clerk Dept | NAME CHANGE SIGNED (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/002617_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "993478a8252c693cdedb829f7bf6f73bd2957f33fc3df68d16931dd5ae0fea16",
+      "captured_at": "2026-07-07T01:42:38.539Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/19/2017",
+      "title": "Conversion-Other - Other Final Disposition (Pre-Note)",
+      "text": "05/19/2017 | Conversion-Other | No | None | Other Final Disposition (Pre-Note) | ST1-J, Special Term Part 1 Calendar Clerk Dept | NAME CHANGE SIGNED (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "e5d2b518b1dd0f6bc3034360b4e2e7938ccced64701cc25ac7b9025dd3dad7ae",
+      "captured_at": "2026-07-07T01:47:00.728Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/002617_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "993478a8252c693cdedb829f7bf6f73bd2957f33fc3df68d16931dd5ae0fea16",
+      "bytes_len": 5576,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/19/2017&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "captured_at": "2026-07-07T01:42:38.539Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "e5d2b518b1dd0f6bc3034360b4e2e7938ccced64701cc25ac7b9025dd3dad7ae",
+      "bytes_len": 5576,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/19/2017&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "captured_at": "2026-07-07T01:47:00.728Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/002617_2017/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00001-p001-r001-case_detail-002617_2017-01.html",
+      "html_sha256": "1a976f3b43f3e0348a4ba4fcb1f967e3c842e9ad137aef7f4bcb0becfdefa944",
+      "bytes_len": 6693,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&motion=&docs=&adate=05/19/2017&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "captured_at": "2026-07-07T01:42:38.539Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/00001-p001-r001-case_detail-002617_2017-01.html",
+      "html_sha256": "bddcb2e0c480ade7e0b9a22a036b88279cb80c18753237b5fdca321941c0d0c1",
+      "bytes_len": 6693,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&motion=&docs=&adate=05/19/2017&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "captured_at": "2026-07-07T01:47:00.728Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Nassau Supreme Court",
+    "Index Number": "002617/2017",
+    "Case Name": "AJAM, NATALI vs. IN THE MATTER OF THE",
+    "Case Type": "OM-Other",
+    "Track": "Complex",
+    "RJI Filed": "05/15/2017",
+    "NOI Due": "08/16/2018",
+    "Disposition Date": "05/19/2017",
+    "Justice Name": "ST1-J, Special Term Part 1"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:002617_2017:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00001-p001-r001-case_detail-002617_2017-01.html",
+      "html_sha256": "1a976f3b43f3e0348a4ba4fcb1f967e3c842e9ad137aef7f4bcb0becfdefa944",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&motion=&docs=&adate=05/19/2017&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:002617_2017:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/002617_2017/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "993478a8252c693cdedb829f7bf6f73bd2957f33fc3df68d16931dd5ae0fea16",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/19/2017&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706214538864_10882:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/00001-p001-r001-case_detail-002617_2017-01.html",
+      "html_sha256": "bddcb2e0c480ade7e0b9a22a036b88279cb80c18753237b5fdca321941c0d0c1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&motion=&docs=&adate=05/19/2017&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706214538864_10882:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706214538864_10882/00002-p001-r001-appearances-002617_2017-01.html",
+      "html_sha256": "e5d2b518b1dd0f6bc3034360b4e2e7938ccced64701cc25ac7b9025dd3dad7ae",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/19/2017&index=vtDOzy8OnPSJvFHs2rEW6Q%3D%3D&county=uwztcWtjLrx0CQDg8HbeiA%3D%3D&civilCaseId=uve3e%2FPZ2fBZshLM0C91lg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260625181926:natali:page:006",
@@ -110,7 +370,19 @@
       "page_number": 6,
       "table_row_number": 24,
       "row_html_sha256": "a6d63a89f594734edb7b0103a063e0984ed89b5f4f24f7aef0756202be347718"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:002617_2017:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/002617_2017/page-001.html",
+      "html_sha256": "88efcc33321aee9533717d9ee5d51b8de78313776baf5e4dcfa0b9656d4841ae",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "39470b3bc083764bf69bf3ab4c2926ce75844c3fcceaa9adb3a7f7075541d60e"
     }
   ],
-  "judicial_officer": "ST1-J, Special Term Part 1"
+  "judicial_officer": "ST1-J, Special Term Part 1",
+  "disposition_date": "05/19/2017"
 }

@@ -14,8 +14,8 @@
   "case_type": "MATRIMONIAL UNCONTESTED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T01:57:25.540Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "0026487/2010",
       "marti"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026487/2010",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026487_2010.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "44a6572783078c0fbcfdb943285cf1181779e97d6a71de2c54d3607a8c726fb6"
+      },
       {
         "search_name": "marti",
         "query_type": "party-prefix",
@@ -74,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "KULAKIS & CHRISTOFORATOS",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026487_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00001-p001-r001-case_detail-0026487_2010-01.html",
+      "html_sha256": "28b4c62df4f0b85cb611d392dbf53aa67cd29ee6a1fbd7eeda5e4fd341ba5105",
+      "captured_at": "2026-07-07T01:57:25.540Z"
     }
   ],
   "representation": [
@@ -96,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "MARTI, MARTIS",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "KULAKIS & CHRISTOFORATOS",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026487_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00001-p001-r001-case_detail-0026487_2010-01.html",
+      "html_sha256": "28b4c62df4f0b85cb611d392dbf53aa67cd29ee6a1fbd7eeda5e4fd341ba5105",
+      "captured_at": "2026-07-07T01:57:25.540Z"
     }
   ],
   "calendar": [
@@ -108,16 +152,130 @@
       "raw_text": "09/29/2011",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "09/29/2011",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "UNCONT. MAT. JUDGMENT SIGNED",
+      "part": "BERNICE DAUN SIEGAL PT 19 UNCONTESTED MATRIMONIALS",
+      "judicial_officer": "BERNICE DAUN SIEGAL PT 19 UNCONTESTED MATRIMONIALS",
+      "remarks": "2/3/12",
+      "motion_sequence": "",
+      "raw_text": "09/29/2011 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | BERNICE DAUN SIEGAL PT 19 UNCONTESTED MATRIMONIALS | 2/3/12",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026487_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00002-p001-r001-appearances-0026487_2010-01.html",
+      "html_sha256": "1239e55c5b1f902d5c8d7af305b601359f59393555bce1d21a5e51a6cca2fd79",
+      "captured_at": "2026-07-07T01:57:25.540Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "09/29/2011",
+      "title": "Supreme Initial (first time on) - UNCONT. MAT. JUDGMENT SIGNED",
+      "text": "09/29/2011 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | BERNICE DAUN SIEGAL PT 19 UNCONTESTED MATRIMONIALS | 2/3/12",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026487_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00002-p001-r001-appearances-0026487_2010-01.html",
+      "html_sha256": "1239e55c5b1f902d5c8d7af305b601359f59393555bce1d21a5e51a6cca2fd79",
+      "captured_at": "2026-07-07T01:57:25.540Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026487_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00002-p001-r001-appearances-0026487_2010-01.html",
+      "html_sha256": "1239e55c5b1f902d5c8d7af305b601359f59393555bce1d21a5e51a6cca2fd79",
+      "bytes_len": 5580,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/29/2011&index=0vmssANBgqnAiaYVmqQODQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=lRoOGiUHxpvN1IBYoyG3Sw%3D%3D",
+      "captured_at": "2026-07-07T01:57:25.540Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026487_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00001-p001-r001-case_detail-0026487_2010-01.html",
+      "html_sha256": "28b4c62df4f0b85cb611d392dbf53aa67cd29ee6a1fbd7eeda5e4fd341ba5105",
+      "bytes_len": 7041,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0vmssANBgqnAiaYVmqQODQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=09/29/2011&civilCaseId=lRoOGiUHxpvN1IBYoyG3Sw%3D%3D",
+      "captured_at": "2026-07-07T01:57:25.540Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0026487/2010",
+    "Case Name": "MARTI, MARTIS vs. LOUCAIDOU, MARIA",
+    "Case Type": "MATRIMONIAL UNCONTESTED",
+    "Track": "Standard",
+    "RJI Filed": "09/20/2011",
+    "NOI Filed": "09/20/2011",
+    "Disposition Date": "09/29/2011",
+    "Justice Name": "BERNICE DAUN SIEGAL"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026487_2010:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00001-p001-r001-case_detail-0026487_2010-01.html",
+      "html_sha256": "28b4c62df4f0b85cb611d392dbf53aa67cd29ee6a1fbd7eeda5e4fd341ba5105",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0vmssANBgqnAiaYVmqQODQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=09/29/2011&civilCaseId=lRoOGiUHxpvN1IBYoyG3Sw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026487_2010:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026487_2010/00002-p001-r001-appearances-0026487_2010-01.html",
+      "html_sha256": "1239e55c5b1f902d5c8d7af305b601359f59393555bce1d21a5e51a6cca2fd79",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/29/2011&index=0vmssANBgqnAiaYVmqQODQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=lRoOGiUHxpvN1IBYoyG3Sw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:marti:page:010",
@@ -128,7 +286,19 @@
       "page_number": 10,
       "table_row_number": 17,
       "row_html_sha256": "52c6e2f123f27742c4a468a24aac7df03d2e2224e28506965eaa728e5ead29bc"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026487_2010:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026487_2010/page-001.html",
+      "html_sha256": "556626c2a8244645edc2d49a0212e41bcf6d52a5040e77693e79edcb78895c5b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "44a6572783078c0fbcfdb943285cf1181779e97d6a71de2c54d3607a8c726fb6"
     }
   ],
-  "judicial_officer": "BERNICE DAUN SIEGAL"
+  "judicial_officer": "BERNICE DAUN SIEGAL",
+  "disposition_date": "09/29/2011"
 }

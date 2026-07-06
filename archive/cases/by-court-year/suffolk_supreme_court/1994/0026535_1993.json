@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T01:59:07.286Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,19 +24,32 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
+      "0026535/1993",
       "brand"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026535/1993",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026535_1993.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "086671f6e0ae072bac9a73ccb4bc866cbff822bd3f410ff33dd7a4d6958b323c"
+      },
       {
         "search_name": "brand",
         "query_type": "party-prefix",
@@ -75,6 +88,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "SALAMON GRUBER BLAYMORE, P.C.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00004-p001-r002-case_detail-0026535_1993-01.html",
+      "html_sha256": "1f6a48a468823992254278e341b4bad66268f6882603cfc5c87e35b33442b9f5",
+      "captured_at": "2026-07-07T01:59:07.286Z"
     }
   ],
   "representation": [
@@ -97,6 +125,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "ISLAND CONTAINER CORP.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "SALAMON GRUBER BLAYMORE, P.C.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00004-p001-r002-case_detail-0026535_1993-01.html",
+      "html_sha256": "1f6a48a468823992254278e341b4bad66268f6882603cfc5c87e35b33442b9f5",
+      "captured_at": "2026-07-07T01:59:07.286Z"
     }
   ],
   "calendar": [
@@ -109,16 +154,322 @@
       "raw_text": "04/02/1997",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "04/02/1997",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP-PRE NOTE",
+      "part": "JUDICIAL HEARING OFFICER JHO, ALL PURPOSE PART",
+      "judicial_officer": "JUDICIAL HEARING OFFICER JHO, ALL PURPOSE PART",
+      "remarks": "2PM/C-2 DISP",
+      "motion_sequence": "",
+      "raw_text": "04/02/1997 | Supreme Trial | No | Unknown | OTHER FINAL DISP-PRE NOTE | JUDICIAL HEARING OFFICER JHO, ALL PURPOSE PART | 2PM/C-2 DISP",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "appearance_date": "01/19/1995",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "REMAND",
+      "part": "ROBERT W. DOYLE PRELIMINARY CONF PART 5",
+      "judicial_officer": "ROBERT W. DOYLE PRELIMINARY CONF PART 5",
+      "remarks": "LETT'R SALAMON,ESQ",
+      "motion_sequence": "",
+      "raw_text": "01/19/1995 | Supreme Initial (first time on) | No | Unknown | REMAND | ROBERT W. DOYLE PRELIMINARY CONF PART 5 | LETT'R SALAMON,ESQ",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "appearance_date": "09/01/1994",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "SUBMITTED##",
+      "part": "MOTION PART 5",
+      "judicial_officer": "MOTION PART 5",
+      "remarks": "O/C",
+      "motion_sequence": "1",
+      "raw_text": "09/01/1994 | Motion | No | Unknown | SUBMITTED## | MOTION PART 5 | O/C | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "appearance_date": "08/15/1994",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "ADJOURNED",
+      "part": "ROBERT W. DOYLE MOTION PART 5",
+      "judicial_officer": "ROBERT W. DOYLE MOTION PART 5",
+      "remarks": "O/C",
+      "motion_sequence": "1",
+      "raw_text": "08/15/1994 | Motion | No | Unknown | ADJOURNED | ROBERT W. DOYLE MOTION PART 5 | O/C | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/02/1997",
+      "title": "Supreme Trial - OTHER FINAL DISP-PRE NOTE",
+      "text": "04/02/1997 | Supreme Trial | No | Unknown | OTHER FINAL DISP-PRE NOTE | JUDICIAL HEARING OFFICER JHO, ALL PURPOSE PART | 2PM/C-2 DISP",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "01/19/1995",
+      "title": "Supreme Initial (first time on) - REMAND",
+      "text": "01/19/1995 | Supreme Initial (first time on) | No | Unknown | REMAND | ROBERT W. DOYLE PRELIMINARY CONF PART 5 | LETT'R SALAMON,ESQ",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 3,
+      "entry_date": "09/01/1994",
+      "title": "Motion - SUBMITTED##",
+      "text": "09/01/1994 | Motion | No | Unknown | SUBMITTED## | MOTION PART 5 | O/C | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 4,
+      "entry_date": "08/15/1994",
+      "title": "Motion - ADJOURNED",
+      "text": "08/15/1994 | Motion | No | Unknown | ADJOURNED | ROBERT W. DOYLE MOTION PART 5 | O/C | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "08/02/1994",
+      "title": "STRIKE ANSWER",
+      "text": "1 | 08/02/1994 | Plaintiff | STRIKE ANSWER | 09/01/1994 | No | Decided: 12/16/1994 MOTION GRANTED Before Justice: ROBERT W. DOYLE | Short Form Order | 12/16/1994",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00006-p001-r002-motions-0026535_1993-01.html",
+      "html_sha256": "da7fed69c31a2bce1e6bbc402ba0c3d87e2993fe71895b7c9f8106fc64425810",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "08/02/1994",
+      "filed_by": "Plaintiff",
+      "relief": "STRIKE ANSWER",
+      "submit_date": "09/01/1994",
+      "answer_demanded": "No",
+      "status": "Decided: 12/16/1994 MOTION GRANTED Before Justice: ROBERT W. DOYLE",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "12/16/1994",
+      "raw_text": "1 | 08/02/1994 | Plaintiff | STRIKE ANSWER | 09/01/1994 | No | Decided: 12/16/1994 MOTION GRANTED Before Justice: ROBERT W. DOYLE | Short Form Order | 12/16/1994",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00006-p001-r002-motions-0026535_1993-01.html",
+      "html_sha256": "da7fed69c31a2bce1e6bbc402ba0c3d87e2993fe71895b7c9f8106fc64425810",
+      "captured_at": "2026-07-07T01:59:07.286Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "bytes_len": 7600,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/02/1997&index=h4suAGpSwllqdS4SKHs06g%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=Q7CMDIvpNoLZp6s36rM7OA%3D%3D",
+      "captured_at": "2026-07-07T01:59:07.286Z",
+      "parsed_counts": {
+        "calendar": 4,
+        "docket_entries": 4
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00004-p001-r002-case_detail-0026535_1993-01.html",
+      "html_sha256": "1f6a48a468823992254278e341b4bad66268f6882603cfc5c87e35b33442b9f5",
+      "bytes_len": 7291,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=h4suAGpSwllqdS4SKHs06g%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&motion=M&docs=&adate=04/02/1997&civilCaseId=Q7CMDIvpNoLZp6s36rM7OA%3D%3D",
+      "captured_at": "2026-07-07T01:59:07.286Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026535_1993/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00006-p001-r002-motions-0026535_1993-01.html",
+      "html_sha256": "da7fed69c31a2bce1e6bbc402ba0c3d87e2993fe71895b7c9f8106fc64425810",
+      "bytes_len": 6384,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=h4suAGpSwllqdS4SKHs06g%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=Q7CMDIvpNoLZp6s36rM7OA%3D%3D",
+      "captured_at": "2026-07-07T01:59:07.286Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Suffolk Supreme Court",
+    "Index Number": "0026535/1993",
+    "Case Name": "ISLAND CONTAINER CORP. vs. ROSIE BRAND TOMATO INC.",
+    "Case Type": "CONTRACT",
+    "Track": "Complex",
+    "RJI Filed": "08/02/1994",
+    "Disposition Date": "04/02/1997",
+    "Justice Name": "JOHN J. DUNN"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026535_1993:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00004-p001-r002-case_detail-0026535_1993-01.html",
+      "html_sha256": "1f6a48a468823992254278e341b4bad66268f6882603cfc5c87e35b33442b9f5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=h4suAGpSwllqdS4SKHs06g%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&motion=M&docs=&adate=04/02/1997&civilCaseId=Q7CMDIvpNoLZp6s36rM7OA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026535_1993:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00005-p001-r002-appearances-0026535_1993-01.html",
+      "html_sha256": "620da9b8dc5f7067372d80bb8b65111f2666ad082cf03e7204bc930c69f7fab1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/02/1997&index=h4suAGpSwllqdS4SKHs06g%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=Q7CMDIvpNoLZp6s36rM7OA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026535_1993:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026535_1993/00006-p001-r002-motions-0026535_1993-01.html",
+      "html_sha256": "da7fed69c31a2bce1e6bbc402ba0c3d87e2993fe71895b7c9f8106fc64425810",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=h4suAGpSwllqdS4SKHs06g%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=Q7CMDIvpNoLZp6s36rM7OA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260625114747:brand:page:011",
@@ -129,7 +480,19 @@
       "page_number": 11,
       "table_row_number": 16,
       "row_html_sha256": "ea524346ff1fe957279c1e55efc563fc3ae62cdf5894a8617d4790b5e1c2addd"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026535_1993:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026535_1993/page-001.html",
+      "html_sha256": "2178ca44cf7e5e230aa164ae7f32efda2892838bcd8da5ab71d85f231367bd05",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "086671f6e0ae072bac9a73ccb4bc866cbff822bd3f410ff33dd7a4d6958b323c"
     }
   ],
-  "judicial_officer": "JOHN J. DUNN"
+  "judicial_officer": "JOHN J. DUNN",
+  "disposition_date": "04/02/1997"
 }

@@ -14,12 +14,16 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-06-30T02:24:52.080Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T02:06:43.101Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 11
+      "search_rows_seen": 1,
+      "followup_responses_seen": 17
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "0026599/1990"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "0026599/1990",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026599_1990.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "a957ecd7b5e658b97f4701ccbfe41333bdf7b02c9cf34426575c7aea3ebc4977"
+      }
+    ]
   },
   "parties": [
     {
@@ -49,6 +64,14 @@
     }
   ],
   "attorneys": [
+    {
+      "name": "",
+      "firm": "JEFFREY D. BUSS",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
     {
       "name": "",
       "firm": "JEFFREY D. BUSS",
@@ -72,6 +95,16 @@
       "attorney_name": "",
       "firm": "JEFFREY D. BUSS",
       "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "D & W JEWELRY MANUFACTURING",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "JEFFREY D. BUSS",
+      "role": "plaintiff_petitioner",
       "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
       "source_profile": "nysc_webcivil",
@@ -86,6 +119,16 @@
   ],
   "calendar": [
     {
+      "source_system": "webcivil",
+      "appearance_date": "02/22/1991",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "SHERMAN, B.S.",
+      "raw_text": "02/22/1991",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
       "appearance_date": "02/22/1991",
       "appearance_time": "",
       "purpose": "Motion",
@@ -268,6 +311,98 @@
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260630022211/haro/00015-p001-r006-appearances-0026599_1990-03.html",
       "html_sha256": "8fcd32f3d442fbd96176112cfb7045575141ab5b6991a01394ce4f43b4c9b0d9",
       "captured_at": "2026-06-30T02:24:52.080Z"
+    },
+    {
+      "appearance_date": "02/22/1991",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "SUBMITTED##",
+      "part": "SHERMAN, B.S. IAS MOTION 19",
+      "judicial_officer": "SHERMAN, B.S. IAS MOTION 19",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "02/22/1991 | Motion | No | Unknown | SUBMITTED## | SHERMAN, B.S. IAS MOTION 19 | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "2f514b790f51b0b21299afa6e38b2fa98a5f7acc8793b93ca2128107e78089c3",
+      "captured_at": "2026-07-07T02:01:27.466Z"
+    },
+    {
+      "appearance_date": "02/14/1991",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "ADJOURNED",
+      "part": "SHERMAN, B.S. MOTION PART",
+      "judicial_officer": "SHERMAN, B.S. MOTION PART",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "02/14/1991 | Motion | No | Unknown | ADJOURNED | SHERMAN, B.S. MOTION PART | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "2f514b790f51b0b21299afa6e38b2fa98a5f7acc8793b93ca2128107e78089c3",
+      "captured_at": "2026-07-07T02:01:27.466Z"
+    },
+    {
+      "appearance_date": "02/22/1991",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "SUBMITTED##",
+      "part": "SHERMAN, B.S. IAS MOTION 19",
+      "judicial_officer": "SHERMAN, B.S. IAS MOTION 19",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "02/22/1991 | Motion | No | Unknown | SUBMITTED## | SHERMAN, B.S. IAS MOTION 19 | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "e6d3c784da74de12e40dd75e64d75e91025737c074af28e0b5d18ae710bf5aa5",
+      "captured_at": "2026-07-07T02:06:43.101Z"
+    },
+    {
+      "appearance_date": "02/14/1991",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "ADJOURNED",
+      "part": "SHERMAN, B.S. MOTION PART",
+      "judicial_officer": "SHERMAN, B.S. MOTION PART",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "02/14/1991 | Motion | No | Unknown | ADJOURNED | SHERMAN, B.S. MOTION PART | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "e6d3c784da74de12e40dd75e64d75e91025737c074af28e0b5d18ae710bf5aa5",
+      "captured_at": "2026-07-07T02:06:43.101Z"
     }
   ],
   "docket_entries": [
@@ -504,6 +639,114 @@
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260630022211/haro/00016-p001-r006-motions-0026599_1990-01.html",
       "html_sha256": "fb3f0e24dae5ba5c00c77174ce8a6ac3f48a804fb2aed3d6fa249c65d5bc6a16",
       "captured_at": "2026-06-30T02:24:52.080Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "02/22/1991",
+      "title": "Motion - SUBMITTED##",
+      "text": "02/22/1991 | Motion | No | Unknown | SUBMITTED## | SHERMAN, B.S. IAS MOTION 19 | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "2f514b790f51b0b21299afa6e38b2fa98a5f7acc8793b93ca2128107e78089c3",
+      "captured_at": "2026-07-07T02:01:27.466Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "02/14/1991",
+      "title": "Motion - ADJOURNED",
+      "text": "02/14/1991 | Motion | No | Unknown | ADJOURNED | SHERMAN, B.S. MOTION PART | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "2f514b790f51b0b21299afa6e38b2fa98a5f7acc8793b93ca2128107e78089c3",
+      "captured_at": "2026-07-07T02:01:27.466Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "02/14/1991",
+      "title": "SUMMARY JUDGMNT/LIEU COMPLAINT",
+      "text": "1 | 02/14/1991 | SUMMARY JUDGMNT/LIEU COMPLAINT | 02/22/1991 | No | Decided: 02/27/1991 CASE DISPOSED Before Justice: SHERMAN, B.S. | Short Form Order | 02/27/1991",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "5f3383f06ec2bcd7e13cf26a0cafe9f6d6d0d712611530cca975a885bc37c1f2",
+      "captured_at": "2026-07-07T02:01:27.466Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "02/22/1991",
+      "title": "Motion - SUBMITTED##",
+      "text": "02/22/1991 | Motion | No | Unknown | SUBMITTED## | SHERMAN, B.S. IAS MOTION 19 | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "e6d3c784da74de12e40dd75e64d75e91025737c074af28e0b5d18ae710bf5aa5",
+      "captured_at": "2026-07-07T02:06:43.101Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "02/14/1991",
+      "title": "Motion - ADJOURNED",
+      "text": "02/14/1991 | Motion | No | Unknown | ADJOURNED | SHERMAN, B.S. MOTION PART | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "e6d3c784da74de12e40dd75e64d75e91025737c074af28e0b5d18ae710bf5aa5",
+      "captured_at": "2026-07-07T02:06:43.101Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "02/14/1991",
+      "title": "SUMMARY JUDGMNT/LIEU COMPLAINT",
+      "text": "1 | 02/14/1991 | SUMMARY JUDGMNT/LIEU COMPLAINT | 02/22/1991 | No | Decided: 02/27/1991 CASE DISPOSED Before Justice: SHERMAN, B.S. | Short Form Order | 02/27/1991",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "0a4e23a47497d8d320c66f4ea1781ecfbbe66ae32f81783cb1dbd9b2de96bb7a",
+      "captured_at": "2026-07-07T02:06:43.101Z"
     }
   ],
   "motions": [
@@ -611,6 +854,48 @@
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260630022211/haro/00016-p001-r006-motions-0026599_1990-01.html",
       "html_sha256": "fb3f0e24dae5ba5c00c77174ce8a6ac3f48a804fb2aed3d6fa249c65d5bc6a16",
       "captured_at": "2026-06-30T02:24:52.080Z"
+    },
+    {
+      "motion_sequence": "1",
+      "filed_date": "02/14/1991",
+      "filed_by": "",
+      "relief": "SUMMARY JUDGMNT/LIEU COMPLAINT",
+      "submit_date": "02/22/1991",
+      "answer_demanded": "No",
+      "status": "Decided: 02/27/1991 CASE DISPOSED Before Justice: SHERMAN, B.S.",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "02/27/1991",
+      "raw_text": "1 | 02/14/1991 | SUMMARY JUDGMNT/LIEU COMPLAINT | 02/22/1991 | No | Decided: 02/27/1991 CASE DISPOSED Before Justice: SHERMAN, B.S. | Short Form Order | 02/27/1991",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "5f3383f06ec2bcd7e13cf26a0cafe9f6d6d0d712611530cca975a885bc37c1f2",
+      "captured_at": "2026-07-07T02:01:27.466Z"
+    },
+    {
+      "motion_sequence": "1",
+      "filed_date": "02/14/1991",
+      "filed_by": "",
+      "relief": "SUMMARY JUDGMNT/LIEU COMPLAINT",
+      "submit_date": "02/22/1991",
+      "answer_demanded": "No",
+      "status": "Decided: 02/27/1991 CASE DISPOSED Before Justice: SHERMAN, B.S.",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "02/27/1991",
+      "raw_text": "1 | 02/14/1991 | SUMMARY JUDGMNT/LIEU COMPLAINT | 02/22/1991 | No | Decided: 02/27/1991 CASE DISPOSED Before Justice: SHERMAN, B.S. | Short Form Order | 02/27/1991",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "0a4e23a47497d8d320c66f4ea1781ecfbbe66ae32f81783cb1dbd9b2de96bb7a",
+      "captured_at": "2026-07-07T02:06:43.101Z"
     }
   ],
   "documents": [],
@@ -646,6 +931,40 @@
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/22/1991&index=W0m%2FY8dCVrVZbe9V6MG4hA%3D%3D&county=5PJZd8IqJed1V6UvxyEASA%3D%3D&civilCaseId=aWeat2kNSnn8Yg2W3EMsSQ%3D%3D",
       "captured_at": "2026-06-30T02:24:52.080Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "2f514b790f51b0b21299afa6e38b2fa98a5f7acc8793b93ca2128107e78089c3",
+      "bytes_len": 6180,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/22/1991&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "captured_at": "2026-07-07T02:01:27.466Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "e6d3c784da74de12e40dd75e64d75e91025737c074af28e0b5d18ae710bf5aa5",
+      "bytes_len": 6180,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/22/1991&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "captured_at": "2026-07-07T02:06:43.101Z",
       "parsed_counts": {
         "calendar": 2,
         "docket_entries": 2
@@ -699,8 +1018,8 @@
       "captured_at": "2026-06-30T02:24:52.080Z",
       "parsed_counts": {
         "parties": 2,
-        "attorneys": 1,
-        "representation": 1
+        "attorneys": 2,
+        "representation": 2
       }
     },
     {
@@ -717,8 +1036,44 @@
       "captured_at": "2026-06-30T02:24:52.080Z",
       "parsed_counts": {
         "parties": 2,
-        "attorneys": 1,
-        "representation": 1
+        "attorneys": 2,
+        "representation": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00007-p001-r003-case_detail-0026599_1990-01.html",
+      "html_sha256": "1d937fe854f023252265199225007df4b6b4f11abb023d6dbbb14e20ea86c786",
+      "bytes_len": 6872,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&motion=M&docs=&adate=02/22/1991&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "captured_at": "2026-07-07T02:01:27.466Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00007-p001-r003-case_detail-0026599_1990-01.html",
+      "html_sha256": "f553a13d33414906580968124da447a5f6d8aad3767cd84228ade5d91d2101e2",
+      "bytes_len": 6872,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&motion=M&docs=&adate=02/22/1991&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "captured_at": "2026-07-07T02:06:43.101Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
       }
     },
     {
@@ -801,6 +1156,40 @@
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=W0m%2FY8dCVrVZbe9V6MG4hA%3D%3D&county=5PJZd8IqJed1V6UvxyEASA%3D%3D&civilCaseId=aWeat2kNSnn8Yg2W3EMsSQ%3D%3D",
       "captured_at": "2026-06-30T02:24:52.080Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026599_1990/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "5f3383f06ec2bcd7e13cf26a0cafe9f6d6d0d712611530cca975a885bc37c1f2",
+      "bytes_len": 6386,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "captured_at": "2026-07-07T02:01:27.466Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "0a4e23a47497d8d320c66f4ea1781ecfbbe66ae32f81783cb1dbd9b2de96bb7a",
+      "bytes_len": 6386,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "captured_at": "2026-07-07T02:06:43.101Z",
       "parsed_counts": {
         "motions": 1,
         "docket_entries": 1
@@ -960,6 +1349,95 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026599_1990:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00007-p001-r003-case_detail-0026599_1990-01.html",
+      "html_sha256": "1d937fe854f023252265199225007df4b6b4f11abb023d6dbbb14e20ea86c786",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&motion=M&docs=&adate=02/22/1991&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026599_1990:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "2f514b790f51b0b21299afa6e38b2fa98a5f7acc8793b93ca2128107e78089c3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/22/1991&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026599_1990:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026599_1990/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "5f3383f06ec2bcd7e13cf26a0cafe9f6d6d0d712611530cca975a885bc37c1f2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706220400150_10981:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00007-p001-r003-case_detail-0026599_1990-01.html",
+      "html_sha256": "f553a13d33414906580968124da447a5f6d8aad3767cd84228ade5d91d2101e2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&motion=M&docs=&adate=02/22/1991&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706220400150_10981:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00008-p001-r003-appearances-0026599_1990-01.html",
+      "html_sha256": "e6d3c784da74de12e40dd75e64d75e91025737c074af28e0b5d18ae710bf5aa5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/22/1991&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706220400150_10981:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706220400150_10981/00009-p001-r003-motions-0026599_1990-01.html",
+      "html_sha256": "0a4e23a47497d8d320c66f4ea1781ecfbbe66ae32f81783cb1dbd9b2de96bb7a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=bUANwdPglMCsUdZPU4O41g%3D%3D&county=FclLbtnU4HTKOfsFGGx_PLUS_gQ%3D%3D&civilCaseId=rn0pqs3E18YLDrpwdhmEYQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026599_1990:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026599_1990/page-001.html",
+      "html_sha256": "76c4874a4f16191a7d32350bb163ca63209d69f0ed5f42d617b3feb0cc40522f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "a957ecd7b5e658b97f4701ccbfe41333bdf7b02c9cf34426575c7aea3ebc4977"
     }
   ],
   "judicial_officer": "SHERMAN, B.S.",

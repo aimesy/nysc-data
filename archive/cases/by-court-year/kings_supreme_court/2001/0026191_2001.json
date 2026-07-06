@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T01:43:22.284Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "0026191/2001",
       "byrd"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026191/2001",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026191_2001.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "c0526f93ee98041d4196bdc4b7f5d543d1f01262f028c14cc7a337615ec8da86"
+      },
       {
         "search_name": "byrd",
         "query_type": "party-prefix",
@@ -74,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "KREINES & ENGELBERG",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00001-p001-r001-case_detail-0026191_2001-01.html",
+      "html_sha256": "a7def2cfa14831b8a5722188c4b94af153170f5cf5614d0adef913a9f2862537",
+      "captured_at": "2026-07-07T01:43:22.284Z"
     }
   ],
   "representation": [
@@ -96,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "BYRD,IRENE",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "KREINES & ENGELBERG",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00001-p001-r001-case_detail-0026191_2001-01.html",
+      "html_sha256": "a7def2cfa14831b8a5722188c4b94af153170f5cf5614d0adef913a9f2862537",
+      "captured_at": "2026-07-07T01:43:22.284Z"
     }
   ],
   "calendar": [
@@ -108,16 +152,171 @@
       "raw_text": "05/22/2002",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/22/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER SETTLEMENT PRE-NOTE",
+      "part": "LEVINE (PT. 2) CENTRAL COMPLIANCE PART",
+      "judicial_officer": "JOSEPH S.",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/22/2002 | Supreme Trial | No | Unknown | OTHER SETTLEMENT PRE-NOTE | JOSEPH S. LEVINE (PT. 2) CENTRAL COMPLIANCE PART",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00002-p001-r001-appearances-0026191_2001-01.html",
+      "html_sha256": "03ff942bf671bbfb9bc23760b98080404c86c2059aedaba99dfbdbbe421f62b9",
+      "captured_at": "2026-07-07T01:43:22.284Z"
+    },
+    {
+      "appearance_date": "10/26/2001",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE HELD",
+      "part": "LEVINE (PT. 2) INTAKE PART",
+      "judicial_officer": "JOSEPH S.",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "10/26/2001 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | JOSEPH S. LEVINE (PT. 2) INTAKE PART",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00002-p001-r001-appearances-0026191_2001-01.html",
+      "html_sha256": "03ff942bf671bbfb9bc23760b98080404c86c2059aedaba99dfbdbbe421f62b9",
+      "captured_at": "2026-07-07T01:43:22.284Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/22/2002",
+      "title": "Supreme Trial - OTHER SETTLEMENT PRE-NOTE",
+      "text": "05/22/2002 | Supreme Trial | No | Unknown | OTHER SETTLEMENT PRE-NOTE | JOSEPH S. LEVINE (PT. 2) CENTRAL COMPLIANCE PART",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00002-p001-r001-appearances-0026191_2001-01.html",
+      "html_sha256": "03ff942bf671bbfb9bc23760b98080404c86c2059aedaba99dfbdbbe421f62b9",
+      "captured_at": "2026-07-07T01:43:22.284Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "10/26/2001",
+      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
+      "text": "10/26/2001 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | JOSEPH S. LEVINE (PT. 2) INTAKE PART",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00002-p001-r001-appearances-0026191_2001-01.html",
+      "html_sha256": "03ff942bf671bbfb9bc23760b98080404c86c2059aedaba99dfbdbbe421f62b9",
+      "captured_at": "2026-07-07T01:43:22.284Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00002-p001-r001-appearances-0026191_2001-01.html",
+      "html_sha256": "03ff942bf671bbfb9bc23760b98080404c86c2059aedaba99dfbdbbe421f62b9",
+      "bytes_len": 6271,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/22/2002&index=R_PLUS_cZyJ6lLrHq6S74cjzvoA%3D%3D&county=qK9Vlx2cgZsh57qod0qu7g%3D%3D&civilCaseId=i5o7YyTVqUBnUO6OlnhXlw%3D%3D",
+      "captured_at": "2026-07-07T01:43:22.284Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026191_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00001-p001-r001-case_detail-0026191_2001-01.html",
+      "html_sha256": "a7def2cfa14831b8a5722188c4b94af153170f5cf5614d0adef913a9f2862537",
+      "bytes_len": 7078,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=R_PLUS_cZyJ6lLrHq6S74cjzvoA%3D%3D&county=qK9Vlx2cgZsh57qod0qu7g%3D%3D&motion=&docs=&adate=05/22/2002&civilCaseId=i5o7YyTVqUBnUO6OlnhXlw%3D%3D",
+      "captured_at": "2026-07-07T01:43:22.284Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Kings Supreme Court",
+    "Index Number": "0026191/2001",
+    "Case Name": "BYRD,IRENE vs. BETH ISRALE MEDICAL",
+    "Case Type": "MEDICAL MALPRACTICE",
+    "Track": "Standard",
+    "RJI Filed": "10/09/2001",
+    "NOI Due": "10/19/2002",
+    "Disposition Date": "05/22/2002",
+    "Justice Name": "DAVID SCHMIDT (PT. 47)"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026191_2001:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00001-p001-r001-case_detail-0026191_2001-01.html",
+      "html_sha256": "a7def2cfa14831b8a5722188c4b94af153170f5cf5614d0adef913a9f2862537",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=R_PLUS_cZyJ6lLrHq6S74cjzvoA%3D%3D&county=qK9Vlx2cgZsh57qod0qu7g%3D%3D&motion=&docs=&adate=05/22/2002&civilCaseId=i5o7YyTVqUBnUO6OlnhXlw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026191_2001:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026191_2001/00002-p001-r001-appearances-0026191_2001-01.html",
+      "html_sha256": "03ff942bf671bbfb9bc23760b98080404c86c2059aedaba99dfbdbbe421f62b9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/22/2002&index=R_PLUS_cZyJ6lLrHq6S74cjzvoA%3D%3D&county=qK9Vlx2cgZsh57qod0qu7g%3D%3D&civilCaseId=i5o7YyTVqUBnUO6OlnhXlw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:byrd:page:018",
@@ -128,7 +327,19 @@
       "page_number": 18,
       "table_row_number": 7,
       "row_html_sha256": "086b220e885f2e4516750b917bf1b7c1911949b6bde58ceb7761ea40f1723108"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026191_2001:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026191_2001/page-001.html",
+      "html_sha256": "21a56536c113f876b4647c25b8be012a1f67c36b4e685749c915995ba10916fd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "c0526f93ee98041d4196bdc4b7f5d543d1f01262f028c14cc7a337615ec8da86"
     }
   ],
-  "judicial_officer": "DAVID SCHMIDT (PT. 47)"
+  "judicial_officer": "DAVID SCHMIDT (PT. 47)",
+  "disposition_date": "05/22/2002"
 }

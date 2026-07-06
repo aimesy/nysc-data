@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T02:09:42.504Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,19 +24,33 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "decisions",
+        "motions"
+      ],
       "document_hint": true,
-      "document_list_captured": false,
+      "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "0026751/2005",
       "esqs"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026751/2005",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026751_2005.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "9eaf05439cee4f4ddba47ffc1d3ea04dbab69b269d0271cbbaf35ae83b642199"
+      },
       {
         "search_name": "esqs",
         "query_type": "party-prefix",
@@ -75,6 +89,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "CORALLO & CORALLO, ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-01.html",
+      "html_sha256": "36bb33d85cf7e2e48965cfd33502823598eb8b68ef9320dfee0285b31778aca5",
+      "captured_at": "2026-07-07T02:09:42.504Z"
     }
   ],
   "representation": [
@@ -97,6 +126,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "PINZINO & PINZINO, ESQS.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "CORALLO & CORALLO, ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-01.html",
+      "html_sha256": "36bb33d85cf7e2e48965cfd33502823598eb8b68ef9320dfee0285b31778aca5",
+      "captured_at": "2026-07-07T02:09:42.504Z"
     }
   ],
   "calendar": [
@@ -109,16 +155,312 @@
       "raw_text": "10/31/2016",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "10/31/2016",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP-PRE NOTE",
+      "part": "PETER H. MAYER OFFICE PART",
+      "judicial_officer": "PETER H. MAYER OFFICE PART",
+      "remarks": "SEE COMMENTS DISP BY D BKTY",
+      "motion_sequence": "",
+      "raw_text": "10/31/2016 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP-PRE NOTE | PETER H. MAYER OFFICE PART | SEE COMMENTS DISP BY D BKTY",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00004-p001-r002-appearances-0026751_2005-01.html",
+      "html_sha256": "4db00bd606976cdf6e0850d9ceb4aee5705fd17bf633d14a40a7217aafd48512",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    },
+    {
+      "appearance_date": "03/08/2011",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "FULLY SUBMITTED",
+      "part": "PETER H. MAYER MOTION PART 17",
+      "judicial_officer": "PETER H. MAYER MOTION PART 17",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "03/08/2011 | Motion | No | Unknown | FULLY SUBMITTED | PETER H. MAYER MOTION PART 17 | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00004-p001-r002-appearances-0026751_2005-01.html",
+      "html_sha256": "4db00bd606976cdf6e0850d9ceb4aee5705fd17bf633d14a40a7217aafd48512",
+      "captured_at": "2026-07-07T02:09:42.504Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
-  "documents": [],
-  "decisions_orders": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "10/31/2016",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP-PRE NOTE",
+      "text": "10/31/2016 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP-PRE NOTE | PETER H. MAYER OFFICE PART | SEE COMMENTS DISP BY D BKTY",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00004-p001-r002-appearances-0026751_2005-01.html",
+      "html_sha256": "4db00bd606976cdf6e0850d9ceb4aee5705fd17bf633d14a40a7217aafd48512",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "03/08/2011",
+      "title": "Motion - FULLY SUBMITTED",
+      "text": "03/08/2011 | Motion | No | Unknown | FULLY SUBMITTED | PETER H. MAYER MOTION PART 17 | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00004-p001-r002-appearances-0026751_2005-01.html",
+      "html_sha256": "4db00bd606976cdf6e0850d9ceb4aee5705fd17bf633d14a40a7217aafd48512",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "03/01/2011",
+      "title": "PUNISH FOR CONTEMPT",
+      "text": "1 | 03/01/2011 | Plaintiff | PUNISH FOR CONTEMPT | 03/08/2011 | No | Decided: 06/23/2011 MOTION DENIED Before Justice: PETER H. MAYER | Short Form Order | 06/23/2011",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00005-p001-r002-motions-0026751_2005-01.html",
+      "html_sha256": "e11ebf3d50bd8c6a8e6a65bba141ee494e6ff8bc9a74fc3885a71d1ce4251149",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "03/01/2011",
+      "filed_by": "Plaintiff",
+      "relief": "PUNISH FOR CONTEMPT",
+      "submit_date": "03/08/2011",
+      "answer_demanded": "No",
+      "status": "Decided: 06/23/2011 MOTION DENIED Before Justice: PETER H. MAYER",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "06/23/2011",
+      "raw_text": "1 | 03/01/2011 | Plaintiff | PUNISH FOR CONTEMPT | 03/08/2011 | No | Decided: 06/23/2011 MOTION DENIED Before Justice: PETER H. MAYER | Short Form Order | 06/23/2011",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00005-p001-r002-motions-0026751_2005-01.html",
+      "html_sha256": "e11ebf3d50bd8c6a8e6a65bba141ee494e6ff8bc9a74fc3885a71d1ce4251149",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "document_number": "",
+      "motion_sequence": "1",
+      "title": "PINZINO & PINZINO, ESQS. vs. ACKERMANN, THERESA BOYLE",
+      "document_type": "Decision/Order",
+      "filed_date": "07/15/2011",
+      "availability": "webcivil_linked",
+      "document_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "final_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "raw_text": "Suffolk Supreme Court | 0026751/2005 | PINZINO & PINZINO, ESQS. vs. ACKERMANN, THERESA BOYLE | 1 | 07/15/2011",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-02.html",
+      "html_sha256": "a9056b917deadca01a990cc003e0886463314e2cb635819e8c942c255c1762ad",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    }
+  ],
+  "decisions_orders": [
+    {
+      "decision_id": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "decision_date": "07/15/2011",
+      "title": "PINZINO & PINZINO, ESQS. vs. ACKERMANN, THERESA BOYLE",
+      "text": "Suffolk Supreme Court | 0026751/2005 | PINZINO & PINZINO, ESQS. vs. ACKERMANN, THERESA BOYLE | 1 | 07/15/2011",
+      "motion_sequence": "1",
+      "document_id": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "source_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "final_url": "http://decisions.courts.state.ny.us/fcas/fcas_docs/2011jul/51002675120051sciv.pdf",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "document-list",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-02.html",
+      "html_sha256": "a9056b917deadca01a990cc003e0886463314e2cb635819e8c942c255c1762ad",
+      "captured_at": "2026-07-07T02:09:42.504Z"
+    }
+  ],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00004-p001-r002-appearances-0026751_2005-01.html",
+      "html_sha256": "4db00bd606976cdf6e0850d9ceb4aee5705fd17bf633d14a40a7217aafd48512",
+      "bytes_len": 6248,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/31/2016&index=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "captured_at": "2026-07-07T02:09:42.504Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-01.html",
+      "html_sha256": "36bb33d85cf7e2e48965cfd33502823598eb8b68ef9320dfee0285b31778aca5",
+      "bytes_len": 7366,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&motion=M&docs=D&adate=10/31/2016&civilCaseId=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "captured_at": "2026-07-07T02:09:42.504Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "tab_key": "decisions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-02.html",
+      "html_sha256": "a9056b917deadca01a990cc003e0886463314e2cb635819e8c942c255c1762ad",
+      "bytes_len": 4689,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=eCMAONreUgQU4MWl4jFxrw%3D%3D&txtIndexNo=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&showMenu=no&isPreRji=&civilCase=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "captured_at": "2026-07-07T02:09:42.504Z",
+      "parsed_counts": {
+        "decisions_orders": 1,
+        "documents": 1
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026751_2005/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00005-p001-r002-motions-0026751_2005-01.html",
+      "html_sha256": "e11ebf3d50bd8c6a8e6a65bba141ee494e6ff8bc9a74fc3885a71d1ce4251149",
+      "bytes_len": 6390,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "captured_at": "2026-07-07T02:09:42.504Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Suffolk Supreme Court",
+    "Index Number": "0026751/2005",
+    "Case Name": "PINZINO & PINZINO, ESQS. vs. ACKERMANN, THERESA BOYLE",
+    "Case Type": "OTHER",
+    "Track": "Expedited",
+    "RJI Filed": "03/01/2011",
+    "Disposition Date": "10/31/2016",
+    "Justice Name": "PETER H. MAYER"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026751_2005:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-01.html",
+      "html_sha256": "36bb33d85cf7e2e48965cfd33502823598eb8b68ef9320dfee0285b31778aca5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&motion=M&docs=D&adate=10/31/2016&civilCaseId=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026751_2005:followup-page:001:capture:00003:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00003-p001-r002-case_detail-0026751_2005-02.html",
+      "html_sha256": "a9056b917deadca01a990cc003e0886463314e2cb635819e8c942c255c1762ad",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=eCMAONreUgQU4MWl4jFxrw%3D%3D&txtIndexNo=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&showMenu=no&isPreRji=&civilCase=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "tab_key": "decisions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026751_2005:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00004-p001-r002-appearances-0026751_2005-01.html",
+      "html_sha256": "4db00bd606976cdf6e0850d9ceb4aee5705fd17bf633d14a40a7217aafd48512",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/31/2016&index=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026751_2005:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026751_2005/00005-p001-r002-motions-0026751_2005-01.html",
+      "html_sha256": "e11ebf3d50bd8c6a8e6a65bba141ee494e6ff8bc9a74fc3885a71d1ce4251149",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=pDy8rLSh9BMQQBit1Uc5kw%3D%3D&county=eCMAONreUgQU4MWl4jFxrw%3D%3D&civilCaseId=jL8ZslBq7xny9m3wy2GHyA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:esqs:page:025",
@@ -129,7 +471,19 @@
       "page_number": 25,
       "table_row_number": 7,
       "row_html_sha256": "a5b42a520a07634263ffca6762489a38ba4e39a9e356546bf19531f03cdc34a3"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026751_2005:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026751_2005/page-001.html",
+      "html_sha256": "1882f5442c6edbe384b9d091bdda18135027f4c1ed03a5a547ea7375f811d5a1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "9eaf05439cee4f4ddba47ffc1d3ea04dbab69b269d0271cbbaf35ae83b642199"
     }
   ],
-  "judicial_officer": "PETER H. MAYER"
+  "judicial_officer": "PETER H. MAYER",
+  "disposition_date": "10/31/2016"
 }

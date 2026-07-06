@@ -14,8 +14,8 @@
   "case_type": "MATRIMONIAL UNCONTESTED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T02:08:03.012Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "0026706/1996",
       "byrd"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026706/1996",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026706_1996.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "bf66d930b09cae6f1933930b09ed8fc9d4c4541b7c9dcaecb659287b89be2eab"
+      },
       {
         "search_name": "byrd",
         "query_type": "party-prefix",
@@ -74,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "ALLAN BLOOMFIELD, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026706_1996/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00001-p001-r001-case_detail-0026706_1996-01.html",
+      "html_sha256": "06fcf46c1af5c31267595002de1ee97893a50a7822bf8c54c65def5da79925fa",
+      "captured_at": "2026-07-07T02:08:03.012Z"
     }
   ],
   "representation": [
@@ -96,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "WOODS, PAMELA D. BYRD",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "ALLAN BLOOMFIELD, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026706_1996/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00001-p001-r001-case_detail-0026706_1996-01.html",
+      "html_sha256": "06fcf46c1af5c31267595002de1ee97893a50a7822bf8c54c65def5da79925fa",
+      "captured_at": "2026-07-07T02:08:03.012Z"
     }
   ],
   "calendar": [
@@ -108,16 +152,131 @@
       "raw_text": "01/15/1997",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "01/15/1997",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "UNCONT. MAT. JUDGMENT SIGNED",
+      "part": "JOAN MARIE DURANTE UNCONTESTED SUBMISSIONS PT. 7",
+      "judicial_officer": "JOAN MARIE DURANTE UNCONTESTED SUBMISSIONS PT. 7",
+      "remarks": "JS - DATED 1/21/97",
+      "motion_sequence": "",
+      "raw_text": "01/15/1997 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | JOAN MARIE DURANTE UNCONTESTED SUBMISSIONS PT. 7 | JS - DATED 1/21/97",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026706_1996/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00002-p001-r001-appearances-0026706_1996-01.html",
+      "html_sha256": "25916704bb69fc541911fd61de36a13d2ebf477c41fa4700eeaaed9609230c9a",
+      "captured_at": "2026-07-07T02:08:03.012Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "01/15/1997",
+      "title": "Supreme Initial (first time on) - UNCONT. MAT. JUDGMENT SIGNED",
+      "text": "01/15/1997 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | JOAN MARIE DURANTE UNCONTESTED SUBMISSIONS PT. 7 | JS - DATED 1/21/97",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026706_1996/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00002-p001-r001-appearances-0026706_1996-01.html",
+      "html_sha256": "25916704bb69fc541911fd61de36a13d2ebf477c41fa4700eeaaed9609230c9a",
+      "captured_at": "2026-07-07T02:08:03.012Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026706_1996/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00002-p001-r001-appearances-0026706_1996-01.html",
+      "html_sha256": "25916704bb69fc541911fd61de36a13d2ebf477c41fa4700eeaaed9609230c9a",
+      "bytes_len": 5599,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/15/1997&index=1d6jyl9VNXpk4pqNLmHobg%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=bV8qo1vzEA5kj8WwS0sE9A%3D%3D",
+      "captured_at": "2026-07-07T02:08:03.012Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026706_1996/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00001-p001-r001-case_detail-0026706_1996-01.html",
+      "html_sha256": "06fcf46c1af5c31267595002de1ee97893a50a7822bf8c54c65def5da79925fa",
+      "bytes_len": 6968,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=1d6jyl9VNXpk4pqNLmHobg%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=01/15/1997&civilCaseId=bV8qo1vzEA5kj8WwS0sE9A%3D%3D",
+      "captured_at": "2026-07-07T02:08:03.012Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0026706/1996",
+    "Case Name": "WOODS, PAMELA D. BYRD vs. WOODS, CHARLES T.",
+    "Case Type": "MATRIMONIAL UNCONTESTED",
+    "Track": "Standard",
+    "RJI Filed": "01/10/1997",
+    "NOI Filed": "01/14/1997",
+    "Disposition Date": "01/15/1997",
+    "Calendar Number": "MU90912",
+    "Justice Name": "JOAN MARIE DURANTE"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026706_1996:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00001-p001-r001-case_detail-0026706_1996-01.html",
+      "html_sha256": "06fcf46c1af5c31267595002de1ee97893a50a7822bf8c54c65def5da79925fa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=1d6jyl9VNXpk4pqNLmHobg%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=01/15/1997&civilCaseId=bV8qo1vzEA5kj8WwS0sE9A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026706_1996:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026706_1996/00002-p001-r001-appearances-0026706_1996-01.html",
+      "html_sha256": "25916704bb69fc541911fd61de36a13d2ebf477c41fa4700eeaaed9609230c9a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/15/1997&index=1d6jyl9VNXpk4pqNLmHobg%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=bV8qo1vzEA5kj8WwS0sE9A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:byrd:page:012",
@@ -128,7 +287,19 @@
       "page_number": 12,
       "table_row_number": 17,
       "row_html_sha256": "87d7f72f16c9e7c1f9cc99377b16879077005d82c2af28fbbf4acdfa7e5f4aea"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026706_1996:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026706_1996/page-001.html",
+      "html_sha256": "88dba64916b093cfdfb66d0d69b46a9c09b98aa55ef5c9a40670a8e9262dfffc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "bf66d930b09cae6f1933930b09ed8fc9d4c4541b7c9dcaecb659287b89be2eab"
     }
   ],
-  "judicial_officer": "JOAN MARIE DURANTE"
+  "judicial_officer": "JOAN MARIE DURANTE",
+  "disposition_date": "01/15/1997"
 }
