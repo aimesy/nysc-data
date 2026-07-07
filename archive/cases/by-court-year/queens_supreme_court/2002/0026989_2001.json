@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T02:44:59.937Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "0026989/2001",
       "byrd"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026989/2001",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026989_2001.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "e6fcf7bc150a3627c683216f1bb671b167d8bce5a84039688aba0acf55eb5273"
+      },
       {
         "search_name": "byrd",
         "query_type": "party-prefix",
@@ -66,6 +78,21 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "COHN & ROTH",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026989_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00007-p001-r003-case_detail-0026989_2001-01.html",
+      "html_sha256": "82796872df974461bb219d801baaf6f42ecdf2bfa577d67c74f2a6893234dc51",
+      "captured_at": "2026-07-07T02:41:19.281Z"
     }
   ],
   "representation": [
@@ -78,6 +105,23 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "BANKERS TRUST COMPANY OF",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "COHN & ROTH",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026989_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00007-p001-r003-case_detail-0026989_2001-01.html",
+      "html_sha256": "82796872df974461bb219d801baaf6f42ecdf2bfa577d67c74f2a6893234dc51",
+      "captured_at": "2026-07-07T02:41:19.281Z"
     }
   ],
   "calendar": [
@@ -90,16 +134,231 @@
       "raw_text": "03/27/2002",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "03/27/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "THOMAS V. POLIZZI PT 14 GEN CAL",
+      "judicial_officer": "THOMAS V. POLIZZI PT 14 GEN CAL",
+      "remarks": "ORDER OF REF.",
+      "motion_sequence": "",
+      "raw_text": "03/27/2002 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | THOMAS V. POLIZZI PT 14 GEN CAL | ORDER OF REF.",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026989_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "2ecef523bd41d5c4ad31afdfc240b2f9467e943dff85832812e94e6f9a90c510",
+      "captured_at": "2026-07-07T02:41:19.281Z"
+    },
+    {
+      "appearance_date": "03/27/2002",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "THOMAS V. POLIZZI PT 14 GEN CAL",
+      "judicial_officer": "THOMAS V. POLIZZI PT 14 GEN CAL",
+      "remarks": "ORDER OF REF.",
+      "motion_sequence": "",
+      "raw_text": "03/27/2002 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | THOMAS V. POLIZZI PT 14 GEN CAL | ORDER OF REF.",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "ac89828c9a1bc01e7faffaddbe95cd7744e23ae2c2477836e385542031d1e222",
+      "captured_at": "2026-07-07T02:44:59.937Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "03/27/2002",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "03/27/2002 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | THOMAS V. POLIZZI PT 14 GEN CAL | ORDER OF REF.",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026989_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "2ecef523bd41d5c4ad31afdfc240b2f9467e943dff85832812e94e6f9a90c510",
+      "captured_at": "2026-07-07T02:41:19.281Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "03/27/2002",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "03/27/2002 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | THOMAS V. POLIZZI PT 14 GEN CAL | ORDER OF REF.",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "ac89828c9a1bc01e7faffaddbe95cd7744e23ae2c2477836e385542031d1e222",
+      "captured_at": "2026-07-07T02:44:59.937Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026989_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "2ecef523bd41d5c4ad31afdfc240b2f9467e943dff85832812e94e6f9a90c510",
+      "bytes_len": 5570,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/27/2002&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "captured_at": "2026-07-07T02:41:19.281Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "ac89828c9a1bc01e7faffaddbe95cd7744e23ae2c2477836e385542031d1e222",
+      "bytes_len": 5570,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/27/2002&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "captured_at": "2026-07-07T02:44:59.937Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026989_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00007-p001-r003-case_detail-0026989_2001-01.html",
+      "html_sha256": "82796872df974461bb219d801baaf6f42ecdf2bfa577d67c74f2a6893234dc51",
+      "bytes_len": 6626,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=03/27/2002&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "captured_at": "2026-07-07T02:41:19.281Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/00007-p001-r003-case_detail-0026989_2001-01.html",
+      "html_sha256": "549478dfd92e1f083e5e76ffab0c5b29c453b2c1cbcc518e3dfbfb7b36769366",
+      "bytes_len": 6626,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=03/27/2002&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "captured_at": "2026-07-07T02:44:59.937Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0026989/2001",
+    "Case Name": "BANKERS TRUST COMPANY OF vs. BYRD, OMETA G. ANO",
+    "Case Type": "FORECLOSURE",
+    "Track": "Expedited",
+    "RJI Filed": "03/26/2002",
+    "Disposition Date": "03/27/2002",
+    "Justice Name": "THOMAS V. POLIZZI"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026989_2001:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00007-p001-r003-case_detail-0026989_2001-01.html",
+      "html_sha256": "82796872df974461bb219d801baaf6f42ecdf2bfa577d67c74f2a6893234dc51",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=03/27/2002&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026989_2001:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026989_2001/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "2ecef523bd41d5c4ad31afdfc240b2f9467e943dff85832812e94e6f9a90c510",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/27/2002&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224430398_11063:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/00007-p001-r003-case_detail-0026989_2001-01.html",
+      "html_sha256": "549478dfd92e1f083e5e76ffab0c5b29c453b2c1cbcc518e3dfbfb7b36769366",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=03/27/2002&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224430398_11063:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224430398_11063/00008-p001-r003-appearances-0026989_2001-01.html",
+      "html_sha256": "ac89828c9a1bc01e7faffaddbe95cd7744e23ae2c2477836e385542031d1e222",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/27/2002&index=HOFkHOsPXltVwtq6xpvuNQ%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=plcnvtTsR5OEbYEXUYmMXQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624172034:byrd:page:019",
@@ -110,7 +369,19 @@
       "page_number": 19,
       "table_row_number": 25,
       "row_html_sha256": "42850107c11e76e6a824b84c4820c397cc9686ec7b3b5d9ab263b0579824a635"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026989_2001:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026989_2001/page-001.html",
+      "html_sha256": "f48217091cc34b800acc3228be72cd7cbcfb4498324ddebc977e8b8daa859d97",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "e6fcf7bc150a3627c683216f1bb671b167d8bce5a84039688aba0acf55eb5273"
     }
   ],
-  "judicial_officer": "THOMAS V. POLIZZI"
+  "judicial_officer": "THOMAS V. POLIZZI",
+  "disposition_date": "03/27/2002"
 }

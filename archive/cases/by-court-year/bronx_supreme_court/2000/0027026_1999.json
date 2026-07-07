@@ -14,8 +14,8 @@
   "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T02:49:09.588Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,19 +24,32 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
     "search_names": [
+      "0027026/1999",
       "lamber"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0027026/1999",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0027026_1999.rows.ndjson",
+        "source_page": 1,
+        "source_row": 4,
+        "row_html_sha256": "27d7baf060f75e65e91ef76ec0f6ac16d5b1f5b2c20d5d43d8d34b09ebbdb6ce"
+      },
       {
         "search_name": "lamber",
         "query_type": "attorney-prefix",
@@ -75,6 +88,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "ALTMAN & ALTMAN, ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00007-p001-r004-case_detail-0027026_1999-01.html",
+      "html_sha256": "54199915f08e74a5c84cb27df61fefeb88d6d090b87ced552d235fd918292376",
+      "captured_at": "2026-07-07T02:49:09.588Z"
     }
   ],
   "representation": [
@@ -97,6 +125,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "SANDERSON,DILWORTH",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "ALTMAN & ALTMAN, ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00007-p001-r004-case_detail-0027026_1999-01.html",
+      "html_sha256": "54199915f08e74a5c84cb27df61fefeb88d6d090b87ced552d235fd918292376",
+      "captured_at": "2026-07-07T02:49:09.588Z"
     }
   ],
   "calendar": [
@@ -109,16 +154,321 @@
       "raw_text": "04/06/2000",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "04/06/2000",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. PRE-NOTE",
+      "part": "BERTRAM KATZ IA PART 4",
+      "judicial_officer": "BERTRAM KATZ IA PART 4",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "04/06/2000 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | BERTRAM KATZ IA PART 4",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "5fa7dec5a9941644a9beae5bff0e48f3f2d2b7ee45dc6100918b962253c72b54",
+      "captured_at": "2026-07-07T02:49:09.588Z"
+    },
+    {
+      "appearance_date": "03/27/2000",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "SUBMITTED##",
+      "part": "BERTRAM KATZ SUBMISSIONS 4",
+      "judicial_officer": "BERTRAM KATZ SUBMISSIONS 4",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "03/27/2000 | Motion | No | Unknown | SUBMITTED## | BERTRAM KATZ SUBMISSIONS 4 | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "5fa7dec5a9941644a9beae5bff0e48f3f2d2b7ee45dc6100918b962253c72b54",
+      "captured_at": "2026-07-07T02:49:09.588Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/06/2000",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
+      "text": "04/06/2000 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | BERTRAM KATZ IA PART 4",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "5fa7dec5a9941644a9beae5bff0e48f3f2d2b7ee45dc6100918b962253c72b54",
+      "captured_at": "2026-07-07T02:49:09.588Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "03/27/2000",
+      "title": "Motion - SUBMITTED##",
+      "text": "03/27/2000 | Motion | No | Unknown | SUBMITTED## | BERTRAM KATZ SUBMISSIONS 4 | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "5fa7dec5a9941644a9beae5bff0e48f3f2d2b7ee45dc6100918b962253c72b54",
+      "captured_at": "2026-07-07T02:49:09.588Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "03/09/2000",
+      "title": "SUMMARY JUDGMENT",
+      "text": "1 | 03/09/2000 | Plaintiff | SUMMARY JUDGMENT | 03/27/2000 | No | Decided: 03/29/2000 MOTION GRANTED ON A DEFAULT Before Justice: BERTRAM KATZ | Short Form Order | 03/29/2000",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00009-p001-r004-motions-0027026_1999-01.html",
+      "html_sha256": "66767904dd336e60ca1ff300e827c9be669c25fdfc4d7c6d2568fbee13166a61",
+      "captured_at": "2026-07-07T02:49:09.588Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "03/09/2000",
+      "filed_by": "Plaintiff",
+      "relief": "SUMMARY JUDGMENT",
+      "submit_date": "03/27/2000",
+      "answer_demanded": "No",
+      "status": "Decided: 03/29/2000 MOTION GRANTED ON A DEFAULT Before Justice: BERTRAM KATZ",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "03/29/2000",
+      "raw_text": "1 | 03/09/2000 | Plaintiff | SUMMARY JUDGMENT | 03/27/2000 | No | Decided: 03/29/2000 MOTION GRANTED ON A DEFAULT Before Justice: BERTRAM KATZ | Short Form Order | 03/29/2000",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00009-p001-r004-motions-0027026_1999-01.html",
+      "html_sha256": "66767904dd336e60ca1ff300e827c9be669c25fdfc4d7c6d2568fbee13166a61",
+      "captured_at": "2026-07-07T02:49:09.588Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": false,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0027026_1999/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0027026_1999/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "7a613ab29a1f816fa4cc5b65735527ef18ca17f29ad3f607f669bfd3f27e4a96",
+      "bytes_len": 6825,
+      "title": "Just a moment...",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/06/2000&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "captured_at": "2026-07-07T02:42:03.157Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "5fa7dec5a9941644a9beae5bff0e48f3f2d2b7ee45dc6100918b962253c72b54",
+      "bytes_len": 6213,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/06/2000&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "captured_at": "2026-07-07T02:49:09.588Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": false,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0027026_1999/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0027026_1999/00007-p001-r004-case_detail-0027026_1999-01.html",
+      "html_sha256": "b54ddf7b1fa79acb0209d29d01679a724f75d998f3147d65662092f3378d7753",
+      "bytes_len": 6901,
+      "title": "Just a moment...",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&motion=M&docs=&adate=04/06/2000&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "captured_at": "2026-07-07T02:42:03.157Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00007-p001-r004-case_detail-0027026_1999-01.html",
+      "html_sha256": "54199915f08e74a5c84cb27df61fefeb88d6d090b87ced552d235fd918292376",
+      "bytes_len": 7597,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&motion=M&docs=&adate=04/06/2000&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "captured_at": "2026-07-07T02:49:09.588Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": false,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0027026_1999/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0027026_1999/00009-p001-r004-motions-0027026_1999-01.html",
+      "html_sha256": "2d735978184d2220691b0b1eb9a736738fb4e406263ce67ff92ed1d03d6d0821",
+      "bytes_len": 6699,
+      "title": "Just a moment...",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "captured_at": "2026-07-07T02:42:03.157Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00009-p001-r004-motions-0027026_1999-01.html",
+      "html_sha256": "66767904dd336e60ca1ff300e827c9be669c25fdfc4d7c6d2568fbee13166a61",
+      "bytes_len": 6386,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "captured_at": "2026-07-07T02:49:09.588Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Bronx Supreme Court",
+    "Index Number": "0027026/1999",
+    "Case Name": "SANDERSON,DILWORTH vs. TURNER,ANTHONY",
+    "Case Type": "OTHER TORTS",
+    "Track": "Standard",
+    "RJI Filed": "03/08/2000",
+    "Disposition Date": "04/06/2000",
+    "Justice Name": "BERTRAM KATZ"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0027026_1999:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0027026_1999/00007-p001-r004-case_detail-0027026_1999-01.html",
+      "html_sha256": "b54ddf7b1fa79acb0209d29d01679a724f75d998f3147d65662092f3378d7753",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&motion=M&docs=&adate=04/06/2000&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0027026_1999:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0027026_1999/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "7a613ab29a1f816fa4cc5b65735527ef18ca17f29ad3f607f669bfd3f27e4a96",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/06/2000&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0027026_1999:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0027026_1999/00009-p001-r004-motions-0027026_1999-01.html",
+      "html_sha256": "2d735978184d2220691b0b1eb9a736738fb4e406263ce67ff92ed1d03d6d0821",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224847863_11083:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00007-p001-r004-case_detail-0027026_1999-01.html",
+      "html_sha256": "54199915f08e74a5c84cb27df61fefeb88d6d090b87ced552d235fd918292376",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&motion=M&docs=&adate=04/06/2000&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224847863_11083:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00008-p001-r004-appearances-0027026_1999-01.html",
+      "html_sha256": "5fa7dec5a9941644a9beae5bff0e48f3f2d2b7ee45dc6100918b962253c72b54",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/06/2000&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224847863_11083:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224847863_11083/00009-p001-r004-motions-0027026_1999-01.html",
+      "html_sha256": "66767904dd336e60ca1ff300e827c9be669c25fdfc4d7c6d2568fbee13166a61",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=20vgZOH3hKr5DkR2%2FKq5DA%3D%3D&county=Cj3DrTO9sR8yym5Iwacz8A%3D%3D&civilCaseId=W6FJyIgcFoUQzCv6KM_PLUS_iwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260625181926:lamber:page:001",
@@ -129,7 +479,19 @@
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "2731bf7c6eeb3a6dc14a851a9cbeb02b134a3c0e83fee9e56ade5ba26a12ef63"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0027026_1999:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0027026_1999/page-001.html",
+      "html_sha256": "64765ed335315a519bd7bd58ea288cd8fc5d13b895c345b10ba5c7d1dd45ec7d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 4,
+      "row_html_sha256": "27d7baf060f75e65e91ef76ec0f6ac16d5b1f5b2c20d5d43d8d34b09ebbdb6ce"
     }
   ],
-  "judicial_officer": "BERTRAM KATZ"
+  "judicial_officer": "BERTRAM KATZ",
+  "disposition_date": "04/06/2000"
 }

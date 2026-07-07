@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-07T02:42:33.745Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,19 +23,31 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "0026895/2001",
       "rubi"
     ],
     "result_row_refs": [
+      {
+        "search_name": "0026895/2001",
+        "query_type": "index-number",
+        "source_file": "webcivil-party-search/results/0026895_2001.rows.ndjson",
+        "source_page": 1,
+        "source_row": 5,
+        "row_html_sha256": "33ee702225e733c8d4910f6cceb9a7943824774c9f9d4e307d053df9469c4e71"
+      },
       {
         "search_name": "rubi",
         "query_type": "party-prefix",
@@ -74,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "SCHAERF & SEALOVE",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00010-p001-r005-case_detail-0026895_2001-01.html",
+      "html_sha256": "9176dfc342beec0c9f77c6e74bf572ec140bbc6e2113bc8b0715e493b5e098c2",
+      "captured_at": "2026-07-07T02:39:24.442Z"
     }
   ],
   "representation": [
@@ -96,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "ALMODOVAR-MORROW, YOLANDA ANO",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "SCHAERF & SEALOVE",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00010-p001-r005-case_detail-0026895_2001-01.html",
+      "html_sha256": "9176dfc342beec0c9f77c6e74bf572ec140bbc6e2113bc8b0715e493b5e098c2",
+      "captured_at": "2026-07-07T02:39:24.442Z"
     }
   ],
   "calendar": [
@@ -108,16 +152,313 @@
       "raw_text": "05/07/2004",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/07/2004",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "DISCONTINUED PRE-NOTE",
+      "part": "SIMEON GOLAR PT 24 GEN CAL",
+      "judicial_officer": "SIMEON GOLAR PT 24 GEN CAL",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/07/2004 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | SIMEON GOLAR PT 24 GEN CAL",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "22b803cb17eae593ae0a4b30e647b681d8ca6e920ad29686c03c123daddcf3b8",
+      "captured_at": "2026-07-07T02:39:24.442Z"
+    },
+    {
+      "appearance_date": "02/26/2004",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE HELD",
+      "part": "SIMEON GOLAR PT 24 PRELIM CONF",
+      "judicial_officer": "SIMEON GOLAR PT 24 PRELIM CONF",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "02/26/2004 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | SIMEON GOLAR PT 24 PRELIM CONF",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "22b803cb17eae593ae0a4b30e647b681d8ca6e920ad29686c03c123daddcf3b8",
+      "captured_at": "2026-07-07T02:39:24.442Z"
+    },
+    {
+      "appearance_date": "05/07/2004",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "DISCONTINUED PRE-NOTE",
+      "part": "SIMEON GOLAR PT 24 GEN CAL",
+      "judicial_officer": "SIMEON GOLAR PT 24 GEN CAL",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/07/2004 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | SIMEON GOLAR PT 24 GEN CAL",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "d87aed83f30fee1fc31f3042d17a609e471c2c42a635da7cc7da669033d42def",
+      "captured_at": "2026-07-07T02:42:33.745Z"
+    },
+    {
+      "appearance_date": "02/26/2004",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE HELD",
+      "part": "SIMEON GOLAR PT 24 PRELIM CONF",
+      "judicial_officer": "SIMEON GOLAR PT 24 PRELIM CONF",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "02/26/2004 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | SIMEON GOLAR PT 24 PRELIM CONF",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "d87aed83f30fee1fc31f3042d17a609e471c2c42a635da7cc7da669033d42def",
+      "captured_at": "2026-07-07T02:42:33.745Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/07/2004",
+      "title": "Supreme Trial - DISCONTINUED PRE-NOTE",
+      "text": "05/07/2004 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | SIMEON GOLAR PT 24 GEN CAL",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "22b803cb17eae593ae0a4b30e647b681d8ca6e920ad29686c03c123daddcf3b8",
+      "captured_at": "2026-07-07T02:39:24.442Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "02/26/2004",
+      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
+      "text": "02/26/2004 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | SIMEON GOLAR PT 24 PRELIM CONF",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "22b803cb17eae593ae0a4b30e647b681d8ca6e920ad29686c03c123daddcf3b8",
+      "captured_at": "2026-07-07T02:39:24.442Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/07/2004",
+      "title": "Supreme Trial - DISCONTINUED PRE-NOTE",
+      "text": "05/07/2004 | Supreme Trial | No | Unknown | DISCONTINUED PRE-NOTE | SIMEON GOLAR PT 24 GEN CAL",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "d87aed83f30fee1fc31f3042d17a609e471c2c42a635da7cc7da669033d42def",
+      "captured_at": "2026-07-07T02:42:33.745Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "02/26/2004",
+      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
+      "text": "02/26/2004 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | SIMEON GOLAR PT 24 PRELIM CONF",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "d87aed83f30fee1fc31f3042d17a609e471c2c42a635da7cc7da669033d42def",
+      "captured_at": "2026-07-07T02:42:33.745Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "22b803cb17eae593ae0a4b30e647b681d8ca6e920ad29686c03c123daddcf3b8",
+      "bytes_len": 6280,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2004&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "captured_at": "2026-07-07T02:39:24.442Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "d87aed83f30fee1fc31f3042d17a609e471c2c42a635da7cc7da669033d42def",
+      "bytes_len": 6280,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2004&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "captured_at": "2026-07-07T02:42:33.745Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/0026895_2001/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00010-p001-r005-case_detail-0026895_2001-01.html",
+      "html_sha256": "9176dfc342beec0c9f77c6e74bf572ec140bbc6e2113bc8b0715e493b5e098c2",
+      "bytes_len": 7084,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=05/07/2004&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "captured_at": "2026-07-07T02:39:24.442Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00010-p001-r005-case_detail-0026895_2001-01.html",
+      "html_sha256": "abb77db15fb0e3cac95b38bc62c10c2966121a80c807ed68b9bb85782aaa707e",
+      "bytes_len": 7084,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=05/07/2004&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "captured_at": "2026-07-07T02:42:33.745Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0026895/2001",
+    "Case Name": "ALMODOVAR-MORROW, YOLANDA ANO vs. ALEMAN-RUBI, MARIA ANO",
+    "Case Type": "MOTOR VEHICLE",
+    "Track": "Standard",
+    "RJI Filed": "02/11/2004",
+    "Disposition Date": "05/07/2004",
+    "Justice Name": "SIMEON GOLAR"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026895_2001:followup-page:001:capture:00010:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00010-p001-r005-case_detail-0026895_2001-01.html",
+      "html_sha256": "9176dfc342beec0c9f77c6e74bf572ec140bbc6e2113bc8b0715e493b5e098c2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=05/07/2004&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:0026895_2001:followup-page:001:capture:00011:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/0026895_2001/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "22b803cb17eae593ae0a4b30e647b681d8ca6e920ad29686c03c123daddcf3b8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2004&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224206886_11051:followup-page:001:capture:00010:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00010-p001-r005-case_detail-0026895_2001-01.html",
+      "html_sha256": "abb77db15fb0e3cac95b38bc62c10c2966121a80c807ed68b9bb85782aaa707e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&motion=&docs=&adate=05/07/2004&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260706185110:nysc_20260706224206886_11051:followup-page:001:capture:00011:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260706185110/nysc_20260706224206886_11051/00011-p001-r005-appearances-0026895_2001-01.html",
+      "html_sha256": "d87aed83f30fee1fc31f3042d17a609e471c2c42a635da7cc7da669033d42def",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/07/2004&index=Pw3JZSVFpNdP_PLUS_urK5KlR_PLUS_w%3D%3D&county=EngduqyCAgXQMSPTZ05nSw%3D%3D&civilCaseId=LJb_PLUS_bZYt%2Fg8Nc9Mvx7j03g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260625041459:rubi:page:003",
@@ -128,7 +469,19 @@
       "page_number": 3,
       "table_row_number": 21,
       "row_html_sha256": "fe01e71e9d15617c8395e12ab7e2c5377f5d400728a136479b57bc82ff911d22"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260706185110:0026895_2001:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260706185110/0026895_2001/page-001.html",
+      "html_sha256": "0f4b6ea8359531eb4fea44b4c4bff2b637a6dfab5fd7d4655eb52c731b49625c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "33ee702225e733c8d4910f6cceb9a7943824774c9f9d4e307d053df9469c4e71"
     }
   ],
-  "judicial_officer": "SIMEON GOLAR"
+  "judicial_officer": "SIMEON GOLAR",
+  "disposition_date": "05/07/2004"
 }
