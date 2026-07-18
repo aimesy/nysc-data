@@ -11,15 +11,18 @@
   "index_year": "1982",
   "index_display": "0014535/1977",
   "case_title": "GOLDNER v. HOLT, III",
-  "case_type": null,
+  "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-24T16:03:57.251Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "cash"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "cash",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/cash.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "f3a577fdb85362954d8720e5387587857d45a97d7d8e7e2e8b9e701366b6be29"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "CASH, SCHWARTZ & HELFANT",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "KIMMELMAN, SEXTER & SOBEL",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "GOLDNER",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "CASH, SCHWARTZ & HELFANT",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "HOLT, III",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "KIMMELMAN, SEXTER & SOBEL",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "03/25/1983",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "",
+      "raw_text": "03/25/1983",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +175,17 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260718183125:cash:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/cash/page-001.html",
+      "html_sha256": "2599ca6c0b22a1c7dd73ce58b499032b39ca7d21c25c13e3f26d224e0c253025",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "f3a577fdb85362954d8720e5387587857d45a97d7d8e7e2e8b9e701366b6be29"
     }
   ]
 }
