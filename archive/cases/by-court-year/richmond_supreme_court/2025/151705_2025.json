@@ -14,8 +14,8 @@
   "case_type": "Tort-Motor Vehicle",
   "status": "Active",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-10T22:28:05.859Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "151705/2025",
       "savin"
     ],
     "result_row_refs": [
       {
+        "search_name": "151705/2025",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/151705_2025.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "391b7e121f62606fad3ddf54f9460f10c8aaec3df682f77d4269f6152c4609a5"
+      },
+      {
         "search_name": "savin",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/savin.rows.ndjson",
+        "source_file": "archive/webcivil/results/savin.rows.ndjson",
         "source_page": 8,
         "source_row": 18,
         "row_html_sha256": "02ab82a6db2d1bcccd4ffce127a5444846a631e3c839aa1ffe80c61f629a2861"
@@ -104,6 +116,16 @@
       "appearance_date": "07/15/2026",
       "part": "",
       "purpose": "Next appearance",
+      "judicial_officer": "Troia, Hon. Charles M.",
+      "raw_text": "07/15/2026",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "source_system": "webcivil",
+      "appearance_date": "07/15/2026",
+      "part": "",
+      "purpose": "Next appearance",
       "judicial_officer": "Castorina Jr., Hon. Ronald",
       "raw_text": "07/15/2026",
       "source_field": "search_row.next_appearance",
@@ -115,9 +137,118 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624215855877_02987/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215855877_02987/00047-p001-r018-appearances-151705_2025-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:31:25.441Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/151705_2025/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/151705_2025/00002-p001-r001-appearances-151705_2025-01.html",
+      "html_sha256": "ffac6cdc371ea10a009930790df3979406b13d66d1559c6a19dffab1d07a19c2",
+      "bytes_len": 10472,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/15/2026&index=6%2FUPnTlxdY9GCSiyqr%2FTjg%3D%3D&county=BWB5jegrHnf8puLsPW0gXA%3D%3D&civilCaseId=r5vTaOXi4ZLCHwlOQ3F4_PLUS_g%3D%3D",
+      "captured_at": "2026-07-10T22:28:05.859Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624215855877_02987/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215855877_02987/00046-p001-r018-case_detail-151705_2025-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:31:25.441Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/151705_2025/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/151705_2025/00001-p001-r001-case_detail-151705_2025-01.html",
+      "html_sha256": "a046d0def5a63d041ae6770b4bac3f4f7474a3b15d258d5df23cbdc127e43179",
+      "bytes_len": 8372,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=6%2FUPnTlxdY9GCSiyqr%2FTjg%3D%3D&county=BWB5jegrHnf8puLsPW0gXA%3D%3D&motion=&docs=&adate=07/15/2026&civilCaseId=r5vTaOXi4ZLCHwlOQ3F4_PLUS_g%3D%3D",
+      "captured_at": "2026-07-10T22:28:05.859Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624215855877_02987:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215855877_02987/00046-p001-r018-case_detail-151705_2025-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624215855877_02987:followup-page:001:capture:00047:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215855877_02987/00047-p001-r018-appearances-151705_2025-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:151705_2025:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/151705_2025/00001-p001-r001-case_detail-151705_2025-01.html",
+      "html_sha256": "a046d0def5a63d041ae6770b4bac3f4f7474a3b15d258d5df23cbdc127e43179",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=6%2FUPnTlxdY9GCSiyqr%2FTjg%3D%3D&county=BWB5jegrHnf8puLsPW0gXA%3D%3D&motion=&docs=&adate=07/15/2026&civilCaseId=r5vTaOXi4ZLCHwlOQ3F4_PLUS_g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:151705_2025:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/151705_2025/00002-p001-r001-appearances-151705_2025-01.html",
+      "html_sha256": "ffac6cdc371ea10a009930790df3979406b13d66d1559c6a19dffab1d07a19c2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/15/2026&index=6%2FUPnTlxdY9GCSiyqr%2FTjg%3D%3D&county=BWB5jegrHnf8puLsPW0gXA%3D%3D&civilCaseId=r5vTaOXi4ZLCHwlOQ3F4_PLUS_g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:savin:page:008",
@@ -128,7 +259,18 @@
       "page_number": 8,
       "table_row_number": 18,
       "row_html_sha256": "02ab82a6db2d1bcccd4ffce127a5444846a631e3c839aa1ffe80c61f629a2861"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:151705_2025:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/151705_2025/page-001.html",
+      "html_sha256": "ec5be17a92e21d8f2ee29cbbaff6592382c4c6d37acedff23995c63cccfba072",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "391b7e121f62606fad3ddf54f9460f10c8aaec3df682f77d4269f6152c4609a5"
     }
   ],
-  "judicial_officer": "Castorina Jr., Hon. Ronald"
+  "judicial_officer": "Troia, Hon. Charles M."
 }

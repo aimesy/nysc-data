@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Active",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-11T09:21:13.867Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "525171/2019",
       "sand"
     ],
     "result_row_refs": [
       {
+        "search_name": "525171/2019",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/525171_2019.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "1e922cb5a790ec62d5b14686dedb0e2c57a090d5810f78e93e826abdb67c174d"
+      },
+      {
         "search_name": "sand",
         "query_type": "attorney-prefix",
-        "source_file": "webcivil-party-search/results/sand.rows.ndjson",
+        "source_file": "archive/webcivil/results/sand.rows.ndjson",
         "source_page": 7,
         "source_row": 15,
         "row_html_sha256": "3128680961eb9cf4ad14e2806912f0516acd49d8384ee85b8b364f5c959ce636"
@@ -101,6 +113,16 @@
   "calendar": [
     {
       "source_system": "webcivil",
+      "appearance_date": "07/31/2026",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "Walker-Diallo, Hon. Carolyn",
+      "raw_text": "07/31/2026",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "source_system": "webcivil",
       "appearance_date": "06/29/2026",
       "part": "",
       "purpose": "Next appearance",
@@ -115,9 +137,118 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624225321719_03642/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225321719_03642/00043-p001-r015-appearances-525171_2019-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:37:55.511Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/525171_2019/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/525171_2019/00002-p001-r001-appearances-525171_2019-01.html",
+      "html_sha256": "4872fd91e6ca31d3d8f1663f1604cec57b6c9dc9d19f1a005d355b13445cbd83",
+      "bytes_len": 30692,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/31/2026&index=FU%2F7_PLUS_fffAcDOdDqBmHxYWQ%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&civilCaseId=Q4iCKrw_PLUS_5rO4xjWJOsDnrw%3D%3D",
+      "captured_at": "2026-07-11T09:21:13.867Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624225321719_03642/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225321719_03642/00042-p001-r015-case_detail-525171_2019-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:37:55.511Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/525171_2019/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/525171_2019/00001-p001-r001-case_detail-525171_2019-01.html",
+      "html_sha256": "76813c55aa002658438f72f522d6cc676ae014b96a5dcda4554d0c1658954e67",
+      "bytes_len": 12579,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=FU%2F7_PLUS_fffAcDOdDqBmHxYWQ%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&motion=&docs=&adate=07/31/2026&civilCaseId=Q4iCKrw_PLUS_5rO4xjWJOsDnrw%3D%3D",
+      "captured_at": "2026-07-11T09:21:13.867Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624225321719_03642:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225321719_03642/00042-p001-r015-case_detail-525171_2019-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 15,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624225321719_03642:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225321719_03642/00043-p001-r015-appearances-525171_2019-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:525171_2019:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/525171_2019/00001-p001-r001-case_detail-525171_2019-01.html",
+      "html_sha256": "76813c55aa002658438f72f522d6cc676ae014b96a5dcda4554d0c1658954e67",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=FU%2F7_PLUS_fffAcDOdDqBmHxYWQ%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&motion=&docs=&adate=07/31/2026&civilCaseId=Q4iCKrw_PLUS_5rO4xjWJOsDnrw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:525171_2019:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/525171_2019/00002-p001-r001-appearances-525171_2019-01.html",
+      "html_sha256": "4872fd91e6ca31d3d8f1663f1604cec57b6c9dc9d19f1a005d355b13445cbd83",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/31/2026&index=FU%2F7_PLUS_fffAcDOdDqBmHxYWQ%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&civilCaseId=Q4iCKrw_PLUS_5rO4xjWJOsDnrw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:sand:page:007",
@@ -128,6 +259,17 @@
       "page_number": 7,
       "table_row_number": 15,
       "row_html_sha256": "3128680961eb9cf4ad14e2806912f0516acd49d8384ee85b8b364f5c959ce636"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:525171_2019:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/525171_2019/page-001.html",
+      "html_sha256": "afdcc66e2d215bd97db9a0d00ae07f1eff81d71f7ccb874f3b9f1b4a41b4deaf",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "1e922cb5a790ec62d5b14686dedb0e2c57a090d5810f78e93e826abdb67c174d"
     }
   ],
   "judicial_officer": "Walker-Diallo, Hon. Carolyn"

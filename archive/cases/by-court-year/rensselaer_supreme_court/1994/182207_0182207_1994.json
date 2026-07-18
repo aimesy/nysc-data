@@ -14,8 +14,8 @@
   "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-06-25T05:13:26.300Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "0182207/1994",
       "cons"
     ],
     "result_row_refs": [
       {
+        "search_name": "0182207/1994",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/0182207_1994.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "bb13c8ba7a26c84bf361aa6468efa2fb9384f7b825b31e1e1f1dfff89ddb6d90"
+      },
+      {
         "search_name": "cons",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/cons.rows.ndjson",
+        "source_file": "archive/webcivil/results/cons.rows.ndjson",
         "source_page": 8,
         "source_row": 6,
         "row_html_sha256": "7496fb26ac6f1b3efdb32a41be7ee464ff6c1b5f9fb518b94ff63409348e0e7e"
@@ -115,9 +127,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624215304215_02810/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215304215_02810/00015-p001-r006-appearances-0182207_1994-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:13:26.300Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624215304215_02810/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215304215_02810/00014-p001-r006-case_detail-0182207_1994-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:13:26.300Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624215304215_02810:followup-page:001:capture:00014:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215304215_02810/00014-p001-r006-case_detail-0182207_1994-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624215304215_02810:followup-page:001:capture:00015:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624215304215_02810/00015-p001-r006-appearances-0182207_1994-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:cons:page:008",
@@ -128,6 +195,17 @@
       "page_number": 8,
       "table_row_number": 6,
       "row_html_sha256": "7496fb26ac6f1b3efdb32a41be7ee464ff6c1b5f9fb518b94ff63409348e0e7e"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708042719:0182207_1994:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708042719/0182207_1994/page-001.html",
+      "html_sha256": "e4c36c8a7d1a884162a8f9e0f0921e3df4e2228bcd350440ddf5b708a3cf0968",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "bb13c8ba7a26c84bf361aa6468efa2fb9384f7b825b31e1e1f1dfff89ddb6d90"
     }
   ],
   "judicial_officer": "HON. GEORGE B. CERESIA, JR."

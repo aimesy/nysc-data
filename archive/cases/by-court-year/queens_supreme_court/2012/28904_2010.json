@@ -14,8 +14,8 @@
   "case_type": "Tort-Medical, Dental, or Podiatric Malpractice",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-11T05:02:25.120Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,23 +24,36 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
+      "28904/2010",
       "feder"
     ],
     "result_row_refs": [
       {
+        "search_name": "28904/2010",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/28904_2010.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "705d386dab4ba8636cba9b9480c2ffab01d3a90a471343465687d27e205f9939"
+      },
+      {
         "search_name": "feder",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/feder.rows.ndjson",
+        "source_file": "archive/webcivil/results/feder.rows.ndjson",
         "source_page": 24,
         "source_row": 10,
         "row_html_sha256": "dff8d40e57e14297b0172ade8b2e0e31bda8f579fc2f04b41ccef53ac9e5f31c"
@@ -116,9 +129,91 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/28904_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/28904_2010/00008-p001-r003-appearances-28904_2010-01.html",
+      "html_sha256": "ac67645775a969e61329bb183b16cfd670422db8a4ac5330a41445824b19064b",
+      "bytes_len": 16469,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/23/2014&index=pCuulTFvdfSYBi%2Fz7OHlLQ%3D%3D&county=D5k8ALcwg%2FSbr9t27hHJoA%3D%3D&civilCaseId=h1nAZzNL3ZIKDtuzGiVCFA%3D%3D",
+      "captured_at": "2026-07-11T05:02:25.120Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/28904_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/28904_2010/00007-p001-r003-case_detail-28904_2010-01.html",
+      "html_sha256": "89b0bf6d44679c3b9ad9d75220bcdf8c195e3df47fdd1281492fdb9cebba417c",
+      "bytes_len": 8785,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=pCuulTFvdfSYBi%2Fz7OHlLQ%3D%3D&county=D5k8ALcwg%2FSbr9t27hHJoA%3D%3D&motion=M&docs=&adate=10/23/2014&civilCaseId=h1nAZzNL3ZIKDtuzGiVCFA%3D%3D",
+      "captured_at": "2026-07-11T05:02:25.120Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/28904_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/28904_2010/00009-p001-r003-motions-28904_2010-01.html",
+      "html_sha256": "c223506cc583c3084b747b92927bc8e4d63de00602e488950ea932ac2395bb95",
+      "bytes_len": 6457,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=pCuulTFvdfSYBi%2Fz7OHlLQ%3D%3D&county=D5k8ALcwg%2FSbr9t27hHJoA%3D%3D&civilCaseId=h1nAZzNL3ZIKDtuzGiVCFA%3D%3D",
+      "captured_at": "2026-07-11T05:02:25.120Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:28904_2010:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/28904_2010/00007-p001-r003-case_detail-28904_2010-01.html",
+      "html_sha256": "89b0bf6d44679c3b9ad9d75220bcdf8c195e3df47fdd1281492fdb9cebba417c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=pCuulTFvdfSYBi%2Fz7OHlLQ%3D%3D&county=D5k8ALcwg%2FSbr9t27hHJoA%3D%3D&motion=M&docs=&adate=10/23/2014&civilCaseId=h1nAZzNL3ZIKDtuzGiVCFA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:28904_2010:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/28904_2010/00008-p001-r003-appearances-28904_2010-01.html",
+      "html_sha256": "ac67645775a969e61329bb183b16cfd670422db8a4ac5330a41445824b19064b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/23/2014&index=pCuulTFvdfSYBi%2Fz7OHlLQ%3D%3D&county=D5k8ALcwg%2FSbr9t27hHJoA%3D%3D&civilCaseId=h1nAZzNL3ZIKDtuzGiVCFA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:28904_2010:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/28904_2010/00009-p001-r003-motions-28904_2010-01.html",
+      "html_sha256": "c223506cc583c3084b747b92927bc8e4d63de00602e488950ea932ac2395bb95",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=pCuulTFvdfSYBi%2Fz7OHlLQ%3D%3D&county=D5k8ALcwg%2FSbr9t27hHJoA%3D%3D&civilCaseId=h1nAZzNL3ZIKDtuzGiVCFA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:feder:page:024",
@@ -129,6 +224,17 @@
       "page_number": 24,
       "table_row_number": 10,
       "row_html_sha256": "dff8d40e57e14297b0172ade8b2e0e31bda8f579fc2f04b41ccef53ac9e5f31c"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:28904_2010:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/28904_2010/page-001.html",
+      "html_sha256": "a3ab856bd8e6a38d60aa89a4ace6aa2b38c0a67f0e4cb69e187626a5f9ec388c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "705d386dab4ba8636cba9b9480c2ffab01d3a90a471343465687d27e205f9939"
     }
   ],
   "judicial_officer": "O'Donoghue, Hon. Peter"

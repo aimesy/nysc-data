@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-11T05:05:23.835Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,23 +24,36 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
     "search_names": [
+      "3000127/2020",
       "mill"
     ],
     "result_row_refs": [
       {
+        "search_name": "3000127/2020",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/3000127_2020.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "2296da0063c583acfb1184a308365e1e04772c466652e0a4f163ad8ce09661e3"
+      },
+      {
         "search_name": "mill",
         "query_type": "attorney-prefix",
-        "source_file": "webcivil-party-search/results/mill.rows.ndjson",
+        "source_file": "archive/webcivil/results/mill.rows.ndjson",
         "source_page": 10,
         "source_row": 17,
         "row_html_sha256": "151ca90f26c2768ea26beef29b636a07e828dc8f5b403488f71c51b795e7759d"
@@ -116,9 +129,172 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/00050-p001-r017-appearances-3000127_2020-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:01:42.870Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/3000127_2020/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/3000127_2020/00002-p001-r001-appearances-3000127_2020-01.html",
+      "html_sha256": "134ffcfb09eb1b15828a3b69f5ff0f7dbe9ef72442029f335966d34753618140",
+      "bytes_len": 20009,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/15/2021&index=OqoSuPuMdOgEtf0KOJ3%2F2g%3D%3D&county=WLrQ6Yw4MbA2ZbknFuRWGA%3D%3D&civilCaseId=TMCvqbK%2F2t73eRBquI1FCg%3D%3D",
+      "captured_at": "2026-07-11T05:05:23.835Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/00049-p001-r017-case_detail-3000127_2020-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:01:42.870Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/3000127_2020/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/3000127_2020/00001-p001-r001-case_detail-3000127_2020-01.html",
+      "html_sha256": "e3aa07ed042259401504a9424a50a7749bdca9c6406a0c7228426eb61ccf9279",
+      "bytes_len": 10033,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=OqoSuPuMdOgEtf0KOJ3%2F2g%3D%3D&county=WLrQ6Yw4MbA2ZbknFuRWGA%3D%3D&motion=M&docs=&adate=12/15/2021&civilCaseId=TMCvqbK%2F2t73eRBquI1FCg%3D%3D",
+      "captured_at": "2026-07-11T05:05:23.835Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/00051-p001-r017-motions-3000127_2020-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T05:01:42.870Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/3000127_2020/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/3000127_2020/00003-p001-r001-motions-3000127_2020-01.html",
+      "html_sha256": "f04a9fb9fcff4d7420de1bbd0f0ed65405850f9d20bb8506743eeafce3ab337c",
+      "bytes_len": 7155,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=OqoSuPuMdOgEtf0KOJ3%2F2g%3D%3D&county=WLrQ6Yw4MbA2ZbknFuRWGA%3D%3D&civilCaseId=TMCvqbK%2F2t73eRBquI1FCg%3D%3D",
+      "captured_at": "2026-07-11T05:05:23.835Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624214413148_02673:followup-page:001:capture:00049:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/00049-p001-r017-case_detail-3000127_2020-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624214413148_02673:followup-page:001:capture:00050:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/00050-p001-r017-appearances-3000127_2020-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624214413148_02673:followup-page:001:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624214413148_02673/00051-p001-r017-motions-3000127_2020-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:3000127_2020:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/3000127_2020/00001-p001-r001-case_detail-3000127_2020-01.html",
+      "html_sha256": "e3aa07ed042259401504a9424a50a7749bdca9c6406a0c7228426eb61ccf9279",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=OqoSuPuMdOgEtf0KOJ3%2F2g%3D%3D&county=WLrQ6Yw4MbA2ZbknFuRWGA%3D%3D&motion=M&docs=&adate=12/15/2021&civilCaseId=TMCvqbK%2F2t73eRBquI1FCg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:3000127_2020:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/3000127_2020/00002-p001-r001-appearances-3000127_2020-01.html",
+      "html_sha256": "134ffcfb09eb1b15828a3b69f5ff0f7dbe9ef72442029f335966d34753618140",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/15/2021&index=OqoSuPuMdOgEtf0KOJ3%2F2g%3D%3D&county=WLrQ6Yw4MbA2ZbknFuRWGA%3D%3D&civilCaseId=TMCvqbK%2F2t73eRBquI1FCg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:3000127_2020:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/3000127_2020/00003-p001-r001-motions-3000127_2020-01.html",
+      "html_sha256": "f04a9fb9fcff4d7420de1bbd0f0ed65405850f9d20bb8506743eeafce3ab337c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=OqoSuPuMdOgEtf0KOJ3%2F2g%3D%3D&county=WLrQ6Yw4MbA2ZbknFuRWGA%3D%3D&civilCaseId=TMCvqbK%2F2t73eRBquI1FCg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214115:mill:page:010",
@@ -129,6 +305,17 @@
       "page_number": 10,
       "table_row_number": 17,
       "row_html_sha256": "151ca90f26c2768ea26beef29b636a07e828dc8f5b403488f71c51b795e7759d"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:3000127_2020:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/3000127_2020/page-001.html",
+      "html_sha256": "5f4dc5306e10bcc8c758d31f8805c70b681996f922fbba3bec1d6784c3e43a0d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "2296da0063c583acfb1184a308365e1e04772c466652e0a4f163ad8ce09661e3"
     }
   ],
   "judicial_officer": "Doran, Hon. Craig J."

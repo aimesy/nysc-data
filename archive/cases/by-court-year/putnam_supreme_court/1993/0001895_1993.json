@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-29T11:57:13.003Z",
+  "captured_at": "2026-07-15T16:39:10.554Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -26,27 +26,36 @@
       "captured_tabs": [
         "appearances",
         "case-detail",
-        "motions"
+        "document-list"
       ],
       "document_hint": false,
-      "document_list_captured": false,
+      "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 16
+      "search_rows_seen": 2,
+      "followup_responses_seen": 18
     }
   },
   "discovery": {
     "search_names": [
-      "0001895/1993"
+      "0001895/1993",
+      "upton"
     ],
     "result_row_refs": [
       {
         "search_name": "0001895/1993",
         "query_type": "index-number",
-        "source_file": "webcivil-party-search/results/0001895_1993.rows.ndjson",
+        "source_file": "archive/webcivil/results/0001895_1993.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
         "row_html_sha256": "9e1d602f1f6781fb1f109f510db9097276af55c95b1618285d7c153fc1ddfbad"
+      },
+      {
+        "search_name": "upton",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/upton.rows.ndjson",
+        "source_page": 2,
+        "source_row": 3,
+        "row_html_sha256": "283ed136da758750972c53849cb1432f125ec5c164ac542a40de0c1efd9613ac"
       }
     ]
   },
@@ -70,21 +79,6 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
-    },
-    {
-      "name": "",
-      "firm": "KENNETH HARFENIST, ESQ.",
-      "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-01.html",
-      "html_sha256": "02072b804737ab962b1fed634ce35014cf6b366c120827cfb31267b283f7242a",
-      "captured_at": "2026-06-29T11:55:33.307Z"
     }
   ],
   "representation": [
@@ -97,23 +91,6 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
-    },
-    {
-      "party_name": "PUTNAM HOSPITAL CENTER",
-      "party_role": "plaintiff_petitioner",
-      "attorney_name": "",
-      "firm": "KENNETH HARFENIST, ESQ.",
-      "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-01.html",
-      "html_sha256": "02072b804737ab962b1fed634ce35014cf6b366c120827cfb31267b283f7242a",
-      "captured_at": "2026-06-29T11:55:33.307Z"
     }
   ],
   "calendar": [
@@ -126,338 +103,9 @@
       "raw_text": "10/28/1993",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-02.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-04.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-01.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-03.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-02.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-04.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-01.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    },
-    {
-      "appearance_date": "10/28/1993",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "OTHER FINAL DISP. PRE-NOTE",
-      "part": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "judicial_officer": "S. BARRETT HICKMAN S. BARRETT HICKMAN",
-      "remarks": "SEE COMMENTS",
-      "motion_sequence": "",
-      "raw_text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-03.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
     }
   ],
-  "docket_entries": [
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-02.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-04.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-01.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-03.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:55:33.307Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-02.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-04.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-01.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "10/28/1993",
-      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. PRE-NOTE",
-      "text": "10/28/1993 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. PRE-NOTE | S. BARRETT HICKMAN S. BARRETT HICKMAN | SEE COMMENTS",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-03.html",
-      "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
-      "captured_at": "2026-06-29T11:57:13.003Z"
-    }
-  ],
+  "docket_entries": [],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -468,288 +116,255 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-01.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10%2F28%2F1993&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-03.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/28/1993&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-01.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10%2F28%2F1993&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-03.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/28/1993&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712212615/upton/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/upton/00007-p002-r003-appearances-0001895_1993-01.html",
+      "html_sha256": "b1459a578f758506402b1eb66d67944ff8978af002a2a1d3d6110998ab32cca1",
+      "bytes_len": 5589,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/28/1993&index=Or5jMp8lue49Ag04tmafjg%3D%3D&county=COH_PLUS_RBURBEiwuwEv_PLUS_1s23g%3D%3D&civilCaseId=1ISnJBheK1RDS9E0yEGcnw%3D%3D",
+      "captured_at": "2026-07-15T16:39:10.554Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-02.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "motions": 0,
-        "docket_entries": 0
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00007-p001-r003-appearances-0001895_1993-04.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "motions": 0,
-        "docket_entries": 0
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-02.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "motions": 0,
-        "docket_entries": 0
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00007-p001-r003-appearances-0001895_1993-04.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "motions": 0,
-        "docket_entries": 0
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-01.html",
       "html_sha256": "02072b804737ab962b1fed634ce35014cf6b366c120827cfb31267b283f7242a",
       "bytes_len": 5715,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&motion=&docs=&adate=10%2F28%2F1993&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 2,
-        "representation": 2
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-03.html",
       "html_sha256": "02072b804737ab962b1fed634ce35014cf6b366c120827cfb31267b283f7242a",
       "bytes_len": 5715,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&motion=&docs=&adate=10/28/1993&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 2,
-        "representation": 2
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-01.html",
       "html_sha256": "02072b804737ab962b1fed634ce35014cf6b366c120827cfb31267b283f7242a",
       "bytes_len": 5715,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&motion=&docs=&adate=10%2F28%2F1993&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 2,
-        "representation": 2
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-03.html",
       "html_sha256": "02072b804737ab962b1fed634ce35014cf6b366c120827cfb31267b283f7242a",
       "bytes_len": 5715,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&motion=&docs=&adate=10/28/1993&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 2,
-        "representation": 2
-      }
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712212615/upton/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/upton/00006-p002-r003-case_detail-0001895_1993-01.html",
+      "html_sha256": "5418512194c21faf04207d2dbbc0080d2e65e3570ffac9c2474e99aa18b7855f",
+      "bytes_len": 6652,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Or5jMp8lue49Ag04tmafjg%3D%3D&county=COH_PLUS_RBURBEiwuwEv_PLUS_1s23g%3D%3D&motion=&docs=&adate=10/28/1993&civilCaseId=1ISnJBheK1RDS9E0yEGcnw%3D%3D",
+      "captured_at": "2026-07-15T16:39:10.554Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-02.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/0001895_1993/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/0001895_1993/00006-p001-r003-case_detail-0001895_1993-04.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:55:33.307Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-02.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260629115602801_07960/00006-p001-r003-case_detail-0001895_1993-04.html",
       "html_sha256": "f33dbfe5427fb16af42b76355834fc1eeae7a9dd3af4e4289d04846083825846",
       "bytes_len": 4662,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=IoMFyiydq8joOkVlt%2FbuEA%3D%3D&county=hKSNw75iQ5WtSIKe1H0Usw%3D%3D&civilCaseId=a67uQXHBoyQdHsJ8oDU5Zg%3D%3D",
       "captured_at": "2026-06-29T11:57:13.003Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {
-    "Court": "Putnam Supreme Court",
-    "Index Number": "0001895/1993",
-    "Case Name": "PUTNAM HOSPITAL CENTER vs. UPTON, ETTA",
-    "Case Type": "OTHER (\"NOT ONE OF THE ABOVE\")",
-    "Track": "Other",
-    "RJI Filed": "10/28/1993",
-    "Disposition Date": "10/28/1993",
-    "Justice Name": "S. BARRETT HICKMAN"
-  },
+  "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -775,7 +390,7 @@
       "table_row_number": 3,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -801,7 +416,7 @@
       "table_row_number": 3,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -827,7 +442,7 @@
       "table_row_number": 3,
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -853,7 +468,7 @@
       "table_row_number": 3,
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -879,7 +494,7 @@
       "table_row_number": 3,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -905,7 +520,7 @@
       "table_row_number": 3,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -931,7 +546,7 @@
       "table_row_number": 3,
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -957,7 +572,33 @@
       "table_row_number": 3,
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions"
+      "tab_key": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712212615:upton:followup-page:002:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/upton/00006-p002-r003-case_detail-0001895_1993-01.html",
+      "html_sha256": "5418512194c21faf04207d2dbbc0080d2e65e3570ffac9c2474e99aa18b7855f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Or5jMp8lue49Ag04tmafjg%3D%3D&county=COH_PLUS_RBURBEiwuwEv_PLUS_1s23g%3D%3D&motion=&docs=&adate=10/28/1993&civilCaseId=1ISnJBheK1RDS9E0yEGcnw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712212615:upton:followup-page:002:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/upton/00007-p002-r003-appearances-0001895_1993-01.html",
+      "html_sha256": "b1459a578f758506402b1eb66d67944ff8978af002a2a1d3d6110998ab32cca1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/28/1993&index=Or5jMp8lue49Ag04tmafjg%3D%3D&county=COH_PLUS_RBURBEiwuwEv_PLUS_1s23g%3D%3D&civilCaseId=1ISnJBheK1RDS9E0yEGcnw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
     },
     {
       "source_system": "webcivil",
@@ -969,8 +610,18 @@
       "page_number": 1,
       "table_row_number": 3,
       "row_html_sha256": "9e1d602f1f6781fb1f109f510db9097276af55c95b1618285d7c153fc1ddfbad"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260712212615:upton:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260712212615/upton/page-002.html",
+      "html_sha256": "82ff7f1451c1d03ecf06d85ea101552e12be18a727c628c0ef8cfcb5555faa99",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "",
+      "page_number": 2,
+      "table_row_number": 3,
+      "row_html_sha256": "283ed136da758750972c53849cb1432f125ec5c164ac542a40de0c1efd9613ac"
     }
   ],
-  "judicial_officer": "S. BARRETT HICKMAN",
-  "disposition_date": "10/28/1993"
+  "judicial_officer": "S. BARRETT HICKMAN"
 }

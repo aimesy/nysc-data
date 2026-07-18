@@ -14,8 +14,8 @@
   "case_type": "OM-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-11T20:58:12.817Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "I2021003201",
       "tyron"
     ],
     "result_row_refs": [
       {
+        "search_name": "I2021003201",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/i2021003201.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "285ce5d327d3584718018845d77f83047112e1dfa149e888af62965040ff5d7c"
+      },
+      {
         "search_name": "tyron",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/tyron.rows.ndjson",
+        "source_file": "archive/webcivil/results/tyron.rows.ndjson",
         "source_page": 8,
         "source_row": 25,
         "row_html_sha256": "ba3c02f8a6b1dfafcdbc8008cc55b3f6b8b4a5e7b6f177fd65e67b909dc7fb8a"
@@ -77,9 +89,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711165758788_23651/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711165758788_23651/00002-p001-r001-appearances-i2021003201-01.html",
+      "html_sha256": "f52279a17583fe09f9b3f6202fe0f1ede09c2a487b07b3f3f687574798439d70",
+      "bytes_len": 6233,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/06/2021&index=_PLUS_kCVDKu1lKmDB3SlAJd9TQ%3D%3D&county=v%2FFhULuZLTJ3LOV6LQvhwg%3D%3D&civilCaseId=mVmO4tUCVc8uplBRoLuxEg%3D%3D",
+      "captured_at": "2026-07-11T20:58:12.817Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711165758788_23651/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711165758788_23651/00001-p001-r001-case_detail-i2021003201-01.html",
+      "html_sha256": "158db1bf55d91fe51673f04c25a71a0597ca2c7ec6eca33d3007c7f89d14c02a",
+      "bytes_len": 7148,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_kCVDKu1lKmDB3SlAJd9TQ%3D%3D&county=v%2FFhULuZLTJ3LOV6LQvhwg%3D%3D&motion=&docs=&adate=10/06/2021&civilCaseId=mVmO4tUCVc8uplBRoLuxEg%3D%3D",
+      "captured_at": "2026-07-11T20:58:12.817Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711165758788_23651:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711165758788_23651/00001-p001-r001-case_detail-i2021003201-01.html",
+      "html_sha256": "158db1bf55d91fe51673f04c25a71a0597ca2c7ec6eca33d3007c7f89d14c02a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_kCVDKu1lKmDB3SlAJd9TQ%3D%3D&county=v%2FFhULuZLTJ3LOV6LQvhwg%3D%3D&motion=&docs=&adate=10/06/2021&civilCaseId=mVmO4tUCVc8uplBRoLuxEg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711165758788_23651:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711165758788_23651/00002-p001-r001-appearances-i2021003201-01.html",
+      "html_sha256": "f52279a17583fe09f9b3f6202fe0f1ede09c2a487b07b3f3f687574798439d70",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/06/2021&index=_PLUS_kCVDKu1lKmDB3SlAJd9TQ%3D%3D&county=v%2FFhULuZLTJ3LOV6LQvhwg%3D%3D&civilCaseId=mVmO4tUCVc8uplBRoLuxEg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260627031845:tyron:page:008",
@@ -90,6 +157,17 @@
       "page_number": 8,
       "table_row_number": 25,
       "row_html_sha256": "ba3c02f8a6b1dfafcdbc8008cc55b3f6b8b4a5e7b6f177fd65e67b909dc7fb8a"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:i2021003201:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/i2021003201/page-001.html",
+      "html_sha256": "e60caedc28c3bf22a9ed4c3ac0df96678c33952e26fe860067043aa3a9e71cf4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "285ce5d327d3584718018845d77f83047112e1dfa149e888af62965040ff5d7c"
     }
   ],
   "judicial_officer": "Vacca, Hon. Meredith A."

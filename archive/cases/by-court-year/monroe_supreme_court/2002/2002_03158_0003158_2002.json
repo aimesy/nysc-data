@@ -14,27 +14,41 @@
   "case_type": "OTHER COMMERCIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-06-29T01:50:15.055Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-15T23:26:19.098Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
-        "motions"
+        "document-list"
       ],
       "document_hint": false,
-      "document_list_captured": false,
+      "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 8
+      "search_rows_seen": 1,
+      "followup_responses_seen": 12
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "doro"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "doro",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/doro.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "36c190890d814db4a1f62c712a5be5f2a0bf6d42e671f77936dd4572e93d5413"
+      }
+    ]
   },
   "parties": [
     {
@@ -53,16 +67,17 @@
       "name": "",
       "firm": "RELIN, GOLDSTEIN & CRANE",
       "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-01.html",
-      "html_sha256": "7845307d2a5e1be9f26916ba04a3c7aae87eb89b4ec33e60e588150aef85a8d8",
-      "captured_at": "2026-06-29T01:50:15.055Z"
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "JOSEPH A. DORO PRO SE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
     }
   ],
   "representation": [
@@ -72,186 +87,34 @@
       "attorney_name": "",
       "firm": "RELIN, GOLDSTEIN & CRANE",
       "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-01.html",
-      "html_sha256": "7845307d2a5e1be9f26916ba04a3c7aae87eb89b4ec33e60e588150aef85a8d8",
-      "captured_at": "2026-06-29T01:50:15.055Z"
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "JOSEPH DORO D/B/A COIT DRAPERTY & CARPE",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "JOSEPH A. DORO PRO SE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
     }
   ],
   "calendar": [
     {
-      "appearance_date": "06/06/2002",
-      "appearance_time": "",
-      "purpose": "Disposition",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "PRE-WITHDRAWN",
-      "part": "GALLOWAY (Court Activity)",
-      "judicial_officer": "HON. HAROLD L. GALLOWAY",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "confidence": "webcivil_appearance_table",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-02.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    },
-    {
       "appearance_date": "06/06/2002",
-      "appearance_time": "",
-      "purpose": "Disposition",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "PRE-WITHDRAWN",
-      "part": "GALLOWAY (Court Activity)",
+      "part": "",
+      "purpose": "Next appearance",
       "judicial_officer": "HON. HAROLD L. GALLOWAY",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-04.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    },
-    {
-      "appearance_date": "06/06/2002",
-      "appearance_time": "",
-      "purpose": "Disposition",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "PRE-WITHDRAWN",
-      "part": "GALLOWAY (Court Activity)",
-      "judicial_officer": "HON. HAROLD L. GALLOWAY",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-01.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    },
-    {
-      "appearance_date": "06/06/2002",
-      "appearance_time": "",
-      "purpose": "Disposition",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "PRE-WITHDRAWN",
-      "part": "GALLOWAY (Court Activity)",
-      "judicial_officer": "HON. HAROLD L. GALLOWAY",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-03.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
+      "raw_text": "06/06/2002",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
     }
   ],
-  "docket_entries": [
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "06/06/2002",
-      "title": "Disposition - PRE-WITHDRAWN",
-      "text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-02.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "06/06/2002",
-      "title": "Disposition - PRE-WITHDRAWN",
-      "text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-04.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "06/06/2002",
-      "title": "Disposition - PRE-WITHDRAWN",
-      "text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-01.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "06/06/2002",
-      "title": "Disposition - PRE-WITHDRAWN",
-      "text": "06/06/2002 | Disposition | No | Unknown | PRE-WITHDRAWN | HON. HAROLD L. GALLOWAY GALLOWAY (Court Activity)",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-03.html",
-      "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
-      "captured_at": "2026-06-29T01:50:15.055Z"
-    }
-  ],
+  "docket_entries": [],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -262,150 +125,171 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-01.html",
       "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
       "bytes_len": 4643,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06%2F06%2F2002&index=w5QSbkys%2BhWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-03.html",
       "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
       "bytes_len": 4643,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/06/2002&index=w5QSbkys_PLUS_hWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712212615/carpe/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/carpe/00039-p001-r014-appearances-0003158_2002-01.html",
+      "html_sha256": "fb5221bcfdc95c8c03408f752cfb1e7dfcb84b37af1dba0c4460e104674fc425",
+      "bytes_len": 5564,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/06/2002&index=4SYj%2FFSXNr1X6eMiNEDIPA%3D%3D&county=QEQ8A4_PLUS_hP7rUmqsUmZBcdw%3D%3D&civilCaseId=7exc6jJI2UqlzDdumUPnoQ%3D%3D",
+      "captured_at": "2026-07-15T23:26:19.098Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712212615/doro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/doro/00002-p001-r001-appearances-0003158_2002-01.html",
+      "html_sha256": "08dffe36ce2e5467d96a8472013535a80b89cd35d2bcda3216a4b89dde95afa1",
+      "bytes_len": 5561,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/06/2002&index=QNl7uKPKwiThdDRQoAe7Pw%3D%3D&county=p45mQ%2FIRbkMIwcAyd0G9jw%3D%3D&civilCaseId=PjxZ0dV7CfPzp%2Fwacwz3LA%3D%3D",
+      "captured_at": "2026-07-13T02:05:26.572Z",
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-02.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=w5QSbkys%2BhWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "motions": 0,
-        "docket_entries": 0
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00039-p001-r014-appearances-0003158_2002-04.html",
       "html_sha256": "8a000c0ed8015103bede8a1a126106f4e58ac67f27047a90401367dd63d5e5a9",
       "bytes_len": 3185,
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=w5QSbkys%2BhWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "motions": 0,
-        "docket_entries": 0
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-01.html",
       "html_sha256": "7845307d2a5e1be9f26916ba04a3c7aae87eb89b4ec33e60e588150aef85a8d8",
       "bytes_len": 6124,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=w5QSbkys%2BhWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&motion=&docs=&adate=06%2F06%2F2002&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 1,
-        "representation": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-03.html",
       "html_sha256": "7845307d2a5e1be9f26916ba04a3c7aae87eb89b4ec33e60e588150aef85a8d8",
       "bytes_len": 6124,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=w5QSbkys_PLUS_hWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&motion=&docs=&adate=06/06/2002&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 1,
-        "representation": 1
-      }
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712212615/carpe/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/carpe/00038-p001-r014-case_detail-0003158_2002-01.html",
+      "html_sha256": "c50719694136041d379af09a830354459407b21fc52ec99a66f81a6da6cbb9f5",
+      "bytes_len": 7044,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=4SYj%2FFSXNr1X6eMiNEDIPA%3D%3D&county=QEQ8A4_PLUS_hP7rUmqsUmZBcdw%3D%3D&motion=&docs=&adate=06/06/2002&civilCaseId=7exc6jJI2UqlzDdumUPnoQ%3D%3D",
+      "captured_at": "2026-07-15T23:26:19.098Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712212615/doro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/doro/00001-p001-r001-case_detail-0003158_2002-01.html",
+      "html_sha256": "ae3407f321a30e462c53b94c0882b566b2b53943b9b4e902ddaa25118ceefaeb",
+      "bytes_len": 7040,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=QNl7uKPKwiThdDRQoAe7Pw%3D%3D&county=p45mQ%2FIRbkMIwcAyd0G9jw%3D%3D&motion=&docs=&adate=06/06/2002&civilCaseId=PjxZ0dV7CfPzp%2Fwacwz3LA%3D%3D",
+      "captured_at": "2026-07-13T02:05:26.572Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-02.html",
       "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
       "bytes_len": 4643,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=w5QSbkys%2BhWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "tab_key": "document-list",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/carpe/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/carpe/00038-p001-r014-case_detail-0003158_2002-04.html",
       "html_sha256": "d19d493a727a996231eaba9bf93dc5233cee30fa972ac82abb2bc57091909dd2",
       "bytes_len": 4643,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=w5QSbkys%2BhWP98lGiAGTcg%3D%3D&county=r3P2kdloOFg7TClzOZxX2A%3D%3D&civilCaseId=EzFEQZxu8HjUwl9r1DXQzQ%3D%3D",
       "captured_at": "2026-06-29T01:50:15.055Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {
-    "Court": "Monroe Supreme Court",
-    "Index Number": "2002/03158",
-    "Case Name": "SPIN MARKETING INC vs. JOSEPH DORO D/B/A COIT DRAPERTY & CARPE",
-    "Case Type": "OTHER COMMERCIAL",
-    "Track": "Standard",
-    "RJI Filed": "05/07/2002",
-    "Disposition Date": "06/06/2002",
-    "Justice Name": "HON. HAROLD L. GALLOWAY"
-  },
+  "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -431,7 +315,7 @@
       "table_row_number": 14,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -457,7 +341,7 @@
       "table_row_number": 14,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -483,7 +367,7 @@
       "table_row_number": 14,
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -509,9 +393,71 @@
       "table_row_number": 14,
       "kind": "appearances",
       "nested_kind": "document-list",
-      "tab_key": "motions"
+      "tab_key": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712212615:carpe:followup-page:001:capture:00038:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/carpe/00038-p001-r014-case_detail-0003158_2002-01.html",
+      "html_sha256": "c50719694136041d379af09a830354459407b21fc52ec99a66f81a6da6cbb9f5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=4SYj%2FFSXNr1X6eMiNEDIPA%3D%3D&county=QEQ8A4_PLUS_hP7rUmqsUmZBcdw%3D%3D&motion=&docs=&adate=06/06/2002&civilCaseId=7exc6jJI2UqlzDdumUPnoQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712212615:carpe:followup-page:001:capture:00039:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/carpe/00039-p001-r014-appearances-0003158_2002-01.html",
+      "html_sha256": "fb5221bcfdc95c8c03408f752cfb1e7dfcb84b37af1dba0c4460e104674fc425",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/06/2002&index=4SYj%2FFSXNr1X6eMiNEDIPA%3D%3D&county=QEQ8A4_PLUS_hP7rUmqsUmZBcdw%3D%3D&civilCaseId=7exc6jJI2UqlzDdumUPnoQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712212615:doro:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/doro/00001-p001-r001-case_detail-0003158_2002-01.html",
+      "html_sha256": "ae3407f321a30e462c53b94c0882b566b2b53943b9b4e902ddaa25118ceefaeb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=QNl7uKPKwiThdDRQoAe7Pw%3D%3D&county=p45mQ%2FIRbkMIwcAyd0G9jw%3D%3D&motion=&docs=&adate=06/06/2002&civilCaseId=PjxZ0dV7CfPzp%2Fwacwz3LA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712212615:doro:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712212615/doro/00002-p001-r001-appearances-0003158_2002-01.html",
+      "html_sha256": "08dffe36ce2e5467d96a8472013535a80b89cd35d2bcda3216a4b89dde95afa1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/06/2002&index=QNl7uKPKwiThdDRQoAe7Pw%3D%3D&county=p45mQ%2FIRbkMIwcAyd0G9jw%3D%3D&civilCaseId=PjxZ0dV7CfPzp%2Fwacwz3LA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260712212615:doro:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260712212615/doro/page-001.html",
+      "html_sha256": "0422152c5813494539d35a9e15b29dfed8d93f4850bef11a89501b527852f0d3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "36c190890d814db4a1f62c712a5be5f2a0bf6d42e671f77936dd4572e93d5413"
     }
   ],
-  "judicial_officer": "HON. HAROLD L. GALLOWAY",
-  "disposition_date": "06/06/2002"
+  "judicial_officer": "HON. HAROLD L. GALLOWAY"
 }

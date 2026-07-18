@@ -14,8 +14,8 @@
   "case_type": "Mat-Uncontested",
   "status": "Active",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-06-29T13:30:28.592Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-12T15:22:26.685Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,27 +24,37 @@
         "case-detail"
       ],
       "captured_tabs": [
+        "appearances",
         "case-detail"
       ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 6
+      "search_rows_seen": 2,
+      "followup_responses_seen": 12
     }
   },
   "discovery": {
     "search_names": [
+      "50738/2025",
       "rodne"
     ],
     "result_row_refs": [
       {
-        "search_name": "rodne",
-        "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/rodne.rows.ndjson",
+        "search_name": "50738/2025",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/50738_2025.rows.ndjson",
         "source_page": 1,
-        "source_row": 10,
-        "row_html_sha256": "af8b4d81950ad13f304faac8527b0b124f9d22ab4b3f898d1245ce3a3a7045db"
+        "source_row": 1,
+        "row_html_sha256": "d7d3da9879e9db061d440985baf3944a6a438ff11f86306b5bf8e2097265aa41"
+      },
+      {
+        "search_name": "rodne",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/rodne.rows.ndjson",
+        "source_page": 1,
+        "source_row": 5,
+        "row_html_sha256": "5f5b4590e18d07a079d279fcc564cf4714c8595aa87e2c03831e09457d366542"
       }
     ]
   },
@@ -60,42 +70,8 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [
-    {
-      "name": "",
-      "firm": "Nicolas, Lion",
-      "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00023-p001-r010-case_detail-50738_2025-01.html",
-      "html_sha256": "44e68dd653ecee68102f26489ce18e4364d5ac56ae84f66b97062f95c536d7da",
-      "captured_at": "2026-06-29T13:30:28.592Z"
-    }
-  ],
-  "representation": [
-    {
-      "party_name": "Nicolas, Lion",
-      "party_role": "plaintiff_petitioner",
-      "attorney_name": "",
-      "firm": "Nicolas, Lion",
-      "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00023-p001-r010-case_detail-50738_2025-01.html",
-      "html_sha256": "44e68dd653ecee68102f26489ce18e4364d5ac56ae84f66b97062f95c536d7da",
-      "captured_at": "2026-06-29T13:30:28.592Z"
-    }
-  ],
+  "attorneys": [],
+  "representation": [],
   "calendar": [
     {
       "source_system": "webcivil",
@@ -119,7 +95,7 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00024-p001-r010-appearances-50738_2025-01.html",
       "html_sha256": "b5c077b93473c9fc363678ab40ae244c9bff45e21d3493af074f7911937d1b27",
       "bytes_len": 7035,
@@ -133,7 +109,7 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00024-p001-r010-appearances-50738_2025-02.html",
       "html_sha256": "835701cd391dca38297ef33c3b52ffaabffafa8b02be2e29e0633a3392d3f48b",
       "bytes_len": 7044,
@@ -143,29 +119,67 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711040908643_19371/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711040908643_19371/00002-p001-r001-appearances-50738_2025-01.html",
+      "html_sha256": "4c9a9279979d6be3e97a4070d6c6b16543b623b696ec57cd2bd1b85e8298e583",
+      "bytes_len": 5584,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/03/2025&index=JpkvtyYuGX1PMcjbdgfWTw%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&civilCaseId=blOOfB1KUXjF12T5Uhnd6w%3D%3D",
+      "captured_at": "2026-07-11T08:09:19.839Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712065625/nysc_20260712085350456_24650/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/nysc_20260712085350456_24650/00013-p001-r005-appearances-50738_2025-01.html",
+      "html_sha256": "4fcd6268f1f8f1fd173fe987980a35974d94ec9837a0b653c92fff228209e62a",
+      "bytes_len": 5589,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/03/2025&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "captured_at": "2026-07-12T15:22:26.685Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712065625/rodne/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/rodne/00013-p001-r005-appearances-50738_2025-01.html",
+      "html_sha256": "4e236226c44aacc6ea6ed94ae6680c4bce5d1185d3969b69658385ef7477e078",
+      "bytes_len": 5589,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/03/2025&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "captured_at": "2026-07-12T12:53:39.869Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00023-p001-r010-case_detail-50738_2025-01.html",
       "html_sha256": "44e68dd653ecee68102f26489ce18e4364d5ac56ae84f66b97062f95c536d7da",
       "bytes_len": 5867,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=jwxqP0pMrTWnmdeOuU3nGQ%3D%3D&county=BEVENEzRYnhFw%2B%2F2H5%2FUlg%3D%3D&motion=&docs=&adate=07%2F03%2F2025&civilCaseId=Ij3nY5njlIC4VZB5LFxOrg%3D%3D",
       "captured_at": "2026-06-29T13:30:28.592Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 1,
-        "representation": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00023-p001-r010-case_detail-50738_2025-04.html",
       "html_sha256": "d5b6b18c8cbaba2d30eff0f0b2f500b06c474907aef2b56fa14b170fd6566daf",
       "bytes_len": 7117,
@@ -176,10 +190,52 @@
     },
     {
       "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711040908643_19371/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711040908643_19371/00001-p001-r001-case_detail-50738_2025-01.html",
+      "html_sha256": "a19f4ba8bb8b3416086ead47a476d5fd499f9b5a51a1249187f2cb9406640a70",
+      "bytes_len": 6765,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=JpkvtyYuGX1PMcjbdgfWTw%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&motion=&docs=&adate=07/03/2025&civilCaseId=blOOfB1KUXjF12T5Uhnd6w%3D%3D",
+      "captured_at": "2026-07-11T08:09:19.839Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712065625/nysc_20260712085350456_24650/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/nysc_20260712085350456_24650/00012-p001-r005-case_detail-50738_2025-01.html",
+      "html_sha256": "f5d502ee9716b2ee34ede1677c9bf1824bb4009609ce1b4335335cd0ada956c3",
+      "bytes_len": 6780,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&motion=&docs=&adate=07/03/2025&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "captured_at": "2026-07-12T15:22:26.685Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260712065625/rodne/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/rodne/00012-p001-r005-case_detail-50738_2025-01.html",
+      "html_sha256": "dcc0b691c504ca310b55f8a2e9c5b0e053f36985ba1edbef68cb38378738d026",
+      "bytes_len": 6780,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&motion=&docs=&adate=07/03/2025&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "captured_at": "2026-07-12T12:53:39.869Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
       "nested_kind": "document-list",
       "tab_key": "document-list",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00023-p001-r010-case_detail-50738_2025-02.html",
       "html_sha256": "7911ddfeabe6ed4ea85e05b0d5dcb4ffa33f14d2eaf8551698c64a2b0fca0418",
       "bytes_len": 6921,
@@ -193,7 +249,7 @@
       "nested_kind": "document-list",
       "tab_key": "document-list",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/rodne/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/rodne/00023-p001-r010-case_detail-50738_2025-03.html",
       "html_sha256": "c16456290ac68caf76797e2237963bad0523d12db6a23f22996fe20a7e1b4c8f",
       "bytes_len": 6930,
@@ -203,18 +259,7 @@
       "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {
-    "Court": "Kings Supreme Court",
-    "Index Number": "50738/2025",
-    "Case Name": "Nicolas, Lion vs. Rodne-Nicolas, Esther",
-    "Case Type": "Mat-Uncontested",
-    "Track": "Standard",
-    "RJI Filed": "04/21/2024",
-    "NOI Due": "04/21/2025",
-    "NOI Filed": "04/21/2024",
-    "Calendar Number": "2025-000550",
-    "Justice Name": "Noel, Danielle A."
-  },
+  "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -296,14 +341,103 @@
     },
     {
       "source_system": "webcivil",
-      "capture_id": "20260627031845:rodne:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260627031845/rodne/page-001.html",
-      "html_sha256": "a4741d19c756f1257199446f7cbc2671a8767a9a4da37ec8cbe696f8b103af3a",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711040908643_19371:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711040908643_19371/00001-p001-r001-case_detail-50738_2025-01.html",
+      "html_sha256": "a19f4ba8bb8b3416086ead47a476d5fd499f9b5a51a1249187f2cb9406640a70",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=JpkvtyYuGX1PMcjbdgfWTw%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&motion=&docs=&adate=07/03/2025&civilCaseId=blOOfB1KUXjF12T5Uhnd6w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711040908643_19371:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711040908643_19371/00002-p001-r001-appearances-50738_2025-01.html",
+      "html_sha256": "4c9a9279979d6be3e97a4070d6c6b16543b623b696ec57cd2bd1b85e8298e583",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/03/2025&index=JpkvtyYuGX1PMcjbdgfWTw%3D%3D&county=VBTFWojth6uAwfUNczy5%2Fw%3D%3D&civilCaseId=blOOfB1KUXjF12T5Uhnd6w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712065625:nysc_20260712085350456_24650:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/nysc_20260712085350456_24650/00012-p001-r005-case_detail-50738_2025-01.html",
+      "html_sha256": "f5d502ee9716b2ee34ede1677c9bf1824bb4009609ce1b4335335cd0ada956c3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&motion=&docs=&adate=07/03/2025&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712065625:nysc_20260712085350456_24650:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/nysc_20260712085350456_24650/00013-p001-r005-appearances-50738_2025-01.html",
+      "html_sha256": "4fcd6268f1f8f1fd173fe987980a35974d94ec9837a0b653c92fff228209e62a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/03/2025&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712065625:rodne:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/rodne/00012-p001-r005-case_detail-50738_2025-01.html",
+      "html_sha256": "dcc0b691c504ca310b55f8a2e9c5b0e053f36985ba1edbef68cb38378738d026",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&motion=&docs=&adate=07/03/2025&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260712065625:rodne:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260712065625/rodne/00013-p001-r005-appearances-50738_2025-01.html",
+      "html_sha256": "4e236226c44aacc6ea6ed94ae6680c4bce5d1185d3969b69658385ef7477e078",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/03/2025&index=ztHG1ltV99RrsBpQJmD4NQ%3D%3D&county=P5h9_PLUS_71MpunhVtZxBJOB9g%3D%3D&civilCaseId=9dDpe1p%2FP0FsStzIPHrQug%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:50738_2025:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/50738_2025/page-001.html",
+      "html_sha256": "681a0de98b7470f7150e9e3efb6eac73e987fbf5472fff7ec31a1a362524677d",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "",
       "page_number": 1,
-      "table_row_number": 10,
-      "row_html_sha256": "af8b4d81950ad13f304faac8527b0b124f9d22ab4b3f898d1245ce3a3a7045db"
+      "table_row_number": 1,
+      "row_html_sha256": "d7d3da9879e9db061d440985baf3944a6a438ff11f86306b5bf8e2097265aa41"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260712065625:rodne:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260712065625/rodne/page-001.html",
+      "html_sha256": "0f8bdf5e849536530791e3fea695a7f9d6d24acbfd61f1287677304b3e92786d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "5f5b4590e18d07a079d279fcc564cf4714c8595aa87e2c03831e09457d366542"
     }
   ],
   "judicial_officer": "Noel, Danielle A."

@@ -14,8 +14,8 @@
   "case_type": "E-FILED SCAR",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-10T07:34:49.583Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
+      "0730202/2010",
       "feder"
     ],
     "result_row_refs": [
       {
+        "search_name": "0730202/2010",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/0730202_2010.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "46f1d3cfdfa3a7f2e657095784a20c8dbcd762e64ccbc94c5dff4d4c04358675"
+      },
+      {
         "search_name": "feder",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/feder.rows.ndjson",
+        "source_file": "archive/webcivil/results/feder.rows.ndjson",
         "source_page": 23,
         "source_row": 5,
         "row_html_sha256": "3e1284112a3e1f7f874da039c8ce8abf9e495eb34de24dc246ea29decb2719fd"
@@ -115,9 +127,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/0730202_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0730202_2010/00002-p001-r001-appearances-0730202_2010-01.html",
+      "html_sha256": "12a737db4b58aa16ae4b939e2ec07c4659aa255f88d26ca808db38283f906296",
+      "bytes_len": 4661,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/28/2011&index=Dh7E35qVL1misBNVSboxdQ%3D%3D&county=%2FwB4j_PLUS__PLUS_dDbIv643RH5STOg%3D%3D&civilCaseId=%2FNe4T23f1Nu%2FGgSUKEIVJg%3D%3D",
+      "captured_at": "2026-07-10T07:34:49.583Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/0730202_2010/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0730202_2010/00001-p001-r001-case_detail-0730202_2010-01.html",
+      "html_sha256": "b54a40c012ea6929f1c4470ed10ec7ed66b4e6191ab13799b38782812a53cfbc",
+      "bytes_len": 6240,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Dh7E35qVL1misBNVSboxdQ%3D%3D&county=%2FwB4j_PLUS__PLUS_dDbIv643RH5STOg%3D%3D&motion=&docs=&adate=02/28/2011&civilCaseId=%2FNe4T23f1Nu%2FGgSUKEIVJg%3D%3D",
+      "captured_at": "2026-07-10T07:34:49.583Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:0730202_2010:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0730202_2010/00001-p001-r001-case_detail-0730202_2010-01.html",
+      "html_sha256": "b54a40c012ea6929f1c4470ed10ec7ed66b4e6191ab13799b38782812a53cfbc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Dh7E35qVL1misBNVSboxdQ%3D%3D&county=%2FwB4j_PLUS__PLUS_dDbIv643RH5STOg%3D%3D&motion=&docs=&adate=02/28/2011&civilCaseId=%2FNe4T23f1Nu%2FGgSUKEIVJg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:0730202_2010:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0730202_2010/00002-p001-r001-appearances-0730202_2010-01.html",
+      "html_sha256": "12a737db4b58aa16ae4b939e2ec07c4659aa255f88d26ca808db38283f906296",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/28/2011&index=Dh7E35qVL1misBNVSboxdQ%3D%3D&county=%2FwB4j_PLUS__PLUS_dDbIv643RH5STOg%3D%3D&civilCaseId=%2FNe4T23f1Nu%2FGgSUKEIVJg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:feder:page:023",
@@ -128,6 +195,17 @@
       "page_number": 23,
       "table_row_number": 5,
       "row_html_sha256": "3e1284112a3e1f7f874da039c8ce8abf9e495eb34de24dc246ea29decb2719fd"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:0730202_2010:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/0730202_2010/page-001.html",
+      "html_sha256": "0ead6f6c1a0d4665393aa0efab2d14305a4e5e45cb468634badbc8a71fd1703c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "46f1d3cfdfa3a7f2e657095784a20c8dbcd762e64ccbc94c5dff4d4c04358675"
     }
   ],
   "judicial_officer": "SMALL CLAIMS ASSESSMENT JUDGE"

@@ -14,8 +14,8 @@
   "case_type": "Mat-Uncontested",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-11T06:41:10.227Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,23 +23,35 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "36743/2014",
       "ngoc"
     ],
     "result_row_refs": [
       {
+        "search_name": "36743/2014",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/36743_2014.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "cc480a24890845764448977f0d1960ead0e55694f7dc2d815cb725d87eae2f97"
+      },
+      {
         "search_name": "ngoc",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/ngoc.rows.ndjson",
+        "source_file": "archive/webcivil/results/ngoc.rows.ndjson",
         "source_page": 11,
         "source_row": 1,
         "row_html_sha256": "6e4c27f13eef6cdffe131d8619a85921d1ea62c796ee5418028570df4aa7971c"
@@ -86,6 +98,16 @@
       "appearance_date": "09/16/2015",
       "part": "",
       "purpose": "Next appearance",
+      "judicial_officer": "Martinez, Lorraine",
+      "raw_text": "09/16/2015",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    },
+    {
+      "source_system": "webcivil",
+      "appearance_date": "09/16/2015",
+      "part": "",
+      "purpose": "Next appearance",
       "judicial_officer": "Ross, Lorraine",
       "raw_text": "09/16/2015",
       "source_field": "search_row.next_appearance",
@@ -97,9 +119,118 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624225217675_03626/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225217675_03626/00002-p001-r001-appearances-36743_2014-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:35:59.832Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711024103774_18796/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711024103774_18796/00002-p001-r001-appearances-36743_2014-01.html",
+      "html_sha256": "a0a82a3086de012480e1ded89f5dec85a1b103fb2d78e702f70b037f90037773",
+      "bytes_len": 5540,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/16/2015&index=Nj98wFaHLFmtVScpaTiCWA%3D%3D&county=4bhAop1VJZ26DsMqVyDKbw%3D%3D&civilCaseId=TWL04oCj9yT9DyXjAHVQUQ%3D%3D",
+      "captured_at": "2026-07-11T06:41:10.227Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260625041459/nysc_20260624225217675_03626/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225217675_03626/00001-p001-r001-case_detail-36743_2014-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "bytes_len": 9152,
+      "title": "WebCivil",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "captured_at": "2026-06-25T06:35:59.832Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711024103774_18796/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711024103774_18796/00001-p001-r001-case_detail-36743_2014-01.html",
+      "html_sha256": "3c58950bf1385f5199ce722fe9d7b77e24185f2bba925b810f86c78b95d268fa",
+      "bytes_len": 7180,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Nj98wFaHLFmtVScpaTiCWA%3D%3D&county=4bhAop1VJZ26DsMqVyDKbw%3D%3D&motion=&docs=&adate=09/16/2015&civilCaseId=TWL04oCj9yT9DyXjAHVQUQ%3D%3D",
+      "captured_at": "2026-07-11T06:41:10.227Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624225217675_03626:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225217675_03626/00001-p001-r001-case_detail-36743_2014-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260625041459:nysc_20260624225217675_03626:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260625041459/nysc_20260624225217675_03626/00002-p001-r001-appearances-36743_2014-01.html",
+      "html_sha256": "f762e2561a7daa2e9c359450dc95d133a82850cec6c49eda92f826cbee92c200",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711024103774_18796:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711024103774_18796/00001-p001-r001-case_detail-36743_2014-01.html",
+      "html_sha256": "3c58950bf1385f5199ce722fe9d7b77e24185f2bba925b810f86c78b95d268fa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Nj98wFaHLFmtVScpaTiCWA%3D%3D&county=4bhAop1VJZ26DsMqVyDKbw%3D%3D&motion=&docs=&adate=09/16/2015&civilCaseId=TWL04oCj9yT9DyXjAHVQUQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711024103774_18796:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711024103774_18796/00002-p001-r001-appearances-36743_2014-01.html",
+      "html_sha256": "a0a82a3086de012480e1ded89f5dec85a1b103fb2d78e702f70b037f90037773",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/16/2015&index=Nj98wFaHLFmtVScpaTiCWA%3D%3D&county=4bhAop1VJZ26DsMqVyDKbw%3D%3D&civilCaseId=TWL04oCj9yT9DyXjAHVQUQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260624214956:ngoc:page:011",
@@ -110,7 +241,18 @@
       "page_number": 11,
       "table_row_number": 1,
       "row_html_sha256": "6e4c27f13eef6cdffe131d8619a85921d1ea62c796ee5418028570df4aa7971c"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:36743_2014:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/36743_2014/page-001.html",
+      "html_sha256": "8cfc01a1f5db2fb99ddae2b6cbcb52683bc5f1ee142b0edc1ced0a6780cd678a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "cc480a24890845764448977f0d1960ead0e55694f7dc2d815cb725d87eae2f97"
     }
   ],
-  "judicial_officer": "Ross, Lorraine"
+  "judicial_officer": "Martinez, Lorraine"
 }

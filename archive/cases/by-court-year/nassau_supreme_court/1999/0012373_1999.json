@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-27T18:35:02.573Z",
+  "captured_at": "2026-07-12T01:12:17.059Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -25,24 +25,34 @@
       ],
       "captured_tabs": [
         "appearances",
-        "case-detail"
+        "case-detail",
+        "document-list"
       ],
       "document_hint": false,
-      "document_list_captured": false,
+      "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 10
+      "search_rows_seen": 2,
+      "followup_responses_seen": 14
     }
   },
   "discovery": {
     "search_names": [
+      "0012373/1999",
       "elin"
     ],
     "result_row_refs": [
       {
+        "search_name": "0012373/1999",
+        "query_type": "index-number",
+        "source_file": "archive/webcivil/results/0012373_1999.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "5bcb19551e67f6bc286ffd3216222ef22ee9ccb1e0384e246fa6ad43f3990b5d"
+      },
+      {
         "search_name": "elin",
         "query_type": "party-prefix",
-        "source_file": "webcivil-party-search/results/elin.rows.ndjson",
+        "source_file": "archive/webcivil/results/elin.rows.ndjson",
         "source_page": 3,
         "source_row": 7,
         "row_html_sha256": "06059ad6c629ca6de3d9c7ac858749efe7747e10a780a4234dcddcd1c2d1b515"
@@ -69,21 +79,6 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
-    },
-    {
-      "name": "",
-      "firm": "SYDNEY JOHNSON PROSE",
-      "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-01.html",
-      "html_sha256": "5cb968764edc04d03b3358883479c4522549d44c210a3aed4722d749b1fb1283",
-      "captured_at": "2026-06-27T18:32:11.466Z"
     }
   ],
   "representation": [
@@ -96,23 +91,6 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
-    },
-    {
-      "party_name": "JOHNSON, SYDNEY",
-      "party_role": "plaintiff_petitioner",
-      "attorney_name": "",
-      "firm": "SYDNEY JOHNSON PROSE",
-      "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-01.html",
-      "html_sha256": "5cb968764edc04d03b3358883479c4522549d44c210a3aed4722d749b1fb1283",
-      "captured_at": "2026-06-27T18:32:11.466Z"
     }
   ],
   "calendar": [
@@ -125,51 +103,9 @@
       "raw_text": "01/14/2000",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
-    },
-    {
-      "appearance_date": "01/14/2000",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "UNCONT. MAT-JUDGEMENT GRANTED",
-      "part": "REFEREE/UMAT (TRIALS)",
-      "judicial_officer": "SPECIAL REFEREE UNCONT MATRIMONIAL SPECIAL",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "01/14/2000 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT-JUDGEMENT GRANTED | SPECIAL REFEREE UNCONT MATRIMONIAL SPECIAL REFEREE/UMAT (TRIALS)",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-02.html",
-      "html_sha256": "a961f2f711cc7ff179167b9e581a51f8948839d55ac7ffa821f0bfbfbc5cf45e",
-      "captured_at": "2026-06-27T18:32:11.466Z"
     }
   ],
-  "docket_entries": [
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "01/14/2000",
-      "title": "Supreme Initial (first time on) - UNCONT. MAT-JUDGEMENT GRANTED",
-      "text": "01/14/2000 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT-JUDGEMENT GRANTED | SPECIAL REFEREE UNCONT MATRIMONIAL SPECIAL REFEREE/UMAT (TRIALS)",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "document-list",
-      "source_kind": "case-detail",
-      "nested_kind": "document-list",
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-02.html",
-      "html_sha256": "a961f2f711cc7ff179167b9e581a51f8948839d55ac7ffa821f0bfbfbc5cf45e",
-      "captured_at": "2026-06-27T18:32:11.466Z"
-    }
-  ],
+  "docket_entries": [],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -180,7 +116,7 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00152-p003-r007-appearances-0012373_1999-01.html",
       "html_sha256": "f172a113c750a4f5f709199f5fa765198194dda91d11cf5524fdfea481be8b25",
       "bytes_len": 7090,
@@ -194,7 +130,7 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00152-p003-r007-appearances-0012373_1999-02.html",
       "html_sha256": "52e07adb45282e736d3acefebcd26304837dc67d2a2e95f980a6c8b642fded97",
       "bytes_len": 7096,
@@ -208,7 +144,7 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/00018-p001-r007-appearances-0012373_1999-01.html",
       "html_sha256": "d70e3c379c4bc0de359e4b5545d151a8b44d77b000a060f465fbb67f9169ff43",
       "bytes_len": 7090,
@@ -222,7 +158,7 @@
       "nested_kind": "",
       "tab_key": "appearances",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/00018-p001-r007-appearances-0012373_1999-02.html",
       "html_sha256": "890b607848b8802db5f2a453a603ef610f2ab945911ec48ec0f4d07fa44f8675",
       "bytes_len": 7117,
@@ -232,47 +168,67 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/0012373_1999/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0012373_1999/00002-p001-r001-appearances-0012373_1999-01.html",
+      "html_sha256": "5129cf9a6bad02078039533781e3249599a80bdbe61c3cbc43d8f1a459567a60",
+      "bytes_len": 5594,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/2000&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "captured_at": "2026-07-12T01:11:36.479Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711211152999_24204/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711211152999_24204/00002-p001-r001-appearances-0012373_1999-01.html",
+      "html_sha256": "f6bbe4841deb70424e2a37b68222477971d7619d713a014655bffc6a7651659b",
+      "bytes_len": 5594,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/2000&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "captured_at": "2026-07-12T01:12:17.059Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-01.html",
       "html_sha256": "5cb968764edc04d03b3358883479c4522549d44c210a3aed4722d749b1fb1283",
       "bytes_len": 5737,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Io4a2kUM0Lx%2BcW79%2B%2F4TGQ%3D%3D&county=F6ZEH9Zp2p%2B8c0uS5RaL%2Fw%3D%3D&motion=&docs=&adate=01%2F14%2F2000&civilCaseId=zSM90CTdmt2cTvlEhqVLiw%3D%3D",
       "captured_at": "2026-06-27T18:32:11.466Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 2,
-        "representation": 2
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-03.html",
       "html_sha256": "5cb968764edc04d03b3358883479c4522549d44c210a3aed4722d749b1fb1283",
       "bytes_len": 5737,
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Io4a2kUM0Lx_PLUS_cW79_PLUS_%2F4TGQ%3D%3D&county=F6ZEH9Zp2p_PLUS_8c0uS5RaL%2Fw%3D%3D&motion=&docs=&adate=01/14/2000&civilCaseId=zSM90CTdmt2cTvlEhqVLiw%3D%3D",
       "captured_at": "2026-06-27T18:32:11.466Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 2,
-        "representation": 2
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/00017-p001-r007-case_detail-0012373_1999-01.html",
       "html_sha256": "4a29e9c4123794903317362636ab41c6f2734732af9e6f12736a215bcced314f",
       "bytes_len": 7141,
@@ -286,7 +242,7 @@
       "nested_kind": "",
       "tab_key": "case-detail",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/nysc_20260627183321463_06380/00017-p001-r007-case_detail-0012373_1999-02.html",
       "html_sha256": "5b69af07f2f7287f9fdb73c7aef5b7a3e406dcd7accb5ee6b0aaea7020f2e3ef",
       "bytes_len": 7168,
@@ -297,27 +253,52 @@
     },
     {
       "kind": "case-detail",
-      "nested_kind": "document-list",
-      "tab_key": "appearances",
+      "nested_kind": "",
+      "tab_key": "case-detail",
       "ok": true,
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260708232053/0012373_1999/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0012373_1999/00001-p001-r001-case_detail-0012373_1999-01.html",
+      "html_sha256": "8697f4964b0fc3acbe25fd685a2f4cdc259055f8324d5ed50ca870babc11a9a4",
+      "bytes_len": 6630,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&motion=&docs=&adate=01/14/2000&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "captured_at": "2026-07-12T01:11:36.479Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260708232053/nysc_20260711211152999_24204/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711211152999_24204/00001-p001-r001-case_detail-0012373_1999-01.html",
+      "html_sha256": "e5bc4441ea642dfbf5a24ff11e8a3edbce20d623529123d30a14accec3767f87",
+      "bytes_len": 6630,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&motion=&docs=&adate=01/14/2000&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "captured_at": "2026-07-12T01:12:17.059Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "tab_key": "document-list",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-02.html",
       "html_sha256": "a961f2f711cc7ff179167b9e581a51f8948839d55ac7ffa821f0bfbfbc5cf45e",
       "bytes_len": 4694,
       "title": "WebCivil Supreme - Appearance Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=Io4a2kUM0Lx%2BcW79%2B%2F4TGQ%3D%3D&county=F6ZEH9Zp2p%2B8c0uS5RaL%2Fw%3D%3D&civilCaseId=zSM90CTdmt2cTvlEhqVLiw%3D%3D",
       "captured_at": "2026-06-27T18:32:11.466Z",
-      "parsed_counts": {
-        "calendar": 1,
-        "docket_entries": 1
-      }
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
       "nested_kind": "document-list",
       "tab_key": "document-list",
       "ok": false,
-      "source_file": "raw/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
+      "source_file": "archive/webcivil/case-followups/20260627031845/elin/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260627031845/elin/00151-p003-r007-case_detail-0012373_1999-04.html",
       "html_sha256": "9f7130f359f93c240b443b184073dc258a335502a5a95710a56dfa2077e85139",
       "bytes_len": 6933,
@@ -327,17 +308,7 @@
       "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {
-    "Court": "Nassau Supreme Court",
-    "Index Number": "0012373/1999",
-    "Case Name": "JOHNSON, SYDNEY vs. SAINT-ELIN, MARILYN",
-    "Case Type": "UNCONTESTED MATRIMONIAL",
-    "Track": "Standard",
-    "NOI Filed": "09/10/1999",
-    "Disposition Date": "01/14/2000",
-    "Calendar Number": "1999U2170",
-    "Justice Name": "SPECIAL REFEREE UNCONT MATRIMONIAL"
-  },
+  "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -363,7 +334,7 @@
       "table_row_number": 7,
       "kind": "case-detail",
       "nested_kind": "document-list",
-      "tab_key": "appearances"
+      "tab_key": "document-list"
     },
     {
       "source_system": "webcivil",
@@ -471,6 +442,58 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:0012373_1999:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0012373_1999/00001-p001-r001-case_detail-0012373_1999-01.html",
+      "html_sha256": "8697f4964b0fc3acbe25fd685a2f4cdc259055f8324d5ed50ca870babc11a9a4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&motion=&docs=&adate=01/14/2000&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:0012373_1999:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/0012373_1999/00002-p001-r001-appearances-0012373_1999-01.html",
+      "html_sha256": "5129cf9a6bad02078039533781e3249599a80bdbe61c3cbc43d8f1a459567a60",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/2000&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711211152999_24204:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711211152999_24204/00001-p001-r001-case_detail-0012373_1999-01.html",
+      "html_sha256": "e5bc4441ea642dfbf5a24ff11e8a3edbce20d623529123d30a14accec3767f87",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&motion=&docs=&adate=01/14/2000&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260708232053:nysc_20260711211152999_24204:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260708232053/nysc_20260711211152999_24204/00002-p001-r001-appearances-0012373_1999-01.html",
+      "html_sha256": "f6bbe4841deb70424e2a37b68222477971d7619d713a014655bffc6a7651659b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/2000&index=ADX729Z8xtZq19KsFXBdeg%3D%3D&county=vWVXjViuxPAKxTUtlMJLKQ%3D%3D&civilCaseId=Tyjdh82KIudmXJmjSReA0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260627031845:elin:page:003",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260627031845/elin/page-003.html",
       "html_sha256": "dbfc059b93a08a0f61ec044f4f196a55b6a7dc64fbabea25d6f0443b1ad91128",
@@ -479,8 +502,18 @@
       "page_number": 3,
       "table_row_number": 7,
       "row_html_sha256": "06059ad6c629ca6de3d9c7ac858749efe7747e10a780a4234dcddcd1c2d1b515"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260708232053:0012373_1999:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/0012373_1999/page-001.html",
+      "html_sha256": "045093c3cd33451f917eb368854399a553a8ff58ce3557b7fd3b05b3d0b06e07",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "5bcb19551e67f6bc286ffd3216222ef22ee9ccb1e0384e246fa6ad43f3990b5d"
     }
   ],
-  "judicial_officer": "SPECIAL REFEREE UNCONT MATRIMONIAL",
-  "disposition_date": "01/14/2000"
+  "judicial_officer": "SPECIAL REFEREE UNCONT MATRIMONIAL"
 }
