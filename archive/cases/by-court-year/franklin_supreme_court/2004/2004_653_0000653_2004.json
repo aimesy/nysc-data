@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-18T22:23:25.754Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -115,14 +118,69 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260718182301/amel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718182301/amel/00051-p001-r022-appearances-0000653_2004-01.html",
+      "html_sha256": "ce8571ab837aab3dd3de830bbe5957dd1fa651f9ec4d92479bb54857b49390ed",
+      "bytes_len": 5574,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/2005&index=qCputrL6tVYDzhS8okAlNg%3D%3D&county=LeQZN1%2Fh061qABm9c5F1Ew%3D%3D&civilCaseId=AylP7%2FCdsD0VoYpm2tVABQ%3D%3D",
+      "captured_at": "2026-07-18T22:23:25.754Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260718182301/amel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718182301/amel/00050-p001-r022-case_detail-0000653_2004-01.html",
+      "html_sha256": "1fa249ea4d9f0e2ff8afdbdfb98a320c339bc9d715215cfdb0b8fc72ba513861",
+      "bytes_len": 7441,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=qCputrL6tVYDzhS8okAlNg%3D%3D&county=LeQZN1%2Fh061qABm9c5F1Ew%3D%3D&motion=&docs=&adate=02/09/2005&civilCaseId=AylP7%2FCdsD0VoYpm2tVABQ%3D%3D",
+      "captured_at": "2026-07-18T22:23:25.754Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260712212615:amel:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260712212615/amel/page-001.html",
-      "html_sha256": "f4cce5f69bb6c9946a0566ec78a728ba25db4741f82d98036b2bcbbaea762f74",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260718182301:amel:followup-page:001:capture:00050:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718182301/amel/00050-p001-r022-case_detail-0000653_2004-01.html",
+      "html_sha256": "1fa249ea4d9f0e2ff8afdbdfb98a320c339bc9d715215cfdb0b8fc72ba513861",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=qCputrL6tVYDzhS8okAlNg%3D%3D&county=LeQZN1%2Fh061qABm9c5F1Ew%3D%3D&motion=&docs=&adate=02/09/2005&civilCaseId=AylP7%2FCdsD0VoYpm2tVABQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260718182301:amel:followup-page:001:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718182301/amel/00051-p001-r022-appearances-0000653_2004-01.html",
+      "html_sha256": "ce8571ab837aab3dd3de830bbe5957dd1fa651f9ec4d92479bb54857b49390ed",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/2005&index=qCputrL6tVYDzhS8okAlNg%3D%3D&county=LeQZN1%2Fh061qABm9c5F1Ew%3D%3D&civilCaseId=AylP7%2FCdsD0VoYpm2tVABQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260718182301:amel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718182301/amel/page-001.html",
+      "html_sha256": "274cfa828327a58eec7a9a99c9fa74e2dc7d5780535608a45d28f5a65368865f",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "",
       "page_number": 1,
