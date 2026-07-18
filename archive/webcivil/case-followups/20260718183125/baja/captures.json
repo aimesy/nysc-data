@@ -1,0 +1,414 @@
+{
+  "schema": "nysc-webcivil-followups/v1",
+  "name": "baja",
+  "runId": "20260718183125",
+  "pages": [
+    {
+      "schema": "nysc-webcivil-followup-page/v1",
+      "capture_id": "20260718183125:baja:followup-page:001",
+      "source_system": "webcivil",
+      "query_type": "case-followup",
+      "search_name": "baja",
+      "page_number": 1,
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "title": "WebCivil Supreme - Case Search Results",
+      "case_count": 0,
+      "total_pages": 1,
+      "result_rows_on_page": 0,
+      "requested_remaining": 930,
+      "elapsed_ms": 1,
+      "captured_at": "2026-07-18T23:43:08.300Z",
+      "captures": [],
+      "scripts": [
+        {
+          "schema": "nysc-raw-webcivil-followup-script/v1",
+          "capture_id": "20260718183125:baja:followup-page:001:script:001",
+          "source_system": "webcivil",
+          "query_type": "case-followup-script",
+          "search_name": "baja",
+          "page_number": 1,
+          "source_url": "https://iapps.courts.state.ny.us/webcivil/javascript/OpenWindow.js",
+          "http_status": 200,
+          "ok": true,
+          "content_type": "application/javascript",
+          "lane": "",
+          "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/baja/script-001-OpenWindow.js",
+          "sha256": "d5b8248c66961acb2651230bd8c284672fe3242a0789b841ac88a5b93b563d2d",
+          "bytes_len": 4771,
+          "error": "",
+          "captured_at": "2026-07-18T23:43:08.300Z"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema": "nysc-webcivil-followup-page/v1",
+      "capture_id": "20260718183125:baja:followup-page:003",
+      "source_system": "webcivil",
+      "query_type": "case-followup",
+      "search_name": "baja",
+      "page_number": 3,
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "title": "WebCivil Supreme - Case Search Results",
+      "case_count": 51,
+      "total_pages": 3,
+      "result_rows_on_page": 1,
+      "requested_remaining": 1000,
+      "elapsed_ms": 1678,
+      "captured_at": "2026-07-18T23:43:12.544Z",
+      "captures": [
+        {
+          "schema": "nysc-webcivil-followup-capture/v1",
+          "capture_id": "20260718183125:baja:followup-page:003:capture:00001",
+          "kind": "case-detail",
+          "page_number": 3,
+          "row": {
+            "source_page": 3,
+            "source_row": 1,
+            "row_number": "51",
+            "court": "Nassau Supreme Court",
+            "year_filed": "2026",
+            "index_number": "627561/2025",
+            "index_display": "627561/2025",
+            "legacy_index_number": "",
+            "case_status": "Disposed",
+            "plaintiff_petitioner": "Baja 137 LLC",
+            "defendant_respondent": "Generosity Inc. et al",
+            "next_appearance": "04/28/2026",
+            "judge": "Steinman, Hon. Leonard D.",
+            "motion_decision": "M",
+            "detail_onclick": "openCaseDetailsWindow('FCASCaseInfo','CaseInfo','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','M', '','04/28/2026','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+            "appearance_onclick": "openAppearWindow('FCASCaseInfo','Appearance','04/28/2026','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+            "motion_onclick": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+          },
+          "call": "openCaseDetailsWindow('FCASCaseInfo','CaseInfo','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','M', '','04/28/2026','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+          "submissions": [
+            {
+              "action": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&motion=M&docs=&adate=04/28/2026&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "method": "GET",
+              "target": "_blank",
+              "fields": [],
+              "fromWindowOpen": true,
+              "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240"
+            }
+          ],
+          "opens": [
+            {
+              "url": "FCASCaseInfo?parm=CaseInfo&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&motion=M&docs=&adate=04/28/2026&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "name": "_blank",
+              "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240",
+              "document_write_sha256": "",
+              "document_write_len": 0
+            }
+          ],
+          "errors": [],
+          "responses": [
+            {
+              "schema": "nysc-raw-webcivil-followup-response/v1",
+              "capture_id": "20260718183125:baja:followup-page:003:capture:00001:response:01",
+              "source_system": "webcivil",
+              "query_type": "case-followup",
+              "search_name": "baja",
+              "page_number": 3,
+              "source_row": 1,
+              "kind": "case-detail",
+              "court": "Nassau Supreme Court",
+              "year_filed": "2026",
+              "index_number": "627561/2025",
+              "index_display": "627561/2025",
+              "case_status": "Disposed",
+              "plaintiff_petitioner": "Baja 137 LLC",
+              "defendant_respondent": "Generosity Inc. et al",
+              "call": "openCaseDetailsWindow('FCASCaseInfo','CaseInfo','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','M', '','04/28/2026','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+              "request": {
+                "action": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&motion=M&docs=&adate=04/28/2026&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+                "method": "GET",
+                "target": "_blank",
+                "fields": [],
+                "fromWindowOpen": true,
+                "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240"
+              },
+              "nested_kind": "",
+              "source_call": "",
+              "http_status": 200,
+              "ok": true,
+              "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&motion=M&docs=&adate=04/28/2026&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "content_type": "text/html;charset=ISO-8859-1",
+              "lane": "",
+              "elapsed_ms": 897,
+              "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/baja/00001-p003-r001-case_detail-627561_2025-01.html",
+              "html_sha256": "2ddc1b831e7c63e5d1f213b5a763c7b0535ca88aa29668be04e2f3578b9a6d5c",
+              "bytes_len": 10083,
+              "title": "WebCivil Supreme - Case Detail",
+              "body_length": 2404,
+              "body_preview": "<!-- function closeWindow() { self.close(); } //--> WebCivil Supreme - Case Detail Court:Nassau Supreme Court Index Number:627561/2025 Case Name:Baja 137 LLC vs. Generosity Inc. et al Case Type:Comm-Contract Track:Standard RJI Filed: 03/10/2026 Date NOI Due: 03/10/2027 NOI Filed: Disposition Date: 05/01/2026 Calendar Number: Jury Status: Justice Name: Steinman, Hon. Leonard D. Plaintiff/Petitioner: Baja 137 LLC Defendant/Respondent: Generosity Inc. Generosity Global, Inc. Rotenstreich, Naftali Attorney/Firm For Plaintiff: JASPAN SCHLESINGER NARENDRAN LLP Attorney Type: RETAINED Atty. Status: Active 300 GARDEN CITY PLZ FL 5 GARDEN CITY, NY 11530-3333 Vatter, Christopher Edward Attorney Type: RETAINED Atty. Status: Active 300 Garden City Plz Fl 5 Garden City, NY 11530-3333 (516) 393-8227 JASPAN SCHLESINGER Attorney Type: RETAINED Atty. Status: Active 300 GARDEN CITY PLZ GARDEN CITY, NY 11530-3302 Schlesinger, Steven R. Attorney Type: RETAINED Atty. Status: Inactive Inactive Date: 03/10/2026 300 Garden City Plz Garden City, NY 11530-3302 (516) 746-8000 Attorney/Firm For Defendant: Generosity Inc. Attorney Type: UNREPRESENTED Atty. Status: Inactive Inactive Date: 06/10/2026 Generosity ",
+              "link_count": 0,
+              "form_count": 0,
+              "links": [],
+              "window_calls": [
+                {
+                  "functionName": "openDocumentWindow",
+                  "call": "openDocumentWindow('etrackTrackCase', '09ySCKZjeXr9Lqr0YGplfQ%3D%3D', 'oPvizAl9jUaxL7rOcdyaaA%3D%3D','', '%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                },
+                {
+                  "functionName": "openAppearWindow",
+                  "call": "openAppearWindow('FCASCaseInfo', 'Appearance', '', '09ySCKZjeXr9Lqr0YGplfQ%3D%3D', 'oPvizAl9jUaxL7rOcdyaaA%3D%3D', '%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                },
+                {
+                  "functionName": "openAppearWindow",
+                  "call": "openAppearWindow('FCASCaseInfo', 'Motion', '', '09ySCKZjeXr9Lqr0YGplfQ%3D%3D', 'oPvizAl9jUaxL7rOcdyaaA%3D%3D', '%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                },
+                {
+                  "functionName": "openAppearWindow",
+                  "call": "openAppearWindow('FCASCaseInfo', 'AssignedJudge', '', '09ySCKZjeXr9Lqr0YGplfQ%3D%3D', 'oPvizAl9jUaxL7rOcdyaaA%3D%3D', '%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                },
+                {
+                  "functionName": "openDocumentWindow",
+                  "call": "openDocumentWindow('FCASeFiledDocsDetail', '09ySCKZjeXr9Lqr0YGplfQ%3D%3D', 'oPvizAl9jUaxL7rOcdyaaA%3D%3D', 'N', '%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                }
+              ],
+              "forms": [],
+              "error": "",
+              "captured_at": "2026-07-18T23:43:12.544Z"
+            }
+          ]
+        },
+        {
+          "schema": "nysc-webcivil-followup-capture/v1",
+          "capture_id": "20260718183125:baja:followup-page:003:capture:00002",
+          "kind": "appearances",
+          "page_number": 3,
+          "row": {
+            "source_page": 3,
+            "source_row": 1,
+            "row_number": "51",
+            "court": "Nassau Supreme Court",
+            "year_filed": "2026",
+            "index_number": "627561/2025",
+            "index_display": "627561/2025",
+            "legacy_index_number": "",
+            "case_status": "Disposed",
+            "plaintiff_petitioner": "Baja 137 LLC",
+            "defendant_respondent": "Generosity Inc. et al",
+            "next_appearance": "04/28/2026",
+            "judge": "Steinman, Hon. Leonard D.",
+            "motion_decision": "M",
+            "detail_onclick": "openCaseDetailsWindow('FCASCaseInfo','CaseInfo','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','M', '','04/28/2026','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+            "appearance_onclick": "openAppearWindow('FCASCaseInfo','Appearance','04/28/2026','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+            "motion_onclick": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+          },
+          "call": "openAppearWindow('FCASCaseInfo','Appearance','04/28/2026','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+          "submissions": [
+            {
+              "action": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/28/2026&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "method": "GET",
+              "target": "_blank",
+              "fields": [],
+              "fromWindowOpen": true,
+              "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240"
+            }
+          ],
+          "opens": [
+            {
+              "url": "FCASCaseInfo?parm=Appearance&appearDate=04/28/2026&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "name": "_blank",
+              "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240",
+              "document_write_sha256": "",
+              "document_write_len": 0
+            }
+          ],
+          "errors": [],
+          "responses": [
+            {
+              "schema": "nysc-raw-webcivil-followup-response/v1",
+              "capture_id": "20260718183125:baja:followup-page:003:capture:00002:response:01",
+              "source_system": "webcivil",
+              "query_type": "case-followup",
+              "search_name": "baja",
+              "page_number": 3,
+              "source_row": 1,
+              "kind": "appearances",
+              "court": "Nassau Supreme Court",
+              "year_filed": "2026",
+              "index_number": "627561/2025",
+              "index_display": "627561/2025",
+              "case_status": "Disposed",
+              "plaintiff_petitioner": "Baja 137 LLC",
+              "defendant_respondent": "Generosity Inc. et al",
+              "call": "openAppearWindow('FCASCaseInfo','Appearance','04/28/2026','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+              "request": {
+                "action": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/28/2026&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+                "method": "GET",
+                "target": "_blank",
+                "fields": [],
+                "fromWindowOpen": true,
+                "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240"
+              },
+              "nested_kind": "",
+              "source_call": "",
+              "http_status": 200,
+              "ok": true,
+              "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/28/2026&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "content_type": "text/html;charset=ISO-8859-1",
+              "lane": "",
+              "elapsed_ms": 364,
+              "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/baja/00002-p003-r001-appearances-627561_2025-01.html",
+              "html_sha256": "c4e6894cef174364d1bb2e5c33e2fd94620dc71ad98262dc56c263a037352e44",
+              "bytes_len": 6229,
+              "title": "WebCivil Supreme - Appearance Detail",
+              "body_length": 1452,
+              "body_preview": "<!-- function closeWindow() { self.close(); } //--> WebCivil Supreme - Appearance Detail Court: Nassau Supreme Court Index Number: 627561/2025 Case Name: Baja 137 LLC vs. Generosity Inc. et al Case Type: Comm-Contract Track: Standard Appearance Information: AppearanceDate Time Court DatePurpose FullyVirtual Court DateType OutcomeType JusticePart Remarks MotionSeq 04/28/2026 Motion-Notice of Motion No None Fully Submitted - No Opposition Steinman, Hon. Leonard D. 1 04/22/2026 Motion-Notice of Motion No None Adjourned Steinman, Hon. Leonard D. 1 (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a1d3f95e2aa830a1',t:'MTc4NDQwMzc5Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();el",
+              "link_count": 2,
+              "form_count": 0,
+              "links": [
+                {
+                  "ordinal": 1,
+                  "text": "1",
+                  "href": "",
+                  "absolute_href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+                  "onclick": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                },
+                {
+                  "ordinal": 2,
+                  "text": "1",
+                  "href": "",
+                  "absolute_href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+                  "onclick": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                }
+              ],
+              "window_calls": [
+                {
+                  "functionName": "openAppearWindow",
+                  "call": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                },
+                {
+                  "functionName": "openAppearWindow",
+                  "call": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+                }
+              ],
+              "forms": [],
+              "error": "",
+              "captured_at": "2026-07-18T23:43:12.544Z"
+            }
+          ]
+        },
+        {
+          "schema": "nysc-webcivil-followup-capture/v1",
+          "capture_id": "20260718183125:baja:followup-page:003:capture:00003",
+          "kind": "motions",
+          "page_number": 3,
+          "row": {
+            "source_page": 3,
+            "source_row": 1,
+            "row_number": "51",
+            "court": "Nassau Supreme Court",
+            "year_filed": "2026",
+            "index_number": "627561/2025",
+            "index_display": "627561/2025",
+            "legacy_index_number": "",
+            "case_status": "Disposed",
+            "plaintiff_petitioner": "Baja 137 LLC",
+            "defendant_respondent": "Generosity Inc. et al",
+            "next_appearance": "04/28/2026",
+            "judge": "Steinman, Hon. Leonard D.",
+            "motion_decision": "M",
+            "detail_onclick": "openCaseDetailsWindow('FCASCaseInfo','CaseInfo','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','M', '','04/28/2026','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+            "appearance_onclick": "openAppearWindow('FCASCaseInfo','Appearance','04/28/2026','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+            "motion_onclick": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')"
+          },
+          "call": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+          "submissions": [
+            {
+              "action": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "method": "GET",
+              "target": "_blank",
+              "fields": [],
+              "fromWindowOpen": true,
+              "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240"
+            }
+          ],
+          "opens": [
+            {
+              "url": "FCASCaseInfo?parm=Motion&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "name": "_blank",
+              "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240",
+              "document_write_sha256": "",
+              "document_write_len": 0
+            }
+          ],
+          "errors": [],
+          "responses": [
+            {
+              "schema": "nysc-raw-webcivil-followup-response/v1",
+              "capture_id": "20260718183125:baja:followup-page:003:capture:00003:response:01",
+              "source_system": "webcivil",
+              "query_type": "case-followup",
+              "search_name": "baja",
+              "page_number": 3,
+              "source_row": 1,
+              "kind": "motions",
+              "court": "Nassau Supreme Court",
+              "year_filed": "2026",
+              "index_number": "627561/2025",
+              "index_display": "627561/2025",
+              "case_status": "Disposed",
+              "plaintiff_petitioner": "Baja 137 LLC",
+              "defendant_respondent": "Generosity Inc. et al",
+              "call": "openAppearWindow('FCASCaseInfo','Motion','','09ySCKZjeXr9Lqr0YGplfQ%3D%3D','oPvizAl9jUaxL7rOcdyaaA%3D%3D','%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D')",
+              "request": {
+                "action": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+                "method": "GET",
+                "target": "_blank",
+                "fields": [],
+                "fromWindowOpen": true,
+                "features": "toolbar=no,menubar=yes,location=no,scrollbars=yes,resizable=no,width=815,height=600,screenX=240,screenY=0,top=0,left=240"
+              },
+              "nested_kind": "",
+              "source_call": "",
+              "http_status": 200,
+              "ok": true,
+              "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oPvizAl9jUaxL7rOcdyaaA%3D%3D&county=09ySCKZjeXr9Lqr0YGplfQ%3D%3D&civilCaseId=%2F%2FbpBXfsQSQaC_PLUS_8MEhki3g%3D%3D",
+              "content_type": "text/html;charset=ISO-8859-1",
+              "lane": "",
+              "elapsed_ms": 393,
+              "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/baja/00003-p003-r001-motions-627561_2025-01.html",
+              "html_sha256": "833b09c29e7922dedbfa7985115ac2a03abe5bcb88d4cc5c305ccfa4e089e906",
+              "bytes_len": 6366,
+              "title": "WebCivil Supreme - Motion Detail",
+              "body_length": 1389,
+              "body_preview": "<!-- function closeWindow() { self.close(); } //--> WebCivil Supreme - Motion Detail Court: Nassau Supreme Court Index Number: 627561/2025 Case Name: Baja 137 LLC vs. Generosity Inc. et al Case Type: Comm-Contract Track: Standard Motion Information: MotionNumber DateFiled FiledBy Relief Sought SubmitDate AnswerDemanded Status Decision OrderSigned Date 1 03/10/2026 Judgment - Default 04/28/2026 Yes Decided: 05/01/2026Granted Before Justice: Steinman, Hon. Leonard D. Short Form Order (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a1d3f9607b0930a1',t:'MTc4NDQwMzc5Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMCon",
+              "link_count": 0,
+              "form_count": 0,
+              "links": [],
+              "window_calls": [],
+              "forms": [],
+              "error": "",
+              "captured_at": "2026-07-18T23:43:12.544Z"
+            }
+          ]
+        }
+      ],
+      "scripts": [
+        {
+          "schema": "nysc-raw-webcivil-followup-script/v1",
+          "capture_id": "20260718183125:baja:followup-page:003:script:002",
+          "source_system": "webcivil",
+          "query_type": "case-followup-script",
+          "search_name": "baja",
+          "page_number": 3,
+          "source_url": "https://iapps.courts.state.ny.us/webcivil/javascript/OpenWindow.js",
+          "http_status": 200,
+          "ok": true,
+          "content_type": "application/javascript",
+          "lane": "",
+          "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/baja/script-002-OpenWindow.js",
+          "sha256": "d5b8248c66961acb2651230bd8c284672fe3242a0789b841ac88a5b93b563d2d",
+          "bytes_len": 4771,
+          "error": "",
+          "captured_at": "2026-07-18T23:43:12.544Z"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
