@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-19T05:40:40.236Z",
+  "captured_at": "2026-07-19T10:57:32.150Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -30,13 +30,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
-      "0000107/2001"
+      "0000107/2001",
+      "greisler"
     ],
     "result_row_refs": [
       {
@@ -46,6 +47,14 @@
         "source_page": 1,
         "source_row": 6,
         "row_html_sha256": "4089413ab1480ce0d72457185aee56facc27e8dccf5785a8c9d755ccb620109b"
+      },
+      {
+        "search_name": "greisler",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/greisler.rows.ndjson",
+        "source_page": 2,
+        "source_row": 23,
+        "row_html_sha256": "ff4d39c60568d1f6ea18c7162314110e4d4b0f393240e6374216816090ca8822"
       }
     ]
   },
@@ -77,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "Lemery MacKrell Greisler LLC",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/greisler/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00104-p002-r023-case_detail-0000107_2001-01.html",
+      "html_sha256": "1a0e4a96dfd587861d80fbc09ff757b6bbf00d236bd779a0f82c86c9a5aad222",
+      "captured_at": "2026-07-19T10:57:32.150Z"
     }
   ],
   "representation": [
@@ -99,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "Central National Bank",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "Lemery MacKrell Greisler LLC",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/greisler/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00104-p002-r023-case_detail-0000107_2001-01.html",
+      "html_sha256": "1a0e4a96dfd587861d80fbc09ff757b6bbf00d236bd779a0f82c86c9a5aad222",
+      "captured_at": "2026-07-19T10:57:32.150Z"
     }
   ],
   "calendar": [
@@ -111,9 +152,51 @@
       "raw_text": "01/02/2002",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "01/02/2002",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-SETTLED",
+      "part": "LAMONT (Court Activity)",
+      "judicial_officer": "HON. DAN LAMONT",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "01/02/2002 | Disposition | No | Unknown | PRE-SETTLED | HON. DAN LAMONT LAMONT (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/greisler/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00105-p002-r023-appearances-0000107_2001-01.html",
+      "html_sha256": "b8da45ce61702c347b4d38caa7d606bdbcaa31b22bfe5029cb98e01f98d0be68",
+      "captured_at": "2026-07-19T10:57:32.150Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "01/02/2002",
+      "title": "Disposition - PRE-SETTLED",
+      "text": "01/02/2002 | Disposition | No | Unknown | PRE-SETTLED | HON. DAN LAMONT LAMONT (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/greisler/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00105-p002-r023-appearances-0000107_2001-01.html",
+      "html_sha256": "b8da45ce61702c347b4d38caa7d606bdbcaa31b22bfe5029cb98e01f98d0be68",
+      "captured_at": "2026-07-19T10:57:32.150Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -134,6 +217,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/greisler/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00105-p002-r023-appearances-0000107_2001-01.html",
+      "html_sha256": "b8da45ce61702c347b4d38caa7d606bdbcaa31b22bfe5029cb98e01f98d0be68",
+      "bytes_len": 5556,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/02/2002&index=qb%2FaWypU053QCS9gfJwQMg%3D%3D&county=6BGSiAyhBDyw9hZNa4YugQ%3D%3D&civilCaseId=1AMc4q9eItM3npB7fGCrYw%3D%3D",
+      "captured_at": "2026-07-19T10:57:32.150Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -146,9 +246,37 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=M4xLXtwfMlvXvlAQHuIWUw%3D%3D&county=8A%2FfsT03qJPmin0WKUPgjQ%3D%3D&motion=&docs=&adate=01/02/2002&civilCaseId=fcrxYhstWVGfXiak3HF7tg%3D%3D",
       "captured_at": "2026-07-19T05:40:40.236Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/greisler/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00104-p002-r023-case_detail-0000107_2001-01.html",
+      "html_sha256": "1a0e4a96dfd587861d80fbc09ff757b6bbf00d236bd779a0f82c86c9a5aad222",
+      "bytes_len": 7723,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=qb%2FaWypU053QCS9gfJwQMg%3D%3D&county=6BGSiAyhBDyw9hZNa4YugQ%3D%3D&motion=&docs=&adate=01/02/2002&civilCaseId=1AMc4q9eItM3npB7fGCrYw%3D%3D",
+      "captured_at": "2026-07-19T10:57:32.150Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Schoharie Supreme Court",
+    "Index Number": "01-0107",
+    "Case Name": "Central National Bank vs. Donald W. Chichester et al. et c.",
+    "Case Type": "Foreclosure Conf Ineligible",
+    "Track": "Expedited",
+    "RJI Filed": "05/30/2001",
+    "RJI Number": "47-4465-01",
+    "Disposition Date": "01/02/2002",
+    "Justice Name": "HON. DAN LAMONT"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -178,6 +306,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:greisler:followup-page:002:capture:00104:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00104-p002-r023-case_detail-0000107_2001-01.html",
+      "html_sha256": "1a0e4a96dfd587861d80fbc09ff757b6bbf00d236bd779a0f82c86c9a5aad222",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=qb%2FaWypU053QCS9gfJwQMg%3D%3D&county=6BGSiAyhBDyw9hZNa4YugQ%3D%3D&motion=&docs=&adate=01/02/2002&civilCaseId=1AMc4q9eItM3npB7fGCrYw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 23,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:greisler:followup-page:002:capture:00105:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greisler/00105-p002-r023-appearances-0000107_2001-01.html",
+      "html_sha256": "b8da45ce61702c347b4d38caa7d606bdbcaa31b22bfe5029cb98e01f98d0be68",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/02/2002&index=qb%2FaWypU053QCS9gfJwQMg%3D%3D&county=6BGSiAyhBDyw9hZNa4YugQ%3D%3D&civilCaseId=1AMc4q9eItM3npB7fGCrYw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 23,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260718183125:0000107_2001:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/0000107_2001/page-001.html",
       "html_sha256": "faeb9a8d0d0f26f82eafcfe0a784be394f9a184b05b336166ab48e293d1fbcbe",
@@ -186,7 +340,19 @@
       "page_number": 1,
       "table_row_number": 6,
       "row_html_sha256": "4089413ab1480ce0d72457185aee56facc27e8dccf5785a8c9d755ccb620109b"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:greisler:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/greisler/page-002.html",
+      "html_sha256": "ca3c3d870a3da06b05afc5529d41562e701df4fe67e55bcc93c60dfb5fd6c574",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A",
+      "lane": "sfscvpn06",
+      "page_number": 2,
+      "table_row_number": 23,
+      "row_html_sha256": "ff4d39c60568d1f6ea18c7162314110e4d4b0f393240e6374216816090ca8822"
     }
   ],
-  "judicial_officer": "HON. DAN LAMONT"
+  "judicial_officer": "HON. DAN LAMONT",
+  "disposition_date": "01/02/2002"
 }

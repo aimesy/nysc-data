@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-19T10:22:27.582Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,17 +24,22 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "corl"
+      "corl",
+      "suzann"
     ],
     "result_row_refs": [
       {
@@ -44,6 +49,14 @@
         "source_page": 1,
         "source_row": 19,
         "row_html_sha256": "6d31b25b6b7e84e5feea910ede9a5fdb155446bebf12bc41d20cd2bd9d65565b"
+      },
+      {
+        "search_name": "suzann",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/suzann.rows.ndjson",
+        "source_page": 1,
+        "source_row": 16,
+        "row_html_sha256": "3bbd3b3d4a12d8c8359018aeb9334334b2076f1376fca5d2ac4f226ce15b2057"
       }
     ]
   },
@@ -98,9 +111,91 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/suzann/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/suzann/00038-p001-r016-appearances-0006903_2017-01.html",
+      "html_sha256": "45ce3a2616b861b064468077cf39b9ad8611fea045ad7740da1a958ef1da89df",
+      "bytes_len": 9856,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/17/2018&index=9qUymOUGeQsf2SWBaPfEtA%3D%3D&county=C07BuqZCSKuOhITBjAWkHQ%3D%3D&civilCaseId=lj_PLUS_lNGRjxS8Csk_PLUS_ND93jdA%3D%3D",
+      "captured_at": "2026-07-19T10:22:27.582Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/suzann/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/suzann/00037-p001-r016-case_detail-0006903_2017-01.html",
+      "html_sha256": "5c706c889b3de674ad7bcad9dbfc285110d0a57e9d334fb80734c8dabb470b13",
+      "bytes_len": 7915,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9qUymOUGeQsf2SWBaPfEtA%3D%3D&county=C07BuqZCSKuOhITBjAWkHQ%3D%3D&motion=M&docs=&adate=10/17/2018&civilCaseId=lj_PLUS_lNGRjxS8Csk_PLUS_ND93jdA%3D%3D",
+      "captured_at": "2026-07-19T10:22:27.582Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/suzann/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/suzann/00039-p001-r016-motions-0006903_2017-01.html",
+      "html_sha256": "0e76a6281e8ce7525db29c8329943e478232c7ea7a3e3f186812f265f3b5b36f",
+      "bytes_len": 6400,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=9qUymOUGeQsf2SWBaPfEtA%3D%3D&county=C07BuqZCSKuOhITBjAWkHQ%3D%3D&civilCaseId=lj_PLUS_lNGRjxS8Csk_PLUS_ND93jdA%3D%3D",
+      "captured_at": "2026-07-19T10:22:27.582Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:suzann:followup-page:001:capture:00037:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/suzann/00037-p001-r016-case_detail-0006903_2017-01.html",
+      "html_sha256": "5c706c889b3de674ad7bcad9dbfc285110d0a57e9d334fb80734c8dabb470b13",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9qUymOUGeQsf2SWBaPfEtA%3D%3D&county=C07BuqZCSKuOhITBjAWkHQ%3D%3D&motion=M&docs=&adate=10/17/2018&civilCaseId=lj_PLUS_lNGRjxS8Csk_PLUS_ND93jdA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:suzann:followup-page:001:capture:00038:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/suzann/00038-p001-r016-appearances-0006903_2017-01.html",
+      "html_sha256": "45ce3a2616b861b064468077cf39b9ad8611fea045ad7740da1a958ef1da89df",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/17/2018&index=9qUymOUGeQsf2SWBaPfEtA%3D%3D&county=C07BuqZCSKuOhITBjAWkHQ%3D%3D&civilCaseId=lj_PLUS_lNGRjxS8Csk_PLUS_ND93jdA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:suzann:followup-page:001:capture:00039:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/suzann/00039-p001-r016-motions-0006903_2017-01.html",
+      "html_sha256": "0e76a6281e8ce7525db29c8329943e478232c7ea7a3e3f186812f265f3b5b36f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=9qUymOUGeQsf2SWBaPfEtA%3D%3D&county=C07BuqZCSKuOhITBjAWkHQ%3D%3D&civilCaseId=lj_PLUS_lNGRjxS8Csk_PLUS_ND93jdA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260718183125:corl:page:001",
@@ -111,6 +206,17 @@
       "page_number": 1,
       "table_row_number": 19,
       "row_html_sha256": "6d31b25b6b7e84e5feea910ede9a5fdb155446bebf12bc41d20cd2bd9d65565b"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:suzann:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/suzann/page-001.html",
+      "html_sha256": "3ab0a5f07116a7ccc8dc13d55ed34fcbaeceb478c850ab97e6403deaf945e042",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 16,
+      "row_html_sha256": "3bbd3b3d4a12d8c8359018aeb9334334b2076f1376fca5d2ac4f226ce15b2057"
     }
   ],
   "judicial_officer": "Paris, Hon. Anthony J."
