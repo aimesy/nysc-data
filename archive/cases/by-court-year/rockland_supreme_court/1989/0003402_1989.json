@@ -11,15 +11,19 @@
   "index_year": "1989",
   "index_display": "0003402/1989",
   "case_title": "KUHR, MURRAY,IND. & KUHR,RASHI v. KUHR,PHYLLIS & MASO",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-28T20:13:14.195Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -29,13 +33,24 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 22
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "rashi"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "rashi",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/rashi.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "6b0088194e29a8ecc238afde6a8b44f34c9cd84e65a38e2293cfa634b44ed14d"
+      }
+    ]
   },
   "parties": [
     {
@@ -49,9 +64,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "MALLOW, KONSTAM & HAGER",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "ANNMARIE E. WEBSTER",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "KUHR, MURRAY,IND. & KUHR,RASHI",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "MALLOW, KONSTAM & HAGER",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "KUHR,PHYLLIS & MASO",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "ANNMARIE E. WEBSTER",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "01/22/1991",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "GEORGE M. BERGERMAN",
+      "raw_text": "01/22/1991",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -654,6 +718,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260718183125:rashi:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/rashi/page-001.html",
+      "html_sha256": "8297256c09579dde002c23b371452be4ff6664afc74f494b96a9429fb5d76c1d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "6b0088194e29a8ecc238afde6a8b44f34c9cd84e65a38e2293cfa634b44ed14d"
     }
-  ]
+  ],
+  "judicial_officer": "GEORGE M. BERGERMAN"
 }
