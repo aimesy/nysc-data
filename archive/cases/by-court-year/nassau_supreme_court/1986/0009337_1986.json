@@ -11,15 +11,19 @@
   "index_year": "1986",
   "index_display": "0009337/1986",
   "case_title": "SAND TRAP II v. WILWARD LOUNGE",
-  "case_type": null,
+  "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-24T21:54:26.785Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "trap"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "trap",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/trap.rows.ndjson",
+        "source_page": 1,
+        "source_row": 7,
+        "row_html_sha256": "801292d2f1c7431a352a2cb8ec88f7fc3c535184b27d14e901d5b35f0764aec8"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "KRESSEL & ROTHLEIN, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "ALAN BENDERSKY, ESQ.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "SAND TRAP II",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "KRESSEL & ROTHLEIN, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "WILWARD LOUNGE",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "ALAN BENDERSKY, ESQ.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "08/26/1986",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "ANDREW J. DIPAOLA",
+      "raw_text": "08/26/1986",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -221,6 +285,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:trap:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/trap/page-001.html",
+      "html_sha256": "4fdb7a632bd352279fc811f8c3742e9a8f0254b505e4f315b6bddca6b8f345e4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 7,
+      "row_html_sha256": "801292d2f1c7431a352a2cb8ec88f7fc3c535184b27d14e901d5b35f0764aec8"
     }
-  ]
+  ],
+  "judicial_officer": "ANDREW J. DIPAOLA"
 }

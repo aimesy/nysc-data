@@ -15,7 +15,7 @@
   "status": "DISPOSED",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-17T03:59:57.610Z",
+  "captured_at": "2026-07-19T19:23:30.767Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -30,15 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
+      "crys",
       "graf"
     ],
     "result_row_refs": [
+      {
+        "search_name": "crys",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/crys.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "96bf22bb21e4823a4674373a6184daae523e6f6c7735e3badc901b7d74653925"
+      },
       {
         "search_name": "graf",
         "query_type": "party-prefix",
@@ -77,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "MATLIN, GERALD W. ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/crys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00001-p001-r001-case_detail-0010550_1979-01.html",
+      "html_sha256": "c526138cd7154c842bd2bde8324a1d36653224a4bb39547ef1206523f8fc4e93",
+      "captured_at": "2026-07-19T19:23:30.767Z"
     }
   ],
   "representation": [
@@ -99,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "CAROLYN A. DWYER",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "MATLIN, GERALD W. ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/crys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00001-p001-r001-case_detail-0010550_1979-01.html",
+      "html_sha256": "c526138cd7154c842bd2bde8324a1d36653224a4bb39547ef1206523f8fc4e93",
+      "captured_at": "2026-07-19T19:23:30.767Z"
     }
   ],
   "calendar": [
@@ -111,9 +152,51 @@
       "raw_text": "04/27/1983",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "04/27/1983",
+      "appearance_time": "",
+      "purpose": "Supreme Trial",
+      "fully_virtual": "No",
+      "court_date_type": "",
+      "outcome": "SETTLED",
+      "part": "ALVIN R. RUSKIN TRIAL TERM II",
+      "judicial_officer": "ALVIN R. RUSKIN TRIAL TERM II",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "04/27/1983 | Supreme Trial | No | SETTLED | ALVIN R. RUSKIN TRIAL TERM II",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/crys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00002-p001-r001-appearances-0010550_1979-01.html",
+      "html_sha256": "fef8e6d86817d98c49b7ecfd3e43f94e6c10dc8e7ab6f6fbbfb5c476594a0cda",
+      "captured_at": "2026-07-19T19:23:30.767Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/27/1983",
+      "title": "Supreme Trial - SETTLED",
+      "text": "04/27/1983 | Supreme Trial | No | SETTLED | ALVIN R. RUSKIN TRIAL TERM II",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/crys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00002-p001-r001-appearances-0010550_1979-01.html",
+      "html_sha256": "fef8e6d86817d98c49b7ecfd3e43f94e6c10dc8e7ab6f6fbbfb5c476594a0cda",
+      "captured_at": "2026-07-19T19:23:30.767Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -134,6 +217,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/crys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00002-p001-r001-appearances-0010550_1979-01.html",
+      "html_sha256": "fef8e6d86817d98c49b7ecfd3e43f94e6c10dc8e7ab6f6fbbfb5c476594a0cda",
+      "bytes_len": 5495,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/27/1983&index=Zh9M1sXBNJHtegljfB4J1g%3D%3D&county=zhpBb4GJph841FgK69oUYg%3D%3D&civilCaseId=htVkx8GQET4pbD6UvaIoPg%3D%3D",
+      "captured_at": "2026-07-19T19:23:30.767Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -146,9 +246,37 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=LpFEHsRrxUVb2CKNBH9i3Q%3D%3D&county=tIgBzNc%2F99z2oITAcGRqYA%3D%3D&motion=&docs=&adate=04/27/1983&civilCaseId=bvlrogrBJspAX3Q3owxLsg%3D%3D",
       "captured_at": "2026-07-17T03:59:57.610Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/crys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00001-p001-r001-case_detail-0010550_1979-01.html",
+      "html_sha256": "c526138cd7154c842bd2bde8324a1d36653224a4bb39547ef1206523f8fc4e93",
+      "bytes_len": 7044,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Zh9M1sXBNJHtegljfB4J1g%3D%3D&county=zhpBb4GJph841FgK69oUYg%3D%3D&motion=&docs=&adate=04/27/1983&civilCaseId=htVkx8GQET4pbD6UvaIoPg%3D%3D",
+      "captured_at": "2026-07-19T19:23:30.767Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Westchester Supreme Court",
+    "Index Number": "0010550/1979",
+    "Case Name": "CAROLYN A. DWYER vs. PETER GRAF",
+    "Case Type": "Comm-Contract",
+    "Track": "Other",
+    "RJI Filed": "02/22/1982",
+    "NOI Filed": "02/22/1982",
+    "Disposition Date": "04/27/1983",
+    "Calendar Number": "0096NJC82"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -178,6 +306,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:crys:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00001-p001-r001-case_detail-0010550_1979-01.html",
+      "html_sha256": "c526138cd7154c842bd2bde8324a1d36653224a4bb39547ef1206523f8fc4e93",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Zh9M1sXBNJHtegljfB4J1g%3D%3D&county=zhpBb4GJph841FgK69oUYg%3D%3D&motion=&docs=&adate=04/27/1983&civilCaseId=htVkx8GQET4pbD6UvaIoPg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:crys:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crys/00002-p001-r001-appearances-0010550_1979-01.html",
+      "html_sha256": "fef8e6d86817d98c49b7ecfd3e43f94e6c10dc8e7ab6f6fbbfb5c476594a0cda",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/27/1983&index=Zh9M1sXBNJHtegljfB4J1g%3D%3D&county=zhpBb4GJph841FgK69oUYg%3D%3D&civilCaseId=htVkx8GQET4pbD6UvaIoPg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260712212615:graf:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260712212615/graf/page-001.html",
       "html_sha256": "ff9fedd429c05f5dd80a541fce86d4ed9464d0beabc24351d2e3fcee3db52ab4",
@@ -186,6 +340,18 @@
       "page_number": 1,
       "table_row_number": 3,
       "row_html_sha256": "4eb97d0e9143387d2b78195e4a6f0cda463a3e22773a507ab3ff3986059a5d56"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:crys:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/crys/page-001.html",
+      "html_sha256": "3ac371901ac22b0fa090dc443785518a51965de02bdd3c1b6db90876cb7f313f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "96bf22bb21e4823a4674373a6184daae523e6f6c7735e3badc901b7d74653925"
     }
-  ]
+  ],
+  "disposition_date": "04/27/1983"
 }

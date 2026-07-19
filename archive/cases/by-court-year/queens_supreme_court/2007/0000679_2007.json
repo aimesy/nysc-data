@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-01T02:01:19.153Z",
+  "captured_at": "2026-07-19T19:08:28.471Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -32,13 +32,14 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 36
+      "search_rows_seen": 2,
+      "followup_responses_seen": 38
     }
   },
   "discovery": {
     "search_names": [
-      "0000679/2007"
+      "0000679/2007",
+      "dien"
     ],
     "result_row_refs": [
       {
@@ -48,6 +49,14 @@
         "source_page": 1,
         "source_row": 1,
         "row_html_sha256": "f21527669587a5773f78cfde2b7f1e3dc120324c0c35cd98fc0533dd8ac1ade4"
+      },
+      {
+        "search_name": "dien",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/dien.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "32ae75423b898078a1ac208808948c8711329c517cf7700c2fc4c7729a183663"
       }
     ]
   },
@@ -79,6 +88,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "MALAN LENTINI, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/dien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00005-p001-r003-case_detail-0000679_2007-01.html",
+      "html_sha256": "e266b82d179037c90e65f6b063bed09e42f0ca59b1a0c10904c5c5ee9eb94378",
+      "captured_at": "2026-07-19T19:08:28.471Z"
     }
   ],
   "representation": [
@@ -101,6 +125,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "SHI, WEI ZHONG",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "MALAN LENTINI, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/dien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00005-p001-r003-case_detail-0000679_2007-01.html",
+      "html_sha256": "e266b82d179037c90e65f6b063bed09e42f0ca59b1a0c10904c5c5ee9eb94378",
+      "captured_at": "2026-07-19T19:08:28.471Z"
     }
   ],
   "calendar": [
@@ -113,9 +154,51 @@
       "raw_text": "01/02/2008",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "01/02/2008",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "UNCONT. MAT. JUDGMENT SIGNED",
+      "part": "AUGUSTUS C. AGATE PT 24 UNCONTESTED MATRIMONIALS",
+      "judicial_officer": "AUGUSTUS C. AGATE PT 24 UNCONTESTED MATRIMONIALS",
+      "remarks": "JS-01/03/08",
+      "motion_sequence": "",
+      "raw_text": "01/02/2008 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | AUGUSTUS C. AGATE PT 24 UNCONTESTED MATRIMONIALS | JS-01/03/08",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/dien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00006-p001-r003-appearances-0000679_2007-01.html",
+      "html_sha256": "35b664becdcfb15ec8473a055cc422c17ea861af229611f25e3f1e6f8225c965",
+      "captured_at": "2026-07-19T19:08:28.471Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "01/02/2008",
+      "title": "Supreme Initial (first time on) - UNCONT. MAT. JUDGMENT SIGNED",
+      "text": "01/02/2008 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | AUGUSTUS C. AGATE PT 24 UNCONTESTED MATRIMONIALS | JS-01/03/08",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/dien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00006-p001-r003-appearances-0000679_2007-01.html",
+      "html_sha256": "35b664becdcfb15ec8473a055cc422c17ea861af229611f25e3f1e6f8225c965",
+      "captured_at": "2026-07-19T19:08:28.471Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -246,6 +329,23 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/02/2008&index=gnU60MK5or7sWtNNC1JjsQ%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=lT5tWfS4YvgfcFwKEnR8Pg%3D%3D",
       "captured_at": "2026-07-01T02:01:19.153Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/dien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00006-p001-r003-appearances-0000679_2007-01.html",
+      "html_sha256": "35b664becdcfb15ec8473a055cc422c17ea861af229611f25e3f1e6f8225c965",
+      "bytes_len": 5595,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/02/2008&index=QVT0xM%2Fm_PLUS_VJFVilwhLA1tQ%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=MNPtIG19AZEcvXB%2FuTqg_PLUS_A%3D%3D",
+      "captured_at": "2026-07-19T19:08:28.471Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
@@ -487,6 +587,24 @@
     },
     {
       "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/dien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00005-p001-r003-case_detail-0000679_2007-01.html",
+      "html_sha256": "e266b82d179037c90e65f6b063bed09e42f0ca59b1a0c10904c5c5ee9eb94378",
+      "bytes_len": 6885,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=QVT0xM%2Fm_PLUS_VJFVilwhLA1tQ%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&motion=&docs=&adate=01/02/2008&civilCaseId=MNPtIG19AZEcvXB%2FuTqg_PLUS_A%3D%3D",
+      "captured_at": "2026-07-19T19:08:28.471Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
       "nested_kind": "appearances",
       "tab_key": "appearances",
       "ok": true,
@@ -626,7 +744,18 @@
       "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0000679/2007",
+    "Case Name": "SHI, WEI ZHONG vs. TRAN, DIEN HO",
+    "Case Type": "MATRIMONIAL UNCONTESTED",
+    "Track": "Standard",
+    "RJI Filed": "12/27/2007",
+    "NOI Filed": "12/27/2007",
+    "Disposition Date": "01/02/2008",
+    "Calendar Number": "MU133560",
+    "Justice Name": "AUGUSTUS C. AGATE"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -1098,6 +1227,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:dien:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00005-p001-r003-case_detail-0000679_2007-01.html",
+      "html_sha256": "e266b82d179037c90e65f6b063bed09e42f0ca59b1a0c10904c5c5ee9eb94378",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=QVT0xM%2Fm_PLUS_VJFVilwhLA1tQ%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&motion=&docs=&adate=01/02/2008&civilCaseId=MNPtIG19AZEcvXB%2FuTqg_PLUS_A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:dien:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/dien/00006-p001-r003-appearances-0000679_2007-01.html",
+      "html_sha256": "35b664becdcfb15ec8473a055cc422c17ea861af229611f25e3f1e6f8225c965",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/02/2008&index=QVT0xM%2Fm_PLUS_VJFVilwhLA1tQ%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=MNPtIG19AZEcvXB%2FuTqg_PLUS_A%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260701014353:0000679_2007:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260701014353/0000679_2007/page-001.html",
       "html_sha256": "2de9ec1243677f2c40fa958bd87f6819a0940a8d448a194d24e0abb4429ec869",
@@ -1106,7 +1261,19 @@
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "f21527669587a5773f78cfde2b7f1e3dc120324c0c35cd98fc0533dd8ac1ade4"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:dien:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/dien/page-001.html",
+      "html_sha256": "b77c9ca565ac110fd172bc1345fc77af98525ce7f649c9ed1dd9c431379d3d79",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "32ae75423b898078a1ac208808948c8711329c517cf7700c2fc4c7729a183663"
     }
   ],
-  "judicial_officer": "AUGUSTUS C. AGATE"
+  "judicial_officer": "AUGUSTUS C. AGATE",
+  "disposition_date": "01/02/2008"
 }

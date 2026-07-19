@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-11T22:42:27.849Z",
+  "captured_at": "2026-07-19T19:35:23.847Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -30,13 +30,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
-      "0000047/1999"
+      "0000047/1999",
+      "noll"
     ],
     "result_row_refs": [
       {
@@ -46,6 +47,14 @@
         "source_page": 1,
         "source_row": 16,
         "row_html_sha256": "4d0198f8046cfa05666ef1ec4e18f1b519615ede924a8be793138aa3bd8466f3"
+      },
+      {
+        "search_name": "noll",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/noll.rows.ndjson",
+        "source_page": 2,
+        "source_row": 17,
+        "row_html_sha256": "2bd7d199ee5de5ba6bed066a2a7c10abdf3d9136c91608d847c684f6c50541c3"
       }
     ]
   },
@@ -59,6 +68,20 @@
       "name": "CIRELLI, MICHAEL, BLAKE,",
       "role": "defendant_respondent",
       "source_system": "webcivil"
+    },
+    {
+      "name": "CIRELLI, MICHAEL, BLAKE",
+      "role": "defendant_respondent",
+      "display_role": "Defendant/Respondent",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00044-p002-r017-case_detail-0000047_1999-01.html",
+      "html_sha256": "c3e66c0abc448848482d3d0582c13ee7bbb674d4e3e768356cb5b71b7a99b4cb",
+      "captured_at": "2026-07-19T19:35:23.847Z"
     }
   ],
   "attorneys": [
@@ -77,6 +100,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "PENNOCK & BREEDLOVE, LLP",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00044-p002-r017-case_detail-0000047_1999-01.html",
+      "html_sha256": "c3e66c0abc448848482d3d0582c13ee7bbb674d4e3e768356cb5b71b7a99b4cb",
+      "captured_at": "2026-07-19T19:35:23.847Z"
     }
   ],
   "representation": [
@@ -99,6 +137,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "MITCHELL, DAVID B.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "PENNOCK & BREEDLOVE, LLP",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00044-p002-r017-case_detail-0000047_1999-01.html",
+      "html_sha256": "c3e66c0abc448848482d3d0582c13ee7bbb674d4e3e768356cb5b71b7a99b4cb",
+      "captured_at": "2026-07-19T19:35:23.847Z"
     }
   ],
   "calendar": [
@@ -111,9 +166,51 @@
       "raw_text": "04/17/2003",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "04/17/2003",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-SETTLED",
+      "part": "WILLIAMS (Court Activity)",
+      "judicial_officer": "HON FRANK B WILLIAMS",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "04/17/2003 | Disposition | No | Unknown | PRE-SETTLED | HON FRANK B WILLIAMS WILLIAMS (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00045-p002-r017-appearances-0000047_1999-01.html",
+      "html_sha256": "b107b50bd3c2fbd6c98b85ebb350f192ea51c942c15e9b0dc4a28abecfe244e4",
+      "captured_at": "2026-07-19T19:35:23.847Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "04/17/2003",
+      "title": "Disposition - PRE-SETTLED",
+      "text": "04/17/2003 | Disposition | No | Unknown | PRE-SETTLED | HON FRANK B WILLIAMS WILLIAMS (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00045-p002-r017-appearances-0000047_1999-01.html",
+      "html_sha256": "b107b50bd3c2fbd6c98b85ebb350f192ea51c942c15e9b0dc4a28abecfe244e4",
+      "captured_at": "2026-07-19T19:35:23.847Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -134,6 +231,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00045-p002-r017-appearances-0000047_1999-01.html",
+      "html_sha256": "b107b50bd3c2fbd6c98b85ebb350f192ea51c942c15e9b0dc4a28abecfe244e4",
+      "bytes_len": 5529,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/17/2003&index=Lcgbe8gu4aXoG8LXGzMU2A%3D%3D&county=AYJ880gMspeuFwE7ofQAAA%3D%3D&civilCaseId=ecv7wURgRmzHydYadt0zew%3D%3D",
+      "captured_at": "2026-07-19T19:35:23.847Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -146,9 +260,37 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=xeLqMKT0NIi9%2FrzUk%2Fy4LQ%3D%3D&county=%2FupEZLuACrpaTuG2ehnndQ%3D%3D&motion=&docs=&adate=04/17/2003&civilCaseId=SGtj6nSvOAJEQP8ivmr0_PLUS_w%3D%3D",
       "captured_at": "2026-07-11T22:42:27.849Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/noll/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00044-p002-r017-case_detail-0000047_1999-01.html",
+      "html_sha256": "c3e66c0abc448848482d3d0582c13ee7bbb674d4e3e768356cb5b71b7a99b4cb",
+      "bytes_len": 8335,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Lcgbe8gu4aXoG8LXGzMU2A%3D%3D&county=AYJ880gMspeuFwE7ofQAAA%3D%3D&motion=&docs=&adate=04/17/2003&civilCaseId=ecv7wURgRmzHydYadt0zew%3D%3D",
+      "captured_at": "2026-07-19T19:35:23.847Z",
+      "parsed_counts": {
+        "parties": 3,
+        "attorneys": 3,
+        "representation": 3
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Saratoga Supreme Court",
+    "Index Number": "1999-0047",
+    "Case Name": "MITCHELL, DAVID B. vs. CIRELLI, MICHAEL, BLAKE,",
+    "Case Type": "CONTRACT",
+    "Track": "Complex",
+    "RJI Filed": "09/25/2000",
+    "RJI Number": "45-1-2000-1486",
+    "Disposition Date": "04/17/2003",
+    "Justice Name": "HON FRANK B WILLIAMS"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -178,6 +320,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:noll:followup-page:002:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00044-p002-r017-case_detail-0000047_1999-01.html",
+      "html_sha256": "c3e66c0abc448848482d3d0582c13ee7bbb674d4e3e768356cb5b71b7a99b4cb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Lcgbe8gu4aXoG8LXGzMU2A%3D%3D&county=AYJ880gMspeuFwE7ofQAAA%3D%3D&motion=&docs=&adate=04/17/2003&civilCaseId=ecv7wURgRmzHydYadt0zew%3D%3D",
+      "page_number": 2,
+      "table_row_number": 17,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:noll:followup-page:002:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/noll/00045-p002-r017-appearances-0000047_1999-01.html",
+      "html_sha256": "b107b50bd3c2fbd6c98b85ebb350f192ea51c942c15e9b0dc4a28abecfe244e4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/17/2003&index=Lcgbe8gu4aXoG8LXGzMU2A%3D%3D&county=AYJ880gMspeuFwE7ofQAAA%3D%3D&civilCaseId=ecv7wURgRmzHydYadt0zew%3D%3D",
+      "page_number": 2,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260708232053:0000047_1999:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/0000047_1999/page-001.html",
       "html_sha256": "0f3730a8ab46e7bd93025166bd723ccb69b3ff977123c1eeae7a6969438713c1",
@@ -186,7 +354,19 @@
       "page_number": 1,
       "table_row_number": 16,
       "row_html_sha256": "4d0198f8046cfa05666ef1ec4e18f1b519615ede924a8be793138aa3bd8466f3"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:noll:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/noll/page-002.html",
+      "html_sha256": "27d32c633f47817234cef941dfc5337bb98b0fe580122034670ca926a7479544",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A",
+      "lane": "sfscvpn07",
+      "page_number": 2,
+      "table_row_number": 17,
+      "row_html_sha256": "2bd7d199ee5de5ba6bed066a2a7c10abdf3d9136c91608d847c684f6c50541c3"
     }
   ],
-  "judicial_officer": "HON FRANK B WILLIAMS"
+  "judicial_officer": "HON FRANK B WILLIAMS",
+  "disposition_date": "04/17/2003"
 }

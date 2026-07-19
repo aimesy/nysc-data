@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-08T08:54:45.938Z",
+  "captured_at": "2026-07-19T19:58:27.289Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -31,14 +31,15 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 2,
-      "followup_responses_seen": 12
+      "search_rows_seen": 3,
+      "followup_responses_seen": 14
     }
   },
   "discovery": {
     "search_names": [
       "0062101/1988",
-      "bernar"
+      "bernar",
+      "venet"
     ],
     "result_row_refs": [
       {
@@ -56,6 +57,14 @@
         "source_page": 1,
         "source_row": 1,
         "row_html_sha256": "a80b01d615d67cd17ed9a56432c7351519f92dfaba7f046a7fced0324e950d0d"
+      },
+      {
+        "search_name": "venet",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/venet.rows.ndjson",
+        "source_page": 1,
+        "source_row": 4,
+        "row_html_sha256": "098e5d170b34ef74f4c7c51b1ea57bd315bab658741556814255edc7fcb8c41a"
       }
     ]
   },
@@ -87,6 +96,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "GEORGE P. LESHANSKI",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/venet/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00008-p001-r004-case_detail-0062101_1988-01.html",
+      "html_sha256": "fc320b8ebb116023a5ebb7fc916411e2c655298a784bcf122231732874123cb4",
+      "captured_at": "2026-07-19T19:58:27.289Z"
     }
   ],
   "representation": [
@@ -109,6 +133,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "VENET, ELLA",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "GEORGE P. LESHANSKI",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/venet/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00008-p001-r004-case_detail-0062101_1988-01.html",
+      "html_sha256": "fc320b8ebb116023a5ebb7fc916411e2c655298a784bcf122231732874123cb4",
+      "captured_at": "2026-07-19T19:58:27.289Z"
     }
   ],
   "calendar": [
@@ -121,9 +162,51 @@
       "raw_text": "03/21/1988",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "03/21/1988",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "UNCONT MAT JUDGMENT GRANTED",
+      "part": "LEWIS, MARIAN R / SP. REFEREE IAS UMAT 88",
+      "judicial_officer": "LEWIS, MARIAN R / SP. REFEREE IAS UMAT 88",
+      "remarks": "3/24CC3/30",
+      "motion_sequence": "",
+      "raw_text": "03/21/1988 | Supreme Initial (first time on) | No | Unknown | UNCONT MAT JUDGMENT GRANTED | LEWIS, MARIAN R / SP. REFEREE IAS UMAT 88 | 3/24CC3/30",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/venet/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00009-p001-r004-appearances-0062101_1988-01.html",
+      "html_sha256": "0d42788030d4d0f5c8e53198e303dd3f5bdcfdda0983bfc0c1d3f63678f5f7a3",
+      "captured_at": "2026-07-19T19:58:27.289Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "03/21/1988",
+      "title": "Supreme Initial (first time on) - UNCONT MAT JUDGMENT GRANTED",
+      "text": "03/21/1988 | Supreme Initial (first time on) | No | Unknown | UNCONT MAT JUDGMENT GRANTED | LEWIS, MARIAN R / SP. REFEREE IAS UMAT 88 | 3/24CC3/30",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/venet/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00009-p001-r004-appearances-0062101_1988-01.html",
+      "html_sha256": "0d42788030d4d0f5c8e53198e303dd3f5bdcfdda0983bfc0c1d3f63678f5f7a3",
+      "captured_at": "2026-07-19T19:58:27.289Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -184,6 +267,23 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/21/1988&index=wFqZwWIXo4YkVGxS2BXPLg%3D%3D&county=jfvjjxDR47mhHeQWkYDDdw%3D%3D&civilCaseId=AU6DZrBpVgsYKE1Ance66Q%3D%3D",
       "captured_at": "2026-07-08T08:54:45.938Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/venet/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00009-p001-r004-appearances-0062101_1988-01.html",
+      "html_sha256": "0d42788030d4d0f5c8e53198e303dd3f5bdcfdda0983bfc0c1d3f63678f5f7a3",
+      "bytes_len": 5561,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/21/1988&index=U7HObtiIlEnJistYibyXkQ%3D%3D&county=zp45Azcru1AG3QKex3CVQQ%3D%3D&civilCaseId=WPQM5WEbNFc23pbjJTj04Q%3D%3D",
+      "captured_at": "2026-07-19T19:58:27.289Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
@@ -271,6 +371,24 @@
     },
     {
       "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/venet/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00008-p001-r004-case_detail-0062101_1988-01.html",
+      "html_sha256": "fc320b8ebb116023a5ebb7fc916411e2c655298a784bcf122231732874123cb4",
+      "bytes_len": 7022,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=U7HObtiIlEnJistYibyXkQ%3D%3D&county=zp45Azcru1AG3QKex3CVQQ%3D%3D&motion=&docs=&adate=03/21/1988&civilCaseId=WPQM5WEbNFc23pbjJTj04Q%3D%3D",
+      "captured_at": "2026-07-19T19:58:27.289Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
       "nested_kind": "document-list",
       "tab_key": "document-list",
       "ok": true,
@@ -298,7 +416,17 @@
       "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "New York Supreme Court",
+    "Index Number": "0062101/1988",
+    "Case Name": "VENET, ELLA vs. VENET, BERNAR",
+    "Case Type": "UNCONTESTED MAT2",
+    "Track": "Other",
+    "RJI Filed": "03/14/1988",
+    "NOI Filed": "03/03/1988",
+    "Disposition Date": "03/21/1988",
+    "Calendar Number": "1988U-02428"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -458,6 +586,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:venet:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00008-p001-r004-case_detail-0062101_1988-01.html",
+      "html_sha256": "fc320b8ebb116023a5ebb7fc916411e2c655298a784bcf122231732874123cb4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=U7HObtiIlEnJistYibyXkQ%3D%3D&county=zp45Azcru1AG3QKex3CVQQ%3D%3D&motion=&docs=&adate=03/21/1988&civilCaseId=WPQM5WEbNFc23pbjJTj04Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:venet:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/venet/00009-p001-r004-appearances-0062101_1988-01.html",
+      "html_sha256": "0d42788030d4d0f5c8e53198e303dd3f5bdcfdda0983bfc0c1d3f63678f5f7a3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/21/1988&index=U7HObtiIlEnJistYibyXkQ%3D%3D&county=zp45Azcru1AG3QKex3CVQQ%3D%3D&civilCaseId=WPQM5WEbNFc23pbjJTj04Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260625120826:bernar:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260625120826/bernar/page-001.html",
       "html_sha256": "4e4f2d955afe61531524d3ff7f31f6155cb5aacff1b503ec42f6e0b120e1c8a1",
@@ -477,6 +631,18 @@
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "094ff090e209fcf9d59ba7e23f5126d165f26450aa93cb3832256a24e925d616"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:venet:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/venet/page-001.html",
+      "html_sha256": "cceb71abf69422a3dd6a3e78bddd519f0443044f9f3ed894c588b7b9a70ec1c7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 4,
+      "row_html_sha256": "098e5d170b34ef74f4c7c51b1ea57bd315bab658741556814255edc7fcb8c41a"
     }
-  ]
+  ],
+  "disposition_date": "03/21/1988"
 }

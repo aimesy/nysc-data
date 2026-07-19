@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-11T22:02:00.551Z",
+  "captured_at": "2026-07-19T19:10:47.288Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -30,13 +30,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "search_rows_seen": 2,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
     "search_names": [
-      "0000041/2011"
+      "0000041/2011",
+      "facilit"
     ],
     "result_row_refs": [
       {
@@ -46,6 +47,14 @@
         "source_page": 1,
         "source_row": 7,
         "row_html_sha256": "2603f0b54cd82375bac0639c32ce891004aaf470ef529824035e4976d851459d"
+      },
+      {
+        "search_name": "facilit",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/facilit.rows.ndjson",
+        "source_page": 3,
+        "source_row": 12,
+        "row_html_sha256": "1737022c6fd08a2eb321600b472f513c4f432f985aebda765242945387a8aa10"
       }
     ]
   },
@@ -77,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "AUBURN CORRECTIONAL FACILITY",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/facilit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00152-p003-r012-case_detail-0000041_2011-01.html",
+      "html_sha256": "efdf53eb43db9e9df0b6ad536b280bbaa5c93c48b605fcd5990ae2b8bb2d34d5",
+      "captured_at": "2026-07-19T19:10:47.288Z"
     }
   ],
   "representation": [
@@ -99,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "GUTIERREZ",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "AUBURN CORRECTIONAL FACILITY",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/facilit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00152-p003-r012-case_detail-0000041_2011-01.html",
+      "html_sha256": "efdf53eb43db9e9df0b6ad536b280bbaa5c93c48b605fcd5990ae2b8bb2d34d5",
+      "captured_at": "2026-07-19T19:10:47.288Z"
     }
   ],
   "calendar": [
@@ -111,9 +152,51 @@
       "raw_text": "01/24/2011",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "01/24/2011",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-TRANSFER TO ANOTHER VENUE",
+      "part": "LEONE (Court Activity)",
+      "judicial_officer": "HON THOMAS G. LEONE",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "01/24/2011 | Disposition | No | Unknown | PRE-TRANSFER TO ANOTHER VENUE | HON THOMAS G. LEONE LEONE (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/facilit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00153-p003-r012-appearances-0000041_2011-01.html",
+      "html_sha256": "c6d27eb8c1550e2321bcb189e08f2af3a7e979215b95275fb83d6ab3afb4457b",
+      "captured_at": "2026-07-19T19:10:47.288Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "01/24/2011",
+      "title": "Disposition - PRE-TRANSFER TO ANOTHER VENUE",
+      "text": "01/24/2011 | Disposition | No | Unknown | PRE-TRANSFER TO ANOTHER VENUE | HON THOMAS G. LEONE LEONE (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/facilit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00153-p003-r012-appearances-0000041_2011-01.html",
+      "html_sha256": "c6d27eb8c1550e2321bcb189e08f2af3a7e979215b95275fb83d6ab3afb4457b",
+      "captured_at": "2026-07-19T19:10:47.288Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -134,6 +217,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/facilit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00153-p003-r012-appearances-0000041_2011-01.html",
+      "html_sha256": "c6d27eb8c1550e2321bcb189e08f2af3a7e979215b95275fb83d6ab3afb4457b",
+      "bytes_len": 5533,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/24/2011&index=7HpvNz7x2FDjz2xDtr4iow%3D%3D&county=qyCoY6_PLUS_PoOZAWT3kAt35mA%3D%3D&civilCaseId=eD2VC_PLUS_yC0RCkCKMd1h5_PLUS_Lw%3D%3D",
+      "captured_at": "2026-07-19T19:10:47.288Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -146,9 +246,37 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Uk8SuCI6dhwousVBIKWMgA%3D%3D&county=NG%2FOv5r%2F2NavWvfddeCHtg%3D%3D&motion=&docs=&adate=01/24/2011&civilCaseId=NwMG_PLUS_Wtkm5YwkHA6GzWyqw%3D%3D",
       "captured_at": "2026-07-11T22:02:00.551Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/facilit/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00152-p003-r012-case_detail-0000041_2011-01.html",
+      "html_sha256": "efdf53eb43db9e9df0b6ad536b280bbaa5c93c48b605fcd5990ae2b8bb2d34d5",
+      "bytes_len": 7779,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7HpvNz7x2FDjz2xDtr4iow%3D%3D&county=qyCoY6_PLUS_PoOZAWT3kAt35mA%3D%3D&motion=&docs=&adate=01/24/2011&civilCaseId=eD2VC_PLUS_yC0RCkCKMd1h5_PLUS_Lw%3D%3D",
+      "captured_at": "2026-07-19T19:10:47.288Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Cayuga Supreme Court",
+    "Index Number": "2011-0041",
+    "Case Name": "GUTIERREZ vs. FISCHER",
+    "Case Type": "ARTICLE 78",
+    "Track": "Standard",
+    "RJI Filed": "01/13/2011",
+    "RJI Number": "2011-W006",
+    "Disposition Date": "01/24/2011",
+    "Justice Name": "HON THOMAS G. LEONE"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -178,6 +306,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:facilit:followup-page:003:capture:00152:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00152-p003-r012-case_detail-0000041_2011-01.html",
+      "html_sha256": "efdf53eb43db9e9df0b6ad536b280bbaa5c93c48b605fcd5990ae2b8bb2d34d5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7HpvNz7x2FDjz2xDtr4iow%3D%3D&county=qyCoY6_PLUS_PoOZAWT3kAt35mA%3D%3D&motion=&docs=&adate=01/24/2011&civilCaseId=eD2VC_PLUS_yC0RCkCKMd1h5_PLUS_Lw%3D%3D",
+      "page_number": 3,
+      "table_row_number": 12,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:facilit:followup-page:003:capture:00153:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/facilit/00153-p003-r012-appearances-0000041_2011-01.html",
+      "html_sha256": "c6d27eb8c1550e2321bcb189e08f2af3a7e979215b95275fb83d6ab3afb4457b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/24/2011&index=7HpvNz7x2FDjz2xDtr4iow%3D%3D&county=qyCoY6_PLUS_PoOZAWT3kAt35mA%3D%3D&civilCaseId=eD2VC_PLUS_yC0RCkCKMd1h5_PLUS_Lw%3D%3D",
+      "page_number": 3,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260708232053:0000041_2011:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260708232053/0000041_2011/page-001.html",
       "html_sha256": "6725f38e5bf046d5e29cf567dc1dccc12a5d88e923624567c12d4f2a1a72bdae",
@@ -186,7 +340,19 @@
       "page_number": 1,
       "table_row_number": 7,
       "row_html_sha256": "2603f0b54cd82375bac0639c32ce891004aaf470ef529824035e4976d851459d"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:facilit:page:003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/facilit/page-003.html",
+      "html_sha256": "07163b543fa308832d95c8e27b4d6ce90e70d360134c361e17a6b6d25cdfd173",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A",
+      "lane": "sfscvpn06",
+      "page_number": 3,
+      "table_row_number": 12,
+      "row_html_sha256": "1737022c6fd08a2eb321600b472f513c4f432f985aebda765242945387a8aa10"
     }
   ],
-  "judicial_officer": "HON THOMAS G. LEONE"
+  "judicial_officer": "HON THOMAS G. LEONE",
+  "disposition_date": "01/24/2011"
 }
