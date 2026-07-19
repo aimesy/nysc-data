@@ -11,15 +11,19 @@
   "index_year": "2002",
   "index_display": "0006690/2002",
   "case_title": "BONGIORNO, MICHAEL E., DISTR v. CESPEDES, JUAN AND FELIPE S.",
-  "case_type": null,
+  "case_type": "OTHER (\\\"NOT ONE OF THE ABOVE\\\")",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-25T13:22:26.760Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -29,13 +33,24 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 14
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "calle"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "calle",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/calle.rows.ndjson",
+        "source_page": 1,
+        "source_row": 24,
+        "row_html_sha256": "05f3aa5a0436207a19ff32fc8713c04d65a0c25657b37356dcbd4767dc3df6d0"
+      }
+    ]
   },
   "parties": [
     {
@@ -49,9 +64,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "WILLIAM T. MCCLARNON",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "RICHARD J. CALLE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "BONGIORNO, MICHAEL E., DISTR",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "WILLIAM T. MCCLARNON",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "CESPEDES, JUAN AND FELIPE S.",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "RICHARD J. CALLE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "02/07/2003",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "WILLIAM K. NELSON",
+      "raw_text": "02/07/2003",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -438,6 +502,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260718183125:calle:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/calle/page-001.html",
+      "html_sha256": "fddcd20c9ca3966c131873a2ce64376731d2e2e22d3bb7a66a5fc722d868fc37",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 24,
+      "row_html_sha256": "05f3aa5a0436207a19ff32fc8713c04d65a0c25657b37356dcbd4767dc3df6d0"
     }
-  ]
+  ],
+  "judicial_officer": "WILLIAM K. NELSON"
 }

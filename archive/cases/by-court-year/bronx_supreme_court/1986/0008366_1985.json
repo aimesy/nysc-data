@@ -11,15 +11,19 @@
   "index_year": "1986",
   "index_display": "0008366/1985",
   "case_title": "FED.NAT'L MORTG.ASSOC. v. RIOS,AMADO",
-  "case_type": null,
+  "case_type": "EQUITY",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-24T21:10:41.699Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "amado"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "amado",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/amado.rows.ndjson",
+        "source_page": 1,
+        "source_row": 11,
+        "row_html_sha256": "9ce760f979827a0b1cf717b2cc11b4db5006e1e9a83f91a4e0d39458cc03445c"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "DEUTSCH & SCHNEIDER",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "MARCELLA RIOS CALAS",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "FED.NAT'L MORTG.ASSOC.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "DEUTSCH & SCHNEIDER",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "RIOS,AMADO",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "MARCELLA RIOS CALAS",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "06/24/1988",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "ANITA FLORIO",
+      "raw_text": "06/24/1988",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -140,6 +204,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260718183125:amado:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/amado/page-001.html",
+      "html_sha256": "28d0362643f0f3100a0077ed3f66faee3ee7c92e3cdf60ac406a6d362697d82d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "9ce760f979827a0b1cf717b2cc11b4db5006e1e9a83f91a4e0d39458cc03445c"
     }
-  ]
+  ],
+  "judicial_officer": "ANITA FLORIO"
 }

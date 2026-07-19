@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-19T04:08:49.839Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,17 +24,22 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "bong"
+      "bong",
+      "nara"
     ],
     "result_row_refs": [
       {
@@ -44,6 +49,14 @@
         "source_page": 14,
         "source_row": 7,
         "row_html_sha256": "475444735fc53d67f01a028a93272ef22349088ed1de2f89d0434dd71e3e3a23"
+      },
+      {
+        "search_name": "nara",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/nara.rows.ndjson",
+        "source_page": 4,
+        "source_row": 15,
+        "row_html_sha256": "7554811de40c34decadf00e3421e56e26db37778337f2906a2b7d03879f8e020"
       }
     ]
   },
@@ -78,9 +91,91 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260718183125/nara/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/nara/00112-p004-r015-appearances-0011542_2008-01.html",
+      "html_sha256": "efae1a14582ba34f32eb85cc460dbdf63a83d268ae2c5c728656030a750ddff6",
+      "bytes_len": 7671,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/21/2010&index=Wepcb%2F8w7Yz6xfC6jghEBg%3D%3D&county=5yTp5AKtM8f4wXvo%2FW%2Fk9g%3D%3D&civilCaseId=ZO0IXrgN0HSTNRwGFopIAQ%3D%3D",
+      "captured_at": "2026-07-19T04:08:49.839Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260718183125/nara/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/nara/00111-p004-r015-case_detail-0011542_2008-01.html",
+      "html_sha256": "806862c34dc3fb2082c3668757f2282076889a8ed041c6a1cf49c2602162fbab",
+      "bytes_len": 6461,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Wepcb%2F8w7Yz6xfC6jghEBg%3D%3D&county=5yTp5AKtM8f4wXvo%2FW%2Fk9g%3D%3D&motion=M&docs=&adate=05/21/2010&civilCaseId=ZO0IXrgN0HSTNRwGFopIAQ%3D%3D",
+      "captured_at": "2026-07-19T04:08:49.839Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260718183125/nara/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/nara/00113-p004-r015-motions-0011542_2008-01.html",
+      "html_sha256": "8e7129b22950b5142c27744d46220a55f317dad379dab6c35cb49da114871c2c",
+      "bytes_len": 7219,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Wepcb%2F8w7Yz6xfC6jghEBg%3D%3D&county=5yTp5AKtM8f4wXvo%2FW%2Fk9g%3D%3D&civilCaseId=ZO0IXrgN0HSTNRwGFopIAQ%3D%3D",
+      "captured_at": "2026-07-19T04:08:49.839Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260718183125:nara:followup-page:004:capture:00111:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/nara/00111-p004-r015-case_detail-0011542_2008-01.html",
+      "html_sha256": "806862c34dc3fb2082c3668757f2282076889a8ed041c6a1cf49c2602162fbab",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Wepcb%2F8w7Yz6xfC6jghEBg%3D%3D&county=5yTp5AKtM8f4wXvo%2FW%2Fk9g%3D%3D&motion=M&docs=&adate=05/21/2010&civilCaseId=ZO0IXrgN0HSTNRwGFopIAQ%3D%3D",
+      "page_number": 4,
+      "table_row_number": 15,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260718183125:nara:followup-page:004:capture:00112:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/nara/00112-p004-r015-appearances-0011542_2008-01.html",
+      "html_sha256": "efae1a14582ba34f32eb85cc460dbdf63a83d268ae2c5c728656030a750ddff6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/21/2010&index=Wepcb%2F8w7Yz6xfC6jghEBg%3D%3D&county=5yTp5AKtM8f4wXvo%2FW%2Fk9g%3D%3D&civilCaseId=ZO0IXrgN0HSTNRwGFopIAQ%3D%3D",
+      "page_number": 4,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260718183125:nara:followup-page:004:capture:00113:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260718183125/nara/00113-p004-r015-motions-0011542_2008-01.html",
+      "html_sha256": "8e7129b22950b5142c27744d46220a55f317dad379dab6c35cb49da114871c2c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Wepcb%2F8w7Yz6xfC6jghEBg%3D%3D&county=5yTp5AKtM8f4wXvo%2FW%2Fk9g%3D%3D&civilCaseId=ZO0IXrgN0HSTNRwGFopIAQ%3D%3D",
+      "page_number": 4,
+      "table_row_number": 15,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260712212615:bong:page:014",
@@ -91,6 +186,17 @@
       "page_number": 14,
       "table_row_number": 7,
       "row_html_sha256": "475444735fc53d67f01a028a93272ef22349088ed1de2f89d0434dd71e3e3a23"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260718183125:nara:page:004",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/nara/page-004.html",
+      "html_sha256": "989e279e77a869033e81edffaefb995fe4437a9901c6034fc324a714e96c37d9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "",
+      "page_number": 4,
+      "table_row_number": 15,
+      "row_html_sha256": "7554811de40c34decadf00e3421e56e26db37778337f2906a2b7d03879f8e020"
     }
   ],
   "judicial_officer": "ROBERT M. BERLINER"
