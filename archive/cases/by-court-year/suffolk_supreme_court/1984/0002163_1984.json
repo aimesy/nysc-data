@@ -14,8 +14,8 @@
   "case_type": "Tort-Motor Vehicle",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T01:30:39.410Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "mayor"
+      "mayor",
+      "rico"
     ],
     "result_row_refs": [
       {
@@ -43,6 +47,14 @@
         "source_page": 1,
         "source_row": 2,
         "row_html_sha256": "902c9a5cf0e4d449b75ac4f6e7e4a734b74651627e97f5e4a15764ea73bcd45c"
+      },
+      {
+        "search_name": "rico",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/rico.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "7128592950e12e86b1903288fe65ce915de1e8f329495bfe619fdcc1a8fc0f52"
       }
     ]
   },
@@ -115,9 +127,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/rico/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rico/00006-p001-r003-appearances-0002163_1984-01.html",
+      "html_sha256": "6feadac850157ea5f5d61d6c888d7afe8a8911f141d64431c464516930898776",
+      "bytes_len": 5530,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/03/1986&index=h0b3g2FJkI3hRF10ws6IqA%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&civilCaseId=DjNWYlQdnpgcBx7WmRb2KA%3D%3D",
+      "captured_at": "2026-07-20T01:30:39.410Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/rico/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rico/00005-p001-r003-case_detail-0002163_1984-01.html",
+      "html_sha256": "26585179feca059e61047df878810e41614dbb364fedcf386fee6be554ac40eb",
+      "bytes_len": 7082,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=h0b3g2FJkI3hRF10ws6IqA%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&motion=&docs=&adate=03/03/1986&civilCaseId=DjNWYlQdnpgcBx7WmRb2KA%3D%3D",
+      "captured_at": "2026-07-20T01:30:39.410Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:rico:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rico/00005-p001-r003-case_detail-0002163_1984-01.html",
+      "html_sha256": "26585179feca059e61047df878810e41614dbb364fedcf386fee6be554ac40eb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=h0b3g2FJkI3hRF10ws6IqA%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&motion=&docs=&adate=03/03/1986&civilCaseId=DjNWYlQdnpgcBx7WmRb2KA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:rico:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rico/00006-p001-r003-appearances-0002163_1984-01.html",
+      "html_sha256": "6feadac850157ea5f5d61d6c888d7afe8a8911f141d64431c464516930898776",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/03/1986&index=h0b3g2FJkI3hRF10ws6IqA%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&civilCaseId=DjNWYlQdnpgcBx7WmRb2KA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260718183125:mayor:page:001",
@@ -128,6 +195,17 @@
       "page_number": 1,
       "table_row_number": 2,
       "row_html_sha256": "902c9a5cf0e4d449b75ac4f6e7e4a734b74651627e97f5e4a15764ea73bcd45c"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:rico:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/rico/page-001.html",
+      "html_sha256": "638f247c660a3ce3ff2e927f5f41cbf9614705e612d8a03a9d5eb516e99a48bb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "7128592950e12e86b1903288fe65ce915de1e8f329495bfe619fdcc1a8fc0f52"
     }
   ],
   "judicial_officer": "JAMES A. GOWAN"

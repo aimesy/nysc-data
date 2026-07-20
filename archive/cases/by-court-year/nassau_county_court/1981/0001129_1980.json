@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T04:37:48.124Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "duke"
+      "duke",
+      "moody"
     ],
     "result_row_refs": [
       {
@@ -43,6 +47,14 @@
         "source_page": 1,
         "source_row": 1,
         "row_html_sha256": "35aa3b11dd929f35a67dab1ca89c9c48e6ea267d22b39f0f6b810b11663d8427"
+      },
+      {
+        "search_name": "moody",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/moody.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "e71832f523da3d34d5dc60ab2861ec63ceba6cc2f7519c46b7b65e6e36c7f90a"
       }
     ]
   },
@@ -74,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "HAROLD FREUND",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/moody/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00005-p001-r003-case_detail-0001129_1980-01.html",
+      "html_sha256": "fd0664e615c099164559674e033ee257e270995c53c392f8fca6b69859837b9a",
+      "captured_at": "2026-07-20T04:37:48.124Z"
     }
   ],
   "representation": [
@@ -96,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "MOODY",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "HAROLD FREUND",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/moody/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00005-p001-r003-case_detail-0001129_1980-01.html",
+      "html_sha256": "fd0664e615c099164559674e033ee257e270995c53c392f8fca6b69859837b9a",
+      "captured_at": "2026-07-20T04:37:48.124Z"
     }
   ],
   "calendar": [
@@ -108,16 +152,131 @@
       "raw_text": "06/21/1982",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "06/21/1982",
+      "appearance_time": "",
+      "purpose": "County Trial",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "SETTLED BEFORE TRIAL",
+      "part": "HAROLD FERTIG CIVIL 2 C/C",
+      "judicial_officer": "HAROLD FERTIG CIVIL 2 C/C",
+      "remarks": "6/21/82",
+      "motion_sequence": "",
+      "raw_text": "06/21/1982 | County Trial | No | Unknown | SETTLED BEFORE TRIAL | HAROLD FERTIG CIVIL 2 C/C | 6/21/82",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/moody/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00006-p001-r003-appearances-0001129_1980-01.html",
+      "html_sha256": "5db6e5503ae6920cf4ee72a9642cf64ee810fa8de936e02d5d7a3d944bae6b93",
+      "captured_at": "2026-07-20T04:37:48.124Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "06/21/1982",
+      "title": "County Trial - SETTLED BEFORE TRIAL",
+      "text": "06/21/1982 | County Trial | No | Unknown | SETTLED BEFORE TRIAL | HAROLD FERTIG CIVIL 2 C/C | 6/21/82",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/moody/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00006-p001-r003-appearances-0001129_1980-01.html",
+      "html_sha256": "5db6e5503ae6920cf4ee72a9642cf64ee810fa8de936e02d5d7a3d944bae6b93",
+      "captured_at": "2026-07-20T04:37:48.124Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/moody/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00006-p001-r003-appearances-0001129_1980-01.html",
+      "html_sha256": "5db6e5503ae6920cf4ee72a9642cf64ee810fa8de936e02d5d7a3d944bae6b93",
+      "bytes_len": 5502,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/21/1982&index=oYHpjOzOYfk2xn1xAX5w%2Fg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&civilCaseId=1vhXLABnB8Lh_PLUS_S4ccsLWew%3D%3D",
+      "captured_at": "2026-07-20T04:37:48.124Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/moody/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00005-p001-r003-case_detail-0001129_1980-01.html",
+      "html_sha256": "fd0664e615c099164559674e033ee257e270995c53c392f8fca6b69859837b9a",
+      "bytes_len": 7398,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oYHpjOzOYfk2xn1xAX5w%2Fg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&motion=&docs=&adate=06/21/1982&civilCaseId=1vhXLABnB8Lh_PLUS_S4ccsLWew%3D%3D",
+      "captured_at": "2026-07-20T04:37:48.124Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Nassau County Court",
+    "Index Number": "0001129/1980",
+    "Case Name": "MOODY vs. DUKE",
+    "Case Type": "MOTOR VEHICLE",
+    "Track": "Other",
+    "RJI Filed": "10/06/1981",
+    "NOI Filed": "10/06/1981",
+    "Disposition Date": "06/21/1982",
+    "Calendar Number": "1981H2666",
+    "Jury Status": "Jury At Defendant's Request"
+  },
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:moody:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00005-p001-r003-case_detail-0001129_1980-01.html",
+      "html_sha256": "fd0664e615c099164559674e033ee257e270995c53c392f8fca6b69859837b9a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oYHpjOzOYfk2xn1xAX5w%2Fg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&motion=&docs=&adate=06/21/1982&civilCaseId=1vhXLABnB8Lh_PLUS_S4ccsLWew%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:moody:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/moody/00006-p001-r003-appearances-0001129_1980-01.html",
+      "html_sha256": "5db6e5503ae6920cf4ee72a9642cf64ee810fa8de936e02d5d7a3d944bae6b93",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/21/1982&index=oYHpjOzOYfk2xn1xAX5w%2Fg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&civilCaseId=1vhXLABnB8Lh_PLUS_S4ccsLWew%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260712212615:duke:page:001",
@@ -128,6 +287,18 @@
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "35aa3b11dd929f35a67dab1ca89c9c48e6ea267d22b39f0f6b810b11663d8427"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:moody:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/moody/page-001.html",
+      "html_sha256": "55ba7d78e8421c16144403d785e9a65d8f8fc6c5490995b3089383fafaba5b48",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "e71832f523da3d34d5dc60ab2861ec63ceba6cc2f7519c46b7b65e6e36c7f90a"
     }
-  ]
+  ],
+  "disposition_date": "06/21/1982"
 }

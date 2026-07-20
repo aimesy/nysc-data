@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-30T22:59:16.322Z",
+  "captured_at": "2026-07-20T04:04:55.530Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -31,13 +31,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 24
+      "search_rows_seen": 2,
+      "followup_responses_seen": 26
     }
   },
   "discovery": {
     "search_names": [
-      "0000055/2011"
+      "0000055/2011",
+      "vien"
     ],
     "result_row_refs": [
       {
@@ -47,6 +48,14 @@
         "source_page": 1,
         "source_row": 1,
         "row_html_sha256": "a7807f66a1ad7410ea6aa772258c128b6201b2a51befda480f252e71b33e69e1"
+      },
+      {
+        "search_name": "vien",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/vien.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "52b5c87f2a64cf4ac9e6e5bdb0f67c055ac359955c49bc1091f53bb3845d8969"
       }
     ]
   },
@@ -78,6 +87,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "TIN THAI BAO NGUYEN - Prose",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/vien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00003-p001-r002-case_detail-0000055_2011-01.html",
+      "html_sha256": "ec032dbda7b1f35aa8242e3a9ddfeede2e3a29ebac593942316693cf5b7b1035",
+      "captured_at": "2026-07-20T04:04:55.530Z"
     }
   ],
   "representation": [
@@ -100,6 +124,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "NGUYEN, TIN THAI BAO",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "TIN THAI BAO NGUYEN - Prose",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/vien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00003-p001-r002-case_detail-0000055_2011-01.html",
+      "html_sha256": "ec032dbda7b1f35aa8242e3a9ddfeede2e3a29ebac593942316693cf5b7b1035",
+      "captured_at": "2026-07-20T04:04:55.530Z"
     }
   ],
   "calendar": [
@@ -112,9 +153,51 @@
       "raw_text": "05/16/2011",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/16/2011",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "UNCONT. MAT. JUDGMENT SIGNED",
+      "part": "PHYLLIS ORLIKOFF FLUG PT 9 UNCONTESTED MATRIMONIALS",
+      "judicial_officer": "PHYLLIS ORLIKOFF FLUG PT 9 UNCONTESTED MATRIMONIALS",
+      "remarks": "7/20/11",
+      "motion_sequence": "",
+      "raw_text": "05/16/2011 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | PHYLLIS ORLIKOFF FLUG PT 9 UNCONTESTED MATRIMONIALS | 7/20/11",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/vien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00004-p001-r002-appearances-0000055_2011-01.html",
+      "html_sha256": "b3387fc7bc1c256256a7090170c78a3c44944847fd611ddd829f8854107e4ca4",
+      "captured_at": "2026-07-20T04:04:55.530Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/16/2011",
+      "title": "Supreme Initial (first time on) - UNCONT. MAT. JUDGMENT SIGNED",
+      "text": "05/16/2011 | Supreme Initial (first time on) | No | Unknown | UNCONT. MAT. JUDGMENT SIGNED | PHYLLIS ORLIKOFF FLUG PT 9 UNCONTESTED MATRIMONIALS | 7/20/11",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/vien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00004-p001-r002-appearances-0000055_2011-01.html",
+      "html_sha256": "b3387fc7bc1c256256a7090170c78a3c44944847fd611ddd829f8854107e4ca4",
+      "captured_at": "2026-07-20T04:04:55.530Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -217,6 +300,23 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/16/2011&index=RdVQQPgFOqDCEmCWbKivwA%3D%3D&county=HpYHHP_PLUS_XT_PLUS_9xXo8ZjC9%2FiQ%3D%3D&civilCaseId=IsauERl19C%2FqtyMmlSfiMQ%3D%3D",
       "captured_at": "2026-06-30T22:59:16.322Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/vien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00004-p001-r002-appearances-0000055_2011-01.html",
+      "html_sha256": "b3387fc7bc1c256256a7090170c78a3c44944847fd611ddd829f8854107e4ca4",
+      "bytes_len": 5590,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/16/2011&index=ZGWiQEGRiNaeVC_PLUS_aEFjRLA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=qub3vKIi%2FrkD81VFNwOLiw%3D%3D",
+      "captured_at": "2026-07-20T04:04:55.530Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
@@ -374,6 +474,24 @@
     },
     {
       "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/vien/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00003-p001-r002-case_detail-0000055_2011-01.html",
+      "html_sha256": "ec032dbda7b1f35aa8242e3a9ddfeede2e3a29ebac593942316693cf5b7b1035",
+      "bytes_len": 6702,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZGWiQEGRiNaeVC_PLUS_aEFjRLA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&motion=&docs=&adate=05/16/2011&civilCaseId=qub3vKIi%2FrkD81VFNwOLiw%3D%3D",
+      "captured_at": "2026-07-20T04:04:55.530Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
       "nested_kind": "appearances",
       "tab_key": "appearances",
       "ok": true,
@@ -457,7 +575,17 @@
       "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0000055/2011",
+    "Case Name": "NGUYEN, TIN THAI BAO vs. TRAN, VIEN",
+    "Case Type": "MATRIMONIAL UNCONTESTED",
+    "Track": "Standard",
+    "RJI Filed": "05/11/2011",
+    "NOI Filed": "05/11/2011",
+    "Disposition Date": "05/16/2011",
+    "Justice Name": "PHYLLIS ORLIKOFF FLUG"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -773,6 +901,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:vien:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00003-p001-r002-case_detail-0000055_2011-01.html",
+      "html_sha256": "ec032dbda7b1f35aa8242e3a9ddfeede2e3a29ebac593942316693cf5b7b1035",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZGWiQEGRiNaeVC_PLUS_aEFjRLA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&motion=&docs=&adate=05/16/2011&civilCaseId=qub3vKIi%2FrkD81VFNwOLiw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:vien:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/vien/00004-p001-r002-appearances-0000055_2011-01.html",
+      "html_sha256": "b3387fc7bc1c256256a7090170c78a3c44944847fd611ddd829f8854107e4ca4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/16/2011&index=ZGWiQEGRiNaeVC_PLUS_aEFjRLA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=qub3vKIi%2FrkD81VFNwOLiw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260630022211:0000055_2011:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260630022211/0000055_2011/page-001.html",
       "html_sha256": "f48f78bd96fce6fe42ad6abe4daa5737516d945f30ddac6c8cba150280f414f5",
@@ -781,7 +935,19 @@
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "a7807f66a1ad7410ea6aa772258c128b6201b2a51befda480f252e71b33e69e1"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:vien:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/vien/page-001.html",
+      "html_sha256": "9465a2d297d217b82e630f0122f012f6d504a6718feb3c068e2f54176fb02a59",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "52b5c87f2a64cf4ac9e6e5bdb0f67c055ac359955c49bc1091f53bb3845d8969"
     }
   ],
-  "judicial_officer": "PHYLLIS ORLIKOFF FLUG"
+  "judicial_officer": "PHYLLIS ORLIKOFF FLUG",
+  "disposition_date": "05/16/2011"
 }

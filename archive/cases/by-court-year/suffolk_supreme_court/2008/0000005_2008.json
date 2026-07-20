@@ -15,7 +15,7 @@
   "status": "DISPOSED",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-30T02:49:06.461Z",
+  "captured_at": "2026-07-20T03:31:16.277Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -31,13 +31,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 22
+      "search_rows_seen": 2,
+      "followup_responses_seen": 24
     }
   },
   "discovery": {
     "search_names": [
-      "0000005/2008"
+      "0000005/2008",
+      "billi"
     ],
     "result_row_refs": [
       {
@@ -47,6 +48,14 @@
         "source_page": 1,
         "source_row": 2,
         "row_html_sha256": "08996c66e1b11964382d2c74539c1a2ada29c434020597284ef6500d56ae37dd"
+      },
+      {
+        "search_name": "billi",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/billi.rows.ndjson",
+        "source_page": 1,
+        "source_row": 5,
+        "row_html_sha256": "b86a1c1319e15a23f908cf2d15dc41ad2c05cb0b9872a9bfe3db171d40035931"
       }
     ]
   },
@@ -78,6 +87,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "TAYFUN C. YALCIN, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/billi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00011-p001-r005-case_detail-0000005_2008-01.html",
+      "html_sha256": "a998a3a2e24299ec1cb9d94e964fdc1359a85051bd818d928c7e71df6750d605",
+      "captured_at": "2026-07-20T03:31:16.277Z"
     }
   ],
   "representation": [
@@ -100,6 +124,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "AKTAS, MELAHAT",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "TAYFUN C. YALCIN, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/billi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00011-p001-r005-case_detail-0000005_2008-01.html",
+      "html_sha256": "a998a3a2e24299ec1cb9d94e964fdc1359a85051bd818d928c7e71df6750d605",
+      "captured_at": "2026-07-20T03:31:16.277Z"
     }
   ],
   "calendar": [
@@ -112,9 +153,51 @@
       "raw_text": "05/02/2008",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/02/2008",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "GRANTED",
+      "part": "JOHN KELLY RESERVE PART 20",
+      "judicial_officer": "JOHN KELLY RESERVE PART 20",
+      "remarks": "JG/JK/FF S;5/8/08F;5/23/08",
+      "motion_sequence": "",
+      "raw_text": "05/02/2008 | Supreme Initial (first time on) | No | Unknown | GRANTED | JOHN KELLY RESERVE PART 20 | JG/JK/FF S;5/8/08F;5/23/08",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/billi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00012-p001-r005-appearances-0000005_2008-01.html",
+      "html_sha256": "d67d0e38aecb89b5673b75eabdbbd59ce647b4780a2e46a71ae48b7838c767d4",
+      "captured_at": "2026-07-20T03:31:16.277Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/02/2008",
+      "title": "Supreme Initial (first time on) - GRANTED",
+      "text": "05/02/2008 | Supreme Initial (first time on) | No | Unknown | GRANTED | JOHN KELLY RESERVE PART 20 | JG/JK/FF S;5/8/08F;5/23/08",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/billi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00012-p001-r005-appearances-0000005_2008-01.html",
+      "html_sha256": "d67d0e38aecb89b5673b75eabdbbd59ce647b4780a2e46a71ae48b7838c767d4",
+      "captured_at": "2026-07-20T03:31:16.277Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -203,6 +286,23 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/02/2008&index=wmV_PLUS_CNePY8K62jtzVvlRcw%3D%3D&county=iCHLafh884U84x8npK6IHg%3D%3D&civilCaseId=udTHJZ7U6LZWD5JkF2Er8w%3D%3D",
       "captured_at": "2026-06-30T02:49:06.461Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/billi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00012-p001-r005-appearances-0000005_2008-01.html",
+      "html_sha256": "d67d0e38aecb89b5673b75eabdbbd59ce647b4780a2e46a71ae48b7838c767d4",
+      "bytes_len": 5549,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/02/2008&index=x3iTp9C%2FBQ97NZ2MyWk%2FOg%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&civilCaseId=hciKyk3UpUGNaviNVUMUcQ%3D%3D",
+      "captured_at": "2026-07-20T03:31:16.277Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
     },
     {
       "kind": "appearances",
@@ -346,6 +446,24 @@
     },
     {
       "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/billi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00011-p001-r005-case_detail-0000005_2008-01.html",
+      "html_sha256": "a998a3a2e24299ec1cb9d94e964fdc1359a85051bd818d928c7e71df6750d605",
+      "bytes_len": 6849,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=x3iTp9C%2FBQ97NZ2MyWk%2FOg%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&motion=&docs=&adate=05/02/2008&civilCaseId=hciKyk3UpUGNaviNVUMUcQ%3D%3D",
+      "captured_at": "2026-07-20T03:31:16.277Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "case-detail",
       "nested_kind": "appearances",
       "tab_key": "appearances",
       "ok": true,
@@ -429,7 +547,18 @@
       "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Suffolk Supreme Court",
+    "Index Number": "0000005/2008",
+    "Case Name": "AKTAS, MELAHAT vs. BILLI, MEHMET",
+    "Case Type": "Mat-Uncontested",
+    "Track": "STANDARD",
+    "RJI Filed": "02/29/2008",
+    "NOI Filed": "02/29/2008",
+    "Disposition Date": "05/02/2008",
+    "Calendar Number": "200800402UM",
+    "Justice Name": "JOHN KELLY"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -719,6 +848,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:billi:followup-page:001:capture:00011:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00011-p001-r005-case_detail-0000005_2008-01.html",
+      "html_sha256": "a998a3a2e24299ec1cb9d94e964fdc1359a85051bd818d928c7e71df6750d605",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=x3iTp9C%2FBQ97NZ2MyWk%2FOg%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&motion=&docs=&adate=05/02/2008&civilCaseId=hciKyk3UpUGNaviNVUMUcQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:billi:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/billi/00012-p001-r005-appearances-0000005_2008-01.html",
+      "html_sha256": "d67d0e38aecb89b5673b75eabdbbd59ce647b4780a2e46a71ae48b7838c767d4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/02/2008&index=x3iTp9C%2FBQ97NZ2MyWk%2FOg%3D%3D&county=BYveJneeuRzBzosOMU8McQ%3D%3D&civilCaseId=hciKyk3UpUGNaviNVUMUcQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260630022211:0000005_2008:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260630022211/0000005_2008/page-001.html",
       "html_sha256": "0f8cdcedcf37e88bcfab10b3089dfb14763169a554745f300eadcee902e16a30",
@@ -727,7 +882,19 @@
       "page_number": 1,
       "table_row_number": 2,
       "row_html_sha256": "08996c66e1b11964382d2c74539c1a2ada29c434020597284ef6500d56ae37dd"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:billi:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/billi/page-001.html",
+      "html_sha256": "002c9f481065724a2f0a135055585556fe995602d923af2c247dd748c6d5c509",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "b86a1c1319e15a23f908cf2d15dc41ad2c05cb0b9872a9bfe3db171d40035931"
     }
   ],
-  "judicial_officer": "JOHN KELLY"
+  "judicial_officer": "JOHN KELLY",
+  "disposition_date": "05/02/2008"
 }

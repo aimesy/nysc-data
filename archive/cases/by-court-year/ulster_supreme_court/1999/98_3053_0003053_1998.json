@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-25T07:05:02.551Z",
+  "captured_at": "2026-07-20T04:24:12.326Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -30,13 +30,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 4
+      "search_rows_seen": 2,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
     "search_names": [
-      "contrac"
+      "contrac",
+      "sperl"
     ],
     "result_row_refs": [
       {
@@ -46,6 +47,14 @@
         "source_page": 4,
         "source_row": 21,
         "row_html_sha256": "daf7df37489ce7761b7277666b3bc088da8285457341fb8a005bcc6aed0e1617"
+      },
+      {
+        "search_name": "sperl",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/sperl.rows.ndjson",
+        "source_page": 1,
+        "source_row": 10,
+        "row_html_sha256": "836558be6791f291474d0a4eab8cbc9d4b5a0e6d96182dd1fc0da4a9744070f1"
       }
     ]
   },
@@ -77,6 +86,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "JACOBOWITZ AND GUBITS, LLP",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00025-p001-r010-case_detail-0003053_1998-01.html",
+      "html_sha256": "da77e04b3e61a977cfc52937ca67316b2d7e239f5fda5a75e20909681206608f",
+      "captured_at": "2026-07-20T04:24:12.326Z"
     }
   ],
   "representation": [
@@ -99,6 +123,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "TACKETT, MARTINA",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "JACOBOWITZ AND GUBITS, LLP",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00025-p001-r010-case_detail-0003053_1998-01.html",
+      "html_sha256": "da77e04b3e61a977cfc52937ca67316b2d7e239f5fda5a75e20909681206608f",
+      "captured_at": "2026-07-20T04:24:12.326Z"
     }
   ],
   "calendar": [
@@ -111,9 +152,92 @@
       "raw_text": "09/21/1999",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "09/21/1999",
+      "appearance_time": "09:30 AM",
+      "purpose": "Preliminary",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE",
+      "part": "BRADLEY (Prelim. Conference)",
+      "judicial_officer": "HON. VINCENT G. BRADLEY",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "09/21/1999 | 09:30 AM | Preliminary | No | Unknown | PRELIMINARY CONFERENCE | HON. VINCENT G. BRADLEY BRADLEY (Prelim. Conference)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00026-p001-r010-appearances-0003053_1998-01.html",
+      "html_sha256": "5d61d4e833142dcc0f1ecd5b51a5aed49a4abdb9a234621dcae1ca30df3b60a2",
+      "captured_at": "2026-07-20T04:24:12.326Z"
+    },
+    {
+      "appearance_date": "09/21/1999",
+      "appearance_time": "",
+      "purpose": "Disposition",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRE-SETTLED",
+      "part": "BRADLEY (Court Activity)",
+      "judicial_officer": "HON. VINCENT G. BRADLEY",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "09/21/1999 | Disposition | No | Unknown | PRE-SETTLED | HON. VINCENT G. BRADLEY BRADLEY (Court Activity)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00026-p001-r010-appearances-0003053_1998-01.html",
+      "html_sha256": "5d61d4e833142dcc0f1ecd5b51a5aed49a4abdb9a234621dcae1ca30df3b60a2",
+      "captured_at": "2026-07-20T04:24:12.326Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "09/21/1999",
+      "title": "Preliminary - PRELIMINARY CONFERENCE",
+      "text": "09/21/1999 | 09:30 AM | Preliminary | No | Unknown | PRELIMINARY CONFERENCE | HON. VINCENT G. BRADLEY BRADLEY (Prelim. Conference)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00026-p001-r010-appearances-0003053_1998-01.html",
+      "html_sha256": "5d61d4e833142dcc0f1ecd5b51a5aed49a4abdb9a234621dcae1ca30df3b60a2",
+      "captured_at": "2026-07-20T04:24:12.326Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "09/21/1999",
+      "title": "Disposition - PRE-SETTLED",
+      "text": "09/21/1999 | Disposition | No | Unknown | PRE-SETTLED | HON. VINCENT G. BRADLEY BRADLEY (Court Activity)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00026-p001-r010-appearances-0003053_1998-01.html",
+      "html_sha256": "5d61d4e833142dcc0f1ecd5b51a5aed49a4abdb9a234621dcae1ca30df3b60a2",
+      "captured_at": "2026-07-20T04:24:12.326Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -148,6 +272,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00026-p001-r010-appearances-0003053_1998-01.html",
+      "html_sha256": "5d61d4e833142dcc0f1ecd5b51a5aed49a4abdb9a234621dcae1ca30df3b60a2",
+      "bytes_len": 6262,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/21/1999&index=aJk5KacxY2Kv_PLUS_M4GOSeJDA%3D%3D&county=9WsjsWDcBZfANi1yFuUEfw%3D%3D&civilCaseId=VTpVnsZBaiOKTMgoYAXS1Q%3D%3D",
+      "captured_at": "2026-07-20T04:24:12.326Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -174,9 +315,38 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/captcha",
       "captured_at": "2026-06-25T07:05:02.551Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00025-p001-r010-case_detail-0003053_1998-01.html",
+      "html_sha256": "da77e04b3e61a977cfc52937ca67316b2d7e239f5fda5a75e20909681206608f",
+      "bytes_len": 7920,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=aJk5KacxY2Kv_PLUS_M4GOSeJDA%3D%3D&county=9WsjsWDcBZfANi1yFuUEfw%3D%3D&motion=&docs=&adate=09/21/1999&civilCaseId=VTpVnsZBaiOKTMgoYAXS1Q%3D%3D",
+      "captured_at": "2026-07-20T04:24:12.326Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Ulster Supreme Court",
+    "Index Number": "98-3053",
+    "Case Name": "TACKETT, MARTINA vs. SPERL, THOMAS, D/B/A SUPREME CONTRAC",
+    "Case Type": "CONTRACT",
+    "Track": "Standard",
+    "RJI Filed": "08/09/1999",
+    "RJI Number": "55-99-01336",
+    "Disposition Date": "09/21/1999",
+    "Calendar Number": "55-99-01336",
+    "Justice Name": "HON. VINCENT G. BRADLEY"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -232,6 +402,32 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sperl:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00025-p001-r010-case_detail-0003053_1998-01.html",
+      "html_sha256": "da77e04b3e61a977cfc52937ca67316b2d7e239f5fda5a75e20909681206608f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=aJk5KacxY2Kv_PLUS_M4GOSeJDA%3D%3D&county=9WsjsWDcBZfANi1yFuUEfw%3D%3D&motion=&docs=&adate=09/21/1999&civilCaseId=VTpVnsZBaiOKTMgoYAXS1Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sperl:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sperl/00026-p001-r010-appearances-0003053_1998-01.html",
+      "html_sha256": "5d61d4e833142dcc0f1ecd5b51a5aed49a4abdb9a234621dcae1ca30df3b60a2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/21/1999&index=aJk5KacxY2Kv_PLUS_M4GOSeJDA%3D%3D&county=9WsjsWDcBZfANi1yFuUEfw%3D%3D&civilCaseId=VTpVnsZBaiOKTMgoYAXS1Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260625001407:contrac:page:004",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260625001407/contrac/page-004.html",
       "html_sha256": "05bb7cf327c5ec00d9a4f96f6b47ccf5848ceb2aba1b55519931436cedeaafa7",
@@ -240,7 +436,19 @@
       "page_number": 4,
       "table_row_number": 21,
       "row_html_sha256": "daf7df37489ce7761b7277666b3bc088da8285457341fb8a005bcc6aed0e1617"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:sperl:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sperl/page-001.html",
+      "html_sha256": "a0d8bb1f2b2a3807dfe15b7a779d8eab209014cbd48f56ae065b502995a862ba",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "836558be6791f291474d0a4eab8cbc9d4b5a0e6d96182dd1fc0da4a9744070f1"
     }
   ],
-  "judicial_officer": "HON. VINCENT G. BRADLEY"
+  "judicial_officer": "HON. VINCENT G. BRADLEY",
+  "disposition_date": "09/21/1999"
 }

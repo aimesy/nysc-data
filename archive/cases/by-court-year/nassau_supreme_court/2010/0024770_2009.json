@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-06-24T22:30:33.732Z",
+  "captured_at": "2026-07-20T03:37:46.091Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -27,19 +27,21 @@
       "captured_tabs": [
         "appearances",
         "case-detail",
+        "decisions",
         "document-list",
         "motions"
       ],
       "document_hint": true,
       "document_list_captured": true,
       "pdf_captured": true,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 8
+      "search_rows_seen": 2,
+      "followup_responses_seen": 12
     }
   },
   "discovery": {
     "search_names": [
-      "insur"
+      "insur",
+      "shiel"
     ],
     "result_row_refs": [
       {
@@ -49,6 +51,14 @@
         "source_page": 25,
         "source_row": 22,
         "row_html_sha256": "f05260139da02ce0714a4f9eb7334b5a042ad91df65ca2eb1d6e715a582a12c3"
+      },
+      {
+        "search_name": "shiel",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/shiel.rows.ndjson",
+        "source_page": 1,
+        "source_row": 6,
+        "row_html_sha256": "379efb0b74ab5135fa769dafd47ad1148d9fa2de8cf1e54bf683447145a0d5eb"
       }
     ]
   },
@@ -80,6 +90,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "JOHN E. MCCORMACK",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-01.html",
+      "html_sha256": "e9a411487d6ddee2fcbffc9e3454256eb4f317c6390a4ffa209ae12fcb325ec1",
+      "captured_at": "2026-07-20T03:37:46.091Z"
     }
   ],
   "representation": [
@@ -102,6 +127,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "PROGRESSIVE SPECIALTY INSUR",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "JOHN E. MCCORMACK",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-01.html",
+      "html_sha256": "e9a411487d6ddee2fcbffc9e3454256eb4f317c6390a4ffa209ae12fcb325ec1",
+      "captured_at": "2026-07-20T03:37:46.091Z"
     }
   ],
   "calendar": [
@@ -114,10 +156,133 @@
       "raw_text": "09/10/2010",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "09/10/2010",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "FULLY SUBMITTED - NO OPP",
+      "part": "IANNACCI (MOTION PT)",
+      "judicial_officer": "ANGELA G. IANNACCI ANGELA G.",
+      "remarks": "8/18-TO AGI",
+      "motion_sequence": "1",
+      "raw_text": "09/10/2010 | Motion | No | Unknown | FULLY SUBMITTED - NO OPP | ANGELA G. IANNACCI ANGELA G. IANNACCI (MOTION PT) | 8/18-TO AGI | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00015-p001-r006-appearances-0024770_2009-01.html",
+      "html_sha256": "45045dcb6034b258a701c43764f0b744dc9dccd475db2569bbeb892a21905160",
+      "captured_at": "2026-07-20T03:37:46.091Z"
+    },
+    {
+      "appearance_date": "08/17/2010",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "PRELIMINARY CONFERENCE HELD",
+      "part": "IANNACCI (PC PART)",
+      "judicial_officer": "ANGELA G. IANNACCI ANGELA G.",
+      "remarks": "*",
+      "motion_sequence": "",
+      "raw_text": "08/17/2010 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | ANGELA G. IANNACCI ANGELA G. IANNACCI (PC PART) | *",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00015-p001-r006-appearances-0024770_2009-01.html",
+      "html_sha256": "45045dcb6034b258a701c43764f0b744dc9dccd475db2569bbeb892a21905160",
+      "captured_at": "2026-07-20T03:37:46.091Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "09/10/2010",
+      "title": "Motion - FULLY SUBMITTED - NO OPP",
+      "text": "09/10/2010 | Motion | No | Unknown | FULLY SUBMITTED - NO OPP | ANGELA G. IANNACCI ANGELA G. IANNACCI (MOTION PT) | 8/18-TO AGI | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00015-p001-r006-appearances-0024770_2009-01.html",
+      "html_sha256": "45045dcb6034b258a701c43764f0b744dc9dccd475db2569bbeb892a21905160",
+      "captured_at": "2026-07-20T03:37:46.091Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "08/17/2010",
+      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
+      "text": "08/17/2010 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | ANGELA G. IANNACCI ANGELA G. IANNACCI (PC PART) | *",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00015-p001-r006-appearances-0024770_2009-01.html",
+      "html_sha256": "45045dcb6034b258a701c43764f0b744dc9dccd475db2569bbeb892a21905160",
+      "captured_at": "2026-07-20T03:37:46.091Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "08/17/2010",
+      "title": "DEFAULT JUDGMENT",
+      "text": "1 | 08/17/2010 | Plaintiff | DEFAULT JUDGMENT | 09/10/2010 | Yes | Decided: 10/15/2010 CASE DISPOSED Before Justice: ANGELA G. IANNACCI | Short Form Order | 10/15/2010",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00016-p001-r006-motions-0024770_2009-01.html",
+      "html_sha256": "8712d9d1650dcd2084adef797e849e9ff314b227d9f13fe5ac1f200c5e7bcc2d",
+      "captured_at": "2026-07-20T03:37:46.091Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "08/17/2010",
+      "filed_by": "Plaintiff",
+      "relief": "DEFAULT JUDGMENT",
+      "submit_date": "09/10/2010",
+      "answer_demanded": "Yes",
+      "status": "Decided: 10/15/2010 CASE DISPOSED Before Justice: ANGELA G. IANNACCI",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "10/15/2010",
+      "raw_text": "1 | 08/17/2010 | Plaintiff | DEFAULT JUDGMENT | 09/10/2010 | Yes | Decided: 10/15/2010 CASE DISPOSED Before Justice: ANGELA G. IANNACCI | Short Form Order | 10/15/2010",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00016-p001-r006-motions-0024770_2009-01.html",
+      "html_sha256": "8712d9d1650dcd2084adef797e849e9ff314b227d9f13fe5ac1f200c5e7bcc2d",
+      "captured_at": "2026-07-20T03:37:46.091Z"
+    }
+  ],
   "documents": [
     {
       "source_system": "webcivil",
@@ -153,9 +318,50 @@
           "link_onclick": "openPDF('http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf')"
         }
       ]
+    },
+    {
+      "document_id": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "document_number": "",
+      "motion_sequence": "100",
+      "title": "PROGRESSIVE SPECIALTY INSUR vs. DEBROSSE, EVAN",
+      "document_type": "Decision/Order",
+      "filed_date": "",
+      "availability": "webcivil_linked",
+      "document_url": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "final_url": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "raw_text": "Nassau Supreme Court | 0024770/2009 | PROGRESSIVE SPECIALTY INSUR vs. DEBROSSE, EVAN | 100",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "decisions",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-02.html",
+      "html_sha256": "5745e12067769251139485fe56d9f7209712b86fcf13ba44781539e7f132108a",
+      "captured_at": "2026-07-20T03:37:46.091Z"
     }
   ],
-  "decisions_orders": [],
+  "decisions_orders": [
+    {
+      "decision_id": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "decision_date": "",
+      "title": "PROGRESSIVE SPECIALTY INSUR vs. DEBROSSE, EVAN",
+      "text": "Nassau Supreme Court | 0024770/2009 | PROGRESSIVE SPECIALTY INSUR vs. DEBROSSE, EVAN | 100",
+      "motion_sequence": "100",
+      "document_id": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "source_url": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "final_url": "http://decisions.courts.state.ny.us/10jd/nassau/decisions/index/index_new/iannacci/2010oct/024770-09.pdf",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "decisions",
+      "source_kind": "case-detail",
+      "nested_kind": "document-list",
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-02.html",
+      "html_sha256": "5745e12067769251139485fe56d9f7209712b86fcf13ba44781539e7f132108a",
+      "captured_at": "2026-07-20T03:37:46.091Z"
+    }
+  ],
   "related_cases": [],
   "webcivil_followups": [
     {
@@ -187,6 +393,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00015-p001-r006-appearances-0024770_2009-01.html",
+      "html_sha256": "45045dcb6034b258a701c43764f0b744dc9dccd475db2569bbeb892a21905160",
+      "bytes_len": 6284,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/10/2010&index=U3zKWeE603AJz7t0I0Limg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&civilCaseId=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "captured_at": "2026-07-20T03:37:46.091Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -213,6 +436,24 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=MekzE8JqveG7KEJCawZveQ%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&motion=M&docs=D&adate=09/10/2010&civilCaseId=rTbRRy08H1rg4rQwxV7dKA%3D%3D",
       "captured_at": "2026-06-24T21:55:25.114Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-01.html",
+      "html_sha256": "e9a411487d6ddee2fcbffc9e3454256eb4f317c6390a4ffa209ae12fcb325ec1",
+      "bytes_len": 27078,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=U3zKWeE603AJz7t0I0Limg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&motion=M&docs=D&adate=09/10/2010&civilCaseId=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "captured_at": "2026-07-20T03:37:46.091Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     },
     {
       "kind": "case-detail",
@@ -243,6 +484,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "tab_key": "decisions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-02.html",
+      "html_sha256": "5745e12067769251139485fe56d9f7209712b86fcf13ba44781539e7f132108a",
+      "bytes_len": 4696,
+      "title": "WebCivil Supreme - Document Search Results",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&txtIndexNo=U3zKWeE603AJz7t0I0Limg%3D%3D&showMenu=no&isPreRji=&civilCase=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "captured_at": "2026-07-20T03:37:46.091Z",
+      "parsed_counts": {
+        "decisions_orders": 1,
+        "documents": 1
+      }
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions",
@@ -269,9 +527,35 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=MekzE8JqveG7KEJCawZveQ%3D%3D&county=snFf2RogeUwJfBMuAX6gSw%3D%3D&civilCaseId=rTbRRy08H1rg4rQwxV7dKA%3D%3D",
       "captured_at": "2026-06-24T21:55:25.114Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/shiel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00016-p001-r006-motions-0024770_2009-01.html",
+      "html_sha256": "8712d9d1650dcd2084adef797e849e9ff314b227d9f13fe5ac1f200c5e7bcc2d",
+      "bytes_len": 6390,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=U3zKWeE603AJz7t0I0Limg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&civilCaseId=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "captured_at": "2026-07-20T03:37:46.091Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Nassau Supreme Court",
+    "Index Number": "0024770/2009",
+    "Case Name": "PROGRESSIVE SPECIALTY INSUR vs. DEBROSSE, EVAN",
+    "Case Type": "MOTOR VEHICLE",
+    "Track": "Complex",
+    "RJI Filed": "08/17/2010",
+    "Disposition Date": "10/15/2010",
+    "Justice Name": "ANGELA G. IANNACCI"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -379,6 +663,58 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:shiel:followup-page:001:capture:00014:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-01.html",
+      "html_sha256": "e9a411487d6ddee2fcbffc9e3454256eb4f317c6390a4ffa209ae12fcb325ec1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=U3zKWeE603AJz7t0I0Limg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&motion=M&docs=D&adate=09/10/2010&civilCaseId=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:shiel:followup-page:001:capture:00014:response:02",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00014-p001-r006-case_detail-0024770_2009-02.html",
+      "html_sha256": "5745e12067769251139485fe56d9f7209712b86fcf13ba44781539e7f132108a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch?county_code=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&txtIndexNo=U3zKWeE603AJz7t0I0Limg%3D%3D&showMenu=no&isPreRji=&civilCase=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "case-detail",
+      "nested_kind": "document-list",
+      "tab_key": "decisions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:shiel:followup-page:001:capture:00015:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00015-p001-r006-appearances-0024770_2009-01.html",
+      "html_sha256": "45045dcb6034b258a701c43764f0b744dc9dccd475db2569bbeb892a21905160",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/10/2010&index=U3zKWeE603AJz7t0I0Limg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&civilCaseId=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:shiel:followup-page:001:capture:00016:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shiel/00016-p001-r006-motions-0024770_2009-01.html",
+      "html_sha256": "8712d9d1650dcd2084adef797e849e9ff314b227d9f13fe5ac1f200c5e7bcc2d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=U3zKWeE603AJz7t0I0Limg%3D%3D&county=28Hz5EPzCAmJ0rcJ9a1alQ%3D%3D&civilCaseId=aPPEvCUAPzYq7JG0hcWOVQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260624214956:nysc_20260624214352075_02666:document-byte:00041",
       "raw_path": "../../var/lib/nysc/raw/webcivil/documents/sha256/05/05bf20bd14077931cb14c00455137980de670da26be545a3d2db7ba7baaea0e4.pdf",
       "sha256": "05bf20bd14077931cb14c00455137980de670da26be545a3d2db7ba7baaea0e4",
@@ -401,7 +737,19 @@
       "page_number": 25,
       "table_row_number": 22,
       "row_html_sha256": "f05260139da02ce0714a4f9eb7334b5a042ad91df65ca2eb1d6e715a582a12c3"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:shiel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/shiel/page-001.html",
+      "html_sha256": "b77e9c1bc7fcbb6e2eb0132b2a50d9fc99cbb24601dd27451a5ab7fb35c0fbd5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "379efb0b74ab5135fa769dafd47ad1148d9fa2de8cf1e54bf683447145a0d5eb"
     }
   ],
-  "judicial_officer": "ANGELA G. IANNACCI"
+  "judicial_officer": "ANGELA G. IANNACCI",
+  "disposition_date": "10/15/2010"
 }

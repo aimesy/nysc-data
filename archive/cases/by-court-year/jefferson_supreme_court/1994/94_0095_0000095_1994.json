@@ -14,8 +14,8 @@
   "case_type": "CONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T01:46:34.580Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "0000095/1994"
+      "0000095/1994",
+      "weldon"
     ],
     "result_row_refs": [
       {
@@ -43,6 +47,14 @@
         "source_page": 1,
         "source_row": 4,
         "row_html_sha256": "554ae2feb29a8252f5209f36559b660a175796f585f3733e7dc9230827f1a153"
+      },
+      {
+        "search_name": "weldon",
+        "query_type": "attorney-prefix",
+        "source_file": "archive/webcivil/results/weldon.rows.ndjson",
+        "source_page": 2,
+        "source_row": 10,
+        "row_html_sha256": "c9740d9d105ceedb7de709fc95e3ff1a378855d2795a345c49606e560a83b9a1"
       }
     ]
   },
@@ -115,9 +127,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/weldon/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/weldon/00020-p002-r010-appearances-0000095_1994-01.html",
+      "html_sha256": "80b46b7ece9aa1c4f6db72c8659ca39f0136a30b78ecbf5ba585c3843336b168",
+      "bytes_len": 6242,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/21/1995&index=tTF1B6e7GoC_PLUS_58WaVNNEtQ%3D%3D&county=o7kPVEid6yehJty%2FW4FL9Q%3D%3D&civilCaseId=czN30GQkk3ZJBwmuypyyDw%3D%3D",
+      "captured_at": "2026-07-20T01:46:34.580Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/weldon/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/weldon/00019-p002-r010-case_detail-0000095_1994-01.html",
+      "html_sha256": "39efcf13df2619c8f3fc78461c9b3a72118505aab1df6f2d127efaa4db47d684",
+      "bytes_len": 7377,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tTF1B6e7GoC_PLUS_58WaVNNEtQ%3D%3D&county=o7kPVEid6yehJty%2FW4FL9Q%3D%3D&motion=&docs=&adate=02/21/1995&civilCaseId=czN30GQkk3ZJBwmuypyyDw%3D%3D",
+      "captured_at": "2026-07-20T01:46:34.580Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:weldon:followup-page:002:capture:00019:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/weldon/00019-p002-r010-case_detail-0000095_1994-01.html",
+      "html_sha256": "39efcf13df2619c8f3fc78461c9b3a72118505aab1df6f2d127efaa4db47d684",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tTF1B6e7GoC_PLUS_58WaVNNEtQ%3D%3D&county=o7kPVEid6yehJty%2FW4FL9Q%3D%3D&motion=&docs=&adate=02/21/1995&civilCaseId=czN30GQkk3ZJBwmuypyyDw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:weldon:followup-page:002:capture:00020:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/weldon/00020-p002-r010-appearances-0000095_1994-01.html",
+      "html_sha256": "80b46b7ece9aa1c4f6db72c8659ca39f0136a30b78ecbf5ba585c3843336b168",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/21/1995&index=tTF1B6e7GoC_PLUS_58WaVNNEtQ%3D%3D&county=o7kPVEid6yehJty%2FW4FL9Q%3D%3D&civilCaseId=czN30GQkk3ZJBwmuypyyDw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260718183125:0000095_1994:page:001",
@@ -128,6 +195,17 @@
       "page_number": 1,
       "table_row_number": 4,
       "row_html_sha256": "554ae2feb29a8252f5209f36559b660a175796f585f3733e7dc9230827f1a153"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:weldon:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/weldon/page-002.html",
+      "html_sha256": "2b94cc3f243500d8221e43df5aebc0df3dcc2a34df1191eecdc9b255e9aecc30",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A",
+      "lane": "sfscvpn06",
+      "page_number": 2,
+      "table_row_number": 10,
+      "row_html_sha256": "c9740d9d105ceedb7de709fc95e3ff1a378855d2795a345c49606e560a83b9a1"
     }
   ],
   "judicial_officer": "HON. HUGH A. GILBERT JSC"

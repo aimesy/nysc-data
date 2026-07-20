@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-01T04:23:10.564Z",
+  "captured_at": "2026-07-20T04:42:11.524Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -32,13 +32,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 24
+      "search_rows_seen": 2,
+      "followup_responses_seen": 27
     }
   },
   "discovery": {
     "search_names": [
-      "0000519/1987"
+      "0000519/1987",
+      "faro"
     ],
     "result_row_refs": [
       {
@@ -48,6 +49,14 @@
         "source_page": 1,
         "source_row": 1,
         "row_html_sha256": "7570964d9dca033bd5c7b86456d4ca52e96b09326d13e3ce37584bf5c04656a6"
+      },
+      {
+        "search_name": "faro",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/faro.rows.ndjson",
+        "source_page": 1,
+        "source_row": 6,
+        "row_html_sha256": "43109523d054ab4c27116a222b22549ab86467b1c853e9da4732829b9cbc3218"
       }
     ]
   },
@@ -79,6 +88,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "JAMES J. FARO",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00014-p001-r006-case_detail-0000519_1987-01.html",
+      "html_sha256": "4e7f0abbc6e9971e4473433e87be8a404ed7c5bd8b7f440256c6aa4290305fec",
+      "captured_at": "2026-07-20T04:42:11.524Z"
     }
   ],
   "representation": [
@@ -101,6 +125,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "FARO, JOSEPH",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "JAMES J. FARO",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00014-p001-r006-case_detail-0000519_1987-01.html",
+      "html_sha256": "4e7f0abbc6e9971e4473433e87be8a404ed7c5bd8b7f440256c6aa4290305fec",
+      "captured_at": "2026-07-20T04:42:11.524Z"
     }
   ],
   "calendar": [
@@ -113,10 +154,133 @@
       "raw_text": "05/20/1987",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/20/1987",
+      "appearance_time": "",
+      "purpose": "Supreme Initial (first time on)",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "OTHER FINAL DISP. (PRE-NOTE)",
+      "part": "GENERAL 1A PART 14",
+      "judicial_officer": "GENERAL 1A PART 14",
+      "remarks": "",
+      "motion_sequence": "",
+      "raw_text": "05/20/1987 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | GENERAL 1A PART 14",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00015-p001-r006-appearances-0000519_1987-01.html",
+      "html_sha256": "d6d97a67bf4c252637c912d9ca4c402ee89a00892eb0e5d552462ae870c56d9b",
+      "captured_at": "2026-07-20T04:42:11.524Z"
+    },
+    {
+      "appearance_date": "01/30/1987",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "MOTION DECIDED-OPEN APPEARANCE",
+      "part": "ARTHUR W. LONSCHEIN MOTION 1A PART 2",
+      "judicial_officer": "ARTHUR W. LONSCHEIN MOTION 1A PART 2",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "01/30/1987 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | ARTHUR W. LONSCHEIN MOTION 1A PART 2 | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00015-p001-r006-appearances-0000519_1987-01.html",
+      "html_sha256": "d6d97a67bf4c252637c912d9ca4c402ee89a00892eb0e5d552462ae870c56d9b",
+      "captured_at": "2026-07-20T04:42:11.524Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/20/1987",
+      "title": "Supreme Initial (first time on) - OTHER FINAL DISP. (PRE-NOTE)",
+      "text": "05/20/1987 | Supreme Initial (first time on) | No | Unknown | OTHER FINAL DISP. (PRE-NOTE) | GENERAL 1A PART 14",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00015-p001-r006-appearances-0000519_1987-01.html",
+      "html_sha256": "d6d97a67bf4c252637c912d9ca4c402ee89a00892eb0e5d552462ae870c56d9b",
+      "captured_at": "2026-07-20T04:42:11.524Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "01/30/1987",
+      "title": "Motion - MOTION DECIDED-OPEN APPEARANCE",
+      "text": "01/30/1987 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | ARTHUR W. LONSCHEIN MOTION 1A PART 2 | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00015-p001-r006-appearances-0000519_1987-01.html",
+      "html_sha256": "d6d97a67bf4c252637c912d9ca4c402ee89a00892eb0e5d552462ae870c56d9b",
+      "captured_at": "2026-07-20T04:42:11.524Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "01/21/1987",
+      "title": "PROT ORDER/VAC DEMAND FOR BILL",
+      "text": "1 | 01/21/1987 | Defendant | PROT ORDER/VAC DEMAND FOR BILL | No | Decided: 03/27/1987 MOTION DENIED Before Justice: ARTHUR W. LONSCHEIN | Short Form Order | 03/27/1987",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00016-p001-r006-motions-0000519_1987-01.html",
+      "html_sha256": "7e39e83642de865e8bb247efa1ed5c1edfd1a68931bf48caeafb96f93a754adc",
+      "captured_at": "2026-07-20T04:42:11.524Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "01/21/1987",
+      "filed_by": "Defendant",
+      "relief": "PROT ORDER/VAC DEMAND FOR BILL",
+      "submit_date": "",
+      "answer_demanded": "No",
+      "status": "Decided: 03/27/1987 MOTION DENIED Before Justice: ARTHUR W. LONSCHEIN",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "03/27/1987",
+      "raw_text": "1 | 01/21/1987 | Defendant | PROT ORDER/VAC DEMAND FOR BILL | No | Decided: 03/27/1987 MOTION DENIED Before Justice: ARTHUR W. LONSCHEIN | Short Form Order | 03/27/1987",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00016-p001-r006-motions-0000519_1987-01.html",
+      "html_sha256": "7e39e83642de865e8bb247efa1ed5c1edfd1a68931bf48caeafb96f93a754adc",
+      "captured_at": "2026-07-20T04:42:11.524Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
@@ -176,6 +340,23 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/20/1987&index=ZMcjIW1ZnUtRCp7WhSwacg%3D%3D&county=vsa_PLUS_ynMXWCeHymr6Ngf7cw%3D%3D&civilCaseId=LgZHHd3tuZ64IW3sacsSjQ%3D%3D",
       "captured_at": "2026-07-01T04:23:10.564Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00015-p001-r006-appearances-0000519_1987-01.html",
+      "html_sha256": "d6d97a67bf4c252637c912d9ca4c402ee89a00892eb0e5d552462ae870c56d9b",
+      "bytes_len": 6252,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/20/1987&index=_PLUS_P07QMlxsquuoMwP8i1VgA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=9Zyq_PLUS_yQrpMg8jfL4qeaxsQ%3D%3D",
+      "captured_at": "2026-07-20T04:42:11.524Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
     },
     {
       "kind": "appearances",
@@ -288,6 +469,24 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZMcjIW1ZnUtRCp7WhSwacg%3D%3D&county=vsa_PLUS_ynMXWCeHymr6Ngf7cw%3D%3D&motion=M&docs=&adate=05/20/1987&civilCaseId=LgZHHd3tuZ64IW3sacsSjQ%3D%3D",
       "captured_at": "2026-07-01T04:23:10.564Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00014-p001-r006-case_detail-0000519_1987-01.html",
+      "html_sha256": "4e7f0abbc6e9971e4473433e87be8a404ed7c5bd8b7f440256c6aa4290305fec",
+      "bytes_len": 7282,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_P07QMlxsquuoMwP8i1VgA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&motion=M&docs=&adate=05/20/1987&civilCaseId=9Zyq_PLUS_yQrpMg8jfL4qeaxsQ%3D%3D",
+      "captured_at": "2026-07-20T04:42:11.524Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
     },
     {
       "kind": "case-detail",
@@ -456,9 +655,35 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=ZMcjIW1ZnUtRCp7WhSwacg%3D%3D&county=vsa_PLUS_ynMXWCeHymr6Ngf7cw%3D%3D&civilCaseId=LgZHHd3tuZ64IW3sacsSjQ%3D%3D",
       "captured_at": "2026-07-01T04:23:10.564Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/faro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00016-p001-r006-motions-0000519_1987-01.html",
+      "html_sha256": "7e39e83642de865e8bb247efa1ed5c1edfd1a68931bf48caeafb96f93a754adc",
+      "bytes_len": 6388,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=_PLUS_P07QMlxsquuoMwP8i1VgA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=9Zyq_PLUS_yQrpMg8jfL4qeaxsQ%3D%3D",
+      "captured_at": "2026-07-20T04:42:11.524Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Queens Supreme Court",
+    "Index Number": "0000519/1987",
+    "Case Name": "FARO, JOSEPH vs. SKEIST, S. MERRILL D/B/A ANO",
+    "Case Type": "TORT OTHER",
+    "Track": "Other",
+    "RJI Filed": "01/21/1987",
+    "Disposition Date": "05/20/1987",
+    "Justice Name": "ARTHUR W. LONSCHEIN"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -774,6 +999,45 @@
     },
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:faro:followup-page:001:capture:00014:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00014-p001-r006-case_detail-0000519_1987-01.html",
+      "html_sha256": "4e7f0abbc6e9971e4473433e87be8a404ed7c5bd8b7f440256c6aa4290305fec",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_P07QMlxsquuoMwP8i1VgA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&motion=M&docs=&adate=05/20/1987&civilCaseId=9Zyq_PLUS_yQrpMg8jfL4qeaxsQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:faro:followup-page:001:capture:00015:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00015-p001-r006-appearances-0000519_1987-01.html",
+      "html_sha256": "d6d97a67bf4c252637c912d9ca4c402ee89a00892eb0e5d552462ae870c56d9b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/20/1987&index=_PLUS_P07QMlxsquuoMwP8i1VgA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=9Zyq_PLUS_yQrpMg8jfL4qeaxsQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:faro:followup-page:001:capture:00016:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faro/00016-p001-r006-motions-0000519_1987-01.html",
+      "html_sha256": "7e39e83642de865e8bb247efa1ed5c1edfd1a68931bf48caeafb96f93a754adc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=_PLUS_P07QMlxsquuoMwP8i1VgA%3D%3D&county=gZpjruHAJ7GygyFkXEkrKQ%3D%3D&civilCaseId=9Zyq_PLUS_yQrpMg8jfL4qeaxsQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260701023127:0000519_1987:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260701023127/0000519_1987/page-001.html",
       "html_sha256": "eb21a22847727bd39670971470bb85e6421fb2e4df38e8d2fc6d65bed436f603",
@@ -782,7 +1046,19 @@
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "7570964d9dca033bd5c7b86456d4ca52e96b09326d13e3ce37584bf5c04656a6"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:faro:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/faro/page-001.html",
+      "html_sha256": "90c342d3fbea30158283c8724d9eee68046cc5c5856e2b2205d4daf2e5ae0a9e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "43109523d054ab4c27116a222b22549ab86467b1c853e9da4732829b9cbc3218"
     }
   ],
-  "judicial_officer": "ARTHUR W. LONSCHEIN"
+  "judicial_officer": "ARTHUR W. LONSCHEIN",
+  "disposition_date": "05/20/1987"
 }
