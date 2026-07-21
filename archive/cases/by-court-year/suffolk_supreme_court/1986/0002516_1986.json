@@ -11,15 +11,19 @@
   "index_year": "1986",
   "index_display": "0002516/1986",
   "case_title": "COHN, SYLVA v. STUBEL, JOSEPH",
-  "case_type": null,
+  "case_type": "Tort-Medical, Dental, or Podiatric Malpractice",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-20T09:16:08.820Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "sylva"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "sylva",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/sylva.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "413d1a8cc85a6c51e15082232643a5417fa16dfe19e5abf6c24581aedad3d15f"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "FUCHSBERG & FUCHSBERG, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "FUREY & FUREY, P.C.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "COHN, SYLVA",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "FUCHSBERG & FUCHSBERG, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "STUBEL, JOSEPH",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "FUREY & FUREY, P.C.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "11/09/1992",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "ALFRED M. LAMA",
+      "raw_text": "11/09/1992",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -221,6 +285,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:sylva:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/sylva/page-001.html",
+      "html_sha256": "f76cace26b2775908a6431ca34780ba2ef9606c2c0fc302b5470d13d36c0bb4c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "413d1a8cc85a6c51e15082232643a5417fa16dfe19e5abf6c24581aedad3d15f"
     }
-  ]
+  ],
+  "judicial_officer": "ALFRED M. LAMA"
 }

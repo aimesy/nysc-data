@@ -11,15 +11,18 @@
   "index_year": "1999",
   "index_display": "0015766/1999",
   "case_title": "REGIONS BANK v. HELPLINE SOUL RESCUE MINISTRY",
-  "case_type": null,
+  "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T03:57:12.424Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "soul"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "soul",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/soul.rows.ndjson",
+        "source_page": 1,
+        "source_row": 25,
+        "row_html_sha256": "dc88d2d584675239efff36c67b71167d1aa9069c1190eebfc711c412a803d7e2"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "GULLACE & WELD",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "DEVORA COHN",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "REGIONS BANK",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "GULLACE & WELD",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "HELPLINE SOUL RESCUE MINISTRY",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "DEVORA COHN",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "02/18/2000",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "EX PARTE",
+      "raw_text": "02/18/2000",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +175,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:soul:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/soul/page-001.html",
+      "html_sha256": "93756f9a929fa955772eb0fca700530694f65716c5a51a787655fe4ebd4a5b85",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 25,
+      "row_html_sha256": "dc88d2d584675239efff36c67b71167d1aa9069c1190eebfc711c412a803d7e2"
     }
-  ]
+  ],
+  "judicial_officer": "EX PARTE"
 }

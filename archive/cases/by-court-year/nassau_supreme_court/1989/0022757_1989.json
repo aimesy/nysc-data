@@ -11,15 +11,18 @@
   "index_year": "1989",
   "index_display": "0022757/1989",
   "case_title": "TANNACORE, RITA v. KRESS, STEVEN",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T11:54:16.302Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "kress"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "kress",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/kress.rows.ndjson",
+        "source_page": 1,
+        "source_row": 21,
+        "row_html_sha256": "109fad49fa4d6d831e1e870c14e62b1416dd30ebfe07bf3777a2cb391c159135"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "RICHARD W. WALSH, ESQ.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "NEIL L KANZER",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "TANNACORE, RITA",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "RICHARD W. WALSH, ESQ.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "KRESS, STEVEN",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "NEIL L KANZER",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "09/07/1990",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "TAP J JURY",
+      "raw_text": "09/07/1990",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -220,6 +283,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:kress:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/kress/page-001.html",
+      "html_sha256": "c90525916b4b457712b03f67fd4dd746de74bc60c8b3c8089eb892078ee9284b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 21,
+      "row_html_sha256": "109fad49fa4d6d831e1e870c14e62b1416dd30ebfe07bf3777a2cb391c159135"
     }
-  ]
+  ],
+  "judicial_officer": "TAP J JURY"
 }
