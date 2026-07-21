@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T07:49:37.926Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "browne"
+      "browne",
+      "janis"
     ],
     "result_row_refs": [
       {
@@ -43,6 +47,14 @@
         "source_page": 2,
         "source_row": 5,
         "row_html_sha256": "6e307b1183f02e66d14b0cf1db9b19ac41bd446510e8ebf07a7135a27ec639a3"
+      },
+      {
+        "search_name": "janis",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/janis.rows.ndjson",
+        "source_page": 1,
+        "source_row": 11,
+        "row_html_sha256": "d7c3183a31a82c2583b86e913a0bb84d18e0c78420720b39a3198b5fd710aae6"
       }
     ]
   },
@@ -115,9 +127,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/janis/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/janis/00024-p001-r011-appearances-0019518_1981-01.html",
+      "html_sha256": "3f65a919ac21f9354a4b8dbe5b19ced408770e1e20952be95f3565638ed22b01",
+      "bytes_len": 23096,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/08/1987&index=iaHuDAR9VWj6FYmoloOiMw%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=Xd2s4EyF3n67xFwtw1HqNA%3D%3D",
+      "captured_at": "2026-07-21T07:49:37.926Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/janis/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/janis/00023-p001-r011-case_detail-0019518_1981-01.html",
+      "html_sha256": "27bec84798d338b5d4b58b0847abe7d8d2c99853ffd4cd77d61f61fe5339b423",
+      "bytes_len": 7042,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=iaHuDAR9VWj6FYmoloOiMw%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=05/08/1987&civilCaseId=Xd2s4EyF3n67xFwtw1HqNA%3D%3D",
+      "captured_at": "2026-07-21T07:49:37.926Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:janis:followup-page:001:capture:00023:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/janis/00023-p001-r011-case_detail-0019518_1981-01.html",
+      "html_sha256": "27bec84798d338b5d4b58b0847abe7d8d2c99853ffd4cd77d61f61fe5339b423",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=iaHuDAR9VWj6FYmoloOiMw%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=05/08/1987&civilCaseId=Xd2s4EyF3n67xFwtw1HqNA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:janis:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/janis/00024-p001-r011-appearances-0019518_1981-01.html",
+      "html_sha256": "3f65a919ac21f9354a4b8dbe5b19ced408770e1e20952be95f3565638ed22b01",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/08/1987&index=iaHuDAR9VWj6FYmoloOiMw%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=Xd2s4EyF3n67xFwtw1HqNA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260718183125:browne:page:002",
@@ -128,6 +195,17 @@
       "page_number": 2,
       "table_row_number": 5,
       "row_html_sha256": "6e307b1183f02e66d14b0cf1db9b19ac41bd446510e8ebf07a7135a27ec639a3"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:janis:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/janis/page-001.html",
+      "html_sha256": "f356757888ea3ec18242c4e798e5ad74566fb0f75f1ae093925825e52b427f8c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "d7c3183a31a82c2583b86e913a0bb84d18e0c78420720b39a3198b5fd710aae6"
     }
   ],
   "judicial_officer": "JAMES A. GOWAN"

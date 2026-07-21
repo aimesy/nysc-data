@@ -14,8 +14,8 @@
   "case_type": "Tort-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T04:00:27.060Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/schel.rows.ndjson",
         "source_page": 1,
         "source_row": 24,
-        "row_html_sha256": "b4b06e56b8bfe6887936c0d70d36bccb6a6794fe72aed55c406aa478156fbdff"
+        "row_html_sha256": "84f6b724912d76b7f1406ef1d7e162469ca73f8685b23acddb5b54cbed719451"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/schel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/schel/00068-p001-r024-appearances-061105_2013-01.html",
+      "html_sha256": "a0ad3d075ae51ba499626c344ce06d1d445b888ac162268ccb44c0664f7dfd8a",
+      "bytes_len": 6365,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/01/2014&index=yULCuTbR9e1YSDzxaBYzEA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=adgoUnkhG7vNsH38sbLsEA%3D%3D",
+      "captured_at": "2026-07-21T04:00:27.060Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/schel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/schel/00067-p001-r024-case_detail-061105_2013-01.html",
+      "html_sha256": "02862017bd8f0e70697f3ac1ac18fb095dfa1b8c097b2a92c6f65492ad40dc2a",
+      "bytes_len": 8500,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yULCuTbR9e1YSDzxaBYzEA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=12/01/2014&civilCaseId=adgoUnkhG7vNsH38sbLsEA%3D%3D",
+      "captured_at": "2026-07-21T04:00:27.060Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:schel:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/schel/page-001.html",
-      "html_sha256": "bfdfb9f5e037ae246cdca1529cd32ae76d35283be3448ec8568249bff9038291",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:schel:followup-page:001:capture:00067:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/schel/00067-p001-r024-case_detail-061105_2013-01.html",
+      "html_sha256": "02862017bd8f0e70697f3ac1ac18fb095dfa1b8c097b2a92c6f65492ad40dc2a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yULCuTbR9e1YSDzxaBYzEA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=12/01/2014&civilCaseId=adgoUnkhG7vNsH38sbLsEA%3D%3D",
       "page_number": 1,
       "table_row_number": 24,
-      "row_html_sha256": "b4b06e56b8bfe6887936c0d70d36bccb6a6794fe72aed55c406aa478156fbdff"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:schel:followup-page:001:capture:00068:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/schel/00068-p001-r024-appearances-061105_2013-01.html",
+      "html_sha256": "a0ad3d075ae51ba499626c344ce06d1d445b888ac162268ccb44c0664f7dfd8a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/01/2014&index=yULCuTbR9e1YSDzxaBYzEA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=adgoUnkhG7vNsH38sbLsEA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 24,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:schel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/schel/page-001.html",
+      "html_sha256": "7a12ff371e3e7b1c1ec4d77b4749f9dd55e0010001a8bf294d03eed99ea1d5f1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 24,
+      "row_html_sha256": "84f6b724912d76b7f1406ef1d7e162469ca73f8685b23acddb5b54cbed719451"
     }
   ],
   "judicial_officer": "Pitts, Hon. Arthur G."

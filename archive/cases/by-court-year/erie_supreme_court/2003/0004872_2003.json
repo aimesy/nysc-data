@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T03:16:09.685Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/kirst.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "fe9cdabf5e073a3766bc6b227dac2d13741e16f54ace7006e8762e3a8fe43aff"
+        "row_html_sha256": "5cfb1b8f01f6600cc6a975b6a3b2e29aa31ce30dd9ed62317130aa0f33e9a1f8"
       }
     ]
   },
@@ -98,19 +102,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/kirst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kirst/00063-p001-r022-appearances-0004872_2003-01.html",
+      "html_sha256": "ff049b3c2c5ac0f96f9fcdf5fae950e477adf4aed672e64a475d6b2962552ea7",
+      "bytes_len": 9640,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/24/2003&index=sGVRWgm3nX9dXTbJ4BrLlg%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&civilCaseId=zCVbbwdGDR4izDVcz9nz1w%3D%3D",
+      "captured_at": "2026-07-21T03:16:09.685Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/kirst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kirst/00062-p001-r022-case_detail-0004872_2003-01.html",
+      "html_sha256": "129ed4455b1319a2c6c522b3104f2cb1782de99dd7ea321f535976ff91dd4fc1",
+      "bytes_len": 6878,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=sGVRWgm3nX9dXTbJ4BrLlg%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&motion=M&docs=&adate=09/24/2003&civilCaseId=zCVbbwdGDR4izDVcz9nz1w%3D%3D",
+      "captured_at": "2026-07-21T03:16:09.685Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/kirst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kirst/00064-p001-r022-motions-0004872_2003-01.html",
+      "html_sha256": "95148da4a708382d52a73ede13b4e44fe581289b3697b006fae4cda9f6b1bd3a",
+      "bytes_len": 6343,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=sGVRWgm3nX9dXTbJ4BrLlg%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&civilCaseId=zCVbbwdGDR4izDVcz9nz1w%3D%3D",
+      "captured_at": "2026-07-21T03:16:09.685Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:kirst:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/kirst/page-001.html",
-      "html_sha256": "fd8b5830fb5de117e4f3e6de6263db514e83995027d6a1ea3daab9e6e99712c3",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn07",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:kirst:followup-page:001:capture:00062:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kirst/00062-p001-r022-case_detail-0004872_2003-01.html",
+      "html_sha256": "129ed4455b1319a2c6c522b3104f2cb1782de99dd7ea321f535976ff91dd4fc1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=sGVRWgm3nX9dXTbJ4BrLlg%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&motion=M&docs=&adate=09/24/2003&civilCaseId=zCVbbwdGDR4izDVcz9nz1w%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "fe9cdabf5e073a3766bc6b227dac2d13741e16f54ace7006e8762e3a8fe43aff"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:kirst:followup-page:001:capture:00063:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kirst/00063-p001-r022-appearances-0004872_2003-01.html",
+      "html_sha256": "ff049b3c2c5ac0f96f9fcdf5fae950e477adf4aed672e64a475d6b2962552ea7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/24/2003&index=sGVRWgm3nX9dXTbJ4BrLlg%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&civilCaseId=zCVbbwdGDR4izDVcz9nz1w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:kirst:followup-page:001:capture:00064:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kirst/00064-p001-r022-motions-0004872_2003-01.html",
+      "html_sha256": "95148da4a708382d52a73ede13b4e44fe581289b3697b006fae4cda9f6b1bd3a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=sGVRWgm3nX9dXTbJ4BrLlg%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&civilCaseId=zCVbbwdGDR4izDVcz9nz1w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:kirst:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/kirst/page-001.html",
+      "html_sha256": "9e70b2e3d5c306ece82565670ded06984ff7ef86045a4d18505203f6f984ec86",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "5cfb1b8f01f6600cc6a975b6a3b2e29aa31ce30dd9ed62317130aa0f33e9a1f8"
     }
   ],
   "judicial_officer": "PATRICK NEMOYER"

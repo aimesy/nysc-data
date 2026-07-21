@@ -14,8 +14,8 @@
   "case_type": "TAX CERTIORARI",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:20:35.514Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/mayor.rows.ndjson",
         "source_page": 1,
         "source_row": 9,
-        "row_html_sha256": "405cb1346027cc2d17fa38c1db33cd66695a7572878cd6d51158f4b1d89dedbe"
+        "row_html_sha256": "1e070ecd3bb2a6039476bd6cb91d7fae865fa8a99a0a66c13abdb5081530022a"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00021-p001-r009-appearances-0010441_1986-01.html",
+      "html_sha256": "b466c82a80ea593056a47080d10cb2e51d4ffdfe571abb2cdaea7eb98dd4d2cd",
+      "bytes_len": 5537,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/23/1987&index=SXgEio385IxzOM8LrBf57w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=dYnAbjzh_PLUS_xqWm8U7DnKOqA%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00020-p001-r009-case_detail-0010441_1986-01.html",
+      "html_sha256": "cc92c36d51ca4cd9df7b7aed9999bc8fad95620d0971d5745005385e3f6e4672",
+      "bytes_len": 7091,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=SXgEio385IxzOM8LrBf57w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=03/23/1987&civilCaseId=dYnAbjzh_PLUS_xqWm8U7DnKOqA%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:mayor:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/mayor/page-001.html",
-      "html_sha256": "953c49d7a822a82480986b8b5b83c8f3e369dca9f02cb62fd9b1e82b6f98a903",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00020:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00020-p001-r009-case_detail-0010441_1986-01.html",
+      "html_sha256": "cc92c36d51ca4cd9df7b7aed9999bc8fad95620d0971d5745005385e3f6e4672",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=SXgEio385IxzOM8LrBf57w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=03/23/1987&civilCaseId=dYnAbjzh_PLUS_xqWm8U7DnKOqA%3D%3D",
       "page_number": 1,
       "table_row_number": 9,
-      "row_html_sha256": "405cb1346027cc2d17fa38c1db33cd66695a7572878cd6d51158f4b1d89dedbe"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00021:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00021-p001-r009-appearances-0010441_1986-01.html",
+      "html_sha256": "b466c82a80ea593056a47080d10cb2e51d4ffdfe571abb2cdaea7eb98dd4d2cd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/23/1987&index=SXgEio385IxzOM8LrBf57w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=dYnAbjzh_PLUS_xqWm8U7DnKOqA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mayor:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mayor/page-001.html",
+      "html_sha256": "6216e7125fe42ff4b1968d12aed65fbc7699596168c036c0010f587db066144e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 9,
+      "row_html_sha256": "1e070ecd3bb2a6039476bd6cb91d7fae865fa8a99a0a66c13abdb5081530022a"
     }
   ],
   "judicial_officer": "LEO F. MC GINITY"

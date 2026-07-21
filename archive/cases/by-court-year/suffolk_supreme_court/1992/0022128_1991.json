@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T10:51:10.854Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/belz.rows.ndjson",
         "source_page": 1,
         "source_row": 19,
-        "row_html_sha256": "ca22d6de4d75144df383f63462aff2ac256b95ddbb244e649254c0be1d53b3ab"
+        "row_html_sha256": "e23e2de97de3549f84d12ec7c818e25d9cf8b6dac004a19e0ceb417e3312e58b"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/belz/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belz/00053-p001-r019-appearances-0022128_1991-01.html",
+      "html_sha256": "459e3c2ccc96eab69f87e17bf8f10d38f34f0954eb774f92e0980024cb38ac3d",
+      "bytes_len": 5578,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/04/1992&index=8abrVur8NYB452jYouQ0kA%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=RszLDjLy3PcJMYzB4Ag9Mw%3D%3D",
+      "captured_at": "2026-07-21T10:51:10.854Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/belz/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belz/00052-p001-r019-case_detail-0022128_1991-01.html",
+      "html_sha256": "915cf59068c1b325504946cfc503a112980099b3865b5948ff23e9e13c811fa7",
+      "bytes_len": 7071,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8abrVur8NYB452jYouQ0kA%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=05/04/1992&civilCaseId=RszLDjLy3PcJMYzB4Ag9Mw%3D%3D",
+      "captured_at": "2026-07-21T10:51:10.854Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:belz:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/belz/page-001.html",
-      "html_sha256": "fe7ab13d38d2226d73774b5a398cff0da2ea24d78d97314862220f2d66b96ec3",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:belz:followup-page:001:capture:00052:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belz/00052-p001-r019-case_detail-0022128_1991-01.html",
+      "html_sha256": "915cf59068c1b325504946cfc503a112980099b3865b5948ff23e9e13c811fa7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8abrVur8NYB452jYouQ0kA%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=05/04/1992&civilCaseId=RszLDjLy3PcJMYzB4Ag9Mw%3D%3D",
       "page_number": 1,
       "table_row_number": 19,
-      "row_html_sha256": "ca22d6de4d75144df383f63462aff2ac256b95ddbb244e649254c0be1d53b3ab"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:belz:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belz/00053-p001-r019-appearances-0022128_1991-01.html",
+      "html_sha256": "459e3c2ccc96eab69f87e17bf8f10d38f34f0954eb774f92e0980024cb38ac3d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/04/1992&index=8abrVur8NYB452jYouQ0kA%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=RszLDjLy3PcJMYzB4Ag9Mw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:belz:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/belz/page-001.html",
+      "html_sha256": "0b80f0bcf60842232ab4095787ee3ab07722993aa42a7aa712f80afd696f8097",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "e23e2de97de3549f84d12ec7c818e25d9cf8b6dac004a19e0ceb417e3312e58b"
     }
   ],
   "judicial_officer": "H. PATRICK LEIS III"

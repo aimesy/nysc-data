@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:09:01.541Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "artis"
+      "artis",
+      "pough"
     ],
     "result_row_refs": [
       {
@@ -42,7 +46,15 @@
         "source_file": "archive/webcivil/results/artis.rows.ndjson",
         "source_page": 2,
         "source_row": 10,
-        "row_html_sha256": "c4f03fdd315086d1f6aec6fa35fa9b35c3f09bf991f3caaa763ccba44f189389"
+        "row_html_sha256": "3599b184833eb73d3d10fa67a20940103a7e59fce90ce2e4caf324eb0a7c9029"
+      },
+      {
+        "search_name": "pough",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/pough.rows.ndjson",
+        "source_page": 1,
+        "source_row": 11,
+        "row_html_sha256": "bd8efed5432fece22547b99b51bac8e60671bb4a656cdd15f256bc17882be378"
       }
     ]
   },
@@ -115,19 +127,85 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/artis/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/artis/00027-p002-r010-appearances-0018563_1982-01.html",
+      "html_sha256": "0bbc2c14a210fed49e2b6a4cb422d4bbb1d8ee107f859eef3070a4ee50a55a29",
+      "bytes_len": 10302,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/30/1989&index=kBzoIoyriGK3q%2FC_PLUS_t5EDnA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=wQGkDWb7pcqombx%2FQlqKig%3D%3D",
+      "captured_at": "2026-07-20T22:09:01.541Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/artis/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/artis/00026-p002-r010-case_detail-0018563_1982-01.html",
+      "html_sha256": "4f6cf5925223f70f93532c883fae54b09d87532ff5b8b88f7e79b7af766f8482",
+      "bytes_len": 7064,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kBzoIoyriGK3q%2FC_PLUS_t5EDnA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&motion=&docs=&adate=10/30/1989&civilCaseId=wQGkDWb7pcqombx%2FQlqKig%3D%3D",
+      "captured_at": "2026-07-20T22:09:01.541Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:artis:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/artis/page-002.html",
-      "html_sha256": "4add9c1d8d2abeb6e02d846baf9a308ec3d27ab7d02ed67a4df1f0f300d69ce7",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:artis:followup-page:002:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/artis/00026-p002-r010-case_detail-0018563_1982-01.html",
+      "html_sha256": "4f6cf5925223f70f93532c883fae54b09d87532ff5b8b88f7e79b7af766f8482",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kBzoIoyriGK3q%2FC_PLUS_t5EDnA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&motion=&docs=&adate=10/30/1989&civilCaseId=wQGkDWb7pcqombx%2FQlqKig%3D%3D",
       "page_number": 2,
       "table_row_number": 10,
-      "row_html_sha256": "c4f03fdd315086d1f6aec6fa35fa9b35c3f09bf991f3caaa763ccba44f189389"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:artis:followup-page:002:capture:00027:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/artis/00027-p002-r010-appearances-0018563_1982-01.html",
+      "html_sha256": "0bbc2c14a210fed49e2b6a4cb422d4bbb1d8ee107f859eef3070a4ee50a55a29",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/30/1989&index=kBzoIoyriGK3q%2FC_PLUS_t5EDnA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=wQGkDWb7pcqombx%2FQlqKig%3D%3D",
+      "page_number": 2,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:artis:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/artis/page-002.html",
+      "html_sha256": "c36df2193c6a742a335001a30e85dc4bdeede530f7889db39d96dfb2d4140b1d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn12",
+      "page_number": 2,
+      "table_row_number": 10,
+      "row_html_sha256": "3599b184833eb73d3d10fa67a20940103a7e59fce90ce2e4caf324eb0a7c9029"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:pough:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/pough/page-001.html",
+      "html_sha256": "f89df0675bbfea1bad2ae846e23319136a01b2aae9aa910f973762b253ac4b6c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "bd8efed5432fece22547b99b51bac8e60671bb4a656cdd15f256bc17882be378"
     }
   ],
   "judicial_officer": "BERTRAM KATZ"

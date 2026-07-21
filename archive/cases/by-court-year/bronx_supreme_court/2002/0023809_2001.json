@@ -11,15 +11,19 @@
   "index_year": "2002",
   "index_display": "0023809/2001",
   "case_title": "PEREZ,JOHN v. SINGH,DHAN PAUL",
-  "case_type": null,
+  "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-19T03:52:24.943Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "dhan"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "dhan",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/dhan.rows.ndjson",
+        "source_page": 1,
+        "source_row": 6,
+        "row_html_sha256": "fba292af5de6d1634cd1bf656aef618b9ef5f111d8fb0ab6ce36103c4a75361f"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "LIPSIG, SHAPEY, MANUS & MOVERMAN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "GALLINA & CONNOLLY",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "PEREZ,JOHN",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "LIPSIG, SHAPEY, MANUS & MOVERMAN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "SINGH,DHAN PAUL",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "GALLINA & CONNOLLY",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "01/03/2005",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "STANLEY GREEN - STP",
+      "raw_text": "01/03/2005",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -140,6 +204,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:dhan:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/dhan/page-001.html",
+      "html_sha256": "383114a57cce753a613689e2b46e3fd910ee057ec8eefa97b05d776bc617d8a9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "fba292af5de6d1634cd1bf656aef618b9ef5f111d8fb0ab6ce36103c4a75361f"
     }
-  ]
+  ],
+  "judicial_officer": "STANLEY GREEN - STP"
 }

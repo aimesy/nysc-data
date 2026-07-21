@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T03:16:20.427Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,26 +24,39 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
+      "genna",
       "salim"
     ],
     "result_row_refs": [
+      {
+        "search_name": "genna",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/genna.rows.ndjson",
+        "source_page": 1,
+        "source_row": 11,
+        "row_html_sha256": "ce907372d970e604429e938c02044364c06b9fb91434ae83dded53ad8939af3e"
+      },
       {
         "search_name": "salim",
         "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/salim.rows.ndjson",
         "source_page": 1,
         "source_row": 17,
-        "row_html_sha256": "a428597c1197b1285d3f53c68200ba1ab63f6b300590c05efccfc434af43dcd9"
+        "row_html_sha256": "117437bf08aa060dc02f92f6fa0365bd2b485bafa10716c338b75cafb7ab294c"
       }
     ]
   },
@@ -116,19 +129,112 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/salim/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/salim/00039-p001-r017-appearances-0016342_1987-01.html",
+      "html_sha256": "b29e8f5c35964cafd66f76e3f935f800476947d58792a4cba183a785af8c4058",
+      "bytes_len": 8950,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/23/1989&index=yxQ9pipBAUYrlf2qWszrMg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=CENnLy27P9bIi%2F%2FYqT0BKA%3D%3D",
+      "captured_at": "2026-07-21T03:16:20.427Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/salim/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/salim/00038-p001-r017-case_detail-0016342_1987-01.html",
+      "html_sha256": "104a45e18ead04c18afde821af8d4f77e4dbab88cebac92324d516494ceeacfa",
+      "bytes_len": 7714,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yxQ9pipBAUYrlf2qWszrMg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=M&docs=&adate=08/23/1989&civilCaseId=CENnLy27P9bIi%2F%2FYqT0BKA%3D%3D",
+      "captured_at": "2026-07-21T03:16:20.427Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/salim/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/salim/00040-p001-r017-motions-0016342_1987-01.html",
+      "html_sha256": "fcdd346a9d286a0ab7e38aa06430d773faf0f3b2bc390b4b6bf0110f77c7c716",
+      "bytes_len": 7197,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=yxQ9pipBAUYrlf2qWszrMg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=CENnLy27P9bIi%2F%2FYqT0BKA%3D%3D",
+      "captured_at": "2026-07-21T03:16:20.427Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:salim:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/salim/page-001.html",
-      "html_sha256": "32510824fa52e453839483c75f1b336ba650eb9b79e0f96daa9d7eeab51e6011",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:salim:followup-page:001:capture:00038:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/salim/00038-p001-r017-case_detail-0016342_1987-01.html",
+      "html_sha256": "104a45e18ead04c18afde821af8d4f77e4dbab88cebac92324d516494ceeacfa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yxQ9pipBAUYrlf2qWszrMg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=M&docs=&adate=08/23/1989&civilCaseId=CENnLy27P9bIi%2F%2FYqT0BKA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:salim:followup-page:001:capture:00039:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/salim/00039-p001-r017-appearances-0016342_1987-01.html",
+      "html_sha256": "b29e8f5c35964cafd66f76e3f935f800476947d58792a4cba183a785af8c4058",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/23/1989&index=yxQ9pipBAUYrlf2qWszrMg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=CENnLy27P9bIi%2F%2FYqT0BKA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:salim:followup-page:001:capture:00040:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/salim/00040-p001-r017-motions-0016342_1987-01.html",
+      "html_sha256": "fcdd346a9d286a0ab7e38aa06430d773faf0f3b2bc390b4b6bf0110f77c7c716",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=yxQ9pipBAUYrlf2qWszrMg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=CENnLy27P9bIi%2F%2FYqT0BKA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:genna:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/genna/page-001.html",
+      "html_sha256": "daf744d830e9c670c158460c23ec195e8d04cf38545d8d1709a03815d96f3d6a",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "sfscvpn13",
       "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "ce907372d970e604429e938c02044364c06b9fb91434ae83dded53ad8939af3e"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:salim:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/salim/page-001.html",
+      "html_sha256": "02c7a0842042c5354bf6c78d14cb99d96a4ed0979635ef8912b8f61a6d1bd0dc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
       "table_row_number": 17,
-      "row_html_sha256": "a428597c1197b1285d3f53c68200ba1ab63f6b300590c05efccfc434af43dcd9"
+      "row_html_sha256": "117437bf08aa060dc02f92f6fa0365bd2b485bafa10716c338b75cafb7ab294c"
     }
   ],
   "judicial_officer": "ALAN LE VINE"

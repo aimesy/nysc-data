@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T13:20:07.901Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "shara"
+      "shara",
+      "tull"
     ],
     "result_row_refs": [
       {
@@ -42,7 +46,15 @@
         "source_file": "archive/webcivil/results/shara.rows.ndjson",
         "source_page": 1,
         "source_row": 11,
-        "row_html_sha256": "4c7805cf3b584d33619e221f4a83e286208dd84482fb6253762c8df43c4fd616"
+        "row_html_sha256": "b32e3b7c311756798ef37517f148e8e25308081176da3b3d1cc93b5c42e4f9fc"
+      },
+      {
+        "search_name": "tull",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/tull.rows.ndjson",
+        "source_page": 1,
+        "source_row": 23,
+        "row_html_sha256": "488b74afd880211aa750ec20278f86851c8d24eea2bf586c743bcea24ee90e0d"
       }
     ]
   },
@@ -115,19 +127,85 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/shara/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shara/00026-p001-r011-appearances-0002472_1991-01.html",
+      "html_sha256": "7c79a94e0adf30d7f16dc7457330b8817fec4ed12d3f0b3bbfdecc99c25e10b0",
+      "bytes_len": 7729,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/07/1993&index=Y6T_PLUS_aZ19iLICFxu7fVHQ0A%3D%3D&county=yntfP9Gb_PLUS_MQlOewWfc49Wg%3D%3D&civilCaseId=G7SOeCx_PLUS_8XCj3wEVomDGXw%3D%3D",
+      "captured_at": "2026-07-20T13:20:07.901Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/shara/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shara/00025-p001-r011-case_detail-0002472_1991-01.html",
+      "html_sha256": "cffff55f7269eb37ef8e86bab561aee96c437341679c0b353680ee9a13071842",
+      "bytes_len": 7523,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Y6T_PLUS_aZ19iLICFxu7fVHQ0A%3D%3D&county=yntfP9Gb_PLUS_MQlOewWfc49Wg%3D%3D&motion=&docs=&adate=06/07/1993&civilCaseId=G7SOeCx_PLUS_8XCj3wEVomDGXw%3D%3D",
+      "captured_at": "2026-07-20T13:20:07.901Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:shara:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/shara/page-001.html",
-      "html_sha256": "e43e9d3be00de85767d89044b1561692031b26981f8ab3de3c2a5433aeaf851a",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:shara:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shara/00025-p001-r011-case_detail-0002472_1991-01.html",
+      "html_sha256": "cffff55f7269eb37ef8e86bab561aee96c437341679c0b353680ee9a13071842",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Y6T_PLUS_aZ19iLICFxu7fVHQ0A%3D%3D&county=yntfP9Gb_PLUS_MQlOewWfc49Wg%3D%3D&motion=&docs=&adate=06/07/1993&civilCaseId=G7SOeCx_PLUS_8XCj3wEVomDGXw%3D%3D",
       "page_number": 1,
       "table_row_number": 11,
-      "row_html_sha256": "4c7805cf3b584d33619e221f4a83e286208dd84482fb6253762c8df43c4fd616"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:shara:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/shara/00026-p001-r011-appearances-0002472_1991-01.html",
+      "html_sha256": "7c79a94e0adf30d7f16dc7457330b8817fec4ed12d3f0b3bbfdecc99c25e10b0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/07/1993&index=Y6T_PLUS_aZ19iLICFxu7fVHQ0A%3D%3D&county=yntfP9Gb_PLUS_MQlOewWfc49Wg%3D%3D&civilCaseId=G7SOeCx_PLUS_8XCj3wEVomDGXw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:shara:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/shara/page-001.html",
+      "html_sha256": "56c79a2aa2eaaed550d34ef969999760eedfc3586cb87309f2e220742bd832d1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "b32e3b7c311756798ef37517f148e8e25308081176da3b3d1cc93b5c42e4f9fc"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:tull:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tull/page-001.html",
+      "html_sha256": "7caf9e75d9f71eff60ba040fa357dd3516d3abf662629c3cf99ef60b7eebc35d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 23,
+      "row_html_sha256": "488b74afd880211aa750ec20278f86851c8d24eea2bf586c743bcea24ee90e0d"
     }
   ],
   "judicial_officer": "HON. ROBERT S. ROSE, J.S.C."

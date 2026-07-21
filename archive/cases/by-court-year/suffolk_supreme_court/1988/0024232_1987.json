@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T18:46:57.435Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/haag.rows.ndjson",
         "source_page": 1,
         "source_row": 21,
-        "row_html_sha256": "fa74efb1fde7ab4301ba1724e9d26f9dbc2b0dea8882affaabb25e1ee14f7759"
+        "row_html_sha256": "12ea4a723a06eb3dabadc2a83dfccb79d1dfaeb70c0c7309d719a82bfbe06838"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/haag/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/haag/00053-p001-r021-appearances-0024232_1987-01.html",
+      "html_sha256": "f6923846390b8dc5779c5f714a9c19bd827cfb32c11b08e51ad9d5537449042d",
+      "bytes_len": 13883,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/09/1990&index=6_PLUS_l1oKcic93oi90BNZJ8FA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=YIqMmxaGRdKlglKFoZ48Mg%3D%3D",
+      "captured_at": "2026-07-20T18:46:57.435Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/haag/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/haag/00052-p001-r021-case_detail-0024232_1987-01.html",
+      "html_sha256": "5e333aff1d376555551ed550b5f9fa011fecbbc4976f44b768c1c56cc16945b7",
+      "bytes_len": 7119,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=6_PLUS_l1oKcic93oi90BNZJ8FA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=01/09/1990&civilCaseId=YIqMmxaGRdKlglKFoZ48Mg%3D%3D",
+      "captured_at": "2026-07-20T18:46:57.435Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260712212615:haag:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260712212615/haag/page-001.html",
-      "html_sha256": "8408552afdc236cd3186bc0d356b6691ac6803c3d830c2d15516c72017a45cde",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:haag:followup-page:001:capture:00052:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/haag/00052-p001-r021-case_detail-0024232_1987-01.html",
+      "html_sha256": "5e333aff1d376555551ed550b5f9fa011fecbbc4976f44b768c1c56cc16945b7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=6_PLUS_l1oKcic93oi90BNZJ8FA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=01/09/1990&civilCaseId=YIqMmxaGRdKlglKFoZ48Mg%3D%3D",
       "page_number": 1,
       "table_row_number": 21,
-      "row_html_sha256": "fa74efb1fde7ab4301ba1724e9d26f9dbc2b0dea8882affaabb25e1ee14f7759"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:haag:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/haag/00053-p001-r021-appearances-0024232_1987-01.html",
+      "html_sha256": "f6923846390b8dc5779c5f714a9c19bd827cfb32c11b08e51ad9d5537449042d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/09/1990&index=6_PLUS_l1oKcic93oi90BNZJ8FA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=YIqMmxaGRdKlglKFoZ48Mg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:haag:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/haag/page-001.html",
+      "html_sha256": "95aac9d9a40c1ea9db9d32d792ee89ead8246eacffec629bee03b9068f8ec761",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 21,
+      "row_html_sha256": "12ea4a723a06eb3dabadc2a83dfccb79d1dfaeb70c0c7309d719a82bfbe06838"
     }
   ],
   "judicial_officer": "WILLIAM L. UNDERWOOD JR."

@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T02:04:23.466Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/kort.rows.ndjson",
         "source_page": 1,
         "source_row": 1,
-        "row_html_sha256": "5f630eb796f07089a6c6c9f2a1994b1d07212ea35d324bb081fa57c22732e171"
+        "row_html_sha256": "7cb88c47d9ee5753fb3f9c92bc27a05c0d20e13fe323f928082bf9f2dd783122"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/kort/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kort/00002-p001-r001-appearances-0009387_1979-01.html",
+      "html_sha256": "119b298bb0dcbafc376abf4609ce29a9929934cc14c2eee01bc8ac9106f7ab5b",
+      "bytes_len": 5519,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/28/1979&index=EOwNiJj0%2FYYigQa9CLw8ow%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=Hc0VwCahPe8agO68vuxypg%3D%3D",
+      "captured_at": "2026-07-21T02:04:23.466Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/kort/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kort/00001-p001-r001-case_detail-0009387_1979-01.html",
+      "html_sha256": "279b2ad058b1189eed801d5e73279fe0b24d03e4dc839baf82e892ca75f6cf44",
+      "bytes_len": 7314,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=EOwNiJj0%2FYYigQa9CLw8ow%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=M&docs=&adate=09/28/1979&civilCaseId=Hc0VwCahPe8agO68vuxypg%3D%3D",
+      "captured_at": "2026-07-21T02:04:23.466Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/kort/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kort/00003-p001-r001-motions-0009387_1979-01.html",
+      "html_sha256": "f30ffb1b62778fc23ab29c5cc22af2c7830e225728ccaba1764b914ca317b7e0",
+      "bytes_len": 6377,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=EOwNiJj0%2FYYigQa9CLw8ow%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=Hc0VwCahPe8agO68vuxypg%3D%3D",
+      "captured_at": "2026-07-21T02:04:23.466Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719032551:kort:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719032551/kort/page-001.html",
-      "html_sha256": "516b4259433b57093867f5d928d4b8fbe5375809ad7979b65c6b88cbe1a7c79d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:kort:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kort/00001-p001-r001-case_detail-0009387_1979-01.html",
+      "html_sha256": "279b2ad058b1189eed801d5e73279fe0b24d03e4dc839baf82e892ca75f6cf44",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=EOwNiJj0%2FYYigQa9CLw8ow%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=M&docs=&adate=09/28/1979&civilCaseId=Hc0VwCahPe8agO68vuxypg%3D%3D",
       "page_number": 1,
       "table_row_number": 1,
-      "row_html_sha256": "5f630eb796f07089a6c6c9f2a1994b1d07212ea35d324bb081fa57c22732e171"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:kort:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kort/00002-p001-r001-appearances-0009387_1979-01.html",
+      "html_sha256": "119b298bb0dcbafc376abf4609ce29a9929934cc14c2eee01bc8ac9106f7ab5b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/28/1979&index=EOwNiJj0%2FYYigQa9CLw8ow%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=Hc0VwCahPe8agO68vuxypg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:kort:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/kort/00003-p001-r001-motions-0009387_1979-01.html",
+      "html_sha256": "f30ffb1b62778fc23ab29c5cc22af2c7830e225728ccaba1764b914ca317b7e0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=EOwNiJj0%2FYYigQa9CLw8ow%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=Hc0VwCahPe8agO68vuxypg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:kort:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/kort/page-001.html",
+      "html_sha256": "afa8e7dba29d587e9d6caf98bea09535bf487ef65b20aa72f2f8e20251d5db41",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "7cb88c47d9ee5753fb3f9c92bc27a05c0d20e13fe323f928082bf9f2dd783122"
     }
   ]
 }

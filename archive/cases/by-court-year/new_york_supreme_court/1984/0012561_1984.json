@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T23:15:01.615Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/amado.rows.ndjson",
         "source_page": 1,
         "source_row": 1,
-        "row_html_sha256": "06d2dc4bf459713e481cb165cc71edd291a1e82a93e62ac59e1c76baf1f8b2ba"
+        "row_html_sha256": "bc34b208de03f3c7b636ee4ee79d9611d6b137f6706020a9ec1e07a804ed29e9"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/amado/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/amado/00002-p001-r001-appearances-0012561_1984-01.html",
+      "html_sha256": "0a7b0e79d45036cc707a3af7318e930d6a1c3f80f384344e50d78cd5b1b0e690",
+      "bytes_len": 12232,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/31/1987&index=fDEE5BEW6XCuC_PLUS_v0YanXYw%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=dHDo7zFPu9SVFn1WMZW4oQ%3D%3D",
+      "captured_at": "2026-07-20T23:15:01.615Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/amado/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/amado/00001-p001-r001-case_detail-0012561_1984-01.html",
+      "html_sha256": "592fc1c52b30b83c0762d2fc95f5c0458b4b2aaaf313f30f7927141cfaa814d3",
+      "bytes_len": 7226,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fDEE5BEW6XCuC_PLUS_v0YanXYw%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=M&docs=&adate=03/31/1987&civilCaseId=dHDo7zFPu9SVFn1WMZW4oQ%3D%3D",
+      "captured_at": "2026-07-20T23:15:01.615Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/amado/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/amado/00003-p001-r001-motions-0012561_1984-01.html",
+      "html_sha256": "1a09e615295cd07bdcc31e19730bfe3f6501c8cdb49503312f5a34c41417d465",
+      "bytes_len": 6368,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=fDEE5BEW6XCuC_PLUS_v0YanXYw%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=dHDo7zFPu9SVFn1WMZW4oQ%3D%3D",
+      "captured_at": "2026-07-20T23:15:01.615Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:amado:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/amado/page-001.html",
-      "html_sha256": "28d0362643f0f3100a0077ed3f66faee3ee7c92e3cdf60ac406a6d362697d82d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:amado:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/amado/00001-p001-r001-case_detail-0012561_1984-01.html",
+      "html_sha256": "592fc1c52b30b83c0762d2fc95f5c0458b4b2aaaf313f30f7927141cfaa814d3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fDEE5BEW6XCuC_PLUS_v0YanXYw%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=M&docs=&adate=03/31/1987&civilCaseId=dHDo7zFPu9SVFn1WMZW4oQ%3D%3D",
       "page_number": 1,
       "table_row_number": 1,
-      "row_html_sha256": "06d2dc4bf459713e481cb165cc71edd291a1e82a93e62ac59e1c76baf1f8b2ba"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:amado:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/amado/00002-p001-r001-appearances-0012561_1984-01.html",
+      "html_sha256": "0a7b0e79d45036cc707a3af7318e930d6a1c3f80f384344e50d78cd5b1b0e690",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/31/1987&index=fDEE5BEW6XCuC_PLUS_v0YanXYw%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=dHDo7zFPu9SVFn1WMZW4oQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:amado:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/amado/00003-p001-r001-motions-0012561_1984-01.html",
+      "html_sha256": "1a09e615295cd07bdcc31e19730bfe3f6501c8cdb49503312f5a34c41417d465",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=fDEE5BEW6XCuC_PLUS_v0YanXYw%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=dHDo7zFPu9SVFn1WMZW4oQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:amado:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/amado/page-001.html",
+      "html_sha256": "050d14155ec3ff9a1b18662c8895c2012f4953527ae1fd67573bc5d30dc830fb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "bc34b208de03f3c7b636ee4ee79d9611d6b137f6706020a9ec1e07a804ed29e9"
     }
   ],
   "judicial_officer": "KLEIN, A.F."

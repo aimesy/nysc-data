@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T13:21:43.981Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/saran.rows.ndjson",
         "source_page": 1,
         "source_row": 21,
-        "row_html_sha256": "c75171c0e132447d959a82f26e5fbfa7e716d1f5ba552945d1dc5cf11a0c3513"
+        "row_html_sha256": "658a41af394257e7164733e1f3ec143f6d03f82baf4cdddc2480ddbffc3aa4db"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/saran/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/saran/00059-p001-r021-appearances-0020839_1989-01.html",
+      "html_sha256": "22122255c820964ed26141192f7b9559496400794aa853ed8603d5ebd355e2f1",
+      "bytes_len": 6260,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/11/1995&index=CUEfiw3zEAij84cnzyM38g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=uQq51CHJrpU_PLUS_jZWmb2cwJQ%3D%3D",
+      "captured_at": "2026-07-21T13:21:43.981Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/saran/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/saran/00058-p001-r021-case_detail-0020839_1989-01.html",
+      "html_sha256": "7b5ca47bff5f37117c5c1d3683ce8b97441d6ccaee7754837649295cecd49bcc",
+      "bytes_len": 6610,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=CUEfiw3zEAij84cnzyM38g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=05/11/1995&civilCaseId=uQq51CHJrpU_PLUS_jZWmb2cwJQ%3D%3D",
+      "captured_at": "2026-07-21T13:21:43.981Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:saran:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/saran/page-001.html",
-      "html_sha256": "f8adb8b416a1b80fcf0413e4448788b7d08359d2c8219061f1144ec497bba91f",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:saran:followup-page:001:capture:00058:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/saran/00058-p001-r021-case_detail-0020839_1989-01.html",
+      "html_sha256": "7b5ca47bff5f37117c5c1d3683ce8b97441d6ccaee7754837649295cecd49bcc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=CUEfiw3zEAij84cnzyM38g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=05/11/1995&civilCaseId=uQq51CHJrpU_PLUS_jZWmb2cwJQ%3D%3D",
       "page_number": 1,
       "table_row_number": 21,
-      "row_html_sha256": "c75171c0e132447d959a82f26e5fbfa7e716d1f5ba552945d1dc5cf11a0c3513"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:saran:followup-page:001:capture:00059:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/saran/00059-p001-r021-appearances-0020839_1989-01.html",
+      "html_sha256": "22122255c820964ed26141192f7b9559496400794aa853ed8603d5ebd355e2f1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/11/1995&index=CUEfiw3zEAij84cnzyM38g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=uQq51CHJrpU_PLUS_jZWmb2cwJQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:saran:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/saran/page-001.html",
+      "html_sha256": "3180dda6406f3c924663b8401b06823122adca3850e0fc40038a0f5baf8ee4f1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 21,
+      "row_html_sha256": "658a41af394257e7164733e1f3ec143f6d03f82baf4cdddc2480ddbffc3aa4db"
     }
   ],
   "judicial_officer": "JOHN A. MILANO"

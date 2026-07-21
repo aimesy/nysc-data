@@ -14,8 +14,8 @@
   "case_type": "Mat-Uncontested",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T09:03:59.029Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "meise",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/meise.rows.ndjson",
-        "source_page": 1,
-        "source_row": 4,
-        "row_html_sha256": "21151357bf09ab8fd8e5eb9b5c2175c321bd887e7069ab35c141b314fa8936a4"
+        "source_page": 2,
+        "source_row": 1,
+        "row_html_sha256": "eb26e0eb3f1b5c60929826ebd62d0a357f4e144782615e0561052d9386911e98"
       }
     ]
   },
@@ -77,19 +80,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meise/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00060-p002-r001-appearances-620177_2023-01.html",
+      "html_sha256": "66ea7881547c3372e69282ee24daca6f5dfcfcc6067a7a15dc3779408a94c5c9",
+      "bytes_len": 5576,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/14/2023&index=xXfcRsAZBpSlDlxCZp2Fqw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=9rCDyrvcKVSBitsiagHUeQ%3D%3D",
+      "captured_at": "2026-07-21T09:03:59.029Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meise/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00059-p002-r001-case_detail-620177_2023-01.html",
+      "html_sha256": "d095f7a376964f6028329b5951b313851f0a471d3125e7973700be9cd58eed3c",
+      "bytes_len": 6965,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=xXfcRsAZBpSlDlxCZp2Fqw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=11/14/2023&civilCaseId=9rCDyrvcKVSBitsiagHUeQ%3D%3D",
+      "captured_at": "2026-07-21T09:03:59.029Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:meise:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/meise/page-001.html",
-      "html_sha256": "013a28cd88c8072f55fee27dacf054748b5202ac22af9bd296e5faf0c25b74fc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
-      "page_number": 1,
-      "table_row_number": 4,
-      "row_html_sha256": "21151357bf09ab8fd8e5eb9b5c2175c321bd887e7069ab35c141b314fa8936a4"
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meise:followup-page:002:capture:00059:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00059-p002-r001-case_detail-620177_2023-01.html",
+      "html_sha256": "d095f7a376964f6028329b5951b313851f0a471d3125e7973700be9cd58eed3c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=xXfcRsAZBpSlDlxCZp2Fqw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=11/14/2023&civilCaseId=9rCDyrvcKVSBitsiagHUeQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meise:followup-page:002:capture:00060:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00060-p002-r001-appearances-620177_2023-01.html",
+      "html_sha256": "66ea7881547c3372e69282ee24daca6f5dfcfcc6067a7a15dc3779408a94c5c9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/14/2023&index=xXfcRsAZBpSlDlxCZp2Fqw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=9rCDyrvcKVSBitsiagHUeQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:meise:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/meise/page-002.html",
+      "html_sha256": "f03b3650ff2c3fd4b5ae1fd57a41b7f11266a85b10d44ba539f0456f4c6dc089",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn12",
+      "page_number": 2,
+      "table_row_number": 1,
+      "row_html_sha256": "eb26e0eb3f1b5c60929826ebd62d0a357f4e144782615e0561052d9386911e98"
     }
   ],
   "judicial_officer": "Tantone, Hon. Frank A."

@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T10:46:26.011Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/bedi.rows.ndjson",
         "source_page": 2,
         "source_row": 2,
-        "row_html_sha256": "f4fbbba8aa7baadb01a6b438b28c4c48946737cafb5021b86e907e8b183430f1"
+        "row_html_sha256": "a27863bcb5d9fd19db95cbaceaf72316ee5cf446cf857935e9fb02aca318fcb5"
       }
     ]
   },
@@ -98,19 +102,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bedi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bedi/00073-p002-r002-appearances-0012367_1997-01.html",
+      "html_sha256": "72cf3038fed55fccb14365b469aabb0d4d4405cc266079de030823593063fd2d",
+      "bytes_len": 5529,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/26/1997&index=5aUQxNnj97ZTCwa7aIM6zg%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&civilCaseId=tW8lB%2FD3nmWhQj9aOGK%2FPw%3D%3D",
+      "captured_at": "2026-07-21T10:46:26.011Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bedi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bedi/00072-p002-r002-case_detail-0012367_1997-01.html",
+      "html_sha256": "209af88c0da08ec6d6573d319c235bb3730c457e42ef8b4bf13a7d795e05d7e5",
+      "bytes_len": 7313,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=5aUQxNnj97ZTCwa7aIM6zg%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&motion=M&docs=&adate=11/26/1997&civilCaseId=tW8lB%2FD3nmWhQj9aOGK%2FPw%3D%3D",
+      "captured_at": "2026-07-21T10:46:26.011Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bedi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bedi/00074-p002-r002-motions-0012367_1997-01.html",
+      "html_sha256": "d9f9f34c68aaa4c158bdd55ea1f8fad540551d16654d66d80df9a840515ac74f",
+      "bytes_len": 6410,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=5aUQxNnj97ZTCwa7aIM6zg%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&civilCaseId=tW8lB%2FD3nmWhQj9aOGK%2FPw%3D%3D",
+      "captured_at": "2026-07-21T10:46:26.011Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bedi:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bedi/page-002.html",
-      "html_sha256": "cebdbc6b83d42f00cfa7de667bda2088700bd0dd8afd7656e7bb07b0aa806c42",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bedi:followup-page:002:capture:00072:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bedi/00072-p002-r002-case_detail-0012367_1997-01.html",
+      "html_sha256": "209af88c0da08ec6d6573d319c235bb3730c457e42ef8b4bf13a7d795e05d7e5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=5aUQxNnj97ZTCwa7aIM6zg%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&motion=M&docs=&adate=11/26/1997&civilCaseId=tW8lB%2FD3nmWhQj9aOGK%2FPw%3D%3D",
       "page_number": 2,
       "table_row_number": 2,
-      "row_html_sha256": "f4fbbba8aa7baadb01a6b438b28c4c48946737cafb5021b86e907e8b183430f1"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bedi:followup-page:002:capture:00073:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bedi/00073-p002-r002-appearances-0012367_1997-01.html",
+      "html_sha256": "72cf3038fed55fccb14365b469aabb0d4d4405cc266079de030823593063fd2d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/26/1997&index=5aUQxNnj97ZTCwa7aIM6zg%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&civilCaseId=tW8lB%2FD3nmWhQj9aOGK%2FPw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bedi:followup-page:002:capture:00074:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bedi/00074-p002-r002-motions-0012367_1997-01.html",
+      "html_sha256": "d9f9f34c68aaa4c158bdd55ea1f8fad540551d16654d66d80df9a840515ac74f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=5aUQxNnj97ZTCwa7aIM6zg%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&civilCaseId=tW8lB%2FD3nmWhQj9aOGK%2FPw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 2,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:bedi:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/bedi/page-002.html",
+      "html_sha256": "ea4db1e9254cce1233a615df69eb33f1e9e69145d48032eb6fff309ebcf4e9a2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn11",
+      "page_number": 2,
+      "table_row_number": 2,
+      "row_html_sha256": "a27863bcb5d9fd19db95cbaceaf72316ee5cf446cf857935e9fb02aca318fcb5"
     }
   ],
   "judicial_officer": "PETER P. ROSATO"

@@ -14,8 +14,8 @@
   "case_type": "TAX CERTIORARI",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:36:15.224Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/gren.rows.ndjson",
         "source_page": 1,
         "source_row": 6,
-        "row_html_sha256": "f9a82ff65002a89ca647d2d447179feb61073a76dfd3bf6e2a34c5f9c7df054c"
+        "row_html_sha256": "c891f1981809249be9661592df02681b0e4025b7e0242bfcad4c7ab6a5f63150"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gren/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00016-p001-r006-appearances-0055333_1987-01.html",
+      "html_sha256": "f8aa7b2cacac24c2571992df0c42b513e81c047a48c4a2f653447b639eff9086",
+      "bytes_len": 5571,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/02/1996&index=gz1OQ2Ixf1kVIblY2JHzEQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=5LvXMko99u33sv7phAMLbQ%3D%3D",
+      "captured_at": "2026-07-21T00:36:15.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gren/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00015-p001-r006-case_detail-0055333_1987-01.html",
+      "html_sha256": "859cfb4073971c29d3598ab32322aea258c134f92b2db38fe34975a1ab154c69",
+      "bytes_len": 7153,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=gz1OQ2Ixf1kVIblY2JHzEQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=&docs=&adate=04/02/1996&civilCaseId=5LvXMko99u33sv7phAMLbQ%3D%3D",
+      "captured_at": "2026-07-21T00:36:15.224Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:gren:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/gren/page-001.html",
-      "html_sha256": "1b1a040958fc4122532b879ce82a00e85c8f463a2d7bfbb51656ffb1f7d35a0f",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gren:followup-page:001:capture:00015:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00015-p001-r006-case_detail-0055333_1987-01.html",
+      "html_sha256": "859cfb4073971c29d3598ab32322aea258c134f92b2db38fe34975a1ab154c69",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=gz1OQ2Ixf1kVIblY2JHzEQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=&docs=&adate=04/02/1996&civilCaseId=5LvXMko99u33sv7phAMLbQ%3D%3D",
       "page_number": 1,
       "table_row_number": 6,
-      "row_html_sha256": "f9a82ff65002a89ca647d2d447179feb61073a76dfd3bf6e2a34c5f9c7df054c"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gren:followup-page:001:capture:00016:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00016-p001-r006-appearances-0055333_1987-01.html",
+      "html_sha256": "f8aa7b2cacac24c2571992df0c42b513e81c047a48c4a2f653447b639eff9086",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/02/1996&index=gz1OQ2Ixf1kVIblY2JHzEQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=5LvXMko99u33sv7phAMLbQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:gren:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/gren/page-001.html",
+      "html_sha256": "aaa96adf57b756926e7f19ca7f1ead7f6b1d8725603c4e544c22f568770494a6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "c891f1981809249be9661592df02681b0e4025b7e0242bfcad4c7ab6a5f63150"
     }
   ],
   "judicial_officer": "PARNESS, S."

@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T05:38:33.015Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,26 +23,29 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "bonney"
+      "busch"
     ],
     "result_row_refs": [
       {
-        "search_name": "bonney",
-        "query_type": "attorney-prefix",
-        "source_file": "archive/webcivil/results/bonney.rows.ndjson",
+        "search_name": "busch",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/busch.rows.ndjson",
         "source_page": 1,
-        "source_row": 2,
-        "row_html_sha256": "a9a1f3f37c782accb8ddf3965047c85bcdcfd3fbe0bdeba1a65161476f940f2f"
+        "source_row": 15,
+        "row_html_sha256": "4245d883d8b3e901549f652ec25ae8a9203caab6d769ec7500a7c69fccf9ce7d"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/busch/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/busch/00033-p001-r015-appearances-0068176_1985-01.html",
+      "html_sha256": "4b52e873c4caf89ade387d4c368f60cff27674361781471d76822b280b18efbd",
+      "bytes_len": 6202,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/23/1985&index=gMkeoxTaGJqUEWZ62AktNQ%3D%3D&county=3PDdgK1xB_PLUS_IakGRhGz6gag%3D%3D&civilCaseId=kXiuMFRBKWAxxOXqQQNMnA%3D%3D",
+      "captured_at": "2026-07-20T05:38:33.015Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/busch/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/busch/00032-p001-r015-case_detail-0068176_1985-01.html",
+      "html_sha256": "672f2ed9c75c2a297a2c8366389429748e99443d7d1efc5af082004a288fa78f",
+      "bytes_len": 6677,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=gMkeoxTaGJqUEWZ62AktNQ%3D%3D&county=3PDdgK1xB_PLUS_IakGRhGz6gag%3D%3D&motion=&docs=&adate=05/23/1985&civilCaseId=kXiuMFRBKWAxxOXqQQNMnA%3D%3D",
+      "captured_at": "2026-07-20T05:38:33.015Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bonney:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bonney/page-001.html",
-      "html_sha256": "4a5f14ac419ad3795c26eb00f8439e77d98d5fa551516a0c272630d0c7dd8823",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:busch:followup-page:001:capture:00032:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/busch/00032-p001-r015-case_detail-0068176_1985-01.html",
+      "html_sha256": "672f2ed9c75c2a297a2c8366389429748e99443d7d1efc5af082004a288fa78f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=gMkeoxTaGJqUEWZ62AktNQ%3D%3D&county=3PDdgK1xB_PLUS_IakGRhGz6gag%3D%3D&motion=&docs=&adate=05/23/1985&civilCaseId=kXiuMFRBKWAxxOXqQQNMnA%3D%3D",
       "page_number": 1,
-      "table_row_number": 2,
-      "row_html_sha256": "a9a1f3f37c782accb8ddf3965047c85bcdcfd3fbe0bdeba1a65161476f940f2f"
+      "table_row_number": 15,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:busch:followup-page:001:capture:00033:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/busch/00033-p001-r015-appearances-0068176_1985-01.html",
+      "html_sha256": "4b52e873c4caf89ade387d4c368f60cff27674361781471d76822b280b18efbd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/23/1985&index=gMkeoxTaGJqUEWZ62AktNQ%3D%3D&county=3PDdgK1xB_PLUS_IakGRhGz6gag%3D%3D&civilCaseId=kXiuMFRBKWAxxOXqQQNMnA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:busch:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/busch/page-001.html",
+      "html_sha256": "282798adf54098969297420e3e33ef2d004259ce3de16241d6609278c9b5e0fa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 15,
+      "row_html_sha256": "4245d883d8b3e901549f652ec25ae8a9203caab6d769ec7500a7c69fccf9ce7d"
     }
   ],
   "judicial_officer": "FREDERIC T HENRY JR"

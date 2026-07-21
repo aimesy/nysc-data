@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:59:19.054Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "brocco",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/brocco.rows.ndjson",
-        "source_page": 1,
+        "source_page": 2,
         "source_row": 1,
-        "row_html_sha256": "1782417db8fa4894c2b9efc0a880a5fe4c465f439f449312239e5ec6cb67338f"
+        "row_html_sha256": "8af9b37641307703ccd69012f28743746212bb7edea4eaa92240741c4ae8af30"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/brocco/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/brocco/00002-p002-r001-appearances-0002025_1998-01.html",
+      "html_sha256": "17a0c5307c783ab1d6140e78d4691f37aec7363ac55c537a20c6c016089f842f",
+      "bytes_len": 6254,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/03/1999&index=Yp5oyutvs8Z_PLUS_GPl3nqkxQA%3D%3D&county=xdUDvOZor_PLUS_jP0g4BX1X7yQ%3D%3D&civilCaseId=m3Gwjgr7sa3hsodDVy1QfA%3D%3D",
+      "captured_at": "2026-07-20T22:59:19.054Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/brocco/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/brocco/00001-p002-r001-case_detail-0002025_1998-01.html",
+      "html_sha256": "7f590cdc2428c9e87a3451ee87bbf6a13d59495aab71443fea29809703b6ee54",
+      "bytes_len": 7422,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Yp5oyutvs8Z_PLUS_GPl3nqkxQA%3D%3D&county=xdUDvOZor_PLUS_jP0g4BX1X7yQ%3D%3D&motion=&docs=&adate=02/03/1999&civilCaseId=m3Gwjgr7sa3hsodDVy1QfA%3D%3D",
+      "captured_at": "2026-07-20T22:59:19.054Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:brocco:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/brocco/page-001.html",
-      "html_sha256": "c36c711a6c78cfe84c40d4cab7799d25686b54f706673352deb87ac950d3022c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
-      "page_number": 1,
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:brocco:followup-page:002:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/brocco/00001-p002-r001-case_detail-0002025_1998-01.html",
+      "html_sha256": "7f590cdc2428c9e87a3451ee87bbf6a13d59495aab71443fea29809703b6ee54",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Yp5oyutvs8Z_PLUS_GPl3nqkxQA%3D%3D&county=xdUDvOZor_PLUS_jP0g4BX1X7yQ%3D%3D&motion=&docs=&adate=02/03/1999&civilCaseId=m3Gwjgr7sa3hsodDVy1QfA%3D%3D",
+      "page_number": 2,
       "table_row_number": 1,
-      "row_html_sha256": "1782417db8fa4894c2b9efc0a880a5fe4c465f439f449312239e5ec6cb67338f"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:brocco:followup-page:002:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/brocco/00002-p002-r001-appearances-0002025_1998-01.html",
+      "html_sha256": "17a0c5307c783ab1d6140e78d4691f37aec7363ac55c537a20c6c016089f842f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/03/1999&index=Yp5oyutvs8Z_PLUS_GPl3nqkxQA%3D%3D&county=xdUDvOZor_PLUS_jP0g4BX1X7yQ%3D%3D&civilCaseId=m3Gwjgr7sa3hsodDVy1QfA%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:brocco:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/brocco/page-002.html",
+      "html_sha256": "e00aaea2d05d144449da51e0d55e613fb1f568961e9083406eebedfc905340b1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn12",
+      "page_number": 2,
+      "table_row_number": 1,
+      "row_html_sha256": "8af9b37641307703ccd69012f28743746212bb7edea4eaa92240741c4ae8af30"
     }
   ],
   "judicial_officer": "HON. VINCENT G. BRADLEY"

@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T17:29:48.331Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/deso.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
-        "row_html_sha256": "b4ce405b483712037e951b5cd2423e83911a14fb39a9cb740ee6c75fc036ecec"
+        "row_html_sha256": "0949c1e76a8fe81ab541c36f00f2c636b5349c648af3e7e5e809491faa8e9f60"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/deso/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00008-p001-r003-appearances-0002349_2001-01.html",
+      "html_sha256": "61deb20167199f794ca75367f705fd0d5890068cb7cde2b50c7fdd98eb9e8d9f",
+      "bytes_len": 5564,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/20/2002&index=U6Le0tQGC%2FbKAhuKn7gf%2Fg%3D%3D&county=dL8ZpnNdtIKfNaErN_PLUS_mSZw%3D%3D&civilCaseId=8J8D8GowU1vhGi%2FAPPfY0Q%3D%3D",
+      "captured_at": "2026-07-20T17:29:48.331Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/deso/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00007-p001-r003-case_detail-0002349_2001-01.html",
+      "html_sha256": "35f9ba6012db6d4c717d7bc9b3fd92facb6cc6655561988f9723ee1fd604247f",
+      "bytes_len": 7084,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=U6Le0tQGC%2FbKAhuKn7gf%2Fg%3D%3D&county=dL8ZpnNdtIKfNaErN_PLUS_mSZw%3D%3D&motion=&docs=&adate=09/20/2002&civilCaseId=8J8D8GowU1vhGi%2FAPPfY0Q%3D%3D",
+      "captured_at": "2026-07-20T17:29:48.331Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:deso:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/deso/page-001.html",
-      "html_sha256": "86a372b45b6125524950166171ab8c779b01b65b985d084de640591b7fd350ae",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn06",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:deso:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00007-p001-r003-case_detail-0002349_2001-01.html",
+      "html_sha256": "35f9ba6012db6d4c717d7bc9b3fd92facb6cc6655561988f9723ee1fd604247f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=U6Le0tQGC%2FbKAhuKn7gf%2Fg%3D%3D&county=dL8ZpnNdtIKfNaErN_PLUS_mSZw%3D%3D&motion=&docs=&adate=09/20/2002&civilCaseId=8J8D8GowU1vhGi%2FAPPfY0Q%3D%3D",
       "page_number": 1,
       "table_row_number": 3,
-      "row_html_sha256": "b4ce405b483712037e951b5cd2423e83911a14fb39a9cb740ee6c75fc036ecec"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:deso:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00008-p001-r003-appearances-0002349_2001-01.html",
+      "html_sha256": "61deb20167199f794ca75367f705fd0d5890068cb7cde2b50c7fdd98eb9e8d9f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/20/2002&index=U6Le0tQGC%2FbKAhuKn7gf%2Fg%3D%3D&county=dL8ZpnNdtIKfNaErN_PLUS_mSZw%3D%3D&civilCaseId=8J8D8GowU1vhGi%2FAPPfY0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:deso:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/deso/page-001.html",
+      "html_sha256": "2c902f06589f265c46caae3d9c08029ce38952390c45259cdfc63f568ca1ca75",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "0949c1e76a8fe81ab541c36f00f2c636b5349c648af3e7e5e809491faa8e9f60"
     }
   ],
   "judicial_officer": "HON BARRY D. KRAMER"

@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:55:56.224Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sando.rows.ndjson",
         "source_page": 1,
         "source_row": 12,
-        "row_html_sha256": "48169a4f7831b97dcde9688b10dc2c3157f6f1dbe777add29825af9937c427c5"
+        "row_html_sha256": "482dfc87b34875d1f79c646905baa110022d6e0a1a3bba2a0ae71f804b9d3d43"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00030-p001-r012-appearances-0069634_1994-01.html",
+      "html_sha256": "6ac1b410bec33248015e94c1201bcb70eb294b75cdfd23d77b40604de9f50095",
+      "bytes_len": 5553,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/24/1994&index=Y%2FyHEx202JjOv69XGDA3Mg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&civilCaseId=cJSsLnNaeLQkB9F2w4hrbA%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00029-p001-r012-case_detail-0069634_1994-01.html",
+      "html_sha256": "d48546aa88f6f2909b33f3b4812aec6bce8451d24fe383642349844a9c78b79e",
+      "bytes_len": 6901,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Y%2FyHEx202JjOv69XGDA3Mg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&motion=&docs=&adate=03/24/1994&civilCaseId=cJSsLnNaeLQkB9F2w4hrbA%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:sando:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/sando/page-001.html",
-      "html_sha256": "d29193b945ea67917b3e011870a23990394aee9d152067a70e61dd7251c37dc2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00029:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00029-p001-r012-case_detail-0069634_1994-01.html",
+      "html_sha256": "d48546aa88f6f2909b33f3b4812aec6bce8451d24fe383642349844a9c78b79e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Y%2FyHEx202JjOv69XGDA3Mg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&motion=&docs=&adate=03/24/1994&civilCaseId=cJSsLnNaeLQkB9F2w4hrbA%3D%3D",
       "page_number": 1,
       "table_row_number": 12,
-      "row_html_sha256": "48169a4f7831b97dcde9688b10dc2c3157f6f1dbe777add29825af9937c427c5"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00030:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00030-p001-r012-appearances-0069634_1994-01.html",
+      "html_sha256": "6ac1b410bec33248015e94c1201bcb70eb294b75cdfd23d77b40604de9f50095",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/24/1994&index=Y%2FyHEx202JjOv69XGDA3Mg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&civilCaseId=cJSsLnNaeLQkB9F2w4hrbA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:sando:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sando/page-001.html",
+      "html_sha256": "a9f3ddb5ec2e77dd6486c3ac5d5955b1d6ab5e1f42b9ff0864aa991a91543179",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 12,
+      "row_html_sha256": "482dfc87b34875d1f79c646905baa110022d6e0a1a3bba2a0ae71f804b9d3d43"
     }
   ],
   "judicial_officer": "HON PETER C BRADSTREET"

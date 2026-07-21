@@ -14,8 +14,8 @@
   "case_type": "MATRIMONIAL UNCONTESTED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T11:21:30.102Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "tena",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/tena.rows.ndjson",
-        "source_page": 1,
-        "source_row": 7,
-        "row_html_sha256": "f2c2c49751dc50081c0f29828731f4d8c2f66354b35c1c39b01b4d9bef89701a"
+        "source_page": 3,
+        "source_row": 3,
+        "row_html_sha256": "024f866e4a674245c3c09295a5cc93e8eb415e90534e6e6af9b96b4b6e876da2"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/tena/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00124-p003-r003-appearances-0012895_2004-01.html",
+      "html_sha256": "2f54792fee053c2af898895303cae060f76cccd8d0991dffb3a2b09275678a30",
+      "bytes_len": 5589,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/19/2006&index=kgYNQ6JY0MP8HGGF86AREw%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=lutrXLPiC3Qi7AaA4NDapA%3D%3D",
+      "captured_at": "2026-07-21T11:21:30.102Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/tena/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00123-p003-r003-case_detail-0012895_2004-01.html",
+      "html_sha256": "e0873a76741539fe783211da61b8cbcee16a3d4ca42e1cd6d00bd8435446d478",
+      "bytes_len": 6711,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kgYNQ6JY0MP8HGGF86AREw%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=06/19/2006&civilCaseId=lutrXLPiC3Qi7AaA4NDapA%3D%3D",
+      "captured_at": "2026-07-21T11:21:30.102Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:tena:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/tena/page-001.html",
-      "html_sha256": "93bb698b6df5286c10af830ebe29fff72a7e3325df37c0493fcd6c4a9ef16b71",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
-      "page_number": 1,
-      "table_row_number": 7,
-      "row_html_sha256": "f2c2c49751dc50081c0f29828731f4d8c2f66354b35c1c39b01b4d9bef89701a"
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:tena:followup-page:003:capture:00123:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00123-p003-r003-case_detail-0012895_2004-01.html",
+      "html_sha256": "e0873a76741539fe783211da61b8cbcee16a3d4ca42e1cd6d00bd8435446d478",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kgYNQ6JY0MP8HGGF86AREw%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=06/19/2006&civilCaseId=lutrXLPiC3Qi7AaA4NDapA%3D%3D",
+      "page_number": 3,
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:tena:followup-page:003:capture:00124:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00124-p003-r003-appearances-0012895_2004-01.html",
+      "html_sha256": "2f54792fee053c2af898895303cae060f76cccd8d0991dffb3a2b09275678a30",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/19/2006&index=kgYNQ6JY0MP8HGGF86AREw%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=lutrXLPiC3Qi7AaA4NDapA%3D%3D",
+      "page_number": 3,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:tena:page:003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tena/page-003.html",
+      "html_sha256": "8511e0138279464e987821c14ef742a1f5728020d1abc137b890b56bde02c685",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn13",
+      "page_number": 3,
+      "table_row_number": 3,
+      "row_html_sha256": "024f866e4a674245c3c09295a5cc93e8eb415e90534e6e6af9b96b4b6e876da2"
     }
   ],
   "judicial_officer": "ROBERT J. MCDONALD"

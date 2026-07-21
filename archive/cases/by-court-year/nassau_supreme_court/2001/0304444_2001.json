@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:21:40.877Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "cande"
+      "cande",
+      "parl"
     ],
     "result_row_refs": [
       {
@@ -42,7 +46,15 @@
         "source_file": "archive/webcivil/results/cande.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "10460709ce4e373d17c68408f96c86566eb75899fb22b5694a8978a1476aa900"
+        "row_html_sha256": "3b8fb18b82ced9a147259e9e7ac70b3ea7048c70ab950e3700806262afba5fa8"
+      },
+      {
+        "search_name": "parl",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/parl.rows.ndjson",
+        "source_page": 1,
+        "source_row": 12,
+        "row_html_sha256": "b612b4191eb7a55d153af033fd75ed0d5817d0cbe57e9ff5551a9be9d5852b29"
       }
     ]
   },
@@ -97,19 +109,85 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/parl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/parl/00031-p001-r012-appearances-0304444_2001-01.html",
+      "html_sha256": "58ae5133e85adeba39dba1246368390c2e54d7d95b0ae0f5059c73c5ecf781cb",
+      "bytes_len": 5612,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/22/2002&index=06jUPLHqlbXUvbQRW02aNg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=xqJ11QkxeOdKg0ET8MJwwQ%3D%3D",
+      "captured_at": "2026-07-20T22:21:40.877Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/parl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/parl/00030-p001-r012-case_detail-0304444_2001-01.html",
+      "html_sha256": "f1546157c91d3d2bc1d53f0e440c351d30fca84c13d772994eaaf1756d1c9e80",
+      "bytes_len": 6756,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=06jUPLHqlbXUvbQRW02aNg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=05/22/2002&civilCaseId=xqJ11QkxeOdKg0ET8MJwwQ%3D%3D",
+      "captured_at": "2026-07-20T22:21:40.877Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:parl:followup-page:001:capture:00030:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/parl/00030-p001-r012-case_detail-0304444_2001-01.html",
+      "html_sha256": "f1546157c91d3d2bc1d53f0e440c351d30fca84c13d772994eaaf1756d1c9e80",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=06jUPLHqlbXUvbQRW02aNg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=05/22/2002&civilCaseId=xqJ11QkxeOdKg0ET8MJwwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:parl:followup-page:001:capture:00031:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/parl/00031-p001-r012-appearances-0304444_2001-01.html",
+      "html_sha256": "58ae5133e85adeba39dba1246368390c2e54d7d95b0ae0f5059c73c5ecf781cb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/22/2002&index=06jUPLHqlbXUvbQRW02aNg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=xqJ11QkxeOdKg0ET8MJwwQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260719044730:cande:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/cande/page-001.html",
-      "html_sha256": "da00e0dd2c0af5ed524aef58f53ccd73890404cebe9ec09d3ab0555bd50b2fb0",
+      "html_sha256": "346ca752e86108309431ffbe5d8cb85b9e8cc9d74a426ae8d34803fa5124cc89",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn06",
+      "lane": "sfscvpn13",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "10460709ce4e373d17c68408f96c86566eb75899fb22b5694a8978a1476aa900"
+      "row_html_sha256": "3b8fb18b82ced9a147259e9e7ac70b3ea7048c70ab950e3700806262afba5fa8"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:parl:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/parl/page-001.html",
+      "html_sha256": "dd658aa13baadfbee841a71101626ad5e10ca10422b40e7b5f640ad5dbf53e9c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 12,
+      "row_html_sha256": "b612b4191eb7a55d153af033fd75ed0d5817d0cbe57e9ff5551a9be9d5852b29"
     }
   ],
   "judicial_officer": "SMALL CLAIMS ASSESSMENT JUDGE"

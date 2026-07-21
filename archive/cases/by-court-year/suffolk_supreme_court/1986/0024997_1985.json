@@ -11,15 +11,18 @@
   "index_year": "1986",
   "index_display": "0024997/1985",
   "case_title": "EKBERG, JAMES v. MCKEE, MICHAEL J. & MULLANE,",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-19T06:13:11.433Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,33 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 2,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "mckee",
+      "mullane"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "mckee",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/mckee.rows.ndjson",
+        "source_page": 1,
+        "source_row": 18,
+        "row_html_sha256": "54d59eb6299785458b4c60a7d85a9d87b9070bd0d444c3da6b882d8f4a100bfe"
+      },
+      {
+        "search_name": "mullane",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/mullane.rows.ndjson",
+        "source_page": 1,
+        "source_row": 6,
+        "row_html_sha256": "bcdbc58ec1c4a2320c5861a574e22365e3cc36c3415b9defa6a30e0765ab71a2"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +70,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "SIBEN & SIBEN, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "MICHAEL P. HUNT",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "EKBERG, JAMES",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "SIBEN & SIBEN, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "MCKEE, MICHAEL J. & MULLANE,",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "MICHAEL P. HUNT",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "02/25/1987",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "JOHN G. MCCARTHY",
+      "raw_text": "02/25/1987",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +184,29 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mckee:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mckee/page-001.html",
+      "html_sha256": "302c68f4bb9e6f2591bf73493c6a3346be3b41c71daa9f47ac69dd645f161380",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "54d59eb6299785458b4c60a7d85a9d87b9070bd0d444c3da6b882d8f4a100bfe"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mullane:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mullane/page-001.html",
+      "html_sha256": "3ed1ca1148ffb13f43948fb4650d391b790b7a34b47fa168c0882021adfc765d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "bcdbc58ec1c4a2320c5861a574e22365e3cc36c3415b9defa6a30e0765ab71a2"
     }
-  ]
+  ],
+  "judicial_officer": "JOHN G. MCCARTHY"
 }

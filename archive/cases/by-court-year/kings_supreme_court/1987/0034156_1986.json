@@ -11,15 +11,18 @@
   "index_year": "1987",
   "index_display": "0034156/1986",
   "case_title": "CHAN CHAU,SILK OI v. GELCO CORP",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-26T14:43:24.665Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +31,24 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 8
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "silk"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "silk",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/silk.rows.ndjson",
+        "source_page": 1,
+        "source_row": 20,
+        "row_html_sha256": "ee1b28d823923ab1e4d2f20407fbf8e6dd0a4bf29d4c952ce3acb247527d7578"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +62,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "BUDIN RS & G",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "LESTER SCHWAB KATZ & DWYER",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "CHAN CHAU,SILK OI",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "BUDIN RS & G",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "GELCO CORP",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "LESTER SCHWAB KATZ & DWYER",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "08/25/1989",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "GABRIEL M. KRAUSMAN",
+      "raw_text": "08/25/1989",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -275,6 +338,18 @@
       "kind": "appearances",
       "nested_kind": "document-list",
       "tab_key": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:silk:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/silk/page-001.html",
+      "html_sha256": "2486f5c1b7e1088f71a6d0a59f31caa20c29fdbb13540985b4b28bc7db4bff05",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "ee1b28d823923ab1e4d2f20407fbf8e6dd0a4bf29d4c952ce3acb247527d7578"
     }
-  ]
+  ],
+  "judicial_officer": "GABRIEL M. KRAUSMAN"
 }

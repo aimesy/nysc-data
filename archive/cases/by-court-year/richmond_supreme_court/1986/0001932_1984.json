@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T23:13:01.651Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sasso.rows.ndjson",
         "source_page": 1,
         "source_row": 17,
-        "row_html_sha256": "7938fb3507a13305b167f5c29b9a12eef31eda745884ff0ee4c2c3fc7acd99ea"
+        "row_html_sha256": "5c026bb54e103d6c917e21c8db935249a11f763455a568d9091be419b7bc79a4"
       }
     ]
   },
@@ -104,19 +107,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sasso/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sasso/00038-p001-r017-appearances-0001932_1984-01.html",
+      "html_sha256": "45c4d3dabeaa4055bc94e4f41b9badb77f41b5c720e1f871ae3cbcd65e514b9c",
+      "bytes_len": 3800,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=bqUokfv6RBfO9%2FRIS3Thew%3D%3D&county=AZTsdV2MCsp3Qmoe4XwZVA%3D%3D&civilCaseId=FFRSAGhWeWqkrStJqyHCxQ%3D%3D",
+      "captured_at": "2026-07-20T23:13:01.651Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sasso/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sasso/00037-p001-r017-case_detail-0001932_1984-01.html",
+      "html_sha256": "74c494ed869c5ccad4dd3fa043c3ec419a270edf82d854bc9af8573123f58fc2",
+      "bytes_len": 6661,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bqUokfv6RBfO9%2FRIS3Thew%3D%3D&county=AZTsdV2MCsp3Qmoe4XwZVA%3D%3D&motion=&docs=&adate=&civilCaseId=FFRSAGhWeWqkrStJqyHCxQ%3D%3D",
+      "captured_at": "2026-07-20T23:13:01.651Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:sasso:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/sasso/page-001.html",
-      "html_sha256": "21efda1247c5ff6d3405b7e8853f401a5ff87a13575d21f33b4da4ed3b8bccd6",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sasso:followup-page:001:capture:00037:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sasso/00037-p001-r017-case_detail-0001932_1984-01.html",
+      "html_sha256": "74c494ed869c5ccad4dd3fa043c3ec419a270edf82d854bc9af8573123f58fc2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bqUokfv6RBfO9%2FRIS3Thew%3D%3D&county=AZTsdV2MCsp3Qmoe4XwZVA%3D%3D&motion=&docs=&adate=&civilCaseId=FFRSAGhWeWqkrStJqyHCxQ%3D%3D",
       "page_number": 1,
       "table_row_number": 17,
-      "row_html_sha256": "7938fb3507a13305b167f5c29b9a12eef31eda745884ff0ee4c2c3fc7acd99ea"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sasso:followup-page:001:capture:00038:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sasso/00038-p001-r017-appearances-0001932_1984-01.html",
+      "html_sha256": "45c4d3dabeaa4055bc94e4f41b9badb77f41b5c720e1f871ae3cbcd65e514b9c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=bqUokfv6RBfO9%2FRIS3Thew%3D%3D&county=AZTsdV2MCsp3Qmoe4XwZVA%3D%3D&civilCaseId=FFRSAGhWeWqkrStJqyHCxQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:sasso:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sasso/page-001.html",
+      "html_sha256": "624535552f717a6a5d2016660dc4660fc2fed2d4a8cb235fe36df7acfee70c15",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 17,
+      "row_html_sha256": "5c026bb54e103d6c917e21c8db935249a11f763455a568d9091be419b7bc79a4"
     }
   ],
   "judicial_officer": "PETER P. CUSICK"

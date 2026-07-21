@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T11:19:10.040Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "tena",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/tena.rows.ndjson",
-        "source_page": 1,
-        "source_row": 4,
-        "row_html_sha256": "460f96315ada7bc66f363539ed48c171465d50260f2f3c3676ebbe33c41c47f6"
+        "source_page": 2,
+        "source_row": 14,
+        "row_html_sha256": "4a4a93bc86cc2bdc528f1a120ae23dc70093bd2b79ddbf2b4e4eb4467cc55b7d"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/tena/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00090-p002-r014-appearances-0006024_2003-01.html",
+      "html_sha256": "1f854ae21cf7c49947a0f8030c3c81289b1196dddde8b420e859ee473f674f36",
+      "bytes_len": 5563,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/23/2003&index=%2Fq9PmlzyJQYiOnGnrmPJGQ%3D%3D&county=gcnptZoypiYuCT8r7G6Esw%3D%3D&civilCaseId=XOiccHraHNNYH1RDFv4IQg%3D%3D",
+      "captured_at": "2026-07-21T11:19:10.040Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/tena/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00089-p002-r014-case_detail-0006024_2003-01.html",
+      "html_sha256": "ec2028e90ea87e44583955830f83f5730d60d2819774b0429c6f2bedc12f3a70",
+      "bytes_len": 6884,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2Fq9PmlzyJQYiOnGnrmPJGQ%3D%3D&county=gcnptZoypiYuCT8r7G6Esw%3D%3D&motion=&docs=&adate=12/23/2003&civilCaseId=XOiccHraHNNYH1RDFv4IQg%3D%3D",
+      "captured_at": "2026-07-21T11:19:10.040Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:tena:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/tena/page-001.html",
-      "html_sha256": "93bb698b6df5286c10af830ebe29fff72a7e3325df37c0493fcd6c4a9ef16b71",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
-      "page_number": 1,
-      "table_row_number": 4,
-      "row_html_sha256": "460f96315ada7bc66f363539ed48c171465d50260f2f3c3676ebbe33c41c47f6"
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:tena:followup-page:002:capture:00089:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00089-p002-r014-case_detail-0006024_2003-01.html",
+      "html_sha256": "ec2028e90ea87e44583955830f83f5730d60d2819774b0429c6f2bedc12f3a70",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2Fq9PmlzyJQYiOnGnrmPJGQ%3D%3D&county=gcnptZoypiYuCT8r7G6Esw%3D%3D&motion=&docs=&adate=12/23/2003&civilCaseId=XOiccHraHNNYH1RDFv4IQg%3D%3D",
+      "page_number": 2,
+      "table_row_number": 14,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:tena:followup-page:002:capture:00090:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tena/00090-p002-r014-appearances-0006024_2003-01.html",
+      "html_sha256": "1f854ae21cf7c49947a0f8030c3c81289b1196dddde8b420e859ee473f674f36",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/23/2003&index=%2Fq9PmlzyJQYiOnGnrmPJGQ%3D%3D&county=gcnptZoypiYuCT8r7G6Esw%3D%3D&civilCaseId=XOiccHraHNNYH1RDFv4IQg%3D%3D",
+      "page_number": 2,
+      "table_row_number": 14,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:tena:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tena/page-002.html",
+      "html_sha256": "a0fb23039bba9bea54ea20647cb9fb061921fa2508f996b16b759105f189ec64",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn13",
+      "page_number": 2,
+      "table_row_number": 14,
+      "row_html_sha256": "4a4a93bc86cc2bdc528f1a120ae23dc70093bd2b79ddbf2b4e4eb4467cc55b7d"
     }
   ],
   "judicial_officer": "DAMIAN J. AMODEO"

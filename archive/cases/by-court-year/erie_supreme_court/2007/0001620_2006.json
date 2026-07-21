@@ -14,8 +14,8 @@
   "case_type": "OTHER TORT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:44:36.847Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/corbi.rows.ndjson",
         "source_page": 1,
         "source_row": 17,
-        "row_html_sha256": "99d4be9a9af4acf436d452471c44655f2f6dc39666c86674cdf77419529f82ae"
+        "row_html_sha256": "7efc153ec0b905deb28a04443f98d521ee0b287d97c08674de40c80112904fdc"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/corbi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/corbi/00042-p001-r017-appearances-0001620_2006-01.html",
+      "html_sha256": "68e17cb936a96afc3445cc9e400572d90f5624b9088880cc3d62327c93d231c9",
+      "bytes_len": 9156,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/12/2009&index=1k67mOD1XVcNOU8pHgkXgQ%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&civilCaseId=DOYgnecKk8WfJmONa0flhA%3D%3D",
+      "captured_at": "2026-07-20T22:44:36.847Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/corbi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/corbi/00041-p001-r017-case_detail-0001620_2006-01.html",
+      "html_sha256": "4f4a58d5d4fbd26e5b2dc02af2c26b6cec9bffe12f08e079ec5a310ba96f9cf7",
+      "bytes_len": 7525,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=1k67mOD1XVcNOU8pHgkXgQ%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&motion=&docs=&adate=01/12/2009&civilCaseId=DOYgnecKk8WfJmONa0flhA%3D%3D",
+      "captured_at": "2026-07-20T22:44:36.847Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:corbi:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/corbi/page-001.html",
-      "html_sha256": "4e66bea73139943c2421544cda138b23b63ebddd4480c94e255dc8e38728090d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:corbi:followup-page:001:capture:00041:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/corbi/00041-p001-r017-case_detail-0001620_2006-01.html",
+      "html_sha256": "4f4a58d5d4fbd26e5b2dc02af2c26b6cec9bffe12f08e079ec5a310ba96f9cf7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=1k67mOD1XVcNOU8pHgkXgQ%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&motion=&docs=&adate=01/12/2009&civilCaseId=DOYgnecKk8WfJmONa0flhA%3D%3D",
       "page_number": 1,
       "table_row_number": 17,
-      "row_html_sha256": "99d4be9a9af4acf436d452471c44655f2f6dc39666c86674cdf77419529f82ae"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:corbi:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/corbi/00042-p001-r017-appearances-0001620_2006-01.html",
+      "html_sha256": "68e17cb936a96afc3445cc9e400572d90f5624b9088880cc3d62327c93d231c9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/12/2009&index=1k67mOD1XVcNOU8pHgkXgQ%3D%3D&county=wccOd35fRgWqPtjWS2hAEw%3D%3D&civilCaseId=DOYgnecKk8WfJmONa0flhA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:corbi:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/corbi/page-001.html",
+      "html_sha256": "835a47c5f3f2b4504c06ea16561785da7c9ae616b4de23efeee947dbee6f2b0c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 17,
+      "row_html_sha256": "7efc153ec0b905deb28a04443f98d521ee0b287d97c08674de40c80112904fdc"
     }
   ],
   "judicial_officer": "PATRICK NEMOYER"

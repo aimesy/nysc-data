@@ -11,15 +11,18 @@
   "index_year": "1982",
   "index_display": "432-82 (0000432/1982)",
   "case_title": "COVERED WAGON TRAIN, INC. v. CAMPBELL OIL CO. ALLE-CATT ASPHALT",
-  "case_type": null,
+  "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-24T16:17:21.604Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 14
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "catt"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "catt",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/catt.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "2ab6f4ad160398249357502245788babb603cef81c44a07c3a46488b15ca9c69"
+      }
+    ]
   },
   "parties": [
     {
@@ -49,7 +63,18 @@
   ],
   "attorneys": [],
   "representation": [],
-  "calendar": [],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "10/21/1983",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "HON PETER E CORNING",
+      "raw_text": "10/21/1983",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -387,6 +412,17 @@
     },
     {
       "source_system": "webcivil",
+      "capture_id": "20260719044730:catt:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/catt/page-001.html",
+      "html_sha256": "e7e9949d093ea69215718b30fd81bbdc26c8266f1bdc07f5368c98e505874711",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "2ab6f4ad160398249357502245788babb603cef81c44a07c3a46488b15ca9c69"
+    },
+    {
+      "source_system": "webcivil",
       "source_profile": "nysc_webcivil",
       "capture_id": "followup-docprobe-20260623-01:alle:followup-page:001:capture:00001:response:01",
       "raw_path": "raw/webcivil/case-followups/followup-docprobe-20260623-01/alle/00001-p001-r001-case_detail-0000432_1982-01.html",
@@ -437,5 +473,6 @@
       "nested_kind": "",
       "tab_key": "appearances"
     }
-  ]
+  ],
+  "judicial_officer": "HON PETER E CORNING"
 }

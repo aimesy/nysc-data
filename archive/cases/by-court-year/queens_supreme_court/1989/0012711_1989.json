@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T15:31:41.876Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 2,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -44,7 +48,7 @@
         "source_file": "archive/webcivil/results/bahr.rows.ndjson",
         "source_page": 1,
         "source_row": 14,
-        "row_html_sha256": "c61e3e79c8dc2583c6912bbb74792d1c8b0d59003b4ec01feb98c9b550308d34"
+        "row_html_sha256": "e57070c3da07a8a2987ae2e6e56b039e186eff0eee4c6eea924d629f72c5b2b1"
       },
       {
         "search_name": "roder",
@@ -52,7 +56,7 @@
         "source_file": "archive/webcivil/results/roder.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "71199a767c0651921ec110be7ae8a48377e714f7198891ce7e78b28be354e730"
+        "row_html_sha256": "19701e2856c6d4fccff018f4ba3f451c938204a265578ad7033611597c2ca96b"
       }
     ]
   },
@@ -125,30 +129,112 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/roder/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/roder/00023-p001-r010-appearances-0012711_1989-01.html",
+      "html_sha256": "d71c8349e961da7c27ef0c702b900ac1563f4bc62b41a1bc548fb6543bb5e1ca",
+      "bytes_len": 7603,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/24/1995&index=xAFShueBJlsxJEpcQG6q%2Fg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=wITVNG1zxEmXT8o77OaQUA%3D%3D",
+      "captured_at": "2026-07-20T15:31:41.876Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/roder/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/roder/00022-p001-r010-case_detail-0012711_1989-01.html",
+      "html_sha256": "ab02aa5e71814b26f2bd5f8237a6a3cb7530f913499eee2d8d2073eeed3432fd",
+      "bytes_len": 7178,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=xAFShueBJlsxJEpcQG6q%2Fg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=M&docs=&adate=05/24/1995&civilCaseId=wITVNG1zxEmXT8o77OaQUA%3D%3D",
+      "captured_at": "2026-07-20T15:31:41.876Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/roder/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/roder/00024-p001-r010-motions-0012711_1989-01.html",
+      "html_sha256": "33b6ee29c17ce8d05b9908c0fd6fba71c8e9f5124db9ea733e46366bdcc8bc5b",
+      "bytes_len": 6390,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=xAFShueBJlsxJEpcQG6q%2Fg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=wITVNG1zxEmXT8o77OaQUA%3D%3D",
+      "captured_at": "2026-07-20T15:31:41.876Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bahr:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bahr/page-001.html",
-      "html_sha256": "29feb0442447e7893f7ef5a83e22e1d5dbe50579409b339490f9023152113b9f",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:roder:followup-page:001:capture:00022:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/roder/00022-p001-r010-case_detail-0012711_1989-01.html",
+      "html_sha256": "ab02aa5e71814b26f2bd5f8237a6a3cb7530f913499eee2d8d2073eeed3432fd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=xAFShueBJlsxJEpcQG6q%2Fg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=M&docs=&adate=05/24/1995&civilCaseId=wITVNG1zxEmXT8o77OaQUA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:roder:followup-page:001:capture:00023:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/roder/00023-p001-r010-appearances-0012711_1989-01.html",
+      "html_sha256": "d71c8349e961da7c27ef0c702b900ac1563f4bc62b41a1bc548fb6543bb5e1ca",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/24/1995&index=xAFShueBJlsxJEpcQG6q%2Fg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=wITVNG1zxEmXT8o77OaQUA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:roder:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/roder/00024-p001-r010-motions-0012711_1989-01.html",
+      "html_sha256": "33b6ee29c17ce8d05b9908c0fd6fba71c8e9f5124db9ea733e46366bdcc8bc5b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=xAFShueBJlsxJEpcQG6q%2Fg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=wITVNG1zxEmXT8o77OaQUA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:bahr:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/bahr/page-001.html",
+      "html_sha256": "d6bc002d889def09755275d467332d427e517097d0d590c60e0ff81cbbdbace4",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "lane": "sfscvpn15",
       "page_number": 1,
       "table_row_number": 14,
-      "row_html_sha256": "c61e3e79c8dc2583c6912bbb74792d1c8b0d59003b4ec01feb98c9b550308d34"
+      "row_html_sha256": "e57070c3da07a8a2987ae2e6e56b039e186eff0eee4c6eea924d629f72c5b2b1"
     },
     {
       "source_system": "webcivil",
       "capture_id": "20260719044730:roder:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/roder/page-001.html",
-      "html_sha256": "faa9bf88157c7e44b876bf883f0b44a55ee3ff5b2121f2f6d31979280120897b",
+      "html_sha256": "097446c3a37c7d391925cc999a78638ac88c631f65e64a7779e89551ac6c98a1",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn13",
+      "lane": "sfscvpn12",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "71199a767c0651921ec110be7ae8a48377e714f7198891ce7e78b28be354e730"
+      "row_html_sha256": "19701e2856c6d4fccff018f4ba3f451c938204a265578ad7033611597c2ca96b"
     }
   ],
   "judicial_officer": "ALAN LE VINE"

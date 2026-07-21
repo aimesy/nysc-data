@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T06:25:23.830Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,26 +24,30 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "kutn"
+      "ronan"
     ],
     "result_row_refs": [
       {
-        "search_name": "kutn",
-        "query_type": "attorney-prefix",
-        "source_file": "archive/webcivil/results/kutn.rows.ndjson",
+        "search_name": "ronan",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/ronan.rows.ndjson",
         "source_page": 1,
-        "source_row": 3,
-        "row_html_sha256": "b71122ce97f3a9cd1bad52c7057a2dc024b7784b7832814770e1382d2b358135"
+        "source_row": 6,
+        "row_html_sha256": "edac94f377aaec7300778150e32be92a814250376046604b1c3792c86d3bc741"
       }
     ]
   },
@@ -98,19 +102,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ronan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ronan/00016-p001-r006-appearances-0013809_1982-01.html",
+      "html_sha256": "6ce62c1800f86b1af84b43f41ff7988e2fe7ce50bb9e7ab1eaf5ab4b326bb875",
+      "bytes_len": 6245,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/13/1988&index=ElQjKhE1myaVqgcX03Djog%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=gYg0ymeMjetSDRljYU7qgg%3D%3D",
+      "captured_at": "2026-07-21T06:25:23.830Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ronan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ronan/00015-p001-r006-case_detail-0013809_1982-01.html",
+      "html_sha256": "7eaf2eb200eaba5ee891c083ca3a43b403f9b4f2d47e1be1438b1911b5465644",
+      "bytes_len": 6876,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ElQjKhE1myaVqgcX03Djog%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=06/13/1988&civilCaseId=gYg0ymeMjetSDRljYU7qgg%3D%3D",
+      "captured_at": "2026-07-21T06:25:23.830Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ronan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ronan/00017-p001-r006-motions-0013809_1982-01.html",
+      "html_sha256": "da640dbad2af0f8330ca662e3c8b186eec2d1572c851b1d26e6dcffee1afe8b7",
+      "bytes_len": 6356,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=ElQjKhE1myaVqgcX03Djog%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=gYg0ymeMjetSDRljYU7qgg%3D%3D",
+      "captured_at": "2026-07-21T06:25:23.830Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:kutn:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/kutn/page-001.html",
-      "html_sha256": "68b454cf0c63ff9d8ea78bdfe9f96c91382039bf60f108910d47956fab2359bd",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ronan:followup-page:001:capture:00015:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ronan/00015-p001-r006-case_detail-0013809_1982-01.html",
+      "html_sha256": "7eaf2eb200eaba5ee891c083ca3a43b403f9b4f2d47e1be1438b1911b5465644",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ElQjKhE1myaVqgcX03Djog%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=06/13/1988&civilCaseId=gYg0ymeMjetSDRljYU7qgg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ronan:followup-page:001:capture:00016:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ronan/00016-p001-r006-appearances-0013809_1982-01.html",
+      "html_sha256": "6ce62c1800f86b1af84b43f41ff7988e2fe7ce50bb9e7ab1eaf5ab4b326bb875",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/13/1988&index=ElQjKhE1myaVqgcX03Djog%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=gYg0ymeMjetSDRljYU7qgg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ronan:followup-page:001:capture:00017:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ronan/00017-p001-r006-motions-0013809_1982-01.html",
+      "html_sha256": "da640dbad2af0f8330ca662e3c8b186eec2d1572c851b1d26e6dcffee1afe8b7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=ElQjKhE1myaVqgcX03Djog%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=gYg0ymeMjetSDRljYU7qgg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:ronan:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/ronan/page-001.html",
+      "html_sha256": "2b709ccfc8e2f3b532445227fdd484b60647a942a4f4877bf73534d7e01161ed",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "sfscvpn11",
       "page_number": 1,
-      "table_row_number": 3,
-      "row_html_sha256": "b71122ce97f3a9cd1bad52c7057a2dc024b7784b7832814770e1382d2b358135"
+      "table_row_number": 6,
+      "row_html_sha256": "edac94f377aaec7300778150e32be92a814250376046604b1c3792c86d3bc741"
     }
   ],
   "judicial_officer": "JULIUS VINIK"

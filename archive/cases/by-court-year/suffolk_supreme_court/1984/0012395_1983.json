@@ -14,8 +14,8 @@
   "case_type": "Tort-Other",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:20:35.514Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/mayor.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
-        "row_html_sha256": "0e78dd29ce3c5b64e0642aff8f0711636276c0e0cb316d3ca34fc3aa52e549c5"
+        "row_html_sha256": "0146a73f2aea1d97ba6d724116531f27fb916070f62d54e8a45729ef046bcb05"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00007-p001-r003-appearances-0012395_1983-01.html",
+      "html_sha256": "3c49a8fd428b3e1ae953144ecdb0a05e9ad73483a7fa980d52e2710f739a322c",
+      "bytes_len": 7568,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/24/1986&index=nI3PZAksCT8mFq2W7uNTcQ%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=nC3qHZfEa4zEwK7B3AHB0Q%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00006-p001-r003-case_detail-0012395_1983-01.html",
+      "html_sha256": "bd1e968b331e10128ee439151e6175b4b25694dec9d4eddf72746f1c4508c12d",
+      "bytes_len": 7099,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=nI3PZAksCT8mFq2W7uNTcQ%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=11/24/1986&civilCaseId=nC3qHZfEa4zEwK7B3AHB0Q%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:mayor:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/mayor/page-001.html",
-      "html_sha256": "953c49d7a822a82480986b8b5b83c8f3e369dca9f02cb62fd9b1e82b6f98a903",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00006-p001-r003-case_detail-0012395_1983-01.html",
+      "html_sha256": "bd1e968b331e10128ee439151e6175b4b25694dec9d4eddf72746f1c4508c12d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=nI3PZAksCT8mFq2W7uNTcQ%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=11/24/1986&civilCaseId=nC3qHZfEa4zEwK7B3AHB0Q%3D%3D",
       "page_number": 1,
       "table_row_number": 3,
-      "row_html_sha256": "0e78dd29ce3c5b64e0642aff8f0711636276c0e0cb316d3ca34fc3aa52e549c5"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00007-p001-r003-appearances-0012395_1983-01.html",
+      "html_sha256": "3c49a8fd428b3e1ae953144ecdb0a05e9ad73483a7fa980d52e2710f739a322c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/24/1986&index=nI3PZAksCT8mFq2W7uNTcQ%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=nC3qHZfEa4zEwK7B3AHB0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mayor:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mayor/page-001.html",
+      "html_sha256": "6216e7125fe42ff4b1968d12aed65fbc7699596168c036c0010f587db066144e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "0146a73f2aea1d97ba6d724116531f27fb916070f62d54e8a45729ef046bcb05"
     }
   ],
   "judicial_officer": "MELVYN TANENBAUM"

@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T10:19:57.241Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/bany.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "40770d97225bf2d7987cbc0230ceadbc3082d91f45f8dc381f4afdd80cde0ea2"
+        "row_html_sha256": "577c3dbc0e9868f2d96914239f9a1693da912144245b23d761d2927d08faef2c"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bany/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bany/00052-p001-r022-appearances-603451_2015-01.html",
+      "html_sha256": "d9a26c55031f9222820d4ccf5fd635ef40d008b47000259fc1af3300b5222f59",
+      "bytes_len": 11352,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/06/2020&index=Jw3SJUDbL7M8eyEtdOgqBw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=IiIF9OrBT_PLUS_cF6ZyKiLAAAg%3D%3D",
+      "captured_at": "2026-07-21T10:19:57.241Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bany/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bany/00051-p001-r022-case_detail-603451_2015-01.html",
+      "html_sha256": "1e3e1508c719cd60dc0f374473e15568a2c0b8e6f56f5f5db1e2d506817e2545",
+      "bytes_len": 8833,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Jw3SJUDbL7M8eyEtdOgqBw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=M&docs=&adate=05/06/2020&civilCaseId=IiIF9OrBT_PLUS_cF6ZyKiLAAAg%3D%3D",
+      "captured_at": "2026-07-21T10:19:57.241Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bany/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bany/00053-p001-r022-motions-603451_2015-01.html",
+      "html_sha256": "7925161ee8d65cc4ff3e544537e7983f83a86de2150f236df9f24b8f3191ce9d",
+      "bytes_len": 7255,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Jw3SJUDbL7M8eyEtdOgqBw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=IiIF9OrBT_PLUS_cF6ZyKiLAAAg%3D%3D",
+      "captured_at": "2026-07-21T10:19:57.241Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bany:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bany/page-001.html",
-      "html_sha256": "4cc37cf728adf50be32ce0d1dcc19bb643e8becf0f55413c6c07474c52fe0335",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bany:followup-page:001:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bany/00051-p001-r022-case_detail-603451_2015-01.html",
+      "html_sha256": "1e3e1508c719cd60dc0f374473e15568a2c0b8e6f56f5f5db1e2d506817e2545",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Jw3SJUDbL7M8eyEtdOgqBw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=M&docs=&adate=05/06/2020&civilCaseId=IiIF9OrBT_PLUS_cF6ZyKiLAAAg%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "40770d97225bf2d7987cbc0230ceadbc3082d91f45f8dc381f4afdd80cde0ea2"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bany:followup-page:001:capture:00052:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bany/00052-p001-r022-appearances-603451_2015-01.html",
+      "html_sha256": "d9a26c55031f9222820d4ccf5fd635ef40d008b47000259fc1af3300b5222f59",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/06/2020&index=Jw3SJUDbL7M8eyEtdOgqBw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=IiIF9OrBT_PLUS_cF6ZyKiLAAAg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bany:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bany/00053-p001-r022-motions-603451_2015-01.html",
+      "html_sha256": "7925161ee8d65cc4ff3e544537e7983f83a86de2150f236df9f24b8f3191ce9d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Jw3SJUDbL7M8eyEtdOgqBw%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=IiIF9OrBT_PLUS_cF6ZyKiLAAAg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:bany:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/bany/page-001.html",
+      "html_sha256": "8a6037e779885eafe74ab56fce69661deff8a7e3b7f3225fbf035a1d6d297343",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "577c3dbc0e9868f2d96914239f9a1693da912144245b23d761d2927d08faef2c"
     }
   ],
   "judicial_officer": "Heckman, Hon. Howard"

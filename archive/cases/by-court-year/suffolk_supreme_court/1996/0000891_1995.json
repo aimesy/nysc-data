@@ -14,8 +14,8 @@
   "case_type": "Tort-Motor Vehicle",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T03:44:21.019Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/ging.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "8fdcf074e5a25f0d80c98048e8ddf5d11727c74904bcd3335de984e7e76cb2c2"
+        "row_html_sha256": "e989f36808bff74e3dd6c51ba3d8b8a74edc008c0ec98ec69cf553ecaa3ca93b"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ging/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ging/00059-p001-r022-appearances-0000891_1995-01.html",
+      "html_sha256": "2160bc084e685d0871e41735469059b1e0f97f23c787df85250ccbf73d850d06",
+      "bytes_len": 8286,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/17/2000&index=jwRZFwqs2g13j92I71y2qA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=HtNKYi44utYovMjVo12eYA%3D%3D",
+      "captured_at": "2026-07-21T03:44:21.019Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ging/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ging/00058-p001-r022-case_detail-0000891_1995-01.html",
+      "html_sha256": "005c184b456ced0f2926b979b17c8a8fe2e9fbbb15202041b8add2f68f00fafe",
+      "bytes_len": 7029,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=jwRZFwqs2g13j92I71y2qA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=04/17/2000&civilCaseId=HtNKYi44utYovMjVo12eYA%3D%3D",
+      "captured_at": "2026-07-21T03:44:21.019Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:ging:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/ging/page-001.html",
-      "html_sha256": "cd45d0d2a439465372d2d3a3a0d500579b93dfcb82853c411d0052b02519edfc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ging:followup-page:001:capture:00058:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ging/00058-p001-r022-case_detail-0000891_1995-01.html",
+      "html_sha256": "005c184b456ced0f2926b979b17c8a8fe2e9fbbb15202041b8add2f68f00fafe",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=jwRZFwqs2g13j92I71y2qA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=04/17/2000&civilCaseId=HtNKYi44utYovMjVo12eYA%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "8fdcf074e5a25f0d80c98048e8ddf5d11727c74904bcd3335de984e7e76cb2c2"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ging:followup-page:001:capture:00059:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ging/00059-p001-r022-appearances-0000891_1995-01.html",
+      "html_sha256": "2160bc084e685d0871e41735469059b1e0f97f23c787df85250ccbf73d850d06",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/17/2000&index=jwRZFwqs2g13j92I71y2qA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=HtNKYi44utYovMjVo12eYA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:ging:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/ging/page-001.html",
+      "html_sha256": "3b4480dad719dd0b8c9777d67f18172c5bf1f7aed29b3d6d164e9f8dbc1432f3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "e989f36808bff74e3dd6c51ba3d8b8a74edc008c0ec98ec69cf553ecaa3ca93b"
     }
   ],
   "judicial_officer": "JAMES A. GOWAN"

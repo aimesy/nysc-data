@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MAT2",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T02:55:56.590Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/toyo.rows.ndjson",
         "source_page": 1,
         "source_row": 18,
-        "row_html_sha256": "9c014705bb477a0c232b7ae51716106f772af80f0842177456c9266bec63f168"
+        "row_html_sha256": "304e512927b9d6c6e1d8788c692f6d9e2eeda11dba6bc0dfbad11bd418265866"
       }
     ]
   },
@@ -77,19 +80,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/toyo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00046-p001-r018-appearances-0312246_2003-01.html",
+      "html_sha256": "28b9d726eee3eba8988f11eb7ce6a1ba053dd48770218685ecb3c1578b253632",
+      "bytes_len": 5561,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/26/2003&index=tFxJ3gcjXRlNRVC5Se82oQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=LRS6Mad3Q%2FPXIaE26hYsSw%3D%3D",
+      "captured_at": "2026-07-21T02:55:56.590Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/toyo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00045-p001-r018-case_detail-0312246_2003-01.html",
+      "html_sha256": "882f0e41e35d0eab59278ce4eb92f366cb6f39ebd96e5a002c526a39e685428c",
+      "bytes_len": 6201,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tFxJ3gcjXRlNRVC5Se82oQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=&docs=&adate=11/26/2003&civilCaseId=LRS6Mad3Q%2FPXIaE26hYsSw%3D%3D",
+      "captured_at": "2026-07-21T02:55:56.590Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:toyo:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/toyo/page-001.html",
-      "html_sha256": "550a1a08c6a965be2daccb464bf1b73ddf24585f8547f9dbc744a621fb844cd6",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn06",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:toyo:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00045-p001-r018-case_detail-0312246_2003-01.html",
+      "html_sha256": "882f0e41e35d0eab59278ce4eb92f366cb6f39ebd96e5a002c526a39e685428c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tFxJ3gcjXRlNRVC5Se82oQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=&docs=&adate=11/26/2003&civilCaseId=LRS6Mad3Q%2FPXIaE26hYsSw%3D%3D",
       "page_number": 1,
       "table_row_number": 18,
-      "row_html_sha256": "9c014705bb477a0c232b7ae51716106f772af80f0842177456c9266bec63f168"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:toyo:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00046-p001-r018-appearances-0312246_2003-01.html",
+      "html_sha256": "28b9d726eee3eba8988f11eb7ce6a1ba053dd48770218685ecb3c1578b253632",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/26/2003&index=tFxJ3gcjXRlNRVC5Se82oQ%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=LRS6Mad3Q%2FPXIaE26hYsSw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:toyo:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/toyo/page-001.html",
+      "html_sha256": "f772c74aa0a903582e7ae5625c545a87339ac774769b63addb17826bfc0e32cf",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "304e512927b9d6c6e1d8788c692f6d9e2eeda11dba6bc0dfbad11bd418265866"
     }
   ]
 }

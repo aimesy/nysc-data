@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T13:11:36.492Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "drab",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/drab.rows.ndjson",
         "source_page": 1,
-        "source_row": 1,
-        "row_html_sha256": "34a3f9cff2735fb546cce28b139a3fc09715fda5bda1dc00d27042e9fe85d731"
+        "source_row": 12,
+        "row_html_sha256": "fd35d7607b126dc9b4db3e8335df7189ff8a91091ec37ab05756747074de0ab1"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/drab/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00028-p001-r012-appearances-0017475_2001-01.html",
+      "html_sha256": "ee9647ff21efe86be0fa05b27a25118b532dfca92fa1b6f8ca8620e9a288d07c",
+      "bytes_len": 6286,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/11/2003&index=BhZ5IPhlBozjX7PqVB_PLUS_LoA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=PlTM1W7W8Dm4Q21AbLl3Lg%3D%3D",
+      "captured_at": "2026-07-20T13:11:36.492Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/drab/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00027-p001-r012-case_detail-0017475_2001-01.html",
+      "html_sha256": "50c582ac53068f71616055fa0aa6c4f7a4f3f6499f6052b91e6881001dbdd53a",
+      "bytes_len": 6893,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BhZ5IPhlBozjX7PqVB_PLUS_LoA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=02/11/2003&civilCaseId=PlTM1W7W8Dm4Q21AbLl3Lg%3D%3D",
+      "captured_at": "2026-07-20T13:11:36.492Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:drab:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/drab/page-001.html",
-      "html_sha256": "a3fd0f7e04e1e2d508fa7b35c8d9e4fb437e47163d8161296dafff6d18d960cc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:drab:followup-page:001:capture:00027:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00027-p001-r012-case_detail-0017475_2001-01.html",
+      "html_sha256": "50c582ac53068f71616055fa0aa6c4f7a4f3f6499f6052b91e6881001dbdd53a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BhZ5IPhlBozjX7PqVB_PLUS_LoA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=02/11/2003&civilCaseId=PlTM1W7W8Dm4Q21AbLl3Lg%3D%3D",
       "page_number": 1,
-      "table_row_number": 1,
-      "row_html_sha256": "34a3f9cff2735fb546cce28b139a3fc09715fda5bda1dc00d27042e9fe85d731"
+      "table_row_number": 12,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:drab:followup-page:001:capture:00028:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00028-p001-r012-appearances-0017475_2001-01.html",
+      "html_sha256": "ee9647ff21efe86be0fa05b27a25118b532dfca92fa1b6f8ca8620e9a288d07c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/11/2003&index=BhZ5IPhlBozjX7PqVB_PLUS_LoA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=PlTM1W7W8Dm4Q21AbLl3Lg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:drab:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/drab/page-001.html",
+      "html_sha256": "e5b68cfb7982d9f2ac0797515f11daf8c547d65127db4382bb1f78c78d5a00fb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 12,
+      "row_html_sha256": "fd35d7607b126dc9b4db3e8335df7189ff8a91091ec37ab05756747074de0ab1"
     }
   ],
   "judicial_officer": "JOHN C. BIVONA"

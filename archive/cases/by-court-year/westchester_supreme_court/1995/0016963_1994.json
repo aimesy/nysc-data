@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:36:15.224Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/gren.rows.ndjson",
         "source_page": 1,
         "source_row": 5,
-        "row_html_sha256": "05507cdd67baca75723806e4663c9f2e81d8764021c7c39b0e7d21642ceb5333"
+        "row_html_sha256": "02804e59b804cd2a6d7caa74fa57f8a4cecc3206c5a78de576c92a6b200a9b23"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gren/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00013-p001-r005-appearances-0016963_1994-01.html",
+      "html_sha256": "654b950ccab81101c110bdc5af425356e04268e1369aa57f7f500eeadd431439",
+      "bytes_len": 6196,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/14/1995&index=Ce%2Fso7Fa77qpiiWMWzCcnQ%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=FPzhbMRpLMS3hHUr8yn5Gw%3D%3D",
+      "captured_at": "2026-07-21T00:36:15.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gren/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00012-p001-r005-case_detail-0016963_1994-01.html",
+      "html_sha256": "3b6949e9f6b4505c998e0d4da86fa78f8bbf464ba1c5e62b3d3f1041d8723ba0",
+      "bytes_len": 6896,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Ce%2Fso7Fa77qpiiWMWzCcnQ%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=M&docs=&adate=07/14/1995&civilCaseId=FPzhbMRpLMS3hHUr8yn5Gw%3D%3D",
+      "captured_at": "2026-07-21T00:36:15.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gren/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00014-p001-r005-motions-0016963_1994-01.html",
+      "html_sha256": "6e69e423986f41d82efee6f73cdc270101839e9a9acda32a49b4fd070dc84a18",
+      "bytes_len": 7266,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Ce%2Fso7Fa77qpiiWMWzCcnQ%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=FPzhbMRpLMS3hHUr8yn5Gw%3D%3D",
+      "captured_at": "2026-07-21T00:36:15.224Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:gren:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/gren/page-001.html",
-      "html_sha256": "1b1a040958fc4122532b879ce82a00e85c8f463a2d7bfbb51656ffb1f7d35a0f",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gren:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00012-p001-r005-case_detail-0016963_1994-01.html",
+      "html_sha256": "3b6949e9f6b4505c998e0d4da86fa78f8bbf464ba1c5e62b3d3f1041d8723ba0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Ce%2Fso7Fa77qpiiWMWzCcnQ%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=M&docs=&adate=07/14/1995&civilCaseId=FPzhbMRpLMS3hHUr8yn5Gw%3D%3D",
       "page_number": 1,
       "table_row_number": 5,
-      "row_html_sha256": "05507cdd67baca75723806e4663c9f2e81d8764021c7c39b0e7d21642ceb5333"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gren:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00013-p001-r005-appearances-0016963_1994-01.html",
+      "html_sha256": "654b950ccab81101c110bdc5af425356e04268e1369aa57f7f500eeadd431439",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/14/1995&index=Ce%2Fso7Fa77qpiiWMWzCcnQ%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=FPzhbMRpLMS3hHUr8yn5Gw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gren:followup-page:001:capture:00014:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gren/00014-p001-r005-motions-0016963_1994-01.html",
+      "html_sha256": "6e69e423986f41d82efee6f73cdc270101839e9a9acda32a49b4fd070dc84a18",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Ce%2Fso7Fa77qpiiWMWzCcnQ%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=FPzhbMRpLMS3hHUr8yn5Gw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:gren:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/gren/page-001.html",
+      "html_sha256": "aaa96adf57b756926e7f19ca7f1ead7f6b1d8725603c4e544c22f568770494a6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "02804e59b804cd2a6d7caa74fa57f8a4cecc3206c5a78de576c92a6b200a9b23"
     }
   ],
   "judicial_officer": "W. DENIS DONOVAN"

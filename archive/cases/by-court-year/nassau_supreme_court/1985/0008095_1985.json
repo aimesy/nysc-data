@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T02:01:07.795Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/hagan.rows.ndjson",
         "source_page": 1,
         "source_row": 7,
-        "row_html_sha256": "2b375076c99485f0a02ecfa946bf4c711b51871c2c9b6506bc23f2024d844a1b"
+        "row_html_sha256": "42f9b38b666ba241508e46bdf529b016dd323b8d3cef75ddf52b2b0ad23cde3e"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/hagan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00016-p001-r007-appearances-0008095_1985-01.html",
+      "html_sha256": "459cb6461225fcef4f73a696b9f3d4fa4da428c613ed443f3aa59ee6275f7f9b",
+      "bytes_len": 14321,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/13/1988&index=fHsHLbxXdaYs1ic9zXbI3w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=jfgTIP1n656wQgFlZBWPow%3D%3D",
+      "captured_at": "2026-07-21T02:01:07.795Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/hagan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00015-p001-r007-case_detail-0008095_1985-01.html",
+      "html_sha256": "fe54809482c75eef8cff3e39233fa33ddf4ece3cee89bcbad00f24c2b229efff",
+      "bytes_len": 6995,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fHsHLbxXdaYs1ic9zXbI3w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=12/13/1988&civilCaseId=jfgTIP1n656wQgFlZBWPow%3D%3D",
+      "captured_at": "2026-07-21T02:01:07.795Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:hagan:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/hagan/page-001.html",
-      "html_sha256": "9a728108c3accf3379bb1d2a4e74497224c66638f7bb9e82f4d1348b0e450875",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:hagan:followup-page:001:capture:00015:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00015-p001-r007-case_detail-0008095_1985-01.html",
+      "html_sha256": "fe54809482c75eef8cff3e39233fa33ddf4ece3cee89bcbad00f24c2b229efff",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fHsHLbxXdaYs1ic9zXbI3w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=12/13/1988&civilCaseId=jfgTIP1n656wQgFlZBWPow%3D%3D",
       "page_number": 1,
       "table_row_number": 7,
-      "row_html_sha256": "2b375076c99485f0a02ecfa946bf4c711b51871c2c9b6506bc23f2024d844a1b"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:hagan:followup-page:001:capture:00016:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00016-p001-r007-appearances-0008095_1985-01.html",
+      "html_sha256": "459cb6461225fcef4f73a696b9f3d4fa4da428c613ed443f3aa59ee6275f7f9b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/13/1988&index=fHsHLbxXdaYs1ic9zXbI3w%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=jfgTIP1n656wQgFlZBWPow%3D%3D",
+      "page_number": 1,
+      "table_row_number": 7,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:hagan:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/hagan/page-001.html",
+      "html_sha256": "4c39fdb8c9b59107bd437a8c491c2fe6762544b923be2a0f91722ff0a709e403",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 7,
+      "row_html_sha256": "42f9b38b666ba241508e46bdf529b016dd323b8d3cef75ddf52b2b0ad23cde3e"
     }
   ],
   "judicial_officer": "TAP J JURY"

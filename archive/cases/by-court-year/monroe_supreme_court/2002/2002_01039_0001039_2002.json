@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T09:03:35.387Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "meise",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/meise.rows.ndjson",
         "source_page": 1,
-        "source_row": 1,
-        "row_html_sha256": "a4c569488685d33b65489031918c9fa240b97bf264b37d6240fee18afec13701"
+        "source_row": 4,
+        "row_html_sha256": "8e18516e58a24cfa7cd40704de0d5c8108e5366a008d85be65dbb8691b641ee0"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meise/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00009-p001-r004-appearances-0001039_2002-01.html",
+      "html_sha256": "c723e71f1253693e6a93986ef8fed97fb1fb47e3050ad32edd3009442ada95b3",
+      "bytes_len": 6230,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/22/2002&index=MmUlNjU0qVX4H4QTyG8yxg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&civilCaseId=TPWwqpwKCnYnZi8KBXBDvA%3D%3D",
+      "captured_at": "2026-07-21T09:03:35.387Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meise/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00008-p001-r004-case_detail-0001039_2002-01.html",
+      "html_sha256": "a554bddf433c84bcad44cd1f21c44c3fde5f357d485cb564b29174ad6ca60573",
+      "bytes_len": 7458,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=MmUlNjU0qVX4H4QTyG8yxg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&motion=&docs=&adate=03/22/2002&civilCaseId=TPWwqpwKCnYnZi8KBXBDvA%3D%3D",
+      "captured_at": "2026-07-21T09:03:35.387Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:meise:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/meise/page-001.html",
-      "html_sha256": "013a28cd88c8072f55fee27dacf054748b5202ac22af9bd296e5faf0c25b74fc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meise:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00008-p001-r004-case_detail-0001039_2002-01.html",
+      "html_sha256": "a554bddf433c84bcad44cd1f21c44c3fde5f357d485cb564b29174ad6ca60573",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=MmUlNjU0qVX4H4QTyG8yxg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&motion=&docs=&adate=03/22/2002&civilCaseId=TPWwqpwKCnYnZi8KBXBDvA%3D%3D",
       "page_number": 1,
-      "table_row_number": 1,
-      "row_html_sha256": "a4c569488685d33b65489031918c9fa240b97bf264b37d6240fee18afec13701"
+      "table_row_number": 4,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meise:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00009-p001-r004-appearances-0001039_2002-01.html",
+      "html_sha256": "c723e71f1253693e6a93986ef8fed97fb1fb47e3050ad32edd3009442ada95b3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/22/2002&index=MmUlNjU0qVX4H4QTyG8yxg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&civilCaseId=TPWwqpwKCnYnZi8KBXBDvA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:meise:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/meise/page-001.html",
+      "html_sha256": "c4d5c0d947b4c80284e09ab0454b7ced31747b026e78bbe84f25b1791e7de454",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 4,
+      "row_html_sha256": "8e18516e58a24cfa7cd40704de0d5c8108e5366a008d85be65dbb8691b641ee0"
     }
   ],
   "judicial_officer": "HON. ROBERT J. LUNN"

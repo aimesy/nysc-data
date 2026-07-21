@@ -14,8 +14,8 @@
   "case_type": "RP-Mortgage Foreclosure-Residential",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T17:29:48.331Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/deso.rows.ndjson",
         "source_page": 1,
         "source_row": 18,
-        "row_html_sha256": "ac0cab5082d9918f491e26fdad85e87b72f269085d43830e759f1336a53adf5a"
+        "row_html_sha256": "cbb40017834899b6ddffea069876af4212056ef32a7a65416ee3d83840e2ea9b"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/deso/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00046-p001-r018-appearances-900800_2015-01.html",
+      "html_sha256": "9de00336118e532360079e4ac5f41d70018facfc30271267a5157dde25ef962b",
+      "bytes_len": 6944,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/2018&index=k6yl5VIhP%2FoCeRIFjVt00A%3D%3D&county=X0OA5vWxmBJFVp3u8HKhcg%3D%3D&civilCaseId=qHNSR0UENfAVl3qOHo2l6w%3D%3D",
+      "captured_at": "2026-07-20T17:29:48.331Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/deso/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00045-p001-r018-case_detail-900800_2015-01.html",
+      "html_sha256": "6da02f0052dad409c0f524e966bd2ff9d0210b90c7f9cfe8d9c393508266b2c7",
+      "bytes_len": 8543,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=k6yl5VIhP%2FoCeRIFjVt00A%3D%3D&county=X0OA5vWxmBJFVp3u8HKhcg%3D%3D&motion=&docs=&adate=02/09/2018&civilCaseId=qHNSR0UENfAVl3qOHo2l6w%3D%3D",
+      "captured_at": "2026-07-20T17:29:48.331Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:deso:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/deso/page-001.html",
-      "html_sha256": "86a372b45b6125524950166171ab8c779b01b65b985d084de640591b7fd350ae",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn06",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:deso:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00045-p001-r018-case_detail-900800_2015-01.html",
+      "html_sha256": "6da02f0052dad409c0f524e966bd2ff9d0210b90c7f9cfe8d9c393508266b2c7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=k6yl5VIhP%2FoCeRIFjVt00A%3D%3D&county=X0OA5vWxmBJFVp3u8HKhcg%3D%3D&motion=&docs=&adate=02/09/2018&civilCaseId=qHNSR0UENfAVl3qOHo2l6w%3D%3D",
       "page_number": 1,
       "table_row_number": 18,
-      "row_html_sha256": "ac0cab5082d9918f491e26fdad85e87b72f269085d43830e759f1336a53adf5a"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:deso:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/deso/00046-p001-r018-appearances-900800_2015-01.html",
+      "html_sha256": "9de00336118e532360079e4ac5f41d70018facfc30271267a5157dde25ef962b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/2018&index=k6yl5VIhP%2FoCeRIFjVt00A%3D%3D&county=X0OA5vWxmBJFVp3u8HKhcg%3D%3D&civilCaseId=qHNSR0UENfAVl3qOHo2l6w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:deso:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/deso/page-001.html",
+      "html_sha256": "2c902f06589f265c46caae3d9c08029ce38952390c45259cdfc63f568ca1ca75",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "cbb40017834899b6ddffea069876af4212056ef32a7a65416ee3d83840e2ea9b"
     }
   ],
   "judicial_officer": "Weinstein, Hon. David A."

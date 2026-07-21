@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T13:11:36.492Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "drab",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/drab.rows.ndjson",
         "source_page": 1,
-        "source_row": 3,
-        "row_html_sha256": "b30e461bb76fc4bd7567af8b7e987a3050f5be4049bd9c6156ae296bd664a3b2"
+        "source_row": 14,
+        "row_html_sha256": "71e388f5cd0d91b74bfed67d8d21a1d484b4e3d564b161543f019bd2a11c46f2"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/drab/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00032-p001-r014-appearances-0002075_2006-01.html",
+      "html_sha256": "d94ecb504451af42c7d9119e142ca09adc2c2dc497c07aed30cb830ebc27ec01",
+      "bytes_len": 5537,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/21/2006&index=G1IRkoDKl9dANKLtRRUsqg%3D%3D&county=4Vw7IpmNXlES7jKjZo145Q%3D%3D&civilCaseId=dX%2Flm%2Fe99dDuYu8Nq63bqw%3D%3D",
+      "captured_at": "2026-07-20T13:11:36.492Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/drab/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00031-p001-r014-case_detail-0002075_2006-01.html",
+      "html_sha256": "792d15d320943b0b4863ca271c62896a364a6ebbaf8c81f1138fbc44c00347bd",
+      "bytes_len": 7305,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=G1IRkoDKl9dANKLtRRUsqg%3D%3D&county=4Vw7IpmNXlES7jKjZo145Q%3D%3D&motion=&docs=&adate=07/21/2006&civilCaseId=dX%2Flm%2Fe99dDuYu8Nq63bqw%3D%3D",
+      "captured_at": "2026-07-20T13:11:36.492Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:drab:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/drab/page-001.html",
-      "html_sha256": "a3fd0f7e04e1e2d508fa7b35c8d9e4fb437e47163d8161296dafff6d18d960cc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:drab:followup-page:001:capture:00031:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00031-p001-r014-case_detail-0002075_2006-01.html",
+      "html_sha256": "792d15d320943b0b4863ca271c62896a364a6ebbaf8c81f1138fbc44c00347bd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=G1IRkoDKl9dANKLtRRUsqg%3D%3D&county=4Vw7IpmNXlES7jKjZo145Q%3D%3D&motion=&docs=&adate=07/21/2006&civilCaseId=dX%2Flm%2Fe99dDuYu8Nq63bqw%3D%3D",
       "page_number": 1,
-      "table_row_number": 3,
-      "row_html_sha256": "b30e461bb76fc4bd7567af8b7e987a3050f5be4049bd9c6156ae296bd664a3b2"
+      "table_row_number": 14,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:drab:followup-page:001:capture:00032:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/drab/00032-p001-r014-appearances-0002075_2006-01.html",
+      "html_sha256": "d94ecb504451af42c7d9119e142ca09adc2c2dc497c07aed30cb830ebc27ec01",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/21/2006&index=G1IRkoDKl9dANKLtRRUsqg%3D%3D&county=4Vw7IpmNXlES7jKjZo145Q%3D%3D&civilCaseId=dX%2Flm%2Fe99dDuYu8Nq63bqw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:drab:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/drab/page-001.html",
+      "html_sha256": "e5b68cfb7982d9f2ac0797515f11daf8c547d65127db4382bb1f78c78d5a00fb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 14,
+      "row_html_sha256": "71e388f5cd0d91b74bfed67d8d21a1d484b4e3d564b161543f019bd2a11c46f2"
     }
   ],
   "judicial_officer": "ROBERT A. SACKETT"

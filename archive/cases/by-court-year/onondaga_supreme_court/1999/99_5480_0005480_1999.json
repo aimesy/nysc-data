@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:45:19.074Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/gere.rows.ndjson",
         "source_page": 1,
         "source_row": 19,
-        "row_html_sha256": "26baa03e9bd9385e3874208cc7e3d04ce459a07beaecd7eb6da6938fd139ad86"
+        "row_html_sha256": "2e405f5e0327a09e9911bed9f3c7124c60cb4ef66bb5b45f0dd0a7aa1649f070"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gere/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gere/00043-p001-r019-appearances-0005480_1999-01.html",
+      "html_sha256": "d0c3253492464200e9992ae83c5e3bd08a6e1feb210435d7de4c8e1d7d146521",
+      "bytes_len": 6967,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/01/2001&index=joUyxW0LEfejEHkybJXH0g%3D%3D&county=p7IpIcsZ5OgadOG%2FkiLzIQ%3D%3D&civilCaseId=niqqGFi_PLUS_VrNskrYu5nG2mQ%3D%3D",
+      "captured_at": "2026-07-21T00:45:19.074Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/gere/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gere/00042-p001-r019-case_detail-0005480_1999-01.html",
+      "html_sha256": "155158f060ade67438eb98c0c594decf86119b12bcd1d2018e87bd646a904987",
+      "bytes_len": 7085,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=joUyxW0LEfejEHkybJXH0g%3D%3D&county=p7IpIcsZ5OgadOG%2FkiLzIQ%3D%3D&motion=&docs=&adate=03/01/2001&civilCaseId=niqqGFi_PLUS_VrNskrYu5nG2mQ%3D%3D",
+      "captured_at": "2026-07-21T00:45:19.074Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:gere:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/gere/page-001.html",
-      "html_sha256": "9726bd8a93f617ad0205507439ced8114f484bbade75dcbf8c64acf13104659e",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gere:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gere/00042-p001-r019-case_detail-0005480_1999-01.html",
+      "html_sha256": "155158f060ade67438eb98c0c594decf86119b12bcd1d2018e87bd646a904987",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=joUyxW0LEfejEHkybJXH0g%3D%3D&county=p7IpIcsZ5OgadOG%2FkiLzIQ%3D%3D&motion=&docs=&adate=03/01/2001&civilCaseId=niqqGFi_PLUS_VrNskrYu5nG2mQ%3D%3D",
       "page_number": 1,
       "table_row_number": 19,
-      "row_html_sha256": "26baa03e9bd9385e3874208cc7e3d04ce459a07beaecd7eb6da6938fd139ad86"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:gere:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/gere/00043-p001-r019-appearances-0005480_1999-01.html",
+      "html_sha256": "d0c3253492464200e9992ae83c5e3bd08a6e1feb210435d7de4c8e1d7d146521",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/01/2001&index=joUyxW0LEfejEHkybJXH0g%3D%3D&county=p7IpIcsZ5OgadOG%2FkiLzIQ%3D%3D&civilCaseId=niqqGFi_PLUS_VrNskrYu5nG2mQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:gere:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/gere/page-001.html",
+      "html_sha256": "7ba5fb62192c546767389281d87750b7158a87336cd6a3357abb71775c014b41",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "2e405f5e0327a09e9911bed9f3c7124c60cb4ef66bb5b45f0dd0a7aa1649f070"
     }
   ],
   "judicial_officer": "HON. JOHN V. CENTRA"

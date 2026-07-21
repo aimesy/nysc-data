@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:35:07.920Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/debel.rows.ndjson",
         "source_page": 1,
         "source_row": 13,
-        "row_html_sha256": "f620b267ed4aab4bf41cf51436c3db002371d74c00df9e5fa711766c4aab0412"
+        "row_html_sha256": "a50bfc06ac5bc9135ecbe72c72f85ec70665d4a679d97ae82a1c62c513a34958"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/debel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/debel/00028-p001-r013-appearances-0827358_2009-01.html",
+      "html_sha256": "91553dd2b46ffbe939aa83919bb02d799adac736715559732c84315406ac21d6",
+      "bytes_len": 5620,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/02/2010&index=kuufhgqhGcjst%2Fs3IHleyA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=Fl3WMw75rbcDvPQdH_PLUS_4O0Q%3D%3D",
+      "captured_at": "2026-07-20T22:35:07.920Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/debel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/debel/00027-p001-r013-case_detail-0827358_2009-01.html",
+      "html_sha256": "fd44eca427768eecf1b3fa592a2a9eced4a73ff079dcbf23721a95c941c311f4",
+      "bytes_len": 7189,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kuufhgqhGcjst%2Fs3IHleyA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=03/02/2010&civilCaseId=Fl3WMw75rbcDvPQdH_PLUS_4O0Q%3D%3D",
+      "captured_at": "2026-07-20T22:35:07.920Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:debel:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/debel/page-001.html",
-      "html_sha256": "1c76d80d5b80a38ecc3d8f36ce71d71fea226ba3735fe3e3292a6158035a5423",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:debel:followup-page:001:capture:00027:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/debel/00027-p001-r013-case_detail-0827358_2009-01.html",
+      "html_sha256": "fd44eca427768eecf1b3fa592a2a9eced4a73ff079dcbf23721a95c941c311f4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kuufhgqhGcjst%2Fs3IHleyA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=03/02/2010&civilCaseId=Fl3WMw75rbcDvPQdH_PLUS_4O0Q%3D%3D",
       "page_number": 1,
       "table_row_number": 13,
-      "row_html_sha256": "f620b267ed4aab4bf41cf51436c3db002371d74c00df9e5fa711766c4aab0412"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:debel:followup-page:001:capture:00028:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/debel/00028-p001-r013-appearances-0827358_2009-01.html",
+      "html_sha256": "91553dd2b46ffbe939aa83919bb02d799adac736715559732c84315406ac21d6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/02/2010&index=kuufhgqhGcjst%2Fs3IHleyA%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=Fl3WMw75rbcDvPQdH_PLUS_4O0Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 13,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:debel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/debel/page-001.html",
+      "html_sha256": "fd68b0150f6f286f15a7b8255f9040ea12ec42dd229257847bbca700c02da53e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 13,
+      "row_html_sha256": "a50bfc06ac5bc9135ecbe72c72f85ec70665d4a679d97ae82a1c62c513a34958"
     }
   ],
   "judicial_officer": "SMALL CLAIMS HEARING OFFICER"

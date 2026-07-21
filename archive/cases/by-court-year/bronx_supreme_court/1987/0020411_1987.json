@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T11:29:36.289Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/mera.rows.ndjson",
         "source_page": 1,
         "source_row": 21,
-        "row_html_sha256": "cd24b1c14ead628b198995a31b55e7e595e99359fbfec09a890f13b3bded89da"
+        "row_html_sha256": "c176748f7cf8921243bb2769234ac4254c5da5090d944fb5591ae0d1caf35c59"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mera/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mera/00054-p001-r021-appearances-0020411_1987-01.html",
+      "html_sha256": "7ab338ee67dd1be5e68ee5aa84d46149b2e606f681c935602fc7cecf24b62d35",
+      "bytes_len": 5574,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/02/1987&index=hWDD4JfBgpuYGD0hWhvbLQ%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&civilCaseId=PwZs2CCYQrF1d2KR0v6RYA%3D%3D",
+      "captured_at": "2026-07-21T11:29:36.289Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mera/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mera/00053-p001-r021-case_detail-0020411_1987-01.html",
+      "html_sha256": "0cf1eb0dd9fd3cd2c1999237aa576071439aac34afa19dd69e7c66770579fc55",
+      "bytes_len": 6605,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=hWDD4JfBgpuYGD0hWhvbLQ%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&motion=&docs=&adate=11/02/1987&civilCaseId=PwZs2CCYQrF1d2KR0v6RYA%3D%3D",
+      "captured_at": "2026-07-21T11:29:36.289Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:mera:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/mera/page-001.html",
-      "html_sha256": "5940fb29e22f5992f20d2a8031e5d017c1895e7a1e793295f2777b573cee9c9b",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mera:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mera/00053-p001-r021-case_detail-0020411_1987-01.html",
+      "html_sha256": "0cf1eb0dd9fd3cd2c1999237aa576071439aac34afa19dd69e7c66770579fc55",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=hWDD4JfBgpuYGD0hWhvbLQ%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&motion=&docs=&adate=11/02/1987&civilCaseId=PwZs2CCYQrF1d2KR0v6RYA%3D%3D",
       "page_number": 1,
       "table_row_number": 21,
-      "row_html_sha256": "cd24b1c14ead628b198995a31b55e7e595e99359fbfec09a890f13b3bded89da"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mera:followup-page:001:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mera/00054-p001-r021-appearances-0020411_1987-01.html",
+      "html_sha256": "7ab338ee67dd1be5e68ee5aa84d46149b2e606f681c935602fc7cecf24b62d35",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/02/1987&index=hWDD4JfBgpuYGD0hWhvbLQ%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&civilCaseId=PwZs2CCYQrF1d2KR0v6RYA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mera:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mera/page-001.html",
+      "html_sha256": "fd6485e751a3189879f88ecc143b767dca04feb205f9ae5613726e5557c607d5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 21,
+      "row_html_sha256": "c176748f7cf8921243bb2769234ac4254c5da5090d944fb5591ae0d1caf35c59"
     }
   ],
   "judicial_officer": "JOHN BUCKLEY - REFEREE"

@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:50:36.674Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "teperman",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/teperman.rows.ndjson",
         "source_page": 1,
-        "source_row": 9,
-        "row_html_sha256": "65498e486e767cf5f59335acc2166b85f8bd2f893e3391b66049542b63a0767a"
+        "source_row": 1,
+        "row_html_sha256": "8aea2aa7730573416b24784701199d4a2937c50e9a2b5e5e38bb32aa5189743f"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/teperman/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/teperman/00002-p001-r001-appearances-0007145_1979-01.html",
+      "html_sha256": "d32a2a3257978321073663bf39a9694faadf175ed1e45f12b8dae2d304453f53",
+      "bytes_len": 13703,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/1986&index=bFmEigITYzliqFEYVGfdew%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=MbqWvi%2FK8i8c2W3jW8sk%2FQ%3D%3D",
+      "captured_at": "2026-07-21T01:50:36.674Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/teperman/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/teperman/00001-p001-r001-case_detail-0007145_1979-01.html",
+      "html_sha256": "c1321847e9f51709816baaa7df86825798db22dd0c0d170daea41540f87307fc",
+      "bytes_len": 7300,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bFmEigITYzliqFEYVGfdew%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&motion=&docs=&adate=12/05/1986&civilCaseId=MbqWvi%2FK8i8c2W3jW8sk%2FQ%3D%3D",
+      "captured_at": "2026-07-21T01:50:36.674Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:teperman:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/teperman/page-001.html",
-      "html_sha256": "df5b9ee266a4659cb72fc5e353972b077fee994bea6b00c3885640c74dad7cc2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:teperman:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/teperman/00001-p001-r001-case_detail-0007145_1979-01.html",
+      "html_sha256": "c1321847e9f51709816baaa7df86825798db22dd0c0d170daea41540f87307fc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bFmEigITYzliqFEYVGfdew%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&motion=&docs=&adate=12/05/1986&civilCaseId=MbqWvi%2FK8i8c2W3jW8sk%2FQ%3D%3D",
       "page_number": 1,
-      "table_row_number": 9,
-      "row_html_sha256": "65498e486e767cf5f59335acc2166b85f8bd2f893e3391b66049542b63a0767a"
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:teperman:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/teperman/00002-p001-r001-appearances-0007145_1979-01.html",
+      "html_sha256": "d32a2a3257978321073663bf39a9694faadf175ed1e45f12b8dae2d304453f53",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/1986&index=bFmEigITYzliqFEYVGfdew%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=MbqWvi%2FK8i8c2W3jW8sk%2FQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:teperman:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/teperman/page-001.html",
+      "html_sha256": "4eb656e0ba72a9ea606033cc2a78a8b0753d61cbc13270ab5e109ba92d4916c0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "8aea2aa7730573416b24784701199d4a2937c50e9a2b5e5e38bb32aa5189743f"
     }
   ],
   "judicial_officer": "BARRY SALMAN"

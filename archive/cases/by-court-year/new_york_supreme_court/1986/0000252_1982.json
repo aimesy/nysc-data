@@ -14,8 +14,8 @@
   "case_type": "MEDICAL/PODIATRIC MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:06:33.751Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/greer.rows.ndjson",
         "source_page": 1,
         "source_row": 13,
-        "row_html_sha256": "f8e5d1e153db32c8223a7f74e4e01a4c8f5a9ee400235af66025bc35d55c3d39"
+        "row_html_sha256": "a66fc532c2db5b8c789b5401f967827d6a9c999906c56bbab32149c5f80f3060"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/greer/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greer/00027-p001-r013-appearances-0000252_1982-01.html",
+      "html_sha256": "1d194543a5ed09ac45d609249d86c3f195c127d430cee6cc184de6231a91a39a",
+      "bytes_len": 13692,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/13/1987&index=ZiA7b34rk6hNg99BN6Yftg%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=vNBFIZgpSFQxq6cE5yUQrQ%3D%3D",
+      "captured_at": "2026-07-21T01:06:33.751Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/greer/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greer/00026-p001-r013-case_detail-0000252_1982-01.html",
+      "html_sha256": "795b9d10e429595a936f8b18bbad80b2d4a1b2333b395d57c5f2b854327c3e53",
+      "bytes_len": 7104,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZiA7b34rk6hNg99BN6Yftg%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=&docs=&adate=05/13/1987&civilCaseId=vNBFIZgpSFQxq6cE5yUQrQ%3D%3D",
+      "captured_at": "2026-07-21T01:06:33.751Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:greer:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/greer/page-001.html",
-      "html_sha256": "828f77689b106d8b04de7a8193eae1ed2ac370b369d064f3b30962d6a4daeb55",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:greer:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greer/00026-p001-r013-case_detail-0000252_1982-01.html",
+      "html_sha256": "795b9d10e429595a936f8b18bbad80b2d4a1b2333b395d57c5f2b854327c3e53",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZiA7b34rk6hNg99BN6Yftg%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&motion=&docs=&adate=05/13/1987&civilCaseId=vNBFIZgpSFQxq6cE5yUQrQ%3D%3D",
       "page_number": 1,
       "table_row_number": 13,
-      "row_html_sha256": "f8e5d1e153db32c8223a7f74e4e01a4c8f5a9ee400235af66025bc35d55c3d39"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:greer:followup-page:001:capture:00027:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/greer/00027-p001-r013-appearances-0000252_1982-01.html",
+      "html_sha256": "1d194543a5ed09ac45d609249d86c3f195c127d430cee6cc184de6231a91a39a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/13/1987&index=ZiA7b34rk6hNg99BN6Yftg%3D%3D&county=cdJLWuRrq20Uo6Ae9LTKvA%3D%3D&civilCaseId=vNBFIZgpSFQxq6cE5yUQrQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 13,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:greer:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/greer/page-001.html",
+      "html_sha256": "daa4a82f74b343da932d868e42438cbe61816970d35e6efde7eec9fba7e90daa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 13,
+      "row_html_sha256": "a66fc532c2db5b8c789b5401f967827d6a9c999906c56bbab32149c5f80f3060"
     }
   ],
   "judicial_officer": "GAMMERMAN, IRA"

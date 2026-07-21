@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:23:46.363Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/bily.rows.ndjson",
         "source_page": 1,
         "source_row": 20,
-        "row_html_sha256": "6380883ad5bfdfd9317de7165fd21ee4f2f82e184df6f58e854f1e6824da6098"
+        "row_html_sha256": "e71d74aca68704eef4fa1c5e9c7f4134b74933ff361e36c26a48a083ce8106eb"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bily/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00047-p001-r020-appearances-0000403_2002-01.html",
+      "html_sha256": "c1b9cccd9665e0fd98076e054db0a0b1350b40642a17692892208d937c743569",
+      "bytes_len": 6911,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/17/2002&index=FCEl5t7Y_PLUS_ppzGMPefZAnCQ%3D%3D&county=p78jiTZBtNHqjg8b7wolJQ%3D%3D&civilCaseId=HMCc1xSvF%2FYiVy2vjbC3jQ%3D%3D",
+      "captured_at": "2026-07-21T00:23:46.363Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bily/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00046-p001-r020-case_detail-0000403_2002-01.html",
+      "html_sha256": "f489cdf2ed47c1a2d64219b710ff47921afb81a96c65b0be50b04f1af6abfacf",
+      "bytes_len": 7051,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=FCEl5t7Y_PLUS_ppzGMPefZAnCQ%3D%3D&county=p78jiTZBtNHqjg8b7wolJQ%3D%3D&motion=&docs=&adate=12/17/2002&civilCaseId=HMCc1xSvF%2FYiVy2vjbC3jQ%3D%3D",
+      "captured_at": "2026-07-21T00:23:46.363Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bily:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bily/page-001.html",
-      "html_sha256": "b7c106e2408634bacdeb6df3796291377c40c03036d3d9723e1105959e34bb7d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bily:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00046-p001-r020-case_detail-0000403_2002-01.html",
+      "html_sha256": "f489cdf2ed47c1a2d64219b710ff47921afb81a96c65b0be50b04f1af6abfacf",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=FCEl5t7Y_PLUS_ppzGMPefZAnCQ%3D%3D&county=p78jiTZBtNHqjg8b7wolJQ%3D%3D&motion=&docs=&adate=12/17/2002&civilCaseId=HMCc1xSvF%2FYiVy2vjbC3jQ%3D%3D",
       "page_number": 1,
       "table_row_number": 20,
-      "row_html_sha256": "6380883ad5bfdfd9317de7165fd21ee4f2f82e184df6f58e854f1e6824da6098"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bily:followup-page:001:capture:00047:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00047-p001-r020-appearances-0000403_2002-01.html",
+      "html_sha256": "c1b9cccd9665e0fd98076e054db0a0b1350b40642a17692892208d937c743569",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/17/2002&index=FCEl5t7Y_PLUS_ppzGMPefZAnCQ%3D%3D&county=p78jiTZBtNHqjg8b7wolJQ%3D%3D&civilCaseId=HMCc1xSvF%2FYiVy2vjbC3jQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 20,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:bily:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/bily/page-001.html",
+      "html_sha256": "58556f253ba13fea27053bf7fb87ad0ef6260e0452f49b2bdcb7dfc63bd2b5fd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "e71d74aca68704eef4fa1c5e9c7f4134b74933ff361e36c26a48a083ce8106eb"
     }
   ],
   "judicial_officer": "HON. MARK H. FANDRICH"

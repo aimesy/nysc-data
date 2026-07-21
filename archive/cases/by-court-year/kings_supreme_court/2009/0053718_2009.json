@@ -11,15 +11,18 @@
   "index_year": "2009",
   "index_display": "0053718/2009",
   "case_title": "FRID,IGOR v. FRID,NELLI",
-  "case_type": null,
+  "case_type": "UNCONTESTED MATRIMONIALS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-15T10:51:53.060Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "frid"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "frid",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/frid.rows.ndjson",
+        "source_page": 1,
+        "source_row": 17,
+        "row_html_sha256": "95ee181c374c319852784e0e234a1cc136831332ced40c541b521eaccc7221a8"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "IGOR FRID - Prose",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "FRID,IGOR",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "IGOR FRID - Prose",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "11/02/2009",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "",
+      "raw_text": "11/02/2009",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +157,17 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:frid:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/frid/page-001.html",
+      "html_sha256": "1590117e8eac3422d0a48b9257506730080908a7ecee326c8ce78747fd127eca",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 17,
+      "row_html_sha256": "95ee181c374c319852784e0e234a1cc136831332ced40c541b521eaccc7221a8"
     }
   ]
 }

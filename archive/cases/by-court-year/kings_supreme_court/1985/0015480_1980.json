@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:24:27.902Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/rohan.rows.ndjson",
         "source_page": 1,
         "source_row": 6,
-        "row_html_sha256": "cc1287c2eced88f7ed6c283e71e82e2b7454b9fa1ffa9d73aaf50fbbf8176358"
+        "row_html_sha256": "4740bc32900aa4b3d49a3a781e97789f86a1fb2464d94d269871bcc60abad252"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/rohan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rohan/00013-p001-r006-appearances-0015480_1980-01.html",
+      "html_sha256": "1b6c5d409f664c4f811d0b3f883b3a5c3ee8073260f07129cc013c0daec2f05b",
+      "bytes_len": 10879,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/22/1988&index=XKdNshxhetVAC50C2lvB4Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=DP17LJ8r1J%2Ffl8QCwEV6yA%3D%3D",
+      "captured_at": "2026-07-20T22:24:27.902Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/rohan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rohan/00012-p001-r006-case_detail-0015480_1980-01.html",
+      "html_sha256": "49cff40b809dc2b41b8492e91359917003f10694b696506d9078a9bb727e0526",
+      "bytes_len": 7447,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=XKdNshxhetVAC50C2lvB4Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=&docs=&adate=08/22/1988&civilCaseId=DP17LJ8r1J%2Ffl8QCwEV6yA%3D%3D",
+      "captured_at": "2026-07-20T22:24:27.902Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:rohan:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/rohan/page-001.html",
-      "html_sha256": "d338c036d5ac5125ab14bda8ecde6bba329c6e98a0101d03ad812045322a3e3b",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:rohan:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rohan/00012-p001-r006-case_detail-0015480_1980-01.html",
+      "html_sha256": "49cff40b809dc2b41b8492e91359917003f10694b696506d9078a9bb727e0526",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=XKdNshxhetVAC50C2lvB4Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=&docs=&adate=08/22/1988&civilCaseId=DP17LJ8r1J%2Ffl8QCwEV6yA%3D%3D",
       "page_number": 1,
       "table_row_number": 6,
-      "row_html_sha256": "cc1287c2eced88f7ed6c283e71e82e2b7454b9fa1ffa9d73aaf50fbbf8176358"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:rohan:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rohan/00013-p001-r006-appearances-0015480_1980-01.html",
+      "html_sha256": "1b6c5d409f664c4f811d0b3f883b3a5c3ee8073260f07129cc013c0daec2f05b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/22/1988&index=XKdNshxhetVAC50C2lvB4Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=DP17LJ8r1J%2Ffl8QCwEV6yA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:rohan:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/rohan/page-001.html",
+      "html_sha256": "f76b3039222cf40dd7d95b655d9db9897945ba02c04271768b452d6062c465ab",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "4740bc32900aa4b3d49a3a781e97789f86a1fb2464d94d269871bcc60abad252"
     }
   ],
   "judicial_officer": "VINCENT PIZZUTO"

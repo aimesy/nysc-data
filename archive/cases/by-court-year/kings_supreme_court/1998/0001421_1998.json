@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T04:10:01.133Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/belov.rows.ndjson",
         "source_page": 1,
         "source_row": 5,
-        "row_html_sha256": "2ec256d277adb862b3ff825da19269a5ec2079f287c845e0984b1c45cbd38864"
+        "row_html_sha256": "460917824b4c2a75d7b0d56957aa0f137ddae8c44a2537d16de1e520768a9e35"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/belov/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belov/00011-p001-r005-appearances-0001421_1998-01.html",
+      "html_sha256": "da6be4cd00730b773ddd5fff15dcd10d45a818d226c798811aa055eb82ef3a9d",
+      "bytes_len": 6931,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/23/1999&index=9vEvB2xcS8YKzZ3ap3SKLQ%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=Cfq6N3cwhkCSFVMHJD8VkA%3D%3D",
+      "captured_at": "2026-07-21T04:10:01.133Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/belov/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belov/00010-p001-r005-case_detail-0001421_1998-01.html",
+      "html_sha256": "0609bb530fdfe0fb8699c56efe25a82145343683c61c30281282a454193eb7aa",
+      "bytes_len": 6882,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9vEvB2xcS8YKzZ3ap3SKLQ%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=03/23/1999&civilCaseId=Cfq6N3cwhkCSFVMHJD8VkA%3D%3D",
+      "captured_at": "2026-07-21T04:10:01.133Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/belov/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belov/00012-p001-r005-motions-0001421_1998-01.html",
+      "html_sha256": "c1832d281ce386240a68fe5dab0d1ef4840717ee20388b0f1794089eb3d78892",
+      "bytes_len": 6349,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=9vEvB2xcS8YKzZ3ap3SKLQ%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=Cfq6N3cwhkCSFVMHJD8VkA%3D%3D",
+      "captured_at": "2026-07-21T04:10:01.133Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:belov:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/belov/page-001.html",
-      "html_sha256": "2a441161fce72874eac6cc078613647739f5603dd3dc3a42a1ee82390290fa9c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:belov:followup-page:001:capture:00010:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belov/00010-p001-r005-case_detail-0001421_1998-01.html",
+      "html_sha256": "0609bb530fdfe0fb8699c56efe25a82145343683c61c30281282a454193eb7aa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9vEvB2xcS8YKzZ3ap3SKLQ%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=03/23/1999&civilCaseId=Cfq6N3cwhkCSFVMHJD8VkA%3D%3D",
       "page_number": 1,
       "table_row_number": 5,
-      "row_html_sha256": "2ec256d277adb862b3ff825da19269a5ec2079f287c845e0984b1c45cbd38864"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:belov:followup-page:001:capture:00011:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belov/00011-p001-r005-appearances-0001421_1998-01.html",
+      "html_sha256": "da6be4cd00730b773ddd5fff15dcd10d45a818d226c798811aa055eb82ef3a9d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/23/1999&index=9vEvB2xcS8YKzZ3ap3SKLQ%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=Cfq6N3cwhkCSFVMHJD8VkA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:belov:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/belov/00012-p001-r005-motions-0001421_1998-01.html",
+      "html_sha256": "c1832d281ce386240a68fe5dab0d1ef4840717ee20388b0f1794089eb3d78892",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=9vEvB2xcS8YKzZ3ap3SKLQ%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=Cfq6N3cwhkCSFVMHJD8VkA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:belov:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/belov/page-001.html",
+      "html_sha256": "a33b44147319eab37a582246405e2a746fee0025230a3f7da9e82a8f039fbaad",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "460917824b4c2a75d7b0d56957aa0f137ddae8c44a2537d16de1e520768a9e35"
     }
   ],
   "judicial_officer": "THEODORE T. JONES JR."

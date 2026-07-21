@@ -14,8 +14,8 @@
   "case_type": "Mat-Uncontested",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T09:03:35.387Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "meise",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/meise.rows.ndjson",
         "source_page": 1,
-        "source_row": 3,
-        "row_html_sha256": "3bd7784740bbbd55ae524e52aa46fa63f6e658785cb07ccc75dfd947cca1d2e7"
+        "source_row": 20,
+        "row_html_sha256": "0a50ae53e6a9f2a62869d8d97d76ff4a309715e729adc79defc6f5453244d4ac"
       }
     ]
   },
@@ -77,19 +80,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meise/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00045-p001-r020-appearances-27454_2013-01.html",
+      "html_sha256": "6c1cccb62a031b74262c7e45b05f95f0932a21603854b609de68d7cc393a83ec",
+      "bytes_len": 6244,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/24/2013&index=tZQDeDcqGvY5BBBj73lpdg%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=I6rALYoeEEuLmEvpIHn6UQ%3D%3D",
+      "captured_at": "2026-07-21T09:03:35.387Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meise/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00044-p001-r020-case_detail-27454_2013-01.html",
+      "html_sha256": "e669a72f23abe0b953a0996d7a0ee9bcca6c6137098c1ebc4fea96df1f3aa293",
+      "bytes_len": 7127,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tZQDeDcqGvY5BBBj73lpdg%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=12/24/2013&civilCaseId=I6rALYoeEEuLmEvpIHn6UQ%3D%3D",
+      "captured_at": "2026-07-21T09:03:35.387Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:meise:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/meise/page-001.html",
-      "html_sha256": "013a28cd88c8072f55fee27dacf054748b5202ac22af9bd296e5faf0c25b74fc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meise:followup-page:001:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00044-p001-r020-case_detail-27454_2013-01.html",
+      "html_sha256": "e669a72f23abe0b953a0996d7a0ee9bcca6c6137098c1ebc4fea96df1f3aa293",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=tZQDeDcqGvY5BBBj73lpdg%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=12/24/2013&civilCaseId=I6rALYoeEEuLmEvpIHn6UQ%3D%3D",
       "page_number": 1,
-      "table_row_number": 3,
-      "row_html_sha256": "3bd7784740bbbd55ae524e52aa46fa63f6e658785cb07ccc75dfd947cca1d2e7"
+      "table_row_number": 20,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meise:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meise/00045-p001-r020-appearances-27454_2013-01.html",
+      "html_sha256": "6c1cccb62a031b74262c7e45b05f95f0932a21603854b609de68d7cc393a83ec",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/24/2013&index=tZQDeDcqGvY5BBBj73lpdg%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=I6rALYoeEEuLmEvpIHn6UQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 20,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:meise:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/meise/page-001.html",
+      "html_sha256": "c4d5c0d947b4c80284e09ab0454b7ced31747b026e78bbe84f25b1791e7de454",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "0a50ae53e6a9f2a62869d8d97d76ff4a309715e729adc79defc6f5453244d4ac"
     }
   ],
   "judicial_officer": "Budd, Hon. Marlene L."

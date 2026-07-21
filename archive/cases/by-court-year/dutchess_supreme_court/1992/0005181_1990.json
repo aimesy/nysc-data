@@ -14,8 +14,8 @@
   "case_type": "MISCELLANEOUS EXPARTE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:23:46.363Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/bily.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "3bc9e9ab7dfee660d50b63fec182a00a5e09163460cd8c97e1a1e1341201cf22"
+        "row_html_sha256": "d80d2b478890f157fe7161c045a11fd59feb54eafc2908c32f21d7a6427ba17b"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bily/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00025-p001-r010-appearances-0005181_1990-01.html",
+      "html_sha256": "445cafc616d4a3b28abf66dfd57dbd1ba6e0b6522dd863821d0a47eb9739de93",
+      "bytes_len": 5580,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/15/1992&index=nDsetfsum%2FmxF%2FFJGlmTeQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=juG9GEMlERcCF14sqhJTkQ%3D%3D",
+      "captured_at": "2026-07-21T00:23:46.363Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bily/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00024-p001-r010-case_detail-0005181_1990-01.html",
+      "html_sha256": "2e7bb32bbd09f0a5135c33970a26f37159a1c84b5678dcb05c90051fa897dbd2",
+      "bytes_len": 7058,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=nDsetfsum%2FmxF%2FFJGlmTeQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&motion=&docs=&adate=12/15/1992&civilCaseId=juG9GEMlERcCF14sqhJTkQ%3D%3D",
+      "captured_at": "2026-07-21T00:23:46.363Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bily:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bily/page-001.html",
-      "html_sha256": "b7c106e2408634bacdeb6df3796291377c40c03036d3d9723e1105959e34bb7d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bily:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00024-p001-r010-case_detail-0005181_1990-01.html",
+      "html_sha256": "2e7bb32bbd09f0a5135c33970a26f37159a1c84b5678dcb05c90051fa897dbd2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=nDsetfsum%2FmxF%2FFJGlmTeQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&motion=&docs=&adate=12/15/1992&civilCaseId=juG9GEMlERcCF14sqhJTkQ%3D%3D",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "3bc9e9ab7dfee660d50b63fec182a00a5e09163460cd8c97e1a1e1341201cf22"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bily:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bily/00025-p001-r010-appearances-0005181_1990-01.html",
+      "html_sha256": "445cafc616d4a3b28abf66dfd57dbd1ba6e0b6522dd863821d0a47eb9739de93",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/15/1992&index=nDsetfsum%2FmxF%2FFJGlmTeQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=juG9GEMlERcCF14sqhJTkQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:bily:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/bily/page-001.html",
+      "html_sha256": "58556f253ba13fea27053bf7fb87ad0ef6260e0452f49b2bdcb7dfc63bd2b5fd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "d80d2b478890f157fe7161c045a11fd59feb54eafc2908c32f21d7a6427ba17b"
     }
   ],
   "judicial_officer": "JUDITH A. HILLERY"

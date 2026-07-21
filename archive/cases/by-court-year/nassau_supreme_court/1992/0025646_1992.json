@@ -14,8 +14,8 @@
   "case_type": "OTHER ACTIONS (INQUEST, ETC)",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T13:13:16.723Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/bike.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "bd9d15c4ad3da679b9af4314a77d1078dca477f881b39ec2fc86a2c7e60560b4"
+        "row_html_sha256": "852d85450ffce90a0219901950862b84120a4b950701bc47cf47085fefe520f3"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bike/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bike/00055-p001-r022-appearances-0025646_1992-01.html",
+      "html_sha256": "3cb683bd4c1507f0e61d8a43962ea49c48a9795d1e934f427297666af00f3bd6",
+      "bytes_len": 27058,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/10/1997&index=_PLUS_e36tV825xyh72TdCcY0%2Fg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=b4jm9PloSTI2S9JzcuxFVw%3D%3D",
+      "captured_at": "2026-07-20T13:13:16.723Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bike/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bike/00054-p001-r022-case_detail-0025646_1992-01.html",
+      "html_sha256": "ea9a8971731a318a9d9fecc7c37e3e122209d5ea2872169d9d145fc40b87cc39",
+      "bytes_len": 7333,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_e36tV825xyh72TdCcY0%2Fg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=M&docs=&adate=04/10/1997&civilCaseId=b4jm9PloSTI2S9JzcuxFVw%3D%3D",
+      "captured_at": "2026-07-20T13:13:16.723Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/bike/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bike/00056-p001-r022-motions-0025646_1992-01.html",
+      "html_sha256": "c2a8590931d608a3924aa770620114533433c105600e12e7d64c2996cc0e2dff",
+      "bytes_len": 9648,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=_PLUS_e36tV825xyh72TdCcY0%2Fg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=b4jm9PloSTI2S9JzcuxFVw%3D%3D",
+      "captured_at": "2026-07-20T13:13:16.723Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:bike:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/bike/page-001.html",
-      "html_sha256": "6ccaab478e708f6937555713e620af0ba9f31651cc3295b9ffb6a53a7bd980a6",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bike:followup-page:001:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bike/00054-p001-r022-case_detail-0025646_1992-01.html",
+      "html_sha256": "ea9a8971731a318a9d9fecc7c37e3e122209d5ea2872169d9d145fc40b87cc39",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_e36tV825xyh72TdCcY0%2Fg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=M&docs=&adate=04/10/1997&civilCaseId=b4jm9PloSTI2S9JzcuxFVw%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "bd9d15c4ad3da679b9af4314a77d1078dca477f881b39ec2fc86a2c7e60560b4"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bike:followup-page:001:capture:00055:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bike/00055-p001-r022-appearances-0025646_1992-01.html",
+      "html_sha256": "3cb683bd4c1507f0e61d8a43962ea49c48a9795d1e934f427297666af00f3bd6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/10/1997&index=_PLUS_e36tV825xyh72TdCcY0%2Fg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=b4jm9PloSTI2S9JzcuxFVw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:bike:followup-page:001:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/bike/00056-p001-r022-motions-0025646_1992-01.html",
+      "html_sha256": "c2a8590931d608a3924aa770620114533433c105600e12e7d64c2996cc0e2dff",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=_PLUS_e36tV825xyh72TdCcY0%2Fg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=b4jm9PloSTI2S9JzcuxFVw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:bike:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/bike/page-001.html",
+      "html_sha256": "42dc3a1968d66597464f561be96ecd2debbcfe579ff4b6788370f92f8175dd81",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "852d85450ffce90a0219901950862b84120a4b950701bc47cf47085fefe520f3"
     }
   ],
   "judicial_officer": "UNKNOWN JUDGE FOR OTHI"

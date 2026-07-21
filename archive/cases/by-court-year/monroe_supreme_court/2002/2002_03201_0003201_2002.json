@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:55:56.224Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sando.rows.ndjson",
         "source_page": 1,
         "source_row": 18,
-        "row_html_sha256": "2aecda3114a935bc3537a3677fba92d6fc4339d7cf54037521329882e302d69c"
+        "row_html_sha256": "3547e164d61fe8a622458f904fdf81f2ee37b02f21aca3754f56f89a95f90dba"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00044-p001-r018-appearances-0003201_2002-01.html",
+      "html_sha256": "aba9717981a6d8f0209535f83da4fd81c3d3c10533eac593ef1151794696513e",
+      "bytes_len": 5543,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/20/2002&index=vYqjnkGuLXUN%2Fo_PLUS_63Z3aRA%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=JJozKiann_PLUS_6uPU8BryR0uQ%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00043-p001-r018-case_detail-0003201_2002-01.html",
+      "html_sha256": "49811f547c5fb750d4138dc1dfdaf172ceace3852029967eaac2697a619fb0b0",
+      "bytes_len": 7196,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=vYqjnkGuLXUN%2Fo_PLUS_63Z3aRA%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=06/20/2002&civilCaseId=JJozKiann_PLUS_6uPU8BryR0uQ%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:sando:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/sando/page-001.html",
-      "html_sha256": "d29193b945ea67917b3e011870a23990394aee9d152067a70e61dd7251c37dc2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00043-p001-r018-case_detail-0003201_2002-01.html",
+      "html_sha256": "49811f547c5fb750d4138dc1dfdaf172ceace3852029967eaac2697a619fb0b0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=vYqjnkGuLXUN%2Fo_PLUS_63Z3aRA%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=06/20/2002&civilCaseId=JJozKiann_PLUS_6uPU8BryR0uQ%3D%3D",
       "page_number": 1,
       "table_row_number": 18,
-      "row_html_sha256": "2aecda3114a935bc3537a3677fba92d6fc4339d7cf54037521329882e302d69c"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00044-p001-r018-appearances-0003201_2002-01.html",
+      "html_sha256": "aba9717981a6d8f0209535f83da4fd81c3d3c10533eac593ef1151794696513e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/20/2002&index=vYqjnkGuLXUN%2Fo_PLUS_63Z3aRA%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=JJozKiann_PLUS_6uPU8BryR0uQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:sando:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sando/page-001.html",
+      "html_sha256": "a9f3ddb5ec2e77dd6486c3ac5d5955b1d6ab5e1f42b9ff0864aa991a91543179",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "3547e164d61fe8a622458f904fdf81f2ee37b02f21aca3754f56f89a95f90dba"
     }
   ],
   "judicial_officer": "HON. JOHN J. ARK"

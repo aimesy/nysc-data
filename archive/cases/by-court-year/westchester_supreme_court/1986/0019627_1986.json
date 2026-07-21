@@ -14,8 +14,8 @@
   "case_type": "Mat-Contested",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:23:37.940Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/trudy.rows.ndjson",
         "source_page": 1,
         "source_row": 15,
-        "row_html_sha256": "9a52f1580d3c93f07e85e7aa72476fa9db44b27fb19ce607bbf70012a470a122"
+        "row_html_sha256": "b5fdbd20ab24d0313ef7d00c16050a82fb69e8bac036d752a219be4d535d6ecb"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/trudy/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trudy/00038-p001-r015-appearances-0019627_1986-01.html",
+      "html_sha256": "a7add9dd4e95a8b32dd7b764264d8aadb78ed37f9f8904145207273bed17521b",
+      "bytes_len": 8216,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/02/1987&index=uke1whUOi0nWypEnmLQjGg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=MoFxuERD_PLUS_TVNw6WT0Gollw%3D%3D",
+      "captured_at": "2026-07-21T01:23:37.940Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/trudy/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trudy/00037-p001-r015-case_detail-0019627_1986-01.html",
+      "html_sha256": "ae75174674c2682d2834442f05628b3721ed2104ea8c2f515b00fedb9d0db7ba",
+      "bytes_len": 6610,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=uke1whUOi0nWypEnmLQjGg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=&docs=&adate=06/02/1987&civilCaseId=MoFxuERD_PLUS_TVNw6WT0Gollw%3D%3D",
+      "captured_at": "2026-07-21T01:23:37.940Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:trudy:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/trudy/page-001.html",
-      "html_sha256": "2780e828abe92c9ab6dacadc203bc5778abed0c8110c9b5f7ce2f3f1ce7b6f32",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:trudy:followup-page:001:capture:00037:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trudy/00037-p001-r015-case_detail-0019627_1986-01.html",
+      "html_sha256": "ae75174674c2682d2834442f05628b3721ed2104ea8c2f515b00fedb9d0db7ba",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=uke1whUOi0nWypEnmLQjGg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=&docs=&adate=06/02/1987&civilCaseId=MoFxuERD_PLUS_TVNw6WT0Gollw%3D%3D",
       "page_number": 1,
       "table_row_number": 15,
-      "row_html_sha256": "9a52f1580d3c93f07e85e7aa72476fa9db44b27fb19ce607bbf70012a470a122"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:trudy:followup-page:001:capture:00038:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trudy/00038-p001-r015-appearances-0019627_1986-01.html",
+      "html_sha256": "a7add9dd4e95a8b32dd7b764264d8aadb78ed37f9f8904145207273bed17521b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/02/1987&index=uke1whUOi0nWypEnmLQjGg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=MoFxuERD_PLUS_TVNw6WT0Gollw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:trudy:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/trudy/page-001.html",
+      "html_sha256": "5ad0de0f4b9e420d5c50d08b643406a4e616bc06873d9ce06ff3b7b804f8e25d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 15,
+      "row_html_sha256": "b5fdbd20ab24d0313ef7d00c16050a82fb69e8bac036d752a219be4d535d6ecb"
     }
   ],
   "judicial_officer": "ANTHONY J. FERRARO"

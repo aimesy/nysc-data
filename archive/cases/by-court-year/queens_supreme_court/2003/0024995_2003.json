@@ -14,8 +14,8 @@
   "case_type": "MATRIMONIAL UNCONTESTED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T21:55:21.893Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/beri.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "0da036f7af7be7bcff4dc1d2339329159d6345c7c5b723cce6b596ae2501ed91"
+        "row_html_sha256": "f967ea751d596334b74e053b7c119e79f938b0d3ca4ad4f5a0d90eb565f7553e"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/beri/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00025-p001-r010-appearances-0024995_2003-01.html",
+      "html_sha256": "148cc2f19a4905a7624392c73e3cf9531c4c59c6293e3dba4815c0dba946d65b",
+      "bytes_len": 5586,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/2003&index=RcIm8u7Wo%2Flx2Y8rArlWpg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=CwFoy1N2IHMleGxDzsVGfQ%3D%3D",
+      "captured_at": "2026-07-20T21:55:21.893Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/beri/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00024-p001-r010-case_detail-0024995_2003-01.html",
+      "html_sha256": "d02ba9ff01334efc8d639a69326cc6fbd8489559cfbda1adcf1aad2282ff3457",
+      "bytes_len": 6469,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=RcIm8u7Wo%2Flx2Y8rArlWpg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=12/05/2003&civilCaseId=CwFoy1N2IHMleGxDzsVGfQ%3D%3D",
+      "captured_at": "2026-07-20T21:55:21.893Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:beri:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/beri/page-001.html",
-      "html_sha256": "9e79e2d4997f3e9b3cdbe8932744ec30d299046c400be1f9cc0f0c7b73def64b",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:beri:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00024-p001-r010-case_detail-0024995_2003-01.html",
+      "html_sha256": "d02ba9ff01334efc8d639a69326cc6fbd8489559cfbda1adcf1aad2282ff3457",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=RcIm8u7Wo%2Flx2Y8rArlWpg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=12/05/2003&civilCaseId=CwFoy1N2IHMleGxDzsVGfQ%3D%3D",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "0da036f7af7be7bcff4dc1d2339329159d6345c7c5b723cce6b596ae2501ed91"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:beri:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00025-p001-r010-appearances-0024995_2003-01.html",
+      "html_sha256": "148cc2f19a4905a7624392c73e3cf9531c4c59c6293e3dba4815c0dba946d65b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/2003&index=RcIm8u7Wo%2Flx2Y8rArlWpg%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=CwFoy1N2IHMleGxDzsVGfQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:beri:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/beri/page-001.html",
+      "html_sha256": "dfd1c703cc111184e5594432713448b7d45bf34ef6a56e6700ac591fe27b7781",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "f967ea751d596334b74e053b7c119e79f938b0d3ca4ad4f5a0d90eb565f7553e"
     }
   ],
   "judicial_officer": "ROBERT J. MCDONALD"

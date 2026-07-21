@@ -14,8 +14,8 @@
   "case_type": "TAX CERTIORARI",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:16:05.337Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/okin.rows.ndjson",
         "source_page": 1,
         "source_row": 11,
-        "row_html_sha256": "e05fc838d83fac3222d94f380cc9958b04b3c147645d850a111d3db4aa339977"
+        "row_html_sha256": "303db3dd61660400aa2c8d3358f236439354c252dee87d1bacae085eeef18d32"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/okin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/okin/00022-p001-r011-appearances-0017592_1982-01.html",
+      "html_sha256": "261681f0ac863e0b250d610358b44952cd0d4778f5198a4fccc0a058754209b8",
+      "bytes_len": 6222,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/16/1987&index=yboNIks5kGm7ShJIIDsLNQ%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=%2FZldxr_PLUS_TJ0QTRT5VRQOyCg%3D%3D",
+      "captured_at": "2026-07-21T00:16:05.337Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/okin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/okin/00021-p001-r011-case_detail-0017592_1982-01.html",
+      "html_sha256": "b09b3d4c0eb12b8c2f5715c34a1252cf464317cbb7572c7b41147297a70fb122",
+      "bytes_len": 7141,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yboNIks5kGm7ShJIIDsLNQ%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=05/16/1987&civilCaseId=%2FZldxr_PLUS_TJ0QTRT5VRQOyCg%3D%3D",
+      "captured_at": "2026-07-21T00:16:05.337Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:okin:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/okin/page-001.html",
-      "html_sha256": "f9835995f41d7116f91fccbb8ecdb98869c49cc0627a6c6854a8247a9323eee7",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:okin:followup-page:001:capture:00021:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/okin/00021-p001-r011-case_detail-0017592_1982-01.html",
+      "html_sha256": "b09b3d4c0eb12b8c2f5715c34a1252cf464317cbb7572c7b41147297a70fb122",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yboNIks5kGm7ShJIIDsLNQ%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=05/16/1987&civilCaseId=%2FZldxr_PLUS_TJ0QTRT5VRQOyCg%3D%3D",
       "page_number": 1,
       "table_row_number": 11,
-      "row_html_sha256": "e05fc838d83fac3222d94f380cc9958b04b3c147645d850a111d3db4aa339977"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:okin:followup-page:001:capture:00022:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/okin/00022-p001-r011-appearances-0017592_1982-01.html",
+      "html_sha256": "261681f0ac863e0b250d610358b44952cd0d4778f5198a4fccc0a058754209b8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/16/1987&index=yboNIks5kGm7ShJIIDsLNQ%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=%2FZldxr_PLUS_TJ0QTRT5VRQOyCg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:okin:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/okin/page-001.html",
+      "html_sha256": "86105f59ec41605d8fbaba448870382049c81b94a23a4e4b68767c2bfe3f2e55",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "303db3dd61660400aa2c8d3358f236439354c252dee87d1bacae085eeef18d32"
     }
   ],
   "judicial_officer": "LEO F. MC GINITY"

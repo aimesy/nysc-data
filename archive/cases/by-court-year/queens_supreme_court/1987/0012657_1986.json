@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T21:55:21.893Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/beri.rows.ndjson",
         "source_page": 1,
         "source_row": 1,
-        "row_html_sha256": "1437782eec35ea026739373d57e0df12ac5e581ec01face70f6fbb9221666e2e"
+        "row_html_sha256": "d287e64b5c30113339fc1b6334aecbcd454e11673e71323de47d13962579daa6"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/beri/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00002-p001-r001-appearances-0012657_1986-01.html",
+      "html_sha256": "600527d6ad000535f8920168af59b70ad0cc955007a1fc28007f9616b7bbfa0d",
+      "bytes_len": 6212,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/01/1987&index=h5pAMLUX8gGuNxk9FmMt3Q%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=%2FJ8L7F1tU5Z0xmNBFdnSUg%3D%3D",
+      "captured_at": "2026-07-20T21:55:21.893Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/beri/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00001-p001-r001-case_detail-0012657_1986-01.html",
+      "html_sha256": "dd59c6630167ec04c1724b685d44c8c68dc07788984b06e1f18216679ba67d13",
+      "bytes_len": 7050,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=h5pAMLUX8gGuNxk9FmMt3Q%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=10/01/1987&civilCaseId=%2FJ8L7F1tU5Z0xmNBFdnSUg%3D%3D",
+      "captured_at": "2026-07-20T21:55:21.893Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:beri:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/beri/page-001.html",
-      "html_sha256": "9e79e2d4997f3e9b3cdbe8932744ec30d299046c400be1f9cc0f0c7b73def64b",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:beri:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00001-p001-r001-case_detail-0012657_1986-01.html",
+      "html_sha256": "dd59c6630167ec04c1724b685d44c8c68dc07788984b06e1f18216679ba67d13",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=h5pAMLUX8gGuNxk9FmMt3Q%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=10/01/1987&civilCaseId=%2FJ8L7F1tU5Z0xmNBFdnSUg%3D%3D",
       "page_number": 1,
       "table_row_number": 1,
-      "row_html_sha256": "1437782eec35ea026739373d57e0df12ac5e581ec01face70f6fbb9221666e2e"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:beri:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/beri/00002-p001-r001-appearances-0012657_1986-01.html",
+      "html_sha256": "600527d6ad000535f8920168af59b70ad0cc955007a1fc28007f9616b7bbfa0d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/01/1987&index=h5pAMLUX8gGuNxk9FmMt3Q%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=%2FJ8L7F1tU5Z0xmNBFdnSUg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:beri:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/beri/page-001.html",
+      "html_sha256": "dfd1c703cc111184e5594432713448b7d45bf34ef6a56e6700ac591fe27b7781",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "d287e64b5c30113339fc1b6334aecbcd454e11673e71323de47d13962579daa6"
     }
   ],
   "judicial_officer": "JOAN MARIE DURANTE"

@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T14:05:16.463Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,26 +23,29 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "fortuna"
+      "basdekis"
     ],
     "result_row_refs": [
       {
-        "search_name": "fortuna",
-        "query_type": "attorney-prefix",
-        "source_file": "archive/webcivil/results/fortuna.rows.ndjson",
+        "search_name": "basdekis",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/basdekis.rows.ndjson",
         "source_page": 1,
-        "source_row": 19,
-        "row_html_sha256": "7d7927de1f275dfb01c8543289686fb83b45c9e5930fa382e406fad6cd1413a8"
+        "source_row": 3,
+        "row_html_sha256": "3d5b5be8b326596fef61b9bf65f2377551e44d499834b0de81a0818bd745f147"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/basdekis/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/basdekis/00006-p001-r003-appearances-0008969_1988-01.html",
+      "html_sha256": "73b50408a7985813784782e964d9fa8674c6a1461f67d989fc3743320ad8ecc3",
+      "bytes_len": 7574,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/06/1990&index=TuxEuV7FTXYJkCjcagie3w%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=hIBVR0mPS4hmnEKdI1c3%2FQ%3D%3D",
+      "captured_at": "2026-07-20T14:05:16.463Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/basdekis/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/basdekis/00005-p001-r003-case_detail-0008969_1988-01.html",
+      "html_sha256": "fb00e67c164eac1a5c14d08056a67b4e2305feb4a0a37bd88afd0e938c4515ca",
+      "bytes_len": 7517,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TuxEuV7FTXYJkCjcagie3w%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=07/06/1990&civilCaseId=hIBVR0mPS4hmnEKdI1c3%2FQ%3D%3D",
+      "captured_at": "2026-07-20T14:05:16.463Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:fortuna:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/fortuna/page-001.html",
-      "html_sha256": "46054ccbcb3ec42ab33c1f9a5eec6438bfb9deccb0f7b963c6cb4cce9320fb59",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:basdekis:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/basdekis/00005-p001-r003-case_detail-0008969_1988-01.html",
+      "html_sha256": "fb00e67c164eac1a5c14d08056a67b4e2305feb4a0a37bd88afd0e938c4515ca",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TuxEuV7FTXYJkCjcagie3w%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=07/06/1990&civilCaseId=hIBVR0mPS4hmnEKdI1c3%2FQ%3D%3D",
       "page_number": 1,
-      "table_row_number": 19,
-      "row_html_sha256": "7d7927de1f275dfb01c8543289686fb83b45c9e5930fa382e406fad6cd1413a8"
+      "table_row_number": 3,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:basdekis:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/basdekis/00006-p001-r003-appearances-0008969_1988-01.html",
+      "html_sha256": "73b50408a7985813784782e964d9fa8674c6a1461f67d989fc3743320ad8ecc3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/06/1990&index=TuxEuV7FTXYJkCjcagie3w%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=hIBVR0mPS4hmnEKdI1c3%2FQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:basdekis:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/basdekis/page-001.html",
+      "html_sha256": "fe82077b9aa45ad01fe32ff04294ff7e9e876ff7180e768d19507446c810a070",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "3d5b5be8b326596fef61b9bf65f2377551e44d499834b0de81a0818bd745f147"
     }
   ],
   "judicial_officer": "COSMO J. DITUCCI"

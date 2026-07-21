@@ -14,8 +14,8 @@
   "case_type": "UCMT-ABANDONMENT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T02:55:56.590Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/toyo.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "f8bdcbf316c83a3e7de81359547a380a1261d5f9fb1c24a36a542dc58334ccb6"
+        "row_html_sha256": "42e17c9d487ee0c0105ca01fa29ffe03150d49fc0862f4b7ac9824df71af87d5"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/toyo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00056-p001-r022-appearances-0126741_2008-01.html",
+      "html_sha256": "a5234596bfd0d9dc9123aa418685d30b0d4fcaf272a361817ed0a0fc066b040c",
+      "bytes_len": 6255,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/08/2008&index=ERPNMjhh12Iu3i2Za5on_PLUS_Q%3D%3D&county=2OMFd7Tue9R8rNMwSQpr5Q%3D%3D&civilCaseId=DgUTe15BeauBlSAay04zxQ%3D%3D",
+      "captured_at": "2026-07-21T02:55:56.590Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/toyo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00055-p001-r022-case_detail-0126741_2008-01.html",
+      "html_sha256": "e6962c3742c9f0fc784dca6f82929fc1eff0dac2bca8de9fcaeeda0d41edc2cc",
+      "bytes_len": 6918,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ERPNMjhh12Iu3i2Za5on_PLUS_Q%3D%3D&county=2OMFd7Tue9R8rNMwSQpr5Q%3D%3D&motion=&docs=&adate=05/08/2008&civilCaseId=DgUTe15BeauBlSAay04zxQ%3D%3D",
+      "captured_at": "2026-07-21T02:55:56.590Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:toyo:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/toyo/page-001.html",
-      "html_sha256": "550a1a08c6a965be2daccb464bf1b73ddf24585f8547f9dbc744a621fb844cd6",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn06",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:toyo:followup-page:001:capture:00055:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00055-p001-r022-case_detail-0126741_2008-01.html",
+      "html_sha256": "e6962c3742c9f0fc784dca6f82929fc1eff0dac2bca8de9fcaeeda0d41edc2cc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ERPNMjhh12Iu3i2Za5on_PLUS_Q%3D%3D&county=2OMFd7Tue9R8rNMwSQpr5Q%3D%3D&motion=&docs=&adate=05/08/2008&civilCaseId=DgUTe15BeauBlSAay04zxQ%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "f8bdcbf316c83a3e7de81359547a380a1261d5f9fb1c24a36a542dc58334ccb6"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:toyo:followup-page:001:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/toyo/00056-p001-r022-appearances-0126741_2008-01.html",
+      "html_sha256": "a5234596bfd0d9dc9123aa418685d30b0d4fcaf272a361817ed0a0fc066b040c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/08/2008&index=ERPNMjhh12Iu3i2Za5on_PLUS_Q%3D%3D&county=2OMFd7Tue9R8rNMwSQpr5Q%3D%3D&civilCaseId=DgUTe15BeauBlSAay04zxQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:toyo:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/toyo/page-001.html",
+      "html_sha256": "f772c74aa0a903582e7ae5625c545a87339ac774769b63addb17826bfc0e32cf",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "42e17c9d487ee0c0105ca01fa29ffe03150d49fc0862f4b7ac9824df71af87d5"
     }
   ],
   "judicial_officer": "HON KATHLEEN M ROGERS"

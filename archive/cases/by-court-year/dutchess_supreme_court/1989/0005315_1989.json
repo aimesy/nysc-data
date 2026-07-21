@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:38:19.510Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/verne.rows.ndjson",
         "source_page": 1,
         "source_row": 14,
-        "row_html_sha256": "083bfcd86ece6396967ad9a5e3bd1427a297fa9069831cbe73d2a9cc8c706331"
+        "row_html_sha256": "3fdf5752091b015badefecbf3a6daf7f5041830632882bcfd37a0257d730630e"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/verne/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/verne/00036-p001-r014-appearances-0005315_1989-01.html",
+      "html_sha256": "e2dc2a3344666e1a3441618ef271dadb7bb84b6b59ff34f88718c2f5d1c47973",
+      "bytes_len": 5554,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/12/1989&index=iynARJnTt78X0CzSZs8cKQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=rCuIskmngXdWJbCLwkqJDw%3D%3D",
+      "captured_at": "2026-07-21T00:38:19.510Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/verne/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/verne/00035-p001-r014-case_detail-0005315_1989-01.html",
+      "html_sha256": "0d49f893c9356c7aeb9cb1fd19640c5b33af146ea2a2dfd65eb186386a51e51d",
+      "bytes_len": 6991,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=iynARJnTt78X0CzSZs8cKQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&motion=&docs=&adate=12/12/1989&civilCaseId=rCuIskmngXdWJbCLwkqJDw%3D%3D",
+      "captured_at": "2026-07-21T00:38:19.510Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:verne:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/verne/page-001.html",
-      "html_sha256": "e475157e7107d5771c5c19275becf4c582e061da38ae374f4e542303cb9ebfee",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:verne:followup-page:001:capture:00035:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/verne/00035-p001-r014-case_detail-0005315_1989-01.html",
+      "html_sha256": "0d49f893c9356c7aeb9cb1fd19640c5b33af146ea2a2dfd65eb186386a51e51d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=iynARJnTt78X0CzSZs8cKQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&motion=&docs=&adate=12/12/1989&civilCaseId=rCuIskmngXdWJbCLwkqJDw%3D%3D",
       "page_number": 1,
       "table_row_number": 14,
-      "row_html_sha256": "083bfcd86ece6396967ad9a5e3bd1427a297fa9069831cbe73d2a9cc8c706331"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:verne:followup-page:001:capture:00036:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/verne/00036-p001-r014-appearances-0005315_1989-01.html",
+      "html_sha256": "e2dc2a3344666e1a3441618ef271dadb7bb84b6b59ff34f88718c2f5d1c47973",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/12/1989&index=iynARJnTt78X0CzSZs8cKQ%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=rCuIskmngXdWJbCLwkqJDw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 14,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:verne:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/verne/page-001.html",
+      "html_sha256": "e8b5e9e772fff1c8b4658f4ca3c8a3bb0eaf4416bdcf5c0a46afc3124330cb9b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 14,
+      "row_html_sha256": "3fdf5752091b015badefecbf3a6daf7f5041830632882bcfd37a0257d730630e"
     }
   ],
   "judicial_officer": "JOSEPH JIUDICE"

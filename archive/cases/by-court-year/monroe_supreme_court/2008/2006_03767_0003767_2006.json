@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:55:56.224Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sando.rows.ndjson",
         "source_page": 1,
         "source_row": 24,
-        "row_html_sha256": "0dce50c9d1a6f892b555c8829fb4f79e2202e55fcd37d074a5e836ebfa1a828b"
+        "row_html_sha256": "bb230223f5dfa300c6aa94c4130002c92da14b1a979fc57437b0a432b925a1d5"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00060-p001-r024-appearances-0003767_2006-01.html",
+      "html_sha256": "b6572bb847565348bb0d34877b45342724ca5ab14867400c10c3ef587312d4be",
+      "bytes_len": 6267,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/15/2008&index=qp2AngJYl%2F6QoL5Jn3uN5w%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=s5RTAIC5kFSd6XRVpi%2FelA%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00059-p001-r024-case_detail-0003767_2006-01.html",
+      "html_sha256": "6787e43f2aacbcbfb988528e77f69486c828ddc98d05f481858f15e29cce148f",
+      "bytes_len": 7187,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=qp2AngJYl%2F6QoL5Jn3uN5w%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=09/15/2008&civilCaseId=s5RTAIC5kFSd6XRVpi%2FelA%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:sando:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/sando/page-001.html",
-      "html_sha256": "d29193b945ea67917b3e011870a23990394aee9d152067a70e61dd7251c37dc2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00059:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00059-p001-r024-case_detail-0003767_2006-01.html",
+      "html_sha256": "6787e43f2aacbcbfb988528e77f69486c828ddc98d05f481858f15e29cce148f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=qp2AngJYl%2F6QoL5Jn3uN5w%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=09/15/2008&civilCaseId=s5RTAIC5kFSd6XRVpi%2FelA%3D%3D",
       "page_number": 1,
       "table_row_number": 24,
-      "row_html_sha256": "0dce50c9d1a6f892b555c8829fb4f79e2202e55fcd37d074a5e836ebfa1a828b"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00060:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00060-p001-r024-appearances-0003767_2006-01.html",
+      "html_sha256": "b6572bb847565348bb0d34877b45342724ca5ab14867400c10c3ef587312d4be",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/15/2008&index=qp2AngJYl%2F6QoL5Jn3uN5w%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=s5RTAIC5kFSd6XRVpi%2FelA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 24,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:sando:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sando/page-001.html",
+      "html_sha256": "a9f3ddb5ec2e77dd6486c3ac5d5955b1d6ab5e1f42b9ff0864aa991a91543179",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 24,
+      "row_html_sha256": "bb230223f5dfa300c6aa94c4130002c92da14b1a979fc57437b0a432b925a1d5"
     }
   ],
   "judicial_officer": "HON. EVELYN FRAZEE"

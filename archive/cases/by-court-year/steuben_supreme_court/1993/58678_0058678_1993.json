@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:16:09.288Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/rude.rows.ndjson",
         "source_page": 1,
         "source_row": 19,
-        "row_html_sha256": "2f3511150e326686ddae493ecfc84463876059d5c0b45a2ed6ea400254e29676"
+        "row_html_sha256": "20dc1ae7fc2b687d014850b4a2c1f202e8cba626272693e1aca34dde4012df2c"
       }
     ]
   },
@@ -77,19 +80,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/rude/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rude/00045-p001-r019-appearances-0058678_1993-01.html",
+      "html_sha256": "f725afb8d4169ba291d25a9eeb78c8c29339594a0c04a681723f5d5596856415",
+      "bytes_len": 5531,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/02/1993&index=b1sKHhSkVmFkDSOXaMZldg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&civilCaseId=LRu19PjPA%2FDuiMI1ua%2FF8Q%3D%3D",
+      "captured_at": "2026-07-21T01:16:09.288Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/rude/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rude/00044-p001-r019-case_detail-0058678_1993-01.html",
+      "html_sha256": "4d905487de626b6255dad8242b637e02c096238307be6a98a9b1f06c38d19a9f",
+      "bytes_len": 6648,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=b1sKHhSkVmFkDSOXaMZldg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&motion=&docs=&adate=08/02/1993&civilCaseId=LRu19PjPA%2FDuiMI1ua%2FF8Q%3D%3D",
+      "captured_at": "2026-07-21T01:16:09.288Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:rude:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/rude/page-001.html",
-      "html_sha256": "3d5fd5b1b94bef61e550da2615fbe1fef69cb2deba3ae2cad336d9cbfcdc7d2f",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:rude:followup-page:001:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rude/00044-p001-r019-case_detail-0058678_1993-01.html",
+      "html_sha256": "4d905487de626b6255dad8242b637e02c096238307be6a98a9b1f06c38d19a9f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=b1sKHhSkVmFkDSOXaMZldg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&motion=&docs=&adate=08/02/1993&civilCaseId=LRu19PjPA%2FDuiMI1ua%2FF8Q%3D%3D",
       "page_number": 1,
       "table_row_number": 19,
-      "row_html_sha256": "2f3511150e326686ddae493ecfc84463876059d5c0b45a2ed6ea400254e29676"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:rude:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/rude/00045-p001-r019-appearances-0058678_1993-01.html",
+      "html_sha256": "f725afb8d4169ba291d25a9eeb78c8c29339594a0c04a681723f5d5596856415",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/02/1993&index=b1sKHhSkVmFkDSOXaMZldg%3D%3D&county=AZPlTz5rinRkENJIDB%2FyFw%3D%3D&civilCaseId=LRu19PjPA%2FDuiMI1ua%2FF8Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:rude:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/rude/page-001.html",
+      "html_sha256": "51595046bf2de88a23531f66a667e63dbfb2a431fb317274af8a3d0cbe732a14",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "20dc1ae7fc2b687d014850b4a2c1f202e8cba626272693e1aca34dde4012df2c"
     }
   ],
   "judicial_officer": "HON. HENRY J. SCUDDER"

@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T00:41:51.230Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/lovel.rows.ndjson",
         "source_page": 1,
         "source_row": 4,
-        "row_html_sha256": "a14b14969c47a135f75d30026541fc5b01f251bf4023422029fc8b13f309a3aa"
+        "row_html_sha256": "77029b09ce9b1605816b5bb33427a0d7e2d31246e8f842cb1088b12bd9d3fa53"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/lovel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/lovel/00010-p001-r004-appearances-0003778_1997-01.html",
+      "html_sha256": "9e8c712f6280dd200e967d05af0f0f30963093634d6fb76abb53c6dd6b1a98f3",
+      "bytes_len": 5577,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/12/1997&index=Ru34L2oK_PLUS_uFBZ9ACL%2FXXvQ%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=oLC665mi4CNkGUouQj_PLUS_5wg%3D%3D",
+      "captured_at": "2026-07-21T00:41:51.230Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/lovel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/lovel/00009-p001-r004-case_detail-0003778_1997-01.html",
+      "html_sha256": "a283644884ade9b127f31b70e57b65161e6dc7ddcc03d2d20caf148b149656bc",
+      "bytes_len": 6628,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Ru34L2oK_PLUS_uFBZ9ACL%2FXXvQ%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=09/12/1997&civilCaseId=oLC665mi4CNkGUouQj_PLUS_5wg%3D%3D",
+      "captured_at": "2026-07-21T00:41:51.230Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:lovel:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/lovel/page-001.html",
-      "html_sha256": "65a6bc31bf7a11e74cb3e8e40772544b70aeb7b5fa9979d1a909b499be4a6807",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:lovel:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/lovel/00009-p001-r004-case_detail-0003778_1997-01.html",
+      "html_sha256": "a283644884ade9b127f31b70e57b65161e6dc7ddcc03d2d20caf148b149656bc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Ru34L2oK_PLUS_uFBZ9ACL%2FXXvQ%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&motion=&docs=&adate=09/12/1997&civilCaseId=oLC665mi4CNkGUouQj_PLUS_5wg%3D%3D",
       "page_number": 1,
       "table_row_number": 4,
-      "row_html_sha256": "a14b14969c47a135f75d30026541fc5b01f251bf4023422029fc8b13f309a3aa"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:lovel:followup-page:001:capture:00010:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/lovel/00010-p001-r004-appearances-0003778_1997-01.html",
+      "html_sha256": "9e8c712f6280dd200e967d05af0f0f30963093634d6fb76abb53c6dd6b1a98f3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/12/1997&index=Ru34L2oK_PLUS_uFBZ9ACL%2FXXvQ%3D%3D&county=2pvg3tN5IPk24gBSm5Ci3w%3D%3D&civilCaseId=oLC665mi4CNkGUouQj_PLUS_5wg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 4,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:lovel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/lovel/page-001.html",
+      "html_sha256": "d8240d465541ee71e00301cf852b7b930da46f1eb6b0ece82b1f00b5e018e75d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 4,
+      "row_html_sha256": "77029b09ce9b1605816b5bb33427a0d7e2d31246e8f842cb1088b12bd9d3fa53"
     }
   ],
   "judicial_officer": "JOSEPH G. GOLIA"

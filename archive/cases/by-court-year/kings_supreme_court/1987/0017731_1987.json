@@ -14,8 +14,8 @@
   "case_type": "CONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T13:17:05.100Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/crimi.rows.ndjson",
         "source_page": 1,
         "source_row": 9,
-        "row_html_sha256": "7718ef926a25a92febc5f4f0795ef83d30eb6a50cb67097793c3dcdfe2c07b6b"
+        "row_html_sha256": "5d10717f7e8036ae2367e5573bfa22eae2ebf9c0e856012f791091f777dde144"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/crimi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crimi/00019-p001-r009-appearances-0017731_1987-01.html",
+      "html_sha256": "150254f31f182b5acb12d918c6c17f99f9cf1eec491fa471b2ad04ce9a733b20",
+      "bytes_len": 10297,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/13/1988&index=bq8IyiG7aRDPh17d1etgAw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=VnGCoMhgb8w1SeoTklRKig%3D%3D",
+      "captured_at": "2026-07-21T13:17:05.100Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/crimi/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crimi/00018-p001-r009-case_detail-0017731_1987-01.html",
+      "html_sha256": "dbe3c8f7efe0e709597025ce72210c85ff994eeaa66e37066760294136c4f9aa",
+      "bytes_len": 7018,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bq8IyiG7aRDPh17d1etgAw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=05/13/1988&civilCaseId=VnGCoMhgb8w1SeoTklRKig%3D%3D",
+      "captured_at": "2026-07-21T13:17:05.100Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:crimi:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/crimi/page-001.html",
-      "html_sha256": "da78c8a3cf91651989e75e48fc316fa73a394b6296581025564d475442b2704d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:crimi:followup-page:001:capture:00018:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crimi/00018-p001-r009-case_detail-0017731_1987-01.html",
+      "html_sha256": "dbe3c8f7efe0e709597025ce72210c85ff994eeaa66e37066760294136c4f9aa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bq8IyiG7aRDPh17d1etgAw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=05/13/1988&civilCaseId=VnGCoMhgb8w1SeoTklRKig%3D%3D",
       "page_number": 1,
       "table_row_number": 9,
-      "row_html_sha256": "7718ef926a25a92febc5f4f0795ef83d30eb6a50cb67097793c3dcdfe2c07b6b"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:crimi:followup-page:001:capture:00019:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/crimi/00019-p001-r009-appearances-0017731_1987-01.html",
+      "html_sha256": "150254f31f182b5acb12d918c6c17f99f9cf1eec491fa471b2ad04ce9a733b20",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/13/1988&index=bq8IyiG7aRDPh17d1etgAw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=VnGCoMhgb8w1SeoTklRKig%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:crimi:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/crimi/page-001.html",
+      "html_sha256": "a6336995012a42743ea6e5b149c112adb2e2b379279bf82813bc0e8b1a19201c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 9,
+      "row_html_sha256": "5d10717f7e8036ae2367e5573bfa22eae2ebf9c0e856012f791091f777dde144"
     }
   ],
   "judicial_officer": "WILLIAM RIGLER"

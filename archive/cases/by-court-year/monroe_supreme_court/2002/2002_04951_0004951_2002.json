@@ -14,8 +14,8 @@
   "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T03:46:00.911Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/faul.rows.ndjson",
         "source_page": 1,
         "source_row": 24,
-        "row_html_sha256": "222b86e109f7675c9561233fbfa77fa14ab33ee6a2f2725b44d620b1d2300f04"
+        "row_html_sha256": "b6b146d23bbf39e6f8c673d04eaef10d98e29d195b2742aaecd385051c323fd6"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/faul/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faul/00054-p001-r024-appearances-0004951_2002-01.html",
+      "html_sha256": "ff9de3874d346f149b1d4a0e9f625f56cef953a6a977deeb6c63ce4fcdfb8db3",
+      "bytes_len": 5563,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/21/2002&index=Or%2FThi5iKPZ8gxiXwU3p2g%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=z0EXAEahEOMhym05MAOVDg%3D%3D",
+      "captured_at": "2026-07-21T03:46:00.911Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/faul/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faul/00053-p001-r024-case_detail-0004951_2002-01.html",
+      "html_sha256": "4f8afcac00598073c5bc3d847909667ecd8c48379702fbd71806b9e22c059628",
+      "bytes_len": 7234,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Or%2FThi5iKPZ8gxiXwU3p2g%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=06/21/2002&civilCaseId=z0EXAEahEOMhym05MAOVDg%3D%3D",
+      "captured_at": "2026-07-21T03:46:00.911Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:faul:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/faul/page-001.html",
-      "html_sha256": "14c43447886a33078d4c0e6af48b1c5b0a12664fb369161b4d1f5309578e0379",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:faul:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faul/00053-p001-r024-case_detail-0004951_2002-01.html",
+      "html_sha256": "4f8afcac00598073c5bc3d847909667ecd8c48379702fbd71806b9e22c059628",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Or%2FThi5iKPZ8gxiXwU3p2g%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=06/21/2002&civilCaseId=z0EXAEahEOMhym05MAOVDg%3D%3D",
       "page_number": 1,
       "table_row_number": 24,
-      "row_html_sha256": "222b86e109f7675c9561233fbfa77fa14ab33ee6a2f2725b44d620b1d2300f04"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:faul:followup-page:001:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/faul/00054-p001-r024-appearances-0004951_2002-01.html",
+      "html_sha256": "ff9de3874d346f149b1d4a0e9f625f56cef953a6a977deeb6c63ce4fcdfb8db3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/21/2002&index=Or%2FThi5iKPZ8gxiXwU3p2g%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=z0EXAEahEOMhym05MAOVDg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 24,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:faul:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/faul/page-001.html",
+      "html_sha256": "d1dfb38d74d3cbf696715ae59073f45fd51b0eee828383847c6601bf262ff612",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 24,
+      "row_html_sha256": "b6b146d23bbf39e6f8c673d04eaef10d98e29d195b2742aaecd385051c323fd6"
     }
   ],
   "judicial_officer": "HON. ROBERT J. LUNN"

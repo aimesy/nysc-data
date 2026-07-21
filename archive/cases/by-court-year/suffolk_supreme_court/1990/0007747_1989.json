@@ -14,8 +14,8 @@
   "case_type": "Tort-Motor Vehicle",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:55:56.224Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sando.rows.ndjson",
         "source_page": 1,
         "source_row": 5,
-        "row_html_sha256": "782fb8d24f4040cbeec69d0f33ae24b52e432f266765d05a379a84aff34174d4"
+        "row_html_sha256": "691ef353ea8451243a0a545e97eed0df041f41587bbdb1c45b97fda6c24e7e8e"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00011-p001-r005-appearances-0007747_1989-01.html",
+      "html_sha256": "7ce98faa51976185aa1722e656755eef7f92871b1ad6736f857c576dc6a21062",
+      "bytes_len": 5577,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/31/1990&index=X7WFqfyGMxwWkDOm_PLUS_t291A%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=WSPKLpCCJcstkGUwHLsIHA%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/sando/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00010-p001-r005-case_detail-0007747_1989-01.html",
+      "html_sha256": "c77ef9383dac283c925aa9495bd8ad640fbfc48fdcd0a05d757375371bd1498a",
+      "bytes_len": 7126,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=X7WFqfyGMxwWkDOm_PLUS_t291A%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=07/31/1990&civilCaseId=WSPKLpCCJcstkGUwHLsIHA%3D%3D",
+      "captured_at": "2026-07-20T22:55:56.224Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:sando:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/sando/page-001.html",
-      "html_sha256": "d29193b945ea67917b3e011870a23990394aee9d152067a70e61dd7251c37dc2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00010:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00010-p001-r005-case_detail-0007747_1989-01.html",
+      "html_sha256": "c77ef9383dac283c925aa9495bd8ad640fbfc48fdcd0a05d757375371bd1498a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=X7WFqfyGMxwWkDOm_PLUS_t291A%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&motion=&docs=&adate=07/31/1990&civilCaseId=WSPKLpCCJcstkGUwHLsIHA%3D%3D",
       "page_number": 1,
       "table_row_number": 5,
-      "row_html_sha256": "782fb8d24f4040cbeec69d0f33ae24b52e432f266765d05a379a84aff34174d4"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:sando:followup-page:001:capture:00011:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/sando/00011-p001-r005-appearances-0007747_1989-01.html",
+      "html_sha256": "7ce98faa51976185aa1722e656755eef7f92871b1ad6736f857c576dc6a21062",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/31/1990&index=X7WFqfyGMxwWkDOm_PLUS_t291A%3D%3D&county=MjusRfVMksMWOV%2FE5cIwdw%3D%3D&civilCaseId=WSPKLpCCJcstkGUwHLsIHA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:sando:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sando/page-001.html",
+      "html_sha256": "a9f3ddb5ec2e77dd6486c3ac5d5955b1d6ab5e1f42b9ff0864aa991a91543179",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "691ef353ea8451243a0a545e97eed0df041f41587bbdb1c45b97fda6c24e7e8e"
     }
   ],
   "judicial_officer": "TRIAL-ASSIGNMENT-PART-JUSTICE"

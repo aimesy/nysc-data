@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T01:20:35.514Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/mayor.rows.ndjson",
         "source_page": 1,
         "source_row": 23,
-        "row_html_sha256": "d234c9f5b06d28bdf920bbfb149a5b3e135f3ee1ec392acf64bc07bfcaa05ecc"
+        "row_html_sha256": "d34e4607e3a03de397647bf3e46418d96a82ac27dec7f9d2b4e7566926e8fb28"
       }
     ]
   },
@@ -98,19 +102,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00058-p001-r023-appearances-0002090_1987-01.html",
+      "html_sha256": "2d85be7ab45c3a1cae2a6fed019b668f5cc70001eedc06e00ed813f5ae9fffe2",
+      "bytes_len": 8266,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/12/1987&index=7OAVF7hHbnZlmssnIK0Unw%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=OEQrp9dEOjhBhufHTKwkSQ%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00057-p001-r023-case_detail-0002090_1987-01.html",
+      "html_sha256": "97df743b80d72b882108c1ac588f7caefe3ac418cb4ecb8b9521741bea4cca81",
+      "bytes_len": 6834,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7OAVF7hHbnZlmssnIK0Unw%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=M&docs=&adate=03/12/1987&civilCaseId=OEQrp9dEOjhBhufHTKwkSQ%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/mayor/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00059-p001-r023-motions-0002090_1987-01.html",
+      "html_sha256": "88d17c7b30db97bb615501a814b757018f4817a14682a8b7b3b5ef63d30d8b5b",
+      "bytes_len": 7140,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=7OAVF7hHbnZlmssnIK0Unw%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=OEQrp9dEOjhBhufHTKwkSQ%3D%3D",
+      "captured_at": "2026-07-21T01:20:35.514Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:mayor:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/mayor/page-001.html",
-      "html_sha256": "953c49d7a822a82480986b8b5b83c8f3e369dca9f02cb62fd9b1e82b6f98a903",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00057:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00057-p001-r023-case_detail-0002090_1987-01.html",
+      "html_sha256": "97df743b80d72b882108c1ac588f7caefe3ac418cb4ecb8b9521741bea4cca81",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7OAVF7hHbnZlmssnIK0Unw%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=M&docs=&adate=03/12/1987&civilCaseId=OEQrp9dEOjhBhufHTKwkSQ%3D%3D",
       "page_number": 1,
       "table_row_number": 23,
-      "row_html_sha256": "d234c9f5b06d28bdf920bbfb149a5b3e135f3ee1ec392acf64bc07bfcaa05ecc"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00058:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00058-p001-r023-appearances-0002090_1987-01.html",
+      "html_sha256": "2d85be7ab45c3a1cae2a6fed019b668f5cc70001eedc06e00ed813f5ae9fffe2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/12/1987&index=7OAVF7hHbnZlmssnIK0Unw%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=OEQrp9dEOjhBhufHTKwkSQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 23,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:mayor:followup-page:001:capture:00059:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/mayor/00059-p001-r023-motions-0002090_1987-01.html",
+      "html_sha256": "88d17c7b30db97bb615501a814b757018f4817a14682a8b7b3b5ef63d30d8b5b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=7OAVF7hHbnZlmssnIK0Unw%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=OEQrp9dEOjhBhufHTKwkSQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 23,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mayor:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mayor/page-001.html",
+      "html_sha256": "6216e7125fe42ff4b1968d12aed65fbc7699596168c036c0010f587db066144e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 23,
+      "row_html_sha256": "d34e4607e3a03de397647bf3e46418d96a82ac27dec7f9d2b4e7566926e8fb28"
     }
   ],
   "judicial_officer": "ANGELO D. RONCALLO"

@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:25:03.939Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/ortho.rows.ndjson",
         "source_page": 2,
         "source_row": 1,
-        "row_html_sha256": "2f694b8ba8cd217e6d09d596bd1c2642797c42d6517efe1a4a821e70cecb5ab6"
+        "row_html_sha256": "f4b47134178f25dc5fbb5f715670b6b09abcc84bb6e7a3d5f77148080da586d8"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ortho/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ortho/00002-p002-r001-appearances-0030177_1998-01.html",
+      "html_sha256": "942c31c74b3240e2ee7582d53b649941de7db862ba47060ce0aa28246925fe5b",
+      "bytes_len": 6288,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/07/2000&index=YNimgrjOEp3vXemOVSy5sg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=Gyq625FgqYyJn3nJ7Dc5Yg%3D%3D",
+      "captured_at": "2026-07-20T22:25:03.939Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/ortho/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ortho/00001-p002-r001-case_detail-0030177_1998-01.html",
+      "html_sha256": "412d8d84fa439e54fbb61d1c0417be21432e4443eba82d3a42fa16016b01ed08",
+      "bytes_len": 7048,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=YNimgrjOEp3vXemOVSy5sg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=12/07/2000&civilCaseId=Gyq625FgqYyJn3nJ7Dc5Yg%3D%3D",
+      "captured_at": "2026-07-20T22:25:03.939Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:ortho:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/ortho/page-002.html",
-      "html_sha256": "3aabfca62e34d2e723432231f3d81813455c9b321f43f0f342f1a33c71aed7dc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ortho:followup-page:002:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ortho/00001-p002-r001-case_detail-0030177_1998-01.html",
+      "html_sha256": "412d8d84fa439e54fbb61d1c0417be21432e4443eba82d3a42fa16016b01ed08",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=YNimgrjOEp3vXemOVSy5sg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=12/07/2000&civilCaseId=Gyq625FgqYyJn3nJ7Dc5Yg%3D%3D",
       "page_number": 2,
       "table_row_number": 1,
-      "row_html_sha256": "2f694b8ba8cd217e6d09d596bd1c2642797c42d6517efe1a4a821e70cecb5ab6"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:ortho:followup-page:002:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/ortho/00002-p002-r001-appearances-0030177_1998-01.html",
+      "html_sha256": "942c31c74b3240e2ee7582d53b649941de7db862ba47060ce0aa28246925fe5b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/07/2000&index=YNimgrjOEp3vXemOVSy5sg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=Gyq625FgqYyJn3nJ7Dc5Yg%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:ortho:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/ortho/page-002.html",
+      "html_sha256": "df0a2faca48ef996b3a7dd4fdd7aefe2e09735da206951b74dab7f37a63465a0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn07",
+      "page_number": 2,
+      "table_row_number": 1,
+      "row_html_sha256": "f4b47134178f25dc5fbb5f715670b6b09abcc84bb6e7a3d5f77148080da586d8"
     }
   ],
   "judicial_officer": "STEPHEN A. BUCARIA"

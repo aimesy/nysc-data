@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T02:01:07.795Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/hagan.rows.ndjson",
         "source_page": 1,
         "source_row": 11,
-        "row_html_sha256": "c0d83edf77b5662528a5c69b78ad30d5441bf45e380ce7ea43e45b0c96b4a422"
+        "row_html_sha256": "6e41384fe18639ad0decb2963761417f65231af919f318494ce7bcd4e0e1346c"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/hagan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00026-p001-r011-appearances-0011763_1985-01.html",
+      "html_sha256": "2ecf42b68b752395f8cc3f16947fcb371a3d1c7731dca6bec14ac454db4bb173",
+      "bytes_len": 8241,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/10/1986&index=0NNwUa7Dq_PLUS_soRQ%2FbOHNX1Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=z4qh9NK207RdNLx4ez_PLUS_VbQ%3D%3D",
+      "captured_at": "2026-07-21T02:01:07.795Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/hagan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00025-p001-r011-case_detail-0011763_1985-01.html",
+      "html_sha256": "246a18e54561c36d5ed631dadae3ea6206483168e5170a31b1030fee9c2dcee2",
+      "bytes_len": 8162,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0NNwUa7Dq_PLUS_soRQ%2FbOHNX1Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=12/10/1986&civilCaseId=z4qh9NK207RdNLx4ez_PLUS_VbQ%3D%3D",
+      "captured_at": "2026-07-21T02:01:07.795Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/hagan/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00027-p001-r011-motions-0011763_1985-01.html",
+      "html_sha256": "4f7ecbdb7bb00bbba58fab6553b48955cb20dae78f9664f56ecd56e9006d9c59",
+      "bytes_len": 7200,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0NNwUa7Dq_PLUS_soRQ%2FbOHNX1Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=z4qh9NK207RdNLx4ez_PLUS_VbQ%3D%3D",
+      "captured_at": "2026-07-21T02:01:07.795Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:hagan:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/hagan/page-001.html",
-      "html_sha256": "9a728108c3accf3379bb1d2a4e74497224c66638f7bb9e82f4d1348b0e450875",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:hagan:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00025-p001-r011-case_detail-0011763_1985-01.html",
+      "html_sha256": "246a18e54561c36d5ed631dadae3ea6206483168e5170a31b1030fee9c2dcee2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0NNwUa7Dq_PLUS_soRQ%2FbOHNX1Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=12/10/1986&civilCaseId=z4qh9NK207RdNLx4ez_PLUS_VbQ%3D%3D",
       "page_number": 1,
       "table_row_number": 11,
-      "row_html_sha256": "c0d83edf77b5662528a5c69b78ad30d5441bf45e380ce7ea43e45b0c96b4a422"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:hagan:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00026-p001-r011-appearances-0011763_1985-01.html",
+      "html_sha256": "2ecf42b68b752395f8cc3f16947fcb371a3d1c7731dca6bec14ac454db4bb173",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/10/1986&index=0NNwUa7Dq_PLUS_soRQ%2FbOHNX1Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=z4qh9NK207RdNLx4ez_PLUS_VbQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:hagan:followup-page:001:capture:00027:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/hagan/00027-p001-r011-motions-0011763_1985-01.html",
+      "html_sha256": "4f7ecbdb7bb00bbba58fab6553b48955cb20dae78f9664f56ecd56e9006d9c59",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0NNwUa7Dq_PLUS_soRQ%2FbOHNX1Q%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=z4qh9NK207RdNLx4ez_PLUS_VbQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:hagan:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/hagan/page-001.html",
+      "html_sha256": "4c39fdb8c9b59107bd437a8c491c2fe6762544b923be2a0f91722ff0a709e403",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "6e41384fe18639ad0decb2963761417f65231af919f318494ce7bcd4e0e1346c"
     }
   ],
   "judicial_officer": "BARRY HUROWITZ"

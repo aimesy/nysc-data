@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T15:26:21.439Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/tripp.rows.ndjson",
         "source_page": 1,
         "source_row": 15,
-        "row_html_sha256": "5e2f00d7003294dc32615a07cce80e6c19601aa4226f061395d64fe897ddec39"
+        "row_html_sha256": "710ce412c8e0393143292116843e9fd729cfb7fb0281eae8f2710d490679f08c"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/tripp/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tripp/00035-p001-r015-appearances-0001635_1987-01.html",
+      "html_sha256": "99468eb7fdbe33ed9208c0e008f39777ec90ca7bed70818f78409d954facb4c3",
+      "bytes_len": 9009,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/1988&index=%2FYeC6BxxUZ3DAXO19B4glg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=re6k2kOabXZTNgGgt8ptTg%3D%3D",
+      "captured_at": "2026-07-20T15:26:21.439Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/tripp/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tripp/00034-p001-r015-case_detail-0001635_1987-01.html",
+      "html_sha256": "d4fa9636ee4003db36aa571c0e471d8d073e2584e3adb1c7c603b89173a1b3fb",
+      "bytes_len": 7043,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FYeC6BxxUZ3DAXO19B4glg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=01/14/1988&civilCaseId=re6k2kOabXZTNgGgt8ptTg%3D%3D",
+      "captured_at": "2026-07-20T15:26:21.439Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:tripp:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tripp/page-001.html",
-      "html_sha256": "0aa5c1c8940bb6dca16dff561b5a594b95ac938eb8b91c56eaf1e84f6ed71e2b",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:tripp:followup-page:001:capture:00034:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tripp/00034-p001-r015-case_detail-0001635_1987-01.html",
+      "html_sha256": "d4fa9636ee4003db36aa571c0e471d8d073e2584e3adb1c7c603b89173a1b3fb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=%2FYeC6BxxUZ3DAXO19B4glg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&motion=&docs=&adate=01/14/1988&civilCaseId=re6k2kOabXZTNgGgt8ptTg%3D%3D",
       "page_number": 1,
       "table_row_number": 15,
-      "row_html_sha256": "5e2f00d7003294dc32615a07cce80e6c19601aa4226f061395d64fe897ddec39"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:tripp:followup-page:001:capture:00035:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/tripp/00035-p001-r015-appearances-0001635_1987-01.html",
+      "html_sha256": "99468eb7fdbe33ed9208c0e008f39777ec90ca7bed70818f78409d954facb4c3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/14/1988&index=%2FYeC6BxxUZ3DAXO19B4glg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=re6k2kOabXZTNgGgt8ptTg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:tripp:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tripp/page-001.html",
+      "html_sha256": "afe6c6944502420c9ebcb9e7a4d495a05ab6cbc82801526646c66ccfa8e86a51",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 15,
+      "row_html_sha256": "710ce412c8e0393143292116843e9fd729cfb7fb0281eae8f2710d490679f08c"
     }
   ],
   "judicial_officer": "GEORGE A. MURPHY"

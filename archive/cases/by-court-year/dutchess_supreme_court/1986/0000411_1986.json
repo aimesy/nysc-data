@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T03:55:49.466Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,26 +24,30 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "vechia"
+      "meier"
     ],
     "result_row_refs": [
       {
-        "search_name": "vechia",
-        "query_type": "attorney-prefix",
-        "source_file": "archive/webcivil/results/vechia.rows.ndjson",
+        "search_name": "meier",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/meier.rows.ndjson",
         "source_page": 1,
-        "source_row": 7,
-        "row_html_sha256": "d98bf577f2bb02f4d2457572383bede12102f2bf979797d8a2f27e0c218afb3c"
+        "source_row": 9,
+        "row_html_sha256": "b74b8a2ff0b7aa3f309696596fdbc8eebc695d1969364e1e64967a8ed45e44eb"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meier/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meier/00021-p001-r009-appearances-0000411_1986-01.html",
+      "html_sha256": "ed79fa1ff5f3fdcae58780c14e9e8a10946467609d605a57ee199f66eb94a5e7",
+      "bytes_len": 8949,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/30/1988&index=HmodzjzZfDTfny26Q2xAYg%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=2OlCieC%2FH%2Fbwjlzy9dT5cA%3D%3D",
+      "captured_at": "2026-07-21T03:55:49.466Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meier/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meier/00020-p001-r009-case_detail-0000411_1986-01.html",
+      "html_sha256": "64b0bf5db7a9c9309692f8e43c592429b112f3ee0f25194a067a6f557cee48d9",
+      "bytes_len": 8938,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HmodzjzZfDTfny26Q2xAYg%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&motion=M&docs=&adate=11/30/1988&civilCaseId=2OlCieC%2FH%2Fbwjlzy9dT5cA%3D%3D",
+      "captured_at": "2026-07-21T03:55:49.466Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/meier/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meier/00022-p001-r009-motions-0000411_1986-01.html",
+      "html_sha256": "bb67955a7ff4f8f3e3bb68b490bf30967807f47d8ce2e9805051a6d1f87e15d8",
+      "bytes_len": 6332,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=HmodzjzZfDTfny26Q2xAYg%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=2OlCieC%2FH%2Fbwjlzy9dT5cA%3D%3D",
+      "captured_at": "2026-07-21T03:55:49.466Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:vechia:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/vechia/page-001.html",
-      "html_sha256": "a4531db33b32fd8b085632db68753e8dee7cc3848be36a477cc128e71c9274b7",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meier:followup-page:001:capture:00020:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meier/00020-p001-r009-case_detail-0000411_1986-01.html",
+      "html_sha256": "64b0bf5db7a9c9309692f8e43c592429b112f3ee0f25194a067a6f557cee48d9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HmodzjzZfDTfny26Q2xAYg%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&motion=M&docs=&adate=11/30/1988&civilCaseId=2OlCieC%2FH%2Fbwjlzy9dT5cA%3D%3D",
       "page_number": 1,
-      "table_row_number": 7,
-      "row_html_sha256": "d98bf577f2bb02f4d2457572383bede12102f2bf979797d8a2f27e0c218afb3c"
+      "table_row_number": 9,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meier:followup-page:001:capture:00021:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meier/00021-p001-r009-appearances-0000411_1986-01.html",
+      "html_sha256": "ed79fa1ff5f3fdcae58780c14e9e8a10946467609d605a57ee199f66eb94a5e7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/30/1988&index=HmodzjzZfDTfny26Q2xAYg%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=2OlCieC%2FH%2Fbwjlzy9dT5cA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:meier:followup-page:001:capture:00022:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/meier/00022-p001-r009-motions-0000411_1986-01.html",
+      "html_sha256": "bb67955a7ff4f8f3e3bb68b490bf30967807f47d8ce2e9805051a6d1f87e15d8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=HmodzjzZfDTfny26Q2xAYg%3D%3D&county=E2xG4KaFZCDYoxIgB8tWww%3D%3D&civilCaseId=2OlCieC%2FH%2Fbwjlzy9dT5cA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 9,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:meier:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/meier/page-001.html",
+      "html_sha256": "a06c75d1d5caa39bf3eb2d9803d3554120f7b5c55aa99c9628e08603e65c23fe",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 9,
+      "row_html_sha256": "b74b8a2ff0b7aa3f309696596fdbc8eebc695d1969364e1e64967a8ed45e44eb"
     }
   ],
   "judicial_officer": "JOSEPH JIUDICE"

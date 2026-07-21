@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T15:10:25.921Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/trini.rows.ndjson",
         "source_page": 1,
         "source_row": 12,
-        "row_html_sha256": "07fbdac6bcbb67497d1aab5c3614fbb717b5c4de1a8ea6cd02520632c0d1b335"
+        "row_html_sha256": "edcc836e3c339fdebc649acd7cc76163e06936519e8d84c9f744744b9cc70398"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/trini/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trini/00031-p001-r012-appearances-0004677_2005-01.html",
+      "html_sha256": "07177a72e18af04f99b43f922d38e71535e806ed42ed45071308e279fcf8bbdc",
+      "bytes_len": 17387,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/13/2007&index=rEuM4ZW3c1qCYM7tdDb7Qw%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=ivysMYmoESSIyvg3NWiMsw%3D%3D",
+      "captured_at": "2026-07-20T15:10:25.921Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/trini/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trini/00030-p001-r012-case_detail-0004677_2005-01.html",
+      "html_sha256": "2af63a1b55778118af461471673caff3b5b60937aa2466f464a522d327e12cdb",
+      "bytes_len": 7319,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=rEuM4ZW3c1qCYM7tdDb7Qw%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=08/13/2007&civilCaseId=ivysMYmoESSIyvg3NWiMsw%3D%3D",
+      "captured_at": "2026-07-20T15:10:25.921Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/trini/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trini/00032-p001-r012-motions-0004677_2005-01.html",
+      "html_sha256": "d3752d2ae0501b073fe26abd834fc47be97dcce925e5ae62239be91365334944",
+      "bytes_len": 8918,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=rEuM4ZW3c1qCYM7tdDb7Qw%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=ivysMYmoESSIyvg3NWiMsw%3D%3D",
+      "captured_at": "2026-07-20T15:10:25.921Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:trini:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/trini/page-001.html",
-      "html_sha256": "80fcd87782babdf4cf82470ee4d06a39f09ddd16b9d5bac1478dd17d7353dad0",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:trini:followup-page:001:capture:00030:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trini/00030-p001-r012-case_detail-0004677_2005-01.html",
+      "html_sha256": "2af63a1b55778118af461471673caff3b5b60937aa2466f464a522d327e12cdb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=rEuM4ZW3c1qCYM7tdDb7Qw%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&motion=M&docs=&adate=08/13/2007&civilCaseId=ivysMYmoESSIyvg3NWiMsw%3D%3D",
       "page_number": 1,
       "table_row_number": 12,
-      "row_html_sha256": "07fbdac6bcbb67497d1aab5c3614fbb717b5c4de1a8ea6cd02520632c0d1b335"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:trini:followup-page:001:capture:00031:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trini/00031-p001-r012-appearances-0004677_2005-01.html",
+      "html_sha256": "07177a72e18af04f99b43f922d38e71535e806ed42ed45071308e279fcf8bbdc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/13/2007&index=rEuM4ZW3c1qCYM7tdDb7Qw%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=ivysMYmoESSIyvg3NWiMsw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:trini:followup-page:001:capture:00032:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/trini/00032-p001-r012-motions-0004677_2005-01.html",
+      "html_sha256": "d3752d2ae0501b073fe26abd834fc47be97dcce925e5ae62239be91365334944",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=rEuM4ZW3c1qCYM7tdDb7Qw%3D%3D&county=OOX7K%2F5I%2Fh1yYxtL7NT78A%3D%3D&civilCaseId=ivysMYmoESSIyvg3NWiMsw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:trini:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/trini/page-001.html",
+      "html_sha256": "ad2ac5d3a0ba9ff757221fed7bc857179dd86bc5d84dbb8f6a22c8df0463611c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 12,
+      "row_html_sha256": "edcc836e3c339fdebc649acd7cc76163e06936519e8d84c9f744744b9cc70398"
     }
   ],
   "judicial_officer": "KURTZ, JCP"

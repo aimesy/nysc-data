@@ -14,8 +14,8 @@
   "case_type": "Comm-Contract",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T23:28:32.910Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "boys"
+      "boys",
+      "mens"
     ],
     "result_row_refs": [
       {
@@ -42,7 +46,15 @@
         "source_file": "archive/webcivil/results/boys.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
-        "row_html_sha256": "99df2ecd6b5a14487ab9e2e481f26d702861c79acdb78cf72ed78b40c92d83ea"
+        "row_html_sha256": "203fa1a7a26dd19fa64c7d5d5d90e4612339744bb54a4502ad2620a1d519d578"
+      },
+      {
+        "search_name": "mens",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/mens.rows.ndjson",
+        "source_page": 1,
+        "source_row": 3,
+        "row_html_sha256": "203fa1a7a26dd19fa64c7d5d5d90e4612339744bb54a4502ad2620a1d519d578"
       }
     ]
   },
@@ -104,19 +116,85 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/boys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/boys/00007-p001-r003-appearances-0000787_1984-01.html",
+      "html_sha256": "ffbce7d1babddbf66913876a7b765dfd2aafbc00aa48d25cc313f7b938a49ace",
+      "bytes_len": 3800,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=20WxaLtb4sduVeaI%2F3gOXg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=hzl67S_PLUS_u01kGYEKBImNsZA%3D%3D",
+      "captured_at": "2026-07-20T23:28:32.910Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/boys/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/boys/00006-p001-r003-case_detail-0000787_1984-01.html",
+      "html_sha256": "c350104de8f843080fde8afd6f3320ed89b079ab36f0b27b031aee377927e846",
+      "bytes_len": 6823,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=20WxaLtb4sduVeaI%2F3gOXg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=&docs=&adate=&civilCaseId=hzl67S_PLUS_u01kGYEKBImNsZA%3D%3D",
+      "captured_at": "2026-07-20T23:28:32.910Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:boys:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/boys/page-001.html",
-      "html_sha256": "a1761fd80de428884cc99f0f60034258a708ceb3a2ff3089814b881810339bca",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:boys:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/boys/00006-p001-r003-case_detail-0000787_1984-01.html",
+      "html_sha256": "c350104de8f843080fde8afd6f3320ed89b079ab36f0b27b031aee377927e846",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=20WxaLtb4sduVeaI%2F3gOXg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=&docs=&adate=&civilCaseId=hzl67S_PLUS_u01kGYEKBImNsZA%3D%3D",
       "page_number": 1,
       "table_row_number": 3,
-      "row_html_sha256": "99df2ecd6b5a14487ab9e2e481f26d702861c79acdb78cf72ed78b40c92d83ea"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:boys:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/boys/00007-p001-r003-appearances-0000787_1984-01.html",
+      "html_sha256": "ffbce7d1babddbf66913876a7b765dfd2aafbc00aa48d25cc313f7b938a49ace",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=20WxaLtb4sduVeaI%2F3gOXg%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=hzl67S_PLUS_u01kGYEKBImNsZA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:boys:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/boys/page-001.html",
+      "html_sha256": "30a09a39267fa2291c7b46a5c424480dc03bcbdf7b941b9bf4ce010ae8798828",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "203fa1a7a26dd19fa64c7d5d5d90e4612339744bb54a4502ad2620a1d519d578"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:mens:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mens/page-001.html",
+      "html_sha256": "ec12ad27d67e1b61eb019463e90b419d5c34582ff06e5563a208d232999639a9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "203fa1a7a26dd19fa64c7d5d5d90e4612339744bb54a4502ad2620a1d519d578"
     }
   ],
   "judicial_officer": "ANTHONY J. FERRARO"

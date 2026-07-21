@@ -14,8 +14,8 @@
   "case_type": "MEDICAL/PODIATRIC MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-20T22:26:32.069Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/orth.rows.ndjson",
         "source_page": 1,
         "source_row": 20,
-        "row_html_sha256": "db7f9242d5d58a2b19adea48dc8dcbc1d3b6615be43fc2fad087d8c26b407622"
+        "row_html_sha256": "c4359a8e09a436866abb8cc5d6de254b4e3390440641c8145fbfffdcde82cdfd"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/orth/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/orth/00051-p001-r020-appearances-0007737_1992-01.html",
+      "html_sha256": "6d1b9b057de08344d6d0dd8ee18764e6698808f476a337c57e20279ccbb898d4",
+      "bytes_len": 9767,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/1998&index=4a4acxW4hNNRE3HHNnUtDQ%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=bPbBs4IBGSdQRkGIryqQZg%3D%3D",
+      "captured_at": "2026-07-20T22:26:32.069Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260719044730/orth/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/orth/00050-p001-r020-case_detail-0007737_1992-01.html",
+      "html_sha256": "357cb494675ef92b300a1a076f9a6ae47fec8235b00e27ba2bdcf78372c71de7",
+      "bytes_len": 7916,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=4a4acxW4hNNRE3HHNnUtDQ%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=02/09/1998&civilCaseId=bPbBs4IBGSdQRkGIryqQZg%3D%3D",
+      "captured_at": "2026-07-20T22:26:32.069Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:orth:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/orth/page-001.html",
-      "html_sha256": "dee3aa277e01289b0408cc1c51cdafb6d5ddb0e53554958a72a18d80b130d626",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:orth:followup-page:001:capture:00050:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/orth/00050-p001-r020-case_detail-0007737_1992-01.html",
+      "html_sha256": "357cb494675ef92b300a1a076f9a6ae47fec8235b00e27ba2bdcf78372c71de7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=4a4acxW4hNNRE3HHNnUtDQ%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&motion=&docs=&adate=02/09/1998&civilCaseId=bPbBs4IBGSdQRkGIryqQZg%3D%3D",
       "page_number": 1,
       "table_row_number": 20,
-      "row_html_sha256": "db7f9242d5d58a2b19adea48dc8dcbc1d3b6615be43fc2fad087d8c26b407622"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260719044730:orth:followup-page:001:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/orth/00051-p001-r020-appearances-0007737_1992-01.html",
+      "html_sha256": "6d1b9b057de08344d6d0dd8ee18764e6698808f476a337c57e20279ccbb898d4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/09/1998&index=4a4acxW4hNNRE3HHNnUtDQ%3D%3D&county=mctY0KlCHrc5qfOvGasH8w%3D%3D&civilCaseId=bPbBs4IBGSdQRkGIryqQZg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 20,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:orth:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/orth/page-001.html",
+      "html_sha256": "2fe68d59a27a5c62758ac21599d6ecf7b22d53fc7d4aa996968ab3ba9ba371e4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "c4359a8e09a436866abb8cc5d6de254b4e3390440641c8145fbfffdcde82cdfd"
     }
   ],
   "judicial_officer": "HON. FRANCIS A. AFFRONTI"
