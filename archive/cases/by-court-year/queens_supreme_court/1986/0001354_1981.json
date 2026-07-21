@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T22:31:47.092Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/aimee.rows.ndjson",
         "source_page": 1,
         "source_row": 5,
-        "row_html_sha256": "57d09d7e635232a761be3925daab53ee4010b6d74c4d68710ada0a82ba43d75c"
+        "row_html_sha256": "c37f8d17565d303e1098a5517a3919757741d77aa695c889b0c847008b7fb0ac"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/aimee/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/aimee/00011-p001-r005-appearances-0001354_1981-01.html",
+      "html_sha256": "dc06bf29e714762d9546e182474f147c091fc67477b4ab94e05660fc6d0a6a97",
+      "bytes_len": 5562,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/06/1988&index=mHlrls1mlh2fTzPbZ1pmDQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=CXeI2CVsibc2Ggj0Mch4cA%3D%3D",
+      "captured_at": "2026-07-21T22:31:47.092Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/aimee/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/aimee/00010-p001-r005-case_detail-0001354_1981-01.html",
+      "html_sha256": "6bc66f5df1eaec98568e5d966d4419c4dae1ad713c362f56902bb0930b34239f",
+      "bytes_len": 7023,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=mHlrls1mlh2fTzPbZ1pmDQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=12/06/1988&civilCaseId=CXeI2CVsibc2Ggj0Mch4cA%3D%3D",
+      "captured_at": "2026-07-21T22:31:47.092Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:aimee:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/aimee/page-001.html",
-      "html_sha256": "57dfde40d4543468955571b1662f4db3f0d3bd61f3c602b7ec08aafd41ef4818",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:aimee:followup-page:001:capture:00010:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/aimee/00010-p001-r005-case_detail-0001354_1981-01.html",
+      "html_sha256": "6bc66f5df1eaec98568e5d966d4419c4dae1ad713c362f56902bb0930b34239f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=mHlrls1mlh2fTzPbZ1pmDQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=12/06/1988&civilCaseId=CXeI2CVsibc2Ggj0Mch4cA%3D%3D",
       "page_number": 1,
       "table_row_number": 5,
-      "row_html_sha256": "57d09d7e635232a761be3925daab53ee4010b6d74c4d68710ada0a82ba43d75c"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:aimee:followup-page:001:capture:00011:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/aimee/00011-p001-r005-appearances-0001354_1981-01.html",
+      "html_sha256": "dc06bf29e714762d9546e182474f147c091fc67477b4ab94e05660fc6d0a6a97",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/06/1988&index=mHlrls1mlh2fTzPbZ1pmDQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=CXeI2CVsibc2Ggj0Mch4cA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 5,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:aimee:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/aimee/page-001.html",
+      "html_sha256": "98bd4547f6b6321b35d08caf79e1d38dd5539d4ea2483beb86eb9507a51c533c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "c37f8d17565d303e1098a5517a3919757741d77aa695c889b0c847008b7fb0ac"
     }
   ],
   "judicial_officer": "MARTHA K. ZELMAN"

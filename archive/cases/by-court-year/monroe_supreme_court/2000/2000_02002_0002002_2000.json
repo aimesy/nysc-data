@@ -14,8 +14,8 @@
   "case_type": "MEDICAL/PODIATRIC MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T22:12:16.806Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/giang.rows.ndjson",
         "source_page": 1,
         "source_row": 16,
-        "row_html_sha256": "6beceab1c18f43539d9b61ddf2e2fd5e6cde0ee0e0d5e1793945ba71416a88ab"
+        "row_html_sha256": "502e3d5b8702d8e880fc4134a4b6825084adfc353ec39140ff719518d70ef32d"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/giang/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/giang/00034-p001-r016-appearances-0002002_2000-01.html",
+      "html_sha256": "c12b43d4e95978725b64cec0d16fb09da0232a7b030922d1d034c652764e4ab3",
+      "bytes_len": 9131,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/14/2001&index=7pBYMoyPiLOmFRDu6AUSpg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&civilCaseId=M3L8RKfQJSCFeUIAwOdJ%2Fg%3D%3D",
+      "captured_at": "2026-07-21T22:12:16.806Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/giang/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/giang/00033-p001-r016-case_detail-0002002_2000-01.html",
+      "html_sha256": "62d68a0f4c43f8e217647cb39293cc9ee9fd83b96010dbbb8dde63a91f0f3624",
+      "bytes_len": 8792,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7pBYMoyPiLOmFRDu6AUSpg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&motion=&docs=&adate=11/14/2001&civilCaseId=M3L8RKfQJSCFeUIAwOdJ%2Fg%3D%3D",
+      "captured_at": "2026-07-21T22:12:16.806Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:giang:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/giang/page-001.html",
-      "html_sha256": "70aa71b4abf36a0412e51cc1ec00aabd064ece437e9088765bb38241fbecc289",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:giang:followup-page:001:capture:00033:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/giang/00033-p001-r016-case_detail-0002002_2000-01.html",
+      "html_sha256": "62d68a0f4c43f8e217647cb39293cc9ee9fd83b96010dbbb8dde63a91f0f3624",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7pBYMoyPiLOmFRDu6AUSpg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&motion=&docs=&adate=11/14/2001&civilCaseId=M3L8RKfQJSCFeUIAwOdJ%2Fg%3D%3D",
       "page_number": 1,
       "table_row_number": 16,
-      "row_html_sha256": "6beceab1c18f43539d9b61ddf2e2fd5e6cde0ee0e0d5e1793945ba71416a88ab"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:giang:followup-page:001:capture:00034:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/giang/00034-p001-r016-appearances-0002002_2000-01.html",
+      "html_sha256": "c12b43d4e95978725b64cec0d16fb09da0232a7b030922d1d034c652764e4ab3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/14/2001&index=7pBYMoyPiLOmFRDu6AUSpg%3D%3D&county=qnrR794PIieou88H_PLUS_TlYjQ%3D%3D&civilCaseId=M3L8RKfQJSCFeUIAwOdJ%2Fg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:giang:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/giang/page-001.html",
+      "html_sha256": "c37fcb8be9f55c1f2f258236dd81b11d22d7d140661f6d3e1b46068d7d4506a4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 16,
+      "row_html_sha256": "502e3d5b8702d8e880fc4134a4b6825084adfc353ec39140ff719518d70ef32d"
     }
   ],
   "judicial_officer": "HON. WILLIAM P. POLITO"

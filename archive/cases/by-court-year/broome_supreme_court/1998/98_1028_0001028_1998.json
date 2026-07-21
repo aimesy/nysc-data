@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T21:24:51.445Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,17 +24,22 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "sura"
+      "sura",
+      "tull"
     ],
     "result_row_refs": [
       {
@@ -44,6 +49,14 @@
         "source_page": 1,
         "source_row": 20,
         "row_html_sha256": "17cfe2031b370be0b390644de923f1216d6e62ead351056d853e889097d110f3"
+      },
+      {
+        "search_name": "tull",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/tull.rows.ndjson",
+        "source_page": 2,
+        "source_row": 25,
+        "row_html_sha256": "f2aee302a15c8cf3d28685f04fa6bccb47b787806ce5d48d4f2090e21dcd4fb1"
       }
     ]
   },
@@ -116,9 +129,91 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tull/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00061-p002-r025-appearances-0001028_1998-01.html",
+      "html_sha256": "6f15501206c7a3f7169e5fed17378f3393b9c6596fe0a77f5e9f591e41e05669",
+      "bytes_len": 7667,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/30/1999&index=J7V7HmyejD0Jc2It76qQoQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&civilCaseId=xbQtg0rqNc5STrBEGfE8gQ%3D%3D",
+      "captured_at": "2026-07-21T21:24:51.445Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tull/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00060-p002-r025-case_detail-0001028_1998-01.html",
+      "html_sha256": "24d35edc147d460541ab0d5a96ef85a827b064c52958a02a589ccc5bbb04b233",
+      "bytes_len": 8591,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=J7V7HmyejD0Jc2It76qQoQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&motion=M&docs=&adate=11/30/1999&civilCaseId=xbQtg0rqNc5STrBEGfE8gQ%3D%3D",
+      "captured_at": "2026-07-21T21:24:51.445Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tull/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00062-p002-r025-motions-0001028_1998-01.html",
+      "html_sha256": "e3ec6593f95ea039511e00cbad5a484ac977acb9a6117da3d2246d228c73609c",
+      "bytes_len": 6414,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=J7V7HmyejD0Jc2It76qQoQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&civilCaseId=xbQtg0rqNc5STrBEGfE8gQ%3D%3D",
+      "captured_at": "2026-07-21T21:24:51.445Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tull:followup-page:002:capture:00060:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00060-p002-r025-case_detail-0001028_1998-01.html",
+      "html_sha256": "24d35edc147d460541ab0d5a96ef85a827b064c52958a02a589ccc5bbb04b233",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=J7V7HmyejD0Jc2It76qQoQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&motion=M&docs=&adate=11/30/1999&civilCaseId=xbQtg0rqNc5STrBEGfE8gQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 25,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tull:followup-page:002:capture:00061:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00061-p002-r025-appearances-0001028_1998-01.html",
+      "html_sha256": "6f15501206c7a3f7169e5fed17378f3393b9c6596fe0a77f5e9f591e41e05669",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/30/1999&index=J7V7HmyejD0Jc2It76qQoQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&civilCaseId=xbQtg0rqNc5STrBEGfE8gQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 25,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tull:followup-page:002:capture:00062:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00062-p002-r025-motions-0001028_1998-01.html",
+      "html_sha256": "e3ec6593f95ea039511e00cbad5a484ac977acb9a6117da3d2246d228c73609c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=J7V7HmyejD0Jc2It76qQoQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&civilCaseId=xbQtg0rqNc5STrBEGfE8gQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 25,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260719044730:sura:page:001",
@@ -129,6 +224,17 @@
       "page_number": 1,
       "table_row_number": 20,
       "row_html_sha256": "17cfe2031b370be0b390644de923f1216d6e62ead351056d853e889097d110f3"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tull:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tull/page-002.html",
+      "html_sha256": "5f301de9a40f5ff3191aae5b1d3cffc3e67f9b27923b9cee143461349e732331",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn11",
+      "page_number": 2,
+      "table_row_number": 25,
+      "row_html_sha256": "f2aee302a15c8cf3d28685f04fa6bccb47b787806ce5d48d4f2090e21dcd4fb1"
     }
   ],
   "judicial_officer": "HON. PATRICK D. MONSERRATE,JSC"

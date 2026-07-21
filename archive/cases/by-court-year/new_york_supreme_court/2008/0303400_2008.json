@@ -14,8 +14,8 @@
   "case_type": "CONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T22:24:33.121Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/mert.rows.ndjson",
         "source_page": 1,
         "source_row": 11,
-        "row_html_sha256": "34895443bb11d8b1660f5011805f5f1251cb5d14578ea98cd327b28b131f271d"
+        "row_html_sha256": "443761cebc8383b501b59f170be8a4e284e9546e3f2d30af0eeb17987aae210e"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/mert/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mert/00026-p001-r011-appearances-0303400_2008-01.html",
+      "html_sha256": "95cc52188fb29380b7b7deeaf2af7fff649eb583d3eed0447e6d2faf286d4cd0",
+      "bytes_len": 6313,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/20/2008&index=6NR8hI6zPzbiHWy%2FvhIyTQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=daGfvd%2Fpsg7SVrsfjqc47w%3D%3D",
+      "captured_at": "2026-07-21T22:24:33.121Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/mert/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mert/00025-p001-r011-case_detail-0303400_2008-01.html",
+      "html_sha256": "27febaea92cd50571b73d9cecd27690933cc97f2c8a333fecfd08196b8fe9018",
+      "bytes_len": 7344,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=6NR8hI6zPzbiHWy%2FvhIyTQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=&docs=&adate=11/20/2008&civilCaseId=daGfvd%2Fpsg7SVrsfjqc47w%3D%3D",
+      "captured_at": "2026-07-21T22:24:33.121Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:mert:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mert/page-001.html",
-      "html_sha256": "99a4643fa09b750466f576de47e487b14973c083e1f3f08c3616c1022b0ce8bb",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn13",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:mert:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mert/00025-p001-r011-case_detail-0303400_2008-01.html",
+      "html_sha256": "27febaea92cd50571b73d9cecd27690933cc97f2c8a333fecfd08196b8fe9018",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=6NR8hI6zPzbiHWy%2FvhIyTQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=&docs=&adate=11/20/2008&civilCaseId=daGfvd%2Fpsg7SVrsfjqc47w%3D%3D",
       "page_number": 1,
       "table_row_number": 11,
-      "row_html_sha256": "34895443bb11d8b1660f5011805f5f1251cb5d14578ea98cd327b28b131f271d"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:mert:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mert/00026-p001-r011-appearances-0303400_2008-01.html",
+      "html_sha256": "95cc52188fb29380b7b7deeaf2af7fff649eb583d3eed0447e6d2faf286d4cd0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/20/2008&index=6NR8hI6zPzbiHWy%2FvhIyTQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=daGfvd%2Fpsg7SVrsfjqc47w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:mert:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/mert/page-001.html",
+      "html_sha256": "44e3e001b6912cbfe1b11b8ce2965e04111109e5ac70464e1f187479b4bb727d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "443761cebc8383b501b59f170be8a4e284e9546e3f2d30af0eeb17987aae210e"
     }
   ],
   "judicial_officer": "RICHTER,ROSALYN H."

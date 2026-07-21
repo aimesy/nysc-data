@@ -11,15 +11,19 @@
   "index_year": "1988",
   "index_display": "0006034/1988",
   "case_title": "HEALY, THERESA v. MONGE, JOSEPH",
-  "case_type": null,
+  "case_type": "Tort-Other",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-20T14:38:52.745Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "monge"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "monge",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/monge.rows.ndjson",
+        "source_page": 1,
+        "source_row": 18,
+        "row_html_sha256": "2ada78d14593b72a6e4b82686721e95fba5528aba4e7e9c7a09717f696bad1c2"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "STEPHEN I. WIDLITZ, ESQ.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "BOWER & GARDNER, ESQS.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "HEALY, THERESA",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "STEPHEN I. WIDLITZ, ESQ.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "MONGE, JOSEPH",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "BOWER & GARDNER, ESQS.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "08/23/1995",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "TRIAL-ASSIGNMENT-PART-JUSTICE",
+      "raw_text": "08/23/1995",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -140,6 +204,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:monge:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/monge/page-001.html",
+      "html_sha256": "77293c43e02c848b7acbc6716dcafc67405b26fb3290eca708c73d7d2f1b8a81",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "2ada78d14593b72a6e4b82686721e95fba5528aba4e7e9c7a09717f696bad1c2"
     }
-  ]
+  ],
+  "judicial_officer": "TRIAL-ASSIGNMENT-PART-JUSTICE"
 }

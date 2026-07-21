@@ -11,15 +11,18 @@
   "index_year": "1988",
   "index_display": "0001743/1988",
   "case_title": "MONGE,JOSE v. MONGE,TIRSA",
-  "case_type": null,
+  "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-20T14:38:52.745Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "monge"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "monge",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/monge.rows.ndjson",
+        "source_page": 1,
+        "source_row": 17,
+        "row_html_sha256": "2d037c5d84eb7ba63c1a3ca4bfd522cc86a0e18f2639e254105a636e7de336fc"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "PRO SE",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "MONGE,JOSE",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "PRO SE",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "12/16/1988",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "JOHN BUCKLEY - REFEREE",
+      "raw_text": "12/16/1988",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +157,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:monge:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/monge/page-001.html",
+      "html_sha256": "77293c43e02c848b7acbc6716dcafc67405b26fb3290eca708c73d7d2f1b8a81",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 17,
+      "row_html_sha256": "2d037c5d84eb7ba63c1a3ca4bfd522cc86a0e18f2639e254105a636e7de336fc"
     }
-  ]
+  ],
+  "judicial_officer": "JOHN BUCKLEY - REFEREE"
 }

@@ -11,15 +11,18 @@
   "index_year": "1985",
   "index_display": "0000464/1984",
   "case_title": "ALEXANDER,CYRIL v. NICAJ,JELOSH",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-20T19:14:25.684Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "cyril"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "cyril",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/cyril.rows.ndjson",
+        "source_page": 1,
+        "source_row": 4,
+        "row_html_sha256": "603e411aa1dc7136d57628da9c9221895aed7f43080645e4484dabb210cd87f1"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "MIRMAN, MARKOVITZ & LANDAU",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "CLUNE W & N",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "ALEXANDER,CYRIL",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "MIRMAN, MARKOVITZ & LANDAU",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "NICAJ,JELOSH",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "CLUNE W & N",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "02/10/1986",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "FRANK VACCARO",
+      "raw_text": "02/10/1986",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +175,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:cyril:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/cyril/page-001.html",
+      "html_sha256": "8b7b995b2e1b3c4846b4c0cb6c0cbcc580818116039dc966922e07188a619daf",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 4,
+      "row_html_sha256": "603e411aa1dc7136d57628da9c9221895aed7f43080645e4484dabb210cd87f1"
     }
-  ]
+  ],
+  "judicial_officer": "FRANK VACCARO"
 }

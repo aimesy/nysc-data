@@ -14,8 +14,8 @@
   "case_type": "EQUITY",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T21:45:52.125Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/election.rows.ndjson",
         "source_page": 1,
         "source_row": 1,
-        "row_html_sha256": "b30d90c67e14c29accb50160fae3170bcc0cc15265657a75c49c875602ff6a8b"
+        "row_html_sha256": "c9a6cd105e14fdd54ffad56056fae67a6e5b8aacf8a550bec2f16c4142f20d9d"
       }
     ]
   },
@@ -78,19 +82,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/election/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/election/00002-p001-r001-appearances-0001331_1986-01.html",
+      "html_sha256": "766d5b4d29d54114e8d3a9e864032a682ec3ae8a0a3181cbc1aa6eb8bd54e8a0",
+      "bytes_len": 6906,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/26/1986&index=TezvZJTSR7sP6uUj0UDX6A%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Q7sfb2tC2Iepkm4fMTcM8g%3D%3D",
+      "captured_at": "2026-07-21T21:45:52.125Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/election/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/election/00001-p001-r001-case_detail-0001331_1986-01.html",
+      "html_sha256": "ca74139c7e96aa8c8a30f4e56572cfb6ef39f25781f65db59c38b745ee8b0160",
+      "bytes_len": 6434,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TezvZJTSR7sP6uUj0UDX6A%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=03/26/1986&civilCaseId=Q7sfb2tC2Iepkm4fMTcM8g%3D%3D",
+      "captured_at": "2026-07-21T21:45:52.125Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/election/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/election/00003-p001-r001-motions-0001331_1986-01.html",
+      "html_sha256": "cac41ac2c1f860cae2b5adc641ade9a0d9ebe6114282f36028f45478a81ab885",
+      "bytes_len": 6348,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=TezvZJTSR7sP6uUj0UDX6A%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Q7sfb2tC2Iepkm4fMTcM8g%3D%3D",
+      "captured_at": "2026-07-21T21:45:52.125Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:election:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/election/page-001.html",
-      "html_sha256": "263b440c35d1d7d6902890956cc54c479baab8a59ffaa95eb522983e009d6c66",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:election:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/election/00001-p001-r001-case_detail-0001331_1986-01.html",
+      "html_sha256": "ca74139c7e96aa8c8a30f4e56572cfb6ef39f25781f65db59c38b745ee8b0160",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TezvZJTSR7sP6uUj0UDX6A%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=03/26/1986&civilCaseId=Q7sfb2tC2Iepkm4fMTcM8g%3D%3D",
       "page_number": 1,
       "table_row_number": 1,
-      "row_html_sha256": "b30d90c67e14c29accb50160fae3170bcc0cc15265657a75c49c875602ff6a8b"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:election:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/election/00002-p001-r001-appearances-0001331_1986-01.html",
+      "html_sha256": "766d5b4d29d54114e8d3a9e864032a682ec3ae8a0a3181cbc1aa6eb8bd54e8a0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/26/1986&index=TezvZJTSR7sP6uUj0UDX6A%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Q7sfb2tC2Iepkm4fMTcM8g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:election:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/election/00003-p001-r001-motions-0001331_1986-01.html",
+      "html_sha256": "cac41ac2c1f860cae2b5adc641ade9a0d9ebe6114282f36028f45478a81ab885",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=TezvZJTSR7sP6uUj0UDX6A%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Q7sfb2tC2Iepkm4fMTcM8g%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:election:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/election/page-001.html",
+      "html_sha256": "5bc68c28d7b5beff839f796fe9438f7c905da81348d2ba62620bca901f2508f7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "c9a6cd105e14fdd54ffad56056fae67a6e5b8aacf8a550bec2f16c4142f20d9d"
     }
   ],
   "judicial_officer": "SHORTER, K."
