@@ -14,8 +14,8 @@
   "case_type": "MEDICAL/PODIATRIC MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T18:27:38.996Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/ogden.rows.ndjson",
         "source_page": 1,
         "source_row": 23,
-        "row_html_sha256": "a0eaf847a1c5b880a3001327c4174474fa0f9870ae5feea3b45856ffecb815ed"
+        "row_html_sha256": "95cd543da09b4fa2953ce0cd6f9c7bb521489d3f6d0a5b49cb8276ec08a881f3"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ogden/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ogden/00058-p001-r023-appearances-0001155_1984-01.html",
+      "html_sha256": "d30648142a8e82228cefa4396a35c095f9f4677d81d527a16286cd242871cf94",
+      "bytes_len": 12578,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/24/1988&index=VDplzF2V4PIHInBWUIgiqg%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=xTCudJhnSQKw40oMGiK_PLUS_BQ%3D%3D",
+      "captured_at": "2026-07-21T18:27:38.996Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ogden/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ogden/00057-p001-r023-case_detail-0001155_1984-01.html",
+      "html_sha256": "301b13e397a80df4cdc9b280ec648666d47cebbc3990bbea60d5972e2eed7395",
+      "bytes_len": 8268,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=VDplzF2V4PIHInBWUIgiqg%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&motion=M&docs=&adate=05/24/1988&civilCaseId=xTCudJhnSQKw40oMGiK_PLUS_BQ%3D%3D",
+      "captured_at": "2026-07-21T18:27:38.996Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ogden/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ogden/00059-p001-r023-motions-0001155_1984-01.html",
+      "html_sha256": "c9889036a56126eee15aab318434cc4ac5a3aee354e02d992002a3502128d94c",
+      "bytes_len": 8157,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=VDplzF2V4PIHInBWUIgiqg%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=xTCudJhnSQKw40oMGiK_PLUS_BQ%3D%3D",
+      "captured_at": "2026-07-21T18:27:38.996Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:ogden:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/ogden/page-001.html",
-      "html_sha256": "a0b3e498d10531a012a9722314462e6e5a90bd3ac7695498bedd345cd44e69e4",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ogden:followup-page:001:capture:00057:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ogden/00057-p001-r023-case_detail-0001155_1984-01.html",
+      "html_sha256": "301b13e397a80df4cdc9b280ec648666d47cebbc3990bbea60d5972e2eed7395",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=VDplzF2V4PIHInBWUIgiqg%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&motion=M&docs=&adate=05/24/1988&civilCaseId=xTCudJhnSQKw40oMGiK_PLUS_BQ%3D%3D",
       "page_number": 1,
       "table_row_number": 23,
-      "row_html_sha256": "a0eaf847a1c5b880a3001327c4174474fa0f9870ae5feea3b45856ffecb815ed"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ogden:followup-page:001:capture:00058:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ogden/00058-p001-r023-appearances-0001155_1984-01.html",
+      "html_sha256": "d30648142a8e82228cefa4396a35c095f9f4677d81d527a16286cd242871cf94",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/24/1988&index=VDplzF2V4PIHInBWUIgiqg%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=xTCudJhnSQKw40oMGiK_PLUS_BQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 23,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ogden:followup-page:001:capture:00059:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ogden/00059-p001-r023-motions-0001155_1984-01.html",
+      "html_sha256": "c9889036a56126eee15aab318434cc4ac5a3aee354e02d992002a3502128d94c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=VDplzF2V4PIHInBWUIgiqg%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=xTCudJhnSQKw40oMGiK_PLUS_BQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 23,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:ogden:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/ogden/page-001.html",
+      "html_sha256": "8df9ed0cb2c6b709399178936455c0f6935c48f490e32ea3ded7c2d6357dfd2a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 23,
+      "row_html_sha256": "95cd543da09b4fa2953ce0cd6f9c7bb521489d3f6d0a5b49cb8276ec08a881f3"
     }
   ],
   "judicial_officer": "HON. CHARLES B. SWARTWOOD"

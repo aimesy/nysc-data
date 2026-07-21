@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:19:25.299Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/nile.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "f97b3467053f8748d789d70182bd817f7ff0e9e738f09638e29785f0b2e40b63"
+        "row_html_sha256": "8fc7a133bad16d5f58ad3a09a90f11b984a43b69f092253035627f458fc7fb8e"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/nile/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nile/00057-p001-r022-appearances-0000467_2000-01.html",
+      "html_sha256": "97b73cd58098746a0b38d616c237498aa39815e6f3f6b7b3e3c8a5f9ee94105c",
+      "bytes_len": 5571,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/23/2001&index=74USnbjE23Rrl42rtJE5qg%3D%3D&county=HwmY4EY9_PLUS_IEqB677h41lxA%3D%3D&civilCaseId=%2FJDvFJEtJfqBei8D%2FX_PLUS_lkQ%3D%3D",
+      "captured_at": "2026-07-21T17:19:25.299Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/nile/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nile/00056-p001-r022-case_detail-0000467_2000-01.html",
+      "html_sha256": "c84a1c484123d08213c1894fd6ddf7ed7546b9008af3913ba91d2d81af96a915",
+      "bytes_len": 7961,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=74USnbjE23Rrl42rtJE5qg%3D%3D&county=HwmY4EY9_PLUS_IEqB677h41lxA%3D%3D&motion=&docs=&adate=04/23/2001&civilCaseId=%2FJDvFJEtJfqBei8D%2FX_PLUS_lkQ%3D%3D",
+      "captured_at": "2026-07-21T17:19:25.299Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:nile:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/nile/page-001.html",
-      "html_sha256": "e18e441ed1633f06ce19b83ca03962789ba2ef8c7541417841b9929e0bbf008f",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn13",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:nile:followup-page:001:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nile/00056-p001-r022-case_detail-0000467_2000-01.html",
+      "html_sha256": "c84a1c484123d08213c1894fd6ddf7ed7546b9008af3913ba91d2d81af96a915",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=74USnbjE23Rrl42rtJE5qg%3D%3D&county=HwmY4EY9_PLUS_IEqB677h41lxA%3D%3D&motion=&docs=&adate=04/23/2001&civilCaseId=%2FJDvFJEtJfqBei8D%2FX_PLUS_lkQ%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "f97b3467053f8748d789d70182bd817f7ff0e9e738f09638e29785f0b2e40b63"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:nile:followup-page:001:capture:00057:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nile/00057-p001-r022-appearances-0000467_2000-01.html",
+      "html_sha256": "97b73cd58098746a0b38d616c237498aa39815e6f3f6b7b3e3c8a5f9ee94105c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/23/2001&index=74USnbjE23Rrl42rtJE5qg%3D%3D&county=HwmY4EY9_PLUS_IEqB677h41lxA%3D%3D&civilCaseId=%2FJDvFJEtJfqBei8D%2FX_PLUS_lkQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:nile:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/nile/page-001.html",
+      "html_sha256": "3ed5ea1e55a9c36b72211eb40cb562f0ab1f57107660aaa14e8cf1bf19e39c88",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "8fc7a133bad16d5f58ad3a09a90f11b984a43b69f092253035627f458fc7fb8e"
     }
   ],
   "judicial_officer": "HON. PATRICK R. MCGILL"

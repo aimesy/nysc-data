@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:06:49.716Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/schnur.rows.ndjson",
         "source_page": 1,
         "source_row": 8,
-        "row_html_sha256": "a9423f45d1b9fd419470f9e62ba8a948ea5f755f567863c2473ab412695c42a6"
+        "row_html_sha256": "7372e9dd00a49e5ae649df77168ef5cc5359c51e8fa1fdbf2e3a335849416fa4"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/schnur/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/schnur/00021-p001-r008-appearances-0021320_1985-01.html",
+      "html_sha256": "25d3b1aebcd49d428d88d6a63791859908716c4f6ff319fd21a7b1c6967145e9",
+      "bytes_len": 21323,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/23/1987&index=1mLo5vXKA90j70iLzuOcUQ%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=mZcIZ1kCzakYD%2FErzmVmhg%3D%3D",
+      "captured_at": "2026-07-21T17:06:49.716Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/schnur/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/schnur/00020-p001-r008-case_detail-0021320_1985-01.html",
+      "html_sha256": "46483d844a0442331d8a35e74447e7b8c3ab87d8bd979ff6ef1d831e3fc5f065",
+      "bytes_len": 7050,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=1mLo5vXKA90j70iLzuOcUQ%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=06/23/1987&civilCaseId=mZcIZ1kCzakYD%2FErzmVmhg%3D%3D",
+      "captured_at": "2026-07-21T17:06:49.716Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:schnur:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/schnur/page-001.html",
-      "html_sha256": "c9362290a69e2671743ab5cc15391658c3f209ff6295757d58ff298b6fffe29d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:schnur:followup-page:001:capture:00020:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/schnur/00020-p001-r008-case_detail-0021320_1985-01.html",
+      "html_sha256": "46483d844a0442331d8a35e74447e7b8c3ab87d8bd979ff6ef1d831e3fc5f065",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=1mLo5vXKA90j70iLzuOcUQ%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=06/23/1987&civilCaseId=mZcIZ1kCzakYD%2FErzmVmhg%3D%3D",
       "page_number": 1,
       "table_row_number": 8,
-      "row_html_sha256": "a9423f45d1b9fd419470f9e62ba8a948ea5f755f567863c2473ab412695c42a6"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:schnur:followup-page:001:capture:00021:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/schnur/00021-p001-r008-appearances-0021320_1985-01.html",
+      "html_sha256": "25d3b1aebcd49d428d88d6a63791859908716c4f6ff319fd21a7b1c6967145e9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/23/1987&index=1mLo5vXKA90j70iLzuOcUQ%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=mZcIZ1kCzakYD%2FErzmVmhg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 8,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:schnur:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/schnur/page-001.html",
+      "html_sha256": "fe568d034412b025f21ff1f6b87ddebe774ca3088a6518948f5a966983cfd511",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 8,
+      "row_html_sha256": "7372e9dd00a49e5ae649df77168ef5cc5359c51e8fa1fdbf2e3a335849416fa4"
     }
   ],
   "judicial_officer": "ANDREW J. DIPAOLA"

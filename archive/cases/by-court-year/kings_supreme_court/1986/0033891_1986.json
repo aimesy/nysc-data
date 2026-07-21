@@ -11,7 +11,7 @@
   "index_year": "1986",
   "index_display": "0033891/1986",
   "case_title": "BABB,RUPERT v. BABB,MURIAL",
-  "case_type": null,
+  "case_type": "CONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_partial",
@@ -19,7 +19,10 @@
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "document-list"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "babb"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "babb",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/babb.rows.ndjson",
+        "source_page": 1,
+        "source_row": 4,
+        "row_html_sha256": "98ac62c2925025246a3873cba0644cf40604ab6353a10d8e6266daf9b0b1ec2d"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "LESLIE H. RICHWALD",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "LITMAN, KAUFMAN & ASCHE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "BABB,RUPERT",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "LESLIE H. RICHWALD",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "BABB,MURIAL",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "LITMAN, KAUFMAN & ASCHE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "04/24/1987",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "WILLIAM RIGLER",
+      "raw_text": "04/24/1987",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -220,6 +283,18 @@
       "kind": "appearances",
       "nested_kind": "document-list",
       "tab_key": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:babb:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/babb/page-001.html",
+      "html_sha256": "ab51edd789deecf718d3dcf2f59d3822f8fb483694c3011be53323f7942dabeb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 4,
+      "row_html_sha256": "98ac62c2925025246a3873cba0644cf40604ab6353a10d8e6266daf9b0b1ec2d"
     }
-  ]
+  ],
+  "judicial_officer": "WILLIAM RIGLER"
 }

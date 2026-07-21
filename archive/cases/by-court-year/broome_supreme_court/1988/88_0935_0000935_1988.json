@@ -14,8 +14,8 @@
   "case_type": "OM-Other",
   "status": "Disposed-Court Date/Application Pending",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:58:04.397Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/wage.rows.ndjson",
         "source_page": 1,
         "source_row": 2,
-        "row_html_sha256": "5ec31006b3ea137977df1bdb650b2071b2c139d9910037db99bc53c730f66b2c"
+        "row_html_sha256": "9b912cc5cc3b4f42ed394c84cce1324678869b372b39dcb3599019a1dab5e072"
       }
     ]
   },
@@ -66,19 +69,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/wage/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/wage/00005-p001-r002-appearances-0000935_1988-01.html",
+      "html_sha256": "02d83447d0611c514c42f065bf7b2a849c660abb485a3591c44bcf09322d4c43",
+      "bytes_len": 3800,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=CzEqEXZBKR81mvJc7pJpvQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&civilCaseId=7SwLawsOgOY8T_PLUS_e%2FL2aUDg%3D%3D",
+      "captured_at": "2026-07-21T17:58:04.397Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/wage/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/wage/00004-p001-r002-case_detail-0000935_1988-01.html",
+      "html_sha256": "1cce9ff0051962dce802b7e68bbc89900133959df6b0b0807312af75497d53d2",
+      "bytes_len": 6481,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=CzEqEXZBKR81mvJc7pJpvQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&motion=&docs=&adate=&civilCaseId=7SwLawsOgOY8T_PLUS_e%2FL2aUDg%3D%3D",
+      "captured_at": "2026-07-21T17:58:04.397Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:wage:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/wage/page-001.html",
-      "html_sha256": "312bc6c5675ad1fbdabf8df6f1d5b7e21b8b32acc8d92e8e25948c307f18ff0a",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:wage:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/wage/00004-p001-r002-case_detail-0000935_1988-01.html",
+      "html_sha256": "1cce9ff0051962dce802b7e68bbc89900133959df6b0b0807312af75497d53d2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=CzEqEXZBKR81mvJc7pJpvQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&motion=&docs=&adate=&civilCaseId=7SwLawsOgOY8T_PLUS_e%2FL2aUDg%3D%3D",
       "page_number": 1,
       "table_row_number": 2,
-      "row_html_sha256": "5ec31006b3ea137977df1bdb650b2071b2c139d9910037db99bc53c730f66b2c"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:wage:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/wage/00005-p001-r002-appearances-0000935_1988-01.html",
+      "html_sha256": "02d83447d0611c514c42f065bf7b2a849c660abb485a3591c44bcf09322d4c43",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=CzEqEXZBKR81mvJc7pJpvQ%3D%3D&county=an4Z%2FTqS9aH7O0TOaFvYag%3D%3D&civilCaseId=7SwLawsOgOY8T_PLUS_e%2FL2aUDg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:wage:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/wage/page-001.html",
+      "html_sha256": "9de7ac9c4c049e25ca6c11d43b21747e7e1a1f86281e38469fbad4e8ecad0bdc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "9b912cc5cc3b4f42ed394c84cce1324678869b372b39dcb3599019a1dab5e072"
     }
   ],
   "judicial_officer": "Fischer, Hon. Robert E"

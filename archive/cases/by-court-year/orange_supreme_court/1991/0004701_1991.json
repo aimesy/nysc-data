@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-21T05:15:53.153Z",
+  "captured_at": "2026-07-21T19:48:37.878Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -32,13 +32,14 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 6
+      "search_rows_seen": 2,
+      "followup_responses_seen": 9
     }
   },
   "discovery": {
     "search_names": [
-      "gruner"
+      "gruner",
+      "horst"
     ],
     "result_row_refs": [
       {
@@ -47,7 +48,15 @@
         "source_file": "archive/webcivil/results/gruner.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "f475e118846fe3eeb4f14b81628b946643c875f57ed1b442ea4bb6b4ef0be386"
+        "row_html_sha256": "25ba7fefaac47332c3a0f25e328a5d22549557b42003cf836fda047a2719944c"
+      },
+      {
+        "search_name": "horst",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/horst.rows.ndjson",
+        "source_page": 2,
+        "source_row": 19,
+        "row_html_sha256": "848144dfe8cd372d95672bc8423715c40c7924dfbcdf7f48a60f2ff81112536b"
       }
     ]
   },
@@ -71,6 +80,21 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "FEIMAN, GREHER & KAVE, ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00049-p002-r019-case_detail-0004701_1991-01.html",
+      "html_sha256": "32436c2b5287215a754367cd3869951d6292610b169e8335ee7246fd03490d01",
+      "captured_at": "2026-07-21T19:48:37.878Z"
     }
   ],
   "representation": [
@@ -83,6 +107,23 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "FULLERTON, THOMAS B.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "FEIMAN, GREHER & KAVE, ESQS.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00049-p002-r019-case_detail-0004701_1991-01.html",
+      "html_sha256": "32436c2b5287215a754367cd3869951d6292610b169e8335ee7246fd03490d01",
+      "captured_at": "2026-07-21T19:48:37.878Z"
     }
   ],
   "calendar": [
@@ -95,10 +136,92 @@
       "raw_text": "10/21/1991",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "10/21/1991",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "MOTION DECIDED-OPEN APPEARANCE",
+      "part": "PETER C. PATSALOS HON. PETER C. PATSALOS MOTIONS",
+      "judicial_officer": "PETER C. PATSALOS HON. PETER C. PATSALOS MOTIONS",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "10/21/1991 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | PETER C. PATSALOS HON. PETER C. PATSALOS MOTIONS | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00050-p002-r019-appearances-0004701_1991-01.html",
+      "html_sha256": "0764447fc55dc9555f8427591a85119cce9aeade164a7ea260cc0841801572bd",
+      "captured_at": "2026-07-21T19:48:37.878Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "10/21/1991",
+      "title": "Motion - MOTION DECIDED-OPEN APPEARANCE",
+      "text": "10/21/1991 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | PETER C. PATSALOS HON. PETER C. PATSALOS MOTIONS | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00050-p002-r019-appearances-0004701_1991-01.html",
+      "html_sha256": "0764447fc55dc9555f8427591a85119cce9aeade164a7ea260cc0841801572bd",
+      "captured_at": "2026-07-21T19:48:37.878Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "10/21/1991",
+      "title": "PENDENTE LITE CUSTODY",
+      "text": "1 | 10/21/1991 | PENDENTE LITE CUSTODY | No | Decided: 10/23/1991 CASE DISPOSED Before Justice: PETER C. PATSALOS | Short Form Order | 10/23/1991",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00051-p002-r019-motions-0004701_1991-01.html",
+      "html_sha256": "01111287da3a19b5d420a6eab01796c2d937df1da8827a893185a393a5599374",
+      "captured_at": "2026-07-21T19:48:37.878Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "10/21/1991",
+      "filed_by": "",
+      "relief": "PENDENTE LITE CUSTODY",
+      "submit_date": "",
+      "answer_demanded": "No",
+      "status": "Decided: 10/23/1991 CASE DISPOSED Before Justice: PETER C. PATSALOS",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "10/23/1991",
+      "raw_text": "1 | 10/21/1991 | PENDENTE LITE CUSTODY | No | Decided: 10/23/1991 CASE DISPOSED Before Justice: PETER C. PATSALOS | Short Form Order | 10/23/1991",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00051-p002-r019-motions-0004701_1991-01.html",
+      "html_sha256": "01111287da3a19b5d420a6eab01796c2d937df1da8827a893185a393a5599374",
+      "captured_at": "2026-07-21T19:48:37.878Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
@@ -132,6 +255,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00050-p002-r019-appearances-0004701_1991-01.html",
+      "html_sha256": "0764447fc55dc9555f8427591a85119cce9aeade164a7ea260cc0841801572bd",
+      "bytes_len": 5536,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/21/1991&index=kvVw4oXXuAjkGBg4q1ttqQ%3D%3D&county=CFxeXyOisOxOpseT03dsaQ%3D%3D&civilCaseId=rG2t4Xxva2GHSfTpH6Uq1w%3D%3D",
+      "captured_at": "2026-07-21T19:48:37.878Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -160,6 +300,24 @@
       "parsed_counts": {}
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00049-p002-r019-case_detail-0004701_1991-01.html",
+      "html_sha256": "32436c2b5287215a754367cd3869951d6292610b169e8335ee7246fd03490d01",
+      "bytes_len": 6848,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kvVw4oXXuAjkGBg4q1ttqQ%3D%3D&county=CFxeXyOisOxOpseT03dsaQ%3D%3D&motion=M&docs=&adate=10/21/1991&civilCaseId=rG2t4Xxva2GHSfTpH6Uq1w%3D%3D",
+      "captured_at": "2026-07-21T19:48:37.878Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions",
@@ -186,9 +344,35 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=gFzUnR6DTGZwMuPlBQwT8Q%3D%3D&county=KuhZndBx0WLTF_PLUS_3Bpk7%2FYA%3D%3D&civilCaseId=wH5lHndWDy5YB5SmShUhvg%3D%3D",
       "captured_at": "2026-07-21T05:15:53.153Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/horst/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00051-p002-r019-motions-0004701_1991-01.html",
+      "html_sha256": "01111287da3a19b5d420a6eab01796c2d937df1da8827a893185a393a5599374",
+      "bytes_len": 6359,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=kvVw4oXXuAjkGBg4q1ttqQ%3D%3D&county=CFxeXyOisOxOpseT03dsaQ%3D%3D&civilCaseId=rG2t4Xxva2GHSfTpH6Uq1w%3D%3D",
+      "captured_at": "2026-07-21T19:48:37.878Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Orange Supreme Court",
+    "Index Number": "0004701/1991",
+    "Case Name": "FULLERTON, THOMAS B. vs. GRUNER, HORST",
+    "Case Type": "CONTRACT",
+    "Track": "Other",
+    "RJI Filed": "07/24/1991",
+    "Disposition Date": "10/23/1991",
+    "Justice Name": "PETER C. PATSALOS"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -270,15 +454,66 @@
     },
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:gruner:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/gruner/page-001.html",
-      "html_sha256": "f4895c56fcfd2b431fb05f95538d9702b5e493bd835c28737589e59a7309f0fe",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:horst:followup-page:002:capture:00049:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00049-p002-r019-case_detail-0004701_1991-01.html",
+      "html_sha256": "32436c2b5287215a754367cd3869951d6292610b169e8335ee7246fd03490d01",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kvVw4oXXuAjkGBg4q1ttqQ%3D%3D&county=CFxeXyOisOxOpseT03dsaQ%3D%3D&motion=M&docs=&adate=10/21/1991&civilCaseId=rG2t4Xxva2GHSfTpH6Uq1w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:horst:followup-page:002:capture:00050:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00050-p002-r019-appearances-0004701_1991-01.html",
+      "html_sha256": "0764447fc55dc9555f8427591a85119cce9aeade164a7ea260cc0841801572bd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/21/1991&index=kvVw4oXXuAjkGBg4q1ttqQ%3D%3D&county=CFxeXyOisOxOpseT03dsaQ%3D%3D&civilCaseId=rG2t4Xxva2GHSfTpH6Uq1w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:horst:followup-page:002:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/horst/00051-p002-r019-motions-0004701_1991-01.html",
+      "html_sha256": "01111287da3a19b5d420a6eab01796c2d937df1da8827a893185a393a5599374",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=kvVw4oXXuAjkGBg4q1ttqQ%3D%3D&county=CFxeXyOisOxOpseT03dsaQ%3D%3D&civilCaseId=rG2t4Xxva2GHSfTpH6Uq1w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:gruner:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/gruner/page-001.html",
+      "html_sha256": "c04fdd72efa031a30d17d9a9c92b9bf52e336294754fa87afc7667505d266737",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "lane": "sfscvpn06",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "f475e118846fe3eeb4f14b81628b946643c875f57ed1b442ea4bb6b4ef0be386"
+      "row_html_sha256": "25ba7fefaac47332c3a0f25e328a5d22549557b42003cf836fda047a2719944c"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:horst:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/horst/page-002.html",
+      "html_sha256": "35ede142bd4e58dd486f2ba07ba88d15439a5552bc1cc9e3ff2dcd295297b42a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn07",
+      "page_number": 2,
+      "table_row_number": 19,
+      "row_html_sha256": "848144dfe8cd372d95672bc8423715c40c7924dfbcdf7f48a60f2ff81112536b"
     }
   ],
-  "judicial_officer": "PETER C. PATSALOS"
+  "judicial_officer": "PETER C. PATSALOS",
+  "disposition_date": "10/23/1991"
 }

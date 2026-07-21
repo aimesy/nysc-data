@@ -14,8 +14,8 @@
   "case_type": "FORECLOSURE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:58:26.480Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sperl.rows.ndjson",
         "source_page": 1,
         "source_row": 19,
-        "row_html_sha256": "08ae2e79a2671f0fbcacd65da4ce73efef3d03007ae84f2ce7f7a4954ca3dcc2"
+        "row_html_sha256": "c51a6c9d89290afc732b1910c6b57aaef809e8622921abc9cf5af20778151478"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sperl/00047-p001-r019-appearances-0000287_2004-01.html",
+      "html_sha256": "29c9ceea1f521eb2ed5aef28fa45adc71ce8e535ed135645172b45905fa095e4",
+      "bytes_len": 5557,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/04/2005&index=ydX_PLUS_xehEWO8by94Im7reZA%3D%3D&county=WWKy9JVrJhjZ2LM8O9OHtA%3D%3D&civilCaseId=klNG1%2FIZyb5qGHGc8RZzDw%3D%3D",
+      "captured_at": "2026-07-21T17:58:26.480Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/sperl/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sperl/00046-p001-r019-case_detail-0000287_2004-01.html",
+      "html_sha256": "64328e32a30e04194a02f3315c08d220e16f4e2d0ec507108ff26690bd12a4e2",
+      "bytes_len": 7093,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ydX_PLUS_xehEWO8by94Im7reZA%3D%3D&county=WWKy9JVrJhjZ2LM8O9OHtA%3D%3D&motion=&docs=&adate=02/04/2005&civilCaseId=klNG1%2FIZyb5qGHGc8RZzDw%3D%3D",
+      "captured_at": "2026-07-21T17:58:26.480Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:sperl:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sperl/page-001.html",
-      "html_sha256": "3019b591ece8e5b2013c62652eaf6a3d4f0689e62dbf7ed60a982b0339195941",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:sperl:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sperl/00046-p001-r019-case_detail-0000287_2004-01.html",
+      "html_sha256": "64328e32a30e04194a02f3315c08d220e16f4e2d0ec507108ff26690bd12a4e2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ydX_PLUS_xehEWO8by94Im7reZA%3D%3D&county=WWKy9JVrJhjZ2LM8O9OHtA%3D%3D&motion=&docs=&adate=02/04/2005&civilCaseId=klNG1%2FIZyb5qGHGc8RZzDw%3D%3D",
       "page_number": 1,
       "table_row_number": 19,
-      "row_html_sha256": "08ae2e79a2671f0fbcacd65da4ce73efef3d03007ae84f2ce7f7a4954ca3dcc2"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:sperl:followup-page:001:capture:00047:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sperl/00047-p001-r019-appearances-0000287_2004-01.html",
+      "html_sha256": "29c9ceea1f521eb2ed5aef28fa45adc71ce8e535ed135645172b45905fa095e4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/04/2005&index=ydX_PLUS_xehEWO8by94Im7reZA%3D%3D&county=WWKy9JVrJhjZ2LM8O9OHtA%3D%3D&civilCaseId=klNG1%2FIZyb5qGHGc8RZzDw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:sperl:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/sperl/page-001.html",
+      "html_sha256": "8d29c1eed8afec4a276362a2450cdf80f665e75b3df657604ffc05b8df3309ad",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "c51a6c9d89290afc732b1910c6b57aaef809e8622921abc9cf5af20778151478"
     }
   ],
   "judicial_officer": "LESLIE E. STEIN"

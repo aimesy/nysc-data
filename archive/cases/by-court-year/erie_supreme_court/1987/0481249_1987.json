@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T19:10:37.079Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,17 +24,22 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "disc"
+      "disc",
+      "hoey"
     ],
     "result_row_refs": [
       {
@@ -44,6 +49,14 @@
         "source_page": 1,
         "source_row": 23,
         "row_html_sha256": "d4ba80a391a354f58031850ad824f23de8029d38a9d36105fb0f19b4f503c5e7"
+      },
+      {
+        "search_name": "hoey",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/hoey.rows.ndjson",
+        "source_page": 1,
+        "source_row": 18,
+        "row_html_sha256": "2ed03e972423b34c71416c6de9140a4b7626a6d431e572af497ac19886a0b909"
       }
     ]
   },
@@ -116,9 +129,91 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/hoey/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/hoey/00044-p001-r018-appearances-0481249_1987-01.html",
+      "html_sha256": "ee3ff2422e53a92e83f102f08004dd90e209050aa07b4b25d319daf8b796b3dd",
+      "bytes_len": 6937,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/11/1988&index=oL_PLUS_thRPaueBZW_PLUS_TC9fX83A%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&civilCaseId=TNhH2CpOwZfvx9CdrrlsKg%3D%3D",
+      "captured_at": "2026-07-21T19:10:37.079Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/hoey/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/hoey/00043-p001-r018-case_detail-0481249_1987-01.html",
+      "html_sha256": "07faea6498be5ae4200c4056fb56d7911d20c0ce4ccc8c919bad1934faa5bd20",
+      "bytes_len": 7326,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oL_PLUS_thRPaueBZW_PLUS_TC9fX83A%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&motion=M&docs=&adate=02/11/1988&civilCaseId=TNhH2CpOwZfvx9CdrrlsKg%3D%3D",
+      "captured_at": "2026-07-21T19:10:37.079Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/hoey/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/hoey/00045-p001-r018-motions-0481249_1987-01.html",
+      "html_sha256": "7a37670a094fd411a1d3694883c64759d5643fab09b4e67ecbe80ffa6ef808d0",
+      "bytes_len": 6374,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oL_PLUS_thRPaueBZW_PLUS_TC9fX83A%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&civilCaseId=TNhH2CpOwZfvx9CdrrlsKg%3D%3D",
+      "captured_at": "2026-07-21T19:10:37.079Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:hoey:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/hoey/00043-p001-r018-case_detail-0481249_1987-01.html",
+      "html_sha256": "07faea6498be5ae4200c4056fb56d7911d20c0ce4ccc8c919bad1934faa5bd20",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oL_PLUS_thRPaueBZW_PLUS_TC9fX83A%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&motion=M&docs=&adate=02/11/1988&civilCaseId=TNhH2CpOwZfvx9CdrrlsKg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:hoey:followup-page:001:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/hoey/00044-p001-r018-appearances-0481249_1987-01.html",
+      "html_sha256": "ee3ff2422e53a92e83f102f08004dd90e209050aa07b4b25d319daf8b796b3dd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=02/11/1988&index=oL_PLUS_thRPaueBZW_PLUS_TC9fX83A%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&civilCaseId=TNhH2CpOwZfvx9CdrrlsKg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:hoey:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/hoey/00045-p001-r018-motions-0481249_1987-01.html",
+      "html_sha256": "7a37670a094fd411a1d3694883c64759d5643fab09b4e67ecbe80ffa6ef808d0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oL_PLUS_thRPaueBZW_PLUS_TC9fX83A%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&civilCaseId=TNhH2CpOwZfvx9CdrrlsKg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260719044730:disc:page:001",
@@ -129,6 +224,17 @@
       "page_number": 1,
       "table_row_number": 23,
       "row_html_sha256": "d4ba80a391a354f58031850ad824f23de8029d38a9d36105fb0f19b4f503c5e7"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:hoey:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/hoey/page-001.html",
+      "html_sha256": "b61887e0363bd5391a2b936d49a92ac27cf87c4eeea7b26c74f4bd38f20607e2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "2ed03e972423b34c71416c6de9140a4b7626a6d431e572af497ac19886a0b909"
     }
   ],
   "judicial_officer": "EDWARD A. RATH, JR."

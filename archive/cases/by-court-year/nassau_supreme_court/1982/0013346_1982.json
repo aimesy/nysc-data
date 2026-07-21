@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T18:07:34.657Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/kiley.rows.ndjson",
         "source_page": 1,
         "source_row": 2,
-        "row_html_sha256": "d5b21c711a4d9e2b702e6db02e72d946c908c88274568b4a79374aa21dcb6945"
+        "row_html_sha256": "c8c08800f57b94ce02aa69ef4005e04407a044d932da5c3e7e7af997ef50a284"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/kiley/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kiley/00004-p001-r002-appearances-0013346_1982-01.html",
+      "html_sha256": "90873aa41f84d6afd9e95fc85d23f21a6082fc7a32d15345f2c2247170801162",
+      "bytes_len": 6150,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/02/1982&index=8LCPhtm2q7AZUYmJGv6NYA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=cRZmFpeFayCbmPZeV6TV6Q%3D%3D",
+      "captured_at": "2026-07-21T18:07:34.657Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/kiley/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kiley/00003-p001-r002-case_detail-0013346_1982-01.html",
+      "html_sha256": "8f3fecd08d2d90f51a5331bee794aa6e3d6012a9b4e1f2e8fed48afefe6771ec",
+      "bytes_len": 7002,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8LCPhtm2q7AZUYmJGv6NYA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=12/02/1982&civilCaseId=cRZmFpeFayCbmPZeV6TV6Q%3D%3D",
+      "captured_at": "2026-07-21T18:07:34.657Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:kiley:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/kiley/page-001.html",
-      "html_sha256": "fa8528605fb29d9eb0e9299240408e7fa986e0d63ebb80514e6543a96c6125d9",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn13",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:kiley:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kiley/00003-p001-r002-case_detail-0013346_1982-01.html",
+      "html_sha256": "8f3fecd08d2d90f51a5331bee794aa6e3d6012a9b4e1f2e8fed48afefe6771ec",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8LCPhtm2q7AZUYmJGv6NYA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=12/02/1982&civilCaseId=cRZmFpeFayCbmPZeV6TV6Q%3D%3D",
       "page_number": 1,
       "table_row_number": 2,
-      "row_html_sha256": "d5b21c711a4d9e2b702e6db02e72d946c908c88274568b4a79374aa21dcb6945"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:kiley:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kiley/00004-p001-r002-appearances-0013346_1982-01.html",
+      "html_sha256": "90873aa41f84d6afd9e95fc85d23f21a6082fc7a32d15345f2c2247170801162",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/02/1982&index=8LCPhtm2q7AZUYmJGv6NYA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=cRZmFpeFayCbmPZeV6TV6Q%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:kiley:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/kiley/page-001.html",
+      "html_sha256": "89de5ebdc92153d3fe7ab296e82ff7661857edfaf8b435ec53848014e3d97e65",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "c8c08800f57b94ce02aa69ef4005e04407a044d932da5c3e7e7af997ef50a284"
     }
   ]
 }

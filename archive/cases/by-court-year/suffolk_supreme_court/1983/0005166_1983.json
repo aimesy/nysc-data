@@ -14,8 +14,8 @@
   "case_type": "OM-Other",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T18:38:15.055Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/berley.rows.ndjson",
         "source_page": 1,
         "source_row": 1,
-        "row_html_sha256": "256cc0a068cf363be73a6b954326a60b0c6c3582f4dcc47431e558bf83d64532"
+        "row_html_sha256": "90f038f772fce54f0c5462600ede0b198eb736387d25f95b51c7fd4f621a935a"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/berley/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/berley/00002-p001-r001-appearances-0005166_1983-01.html",
+      "html_sha256": "a282e36718a7b5b3218e3ae9f935be1c3cdafe80d7df98292b6fb806a9852b0f",
+      "bytes_len": 9615,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/29/1987&index=8JeskMaMvF2N6beMxDfKNQ%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=DaMaCq2C228khHobV3xoLQ%3D%3D",
+      "captured_at": "2026-07-21T18:38:15.055Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/berley/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/berley/00001-p001-r001-case_detail-0005166_1983-01.html",
+      "html_sha256": "e4e31cda63d971fec6e5dd456e9df2cf45b548126622715f21850b792627f2ed",
+      "bytes_len": 7076,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8JeskMaMvF2N6beMxDfKNQ%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=01/29/1987&civilCaseId=DaMaCq2C228khHobV3xoLQ%3D%3D",
+      "captured_at": "2026-07-21T18:38:15.055Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:berley:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/berley/page-001.html",
-      "html_sha256": "677dee30c17e1d9a82e72b77f1ea511a4c2fb700939e46b037575b7a4404100c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:berley:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/berley/00001-p001-r001-case_detail-0005166_1983-01.html",
+      "html_sha256": "e4e31cda63d971fec6e5dd456e9df2cf45b548126622715f21850b792627f2ed",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8JeskMaMvF2N6beMxDfKNQ%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&motion=&docs=&adate=01/29/1987&civilCaseId=DaMaCq2C228khHobV3xoLQ%3D%3D",
       "page_number": 1,
       "table_row_number": 1,
-      "row_html_sha256": "256cc0a068cf363be73a6b954326a60b0c6c3582f4dcc47431e558bf83d64532"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:berley:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/berley/00002-p001-r001-appearances-0005166_1983-01.html",
+      "html_sha256": "a282e36718a7b5b3218e3ae9f935be1c3cdafe80d7df98292b6fb806a9852b0f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/29/1987&index=8JeskMaMvF2N6beMxDfKNQ%3D%3D&county=RlLzV3e7OprVoNk_PLUS_CpBCpA%3D%3D&civilCaseId=DaMaCq2C228khHobV3xoLQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:berley:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/berley/page-001.html",
+      "html_sha256": "4ece3003882d42d9b3b970e1b6b795f2ac0b4c16032c7f6f0454b29f71461e5b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "90f038f772fce54f0c5462600ede0b198eb736387d25f95b51c7fd4f621a935a"
     }
   ],
   "judicial_officer": "JOHN DI NOTO"

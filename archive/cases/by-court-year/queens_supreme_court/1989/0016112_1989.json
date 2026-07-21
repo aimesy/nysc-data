@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T19:29:27.720Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/magli.rows.ndjson",
         "source_page": 1,
         "source_row": 2,
-        "row_html_sha256": "bc1fc887ccae4d19bfac1500ede6f41ced8be4f198ad567f5ad41ed6b10b61b6"
+        "row_html_sha256": "d3e234a73eb91765606719768625c62d3bffc608805d3e27790051c679e1bda4"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/magli/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magli/00004-p001-r002-appearances-0016112_1989-01.html",
+      "html_sha256": "56b0ab5456eb711b0fb8c8faed8a80a44b1c01a40a5b050f41806d252512f9db",
+      "bytes_len": 5547,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/25/1990&index=fPzJrAvRIcXoAYhdrFVvUQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=SmD7fCXJUjrttLO04QcmDA%3D%3D",
+      "captured_at": "2026-07-21T19:29:27.720Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/magli/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magli/00003-p001-r002-case_detail-0016112_1989-01.html",
+      "html_sha256": "297185b2d572e783f244f9dd22b04c628db31ba8902ba468de9a83fe2dfbe65f",
+      "bytes_len": 7008,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fPzJrAvRIcXoAYhdrFVvUQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=05/25/1990&civilCaseId=SmD7fCXJUjrttLO04QcmDA%3D%3D",
+      "captured_at": "2026-07-21T19:29:27.720Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:magli:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/magli/page-001.html",
-      "html_sha256": "84f16a72c698bef39b895b7e91db5d2dee68c1e329f127c7b28f69f0bec1cccb",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:magli:followup-page:001:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magli/00003-p001-r002-case_detail-0016112_1989-01.html",
+      "html_sha256": "297185b2d572e783f244f9dd22b04c628db31ba8902ba468de9a83fe2dfbe65f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=fPzJrAvRIcXoAYhdrFVvUQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=05/25/1990&civilCaseId=SmD7fCXJUjrttLO04QcmDA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:magli:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magli/00004-p001-r002-appearances-0016112_1989-01.html",
+      "html_sha256": "56b0ab5456eb711b0fb8c8faed8a80a44b1c01a40a5b050f41806d252512f9db",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/25/1990&index=fPzJrAvRIcXoAYhdrFVvUQ%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=SmD7fCXJUjrttLO04QcmDA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:magli:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/magli/page-001.html",
+      "html_sha256": "4f5287551e9617950a9f76b5c0e82f9da3168e123c4726ec5335477cf46475a3",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "sfscvpn12",
       "page_number": 1,
       "table_row_number": 2,
-      "row_html_sha256": "bc1fc887ccae4d19bfac1500ede6f41ced8be4f198ad567f5ad41ed6b10b61b6"
+      "row_html_sha256": "d3e234a73eb91765606719768625c62d3bffc608805d3e27790051c679e1bda4"
     }
   ],
   "judicial_officer": "ANGELO GRACI"

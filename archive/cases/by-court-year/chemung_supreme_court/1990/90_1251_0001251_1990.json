@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:01:46.826Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/tioga.rows.ndjson",
         "source_page": 1,
         "source_row": 12,
-        "row_html_sha256": "a8383b58ee0dea2f59ed9526f517b2fe4b3eb6f9650048deb79ae6c04181976f"
+        "row_html_sha256": "df461bdcb62f9de9340143ea5343ec6c51ed46df84c489963263034573dc5613"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tioga/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00031-p001-r012-appearances-0001251_1990-01.html",
+      "html_sha256": "d70e7c92e1e7c80703835d8c2128ff8ca1404b9609bc9b2bdc42c66a2b2db4cb",
+      "bytes_len": 6964,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/05/1990&index=bEVtern7SAEZNf6UPTt2aQ%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=ncSM4sSWPUHgxHHx1roi9w%3D%3D",
+      "captured_at": "2026-07-21T17:01:46.826Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tioga/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00030-p001-r012-case_detail-0001251_1990-01.html",
+      "html_sha256": "90340b36cbc2a74b06c85db276d232fcce643b9a110dbd14fcf742d51206d50a",
+      "bytes_len": 7745,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bEVtern7SAEZNf6UPTt2aQ%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&motion=M&docs=&adate=03/05/1990&civilCaseId=ncSM4sSWPUHgxHHx1roi9w%3D%3D",
+      "captured_at": "2026-07-21T17:01:46.826Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tioga/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00032-p001-r012-motions-0001251_1990-01.html",
+      "html_sha256": "99f9d4af591de9f73927fe5697987f3d31a8b4664771cd1627bb23e80516e5cc",
+      "bytes_len": 6420,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=bEVtern7SAEZNf6UPTt2aQ%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=ncSM4sSWPUHgxHHx1roi9w%3D%3D",
+      "captured_at": "2026-07-21T17:01:46.826Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:tioga:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tioga/page-001.html",
-      "html_sha256": "eafdb36ae4db353f752756a618fb1e25a9d285a5c95bb74f0db59a4f2079e69c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tioga:followup-page:001:capture:00030:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00030-p001-r012-case_detail-0001251_1990-01.html",
+      "html_sha256": "90340b36cbc2a74b06c85db276d232fcce643b9a110dbd14fcf742d51206d50a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=bEVtern7SAEZNf6UPTt2aQ%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&motion=M&docs=&adate=03/05/1990&civilCaseId=ncSM4sSWPUHgxHHx1roi9w%3D%3D",
       "page_number": 1,
       "table_row_number": 12,
-      "row_html_sha256": "a8383b58ee0dea2f59ed9526f517b2fe4b3eb6f9650048deb79ae6c04181976f"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tioga:followup-page:001:capture:00031:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00031-p001-r012-appearances-0001251_1990-01.html",
+      "html_sha256": "d70e7c92e1e7c80703835d8c2128ff8ca1404b9609bc9b2bdc42c66a2b2db4cb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/05/1990&index=bEVtern7SAEZNf6UPTt2aQ%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=ncSM4sSWPUHgxHHx1roi9w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tioga:followup-page:001:capture:00032:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00032-p001-r012-motions-0001251_1990-01.html",
+      "html_sha256": "99f9d4af591de9f73927fe5697987f3d31a8b4664771cd1627bb23e80516e5cc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=bEVtern7SAEZNf6UPTt2aQ%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=ncSM4sSWPUHgxHHx1roi9w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tioga:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tioga/page-001.html",
+      "html_sha256": "fb1ca90319e5b35e79d34b1880fb23b34f94f10c1a70a5e79502fdd000962e5c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 12,
+      "row_html_sha256": "df461bdcb62f9de9340143ea5343ec6c51ed46df84c489963263034573dc5613"
     }
   ],
   "judicial_officer": "HON. D. BRUCE CREW, III, JSC"

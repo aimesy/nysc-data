@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T18:06:51.396Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/tala.rows.ndjson",
         "source_page": 1,
         "source_row": 20,
-        "row_html_sha256": "c76e1231dc42fd47ea83b7a03c19c6b43faadecc3699c32382a3a561eb9f9d86"
+        "row_html_sha256": "ba4dd8f81a1f35defbb4530cd0c57f429759acc7c9c2567ef649cadbff3f6a26"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tala/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tala/00051-p001-r020-appearances-0600587_1999-01.html",
+      "html_sha256": "fbc008351e647c30aacfbe6a923e47857975ffea4411b7ec42d43c4e0e690dd7",
+      "bytes_len": 17890,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/12/2000&index=7cxR_PLUS_GehHeSBXrI2UfLTnQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=epWIfGODNXkkRQyj4M7XMw%3D%3D",
+      "captured_at": "2026-07-21T18:06:51.396Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tala/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tala/00050-p001-r020-case_detail-0600587_1999-01.html",
+      "html_sha256": "eb259cc20864858f0a34c871e0fbb7b1f1c674b519978966693ba5a184fe704e",
+      "bytes_len": 7293,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7cxR_PLUS_GehHeSBXrI2UfLTnQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=09/12/2000&civilCaseId=epWIfGODNXkkRQyj4M7XMw%3D%3D",
+      "captured_at": "2026-07-21T18:06:51.396Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tala/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tala/00052-p001-r020-motions-0600587_1999-01.html",
+      "html_sha256": "16faa557318b4479c23e91d7c819fb172f72f35304834bdf92c6bd334a0ed612",
+      "bytes_len": 8938,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=7cxR_PLUS_GehHeSBXrI2UfLTnQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=epWIfGODNXkkRQyj4M7XMw%3D%3D",
+      "captured_at": "2026-07-21T18:06:51.396Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:tala:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tala/page-001.html",
-      "html_sha256": "c8353d2eab219365fed59699750b01ba0f2f5784c79825979caa277d26db872a",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tala:followup-page:001:capture:00050:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tala/00050-p001-r020-case_detail-0600587_1999-01.html",
+      "html_sha256": "eb259cc20864858f0a34c871e0fbb7b1f1c674b519978966693ba5a184fe704e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=7cxR_PLUS_GehHeSBXrI2UfLTnQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=09/12/2000&civilCaseId=epWIfGODNXkkRQyj4M7XMw%3D%3D",
       "page_number": 1,
       "table_row_number": 20,
-      "row_html_sha256": "c76e1231dc42fd47ea83b7a03c19c6b43faadecc3699c32382a3a561eb9f9d86"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tala:followup-page:001:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tala/00051-p001-r020-appearances-0600587_1999-01.html",
+      "html_sha256": "fbc008351e647c30aacfbe6a923e47857975ffea4411b7ec42d43c4e0e690dd7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/12/2000&index=7cxR_PLUS_GehHeSBXrI2UfLTnQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=epWIfGODNXkkRQyj4M7XMw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 20,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tala:followup-page:001:capture:00052:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tala/00052-p001-r020-motions-0600587_1999-01.html",
+      "html_sha256": "16faa557318b4479c23e91d7c819fb172f72f35304834bdf92c6bd334a0ed612",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=7cxR_PLUS_GehHeSBXrI2UfLTnQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=epWIfGODNXkkRQyj4M7XMw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 20,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tala:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tala/page-001.html",
+      "html_sha256": "2416bab41b5138939cbcc7bc9e14c0c925d957fc930075445f77b1ae881be007",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "ba4dd8f81a1f35defbb4530cd0c57f429759acc7c9c2567ef649cadbff3f6a26"
     }
   ],
   "judicial_officer": "CRANE, STEPHEN G."

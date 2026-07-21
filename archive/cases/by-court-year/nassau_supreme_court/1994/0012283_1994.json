@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T18:50:41.620Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/reine.rows.ndjson",
         "source_page": 1,
         "source_row": 18,
-        "row_html_sha256": "5d88f5f54965334e0ee673b3fa8062908c8293dc8e5b99d55fcecf078f287321"
+        "row_html_sha256": "54a6b448c546613d79e36c87d31baee5163086ba23ad7a0c67f977e22c6a3864"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/reine/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/reine/00043-p001-r018-appearances-0012283_1994-01.html",
+      "html_sha256": "45ae6b029f9ef99cd94f9c54c8f927df56e27b6e4cd26266b635307129909bde",
+      "bytes_len": 6247,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/12/1995&index=9xldVVje6ZKiIkGr4M6uSA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=bgtaU5igzttqOLs4aNmJog%3D%3D",
+      "captured_at": "2026-07-21T18:50:41.620Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/reine/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/reine/00042-p001-r018-case_detail-0012283_1994-01.html",
+      "html_sha256": "44c75a6a54f8ead2a3178fe150d5d9cfb3f9489a77022381829f806d44ec655f",
+      "bytes_len": 6998,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9xldVVje6ZKiIkGr4M6uSA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=06/12/1995&civilCaseId=bgtaU5igzttqOLs4aNmJog%3D%3D",
+      "captured_at": "2026-07-21T18:50:41.620Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:reine:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/reine/page-001.html",
-      "html_sha256": "78a27e770dda2dab29aecfc8e77241626086159af7fd447b905ab70e5a3d667c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:reine:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/reine/00042-p001-r018-case_detail-0012283_1994-01.html",
+      "html_sha256": "44c75a6a54f8ead2a3178fe150d5d9cfb3f9489a77022381829f806d44ec655f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9xldVVje6ZKiIkGr4M6uSA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=06/12/1995&civilCaseId=bgtaU5igzttqOLs4aNmJog%3D%3D",
       "page_number": 1,
       "table_row_number": 18,
-      "row_html_sha256": "5d88f5f54965334e0ee673b3fa8062908c8293dc8e5b99d55fcecf078f287321"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:reine:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/reine/00043-p001-r018-appearances-0012283_1994-01.html",
+      "html_sha256": "45ae6b029f9ef99cd94f9c54c8f927df56e27b6e4cd26266b635307129909bde",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/12/1995&index=9xldVVje6ZKiIkGr4M6uSA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=bgtaU5igzttqOLs4aNmJog%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:reine:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/reine/page-001.html",
+      "html_sha256": "215147fa05bec928749df7227d4d3435eddceb4c5f76bd9b2f67d8bb682e4549",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "54a6b448c546613d79e36c87d31baee5163086ba23ad7a0c67f977e22c6a3864"
     }
   ],
   "judicial_officer": "ALLAN L. WINICK"

@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:01:46.826Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/tioga.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
-        "row_html_sha256": "d16de84d47b04bbc6657f19e862abb5ad1e0e182e4fab28e4241a8642a07f2d4"
+        "row_html_sha256": "95e53c5f78bff39a39eb5b55c064df80deb3116fb90c688b2f87a0356fefdc3e"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tioga/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00007-p001-r003-appearances-0003625_1987-01.html",
+      "html_sha256": "9e907f02295b3b36127a62e311d62af4887719e3d949690d464a7a6e9a3350d2",
+      "bytes_len": 6278,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/04/1988&index=IbUdwXY9FF27aHmlKEMfSw%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=WUJzoEvM0naa7V2E0CeJhg%3D%3D",
+      "captured_at": "2026-07-21T17:01:46.826Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tioga/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00006-p001-r003-case_detail-0003625_1987-01.html",
+      "html_sha256": "568c0b5d37db612503529e4922cb2aedade2cfc4e99681c6807716b265b1c34b",
+      "bytes_len": 7414,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=IbUdwXY9FF27aHmlKEMfSw%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&motion=&docs=&adate=03/04/1988&civilCaseId=WUJzoEvM0naa7V2E0CeJhg%3D%3D",
+      "captured_at": "2026-07-21T17:01:46.826Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:tioga:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tioga/page-001.html",
-      "html_sha256": "eafdb36ae4db353f752756a618fb1e25a9d285a5c95bb74f0db59a4f2079e69c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tioga:followup-page:001:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00006-p001-r003-case_detail-0003625_1987-01.html",
+      "html_sha256": "568c0b5d37db612503529e4922cb2aedade2cfc4e99681c6807716b265b1c34b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=IbUdwXY9FF27aHmlKEMfSw%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&motion=&docs=&adate=03/04/1988&civilCaseId=WUJzoEvM0naa7V2E0CeJhg%3D%3D",
       "page_number": 1,
       "table_row_number": 3,
-      "row_html_sha256": "d16de84d47b04bbc6657f19e862abb5ad1e0e182e4fab28e4241a8642a07f2d4"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tioga:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tioga/00007-p001-r003-appearances-0003625_1987-01.html",
+      "html_sha256": "9e907f02295b3b36127a62e311d62af4887719e3d949690d464a7a6e9a3350d2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/04/1988&index=IbUdwXY9FF27aHmlKEMfSw%3D%3D&county=Uud5ckxfoHNyhDrrun8ywQ%3D%3D&civilCaseId=WUJzoEvM0naa7V2E0CeJhg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tioga:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tioga/page-001.html",
+      "html_sha256": "fb1ca90319e5b35e79d34b1880fb23b34f94f10c1a70a5e79502fdd000962e5c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "95e53c5f78bff39a39eb5b55c064df80deb3116fb90c688b2f87a0356fefdc3e"
     }
   ],
   "judicial_officer": "HON. CHARLES B. SWARTWOOD"

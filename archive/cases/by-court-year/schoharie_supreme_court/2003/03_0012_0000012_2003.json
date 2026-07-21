@@ -14,8 +14,8 @@
   "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T17:14:29.251Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/tira.rows.ndjson",
         "source_page": 1,
         "source_row": 19,
-        "row_html_sha256": "b76454154ea2a784b8c125acf8084fe069cd6335de283f4469599e97f83021d6"
+        "row_html_sha256": "87936d43eb4f9ad488fea93c8c4d6fb00f4304a00cf4f178867c6c00b2a0b02a"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tira/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tira/00046-p001-r019-appearances-0000012_2003-01.html",
+      "html_sha256": "0c90f99917604c958ffb1c1d6a867d51fe796d627b3211cf8a1f6890e9278377",
+      "bytes_len": 5549,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/06/2003&index=yju3UC3Fw904fsedM_PLUS__PLUS_fSg%3D%3D&county=g5R4RPDtEpchrUCmxJFu7A%3D%3D&civilCaseId=2OEut237ghC8mjD6Lyv5Ww%3D%3D",
+      "captured_at": "2026-07-21T17:14:29.251Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tira/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tira/00045-p001-r019-case_detail-0000012_2003-01.html",
+      "html_sha256": "fd04b68f146c15a27604198df459f263c046c7a871123d43b89921133edc9689",
+      "bytes_len": 7033,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yju3UC3Fw904fsedM_PLUS__PLUS_fSg%3D%3D&county=g5R4RPDtEpchrUCmxJFu7A%3D%3D&motion=&docs=&adate=05/06/2003&civilCaseId=2OEut237ghC8mjD6Lyv5Ww%3D%3D",
+      "captured_at": "2026-07-21T17:14:29.251Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:tira:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tira/page-001.html",
-      "html_sha256": "21cb6bf34df9bb1369ceaeb7dd782efdca56485a7443b73617daac8c38c6d72c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tira:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tira/00045-p001-r019-case_detail-0000012_2003-01.html",
+      "html_sha256": "fd04b68f146c15a27604198df459f263c046c7a871123d43b89921133edc9689",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=yju3UC3Fw904fsedM_PLUS__PLUS_fSg%3D%3D&county=g5R4RPDtEpchrUCmxJFu7A%3D%3D&motion=&docs=&adate=05/06/2003&civilCaseId=2OEut237ghC8mjD6Lyv5Ww%3D%3D",
       "page_number": 1,
       "table_row_number": 19,
-      "row_html_sha256": "b76454154ea2a784b8c125acf8084fe069cd6335de283f4469599e97f83021d6"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tira:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tira/00046-p001-r019-appearances-0000012_2003-01.html",
+      "html_sha256": "0c90f99917604c958ffb1c1d6a867d51fe796d627b3211cf8a1f6890e9278377",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/06/2003&index=yju3UC3Fw904fsedM_PLUS__PLUS_fSg%3D%3D&county=g5R4RPDtEpchrUCmxJFu7A%3D%3D&civilCaseId=2OEut237ghC8mjD6Lyv5Ww%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tira:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tira/page-001.html",
+      "html_sha256": "cb15357165bee8b06f8b1f310ad37cbe0b2eb684677e3e5bd4016ecda7165624",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "87936d43eb4f9ad488fea93c8c4d6fb00f4304a00cf4f178867c6c00b2a0b02a"
     }
   ],
   "judicial_officer": "HON. DAN LAMONT"

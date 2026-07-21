@@ -14,8 +14,8 @@
   "case_type": "MATRIMONIAL UNCONTESTED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T18:04:26.836Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/mood.rows.ndjson",
         "source_page": 1,
         "source_row": 21,
-        "row_html_sha256": "6443ef56a93c90463d5dda13c938c3d3f6c0f01e50793f37edb88c3d583b3ba7"
+        "row_html_sha256": "306892fdcc1c975a951221bab4be9ad5898691211ff9e8a3ce04c7c125488cbf"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/mood/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mood/00054-p001-r021-appearances-0020640_1994-01.html",
+      "html_sha256": "eee33480de19a861fae65de88d377315931c7c8941426ce3ac5a643881f09262",
+      "bytes_len": 11215,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/21/1999&index=cupTqUqYGg8HtSRxLaf9JA%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=cfKfmcKM7pCPYxsv%2FJyRrg%3D%3D",
+      "captured_at": "2026-07-21T18:04:26.836Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/mood/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mood/00053-p001-r021-case_detail-0020640_1994-01.html",
+      "html_sha256": "bbdbfd59996f29c78304536a8f0634011930715c74037c44bdad75583527441c",
+      "bytes_len": 7049,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=cupTqUqYGg8HtSRxLaf9JA%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=05/21/1999&civilCaseId=cfKfmcKM7pCPYxsv%2FJyRrg%3D%3D",
+      "captured_at": "2026-07-21T18:04:26.836Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:mood:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/mood/page-001.html",
-      "html_sha256": "14f4e88542fc938bcfa54c0d7b3d7c222f7125440a27f54729f0deadcdadc308",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:mood:followup-page:001:capture:00053:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mood/00053-p001-r021-case_detail-0020640_1994-01.html",
+      "html_sha256": "bbdbfd59996f29c78304536a8f0634011930715c74037c44bdad75583527441c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=cupTqUqYGg8HtSRxLaf9JA%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=05/21/1999&civilCaseId=cfKfmcKM7pCPYxsv%2FJyRrg%3D%3D",
       "page_number": 1,
       "table_row_number": 21,
-      "row_html_sha256": "6443ef56a93c90463d5dda13c938c3d3f6c0f01e50793f37edb88c3d583b3ba7"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:mood:followup-page:001:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/mood/00054-p001-r021-appearances-0020640_1994-01.html",
+      "html_sha256": "eee33480de19a861fae65de88d377315931c7c8941426ce3ac5a643881f09262",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/21/1999&index=cupTqUqYGg8HtSRxLaf9JA%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=cfKfmcKM7pCPYxsv%2FJyRrg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:mood:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/mood/page-001.html",
+      "html_sha256": "ab6e0878906edc32e8d19e9654dae346139f95ad26bfa0a3132bea36c36a39fb",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 21,
+      "row_html_sha256": "306892fdcc1c975a951221bab4be9ad5898691211ff9e8a3ce04c7c125488cbf"
     }
   ],
   "judicial_officer": "CHARLES J. THOMAS"
