@@ -14,12 +14,15 @@
   "case_type": "Comm-Contract",
   "status": "DISPOSED",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-20T13:16:27.707Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T14:03:20.443Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "herk"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "herk",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/herk.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "eea5918244aad994f4303d5845c71b0064eebe625cb3e038bbff49fb67362d68"
+      }
+    ]
   },
   "parties": [
     {
@@ -52,16 +66,17 @@
       "name": "",
       "firm": "JOHN FENWICK",
       "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00003-p001-r002-case_detail-0023240_1982-01.html",
-      "html_sha256": "d83d94a935aacdc7eb56a28e8820902c42f351fa72826275d8d14db53d4b88a0",
-      "captured_at": "2026-07-20T13:16:27.707Z"
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "SIDNEY RABEKOFF",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
     }
   ],
   "representation": [
@@ -71,145 +86,34 @@
       "attorney_name": "",
       "firm": "JOHN FENWICK",
       "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00003-p001-r002-case_detail-0023240_1982-01.html",
-      "html_sha256": "d83d94a935aacdc7eb56a28e8820902c42f351fa72826275d8d14db53d4b88a0",
-      "captured_at": "2026-07-20T13:16:27.707Z"
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "WAYBEN REALTY CORP.",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "SIDNEY RABEKOFF",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
     }
   ],
   "calendar": [
     {
+      "source_system": "webcivil",
       "appearance_date": "12/05/1984",
-      "appearance_time": "",
-      "purpose": "County Trial",
-      "fully_virtual": "No",
-      "court_date_type": "",
-      "outcome": "GRANTED",
-      "part": "ROLON W. REED COUNTY COURT INQUEST",
-      "judicial_officer": "ROLON W. REED COUNTY COURT INQUEST",
-      "remarks": "$7,379.67",
-      "motion_sequence": "",
-      "raw_text": "12/05/1984 | County Trial | No | GRANTED | ROLON W. REED COUNTY COURT INQUEST | $7,379.67",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "appearance_date": "08/29/1984",
-      "appearance_time": "",
-      "purpose": "County Trial",
-      "fully_virtual": "No",
-      "court_date_type": "",
-      "outcome": "REMAND",
-      "part": "COUNTY COURT PART I",
-      "judicial_officer": "COUNTY COURT PART I",
-      "remarks": "FOR INQ.",
-      "motion_sequence": "",
-      "raw_text": "08/29/1984 | County Trial | No | REMAND | COUNTY COURT PART I | FOR INQ.",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "appearance_date": "08/01/1984",
-      "appearance_time": "",
-      "purpose": "County Trial",
-      "fully_virtual": "No",
-      "court_date_type": "",
-      "outcome": "ADJOURNED",
-      "part": "COUNTY COURT - NON JURY",
-      "judicial_officer": "COUNTY COURT - NON JURY",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "08/01/1984 | County Trial | No | ADJOURNED | COUNTY COURT - NON JURY",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "",
+      "raw_text": "12/05/1984",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
     }
   ],
-  "docket_entries": [
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "12/05/1984",
-      "title": "County Trial - GRANTED",
-      "text": "12/05/1984 | County Trial | No | GRANTED | ROLON W. REED COUNTY COURT INQUEST | $7,379.67",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 2,
-      "entry_date": "08/29/1984",
-      "title": "County Trial - REMAND",
-      "text": "08/29/1984 | County Trial | No | REMAND | COUNTY COURT PART I | FOR INQ.",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 3,
-      "entry_date": "08/01/1984",
-      "title": "County Trial - ADJOURNED",
-      "text": "08/01/1984 | County Trial | No | ADJOURNED | COUNTY COURT - NON JURY",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    }
-  ],
+  "docket_entries": [],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -222,15 +126,12 @@
       "ok": true,
       "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "bytes_len": 6857,
+      "html_sha256": "c881b6fcf83bb15909544078b487a112bbf70b263eaf8fe4fa0db254b5971297",
+      "bytes_len": 6887,
       "title": "WebCivil Supreme - Appearance Detail",
-      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/1984&index=HM3d0ihzbZbc12xBTpYUzw%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=oQ421PXAJ0LUQDkru_PLUS_i33Q%3D%3D",
-      "captured_at": "2026-07-20T13:16:27.707Z",
-      "parsed_counts": {
-        "calendar": 3,
-        "docket_entries": 3
-      }
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/1984&index=C6DMeaNRvsC02MPyIpSV3Q%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&civilCaseId=RBYAL_PLUS_qQ77OJ3H4BJ_PLUS_EzHg%3D%3D",
+      "captured_at": "2026-07-21T14:03:20.443Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
@@ -239,37 +140,23 @@
       "ok": true,
       "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00003-p001-r002-case_detail-0023240_1982-01.html",
-      "html_sha256": "d83d94a935aacdc7eb56a28e8820902c42f351fa72826275d8d14db53d4b88a0",
-      "bytes_len": 7024,
+      "html_sha256": "37226e8a62dffc6f8a46086abe7e9c07bbd3a13c88c20b1cfea033bc44b966d0",
+      "bytes_len": 7044,
       "title": "WebCivil Supreme - Case Detail",
-      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HM3d0ihzbZbc12xBTpYUzw%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=&docs=&adate=12/05/1984&civilCaseId=oQ421PXAJ0LUQDkru_PLUS_i33Q%3D%3D",
-      "captured_at": "2026-07-20T13:16:27.707Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 1,
-        "representation": 1
-      }
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=C6DMeaNRvsC02MPyIpSV3Q%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&motion=&docs=&adate=12/05/1984&civilCaseId=RBYAL_PLUS_qQ77OJ3H4BJ_PLUS_EzHg%3D%3D",
+      "captured_at": "2026-07-21T14:03:20.443Z",
+      "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {
-    "Court": "Westchester County Court",
-    "Index Number": "0023240/1982",
-    "Case Name": "HERK ELEVATOR CO., INC. vs. WAYBEN REALTY CORP.",
-    "Case Type": "Comm-Contract",
-    "Track": "Other",
-    "RJI Filed": "05/05/1983",
-    "NOI Filed": "05/05/1983",
-    "Disposition Date": "12/05/1984",
-    "Calendar Number": "0181CCN83"
-  },
+  "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
       "source_profile": "nysc_webcivil",
       "capture_id": "20260719044730:herk:followup-page:001:capture:00003:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00003-p001-r002-case_detail-0023240_1982-01.html",
-      "html_sha256": "d83d94a935aacdc7eb56a28e8820902c42f351fa72826275d8d14db53d4b88a0",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=HM3d0ihzbZbc12xBTpYUzw%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&motion=&docs=&adate=12/05/1984&civilCaseId=oQ421PXAJ0LUQDkru_PLUS_i33Q%3D%3D",
+      "html_sha256": "37226e8a62dffc6f8a46086abe7e9c07bbd3a13c88c20b1cfea033bc44b966d0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=C6DMeaNRvsC02MPyIpSV3Q%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&motion=&docs=&adate=12/05/1984&civilCaseId=RBYAL_PLUS_qQ77OJ3H4BJ_PLUS_EzHg%3D%3D",
       "page_number": 1,
       "table_row_number": 2,
       "kind": "case-detail",
@@ -281,14 +168,24 @@
       "source_profile": "nysc_webcivil",
       "capture_id": "20260719044730:herk:followup-page:001:capture:00004:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00004-p001-r002-appearances-0023240_1982-01.html",
-      "html_sha256": "4d7144886aad915239e6fa79ed318ef69904b3bcf7edac309c1afcbc8f468e9d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/1984&index=HM3d0ihzbZbc12xBTpYUzw%3D%3D&county=yeaGIMxwTnWCUduKyW79Fg%3D%3D&civilCaseId=oQ421PXAJ0LUQDkru_PLUS_i33Q%3D%3D",
+      "html_sha256": "c881b6fcf83bb15909544078b487a112bbf70b263eaf8fe4fa0db254b5971297",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=12/05/1984&index=C6DMeaNRvsC02MPyIpSV3Q%3D%3D&county=nD7ZmPSsz_PLUS_IIlCplXvYqbQ%3D%3D&civilCaseId=RBYAL_PLUS_qQ77OJ3H4BJ_PLUS_EzHg%3D%3D",
       "page_number": 1,
       "table_row_number": 2,
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:herk:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/herk/page-001.html",
+      "html_sha256": "1d37e0733d69b5994b581f33ada3269b2c3d096a6738d9b7af12e61a7d3f31a8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "eea5918244aad994f4303d5845c71b0064eebe625cb3e038bbff49fb67362d68"
     }
-  ],
-  "disposition_date": "12/05/1984"
+  ]
 }

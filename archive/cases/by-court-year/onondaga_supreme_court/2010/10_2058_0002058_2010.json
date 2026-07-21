@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T15:53:23.331Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/insul.rows.ndjson",
         "source_page": 1,
         "source_row": 16,
-        "row_html_sha256": "187c6a80bc25826f21cffe95f492e509165c3c24c8a3597914251d21ed8f8e02"
+        "row_html_sha256": "cca6bece2a7ebf751c126676779eef7a6de3798ceee6278815376d4f1b79ebc3"
       }
     ]
   },
@@ -92,19 +95,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/insul/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/insul/00045-p001-r016-appearances-0002058_2010-01.html",
+      "html_sha256": "de36b2d037e2c73b7a03e7deec846a4971d748988649cd6c34661ae79fdb22c4",
+      "bytes_len": 6966,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/06/2011&index=TWF4rA4R3XEP5udgXPYRsg%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&civilCaseId=SI_PLUS_iDKeTvsrOW34mqF2xoA%3D%3D",
+      "captured_at": "2026-07-21T15:53:23.331Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/insul/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/insul/00044-p001-r016-case_detail-0002058_2010-01.html",
+      "html_sha256": "2a48d0913cbb0c70a4381b56a702419a76fc4e9c0998d02c02e0cef5d47db942",
+      "bytes_len": 6966,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TWF4rA4R3XEP5udgXPYRsg%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&motion=&docs=&adate=04/06/2011&civilCaseId=SI_PLUS_iDKeTvsrOW34mqF2xoA%3D%3D",
+      "captured_at": "2026-07-21T15:53:23.331Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:insul:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/insul/page-001.html",
-      "html_sha256": "11f67b935bcc5abc9ff40666750dcb24e2a895e6b4e19f2afaedbb85b3c80742",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn07",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:insul:followup-page:001:capture:00044:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/insul/00044-p001-r016-case_detail-0002058_2010-01.html",
+      "html_sha256": "2a48d0913cbb0c70a4381b56a702419a76fc4e9c0998d02c02e0cef5d47db942",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=TWF4rA4R3XEP5udgXPYRsg%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&motion=&docs=&adate=04/06/2011&civilCaseId=SI_PLUS_iDKeTvsrOW34mqF2xoA%3D%3D",
       "page_number": 1,
       "table_row_number": 16,
-      "row_html_sha256": "187c6a80bc25826f21cffe95f492e509165c3c24c8a3597914251d21ed8f8e02"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:insul:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/insul/00045-p001-r016-appearances-0002058_2010-01.html",
+      "html_sha256": "de36b2d037e2c73b7a03e7deec846a4971d748988649cd6c34661ae79fdb22c4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/06/2011&index=TWF4rA4R3XEP5udgXPYRsg%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&civilCaseId=SI_PLUS_iDKeTvsrOW34mqF2xoA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 16,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:insul:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/insul/page-001.html",
+      "html_sha256": "d080a54d2643e8864c7b1d1330569c8c3912a82a3f2acfca975924faf63565a3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 16,
+      "row_html_sha256": "cca6bece2a7ebf751c126676779eef7a6de3798ceee6278815376d4f1b79ebc3"
     }
   ],
   "judicial_officer": "HON. DEBORAH H. KARALUNAS"

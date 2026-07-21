@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T14:38:15.254Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/sachs.rows.ndjson",
         "source_page": 1,
         "source_row": 19,
-        "row_html_sha256": "5a4a6f0dc7a6d872f84d69ac27b8a7d3d8a9a4e0de0ee01c9af9ff5a81a74884"
+        "row_html_sha256": "1ce4ff5175d5e5830afe50486d1f841099793789f0d4053effd9349db7016d18"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/sachs/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sachs/00041-p001-r019-appearances-0004928_1984-01.html",
+      "html_sha256": "db50719d6b4ee1cd7436f53e5127a68baee716d81a44d84dfd6cb64333bad98a",
+      "bytes_len": 6191,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/27/1985&index=Pvlk9OpuwsEzcku3yEUalw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=BQxjeq4US3KijY%2F9yLIx5w%3D%3D",
+      "captured_at": "2026-07-21T14:38:15.254Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/sachs/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sachs/00040-p001-r019-case_detail-0004928_1984-01.html",
+      "html_sha256": "f9c40ace8b396647d02e5e22e70abaa44614006f1d04feefbef5aadce60992bd",
+      "bytes_len": 7007,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Pvlk9OpuwsEzcku3yEUalw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=06/27/1985&civilCaseId=BQxjeq4US3KijY%2F9yLIx5w%3D%3D",
+      "captured_at": "2026-07-21T14:38:15.254Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:sachs:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/sachs/page-001.html",
-      "html_sha256": "080362d586cdd5d1ce532779915048c2e441ae1a066f3b39a057930e76f5552a",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:sachs:followup-page:001:capture:00040:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sachs/00040-p001-r019-case_detail-0004928_1984-01.html",
+      "html_sha256": "f9c40ace8b396647d02e5e22e70abaa44614006f1d04feefbef5aadce60992bd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=Pvlk9OpuwsEzcku3yEUalw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=06/27/1985&civilCaseId=BQxjeq4US3KijY%2F9yLIx5w%3D%3D",
       "page_number": 1,
       "table_row_number": 19,
-      "row_html_sha256": "5a4a6f0dc7a6d872f84d69ac27b8a7d3d8a9a4e0de0ee01c9af9ff5a81a74884"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:sachs:followup-page:001:capture:00041:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/sachs/00041-p001-r019-appearances-0004928_1984-01.html",
+      "html_sha256": "db50719d6b4ee1cd7436f53e5127a68baee716d81a44d84dfd6cb64333bad98a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=06/27/1985&index=Pvlk9OpuwsEzcku3yEUalw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=BQxjeq4US3KijY%2F9yLIx5w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:sachs:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/sachs/page-001.html",
+      "html_sha256": "6ee3ba5fe89b20025f5e4cc1f57db283eb30b9cd87701baf0828b5a85dd6fbac",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "1ce4ff5175d5e5830afe50486d1f841099793789f0d4053effd9349db7016d18"
     }
   ]
 }

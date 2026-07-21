@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T15:39:37.878Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/manton.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "1111251f09f0acfb1508216df9034699f3adbf4eadb910a9010507590ed0b30c"
+        "row_html_sha256": "d78d59cf00deff1c43ff29858656b3a9f02ce4ea6ce08405f143c20406c5b64b"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/manton/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/manton/00021-p001-r010-appearances-0006033_1987-01.html",
+      "html_sha256": "6a802bfbd101095ffa5458d8a3ce3d6c5a3ec8b1b798a0d17b6a74c2409b34bd",
+      "bytes_len": 8239,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/22/1988&index=NEpPlY124CgF6v6D00ooPw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=L%2FpwUgianA2OsU7n4KIKng%3D%3D",
+      "captured_at": "2026-07-21T15:39:37.878Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/manton/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/manton/00020-p001-r010-case_detail-0006033_1987-01.html",
+      "html_sha256": "5c03dfb70db636ff7c0dbd7f86d1bfa5684620d5d47c0112e6472cc8b6ab2a90",
+      "bytes_len": 7431,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=NEpPlY124CgF6v6D00ooPw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=03/22/1988&civilCaseId=L%2FpwUgianA2OsU7n4KIKng%3D%3D",
+      "captured_at": "2026-07-21T15:39:37.878Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:manton:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/manton/page-001.html",
-      "html_sha256": "d899cc2137b329ee5662965b7024b6c80c6ac5d83792c291005b8df91ad5c0f2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:manton:followup-page:001:capture:00020:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/manton/00020-p001-r010-case_detail-0006033_1987-01.html",
+      "html_sha256": "5c03dfb70db636ff7c0dbd7f86d1bfa5684620d5d47c0112e6472cc8b6ab2a90",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=NEpPlY124CgF6v6D00ooPw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=03/22/1988&civilCaseId=L%2FpwUgianA2OsU7n4KIKng%3D%3D",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "1111251f09f0acfb1508216df9034699f3adbf4eadb910a9010507590ed0b30c"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:manton:followup-page:001:capture:00021:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/manton/00021-p001-r010-appearances-0006033_1987-01.html",
+      "html_sha256": "6a802bfbd101095ffa5458d8a3ce3d6c5a3ec8b1b798a0d17b6a74c2409b34bd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/22/1988&index=NEpPlY124CgF6v6D00ooPw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=L%2FpwUgianA2OsU7n4KIKng%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:manton:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/manton/page-001.html",
+      "html_sha256": "d35eb6a812c117f75342f896463432b809494672a712fc592525291c9cb48850",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "d78d59cf00deff1c43ff29858656b3a9f02ce4ea6ce08405f143c20406c5b64b"
     }
   ],
   "judicial_officer": "PATRICIA D. COLLINS"

@@ -14,8 +14,8 @@
   "case_type": "Tort-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T15:47:53.652Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/salin.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "d5c530522d3cf1221efba42f080f4223ca7784a9aeb490a09af25ba239d916cb"
+        "row_html_sha256": "94d29903b4f8d3fea4ce14e153cb35654468bb16fbfaee3b93ca49f5967a52ea"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/salin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/salin/00057-p001-r022-appearances-150797_2014-01.html",
+      "html_sha256": "64689e7f0300b1452b42efec15c2de95408dc6960c022350b89a6ba3a144f6aa",
+      "bytes_len": 13156,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/05/2017&index=gW9QVdZefRa9TVIM5gu8VA%3D%3D&county=9dXtkxnjcETYxZGjgvoPMQ%3D%3D&civilCaseId=6vCr4EfCly23TuuJWrLgJg%3D%3D",
+      "captured_at": "2026-07-21T15:47:53.652Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/salin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/salin/00056-p001-r022-case_detail-150797_2014-01.html",
+      "html_sha256": "e4b4dc63f408b6cc77d6651f232e5e9b1b9afb06b73efaf61996466342d0d3e6",
+      "bytes_len": 7800,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=gW9QVdZefRa9TVIM5gu8VA%3D%3D&county=9dXtkxnjcETYxZGjgvoPMQ%3D%3D&motion=&docs=&adate=09/05/2017&civilCaseId=6vCr4EfCly23TuuJWrLgJg%3D%3D",
+      "captured_at": "2026-07-21T15:47:53.652Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:salin:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/salin/page-001.html",
-      "html_sha256": "a0e3295a5aa49b46796be49f7e72fd4ac36143797a528bf618e5b4244ef9b012",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:salin:followup-page:001:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/salin/00056-p001-r022-case_detail-150797_2014-01.html",
+      "html_sha256": "e4b4dc63f408b6cc77d6651f232e5e9b1b9afb06b73efaf61996466342d0d3e6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=gW9QVdZefRa9TVIM5gu8VA%3D%3D&county=9dXtkxnjcETYxZGjgvoPMQ%3D%3D&motion=&docs=&adate=09/05/2017&civilCaseId=6vCr4EfCly23TuuJWrLgJg%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "d5c530522d3cf1221efba42f080f4223ca7784a9aeb490a09af25ba239d916cb"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:salin:followup-page:001:capture:00057:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/salin/00057-p001-r022-appearances-150797_2014-01.html",
+      "html_sha256": "64689e7f0300b1452b42efec15c2de95408dc6960c022350b89a6ba3a144f6aa",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/05/2017&index=gW9QVdZefRa9TVIM5gu8VA%3D%3D&county=9dXtkxnjcETYxZGjgvoPMQ%3D%3D&civilCaseId=6vCr4EfCly23TuuJWrLgJg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:salin:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/salin/page-001.html",
+      "html_sha256": "04b61ed8d669182521e2027b1cb2720a44eb040c650278989d5bc37f2d14af74",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "94d29903b4f8d3fea4ce14e153cb35654468bb16fbfaee3b93ca49f5967a52ea"
     }
   ],
   "judicial_officer": "Scheduling Judge, Trial"

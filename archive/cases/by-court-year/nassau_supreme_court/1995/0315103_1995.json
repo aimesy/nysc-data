@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:10:48.160Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/riche.rows.ndjson",
         "source_page": 1,
         "source_row": 20,
-        "row_html_sha256": "b9556a3ae6f38ca21fb6cb815f080d8fbbffe9519d21242a7beafd360c1aa51f"
+        "row_html_sha256": "a906c0dac1594f6be8715d462e28755e4ea50b78dc486ac8499439b405db5646"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/riche/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00043-p001-r020-appearances-0315103_1995-01.html",
+      "html_sha256": "e5b8b6f3e9960d09fdf37f6ef15872af5d34f9e17a8cf95c912211d302647375",
+      "bytes_len": 5581,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/10/1996&index=N6Sit_PLUS_PbdjeVsCxQzg96mw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=R4ns7PCWAVcwuxh9Xm7c9w%3D%3D",
+      "captured_at": "2026-07-21T16:10:48.160Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/riche/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00042-p001-r020-case_detail-0315103_1995-01.html",
+      "html_sha256": "5bde24d46d5954caf37ffed78849cc30226cf4bc440e1e17d4e59c4c802efc83",
+      "bytes_len": 6617,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=N6Sit_PLUS_PbdjeVsCxQzg96mw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=07/10/1996&civilCaseId=R4ns7PCWAVcwuxh9Xm7c9w%3D%3D",
+      "captured_at": "2026-07-21T16:10:48.160Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:riche:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/riche/page-001.html",
-      "html_sha256": "963da518059694beec6b9a4ca3c040cc40b31826373004f80ee2fef73dd7e362",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:riche:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00042-p001-r020-case_detail-0315103_1995-01.html",
+      "html_sha256": "5bde24d46d5954caf37ffed78849cc30226cf4bc440e1e17d4e59c4c802efc83",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=N6Sit_PLUS_PbdjeVsCxQzg96mw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=07/10/1996&civilCaseId=R4ns7PCWAVcwuxh9Xm7c9w%3D%3D",
       "page_number": 1,
       "table_row_number": 20,
-      "row_html_sha256": "b9556a3ae6f38ca21fb6cb815f080d8fbbffe9519d21242a7beafd360c1aa51f"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:riche:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00043-p001-r020-appearances-0315103_1995-01.html",
+      "html_sha256": "e5b8b6f3e9960d09fdf37f6ef15872af5d34f9e17a8cf95c912211d302647375",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/10/1996&index=N6Sit_PLUS_PbdjeVsCxQzg96mw%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=R4ns7PCWAVcwuxh9Xm7c9w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 20,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:riche:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/riche/page-001.html",
+      "html_sha256": "4d09e074c0aac40d6362dd064d521d119d9f7006b236d240a60a9abf19646004",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "a906c0dac1594f6be8715d462e28755e4ea50b78dc486ac8499439b405db5646"
     }
   ],
   "judicial_officer": "SMALL CLAIMS ASSESSMENT JUDGE"

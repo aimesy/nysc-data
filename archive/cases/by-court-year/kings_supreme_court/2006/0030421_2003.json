@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T14:47:07.505Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/samb.rows.ndjson",
         "source_page": 1,
         "source_row": 22,
-        "row_html_sha256": "2518dfdb275a83a4bcd74fc6444ef439cb36da437607f1f2d723459fa337f589"
+        "row_html_sha256": "ab543b8156718076ff4f42702e11d4c96e732e37d5acad7b1fc30f311efd206b"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/samb/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/samb/00055-p001-r022-appearances-0030421_2003-01.html",
+      "html_sha256": "91fecfbb4868f900d7d15dc5460b4f0e99fcfcd0803afd40bb29dd12c6ecdec2",
+      "bytes_len": 8391,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/25/2008&index=8JyoyClNiYg_PLUS_edt_PLUS_6cHixg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=ibvuC172RZA71f7RrxtZCA%3D%3D",
+      "captured_at": "2026-07-21T14:47:07.505Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/samb/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/samb/00054-p001-r022-case_detail-0030421_2003-01.html",
+      "html_sha256": "0f95a29cbe69c5591df4a4ebb9dd7764881553864bc7efca78b352933cab74dc",
+      "bytes_len": 7766,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8JyoyClNiYg_PLUS_edt_PLUS_6cHixg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=01/25/2008&civilCaseId=ibvuC172RZA71f7RrxtZCA%3D%3D",
+      "captured_at": "2026-07-21T14:47:07.505Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:samb:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/samb/page-001.html",
-      "html_sha256": "25af3f37f018b7af9a1c2320e89bca8da956ab4fe3e3f584f25b86981fbbb09f",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:samb:followup-page:001:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/samb/00054-p001-r022-case_detail-0030421_2003-01.html",
+      "html_sha256": "0f95a29cbe69c5591df4a4ebb9dd7764881553864bc7efca78b352933cab74dc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8JyoyClNiYg_PLUS_edt_PLUS_6cHixg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=01/25/2008&civilCaseId=ibvuC172RZA71f7RrxtZCA%3D%3D",
       "page_number": 1,
       "table_row_number": 22,
-      "row_html_sha256": "2518dfdb275a83a4bcd74fc6444ef439cb36da437607f1f2d723459fa337f589"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:samb:followup-page:001:capture:00055:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/samb/00055-p001-r022-appearances-0030421_2003-01.html",
+      "html_sha256": "91fecfbb4868f900d7d15dc5460b4f0e99fcfcd0803afd40bb29dd12c6ecdec2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/25/2008&index=8JyoyClNiYg_PLUS_edt_PLUS_6cHixg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=ibvuC172RZA71f7RrxtZCA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 22,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:samb:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/samb/page-001.html",
+      "html_sha256": "f11aa6bcae17c4cd19b424b277ebf94c1f29b468863f5ab89d020b3aee677ae3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 22,
+      "row_html_sha256": "ab543b8156718076ff4f42702e11d4c96e732e37d5acad7b1fc30f311efd206b"
     }
   ],
   "judicial_officer": "GLORIA M. DABIRI (PT. 39)"

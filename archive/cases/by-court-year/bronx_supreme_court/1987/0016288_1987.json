@@ -14,12 +14,16 @@
   "case_type": "OTHER TORTS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-20T13:16:27.707Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T14:03:20.443Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "herk"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "herk",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/herk.rows.ndjson",
+        "source_page": 1,
+        "source_row": 9,
+        "row_html_sha256": "2dfb4655263614f59e1ae18c5c3fd797cbed4103ff5b35b551e7a9b53a74e1a4"
+      }
+    ]
   },
   "parties": [
     {
@@ -53,16 +68,17 @@
       "name": "",
       "firm": "SCHOENFELD & SCHOENFELD",
       "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00022-p001-r009-case_detail-0016288_1987-01.html",
-      "html_sha256": "918993edf645d8272d4c6071573fbd49dd9061d0e756d0fff5cf1065e54f6db4",
-      "captured_at": "2026-07-20T13:16:27.707Z"
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "GREGORY B. COBURN",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
     }
   ],
   "representation": [
@@ -72,227 +88,35 @@
       "attorney_name": "",
       "firm": "SCHOENFELD & SCHOENFELD",
       "role": "plaintiff_petitioner",
-      "confidence": "webcivil_case_detail",
       "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "case-detail",
-      "source_kind": "case-detail",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00022-p001-r009-case_detail-0016288_1987-01.html",
-      "html_sha256": "918993edf645d8272d4c6071573fbd49dd9061d0e756d0fff5cf1065e54f6db4",
-      "captured_at": "2026-07-20T13:16:27.707Z"
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "HERK ELEVATOR CO., INC.",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "GREGORY B. COBURN",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
     }
   ],
   "calendar": [
     {
+      "source_system": "webcivil",
       "appearance_date": "09/09/1988",
-      "appearance_time": "",
-      "purpose": "Motion",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "MOTION DECIDED-OPEN APPEARANCE",
-      "part": "BARRY SALMAN IA MOTION 7",
-      "judicial_officer": "BARRY SALMAN IA MOTION 7",
-      "remarks": "",
-      "motion_sequence": "1",
-      "raw_text": "09/09/1988 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | BARRY SALMAN IA MOTION 7 | 1",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "appearance_date": "05/04/1988",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "PRELIMINARY CONFERENCE HELD",
-      "part": "BARRY SALMAN IA PART 7",
-      "judicial_officer": "BARRY SALMAN IA PART 7",
-      "remarks": "PRE CONF",
-      "motion_sequence": "",
-      "raw_text": "05/04/1988 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | BARRY SALMAN IA PART 7 | PRE CONF",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "appearance_date": "04/11/1988",
-      "appearance_time": "",
-      "purpose": "Supreme Trial",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "ADJ W/O DATE",
-      "part": "BARRY SALMAN IA PART 7",
-      "judicial_officer": "BARRY SALMAN IA PART 7",
-      "remarks": "ORDER SIGN",
-      "motion_sequence": "",
-      "raw_text": "04/11/1988 | Supreme Trial | No | Unknown | ADJ W/O DATE | BARRY SALMAN IA PART 7 | ORDER SIGN",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "appearance_date": "09/23/1987",
-      "appearance_time": "",
-      "purpose": "Supreme Initial (first time on)",
-      "fully_virtual": "No",
-      "court_date_type": "Unknown",
-      "outcome": "ADJOURNED",
-      "part": "BARRY SALMAN IA PART 7",
-      "judicial_officer": "BARRY SALMAN IA PART 7",
-      "remarks": "",
-      "motion_sequence": "",
-      "raw_text": "09/23/1987 | Supreme Initial (first time on) | No | Unknown | ADJOURNED | BARRY SALMAN IA PART 7",
-      "confidence": "webcivil_appearance_table",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "BARRY SALMAN",
+      "raw_text": "09/09/1988",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
     }
   ],
-  "docket_entries": [
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "09/09/1988",
-      "title": "Motion - MOTION DECIDED-OPEN APPEARANCE",
-      "text": "09/09/1988 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | BARRY SALMAN IA MOTION 7 | 1",
-      "event_type": "appearance",
-      "motion_sequence": "1",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 2,
-      "entry_date": "05/04/1988",
-      "title": "Supreme Initial (first time on) - PRELIMINARY CONFERENCE HELD",
-      "text": "05/04/1988 | Supreme Initial (first time on) | No | Unknown | PRELIMINARY CONFERENCE HELD | BARRY SALMAN IA PART 7 | PRE CONF",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 3,
-      "entry_date": "04/11/1988",
-      "title": "Supreme Trial - ADJ W/O DATE",
-      "text": "04/11/1988 | Supreme Trial | No | Unknown | ADJ W/O DATE | BARRY SALMAN IA PART 7 | ORDER SIGN",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 4,
-      "entry_date": "09/23/1987",
-      "title": "Supreme Initial (first time on) - ADJOURNED",
-      "text": "09/23/1987 | Supreme Initial (first time on) | No | Unknown | ADJOURNED | BARRY SALMAN IA PART 7",
-      "event_type": "appearance",
-      "motion_sequence": "",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "appearances",
-      "source_kind": "appearances",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    },
-    {
-      "sequence": "",
-      "source_index": 1,
-      "entry_date": "08/22/1988",
-      "title": "CHANGE VENUE",
-      "text": "1 | 08/22/1988 | Defendant | CHANGE VENUE | No | Decided: 10/14/1988 CASE DISPOSED Before Justice: BARRY SALMAN | Defendant Long Form Order | 10/14/1988",
-      "event_type": "motion",
-      "motion_sequence": "1",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "motions",
-      "source_kind": "motions",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00024-p001-r009-motions-0016288_1987-01.html",
-      "html_sha256": "1b29ae82a8a6c615233dedb1f1753b1edb8caa915dbe07668f094c53b9cb119d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    }
-  ],
-  "motions": [
-    {
-      "motion_sequence": "1",
-      "filed_date": "08/22/1988",
-      "filed_by": "Defendant",
-      "relief": "CHANGE VENUE",
-      "submit_date": "",
-      "answer_demanded": "No",
-      "status": "Decided: 10/14/1988 CASE DISPOSED Before Justice: BARRY SALMAN",
-      "decision_text": "Defendant Long Form Order",
-      "order_signed_date": "10/14/1988",
-      "raw_text": "1 | 08/22/1988 | Defendant | CHANGE VENUE | No | Decided: 10/14/1988 CASE DISPOSED Before Justice: BARRY SALMAN | Defendant Long Form Order | 10/14/1988",
-      "source_system": "webcivil",
-      "source_profile": "nysc_webcivil",
-      "source_tab": "motions",
-      "source_kind": "motions",
-      "nested_kind": "",
-      "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00024-p001-r009-motions-0016288_1987-01.html",
-      "html_sha256": "1b29ae82a8a6c615233dedb1f1753b1edb8caa915dbe07668f094c53b9cb119d",
-      "captured_at": "2026-07-20T13:16:27.707Z"
-    }
-  ],
+  "docket_entries": [],
+  "motions": [],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
@@ -304,15 +128,12 @@
       "ok": true,
       "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "bytes_len": 7627,
+      "html_sha256": "7616890d7473f7f9e5ebe73843d283904780d66364565b5201a8fb11c2edba5c",
+      "bytes_len": 7595,
       "title": "WebCivil Supreme - Appearance Detail",
-      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/09/1988&index=KH6oRBfXulsdgwpVdldwuA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=wiAJezVpV7vK5ey_PLUS_W2ofQg%3D%3D",
-      "captured_at": "2026-07-20T13:16:27.707Z",
-      "parsed_counts": {
-        "calendar": 4,
-        "docket_entries": 4
-      }
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/09/1988&index=3APy9jUEbcdqwsKtOrcuiw%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&civilCaseId=EnRnZrXB0AY6poT2x57oIw%3D%3D",
+      "captured_at": "2026-07-21T14:03:20.443Z",
+      "parsed_counts": {}
     },
     {
       "kind": "case-detail",
@@ -321,16 +142,12 @@
       "ok": true,
       "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00022-p001-r009-case_detail-0016288_1987-01.html",
-      "html_sha256": "918993edf645d8272d4c6071573fbd49dd9061d0e756d0fff5cf1065e54f6db4",
-      "bytes_len": 7308,
+      "html_sha256": "29c2e31dbfd890f1ebd6d2955188e4791487f23c211331b596bf02222c3f43e1",
+      "bytes_len": 7284,
       "title": "WebCivil Supreme - Case Detail",
-      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=KH6oRBfXulsdgwpVdldwuA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&motion=M&docs=&adate=09/09/1988&civilCaseId=wiAJezVpV7vK5ey_PLUS_W2ofQg%3D%3D",
-      "captured_at": "2026-07-20T13:16:27.707Z",
-      "parsed_counts": {
-        "parties": 2,
-        "attorneys": 1,
-        "representation": 1
-      }
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=3APy9jUEbcdqwsKtOrcuiw%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&motion=M&docs=&adate=09/09/1988&civilCaseId=EnRnZrXB0AY6poT2x57oIw%3D%3D",
+      "captured_at": "2026-07-21T14:03:20.443Z",
+      "parsed_counts": {}
     },
     {
       "kind": "motions",
@@ -339,35 +156,23 @@
       "ok": true,
       "source_file": "archive/webcivil/case-followups/20260719044730/herk/manifest.ndjson",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00024-p001-r009-motions-0016288_1987-01.html",
-      "html_sha256": "1b29ae82a8a6c615233dedb1f1753b1edb8caa915dbe07668f094c53b9cb119d",
+      "html_sha256": "64d4ac89d66749d9d6a3646f433dc78a059c25a370c30ff1852d428efed9ba9b",
       "bytes_len": 6368,
       "title": "WebCivil Supreme - Motion Detail",
-      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=KH6oRBfXulsdgwpVdldwuA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=wiAJezVpV7vK5ey_PLUS_W2ofQg%3D%3D",
-      "captured_at": "2026-07-20T13:16:27.707Z",
-      "parsed_counts": {
-        "motions": 1,
-        "docket_entries": 1
-      }
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=3APy9jUEbcdqwsKtOrcuiw%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&civilCaseId=EnRnZrXB0AY6poT2x57oIw%3D%3D",
+      "captured_at": "2026-07-21T14:03:20.443Z",
+      "parsed_counts": {}
     }
   ],
-  "webcivil_case_detail": {
-    "Court": "Bronx Supreme Court",
-    "Index Number": "0016288/1987",
-    "Case Name": "MONE,PATRICIA vs. HERK ELEVATOR CO., INC.",
-    "Case Type": "OTHER TORTS",
-    "Track": "Other",
-    "RJI Filed": "08/04/1987",
-    "Disposition Date": "10/14/1988",
-    "Justice Name": "BARRY SALMAN"
-  },
+  "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
       "source_profile": "nysc_webcivil",
       "capture_id": "20260719044730:herk:followup-page:001:capture:00022:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00022-p001-r009-case_detail-0016288_1987-01.html",
-      "html_sha256": "918993edf645d8272d4c6071573fbd49dd9061d0e756d0fff5cf1065e54f6db4",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=KH6oRBfXulsdgwpVdldwuA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&motion=M&docs=&adate=09/09/1988&civilCaseId=wiAJezVpV7vK5ey_PLUS_W2ofQg%3D%3D",
+      "html_sha256": "29c2e31dbfd890f1ebd6d2955188e4791487f23c211331b596bf02222c3f43e1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=3APy9jUEbcdqwsKtOrcuiw%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&motion=M&docs=&adate=09/09/1988&civilCaseId=EnRnZrXB0AY6poT2x57oIw%3D%3D",
       "page_number": 1,
       "table_row_number": 9,
       "kind": "case-detail",
@@ -379,8 +184,8 @@
       "source_profile": "nysc_webcivil",
       "capture_id": "20260719044730:herk:followup-page:001:capture:00023:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00023-p001-r009-appearances-0016288_1987-01.html",
-      "html_sha256": "bdced0f3f87cf5a0006d45c198f96c6b7b34ad70d4399a8b088a71982d139481",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/09/1988&index=KH6oRBfXulsdgwpVdldwuA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=wiAJezVpV7vK5ey_PLUS_W2ofQg%3D%3D",
+      "html_sha256": "7616890d7473f7f9e5ebe73843d283904780d66364565b5201a8fb11c2edba5c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/09/1988&index=3APy9jUEbcdqwsKtOrcuiw%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&civilCaseId=EnRnZrXB0AY6poT2x57oIw%3D%3D",
       "page_number": 1,
       "table_row_number": 9,
       "kind": "appearances",
@@ -392,15 +197,25 @@
       "source_profile": "nysc_webcivil",
       "capture_id": "20260719044730:herk:followup-page:001:capture:00024:response:01",
       "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260719044730/herk/00024-p001-r009-motions-0016288_1987-01.html",
-      "html_sha256": "1b29ae82a8a6c615233dedb1f1753b1edb8caa915dbe07668f094c53b9cb119d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=KH6oRBfXulsdgwpVdldwuA%3D%3D&county=u9W7M8puTZvVH0Wrz5_PLUS_Mfg%3D%3D&civilCaseId=wiAJezVpV7vK5ey_PLUS_W2ofQg%3D%3D",
+      "html_sha256": "64d4ac89d66749d9d6a3646f433dc78a059c25a370c30ff1852d428efed9ba9b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=3APy9jUEbcdqwsKtOrcuiw%3D%3D&county=7sSeXWfe%2FdB7bl2vWgFz9g%3D%3D&civilCaseId=EnRnZrXB0AY6poT2x57oIw%3D%3D",
       "page_number": 1,
       "table_row_number": 9,
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260719044730:herk:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/herk/page-001.html",
+      "html_sha256": "1d37e0733d69b5994b581f33ada3269b2c3d096a6738d9b7af12e61a7d3f31a8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 9,
+      "row_html_sha256": "2dfb4655263614f59e1ae18c5c3fd797cbed4103ff5b35b551e7a9b53a74e1a4"
     }
   ],
-  "judicial_officer": "BARRY SALMAN",
-  "disposition_date": "10/14/1988"
+  "judicial_officer": "BARRY SALMAN"
 }

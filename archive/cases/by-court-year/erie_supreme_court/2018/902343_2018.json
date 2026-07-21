@@ -14,8 +14,8 @@
   "case_type": "Mat-Uncontested",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T14:40:46.632Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "kush",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/kush.rows.ndjson",
         "source_page": 3,
-        "source_row": 15,
-        "row_html_sha256": "2941ca5e0208d5930c1631e296068f0d0335daadcc643447205e25f2e78d9fe2"
+        "source_row": 1,
+        "row_html_sha256": "10213b72faae3f2b00f161db82332a56e41c2206c2a9bcffac5a7217315addca"
       }
     ]
   },
@@ -77,19 +80,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/kush/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kush/00124-p003-r001-appearances-902343_2018-01.html",
+      "html_sha256": "2fd58d48655328e9a3a1cb979787e14bcbe29e8ede0ecd34f99dd79f51a5a0a2",
+      "bytes_len": 7072,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/30/2018&index=F5PWP2WVxCz9E2TAx9kP8g%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&civilCaseId=raxu5WjZTtWHOmCpWaANiA%3D%3D",
+      "captured_at": "2026-07-21T14:40:46.632Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/kush/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kush/00123-p003-r001-case_detail-902343_2018-01.html",
+      "html_sha256": "353a7ab7bc44c97648f92cfc18b5d8c384e54638777af68680df1f84d5b4ba8c",
+      "bytes_len": 7122,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=F5PWP2WVxCz9E2TAx9kP8g%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&motion=&docs=&adate=11/30/2018&civilCaseId=raxu5WjZTtWHOmCpWaANiA%3D%3D",
+      "captured_at": "2026-07-21T14:40:46.632Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:kush:page:003",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/kush/page-003.html",
-      "html_sha256": "8d09c6aa225e91ae6d8fdfb31b3276363e0edc05c5bb80298d8f75b894a04f01",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:kush:followup-page:003:capture:00123:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kush/00123-p003-r001-case_detail-902343_2018-01.html",
+      "html_sha256": "353a7ab7bc44c97648f92cfc18b5d8c384e54638777af68680df1f84d5b4ba8c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=F5PWP2WVxCz9E2TAx9kP8g%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&motion=&docs=&adate=11/30/2018&civilCaseId=raxu5WjZTtWHOmCpWaANiA%3D%3D",
       "page_number": 3,
-      "table_row_number": 15,
-      "row_html_sha256": "2941ca5e0208d5930c1631e296068f0d0335daadcc643447205e25f2e78d9fe2"
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:kush:followup-page:003:capture:00124:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kush/00124-p003-r001-appearances-902343_2018-01.html",
+      "html_sha256": "2fd58d48655328e9a3a1cb979787e14bcbe29e8ede0ecd34f99dd79f51a5a0a2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/30/2018&index=F5PWP2WVxCz9E2TAx9kP8g%3D%3D&county=IFXDXA55q%2FVQgpaAKPvf1Q%3D%3D&civilCaseId=raxu5WjZTtWHOmCpWaANiA%3D%3D",
+      "page_number": 3,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:kush:page:003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/kush/page-003.html",
+      "html_sha256": "e545663812c27914563e0c2ac4dfde813e1dbe03dddbfbaacefd73e5a0c2e6c2",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn06",
+      "page_number": 3,
+      "table_row_number": 1,
+      "row_html_sha256": "10213b72faae3f2b00f161db82332a56e41c2206c2a9bcffac5a7217315addca"
     }
   ],
   "judicial_officer": "Feroleto, Hon. Paula L."

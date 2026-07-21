@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:09:11.864Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/trop.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "799ad1e7be0bf76c3aabe33770868393d5b0ee36fa8bd2388aea153be2dad5ba"
+        "row_html_sha256": "da7470e0f22ce693f224b109bb7bc47a647a4d9dc4392cb3610dde5c14950912"
       }
     ]
   },
@@ -92,19 +95,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/trop/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/trop/00026-p001-r010-appearances-0005584_2010-01.html",
+      "html_sha256": "d90d183fc3b1f19fc07162899cf7d85f49b8e0d16e1a6b988bbee6bc83c3557a",
+      "bytes_len": 5537,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/06/2010&index=BSXPxxBo7_PLUS_tdli6Q3pPhUw%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&civilCaseId=Z1YXOArSR4stDW4nadrAig%3D%3D",
+      "captured_at": "2026-07-21T16:09:11.864Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/trop/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/trop/00025-p001-r010-case_detail-0005584_2010-01.html",
+      "html_sha256": "328bd54647527a8f9d9de304559801327c1bb67a4ec78b0f2c90cbfeac43bf1b",
+      "bytes_len": 6773,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BSXPxxBo7_PLUS_tdli6Q3pPhUw%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&motion=&docs=&adate=10/06/2010&civilCaseId=Z1YXOArSR4stDW4nadrAig%3D%3D",
+      "captured_at": "2026-07-21T16:09:11.864Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:trop:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/trop/page-001.html",
-      "html_sha256": "3361b331f32edaf2fce21985a6edab0efd5d32b40bb506ed69a46fc141df6d98",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:trop:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/trop/00025-p001-r010-case_detail-0005584_2010-01.html",
+      "html_sha256": "328bd54647527a8f9d9de304559801327c1bb67a4ec78b0f2c90cbfeac43bf1b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=BSXPxxBo7_PLUS_tdli6Q3pPhUw%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&motion=&docs=&adate=10/06/2010&civilCaseId=Z1YXOArSR4stDW4nadrAig%3D%3D",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "799ad1e7be0bf76c3aabe33770868393d5b0ee36fa8bd2388aea153be2dad5ba"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:trop:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/trop/00026-p001-r010-appearances-0005584_2010-01.html",
+      "html_sha256": "d90d183fc3b1f19fc07162899cf7d85f49b8e0d16e1a6b988bbee6bc83c3557a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/06/2010&index=BSXPxxBo7_PLUS_tdli6Q3pPhUw%3D%3D&county=mcgChfd_PLUS_lSaMALDwdgEYGg%3D%3D&civilCaseId=Z1YXOArSR4stDW4nadrAig%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:trop:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/trop/page-001.html",
+      "html_sha256": "d8cc947dc84cae65b2ea0b89fb0c88c5df05c6b40cc37e7f862518b96ea1858c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "da7470e0f22ce693f224b109bb7bc47a647a4d9dc4392cb3610dde5c14950912"
     }
   ],
   "judicial_officer": "HON. JAMES P. MURPHY"

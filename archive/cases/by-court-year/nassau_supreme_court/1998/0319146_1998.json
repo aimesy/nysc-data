@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T15:37:18.119Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/orlow.rows.ndjson",
         "source_page": 1,
         "source_row": 18,
-        "row_html_sha256": "3df6f5368132ca2b2c3b4e5c2a73487d13346316149ff13f2c48d6761b907088"
+        "row_html_sha256": "0214b484d555b0b1f86752f918315a8d9648621612bb41c19ab9ab548b694a84"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/orlow/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00046-p001-r018-appearances-0319146_1998-01.html",
+      "html_sha256": "17ab12a01be65c873d0001c16c951861545eb31ccd817a718fe355c4b1da2994",
+      "bytes_len": 5581,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/24/1998&index=5Lm2WFz29IKhXvZNUqB0cg%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=kunadEjMBMRYtyusudVIBg%3D%3D",
+      "captured_at": "2026-07-21T15:37:18.119Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/orlow/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00045-p001-r018-case_detail-0319146_1998-01.html",
+      "html_sha256": "8c78ba611c96fdaa6f7fe5af18eab4996c86b8546822535a8ddf50b4b6e45722",
+      "bytes_len": 6598,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=5Lm2WFz29IKhXvZNUqB0cg%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=11/24/1998&civilCaseId=kunadEjMBMRYtyusudVIBg%3D%3D",
+      "captured_at": "2026-07-21T15:37:18.119Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:orlow:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/orlow/page-001.html",
-      "html_sha256": "fd937e0b756e5f906c270cf5817ca78c879428ed3706a6c502db7ba3c7276b93",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn07",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:orlow:followup-page:001:capture:00045:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00045-p001-r018-case_detail-0319146_1998-01.html",
+      "html_sha256": "8c78ba611c96fdaa6f7fe5af18eab4996c86b8546822535a8ddf50b4b6e45722",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=5Lm2WFz29IKhXvZNUqB0cg%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=11/24/1998&civilCaseId=kunadEjMBMRYtyusudVIBg%3D%3D",
       "page_number": 1,
       "table_row_number": 18,
-      "row_html_sha256": "3df6f5368132ca2b2c3b4e5c2a73487d13346316149ff13f2c48d6761b907088"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:orlow:followup-page:001:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00046-p001-r018-appearances-0319146_1998-01.html",
+      "html_sha256": "17ab12a01be65c873d0001c16c951861545eb31ccd817a718fe355c4b1da2994",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/24/1998&index=5Lm2WFz29IKhXvZNUqB0cg%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=kunadEjMBMRYtyusudVIBg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 18,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:orlow:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/orlow/page-001.html",
+      "html_sha256": "9d07685712732f98b062c326cee8f0beccc0fd0b760ee542465b576169a5b154",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 18,
+      "row_html_sha256": "0214b484d555b0b1f86752f918315a8d9648621612bb41c19ab9ab548b694a84"
     }
   ],
   "judicial_officer": "SMALL CLAIMS ASSESSMENT JUDGE"

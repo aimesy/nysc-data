@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:23:31.361Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/tull.rows.ndjson",
         "source_page": 1,
         "source_row": 21,
-        "row_html_sha256": "baf1a13d7fc5ac7abe719dc9d3ebe20e5fbdb232bacf65cd2f0ad3c29b6082ae"
+        "row_html_sha256": "d8a7ee7596594e03a11c33f6889c090680fa5c9cfaeeced1f6b9fc2f59b9300f"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tull/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00050-p001-r021-appearances-0025375_1992-01.html",
+      "html_sha256": "514cb95e8aa276cfb97674dca46b66ce74266868b6f9d32c75673888d86fcf74",
+      "bytes_len": 10354,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/05/1996&index=sVwNWHgkSJc3W8MkPU78Bw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=zXi_PLUS_gcaRP5CnlQpY7VrGFg%3D%3D",
+      "captured_at": "2026-07-21T16:23:31.361Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tull/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00049-p001-r021-case_detail-0025375_1992-01.html",
+      "html_sha256": "712274ab34cecedf0f26798899e2e9751e37c8b63d07296232dc3a66b9adf3f6",
+      "bytes_len": 7400,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=sVwNWHgkSJc3W8MkPU78Bw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=M&docs=&adate=09/05/1996&civilCaseId=zXi_PLUS_gcaRP5CnlQpY7VrGFg%3D%3D",
+      "captured_at": "2026-07-21T16:23:31.361Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tull/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00051-p001-r021-motions-0025375_1992-01.html",
+      "html_sha256": "c6081745bd2ea6959be6999e1551a1ca3887c388fcbc71309ddfd7d48ebafb17",
+      "bytes_len": 7208,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=sVwNWHgkSJc3W8MkPU78Bw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=zXi_PLUS_gcaRP5CnlQpY7VrGFg%3D%3D",
+      "captured_at": "2026-07-21T16:23:31.361Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:tull:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/tull/page-001.html",
-      "html_sha256": "7caf9e75d9f71eff60ba040fa357dd3516d3abf662629c3cf99ef60b7eebc35d",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tull:followup-page:001:capture:00049:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00049-p001-r021-case_detail-0025375_1992-01.html",
+      "html_sha256": "712274ab34cecedf0f26798899e2e9751e37c8b63d07296232dc3a66b9adf3f6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=sVwNWHgkSJc3W8MkPU78Bw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=M&docs=&adate=09/05/1996&civilCaseId=zXi_PLUS_gcaRP5CnlQpY7VrGFg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tull:followup-page:001:capture:00050:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00050-p001-r021-appearances-0025375_1992-01.html",
+      "html_sha256": "514cb95e8aa276cfb97674dca46b66ce74266868b6f9d32c75673888d86fcf74",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/05/1996&index=sVwNWHgkSJc3W8MkPU78Bw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=zXi_PLUS_gcaRP5CnlQpY7VrGFg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tull:followup-page:001:capture:00051:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tull/00051-p001-r021-motions-0025375_1992-01.html",
+      "html_sha256": "c6081745bd2ea6959be6999e1551a1ca3887c388fcbc71309ddfd7d48ebafb17",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=sVwNWHgkSJc3W8MkPU78Bw%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=zXi_PLUS_gcaRP5CnlQpY7VrGFg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 21,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tull:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tull/page-001.html",
+      "html_sha256": "d48f6b0dcc308d7a9a5018c1462daf7cb296bb2353fd769f3be549c072a54b77",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
       "lane": "sfscvpn12",
       "page_number": 1,
       "table_row_number": 21,
-      "row_html_sha256": "baf1a13d7fc5ac7abe719dc9d3ebe20e5fbdb232bacf65cd2f0ad3c29b6082ae"
+      "row_html_sha256": "d8a7ee7596594e03a11c33f6889c090680fa5c9cfaeeced1f6b9fc2f59b9300f"
     }
   ],
   "judicial_officer": "JOSEPH S. LEVINE (PT. 2)"

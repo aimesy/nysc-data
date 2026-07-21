@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T15:37:18.119Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/orlow.rows.ndjson",
         "source_page": 1,
         "source_row": 3,
-        "row_html_sha256": "bbc29e611e8a3ee7b890abe5d8d4337075d64f89b0faa65b09a0f860fe79c777"
+        "row_html_sha256": "44f525adbf4a9380fce665b013e59784a1034914796a0f1741b7070ab91ecef1"
       }
     ]
   },
@@ -98,19 +102,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/orlow/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00008-p001-r003-appearances-0005261_1987-01.html",
+      "html_sha256": "4ade146940fcbda29b7feea006172ce838cc8cb270fd65fe75e9362f9c9efff7",
+      "bytes_len": 7634,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/03/1992&index=ZwJx6n6jBDRyt08a3PTPwQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Mdm3szUczD2dJGrSfd%2FL1w%3D%3D",
+      "captured_at": "2026-07-21T15:37:18.119Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/orlow/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00007-p001-r003-case_detail-0005261_1987-01.html",
+      "html_sha256": "fc114cff69ccfcda2af902221d2122c0a45397653d4e70a7839edb717ecc16df",
+      "bytes_len": 6836,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZwJx6n6jBDRyt08a3PTPwQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=03/03/1992&civilCaseId=Mdm3szUczD2dJGrSfd%2FL1w%3D%3D",
+      "captured_at": "2026-07-21T15:37:18.119Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/orlow/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00009-p001-r003-motions-0005261_1987-01.html",
+      "html_sha256": "b5fc62aa02eb5a2ed9c7b9c68f978ab42e449b0acc2b27e3a3433f736369ce2b",
+      "bytes_len": 6378,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=ZwJx6n6jBDRyt08a3PTPwQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Mdm3szUczD2dJGrSfd%2FL1w%3D%3D",
+      "captured_at": "2026-07-21T15:37:18.119Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:orlow:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/orlow/page-001.html",
-      "html_sha256": "fd937e0b756e5f906c270cf5817ca78c879428ed3706a6c502db7ba3c7276b93",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn07",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:orlow:followup-page:001:capture:00007:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00007-p001-r003-case_detail-0005261_1987-01.html",
+      "html_sha256": "fc114cff69ccfcda2af902221d2122c0a45397653d4e70a7839edb717ecc16df",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=ZwJx6n6jBDRyt08a3PTPwQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=03/03/1992&civilCaseId=Mdm3szUczD2dJGrSfd%2FL1w%3D%3D",
       "page_number": 1,
       "table_row_number": 3,
-      "row_html_sha256": "bbc29e611e8a3ee7b890abe5d8d4337075d64f89b0faa65b09a0f860fe79c777"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:orlow:followup-page:001:capture:00008:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00008-p001-r003-appearances-0005261_1987-01.html",
+      "html_sha256": "4ade146940fcbda29b7feea006172ce838cc8cb270fd65fe75e9362f9c9efff7",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/03/1992&index=ZwJx6n6jBDRyt08a3PTPwQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Mdm3szUczD2dJGrSfd%2FL1w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:orlow:followup-page:001:capture:00009:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/orlow/00009-p001-r003-motions-0005261_1987-01.html",
+      "html_sha256": "b5fc62aa02eb5a2ed9c7b9c68f978ab42e449b0acc2b27e3a3433f736369ce2b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=ZwJx6n6jBDRyt08a3PTPwQ%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=Mdm3szUczD2dJGrSfd%2FL1w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 3,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:orlow:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/orlow/page-001.html",
+      "html_sha256": "9d07685712732f98b062c326cee8f0beccc0fd0b760ee542465b576169a5b154",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn06",
+      "page_number": 1,
+      "table_row_number": 3,
+      "row_html_sha256": "44f525adbf4a9380fce665b013e59784a1034914796a0f1741b7070ab91ecef1"
     }
   ],
   "judicial_officer": "BAER, H."

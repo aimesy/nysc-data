@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:52:25.782Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/slavin.rows.ndjson",
         "source_page": 1,
         "source_row": 15,
-        "row_html_sha256": "558a2479f570a63518da2afc23f480dd47ae9392a76e1bb55908eb2966c07160"
+        "row_html_sha256": "3a8e9a699b2fcda8f534a90ed26c5825a2ce15b6669562a7a1ceaf57c498333b"
       }
     ]
   },
@@ -74,6 +77,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "HOWARD FENSTERMAN, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/slavin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/slavin/00031-p001-r015-case_detail-0005989_1985-01.html",
+      "html_sha256": "eae8699c81e9a244475355d37f994014c561bca640c477f2a082dc6d2011f401",
+      "captured_at": "2026-07-21T16:52:25.782Z"
     }
   ],
   "representation": [
@@ -96,6 +114,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "SLAVIN",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "HOWARD FENSTERMAN, ESQ.",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/slavin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/slavin/00031-p001-r015-case_detail-0005989_1985-01.html",
+      "html_sha256": "eae8699c81e9a244475355d37f994014c561bca640c477f2a082dc6d2011f401",
+      "captured_at": "2026-07-21T16:52:25.782Z"
     }
   ],
   "calendar": [],
@@ -104,20 +139,92 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/slavin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/slavin/00032-p001-r015-appearances-0005989_1985-01.html",
+      "html_sha256": "c22a3896a464146d8a3b8f613b70d276a25fe425b4c2a3fecd2b230228c9f10d",
+      "bytes_len": 3800,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=YtpQ%2Fyn7lrLtPHvzaK8WcA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=4YQ8G7VgW%2Ff8Q7hfH%2FikgQ%3D%3D",
+      "captured_at": "2026-07-21T16:52:25.782Z",
+      "parsed_counts": {
+        "calendar": 0,
+        "docket_entries": 0
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/slavin/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/slavin/00031-p001-r015-case_detail-0005989_1985-01.html",
+      "html_sha256": "eae8699c81e9a244475355d37f994014c561bca640c477f2a082dc6d2011f401",
+      "bytes_len": 6728,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=YtpQ%2Fyn7lrLtPHvzaK8WcA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=&civilCaseId=4YQ8G7VgW%2Ff8Q7hfH%2FikgQ%3D%3D",
+      "captured_at": "2026-07-21T16:52:25.782Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "Nassau Supreme Court",
+    "Index Number": "0005989/1985",
+    "Case Name": "SLAVIN vs. SLAVIN",
+    "Case Type": "OTHER",
+    "Track": "Other",
+    "RJI Filed": "03/24/1986",
+    "Disposition Date": "07/08/1986",
+    "Justice Name": "GEORGE A. MURPHY"
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:slavin:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/slavin/page-001.html",
-      "html_sha256": "9bdf4859b23a33b3cf105303d1171e899a969f61c0a3cd6a939f107a0f68b7dc",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:slavin:followup-page:001:capture:00031:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/slavin/00031-p001-r015-case_detail-0005989_1985-01.html",
+      "html_sha256": "eae8699c81e9a244475355d37f994014c561bca640c477f2a082dc6d2011f401",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=YtpQ%2Fyn7lrLtPHvzaK8WcA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&motion=&docs=&adate=&civilCaseId=4YQ8G7VgW%2Ff8Q7hfH%2FikgQ%3D%3D",
       "page_number": 1,
       "table_row_number": 15,
-      "row_html_sha256": "558a2479f570a63518da2afc23f480dd47ae9392a76e1bb55908eb2966c07160"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:slavin:followup-page:001:capture:00032:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/slavin/00032-p001-r015-appearances-0005989_1985-01.html",
+      "html_sha256": "c22a3896a464146d8a3b8f613b70d276a25fe425b4c2a3fecd2b230228c9f10d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=YtpQ%2Fyn7lrLtPHvzaK8WcA%3D%3D&county=b6iRgHbjLl33inpzNGpSpA%3D%3D&civilCaseId=4YQ8G7VgW%2Ff8Q7hfH%2FikgQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 15,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:slavin:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/slavin/page-001.html",
+      "html_sha256": "50a237cbd72259c3f49ddf187f3a9229fb8ffc25560d0fae33760b6a00a2ff5a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 15,
+      "row_html_sha256": "3a8e9a699b2fcda8f534a90ed26c5825a2ce15b6669562a7a1ceaf57c498333b"
     }
   ],
-  "judicial_officer": "GEORGE A. MURPHY"
+  "judicial_officer": "GEORGE A. MURPHY",
+  "disposition_date": "07/08/1986"
 }

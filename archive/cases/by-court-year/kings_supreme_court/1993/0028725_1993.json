@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:10:48.160Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/riche.rows.ndjson",
         "source_page": 1,
         "source_row": 12,
-        "row_html_sha256": "5d6b56767cb73195475509a84ec35cffd45f5aba8eace014dac4124f496117f6"
+        "row_html_sha256": "a66ab8f249a5d79edf46ed6c2c89848699dba1154a2d90e50fd8cf57c86e30df"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/riche/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00026-p001-r012-appearances-0028725_1993-01.html",
+      "html_sha256": "9e791c360049623eac1d8d00b8c18f970fc302feb0efa0e448f0a89c0acc4f7f",
+      "bytes_len": 6228,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/01/1995&index=P20HLOnB6YysFWbqqkfXfA%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=rOkjrlKRAJCUexMZMLFDug%3D%3D",
+      "captured_at": "2026-07-21T16:10:48.160Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/riche/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00025-p001-r012-case_detail-0028725_1993-01.html",
+      "html_sha256": "6de64fb2145a11aed4e78ef623a5dd8f5fe28afdbb6c52e674c1efe216ba1538",
+      "bytes_len": 7035,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=P20HLOnB6YysFWbqqkfXfA%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=05/01/1995&civilCaseId=rOkjrlKRAJCUexMZMLFDug%3D%3D",
+      "captured_at": "2026-07-21T16:10:48.160Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:riche:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/riche/page-001.html",
-      "html_sha256": "963da518059694beec6b9a4ca3c040cc40b31826373004f80ee2fef73dd7e362",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:riche:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00025-p001-r012-case_detail-0028725_1993-01.html",
+      "html_sha256": "6de64fb2145a11aed4e78ef623a5dd8f5fe28afdbb6c52e674c1efe216ba1538",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=P20HLOnB6YysFWbqqkfXfA%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=05/01/1995&civilCaseId=rOkjrlKRAJCUexMZMLFDug%3D%3D",
       "page_number": 1,
       "table_row_number": 12,
-      "row_html_sha256": "5d6b56767cb73195475509a84ec35cffd45f5aba8eace014dac4124f496117f6"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:riche:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/riche/00026-p001-r012-appearances-0028725_1993-01.html",
+      "html_sha256": "9e791c360049623eac1d8d00b8c18f970fc302feb0efa0e448f0a89c0acc4f7f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/01/1995&index=P20HLOnB6YysFWbqqkfXfA%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=rOkjrlKRAJCUexMZMLFDug%3D%3D",
+      "page_number": 1,
+      "table_row_number": 12,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:riche:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/riche/page-001.html",
+      "html_sha256": "4d09e074c0aac40d6362dd064d521d119d9f7006b236d240a60a9abf19646004",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 12,
+      "row_html_sha256": "a66ab8f249a5d79edf46ed6c2c89848699dba1154a2d90e50fd8cf57c86e30df"
     }
   ],
   "judicial_officer": "GLORIA C. ARONIN"

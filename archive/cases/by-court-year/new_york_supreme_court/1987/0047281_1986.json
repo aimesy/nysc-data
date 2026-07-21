@@ -14,8 +14,8 @@
   "case_type": "CONTRACT-(CO)",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:57:58.958Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,26 +24,30 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "pike"
+      "magro"
     ],
     "result_row_refs": [
       {
-        "search_name": "pike",
-        "query_type": "attorney-prefix",
-        "source_file": "archive/webcivil/results/pike.rows.ndjson",
+        "search_name": "magro",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/magro.rows.ndjson",
         "source_page": 1,
         "source_row": 10,
-        "row_html_sha256": "688ee2c7c9d2685f1678446db87b63ae8454088b0667c7a46e0eb7007eb45822"
+        "row_html_sha256": "6b0f9b2e826ec8247a84fc11abf10cbd6cb67a1d3fd92d6a7b2c8ae8c5c634fe"
       }
     ]
   },
@@ -75,6 +79,21 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "SOMERSTEIN & PIKE",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00024-p001-r010-case_detail-0047281_1986-01.html",
+      "html_sha256": "f31b8a142cc9ebb95d09344e5314c354ea183b88b667a9616605394c165006d8",
+      "captured_at": "2026-07-21T16:57:58.958Z"
     }
   ],
   "representation": [
@@ -97,6 +116,23 @@
       "source_system": "webcivil",
       "source_field": "first_defendant_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "GREALY, AINE",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "SOMERSTEIN & PIKE",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00024-p001-r010-case_detail-0047281_1986-01.html",
+      "html_sha256": "f31b8a142cc9ebb95d09344e5314c354ea183b88b667a9616605394c165006d8",
+      "captured_at": "2026-07-21T16:57:58.958Z"
     }
   ],
   "calendar": [
@@ -109,27 +145,211 @@
       "raw_text": "07/15/1987",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "07/15/1987",
+      "appearance_time": "",
+      "purpose": "Motion",
+      "fully_virtual": "No",
+      "court_date_type": "Unknown",
+      "outcome": "MOTION DECIDED-OPEN APPEARANCE",
+      "part": "SHAINSWIT, B. MOTION PART",
+      "judicial_officer": "SHAINSWIT, B. MOTION PART",
+      "remarks": "",
+      "motion_sequence": "1",
+      "raw_text": "07/15/1987 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | SHAINSWIT, B. MOTION PART | 1",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00025-p001-r010-appearances-0047281_1986-01.html",
+      "html_sha256": "3a29969a693b878aba55b889a6e670bb6270dc16a75ea131e85267fb6d57389d",
+      "captured_at": "2026-07-21T16:57:58.958Z"
     }
   ],
-  "docket_entries": [],
-  "motions": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "07/15/1987",
+      "title": "Motion - MOTION DECIDED-OPEN APPEARANCE",
+      "text": "07/15/1987 | Motion | No | Unknown | MOTION DECIDED-OPEN APPEARANCE | SHAINSWIT, B. MOTION PART | 1",
+      "event_type": "appearance",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00025-p001-r010-appearances-0047281_1986-01.html",
+      "html_sha256": "3a29969a693b878aba55b889a6e670bb6270dc16a75ea131e85267fb6d57389d",
+      "captured_at": "2026-07-21T16:57:58.958Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "07/15/1987",
+      "title": "SUMMARY JUDGMENT",
+      "text": "1 | 07/15/1987 | SUMMARY JUDGMENT | No | Decided: 04/04/1988 CASE DISPOSED Before Justice: SHAINSWIT, B. | Short Form Order | 04/04/1988",
+      "event_type": "motion",
+      "motion_sequence": "1",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00026-p001-r010-motions-0047281_1986-01.html",
+      "html_sha256": "b0d29f839b80415de8671d67086b350df8cff3ef67cdad96cdddf80f6b6c54d4",
+      "captured_at": "2026-07-21T16:57:58.958Z"
+    }
+  ],
+  "motions": [
+    {
+      "motion_sequence": "1",
+      "filed_date": "07/15/1987",
+      "filed_by": "",
+      "relief": "SUMMARY JUDGMENT",
+      "submit_date": "",
+      "answer_demanded": "No",
+      "status": "Decided: 04/04/1988 CASE DISPOSED Before Justice: SHAINSWIT, B.",
+      "decision_text": "Short Form Order",
+      "order_signed_date": "04/04/1988",
+      "raw_text": "1 | 07/15/1987 | SUMMARY JUDGMENT | No | Decided: 04/04/1988 CASE DISPOSED Before Justice: SHAINSWIT, B. | Short Form Order | 04/04/1988",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "motions",
+      "source_kind": "motions",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00026-p001-r010-motions-0047281_1986-01.html",
+      "html_sha256": "b0d29f839b80415de8671d67086b350df8cff3ef67cdad96cdddf80f6b6c54d4",
+      "captured_at": "2026-07-21T16:57:58.958Z"
+    }
+  ],
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
-  "webcivil_case_detail": {},
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00025-p001-r010-appearances-0047281_1986-01.html",
+      "html_sha256": "3a29969a693b878aba55b889a6e670bb6270dc16a75ea131e85267fb6d57389d",
+      "bytes_len": 5524,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/15/1987&index=sxdz1aaK_PLUS_I3bNcze25htCA%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=O5_PLUS_q8DEehnokYxb0XG04xA%3D%3D",
+      "captured_at": "2026-07-21T16:57:58.958Z",
+      "parsed_counts": {
+        "calendar": 1,
+        "docket_entries": 1
+      }
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00024-p001-r010-case_detail-0047281_1986-01.html",
+      "html_sha256": "f31b8a142cc9ebb95d09344e5314c354ea183b88b667a9616605394c165006d8",
+      "bytes_len": 7250,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=sxdz1aaK_PLUS_I3bNcze25htCA%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=07/15/1987&civilCaseId=O5_PLUS_q8DEehnokYxb0XG04xA%3D%3D",
+      "captured_at": "2026-07-21T16:57:58.958Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 3,
+        "representation": 3
+      }
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/magro/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00026-p001-r010-motions-0047281_1986-01.html",
+      "html_sha256": "b0d29f839b80415de8671d67086b350df8cff3ef67cdad96cdddf80f6b6c54d4",
+      "bytes_len": 6351,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=sxdz1aaK_PLUS_I3bNcze25htCA%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=O5_PLUS_q8DEehnokYxb0XG04xA%3D%3D",
+      "captured_at": "2026-07-21T16:57:58.958Z",
+      "parsed_counts": {
+        "motions": 1,
+        "docket_entries": 1
+      }
+    }
+  ],
+  "webcivil_case_detail": {
+    "Court": "New York Supreme Court",
+    "Index Number": "0047281/1986",
+    "Case Name": "GREALY, AINE vs. MAGRO, PATRICIA",
+    "Case Type": "CONTRACT-(CO)",
+    "Track": "Other",
+    "RJI Filed": "07/07/1987",
+    "Disposition Date": "04/04/1988",
+    "Justice Name": "SHAINSWIT, B."
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:pike:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/pike/page-001.html",
-      "html_sha256": "fad871d0a7fae04bb78adfc6b819aef20163a892da194fd8d37736b317762935",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:magro:followup-page:001:capture:00024:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00024-p001-r010-case_detail-0047281_1986-01.html",
+      "html_sha256": "f31b8a142cc9ebb95d09344e5314c354ea183b88b667a9616605394c165006d8",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=sxdz1aaK_PLUS_I3bNcze25htCA%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&motion=M&docs=&adate=07/15/1987&civilCaseId=O5_PLUS_q8DEehnokYxb0XG04xA%3D%3D",
       "page_number": 1,
       "table_row_number": 10,
-      "row_html_sha256": "688ee2c7c9d2685f1678446db87b63ae8454088b0667c7a46e0eb7007eb45822"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:magro:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00025-p001-r010-appearances-0047281_1986-01.html",
+      "html_sha256": "3a29969a693b878aba55b889a6e670bb6270dc16a75ea131e85267fb6d57389d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=07/15/1987&index=sxdz1aaK_PLUS_I3bNcze25htCA%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=O5_PLUS_q8DEehnokYxb0XG04xA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:magro:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/magro/00026-p001-r010-motions-0047281_1986-01.html",
+      "html_sha256": "b0d29f839b80415de8671d67086b350df8cff3ef67cdad96cdddf80f6b6c54d4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=sxdz1aaK_PLUS_I3bNcze25htCA%3D%3D&county=CWrveiCyIJ3Jydi3iYI7sg%3D%3D&civilCaseId=O5_PLUS_q8DEehnokYxb0XG04xA%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:magro:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/magro/page-001.html",
+      "html_sha256": "58864e089bb57d0f8e7361ade7875dd656725c0a0079788ad97df6794354dbe1",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "6b0f9b2e826ec8247a84fc11abf10cbd6cb67a1d3fd92d6a7b2c8ae8c5c634fe"
     }
   ],
-  "judicial_officer": "SHAINSWIT, B."
+  "judicial_officer": "SHAINSWIT, B.",
+  "disposition_date": "04/04/1988"
 }

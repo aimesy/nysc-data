@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-21T16:23:52.922Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "veron",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/veron.rows.ndjson",
-        "source_page": 1,
-        "source_row": 6,
-        "row_html_sha256": "91cfa5752c01617684c5ea22c89fbc5fd58ff63483c1902a82db722140230015"
+        "source_page": 2,
+        "source_row": 24,
+        "row_html_sha256": "e05c42632fe8b3222771e51c876737354fa6fe815ce338b9ade97b72eeccc823"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/veron/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/veron/00056-p002-r024-appearances-0014040_2004-01.html",
+      "html_sha256": "2b0d56cbf2d186d549917f89416b66b8b987bcd72bb3b1d6a3577af2ba91ae64",
+      "bytes_len": 16814,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/13/2006&index=8tiNuM5zwbR57WYPl9_PLUS_G5g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=N%2FbGGxaT2TP47Zr1VP1svQ%3D%3D",
+      "captured_at": "2026-07-21T16:23:52.922Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/veron/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/veron/00055-p002-r024-case_detail-0014040_2004-01.html",
+      "html_sha256": "b2761d3a9c8049c0a2583d1093fe0cf73c946ccac3064f0865c8ec5717765863",
+      "bytes_len": 7356,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8tiNuM5zwbR57WYPl9_PLUS_G5g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=11/13/2006&civilCaseId=N%2FbGGxaT2TP47Zr1VP1svQ%3D%3D",
+      "captured_at": "2026-07-21T16:23:52.922Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:veron:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/veron/page-001.html",
-      "html_sha256": "ffa3bd42da373680392b2ee67df982cfa5deaec2e492260927d70048fc90e703",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn12",
-      "page_number": 1,
-      "table_row_number": 6,
-      "row_html_sha256": "91cfa5752c01617684c5ea22c89fbc5fd58ff63483c1902a82db722140230015"
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:veron:followup-page:002:capture:00055:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/veron/00055-p002-r024-case_detail-0014040_2004-01.html",
+      "html_sha256": "b2761d3a9c8049c0a2583d1093fe0cf73c946ccac3064f0865c8ec5717765863",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=8tiNuM5zwbR57WYPl9_PLUS_G5g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&motion=&docs=&adate=11/13/2006&civilCaseId=N%2FbGGxaT2TP47Zr1VP1svQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 24,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:veron:followup-page:002:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/veron/00056-p002-r024-appearances-0014040_2004-01.html",
+      "html_sha256": "2b0d56cbf2d186d549917f89416b66b8b987bcd72bb3b1d6a3577af2ba91ae64",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/13/2006&index=8tiNuM5zwbR57WYPl9_PLUS_G5g%3D%3D&county=JCqoyX8TYRpAvtHw_PLUS_jTdgA%3D%3D&civilCaseId=N%2FbGGxaT2TP47Zr1VP1svQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 24,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:veron:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/veron/page-002.html",
+      "html_sha256": "70e4f2a262b37ed54de9edad6186e9f6bf6f85189deb0d4b586e5610b66ff6ed",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn06",
+      "page_number": 2,
+      "table_row_number": 24,
+      "row_html_sha256": "e05c42632fe8b3222771e51c876737354fa6fe815ce338b9ade97b72eeccc823"
     }
   ],
   "judicial_officer": "MARTIN E. RITHOLTZ"
