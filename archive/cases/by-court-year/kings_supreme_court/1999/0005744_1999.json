@@ -14,8 +14,8 @@
   "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T03:57:51.459Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/kota.rows.ndjson",
         "source_page": 1,
         "source_row": 11,
-        "row_html_sha256": "829653bd6e3b52dc2905c054c4bc228e786ac0a92dba966facb8641090283ad7"
+        "row_html_sha256": "b931f822886c9260299791d6bcb378b6a427cfb65e617d1bcb533a1022abf418"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/kota/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kota/00026-p001-r011-appearances-0005744_1999-01.html",
+      "html_sha256": "566d4b6023df63701a7112c8c519933ab7483fb525a58fe8d480cafeb4b342c5",
+      "bytes_len": 5620,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/02/1999&index=zmsY2upq21PUmJyXVBafZg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=WALt_PLUS_xmaWvKipdZxkp5KVg%3D%3D",
+      "captured_at": "2026-07-22T03:57:51.459Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/kota/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kota/00025-p001-r011-case_detail-0005744_1999-01.html",
+      "html_sha256": "d9855a9995be809d2bf3f7bc14b3912f21e695d329d887b81623a4f1c494fb31",
+      "bytes_len": 7499,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=zmsY2upq21PUmJyXVBafZg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=09/02/1999&civilCaseId=WALt_PLUS_xmaWvKipdZxkp5KVg%3D%3D",
+      "captured_at": "2026-07-22T03:57:51.459Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260719044730:kota:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260719044730/kota/page-001.html",
-      "html_sha256": "3820ddee14e281d799edff462709bc8a3bc84a58264cc1a620991ecd6a1ec91c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn11",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:kota:followup-page:001:capture:00025:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kota/00025-p001-r011-case_detail-0005744_1999-01.html",
+      "html_sha256": "d9855a9995be809d2bf3f7bc14b3912f21e695d329d887b81623a4f1c494fb31",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=zmsY2upq21PUmJyXVBafZg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&motion=&docs=&adate=09/02/1999&civilCaseId=WALt_PLUS_xmaWvKipdZxkp5KVg%3D%3D",
       "page_number": 1,
       "table_row_number": 11,
-      "row_html_sha256": "829653bd6e3b52dc2905c054c4bc228e786ac0a92dba966facb8641090283ad7"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:kota:followup-page:001:capture:00026:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/kota/00026-p001-r011-appearances-0005744_1999-01.html",
+      "html_sha256": "566d4b6023df63701a7112c8c519933ab7483fb525a58fe8d480cafeb4b342c5",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=09/02/1999&index=zmsY2upq21PUmJyXVBafZg%3D%3D&county=Dniv7Zxpnx7Pu8XyDuDCzA%3D%3D&civilCaseId=WALt_PLUS_xmaWvKipdZxkp5KVg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:kota:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/kota/page-001.html",
+      "html_sha256": "1c5dc163a37a7b95f604229a1651ae555974a674e2bfbcad38efd18002f3cd9c",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 11,
+      "row_html_sha256": "b931f822886c9260299791d6bcb378b6a427cfb65e617d1bcb533a1022abf418"
     }
   ],
   "judicial_officer": "EDWARD M. RAPPAPORT"
