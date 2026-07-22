@@ -14,8 +14,8 @@
   "case_type": "SMALL CLAIMS ASSESSMENT REVIEW",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T15:00:15.121Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/begum.rows.ndjson",
         "source_page": 2,
         "source_row": 19,
-        "row_html_sha256": "fd5ace3d19c413e906e82b87c5b0db7acb14c990b46c46a571c24bf89b35c95b"
+        "row_html_sha256": "eac89bb2ee6fb592e3f7d3703c8d621434718685be28f0b3d6c2da31f7f4aca1"
       }
     ]
   },
@@ -97,19 +100,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/begum/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00043-p002-r019-appearances-0322593_1994-01.html",
+      "html_sha256": "71cf15168e12c2fe982725e838e1d6faec8de4602650f530957d4b51cc98576f",
+      "bytes_len": 5582,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/26/1995&index=WSu11kjhMpUgndbJR2yPYQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=H9lZP%2FnDares2lbIArJqjQ%3D%3D",
+      "captured_at": "2026-07-22T15:00:15.121Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/begum/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00042-p002-r019-case_detail-0322593_1994-01.html",
+      "html_sha256": "b4272174528680fdbdf60cb58a86aa86db2801c4870c0ea1d8af0230c4eb9a86",
+      "bytes_len": 6577,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=WSu11kjhMpUgndbJR2yPYQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=&docs=&adate=04/26/1995&civilCaseId=H9lZP%2FnDares2lbIArJqjQ%3D%3D",
+      "captured_at": "2026-07-22T15:00:15.121Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:begum:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/begum/page-002.html",
-      "html_sha256": "8a4c8740fb988a084342d6029e7b82c00a223d7a49664ca2d9248a41ac8ab516",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:begum:followup-page:002:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00042-p002-r019-case_detail-0322593_1994-01.html",
+      "html_sha256": "b4272174528680fdbdf60cb58a86aa86db2801c4870c0ea1d8af0230c4eb9a86",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=WSu11kjhMpUgndbJR2yPYQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=&docs=&adate=04/26/1995&civilCaseId=H9lZP%2FnDares2lbIArJqjQ%3D%3D",
       "page_number": 2,
       "table_row_number": 19,
-      "row_html_sha256": "fd5ace3d19c413e906e82b87c5b0db7acb14c990b46c46a571c24bf89b35c95b"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:begum:followup-page:002:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00043-p002-r019-appearances-0322593_1994-01.html",
+      "html_sha256": "71cf15168e12c2fe982725e838e1d6faec8de4602650f530957d4b51cc98576f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/26/1995&index=WSu11kjhMpUgndbJR2yPYQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=H9lZP%2FnDares2lbIArJqjQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 19,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:begum:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/begum/page-002.html",
+      "html_sha256": "f50c799d5962b668a80f1d5c348880a786443dafddc895a6a312f8af28356298",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn07",
+      "page_number": 2,
+      "table_row_number": 19,
+      "row_html_sha256": "eac89bb2ee6fb592e3f7d3703c8d621434718685be28f0b3d6c2da31f7f4aca1"
     }
   ],
   "judicial_officer": "SMALL CLAIMS ASSESSMENT JUDGE"

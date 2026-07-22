@@ -14,8 +14,8 @@
   "case_type": "MEDICAL MALPRACTICE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T15:00:15.121Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,12 +24,16 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
@@ -43,7 +47,7 @@
         "source_file": "archive/webcivil/results/begum.rows.ndjson",
         "source_page": 2,
         "source_row": 21,
-        "row_html_sha256": "e7d6cffb2d24a4c6877023aea07e959f8ada56094fa1b7102917aa7cc41f8fde"
+        "row_html_sha256": "527f5a807476a904101b4b788432051a4c964af5196be8b68e070759c78a0dc3"
       }
     ]
   },
@@ -116,19 +120,101 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/begum/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00047-p002-r021-appearances-0005258_1995-01.html",
+      "html_sha256": "d9f77b7d6e4b1cc33500391e83b2dbed73e20b5254d446d8009e9ea2e5e69299",
+      "bytes_len": 12468,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/15/2009&index=o_PLUS_wyiHQZUvD_PLUS_oJ3RqWZzpQ%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&civilCaseId=SGslLHRsJwjeiUWlog7iXQ%3D%3D",
+      "captured_at": "2026-07-22T15:00:15.121Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/begum/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00046-p002-r021-case_detail-0005258_1995-01.html",
+      "html_sha256": "42ef5777f4fd0e2d7e7ed1d9aab2e76d1d894262a6e1d69cc8be9a0549dea706",
+      "bytes_len": 6926,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=o_PLUS_wyiHQZUvD_PLUS_oJ3RqWZzpQ%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&motion=M&docs=&adate=10/15/2009&civilCaseId=SGslLHRsJwjeiUWlog7iXQ%3D%3D",
+      "captured_at": "2026-07-22T15:00:15.121Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/begum/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00048-p002-r021-motions-0005258_1995-01.html",
+      "html_sha256": "75ed0337320e2bf20d6123f486fc93941a68be7a44c13d6a61c3c52cc5e003cc",
+      "bytes_len": 8144,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=o_PLUS_wyiHQZUvD_PLUS_oJ3RqWZzpQ%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&civilCaseId=SGslLHRsJwjeiUWlog7iXQ%3D%3D",
+      "captured_at": "2026-07-22T15:00:15.121Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:begum:page:002",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/begum/page-002.html",
-      "html_sha256": "8a4c8740fb988a084342d6029e7b82c00a223d7a49664ca2d9248a41ac8ab516",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:begum:followup-page:002:capture:00046:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00046-p002-r021-case_detail-0005258_1995-01.html",
+      "html_sha256": "42ef5777f4fd0e2d7e7ed1d9aab2e76d1d894262a6e1d69cc8be9a0549dea706",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=o_PLUS_wyiHQZUvD_PLUS_oJ3RqWZzpQ%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&motion=M&docs=&adate=10/15/2009&civilCaseId=SGslLHRsJwjeiUWlog7iXQ%3D%3D",
       "page_number": 2,
       "table_row_number": 21,
-      "row_html_sha256": "e7d6cffb2d24a4c6877023aea07e959f8ada56094fa1b7102917aa7cc41f8fde"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:begum:followup-page:002:capture:00047:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00047-p002-r021-appearances-0005258_1995-01.html",
+      "html_sha256": "d9f77b7d6e4b1cc33500391e83b2dbed73e20b5254d446d8009e9ea2e5e69299",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=10/15/2009&index=o_PLUS_wyiHQZUvD_PLUS_oJ3RqWZzpQ%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&civilCaseId=SGslLHRsJwjeiUWlog7iXQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 21,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:begum:followup-page:002:capture:00048:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/begum/00048-p002-r021-motions-0005258_1995-01.html",
+      "html_sha256": "75ed0337320e2bf20d6123f486fc93941a68be7a44c13d6a61c3c52cc5e003cc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=o_PLUS_wyiHQZUvD_PLUS_oJ3RqWZzpQ%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&civilCaseId=SGslLHRsJwjeiUWlog7iXQ%3D%3D",
+      "page_number": 2,
+      "table_row_number": 21,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:begum:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/begum/page-002.html",
+      "html_sha256": "f50c799d5962b668a80f1d5c348880a786443dafddc895a6a312f8af28356298",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn07",
+      "page_number": 2,
+      "table_row_number": 21,
+      "row_html_sha256": "527f5a807476a904101b4b788432051a4c964af5196be8b68e070759c78a0dc3"
     }
   ],
   "judicial_officer": "TRIAL READINESS JUDGE"
