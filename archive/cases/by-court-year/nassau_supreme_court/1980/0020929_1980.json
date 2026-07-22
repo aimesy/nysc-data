@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T18:11:32.750Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -115,16 +118,71 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ornstein/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ornstein/00002-p001-r001-appearances-0020929_1980-01.html",
+      "html_sha256": "9039f97fac2a5d979c85d7b972db013860c5e2ba4a04deba8357fa57b7163723",
+      "bytes_len": 10955,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/22/1983&index=OwEF0Cyqpms6VgemO1a6xQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=dHhJTutSsEfrsgG2JkvwlQ%3D%3D",
+      "captured_at": "2026-07-22T18:11:32.750Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ornstein/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ornstein/00001-p001-r001-case_detail-0020929_1980-01.html",
+      "html_sha256": "bf1fd5ba65b82ab12faabfb6513b974c07db86e0ed23a8b43a0aee794e29e1bc",
+      "bytes_len": 7009,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=OwEF0Cyqpms6VgemO1a6xQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=&docs=&adate=04/22/1983&civilCaseId=dHhJTutSsEfrsgG2JkvwlQ%3D%3D",
+      "captured_at": "2026-07-22T18:11:32.750Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ornstein:followup-page:001:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ornstein/00001-p001-r001-case_detail-0020929_1980-01.html",
+      "html_sha256": "bf1fd5ba65b82ab12faabfb6513b974c07db86e0ed23a8b43a0aee794e29e1bc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=OwEF0Cyqpms6VgemO1a6xQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=&docs=&adate=04/22/1983&civilCaseId=dHhJTutSsEfrsgG2JkvwlQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ornstein:followup-page:001:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ornstein/00002-p001-r001-appearances-0020929_1980-01.html",
+      "html_sha256": "9039f97fac2a5d979c85d7b972db013860c5e2ba4a04deba8357fa57b7163723",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=04/22/1983&index=OwEF0Cyqpms6VgemO1a6xQ%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=dHhJTutSsEfrsgG2JkvwlQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
       "capture_id": "20260721101320:ornstein:page:001",
       "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/ornstein/page-001.html",
-      "html_sha256": "ff433e7fb572be89c8f2e72d88a0f6b6bf2824ee145834e09cec06a15fbb2fc4",
+      "html_sha256": "6fc4969af451acf793fb046a25a4d0ee8997a2c0191acb1fc768bdcf10221ee4",
       "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn15",
+      "lane": "sfscvpn06",
       "page_number": 1,
       "table_row_number": 1,
       "row_html_sha256": "ce2484f3f1ecab95951e65f8df1176f35ecdea1a1b3b9e52a961d54439507cf9"

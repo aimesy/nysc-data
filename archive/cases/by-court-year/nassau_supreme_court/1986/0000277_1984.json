@@ -11,15 +11,19 @@
   "index_year": "1986",
   "index_display": "0000277/1984",
   "case_title": "SHERMAN v. WELSH",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-21T07:07:12.707Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T17:24:37.045Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 3
+      "search_rows_seen": 1,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "welsh"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "welsh",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/welsh.rows.ndjson",
+        "source_page": 1,
+        "source_row": 10,
+        "row_html_sha256": "ed2a0e60ae0f464e3792294c39fa0f1251562d86bde62a116684921a9278cc72"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "RICHARD SINROD",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "SCALZI & NOFI",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "SHERMAN",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "RICHARD SINROD",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "WELSH",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "SCALZI & NOFI",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "01/23/1987",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "JOSEPH GOLDSTEIN",
+      "raw_text": "01/23/1987",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -72,6 +136,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/welsh/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/welsh/00022-p001-r010-appearances-0000277_1984-01.html",
+      "html_sha256": "c91631e37f430b3a5047055300296fc1efd3fd176e24bbb46e79e45a04dfc299",
+      "bytes_len": 17784,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/23/1987&index=0P8FKv9aa9uWnblNovDo1g%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=IO93Ksadk0ECzEp8gV3WOQ%3D%3D",
+      "captured_at": "2026-07-22T17:24:37.045Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -86,6 +164,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/welsh/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/welsh/00021-p001-r010-case_detail-0000277_1984-01.html",
+      "html_sha256": "e869f1e7fd8ecc66908be8adff92670f25337d0a1b1c982aeb173eec17c74084",
+      "bytes_len": 7193,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0P8FKv9aa9uWnblNovDo1g%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=M&docs=&adate=01/23/1987&civilCaseId=IO93Ksadk0ECzEp8gV3WOQ%3D%3D",
+      "captured_at": "2026-07-22T17:24:37.045Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions",
@@ -97,6 +189,20 @@
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=LE4nMn8YQJqNzr8KUXCsmA%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=7EX8mzDOEVbJLNBk8mBrLQ%3D%3D",
       "captured_at": "2026-07-21T07:07:12.707Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/welsh/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/welsh/00023-p001-r010-motions-0000277_1984-01.html",
+      "html_sha256": "d4cbbcbe0b4fabaf68a9cdbf80ad7ca00277790d8e0b7dc4f8f302a06dfb2dfe",
+      "bytes_len": 7988,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0P8FKv9aa9uWnblNovDo1g%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=IO93Ksadk0ECzEp8gV3WOQ%3D%3D",
+      "captured_at": "2026-07-22T17:24:37.045Z",
       "parsed_counts": {}
     }
   ],
@@ -140,6 +246,57 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:welsh:followup-page:001:capture:00021:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/welsh/00021-p001-r010-case_detail-0000277_1984-01.html",
+      "html_sha256": "e869f1e7fd8ecc66908be8adff92670f25337d0a1b1c982aeb173eec17c74084",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=0P8FKv9aa9uWnblNovDo1g%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=M&docs=&adate=01/23/1987&civilCaseId=IO93Ksadk0ECzEp8gV3WOQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:welsh:followup-page:001:capture:00022:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/welsh/00022-p001-r010-appearances-0000277_1984-01.html",
+      "html_sha256": "c91631e37f430b3a5047055300296fc1efd3fd176e24bbb46e79e45a04dfc299",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=01/23/1987&index=0P8FKv9aa9uWnblNovDo1g%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=IO93Ksadk0ECzEp8gV3WOQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:welsh:followup-page:001:capture:00023:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/welsh/00023-p001-r010-motions-0000277_1984-01.html",
+      "html_sha256": "d4cbbcbe0b4fabaf68a9cdbf80ad7ca00277790d8e0b7dc4f8f302a06dfb2dfe",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=0P8FKv9aa9uWnblNovDo1g%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=IO93Ksadk0ECzEp8gV3WOQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 10,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:welsh:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/welsh/page-001.html",
+      "html_sha256": "9340c3ed7aa44d197a6e1812218f64734caf5344e40e901bfa292df3616a2790",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 10,
+      "row_html_sha256": "ed2a0e60ae0f464e3792294c39fa0f1251562d86bde62a116684921a9278cc72"
     }
-  ]
+  ],
+  "judicial_officer": "JOSEPH GOLDSTEIN"
 }
