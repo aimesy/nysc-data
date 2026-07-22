@@ -11,15 +11,18 @@
   "index_year": "2001",
   "index_display": "0201962/2001",
   "case_title": "CAMEL-EVANS, CESSELY ALISSA v. EVANS, LABARREN",
-  "case_type": null,
+  "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T08:12:11.353Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "camel"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "camel",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/camel.rows.ndjson",
+        "source_page": 1,
+        "source_row": 20,
+        "row_html_sha256": "b7c1b43ec4e2bef7f4645ea5ef9ec3dbc3a132733fe0585c1953c5fb979407f3"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "LABARREN EVANS - Prose",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "EVANS, LABARREN",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "LABARREN EVANS - Prose",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "12/03/2001",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "SPECIAL REFEREE UNCONT MATRIMONIAL",
+      "raw_text": "12/03/2001",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +157,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:camel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/camel/page-001.html",
+      "html_sha256": "8d859b96f4f1e076dcfaba3fee123eea21d4990f95446c6e107e944e8aea8d3f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 20,
+      "row_html_sha256": "b7c1b43ec4e2bef7f4645ea5ef9ec3dbc3a132733fe0585c1953c5fb979407f3"
     }
-  ]
+  ],
+  "judicial_officer": "SPECIAL REFEREE UNCONT MATRIMONIAL"
 }

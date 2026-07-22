@@ -14,8 +14,8 @@
   "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T10:11:58.341Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/ingarra.rows.ndjson",
         "source_page": 1,
         "source_row": 13,
-        "row_html_sha256": "72d558c768414fef8e0f143dcb73d04385dd8a4faeceb4f4747bb92f3fa4922b"
+        "row_html_sha256": "18731bc1b4b1bacba8f26e9e3b07d3717e1cf89cee7ad1caa06fed54e6f99df1"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ingarra/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ingarra/00035-p001-r013-appearances-0000269_1998-01.html",
+      "html_sha256": "ba7e5ac08f39cb14db67aeb18fc6ed28bf85622228d7119a605526ebc6a975d3",
+      "bytes_len": 6310,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/24/1998&index=n5y%2FqBIiUKh3A6_PLUS_GrwkqyQ%3D%3D&county=xXvkRJgmTdRRAl7cm_PLUS_bJpQ%3D%3D&civilCaseId=XgS6a%2FJ3rrGsdYGNuZ_PLUS__PLUS_JQ%3D%3D",
+      "captured_at": "2026-07-22T10:11:58.341Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/ingarra/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ingarra/00034-p001-r013-case_detail-0000269_1998-01.html",
+      "html_sha256": "2034b9a955c17686fc65dbf9a33df241bb36a28253cf1af6c8eb353300f22799",
+      "bytes_len": 7542,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=n5y%2FqBIiUKh3A6_PLUS_GrwkqyQ%3D%3D&county=xXvkRJgmTdRRAl7cm_PLUS_bJpQ%3D%3D&motion=&docs=&adate=11/24/1998&civilCaseId=XgS6a%2FJ3rrGsdYGNuZ_PLUS__PLUS_JQ%3D%3D",
+      "captured_at": "2026-07-22T10:11:58.341Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260721101320:ingarra:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/ingarra/page-001.html",
-      "html_sha256": "6cc6524b3c9f4018192acff012c2a47eae02f3c33949cd7f44bca60d3407809e",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn06",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ingarra:followup-page:001:capture:00034:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ingarra/00034-p001-r013-case_detail-0000269_1998-01.html",
+      "html_sha256": "2034b9a955c17686fc65dbf9a33df241bb36a28253cf1af6c8eb353300f22799",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=n5y%2FqBIiUKh3A6_PLUS_GrwkqyQ%3D%3D&county=xXvkRJgmTdRRAl7cm_PLUS_bJpQ%3D%3D&motion=&docs=&adate=11/24/1998&civilCaseId=XgS6a%2FJ3rrGsdYGNuZ_PLUS__PLUS_JQ%3D%3D",
       "page_number": 1,
       "table_row_number": 13,
-      "row_html_sha256": "72d558c768414fef8e0f143dcb73d04385dd8a4faeceb4f4747bb92f3fa4922b"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:ingarra:followup-page:001:capture:00035:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/ingarra/00035-p001-r013-appearances-0000269_1998-01.html",
+      "html_sha256": "ba7e5ac08f39cb14db67aeb18fc6ed28bf85622228d7119a605526ebc6a975d3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/24/1998&index=n5y%2FqBIiUKh3A6_PLUS_GrwkqyQ%3D%3D&county=xXvkRJgmTdRRAl7cm_PLUS_bJpQ%3D%3D&civilCaseId=XgS6a%2FJ3rrGsdYGNuZ_PLUS__PLUS_JQ%3D%3D",
+      "page_number": 1,
+      "table_row_number": 13,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:ingarra:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/ingarra/page-001.html",
+      "html_sha256": "58ffabf098555593efd6a26012232678c57c502951c02159a2e65c5d35569ae0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 13,
+      "row_html_sha256": "18731bc1b4b1bacba8f26e9e3b07d3717e1cf89cee7ad1caa06fed54e6f99df1"
     }
   ],
   "judicial_officer": "HON. VINCENT G. BRADLEY"

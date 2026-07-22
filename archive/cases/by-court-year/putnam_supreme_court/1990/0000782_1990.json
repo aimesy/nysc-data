@@ -11,15 +11,19 @@
   "index_year": "1990",
   "index_display": "0000782/1990",
   "case_title": "MC GIVNEY, JOHN, ET AL v. CAMEL C.S.D., ET AL",
-  "case_type": null,
+  "case_type": "OTHER (\\\"NOT ONE OF THE ABOVE\\\")",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T08:12:11.353Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "camel"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "camel",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/camel.rows.ndjson",
+        "source_page": 1,
+        "source_row": 5,
+        "row_html_sha256": "6376b72041ca54004bc6257fac47e86817eda70fef88dd11cfc5659869ee52fa"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "MAHER & BROFFMAN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "BANK, SHEER, SERVINO & SEYMOUR",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "MC GIVNEY, JOHN, ET AL",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "MAHER & BROFFMAN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "CAMEL C.S.D., ET AL",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "BANK, SHEER, SERVINO & SEYMOUR",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "06/23/1992",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "S. BARRETT HICKMAN",
+      "raw_text": "06/23/1992",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -140,6 +204,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:camel:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/camel/page-001.html",
+      "html_sha256": "8d859b96f4f1e076dcfaba3fee123eea21d4990f95446c6e107e944e8aea8d3f",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "6376b72041ca54004bc6257fac47e86817eda70fef88dd11cfc5659869ee52fa"
     }
-  ]
+  ],
+  "judicial_officer": "S. BARRETT HICKMAN"
 }

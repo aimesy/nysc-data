@@ -14,8 +14,8 @@
   "case_type": "OTHER, NOT SPECIFIED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T09:33:01.048Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -42,7 +45,7 @@
         "source_file": "archive/webcivil/results/shanley.rows.ndjson",
         "source_page": 1,
         "source_row": 6,
-        "row_html_sha256": "734703c100e31ca8cb0c09554670f1d2c486aa6b22a85aeac722d6bd2e3d1956"
+        "row_html_sha256": "eb51a914fefc600bf62bf674e82d51695b436e5c09653f5f13e8715a92aa73b5"
       }
     ]
   },
@@ -104,19 +107,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/shanley/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/shanley/00013-p001-r006-appearances-0002402_1982-01.html",
+      "html_sha256": "aac1ffa60c28cbf3091c0d5e8920dd261e255ebb258dcba06c4bd926ea37f7e4",
+      "bytes_len": 3800,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=kU6JqwLxC4LjpHUQSFu5Rw%3D%3D&county=5DY9hZA5UImr8EKLxdnNxw%3D%3D&civilCaseId=x02dqBFl8kACaPtLZg1mKw%3D%3D",
+      "captured_at": "2026-07-22T09:33:01.048Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/shanley/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/shanley/00012-p001-r006-case_detail-0002402_1982-01.html",
+      "html_sha256": "617d39b3816d24a6055ceaf73e8c911847c84694e906acd40c62ace0cddcd1d0",
+      "bytes_len": 6674,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kU6JqwLxC4LjpHUQSFu5Rw%3D%3D&county=5DY9hZA5UImr8EKLxdnNxw%3D%3D&motion=&docs=&adate=&civilCaseId=x02dqBFl8kACaPtLZg1mKw%3D%3D",
+      "captured_at": "2026-07-22T09:33:01.048Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260721101320:shanley:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/shanley/page-001.html",
-      "html_sha256": "f5dac59c05752c2ef2d820e50d4f3b386e85591de47b3f60f8291425a380338d",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "sfscvpn13",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:shanley:followup-page:001:capture:00012:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/shanley/00012-p001-r006-case_detail-0002402_1982-01.html",
+      "html_sha256": "617d39b3816d24a6055ceaf73e8c911847c84694e906acd40c62ace0cddcd1d0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=kU6JqwLxC4LjpHUQSFu5Rw%3D%3D&county=5DY9hZA5UImr8EKLxdnNxw%3D%3D&motion=&docs=&adate=&civilCaseId=x02dqBFl8kACaPtLZg1mKw%3D%3D",
       "page_number": 1,
       "table_row_number": 6,
-      "row_html_sha256": "734703c100e31ca8cb0c09554670f1d2c486aa6b22a85aeac722d6bd2e3d1956"
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:shanley:followup-page:001:capture:00013:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/shanley/00013-p001-r006-appearances-0002402_1982-01.html",
+      "html_sha256": "aac1ffa60c28cbf3091c0d5e8920dd261e255ebb258dcba06c4bd926ea37f7e4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&index=kU6JqwLxC4LjpHUQSFu5Rw%3D%3D&county=5DY9hZA5UImr8EKLxdnNxw%3D%3D&civilCaseId=x02dqBFl8kACaPtLZg1mKw%3D%3D",
+      "page_number": 1,
+      "table_row_number": 6,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:shanley:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/shanley/page-001.html",
+      "html_sha256": "49f07b5cd3a883fb26c5f0b3d333f0dc1dddcc04ecbbac2653c0352ad1e53a39",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 6,
+      "row_html_sha256": "eb51a914fefc600bf62bf674e82d51695b436e5c09653f5f13e8715a92aa73b5"
     }
   ]
 }
