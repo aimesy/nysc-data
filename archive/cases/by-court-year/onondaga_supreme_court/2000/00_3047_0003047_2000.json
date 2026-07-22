@@ -14,8 +14,8 @@
   "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-23T00:41:33.804Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,12 +23,15 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
       "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
@@ -38,11 +41,11 @@
     "result_row_refs": [
       {
         "search_name": "cornel",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/cornel.rows.ndjson",
-        "source_page": 1,
-        "source_row": 1,
-        "row_html_sha256": "eecef67dd23dd98df59661af31eede979682c1851277b82773d87924f11bf495"
+        "source_page": 4,
+        "source_row": 16,
+        "row_html_sha256": "1ebcd3237b5b826f3b8e9390eb91b55d9bff6eb6adf67f6fd17c93dc84c53606"
       }
     ]
   },
@@ -115,19 +118,74 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/cornel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/cornel/00163-p004-r016-appearances-0003047_2000-01.html",
+      "html_sha256": "101ce696ab6fe19d3f208f3443f00c257572f50cd95cd0422c2e1091d37c55ae",
+      "bytes_len": 7682,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/09/2002&index=XF%2FXHuAshEjtorVzWMrx4A%3D%3D&county=t5NNRfx%2FM79tdw_PLUS_A%2F%2FC3Lw%3D%3D&civilCaseId=Buk8MpNIOpRs7n9bLUiAWw%3D%3D",
+      "captured_at": "2026-07-23T00:41:33.804Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/cornel/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/cornel/00162-p004-r016-case_detail-0003047_2000-01.html",
+      "html_sha256": "1392cce6e7f4ea3c5a6a9716ceada90c1307c382f1de39fa97124dcf6e47208e",
+      "bytes_len": 7458,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=XF%2FXHuAshEjtorVzWMrx4A%3D%3D&county=t5NNRfx%2FM79tdw_PLUS_A%2F%2FC3Lw%3D%3D&motion=&docs=&adate=05/09/2002&civilCaseId=Buk8MpNIOpRs7n9bLUiAWw%3D%3D",
+      "captured_at": "2026-07-23T00:41:33.804Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:cornel:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/cornel/page-001.html",
-      "html_sha256": "80703deeaf7771ef21f703df8ff3109a77eb8dcc03a89d22c6d1b56d35d6aa7c",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
-      "page_number": 1,
-      "table_row_number": 1,
-      "row_html_sha256": "eecef67dd23dd98df59661af31eede979682c1851277b82773d87924f11bf495"
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:cornel:followup-page:004:capture:00162:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/cornel/00162-p004-r016-case_detail-0003047_2000-01.html",
+      "html_sha256": "1392cce6e7f4ea3c5a6a9716ceada90c1307c382f1de39fa97124dcf6e47208e",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=XF%2FXHuAshEjtorVzWMrx4A%3D%3D&county=t5NNRfx%2FM79tdw_PLUS_A%2F%2FC3Lw%3D%3D&motion=&docs=&adate=05/09/2002&civilCaseId=Buk8MpNIOpRs7n9bLUiAWw%3D%3D",
+      "page_number": 4,
+      "table_row_number": 16,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:cornel:followup-page:004:capture:00163:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/cornel/00163-p004-r016-appearances-0003047_2000-01.html",
+      "html_sha256": "101ce696ab6fe19d3f208f3443f00c257572f50cd95cd0422c2e1091d37c55ae",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/09/2002&index=XF%2FXHuAshEjtorVzWMrx4A%3D%3D&county=t5NNRfx%2FM79tdw_PLUS_A%2F%2FC3Lw%3D%3D&civilCaseId=Buk8MpNIOpRs7n9bLUiAWw%3D%3D",
+      "page_number": 4,
+      "table_row_number": 16,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:cornel:page:004",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/cornel/page-004.html",
+      "html_sha256": "9db655437e5ba4e4cf83652e736e610927550e434ae588eb4f284cbd1f9a37cc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn06",
+      "page_number": 4,
+      "table_row_number": 16,
+      "row_html_sha256": "1ebcd3237b5b826f3b8e9390eb91b55d9bff6eb6adf67f6fd17c93dc84c53606"
     }
   ],
   "judicial_officer": "HON. JAMES C. TORMEY"

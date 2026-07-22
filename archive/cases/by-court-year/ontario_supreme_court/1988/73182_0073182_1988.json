@@ -11,15 +11,19 @@
   "index_year": "1988",
   "index_display": "73182 (0073182/1988)",
   "case_title": "CARON v. CARON",
-  "case_type": null,
+  "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-19T04:12:24.470Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-23T00:50:07.217Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 3
+      "search_rows_seen": 1,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "caron"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "caron",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/caron.rows.ndjson",
+        "source_page": 2,
+        "source_row": 1,
+        "row_html_sha256": "4e9908f26af5335d168eca989848eb026a6db3ca6ff6668e609a41e399821628"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "STEPHEN D ARONSON",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "DEAN CARON, PRO SE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "CARON",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "STEPHEN D ARONSON",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "CARON",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "DEAN CARON, PRO SE",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "08/17/1992",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "FREDERIC T HENRY JR",
+      "raw_text": "08/17/1992",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -72,6 +136,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/caron/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/caron/00002-p002-r001-appearances-0073182_1988-01.html",
+      "html_sha256": "d0e62263898603d726a0e40ff9a3ca61e7edb05d9315cbb768a5d090aa9cdd0d",
+      "bytes_len": 8231,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/17/1992&index=RfgjroYRVF9YnXjL4EPwSQ%3D%3D&county=6vY3ZwmFkdZcjCT8ispcpA%3D%3D&civilCaseId=SscWY2xzxqXp13iJ%2F3Au0w%3D%3D",
+      "captured_at": "2026-07-23T00:50:07.217Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -86,6 +164,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/caron/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/caron/00001-p002-r001-case_detail-0073182_1988-01.html",
+      "html_sha256": "c6aa5d592137ad1ead1719b02bce3be47320796758206e84168ed8320a518592",
+      "bytes_len": 7143,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=RfgjroYRVF9YnXjL4EPwSQ%3D%3D&county=6vY3ZwmFkdZcjCT8ispcpA%3D%3D&motion=M&docs=&adate=08/17/1992&civilCaseId=SscWY2xzxqXp13iJ%2F3Au0w%3D%3D",
+      "captured_at": "2026-07-23T00:50:07.217Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions",
@@ -97,6 +189,20 @@
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=Ik8SLfPUcSSR%2F83AJPU9Yw%3D%3D&county=7x3fQyCSjHjTTjaR0JEGKg%3D%3D&civilCaseId=F9zI4%2Fxp%2F%2F4Ltw8Uns_PLUS_Aug%3D%3D",
       "captured_at": "2026-07-19T04:12:24.470Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/caron/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/caron/00003-p002-r001-motions-0073182_1988-01.html",
+      "html_sha256": "20fe081ce590f9461e687a6e0efc835bce1b863307ebb47cf75a86fce3d47d07",
+      "bytes_len": 6319,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=RfgjroYRVF9YnXjL4EPwSQ%3D%3D&county=6vY3ZwmFkdZcjCT8ispcpA%3D%3D&civilCaseId=SscWY2xzxqXp13iJ%2F3Au0w%3D%3D",
+      "captured_at": "2026-07-23T00:50:07.217Z",
       "parsed_counts": {}
     }
   ],
@@ -140,6 +246,57 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:caron:followup-page:002:capture:00001:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/caron/00001-p002-r001-case_detail-0073182_1988-01.html",
+      "html_sha256": "c6aa5d592137ad1ead1719b02bce3be47320796758206e84168ed8320a518592",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=RfgjroYRVF9YnXjL4EPwSQ%3D%3D&county=6vY3ZwmFkdZcjCT8ispcpA%3D%3D&motion=M&docs=&adate=08/17/1992&civilCaseId=SscWY2xzxqXp13iJ%2F3Au0w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:caron:followup-page:002:capture:00002:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/caron/00002-p002-r001-appearances-0073182_1988-01.html",
+      "html_sha256": "d0e62263898603d726a0e40ff9a3ca61e7edb05d9315cbb768a5d090aa9cdd0d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=08/17/1992&index=RfgjroYRVF9YnXjL4EPwSQ%3D%3D&county=6vY3ZwmFkdZcjCT8ispcpA%3D%3D&civilCaseId=SscWY2xzxqXp13iJ%2F3Au0w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:caron:followup-page:002:capture:00003:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/caron/00003-p002-r001-motions-0073182_1988-01.html",
+      "html_sha256": "20fe081ce590f9461e687a6e0efc835bce1b863307ebb47cf75a86fce3d47d07",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=RfgjroYRVF9YnXjL4EPwSQ%3D%3D&county=6vY3ZwmFkdZcjCT8ispcpA%3D%3D&civilCaseId=SscWY2xzxqXp13iJ%2F3Au0w%3D%3D",
+      "page_number": 2,
+      "table_row_number": 1,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:caron:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/caron/page-002.html",
+      "html_sha256": "8c5d39f91e3443ab553433db0a2a2567757096bc00bf7abe9b4292ae3cffa840",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn11",
+      "page_number": 2,
+      "table_row_number": 1,
+      "row_html_sha256": "4e9908f26af5335d168eca989848eb026a6db3ca6ff6668e609a41e399821628"
     }
-  ]
+  ],
+  "judicial_officer": "FREDERIC T HENRY JR"
 }

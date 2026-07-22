@@ -11,15 +11,18 @@
   "index_year": "2007",
   "index_display": "2007-0309 (0000309/2007)",
   "case_title": "",
-  "case_type": null,
+  "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-21T13:29:39.046Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-23T00:52:26.062Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 2
+      "search_rows_seen": 1,
+      "followup_responses_seen": 4
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "christen"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "christen",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/christen.rows.ndjson",
+        "source_page": 3,
+        "source_row": 11,
+        "row_html_sha256": "f35b6a938aeaebc1b42ddb6d5fa09790173022e8087badbb49f0b1d8d81102ea"
+      }
+    ]
   },
   "parties": [
     {
@@ -42,9 +56,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "CHRISTEN M. JENNINGS, PRO SE",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "APPLICATION OF CHRISTEN M. JENNINGS O/B/",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "CHRISTEN M. JENNINGS, PRO SE",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "03/27/2007",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "HON. ROBERT C. MULVEY",
+      "raw_text": "03/27/2007",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -66,6 +111,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/christen/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/christen/00087-p003-r011-appearances-0000309_2007-01.html",
+      "html_sha256": "48d2ef52d630895ed84f4f29de429986009b77ce1b6ebdfaf0b2f7061ed72585",
+      "bytes_len": 5533,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/27/2007&index=eCsNcAMDLgo419OahZ%2FsIA%3D%3D&county=WQwSHWSBh75yOMDs5fmSog%3D%3D&civilCaseId=CnGqejBVJ4yq6kUvxEKdHg%3D%3D",
+      "captured_at": "2026-07-23T00:52:26.062Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -77,6 +136,20 @@
       "title": "WebCivil Supreme - Case Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=MhJzZszqXO2YLy3VW7zsnQ%3D%3D&county=6RmEXTQ6vsl5dcy4cFa%2FdQ%3D%3D&motion=&docs=&adate=03/27/2007&civilCaseId=UcsXUWlLzccOSQvWsgu_PLUS_mw%3D%3D",
       "captured_at": "2026-07-21T13:29:39.046Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/christen/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/christen/00086-p003-r011-case_detail-0000309_2007-01.html",
+      "html_sha256": "82f7dacc93142f5ce048bfd8d852a301564e0e495fc1909abab0cdc5cdc13dae",
+      "bytes_len": 6786,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=eCsNcAMDLgo419OahZ%2FsIA%3D%3D&county=WQwSHWSBh75yOMDs5fmSog%3D%3D&motion=&docs=&adate=03/27/2007&civilCaseId=CnGqejBVJ4yq6kUvxEKdHg%3D%3D",
+      "captured_at": "2026-07-23T00:52:26.062Z",
       "parsed_counts": {}
     }
   ],
@@ -107,6 +180,44 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:christen:followup-page:003:capture:00086:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/christen/00086-p003-r011-case_detail-0000309_2007-01.html",
+      "html_sha256": "82f7dacc93142f5ce048bfd8d852a301564e0e495fc1909abab0cdc5cdc13dae",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=eCsNcAMDLgo419OahZ%2FsIA%3D%3D&county=WQwSHWSBh75yOMDs5fmSog%3D%3D&motion=&docs=&adate=03/27/2007&civilCaseId=CnGqejBVJ4yq6kUvxEKdHg%3D%3D",
+      "page_number": 3,
+      "table_row_number": 11,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:christen:followup-page:003:capture:00087:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/christen/00087-p003-r011-appearances-0000309_2007-01.html",
+      "html_sha256": "48d2ef52d630895ed84f4f29de429986009b77ce1b6ebdfaf0b2f7061ed72585",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/27/2007&index=eCsNcAMDLgo419OahZ%2FsIA%3D%3D&county=WQwSHWSBh75yOMDs5fmSog%3D%3D&civilCaseId=CnGqejBVJ4yq6kUvxEKdHg%3D%3D",
+      "page_number": 3,
+      "table_row_number": 11,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:christen:page:003",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/christen/page-003.html",
+      "html_sha256": "de59dce0f75120ccedc1f0439d0d33ff55efb831530c52e1df20c02eff7e2d14",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn07",
+      "page_number": 3,
+      "table_row_number": 11,
+      "row_html_sha256": "f35b6a938aeaebc1b42ddb6d5fa09790173022e8087badbb49f0b1d8d81102ea"
     }
-  ]
+  ],
+  "judicial_officer": "HON. ROBERT C. MULVEY"
 }
