@@ -11,15 +11,18 @@
   "index_year": "1991",
   "index_display": "0018319/1991",
   "case_title": "DURST, TENA v. SILVERMAN, TED J.",
-  "case_type": null,
+  "case_type": "MATRIMONIAL CONTESTED",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T11:18:11.456Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "tena"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "tena",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/tena.rows.ndjson",
+        "source_page": 1,
+        "source_row": 9,
+        "row_html_sha256": "c5f9c9b26093a35e7681986a0e32badf73474c61b09cc30aff96cbfdce61c48f"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "RICHARD R. LEFF",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "DURST, TENA",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "RICHARD R. LEFF",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "05/31/1995",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "ALAN LE VINE",
+      "raw_text": "05/31/1995",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +157,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tena:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tena/page-001.html",
+      "html_sha256": "5ec343035486c1426c74ad7b01df1ab356ce4562f3dc38f32a5150e4233ebb89",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 9,
+      "row_html_sha256": "c5f9c9b26093a35e7681986a0e32badf73474c61b09cc30aff96cbfdce61c48f"
     }
-  ]
+  ],
+  "judicial_officer": "ALAN LE VINE"
 }

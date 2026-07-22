@@ -11,15 +11,19 @@
   "index_year": "1998",
   "index_display": "0022330/1997",
   "case_title": "LUCCAS,STANLEY v. WINSTON-LUCCAS,TENA",
-  "case_type": null,
+  "case_type": "OTHER (NONE OF THE ABOVE)",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T11:18:11.456Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "tena"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "tena",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/tena.rows.ndjson",
+        "source_page": 1,
+        "source_row": 25,
+        "row_html_sha256": "154f7a17575521d7f2a96435b5fb1a8f04caaf8257f30899b00157667bb1825a"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "LUCAS, CARL",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "KASHIF MOLAMUSA",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "LUCCAS,STANLEY",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "LUCAS, CARL",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "WINSTON-LUCCAS,TENA",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "KASHIF MOLAMUSA",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "11/24/2000",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "KENNETH L. THOMPSON JR.",
+      "raw_text": "11/24/2000",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -140,6 +204,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tena:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tena/page-001.html",
+      "html_sha256": "5ec343035486c1426c74ad7b01df1ab356ce4562f3dc38f32a5150e4233ebb89",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 25,
+      "row_html_sha256": "154f7a17575521d7f2a96435b5fb1a8f04caaf8257f30899b00157667bb1825a"
     }
-  ]
+  ],
+  "judicial_officer": "KENNETH L. THOMPSON JR."
 }

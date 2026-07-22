@@ -11,15 +11,18 @@
   "index_year": "1997",
   "index_display": "0005136/1997",
   "case_title": "REILLY-BICE v. CARSEY & ANTONELLI, P.C.",
-  "case_type": null,
+  "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T11:00:16.822Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "bice"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "bice",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/bice.rows.ndjson",
+        "source_page": 1,
+        "source_row": 17,
+        "row_html_sha256": "b9a43403003806db32ce215ab0484f933ebf4e6797eddf8419ee83fdb3125985"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "BROWN & GUILBERT, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "POISSON & HACKETT",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "REILLY-BICE",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "BROWN & GUILBERT, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "CARSEY & ANTONELLI, P.C.",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "POISSON & HACKETT",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "01/13/2000",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "TAP J JURY",
+      "raw_text": "01/13/2000",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +175,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:bice:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/bice/page-001.html",
+      "html_sha256": "4f267f4cb1dafd33869b710dc6f1a3aa50057ad76f28cc3ef783db5a97319114",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn13",
+      "page_number": 1,
+      "table_row_number": 17,
+      "row_html_sha256": "b9a43403003806db32ce215ab0484f933ebf4e6797eddf8419ee83fdb3125985"
     }
-  ]
+  ],
+  "judicial_officer": "TAP J JURY"
 }
