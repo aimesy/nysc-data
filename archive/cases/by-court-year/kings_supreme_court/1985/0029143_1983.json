@@ -11,15 +11,18 @@
   "index_year": "1985",
   "index_display": "0029143/1983",
   "case_title": "BANKER,MICHAEL R. v. GATEWAY TRANSIT LTD.",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T05:57:34.221Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "banker"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "banker",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/banker.rows.ndjson",
+        "source_page": 1,
+        "source_row": 5,
+        "row_html_sha256": "e5ddc4be6958f9cc6b7c1d0a8c3717a27c6ef9b986cc04795f59d97ba1687f47"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "EPPENSTEIN & EPPEBSTEIN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "MILLER H&H",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "BANKER,MICHAEL R.",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "EPPENSTEIN & EPPEBSTEIN",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "GATEWAY TRANSIT LTD.",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "MILLER H&H",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "07/08/1986",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "JOSEPH J. DOWD",
+      "raw_text": "07/08/1986",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +175,18 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:banker:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/banker/page-001.html",
+      "html_sha256": "287d68276866aa5360921b990b79e3671593f6d34ae1ffab6d266128431d0441",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 5,
+      "row_html_sha256": "e5ddc4be6958f9cc6b7c1d0a8c3717a27c6ef9b986cc04795f59d97ba1687f47"
     }
-  ]
+  ],
+  "judicial_officer": "JOSEPH J. DOWD"
 }

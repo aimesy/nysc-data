@@ -11,15 +11,19 @@
   "index_year": "1987",
   "index_display": "0011777/1987",
   "case_title": "CRITERION INSURANCE v. MARMO, ANTHONY",
-  "case_type": null,
+  "case_type": "OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-21T06:30:56.335Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-22T20:41:15.300Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 3
+      "search_rows_seen": 1,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "marmo"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "marmo",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/marmo.rows.ndjson",
+        "source_page": 2,
+        "source_row": 2,
+        "row_html_sha256": "87cdf268c2f9e4077bd53e2061fa593812864b1c617ad36abf9276aaec4b4439"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +63,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "TARANGELO & TOTURA",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "SAUL J. ASNIS, ESQ.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "CRITERION INSURANCE",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "TARANGELO & TOTURA",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "MARMO, ANTHONY",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "SAUL J. ASNIS, ESQ.",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "03/17/1988",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "GEORGE A. MURPHY",
+      "raw_text": "03/17/1988",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -72,6 +136,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/marmo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/marmo/00005-p002-r002-appearances-0011777_1987-01.html",
+      "html_sha256": "6814acd43895b17a0264faf27e6e184ec811f41d186a8a7028644be7d05211a3",
+      "bytes_len": 7578,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/17/1988&index=12I3b2HZvb48ZFYpGotQGg%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=nHcRJPFQ8D9wBSeiPFEFkw%3D%3D",
+      "captured_at": "2026-07-22T20:41:15.300Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -86,6 +164,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/marmo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/marmo/00004-p002-r002-case_detail-0011777_1987-01.html",
+      "html_sha256": "41d6be64c48060a9c8ae42d0f5d2e732e7cb77740ad34922f6e07aa584edd8dc",
+      "bytes_len": 7210,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=12I3b2HZvb48ZFYpGotQGg%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=M&docs=&adate=03/17/1988&civilCaseId=nHcRJPFQ8D9wBSeiPFEFkw%3D%3D",
+      "captured_at": "2026-07-22T20:41:15.300Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions",
@@ -97,6 +189,20 @@
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=y91up0vAsSmJG_PLUS_Qq19YRsg%3D%3D&county=Dd_PLUS_xk0e0wmBhtaPmrQ9ioQ%3D%3D&civilCaseId=HT_PLUS_XRwt_PLUS_7l712pEWbEtEQA%3D%3D",
       "captured_at": "2026-07-21T06:30:56.335Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/marmo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/marmo/00006-p002-r002-motions-0011777_1987-01.html",
+      "html_sha256": "077e42af68580a1e5d8c6d9d0d2d2d9ad6b3ed68061122e99aaeba60568ba0f4",
+      "bytes_len": 6348,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=12I3b2HZvb48ZFYpGotQGg%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=nHcRJPFQ8D9wBSeiPFEFkw%3D%3D",
+      "captured_at": "2026-07-22T20:41:15.300Z",
       "parsed_counts": {}
     }
   ],
@@ -140,6 +246,57 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:marmo:followup-page:002:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/marmo/00004-p002-r002-case_detail-0011777_1987-01.html",
+      "html_sha256": "41d6be64c48060a9c8ae42d0f5d2e732e7cb77740ad34922f6e07aa584edd8dc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=12I3b2HZvb48ZFYpGotQGg%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&motion=M&docs=&adate=03/17/1988&civilCaseId=nHcRJPFQ8D9wBSeiPFEFkw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:marmo:followup-page:002:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/marmo/00005-p002-r002-appearances-0011777_1987-01.html",
+      "html_sha256": "6814acd43895b17a0264faf27e6e184ec811f41d186a8a7028644be7d05211a3",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/17/1988&index=12I3b2HZvb48ZFYpGotQGg%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=nHcRJPFQ8D9wBSeiPFEFkw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:marmo:followup-page:002:capture:00006:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/marmo/00006-p002-r002-motions-0011777_1987-01.html",
+      "html_sha256": "077e42af68580a1e5d8c6d9d0d2d2d9ad6b3ed68061122e99aaeba60568ba0f4",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=12I3b2HZvb48ZFYpGotQGg%3D%3D&county=3KFvZMsHhetoqBLBlI4H5A%3D%3D&civilCaseId=nHcRJPFQ8D9wBSeiPFEFkw%3D%3D",
+      "page_number": 2,
+      "table_row_number": 2,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:marmo:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/marmo/page-002.html",
+      "html_sha256": "a26f0934fc0c3b7c5fd036ac3f308a2d230497388fa94674fe16dc292fdbbafd",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn12",
+      "page_number": 2,
+      "table_row_number": 2,
+      "row_html_sha256": "87cdf268c2f9e4077bd53e2061fa593812864b1c617ad36abf9276aaec4b4439"
     }
-  ]
+  ],
+  "judicial_officer": "GEORGE A. MURPHY"
 }
