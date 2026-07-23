@@ -11,15 +11,19 @@
   "index_year": "2012",
   "index_display": "20014 (0020014/2012)",
   "case_title": "",
-  "case_type": null,
+  "case_type": "OM-Other",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
-  "captured_at": "2026-07-21T04:03:14.278Z",
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-23T03:04:55.718Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
-      "followup_responses_seen": 3
+      "search_rows_seen": 1,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "gebo"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "gebo",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/gebo.rows.ndjson",
+        "source_page": 2,
+        "source_row": 23,
+        "row_html_sha256": "e6e5844616c19cfb001cfc5da68a8f82ce28c1dbadff065a6d6c0ebc613052a7"
+      }
+    ]
   },
   "parties": [
     {
@@ -43,9 +58,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "BARTLETT, PONTIFF, ET AL",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "GEBO, KIM MARIE; IN THE MATTER OFTHE APP",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "BARTLETT, PONTIFF, ET AL",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "03/15/2012",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "McKeighan, Hon. Kelly S.",
+      "raw_text": "03/15/2012",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -67,6 +113,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/gebo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/gebo/00055-p002-r023-appearances-0020014_2012-01.html",
+      "html_sha256": "7cf8c3d8e8cfd2020df7124203723bb3c3e6c6c163f735b385e2d11cd530beea",
+      "bytes_len": 6927,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/15/2012&index=_PLUS_lvmNtbMKP8eYNh5EGaOoQ%3D%3D&county=BiyI1yMMMbq6XhPyS5L9zg%3D%3D&civilCaseId=QaEUhHrCeKuwYKwJHfFc4g%3D%3D",
+      "captured_at": "2026-07-23T03:04:55.718Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -81,6 +141,20 @@
       "parsed_counts": {}
     },
     {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/gebo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/gebo/00054-p002-r023-case_detail-0020014_2012-01.html",
+      "html_sha256": "a5b6a74bc7d3b6f497ce67282c6df6d3208290349f1fce99748711df9a2d872b",
+      "bytes_len": 7490,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_lvmNtbMKP8eYNh5EGaOoQ%3D%3D&county=BiyI1yMMMbq6XhPyS5L9zg%3D%3D&motion=M&docs=&adate=03/15/2012&civilCaseId=QaEUhHrCeKuwYKwJHfFc4g%3D%3D",
+      "captured_at": "2026-07-23T03:04:55.718Z",
+      "parsed_counts": {}
+    },
+    {
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions",
@@ -92,6 +166,20 @@
       "title": "WebCivil Supreme - Motion Detail",
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=CdBf3grZfwdJrXTjgkNI3g%3D%3D&county=KWMlpj4VDL9fSqmmSa8a5Q%3D%3D&civilCaseId=WHiW9JD6mGZBuDesRHRd3A%3D%3D",
       "captured_at": "2026-07-21T04:03:14.278Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/gebo/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/gebo/00056-p002-r023-motions-0020014_2012-01.html",
+      "html_sha256": "e9190e483131329ccb162a0682471c2bc3bfe2e279a1573b98b55141c6734878",
+      "bytes_len": 6352,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=_PLUS_lvmNtbMKP8eYNh5EGaOoQ%3D%3D&county=BiyI1yMMMbq6XhPyS5L9zg%3D%3D&civilCaseId=QaEUhHrCeKuwYKwJHfFc4g%3D%3D",
+      "captured_at": "2026-07-23T03:04:55.718Z",
       "parsed_counts": {}
     }
   ],
@@ -135,6 +223,57 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:gebo:followup-page:002:capture:00054:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/gebo/00054-p002-r023-case_detail-0020014_2012-01.html",
+      "html_sha256": "a5b6a74bc7d3b6f497ce67282c6df6d3208290349f1fce99748711df9a2d872b",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=_PLUS_lvmNtbMKP8eYNh5EGaOoQ%3D%3D&county=BiyI1yMMMbq6XhPyS5L9zg%3D%3D&motion=M&docs=&adate=03/15/2012&civilCaseId=QaEUhHrCeKuwYKwJHfFc4g%3D%3D",
+      "page_number": 2,
+      "table_row_number": 23,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:gebo:followup-page:002:capture:00055:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/gebo/00055-p002-r023-appearances-0020014_2012-01.html",
+      "html_sha256": "7cf8c3d8e8cfd2020df7124203723bb3c3e6c6c163f735b385e2d11cd530beea",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/15/2012&index=_PLUS_lvmNtbMKP8eYNh5EGaOoQ%3D%3D&county=BiyI1yMMMbq6XhPyS5L9zg%3D%3D&civilCaseId=QaEUhHrCeKuwYKwJHfFc4g%3D%3D",
+      "page_number": 2,
+      "table_row_number": 23,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:gebo:followup-page:002:capture:00056:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/gebo/00056-p002-r023-motions-0020014_2012-01.html",
+      "html_sha256": "e9190e483131329ccb162a0682471c2bc3bfe2e279a1573b98b55141c6734878",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=_PLUS_lvmNtbMKP8eYNh5EGaOoQ%3D%3D&county=BiyI1yMMMbq6XhPyS5L9zg%3D%3D&civilCaseId=QaEUhHrCeKuwYKwJHfFc4g%3D%3D",
+      "page_number": 2,
+      "table_row_number": 23,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:gebo:page:002",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/gebo/page-002.html",
+      "html_sha256": "9faf3abe2e0efd6bf0a5fb1c6f9d5c73d2185fafcf109470057b81864cb4e5ff",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "lane": "sfscvpn12",
+      "page_number": 2,
+      "table_row_number": 23,
+      "row_html_sha256": "e6e5844616c19cfb001cfc5da68a8f82ce28c1dbadff065a6d6c0ebc613052a7"
     }
-  ]
+  ],
+  "judicial_officer": "McKeighan, Hon. Kelly S."
 }

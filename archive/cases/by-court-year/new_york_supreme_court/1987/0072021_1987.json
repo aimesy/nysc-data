@@ -11,15 +11,18 @@
   "index_year": "1987",
   "index_display": "0072021/1987",
   "case_title": "ANSWER, RALSTON WESLEY v. ANSWER, CARON SEMON",
-  "case_type": null,
+  "case_type": "UNCONTESTED MAT2",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-20T23:55:02.508Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "caron"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "caron",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/caron.rows.ndjson",
+        "source_page": 1,
+        "source_row": 19,
+        "row_html_sha256": "ed0ecb50a068e7ff70f73bc707f4de8e49972214885a4355f85644b2e3932016"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "RADNA & ANDROSIGLIO",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "ANSWER, RALSTON WESLEY",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "RADNA & ANDROSIGLIO",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "10/05/1987",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "",
+      "raw_text": "10/05/1987",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +157,17 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:caron:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/caron/page-001.html",
+      "html_sha256": "c596b52e1839edf13b4973938dc9898e12aecc174fdabcf70e9b0e4b8399cd91",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 19,
+      "row_html_sha256": "ed0ecb50a068e7ff70f73bc707f4de8e49972214885a4355f85644b2e3932016"
     }
   ]
 }

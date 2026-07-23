@@ -11,15 +11,18 @@
   "index_year": "1982",
   "index_display": "0001572/1982",
   "case_title": "MEIER v. TAYLOR",
-  "case_type": null,
+  "case_type": "MOTOR VEHICLE",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-21T03:55:49.466Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail"
@@ -27,13 +30,24 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 2
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "meier"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "meier",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/meier.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "7d4f601287b3dfe3f12756c11c01327c8e1014e01349d8e04378cb7a7a806249"
+      }
+    ]
   },
   "parties": [
     {
@@ -47,9 +61,58 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "BORDA, WALLACE & WITTY, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "MC CABE, NICOLINI, PARADISE, ESQS",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "MEIER",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "BORDA, WALLACE & WITTY, ESQS.",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "TAYLOR",
+      "party_role": "defendant_respondent",
+      "attorney_name": "",
+      "firm": "MC CABE, NICOLINI, PARADISE, ESQS",
+      "role": "defendant_respondent",
+      "source_system": "webcivil",
+      "source_field": "first_defendant_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "11/03/1983",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "",
+      "raw_text": "11/03/1983",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -112,6 +175,17 @@
       "kind": "appearances",
       "nested_kind": "",
       "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:meier:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/meier/page-001.html",
+      "html_sha256": "418ceadc02c0901baa2c9af019d0964e9b709d3adf9a63643837f506e13d24fc",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn15",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "7d4f601287b3dfe3f12756c11c01327c8e1014e01349d8e04378cb7a7a806249"
     }
   ]
 }
