@@ -11,15 +11,18 @@
   "index_year": "1988",
   "index_display": "0003803/1988",
   "case_title": "CLIFFMEUN,TADAM v. TRIEU,CHON",
-  "case_type": null,
+  "case_type": "UNCONTESTED MATRIMONIAL",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-06-27T18:09:20.965Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +31,24 @@
       "document_hint": false,
       "document_list_captured": true,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 1,
       "followup_responses_seen": 8
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "trieu"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "trieu",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/trieu.rows.ndjson",
+        "source_page": 1,
+        "source_row": 1,
+        "row_html_sha256": "18e83199d590a7d93800566863e76f432f91960b9a268daa0e3f8c0229e85f01"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +62,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "DR.MAC TRUONG",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "CLIFFMEUN,TADAM",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "DR.MAC TRUONG",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "04/11/1988",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "JOHN OSTERMANN - REFEREE",
+      "raw_text": "04/11/1988",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -275,6 +320,18 @@
       "kind": "appearances",
       "nested_kind": "document-list",
       "tab_key": "document-list"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:trieu:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/trieu/page-001.html",
+      "html_sha256": "edf8bebb15941bf0803edb1c7237914bd1a541e103ce4377fa116eb6509a5420",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 1,
+      "row_html_sha256": "18e83199d590a7d93800566863e76f432f91960b9a268daa0e3f8c0229e85f01"
     }
-  ]
+  ],
+  "judicial_officer": "JOHN OSTERMANN - REFEREE"
 }

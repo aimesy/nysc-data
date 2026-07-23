@@ -15,7 +15,7 @@
   "status": "Disposed",
   "filed_date": null,
   "capture_status": "webcivil_docket_complete",
-  "captured_at": "2026-07-19T06:47:44.377Z",
+  "captured_at": "2026-07-23T07:25:25.601Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -30,8 +30,8 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 2
+      "search_rows_seen": 2,
+      "followup_responses_seen": 6
     }
   },
   "discovery": {
@@ -41,11 +41,19 @@
     "result_row_refs": [
       {
         "search_name": "moyn",
-        "query_type": "attorney-prefix",
+        "query_type": "party-prefix",
         "source_file": "archive/webcivil/results/moyn.rows.ndjson",
         "source_page": 1,
-        "source_row": 1,
-        "row_html_sha256": "9322bb44d33d2f9f88676fdd8fa83c58067b352a162a805e885c38efd74180c5"
+        "source_row": 2,
+        "row_html_sha256": "1cf204393d7bbaa36e06406506d0ea5f1f47dd4fe840d74e1288baa7a872082f"
+      },
+      {
+        "search_name": "moyn",
+        "query_type": "party-prefix",
+        "source_file": "external/results/moyn.rows.ndjson",
+        "source_page": 1,
+        "source_row": 2,
+        "row_html_sha256": "1cf204393d7bbaa36e06406506d0ea5f1f47dd4fe840d74e1288baa7a872082f"
       }
     ]
   },
@@ -69,6 +77,21 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "name": "",
+      "firm": "LAW OFFICE OF MD GOLAM MOSTOFA",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00004-p001-r002-case_detail-5709_2016-01.html",
+      "html_sha256": "c6a84be685f4272d79a557058f087e2814fec14bae816d508f656561732015e6",
+      "captured_at": "2026-07-23T07:25:25.601Z"
     }
   ],
   "representation": [
@@ -81,6 +104,23 @@
       "source_system": "webcivil",
       "source_field": "first_plaintiff_firm",
       "confidence": "search_row_firm"
+    },
+    {
+      "party_name": "ARA, JINNAT",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "LAW OFFICE OF MD GOLAM MOSTOFA",
+      "role": "plaintiff_petitioner",
+      "confidence": "webcivil_case_detail",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "case-detail",
+      "source_kind": "case-detail",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00004-p001-r002-case_detail-5709_2016-01.html",
+      "html_sha256": "c6a84be685f4272d79a557058f087e2814fec14bae816d508f656561732015e6",
+      "captured_at": "2026-07-23T07:25:25.601Z"
     }
   ],
   "calendar": [
@@ -93,9 +133,92 @@
       "raw_text": "05/10/2018",
       "source_field": "search_row.next_appearance",
       "confidence": "search_row_hint"
+    },
+    {
+      "appearance_date": "05/10/2018",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Granted",
+      "part": "Mechmann, Brenda V. Uncontested Matrimonial Part 5",
+      "judicial_officer": "Mechmann, Brenda V. Uncontested Matrimonial Part 5",
+      "remarks": "SPEC PREF GRND (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "05/10/2018 | Conversion-Other | No | None | Granted | Mechmann, Brenda V. Uncontested Matrimonial Part 5 | SPEC PREF GRND (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00005-p001-r002-appearances-5709_2016-01.html",
+      "html_sha256": "bbb0a3897326cf3cf57547fda72fbf8b60841382d0defdea66907c70588961e0",
+      "captured_at": "2026-07-23T07:25:25.601Z"
+    },
+    {
+      "appearance_date": "06/05/2017",
+      "appearance_time": "",
+      "purpose": "Conversion-Other",
+      "fully_virtual": "No",
+      "court_date_type": "None",
+      "outcome": "Other",
+      "part": "Mechmann, Brenda V. Uncontested Matrimonial Part 5",
+      "judicial_officer": "Mechmann, Brenda V. Uncontested Matrimonial Part 5",
+      "remarks": "REJECT (Conversion)",
+      "motion_sequence": "",
+      "raw_text": "06/05/2017 | Conversion-Other | No | None | Other | Mechmann, Brenda V. Uncontested Matrimonial Part 5 | REJECT (Conversion)",
+      "confidence": "webcivil_appearance_table",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00005-p001-r002-appearances-5709_2016-01.html",
+      "html_sha256": "bbb0a3897326cf3cf57547fda72fbf8b60841382d0defdea66907c70588961e0",
+      "captured_at": "2026-07-23T07:25:25.601Z"
     }
   ],
-  "docket_entries": [],
+  "docket_entries": [
+    {
+      "sequence": "",
+      "source_index": 1,
+      "entry_date": "05/10/2018",
+      "title": "Conversion-Other - Granted",
+      "text": "05/10/2018 | Conversion-Other | No | None | Granted | Mechmann, Brenda V. Uncontested Matrimonial Part 5 | SPEC PREF GRND (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00005-p001-r002-appearances-5709_2016-01.html",
+      "html_sha256": "bbb0a3897326cf3cf57547fda72fbf8b60841382d0defdea66907c70588961e0",
+      "captured_at": "2026-07-23T07:25:25.601Z"
+    },
+    {
+      "sequence": "",
+      "source_index": 2,
+      "entry_date": "06/05/2017",
+      "title": "Conversion-Other - Other",
+      "text": "06/05/2017 | Conversion-Other | No | None | Other | Mechmann, Brenda V. Uncontested Matrimonial Part 5 | REJECT (Conversion)",
+      "event_type": "appearance",
+      "motion_sequence": "",
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "source_tab": "appearances",
+      "source_kind": "appearances",
+      "nested_kind": "",
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00005-p001-r002-appearances-5709_2016-01.html",
+      "html_sha256": "bbb0a3897326cf3cf57547fda72fbf8b60841382d0defdea66907c70588961e0",
+      "captured_at": "2026-07-23T07:25:25.601Z"
+    }
+  ],
   "motions": [],
   "documents": [],
   "decisions_orders": [],
@@ -116,6 +239,23 @@
       "parsed_counts": {}
     },
     {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00005-p001-r002-appearances-5709_2016-01.html",
+      "html_sha256": "bbb0a3897326cf3cf57547fda72fbf8b60841382d0defdea66907c70588961e0",
+      "bytes_len": 6290,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/10/2018&index=i_PLUS_%2FHziRW_PLUS_0GqY151emqiGA%3D%3D&county=N1YnHlNBdoHCkfYdPqFpvQ%3D%3D&civilCaseId=Xh7V4xMyiep4Fpv96%2FWt_PLUS_w%3D%3D",
+      "captured_at": "2026-07-23T07:25:25.601Z",
+      "parsed_counts": {
+        "calendar": 2,
+        "docket_entries": 2
+      }
+    },
+    {
       "kind": "case-detail",
       "nested_kind": "",
       "tab_key": "case-detail",
@@ -128,9 +268,38 @@
       "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=OtZsU4FzaodkElljXFvtCg%3D%3D&county=e_PLUS_9_PLUS_SMHnNNh6%2FEyyfRCvtA%3D%3D&motion=&docs=&adate=05/10/2018&civilCaseId=0P6CdtLs0icCa65R2X9IAg%3D%3D",
       "captured_at": "2026-07-19T06:47:44.377Z",
       "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/moyn/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00004-p001-r002-case_detail-5709_2016-01.html",
+      "html_sha256": "c6a84be685f4272d79a557058f087e2814fec14bae816d508f656561732015e6",
+      "bytes_len": 7159,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=i_PLUS_%2FHziRW_PLUS_0GqY151emqiGA%3D%3D&county=N1YnHlNBdoHCkfYdPqFpvQ%3D%3D&motion=&docs=&adate=05/10/2018&civilCaseId=Xh7V4xMyiep4Fpv96%2FWt_PLUS_w%3D%3D",
+      "captured_at": "2026-07-23T07:25:25.601Z",
+      "parsed_counts": {
+        "parties": 2,
+        "attorneys": 2,
+        "representation": 2
+      }
     }
   ],
-  "webcivil_case_detail": {},
+  "webcivil_case_detail": {
+    "Court": "Bronx Supreme Court",
+    "Index Number": "5709/2016",
+    "Case Name": "ARA, JINNAT vs. UDDIN, MD MOYN",
+    "Case Type": "Mat-Uncontested",
+    "Track": "Standard",
+    "RJI Filed": "09/19/2016",
+    "NOI Due": "09/19/2017",
+    "NOI Filed": "09/19/2016",
+    "Disposition Date": "05/10/2018",
+    "Justice Name": "Mechmann, Brenda V."
+  },
   "raw_refs": [
     {
       "source_system": "webcivil",
@@ -160,15 +329,42 @@
     },
     {
       "source_system": "webcivil",
-      "capture_id": "20260718183125:moyn:page:001",
-      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260718183125/moyn/page-001.html",
-      "html_sha256": "bc320d45be9f71fea1eeb7f678fd1872c986ffa5bef66af732b0d0a52249dae2",
-      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
-      "lane": "",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:moyn:followup-page:001:capture:00004:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00004-p001-r002-case_detail-5709_2016-01.html",
+      "html_sha256": "c6a84be685f4272d79a557058f087e2814fec14bae816d508f656561732015e6",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=i_PLUS_%2FHziRW_PLUS_0GqY151emqiGA%3D%3D&county=N1YnHlNBdoHCkfYdPqFpvQ%3D%3D&motion=&docs=&adate=05/10/2018&civilCaseId=Xh7V4xMyiep4Fpv96%2FWt_PLUS_w%3D%3D",
       "page_number": 1,
-      "table_row_number": 1,
-      "row_html_sha256": "9322bb44d33d2f9f88676fdd8fa83c58067b352a162a805e885c38efd74180c5"
+      "table_row_number": 2,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:moyn:followup-page:001:capture:00005:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/moyn/00005-p001-r002-appearances-5709_2016-01.html",
+      "html_sha256": "bbb0a3897326cf3cf57547fda72fbf8b60841382d0defdea66907c70588961e0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=05/10/2018&index=i_PLUS_%2FHziRW_PLUS_0GqY151emqiGA%3D%3D&county=N1YnHlNBdoHCkfYdPqFpvQ%3D%3D&civilCaseId=Xh7V4xMyiep4Fpv96%2FWt_PLUS_w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 2,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:moyn:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/moyn/page-001.html",
+      "html_sha256": "1a7227385ddb0c34c6da7a082ce96481172acc00d6285a2270e9f253d93ca441",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn11",
+      "page_number": 1,
+      "table_row_number": 2,
+      "row_html_sha256": "1cf204393d7bbaa36e06406506d0ea5f1f47dd4fe840d74e1288baa7a872082f"
     }
   ],
-  "judicial_officer": "Mechmann, Brenda V."
+  "judicial_officer": "Mechmann, Brenda V.",
+  "disposition_date": "05/10/2018"
 }

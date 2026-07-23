@@ -11,15 +11,19 @@
   "index_year": "1986",
   "index_display": "0021077/1986",
   "case_title": "ALLIED SANITATION INC v. GREEN GIANT FRUIT FAIR INC",
-  "case_type": null,
+  "case_type": "CONTRACT",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "webcivil_partial",
+  "capture_status": "webcivil_docket_complete",
   "captured_at": "2026-07-20T09:32:58.940Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
-      "expected_tabs": [],
+      "expected_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "captured_tabs": [
         "appearances",
         "case-detail",
@@ -28,13 +32,32 @@
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 0,
+      "search_rows_seen": 2,
       "followup_responses_seen": 3
     }
   },
   "discovery": {
-    "search_names": [],
-    "result_row_refs": []
+    "search_names": [
+      "giant"
+    ],
+    "result_row_refs": [
+      {
+        "search_name": "giant",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/giant.rows.ndjson",
+        "source_page": 1,
+        "source_row": 25,
+        "row_html_sha256": "d96a8f06b27d04de655815d4febb0c460f071e087b100d13bfbdfe35b1b01841"
+      },
+      {
+        "search_name": "giant",
+        "query_type": "party-prefix",
+        "source_file": "external/results/giant.rows.ndjson",
+        "source_page": 1,
+        "source_row": 25,
+        "row_html_sha256": "d96a8f06b27d04de655815d4febb0c460f071e087b100d13bfbdfe35b1b01841"
+      }
+    ]
   },
   "parties": [
     {
@@ -48,9 +71,40 @@
       "source_system": "webcivil"
     }
   ],
-  "attorneys": [],
-  "representation": [],
-  "calendar": [],
+  "attorneys": [
+    {
+      "name": "",
+      "firm": "MICHAEL IAN BLACK",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "representation": [
+    {
+      "party_name": "ALLIED SANITATION INC",
+      "party_role": "plaintiff_petitioner",
+      "attorney_name": "",
+      "firm": "MICHAEL IAN BLACK",
+      "role": "plaintiff_petitioner",
+      "source_system": "webcivil",
+      "source_field": "first_plaintiff_firm",
+      "confidence": "search_row_firm"
+    }
+  ],
+  "calendar": [
+    {
+      "source_system": "webcivil",
+      "appearance_date": "08/22/1995",
+      "part": "",
+      "purpose": "Next appearance",
+      "judicial_officer": "LUTHER V.DYE",
+      "raw_text": "08/22/1995",
+      "source_field": "search_row.next_appearance",
+      "confidence": "search_row_hint"
+    }
+  ],
   "docket_entries": [],
   "motions": [],
   "documents": [],
@@ -140,6 +194,18 @@
       "kind": "motions",
       "nested_kind": "",
       "tab_key": "motions"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:giant:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/giant/page-001.html",
+      "html_sha256": "895ccf3af9b046cf954a88b580ed3e066be91a751d1fe9f7f2d4f1b971f86d82",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 25,
+      "row_html_sha256": "d96a8f06b27d04de655815d4febb0c460f071e087b100d13bfbdfe35b1b01841"
     }
-  ]
+  ],
+  "judicial_officer": "LUTHER V.DYE"
 }

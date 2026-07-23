@@ -14,8 +14,8 @@
   "case_type": "TORT OTHER",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-23T05:26:48.427Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -23,17 +23,21 @@
         "appearances",
         "case-detail"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 2
     }
   },
   "discovery": {
     "search_names": [
-      "fanny"
+      "fanny",
+      "nunes"
     ],
     "result_row_refs": [
       {
@@ -43,6 +47,14 @@
         "source_page": 1,
         "source_row": 17,
         "row_html_sha256": "8dfcb31da7c9c7737e34b90fedeaf721e16f749d3a8347539be85cf2db5574aa"
+      },
+      {
+        "search_name": "nunes",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/nunes.rows.ndjson",
+        "source_page": 1,
+        "source_row": 8,
+        "row_html_sha256": "89e9d8c291062810be71848eb5ca358abad275ba9bbbed8a1f6ed8d942b77445"
       }
     ]
   },
@@ -115,9 +127,64 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/nunes/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nunes/00017-p001-r008-appearances-0004806_1986-01.html",
+      "html_sha256": "4b2958f9b2c6d525b8855d13b2cbb86de4cbdd296134a36c05a3379e96d34970",
+      "bytes_len": 5542,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/18/1986&index=9vY4F9SbKjnGurcx0%2F3Rpw%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&civilCaseId=j_PLUS_mBzm9wX0AkBeaGPJyfVg%3D%3D",
+      "captured_at": "2026-07-23T05:26:48.427Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/nunes/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nunes/00016-p001-r008-case_detail-0004806_1986-01.html",
+      "html_sha256": "b9eb8c6e7c322a21e147497102c1e3b6d99359e76805d214e288a807929bd089",
+      "bytes_len": 7484,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9vY4F9SbKjnGurcx0%2F3Rpw%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&motion=&docs=&adate=11/18/1986&civilCaseId=j_PLUS_mBzm9wX0AkBeaGPJyfVg%3D%3D",
+      "captured_at": "2026-07-23T05:26:48.427Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:nunes:followup-page:001:capture:00016:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nunes/00016-p001-r008-case_detail-0004806_1986-01.html",
+      "html_sha256": "b9eb8c6e7c322a21e147497102c1e3b6d99359e76805d214e288a807929bd089",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=9vY4F9SbKjnGurcx0%2F3Rpw%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&motion=&docs=&adate=11/18/1986&civilCaseId=j_PLUS_mBzm9wX0AkBeaGPJyfVg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 8,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:nunes:followup-page:001:capture:00017:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/nunes/00017-p001-r008-appearances-0004806_1986-01.html",
+      "html_sha256": "4b2958f9b2c6d525b8855d13b2cbb86de4cbdd296134a36c05a3379e96d34970",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=11/18/1986&index=9vY4F9SbKjnGurcx0%2F3Rpw%3D%3D&county=pZ5v1h1Enm0F2noXxKyYgw%3D%3D&civilCaseId=j_PLUS_mBzm9wX0AkBeaGPJyfVg%3D%3D",
+      "page_number": 1,
+      "table_row_number": 8,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260721101320:fanny:page:001",
@@ -128,6 +195,17 @@
       "page_number": 1,
       "table_row_number": 17,
       "row_html_sha256": "8dfcb31da7c9c7737e34b90fedeaf721e16f749d3a8347539be85cf2db5574aa"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:nunes:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/nunes/page-001.html",
+      "html_sha256": "b358b6c0edd28a04a7c0571dda8bfad3a42140d86de77c1ffb729f5f2e9497e9",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn07",
+      "page_number": 1,
+      "table_row_number": 8,
+      "row_html_sha256": "89e9d8c291062810be71848eb5ca358abad275ba9bbbed8a1f6ed8d942b77445"
     }
   ],
   "judicial_officer": "COSMO J. DITUCCI"

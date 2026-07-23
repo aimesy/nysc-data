@@ -14,8 +14,8 @@
   "case_type": "OTHER SPECIAL PROCEEDINGS",
   "status": "Disposed",
   "filed_date": null,
-  "capture_status": "search_row_only",
-  "captured_at": null,
+  "capture_status": "webcivil_docket_complete",
+  "captured_at": "2026-07-23T05:20:27.926Z",
   "updated_at_source": null,
   "method_status": {
     "webcivil": {
@@ -24,17 +24,22 @@
         "case-detail",
         "motions"
       ],
-      "captured_tabs": [],
+      "captured_tabs": [
+        "appearances",
+        "case-detail",
+        "motions"
+      ],
       "document_hint": false,
       "document_list_captured": false,
       "pdf_captured": false,
-      "search_rows_seen": 1,
-      "followup_responses_seen": 0
+      "search_rows_seen": 2,
+      "followup_responses_seen": 3
     }
   },
   "discovery": {
     "search_names": [
-      "lucky"
+      "lucky",
+      "tsang"
     ],
     "result_row_refs": [
       {
@@ -44,6 +49,14 @@
         "source_page": 1,
         "source_row": 23,
         "row_html_sha256": "240b908aaf358fb2b6f5978160637063df392975402f68eef8e1fddb6eff93bf"
+      },
+      {
+        "search_name": "tsang",
+        "query_type": "party-prefix",
+        "source_file": "archive/webcivil/results/tsang.rows.ndjson",
+        "source_page": 1,
+        "source_row": 17,
+        "row_html_sha256": "89e32d3aff6266a85e2a09b01d779bca68e99f1c9aa79dfd1c6be377e68e2d8f"
       }
     ]
   },
@@ -98,9 +111,91 @@
   "documents": [],
   "decisions_orders": [],
   "related_cases": [],
-  "webcivil_followups": [],
+  "webcivil_followups": [
+    {
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tsang/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tsang/00042-p001-r017-appearances-0002758_1987-01.html",
+      "html_sha256": "031669ea7acdaa169e6a2d66ef57d13db9d47d2f8d1aba4716cb2e699822069a",
+      "bytes_len": 6220,
+      "title": "WebCivil Supreme - Appearance Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/10/1987&index=oWO_PLUS_xqapxx8BO8jIFaDmNA%3D%3D&county=6qzLB157kyIHL%2FKv1nlZpQ%3D%3D&civilCaseId=kTCbVvFZmkC5Z2%2FAgMTN_PLUS_w%3D%3D",
+      "captured_at": "2026-07-23T05:20:27.926Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tsang/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tsang/00041-p001-r017-case_detail-0002758_1987-01.html",
+      "html_sha256": "802a4c5f9b82d88e384c460e1ab6bfbf6c9fd97dbb41292815d2a782d9b2e76d",
+      "bytes_len": 6925,
+      "title": "WebCivil Supreme - Case Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oWO_PLUS_xqapxx8BO8jIFaDmNA%3D%3D&county=6qzLB157kyIHL%2FKv1nlZpQ%3D%3D&motion=M&docs=&adate=03/10/1987&civilCaseId=kTCbVvFZmkC5Z2%2FAgMTN_PLUS_w%3D%3D",
+      "captured_at": "2026-07-23T05:20:27.926Z",
+      "parsed_counts": {}
+    },
+    {
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions",
+      "ok": true,
+      "source_file": "archive/webcivil/case-followups/20260721101320/tsang/manifest.ndjson",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tsang/00043-p001-r017-motions-0002758_1987-01.html",
+      "html_sha256": "852297e9fde9b864e603ead51aeb45e797a260f2e416e774eadf6ecf306caed0",
+      "bytes_len": 6385,
+      "title": "WebCivil Supreme - Motion Detail",
+      "final_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oWO_PLUS_xqapxx8BO8jIFaDmNA%3D%3D&county=6qzLB157kyIHL%2FKv1nlZpQ%3D%3D&civilCaseId=kTCbVvFZmkC5Z2%2FAgMTN_PLUS_w%3D%3D",
+      "captured_at": "2026-07-23T05:20:27.926Z",
+      "parsed_counts": {}
+    }
+  ],
   "webcivil_case_detail": {},
   "raw_refs": [
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tsang:followup-page:001:capture:00041:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tsang/00041-p001-r017-case_detail-0002758_1987-01.html",
+      "html_sha256": "802a4c5f9b82d88e384c460e1ab6bfbf6c9fd97dbb41292815d2a782d9b2e76d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=CaseInfo&index=oWO_PLUS_xqapxx8BO8jIFaDmNA%3D%3D&county=6qzLB157kyIHL%2FKv1nlZpQ%3D%3D&motion=M&docs=&adate=03/10/1987&civilCaseId=kTCbVvFZmkC5Z2%2FAgMTN_PLUS_w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "case-detail",
+      "nested_kind": "",
+      "tab_key": "case-detail"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tsang:followup-page:001:capture:00042:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tsang/00042-p001-r017-appearances-0002758_1987-01.html",
+      "html_sha256": "031669ea7acdaa169e6a2d66ef57d13db9d47d2f8d1aba4716cb2e699822069a",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Appearance&appearDate=03/10/1987&index=oWO_PLUS_xqapxx8BO8jIFaDmNA%3D%3D&county=6qzLB157kyIHL%2FKv1nlZpQ%3D%3D&civilCaseId=kTCbVvFZmkC5Z2%2FAgMTN_PLUS_w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "appearances",
+      "nested_kind": "",
+      "tab_key": "appearances"
+    },
+    {
+      "source_system": "webcivil",
+      "source_profile": "nysc_webcivil",
+      "capture_id": "20260721101320:tsang:followup-page:001:capture:00043:response:01",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/case-followups/20260721101320/tsang/00043-p001-r017-motions-0002758_1987-01.html",
+      "html_sha256": "852297e9fde9b864e603ead51aeb45e797a260f2e416e774eadf6ecf306caed0",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASCaseInfo?parm=Motion&index=oWO_PLUS_xqapxx8BO8jIFaDmNA%3D%3D&county=6qzLB157kyIHL%2FKv1nlZpQ%3D%3D&civilCaseId=kTCbVvFZmkC5Z2%2FAgMTN_PLUS_w%3D%3D",
+      "page_number": 1,
+      "table_row_number": 17,
+      "kind": "motions",
+      "nested_kind": "",
+      "tab_key": "motions"
+    },
     {
       "source_system": "webcivil",
       "capture_id": "20260712212615:lucky:page:001",
@@ -111,6 +206,17 @@
       "page_number": 1,
       "table_row_number": 23,
       "row_html_sha256": "240b908aaf358fb2b6f5978160637063df392975402f68eef8e1fddb6eff93bf"
+    },
+    {
+      "source_system": "webcivil",
+      "capture_id": "20260721101320:tsang:page:001",
+      "raw_path": "../../var/lib/nysc/raw/webcivil/party-search/20260721101320/tsang/page-001.html",
+      "html_sha256": "a0e9f5267d487edb758252806c5a6534797811915e124e8874eda1d8262ef10d",
+      "source_url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+      "lane": "sfscvpn12",
+      "page_number": 1,
+      "table_row_number": 17,
+      "row_html_sha256": "89e32d3aff6266a85e2a09b01d779bca68e99f1c9aa79dfd1c6be377e68e2d8f"
     }
   ],
   "judicial_officer": "EVANS, MARTIN"
