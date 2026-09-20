@@ -1,0 +1,25 @@
+{
+  "schema": "nysc-raw-release-snapshot/v1",
+  "snapshot_id": "raw-webcivil-20260920T114920794Z",
+  "archived_at": "2026-09-20T11:56:12.553Z",
+  "github_repo": "aimesy/nysc-data",
+  "release_tag": "raw-webcivil-2026-09-20",
+  "source_root": "/var/lib/nysc",
+  "include_root": "raw/webcivil",
+  "source_file_count": 939195,
+  "source_bytes_len": 15360717566,
+  "compression": "zstd",
+  "archive": {
+    "asset_name": "raw-webcivil-20260920T114920794Z.tar.zst",
+    "bytes_len": 355957558,
+    "sha256": "f6819822b30f1758faa370e3cb14370e92fd3a782a9ba7f71b3e9bc8f7c6058b",
+    "url": "https://github.com/aimesy/nysc-data/releases/download/raw-webcivil-2026-09-20/raw-webcivil-20260920T114920794Z.tar.zst"
+  },
+  "manifest": {
+    "asset_name": "raw-webcivil-20260920T114920794Z.manifest.ndjson.zst",
+    "bytes_len": 20076306,
+    "sha256": "251d0de6b416137eade51a7746bd678891ebfe36b637df4890e6e5813a39beb3",
+    "url": "https://github.com/aimesy/nysc-data/releases/download/raw-webcivil-2026-09-20/raw-webcivil-20260920T114920794Z.manifest.ndjson.zst"
+  },
+  "restore_command": "gh release download raw-webcivil-2026-09-20 --repo aimesy/nysc-data --pattern raw-webcivil-20260920T114920794Z.tar.zst --dir <destination> && zstd -d <destination>/raw-webcivil-20260920T114920794Z.tar.zst -c | tar -xf - -C <restore-root>"
+}
